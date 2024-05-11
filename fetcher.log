@@ -477,3 +477,9 @@
 [2024-05-12 00:51:39] INFO root fetch - processPackages [voiceos]: Remove: archive file [/home/abi/fetcher/tmp/voiceos-0.8.1.3.tar.gz]
 [2024-05-12 00:51:39] INFO root fetch - main [MainThread]: End processing [voiceos]: success
 [2024-05-12 00:51:39] INFO root fetch - main [MainThread]: Store serial: [23165106]
+[2024-05-12 00:53:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165106]
+[2024-05-12 00:53:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 00:53:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unpervertedz
+[2024-05-12 00:53:48] WARNING root fetch - processPackages [unpervertedz]: Skipping, unable to determine old version
+[2024-05-12 00:53:48] INFO root fetch - main [MainThread]: End processing [unpervertedz] error
+[2024-05-12 00:53:48] INFO root fetch - main [MainThread]: Store serial: [23165113]
