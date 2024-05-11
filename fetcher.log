@@ -37,3 +37,18 @@
 [2024-05-12 00:04:12] INFO root fetch - processPackages [unwomanizez]: Remove: archive file [/home/abi/fetcher/tmp/unwomanizez-2.1.tar.gz]
 [2024-05-12 00:04:12] INFO root fetch - main [MainThread]: End processing [unwomanizez]: success
 [2024-05-12 00:04:12] INFO root fetch - main [MainThread]: Store serial: [23164908]
+[2024-05-12 00:06:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164908]
+[2024-05-12 00:06:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 00:06:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docugenr8
+[2024-05-12 00:06:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: astereognosisz
+[2024-05-12 00:06:21] INFO root fetch - processPackages [docugenr8]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 00:06:21] INFO root fetch - processPackages [docugenr8]: Downloading https://files.pythonhosted.org/packages/9b/01/1d7afde6078300322a758bab883a343aad43657961631bdf9eac9b892b06/docugenr8-0.0.8.tar.gz
+[2024-05-12 00:06:21] WARNING root fetch - processPackages [astereognosisz]: Skipping, unable to determine old version
+[2024-05-12 00:06:21] INFO root fetch - main [MainThread]: End processing [astereognosisz] error
+[2024-05-12 00:06:21] INFO root fetch - processPackages [docugenr8]: Downloading https://files.pythonhosted.org/packages/9a/a5/aa6030a12b43fe39bfa3f72277e6448f95801c71f37824996f2a765bef62/docugenr8-0.0.9.tar.gz
+[2024-05-12 00:06:21] INFO root fetch - processPackages [docugenr8]: executing diffoscope
+[2024-05-12 00:06:21] INFO root fetch - processPackages [docugenr8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugenr8-0.0.8.tar.gz tmp/docugenr8-0.0.9.tar.gz --markdown 20240512/d/docugenr8/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 00:06:22] INFO root fetch - processPackages [docugenr8]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8-0.0.8.tar.gz]
+[2024-05-12 00:06:22] INFO root fetch - processPackages [docugenr8]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8-0.0.9.tar.gz]
+[2024-05-12 00:06:22] INFO root fetch - main [MainThread]: End processing [docugenr8]: success
+[2024-05-12 00:06:22] INFO root fetch - main [MainThread]: Store serial: [23164917]
