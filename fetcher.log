@@ -1,0 +1,24 @@
+[2024-05-12 00:01:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164886]
+[2024-05-12 00:01:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 00:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: soar-sml
+[2024-05-12 00:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: outscoutz
+[2024-05-12 00:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dashport
+[2024-05-12 00:01:50] INFO root fetch - processPackages [dashport]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-05-12 00:01:50] INFO root fetch - processPackages [soar-sml]: New version: [9.6.2a1] Old Version: [9.6.2a0]
+[2024-05-12 00:01:50] WARNING root fetch - processPackages [outscoutz]: Skipping, unable to determine old version
+[2024-05-12 00:01:50] INFO root fetch - main [MainThread]: End processing [outscoutz] error
+[2024-05-12 00:01:50] INFO root fetch - processPackages [dashport]: Downloading https://files.pythonhosted.org/packages/b6/07/f29c69939c114ed557ec76d0dba79c3f9f9d0474f605be3921e7e39a9f17/dashport-0.7.3.tar.gz
+[2024-05-12 00:01:50] INFO root fetch - processPackages [soar-sml]: Downloading https://files.pythonhosted.org/packages/ff/03/99db760999df52d8557fa50c5a5cd7a4fdfafbb95fcd1816267d31896ca8/soar_sml-9.6.2a-cp39-cp39-win_amd64.whl
+[2024-05-12 00:01:50] INFO root fetch - processPackages [soar-sml]: Downloading https://files.pythonhosted.org/packages/6c/ff/fc5e2bf4adcfb014b6e49403f0669a9b3b0755f66bd21512e77264c9c11b/soar_sml-9.6.2a1-cp39-cp39-win_amd64.whl
+[2024-05-12 00:01:50] INFO root fetch - processPackages [dashport]: Downloading https://files.pythonhosted.org/packages/27/2e/dd6fedc72a6e2d4212eeb06a9b99ac66e0d2828694c1f29a2e4546e421dc/dashport-0.7.4.tar.gz
+[2024-05-12 00:01:51] INFO root fetch - processPackages [soar-sml]: executing diffoscope
+[2024-05-12 00:01:51] INFO root fetch - processPackages [soar-sml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soar_sml-9.6.2a-cp39-cp39-win_amd64.whl.zip tmp/soar_sml-9.6.2a1-cp39-cp39-win_amd64.whl.zip --markdown 20240512/s/soar-sml/9.6.2a0-9.6.2a1/README.md --exclude *.pyd
+[2024-05-12 00:01:51] INFO root fetch - processPackages [dashport]: executing diffoscope
+[2024-05-12 00:01:51] INFO root fetch - processPackages [dashport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dashport-0.7.3.tar.gz tmp/dashport-0.7.4.tar.gz --markdown 20240512/d/dashport/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-05-12 00:01:52] INFO root fetch - processPackages [dashport]: Remove: archive file [/home/abi/fetcher/tmp/dashport-0.7.3.tar.gz]
+[2024-05-12 00:01:52] INFO root fetch - processPackages [dashport]: Remove: archive file [/home/abi/fetcher/tmp/dashport-0.7.4.tar.gz]
+[2024-05-12 00:01:52] INFO root fetch - main [MainThread]: End processing [dashport]: success
+[2024-05-12 00:02:03] INFO root fetch - processPackages [soar-sml]: Remove: archive file [/home/abi/fetcher/tmp/soar_sml-9.6.2a-cp39-cp39-win_amd64.whl.zip]
+[2024-05-12 00:02:03] INFO root fetch - processPackages [soar-sml]: Remove: archive file [/home/abi/fetcher/tmp/soar_sml-9.6.2a1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-12 00:02:03] INFO root fetch - main [MainThread]: End processing [soar-sml]: success
+[2024-05-12 00:02:03] INFO root fetch - main [MainThread]: Store serial: [23164897]
