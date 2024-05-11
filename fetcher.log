@@ -1011,3 +1011,18 @@
 [2024-05-12 01:37:22] INFO root fetch - processPackages [dreamhack]: Remove: archive file [/home/abi/fetcher/tmp/dreamhack-1.0.6.tar.gz]
 [2024-05-12 01:37:22] INFO root fetch - main [MainThread]: End processing [dreamhack]: success
 [2024-05-12 01:37:22] INFO root fetch - main [MainThread]: Store serial: [23165349]
+[2024-05-12 01:39:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165349]
+[2024-05-12 01:39:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 01:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: leekz
+[2024-05-12 01:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nokey
+[2024-05-12 01:39:30] WARNING root fetch - processPackages [leekz]: Skipping, unable to determine old version
+[2024-05-12 01:39:30] INFO root fetch - main [MainThread]: End processing [leekz] error
+[2024-05-12 01:39:30] INFO root fetch - processPackages [nokey]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-12 01:39:30] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/19/19/6fc3cb8ac6f80f9d9dbbf52627fbfca846ec83914391e6514a5771f2f252/nokey-0.4.0.tar.gz
+[2024-05-12 01:39:31] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/ee/48/3cbc96a4a8af02810f4df7b6c0cfce1b57f957e748b1fd127310bac54d62/nokey-0.5.0.tar.gz
+[2024-05-12 01:39:31] INFO root fetch - processPackages [nokey]: executing diffoscope
+[2024-05-12 01:39:31] INFO root fetch - processPackages [nokey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nokey-0.4.0.tar.gz tmp/nokey-0.5.0.tar.gz --markdown 20240512/n/nokey/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-12 01:39:31] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.4.0.tar.gz]
+[2024-05-12 01:39:31] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.5.0.tar.gz]
+[2024-05-12 01:39:31] INFO root fetch - main [MainThread]: End processing [nokey]: success
+[2024-05-12 01:39:31] INFO root fetch - main [MainThread]: Store serial: [23165356]
