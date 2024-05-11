@@ -22,3 +22,18 @@
 [2024-05-12 00:02:03] INFO root fetch - processPackages [soar-sml]: Remove: archive file [/home/abi/fetcher/tmp/soar_sml-9.6.2a1-cp39-cp39-win_amd64.whl.zip]
 [2024-05-12 00:02:03] INFO root fetch - main [MainThread]: End processing [soar-sml]: success
 [2024-05-12 00:02:03] INFO root fetch - main [MainThread]: Store serial: [23164897]
+[2024-05-12 00:04:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164897]
+[2024-05-12 00:04:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 00:04:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unwomanizez
+[2024-05-12 00:04:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lili-activation-keras
+[2024-05-12 00:04:11] WARNING root fetch - processPackages [lili-activation-keras]: Skipping, unable to determine old version
+[2024-05-12 00:04:11] INFO root fetch - main [MainThread]: End processing [lili-activation-keras] error
+[2024-05-12 00:04:11] INFO root fetch - processPackages [unwomanizez]: New version: [2.1] Old Version: [1.1]
+[2024-05-12 00:04:11] INFO root fetch - processPackages [unwomanizez]: Downloading https://files.pythonhosted.org/packages/e9/fe/d80b857948cf721fafd46ec6a52c741a51fadf23b25fd797337cc2d1b470/unwomanizez-1.1.tar.gz
+[2024-05-12 00:04:12] INFO root fetch - processPackages [unwomanizez]: Downloading https://files.pythonhosted.org/packages/fd/8c/a22fe09d33b8230418590229cde85a2a9c4adb3314c8fe15823e56880b68/unwomanizez-2.1.tar.gz
+[2024-05-12 00:04:12] INFO root fetch - processPackages [unwomanizez]: executing diffoscope
+[2024-05-12 00:04:12] INFO root fetch - processPackages [unwomanizez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unwomanizez-1.1.tar.gz tmp/unwomanizez-2.1.tar.gz --markdown 20240512/u/unwomanizez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-12 00:04:12] INFO root fetch - processPackages [unwomanizez]: Remove: archive file [/home/abi/fetcher/tmp/unwomanizez-1.1.tar.gz]
+[2024-05-12 00:04:12] INFO root fetch - processPackages [unwomanizez]: Remove: archive file [/home/abi/fetcher/tmp/unwomanizez-2.1.tar.gz]
+[2024-05-12 00:04:12] INFO root fetch - main [MainThread]: End processing [unwomanizez]: success
+[2024-05-12 00:04:12] INFO root fetch - main [MainThread]: Store serial: [23164908]
