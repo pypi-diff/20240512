@@ -912,3 +912,15 @@
 [2024-05-12 01:28:38] INFO root fetch - processPackages [whitingz]: Remove: archive file [/home/abi/fetcher/tmp/whitingz-2.1.tar.gz]
 [2024-05-12 01:28:38] INFO root fetch - main [MainThread]: End processing [whitingz]: success
 [2024-05-12 01:28:38] INFO root fetch - main [MainThread]: Store serial: [23165315]
+[2024-05-12 01:30:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165315]
+[2024-05-12 01:30:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 01:30:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: niwatoko
+[2024-05-12 01:30:46] INFO root fetch - processPackages [niwatoko]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-12 01:30:46] INFO root fetch - processPackages [niwatoko]: Downloading https://files.pythonhosted.org/packages/90/cf/9834cab715ffb3a76f0e7c1d29425d6ad5115154e79c0a46dd103fd1cfe8/niwatoko-1.1.4.tar.gz
+[2024-05-12 01:30:46] INFO root fetch - processPackages [niwatoko]: Downloading https://files.pythonhosted.org/packages/33/38/3a1f59e82f7f0a3eb957a6022fb8fb3674a38a9f8ce262bb528d64d74a70/niwatoko-1.1.5.tar.gz
+[2024-05-12 01:30:47] INFO root fetch - processPackages [niwatoko]: executing diffoscope
+[2024-05-12 01:30:47] INFO root fetch - processPackages [niwatoko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/niwatoko-1.1.4.tar.gz tmp/niwatoko-1.1.5.tar.gz --markdown 20240512/n/niwatoko/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-12 01:30:47] INFO root fetch - processPackages [niwatoko]: Remove: archive file [/home/abi/fetcher/tmp/niwatoko-1.1.4.tar.gz]
+[2024-05-12 01:30:47] INFO root fetch - processPackages [niwatoko]: Remove: archive file [/home/abi/fetcher/tmp/niwatoko-1.1.5.tar.gz]
+[2024-05-12 01:30:47] INFO root fetch - main [MainThread]: End processing [niwatoko]: success
+[2024-05-12 01:30:47] INFO root fetch - main [MainThread]: Store serial: [23165318]
