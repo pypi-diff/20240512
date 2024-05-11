@@ -102,3 +102,9 @@
 [2024-05-12 00:10:41] INFO root fetch - processPackages [upscrewz]: Remove: archive file [/home/abi/fetcher/tmp/upscrewz-2.1.tar.gz]
 [2024-05-12 00:10:41] INFO root fetch - main [MainThread]: End processing [upscrewz]: success
 [2024-05-12 00:10:41] INFO root fetch - main [MainThread]: Store serial: [23164939]
+[2024-05-12 00:12:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164939]
+[2024-05-12 00:12:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 00:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: raglansz
+[2024-05-12 00:12:50] WARNING root fetch - processPackages [raglansz]: Skipping, unable to determine old version
+[2024-05-12 00:12:50] INFO root fetch - main [MainThread]: End processing [raglansz] error
+[2024-05-12 00:12:50] INFO root fetch - main [MainThread]: Store serial: [23164943]
