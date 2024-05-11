@@ -108,3 +108,15 @@
 [2024-05-12 00:12:50] WARNING root fetch - processPackages [raglansz]: Skipping, unable to determine old version
 [2024-05-12 00:12:50] INFO root fetch - main [MainThread]: End processing [raglansz] error
 [2024-05-12 00:12:50] INFO root fetch - main [MainThread]: Store serial: [23164943]
+[2024-05-12 00:14:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164943]
+[2024-05-12 00:15:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 00:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ureasz
+[2024-05-12 00:15:00] INFO root fetch - processPackages [ureasz]: New version: [2.1] Old Version: [1.1]
+[2024-05-12 00:15:00] INFO root fetch - processPackages [ureasz]: Downloading https://files.pythonhosted.org/packages/9f/d8/eaaf998d991587c371a1eb9ad393683339b026e032b2b8460c66238d601f/ureasz-1.1.tar.gz
+[2024-05-12 00:15:00] INFO root fetch - processPackages [ureasz]: Downloading https://files.pythonhosted.org/packages/b5/dd/a5a6fdc544dd1c3570917a8c23f5a261bcc94e11b4c60052b5aaefd43033/ureasz-2.1.tar.gz
+[2024-05-12 00:15:01] INFO root fetch - processPackages [ureasz]: executing diffoscope
+[2024-05-12 00:15:01] INFO root fetch - processPackages [ureasz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ureasz-1.1.tar.gz tmp/ureasz-2.1.tar.gz --markdown 20240512/u/ureasz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-12 00:15:01] INFO root fetch - processPackages [ureasz]: Remove: archive file [/home/abi/fetcher/tmp/ureasz-1.1.tar.gz]
+[2024-05-12 00:15:01] INFO root fetch - processPackages [ureasz]: Remove: archive file [/home/abi/fetcher/tmp/ureasz-2.1.tar.gz]
+[2024-05-12 00:15:01] INFO root fetch - main [MainThread]: End processing [ureasz]: success
+[2024-05-12 00:15:01] INFO root fetch - main [MainThread]: Store serial: [23164947]
