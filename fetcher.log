@@ -360,3 +360,9 @@
 [2024-05-12 00:40:50] INFO root fetch - processPackages [sarus-data-spec-public]: Remove: archive file [/home/abi/fetcher/tmp/sarus_data_spec_public-4.0.0.dev7.tar.gz]
 [2024-05-12 00:40:50] INFO root fetch - main [MainThread]: End processing [sarus-data-spec-public]: success
 [2024-05-12 00:40:50] INFO root fetch - main [MainThread]: Store serial: [23165061]
+[2024-05-12 00:42:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165061]
+[2024-05-12 00:42:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 00:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonavoidablyz
+[2024-05-12 00:42:58] WARNING root fetch - processPackages [nonavoidablyz]: Skipping, unable to determine old version
+[2024-05-12 00:42:58] INFO root fetch - main [MainThread]: End processing [nonavoidablyz] error
+[2024-05-12 00:42:58] INFO root fetch - main [MainThread]: Store serial: [23165065]
