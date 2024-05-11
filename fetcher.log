@@ -144,3 +144,27 @@
 [2024-05-12 00:17:11] INFO root fetch - processPackages [lukasdata]: Remove: archive file [/home/abi/fetcher/tmp/lukasdata-1.3.2.tar.gz]
 [2024-05-12 00:17:11] INFO root fetch - main [MainThread]: End processing [lukasdata]: success
 [2024-05-12 00:17:11] INFO root fetch - main [MainThread]: Store serial: [23164959]
+[2024-05-12 00:19:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164959]
+[2024-05-12 00:19:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 00:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: altscore-workflow-builder
+[2024-05-12 00:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenaura
+[2024-05-12 00:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vatfulz
+[2024-05-12 00:19:19] INFO root fetch - processPackages [altscore-workflow-builder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 00:19:19] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/f0/fa/89cca82209a4c117e11fbf9e81a7731baafe7d98942d787c62e02ca375da/altscore_workflow_builder-0.0.8.tar.gz
+[2024-05-12 00:19:19] WARNING root fetch - processPackages [zenaura]: Skipping, unable to determine old version
+[2024-05-12 00:19:19] INFO root fetch - main [MainThread]: End processing [zenaura] error
+[2024-05-12 00:19:19] INFO root fetch - processPackages [vatfulz]: New version: [2.1] Old Version: [1.1]
+[2024-05-12 00:19:19] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/68/8d/c9a42a6d012c1a9fb9ef55b57e3251bfa8d248169a64513b839c30038528/altscore_workflow_builder-0.0.9.tar.gz
+[2024-05-12 00:19:19] INFO root fetch - processPackages [vatfulz]: Downloading https://files.pythonhosted.org/packages/9e/09/19e6a412e5db458d73b6d47d1744a7f06fa10e5d82e27c9a6f95b53f8dd6/vatfulz-1.1.tar.gz
+[2024-05-12 00:19:19] INFO root fetch - processPackages [altscore-workflow-builder]: executing diffoscope
+[2024-05-12 00:19:19] INFO root fetch - processPackages [altscore-workflow-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore_workflow_builder-0.0.8.tar.gz tmp/altscore_workflow_builder-0.0.9.tar.gz --markdown 20240512/a/altscore-workflow-builder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 00:19:20] INFO root fetch - processPackages [vatfulz]: Downloading https://files.pythonhosted.org/packages/eb/94/84589c1c8f672793de90a278f8062005d68ad161b8c54904325c67a68d1c/vatfulz-2.1.tar.gz
+[2024-05-12 00:19:20] INFO root fetch - processPackages [vatfulz]: executing diffoscope
+[2024-05-12 00:19:20] INFO root fetch - processPackages [vatfulz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vatfulz-1.1.tar.gz tmp/vatfulz-2.1.tar.gz --markdown 20240512/v/vatfulz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-12 00:19:20] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.8.tar.gz]
+[2024-05-12 00:19:20] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.9.tar.gz]
+[2024-05-12 00:19:20] INFO root fetch - main [MainThread]: End processing [altscore-workflow-builder]: success
+[2024-05-12 00:19:20] INFO root fetch - processPackages [vatfulz]: Remove: archive file [/home/abi/fetcher/tmp/vatfulz-1.1.tar.gz]
+[2024-05-12 00:19:20] INFO root fetch - processPackages [vatfulz]: Remove: archive file [/home/abi/fetcher/tmp/vatfulz-2.1.tar.gz]
+[2024-05-12 00:19:20] INFO root fetch - main [MainThread]: End processing [vatfulz]: success
+[2024-05-12 00:19:20] INFO root fetch - main [MainThread]: Store serial: [23164976]
