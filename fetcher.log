@@ -837,3 +837,39 @@
 [2024-05-12 01:22:06] INFO root fetch - processPackages [waywortz]: Remove: archive file [/home/abi/fetcher/tmp/waywortz-2.1.tar.gz]
 [2024-05-12 01:22:06] INFO root fetch - main [MainThread]: End processing [waywortz]: success
 [2024-05-12 01:22:06] INFO root fetch - main [MainThread]: Store serial: [23165284]
+[2024-05-12 01:24:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165284]
+[2024-05-12 01:24:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 01:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dottable-dict
+[2024-05-12 01:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: poornessz
+[2024-05-12 01:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: device-drama
+[2024-05-12 01:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: staging-cacao-accounting
+[2024-05-12 01:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bw2data
+[2024-05-12 01:24:15] INFO root fetch - processPackages [bw2data]: New version: [4.0.dev9] Old Version: [4.0.dev8]
+[2024-05-12 01:24:15] WARNING root fetch - processPackages [dottable-dict]: Skipping, unable to determine old version
+[2024-05-12 01:24:15] INFO root fetch - main [MainThread]: End processing [dottable-dict] error
+[2024-05-12 01:24:15] INFO root fetch - processPackages [staging-cacao-accounting]: New version: [0.0.1b20240512] Old Version: [0.0.1b20240511]
+[2024-05-12 01:24:15] INFO root fetch - processPackages [device-drama]: New version: [24.5.13] Old Version: [23.9.16]
+[2024-05-12 01:24:15] INFO root fetch - processPackages [staging-cacao-accounting]: Downloading https://files.pythonhosted.org/packages/87/56/6edb580515ee27055b76bc878b22acde9dbe04b4a4febdc001ca2db91c46/staging_cacao_accounting-0.0.1b20240511.tar.gz
+[2024-05-12 01:24:15] WARNING root fetch - processPackages [poornessz]: Skipping, unable to determine old version
+[2024-05-12 01:24:15] INFO root fetch - main [MainThread]: End processing [poornessz] error
+[2024-05-12 01:24:15] INFO root fetch - processPackages [bw2data]: Downloading https://files.pythonhosted.org/packages/79/e2/4a6806f2f7e95e68ef879286b48a99e79f5ef3c640b203015d6e50b88c4c/bw2data-4.0.dev8.tar.gz
+[2024-05-12 01:24:15] INFO root fetch - processPackages [device-drama]: Downloading https://files.pythonhosted.org/packages/b4/df/75345b69b2df6ae9e5d89948a67d1b3c43453779400a2faf42685ca480ef/device_drama-23.9.16.tar.gz
+[2024-05-12 01:24:16] INFO root fetch - processPackages [device-drama]: Downloading https://files.pythonhosted.org/packages/6f/2e/237ba55bb0aa69068f96413397c0a524a3a7f50e8cd5c7718a51ad8bd21d/device_drama-24.5.13.tar.gz
+[2024-05-12 01:24:16] INFO root fetch - processPackages [bw2data]: Downloading https://files.pythonhosted.org/packages/fc/8c/90e7206ce18d131ff4911ed43ec32ba0a2675262f923b4081196e2a06757/bw2data-4.0.dev9.tar.gz
+[2024-05-12 01:24:16] INFO root fetch - processPackages [staging-cacao-accounting]: Downloading https://files.pythonhosted.org/packages/0d/95/817229c97e10676bd2dca8faba2b1aa4138d72c9cd2100fc8d42d63d1464/staging_cacao_accounting-0.0.1b20240512.tar.gz
+[2024-05-12 01:24:16] INFO root fetch - processPackages [device-drama]: executing diffoscope
+[2024-05-12 01:24:16] INFO root fetch - processPackages [device-drama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/device_drama-23.9.16.tar.gz tmp/device_drama-24.5.13.tar.gz --markdown 20240512/d/device-drama/23.9.16-24.5.13/README.md --exclude *.pyd
+[2024-05-12 01:24:16] INFO root fetch - processPackages [bw2data]: executing diffoscope
+[2024-05-12 01:24:16] INFO root fetch - processPackages [bw2data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bw2data-4.0.dev8.tar.gz tmp/bw2data-4.0.dev9.tar.gz --markdown 20240512/b/bw2data/4.0.dev8-4.0.dev9/README.md --exclude *.pyd
+[2024-05-12 01:24:16] INFO root fetch - processPackages [staging-cacao-accounting]: executing diffoscope
+[2024-05-12 01:24:16] INFO root fetch - processPackages [staging-cacao-accounting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/staging_cacao_accounting-0.0.1b20240511.tar.gz tmp/staging_cacao_accounting-0.0.1b20240512.tar.gz --markdown 20240512/s/staging-cacao-accounting/0.0.1b20240511-0.0.1b20240512/README.md --exclude *.pyd
+[2024-05-12 01:24:16] INFO root fetch - processPackages [device-drama]: Remove: archive file [/home/abi/fetcher/tmp/device_drama-23.9.16.tar.gz]
+[2024-05-12 01:24:16] INFO root fetch - processPackages [device-drama]: Remove: archive file [/home/abi/fetcher/tmp/device_drama-24.5.13.tar.gz]
+[2024-05-12 01:24:16] INFO root fetch - main [MainThread]: End processing [device-drama]: success
+[2024-05-12 01:24:17] INFO root fetch - processPackages [bw2data]: Remove: archive file [/home/abi/fetcher/tmp/bw2data-4.0.dev8.tar.gz]
+[2024-05-12 01:24:17] INFO root fetch - processPackages [bw2data]: Remove: archive file [/home/abi/fetcher/tmp/bw2data-4.0.dev9.tar.gz]
+[2024-05-12 01:24:17] INFO root fetch - main [MainThread]: End processing [bw2data]: success
+[2024-05-12 01:24:18] INFO root fetch - processPackages [staging-cacao-accounting]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting-0.0.1b20240511.tar.gz]
+[2024-05-12 01:24:18] INFO root fetch - processPackages [staging-cacao-accounting]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting-0.0.1b20240512.tar.gz]
+[2024-05-12 01:24:18] INFO root fetch - main [MainThread]: End processing [staging-cacao-accounting]: success
+[2024-05-12 01:24:18] INFO root fetch - main [MainThread]: Store serial: [23165300]
