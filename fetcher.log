@@ -52,3 +52,27 @@
 [2024-05-12 00:06:22] INFO root fetch - processPackages [docugenr8]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8-0.0.9.tar.gz]
 [2024-05-12 00:06:22] INFO root fetch - main [MainThread]: End processing [docugenr8]: success
 [2024-05-12 00:06:22] INFO root fetch - main [MainThread]: Store serial: [23164917]
+[2024-05-12 00:08:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164917]
+[2024-05-12 00:08:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 00:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beancount-data
+[2024-05-12 00:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: brlite3
+[2024-05-12 00:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiocmcapi
+[2024-05-12 00:08:30] INFO root fetch - processPackages [beancount-data]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-05-12 00:08:30] INFO root fetch - processPackages [aiocmcapi]: New version: [0.4] Old Version: [0.3]
+[2024-05-12 00:08:31] INFO root fetch - processPackages [beancount-data]: Downloading https://files.pythonhosted.org/packages/38/54/11481b00be3471f34bc6942b62b4f6e23cb7fb3d1ec2c4294daaf176b6a6/beancount_data-3.0.0.tar.gz
+[2024-05-12 00:08:31] INFO root fetch - processPackages [aiocmcapi]: Downloading https://files.pythonhosted.org/packages/84/36/0c6fe37b8b3bf325503c0b002d72cbb76625ee4c33c167785d8537fcfe57/aiocmcapi-0.3.tar.gz
+[2024-05-12 00:08:31] WARNING root fetch - processPackages [brlite3]: Skipping, unable to determine old version
+[2024-05-12 00:08:31] INFO root fetch - main [MainThread]: End processing [brlite3] error
+[2024-05-12 00:08:31] INFO root fetch - processPackages [beancount-data]: Downloading https://files.pythonhosted.org/packages/1b/a2/e1ae26fa65be427f96dce3060b4b6399ac23fb24a2da011bec5c9fb01621/beancount_data-3.0.1.tar.gz
+[2024-05-12 00:08:31] INFO root fetch - processPackages [aiocmcapi]: Downloading https://files.pythonhosted.org/packages/e9/ba/423fd2e39f60f0cf06ef572e01609eeaafe65ba243413a1588926a674936/aiocmcapi-0.4.tar.gz
+[2024-05-12 00:08:31] INFO root fetch - processPackages [beancount-data]: executing diffoscope
+[2024-05-12 00:08:31] INFO root fetch - processPackages [beancount-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beancount_data-3.0.0.tar.gz tmp/beancount_data-3.0.1.tar.gz --markdown 20240512/b/beancount-data/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-05-12 00:08:31] INFO root fetch - processPackages [aiocmcapi]: executing diffoscope
+[2024-05-12 00:08:31] INFO root fetch - processPackages [aiocmcapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocmcapi-0.3.tar.gz tmp/aiocmcapi-0.4.tar.gz --markdown 20240512/a/aiocmcapi/0.3-0.4/README.md --exclude *.pyd
+[2024-05-12 00:08:31] INFO root fetch - processPackages [beancount-data]: Remove: archive file [/home/abi/fetcher/tmp/beancount_data-3.0.0.tar.gz]
+[2024-05-12 00:08:31] INFO root fetch - processPackages [beancount-data]: Remove: archive file [/home/abi/fetcher/tmp/beancount_data-3.0.1.tar.gz]
+[2024-05-12 00:08:31] INFO root fetch - main [MainThread]: End processing [beancount-data]: success
+[2024-05-12 00:08:32] INFO root fetch - processPackages [aiocmcapi]: Remove: archive file [/home/abi/fetcher/tmp/aiocmcapi-0.3.tar.gz]
+[2024-05-12 00:08:32] INFO root fetch - processPackages [aiocmcapi]: Remove: archive file [/home/abi/fetcher/tmp/aiocmcapi-0.4.tar.gz]
+[2024-05-12 00:08:32] INFO root fetch - main [MainThread]: End processing [aiocmcapi]: success
+[2024-05-12 00:08:32] INFO root fetch - main [MainThread]: Store serial: [23164931]
