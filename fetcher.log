@@ -1095,3 +1095,42 @@
 [2024-05-12 01:43:51] INFO root fetch - processPackages [xnlpy]: Remove: archive file [/home/abi/fetcher/tmp/xnlpy-0.0.2-py3-none-any.whl.zip]
 [2024-05-12 01:43:51] INFO root fetch - main [MainThread]: End processing [xnlpy]: success
 [2024-05-12 01:43:51] INFO root fetch - main [MainThread]: Store serial: [23165385]
+[2024-05-12 01:45:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165385]
+[2024-05-12 01:46:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 01:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cycling-dynamics
+[2024-05-12 01:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: staging-cacao-accounting-desktop
+[2024-05-12 01:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: atop
+[2024-05-12 01:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clear-skies-stripe
+[2024-05-12 01:46:00] INFO root fetch - processPackages [cycling-dynamics]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 01:46:00] INFO root fetch - processPackages [atop]: New version: [0.2.1] Old Version: [0.1.9]
+[2024-05-12 01:46:00] INFO root fetch - processPackages [clear-skies-stripe]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-05-12 01:46:00] INFO root fetch - processPackages [cycling-dynamics]: Downloading https://files.pythonhosted.org/packages/64/2f/00e4212d68730aacdf9d6cbcbd10e7b37e08cbee91b5bf9e960f0ce2a043/cycling_dynamics-0.0.8.tar.gz
+[2024-05-12 01:46:00] INFO root fetch - processPackages [staging-cacao-accounting-desktop]: New version: [2024.5.7] Old Version: [2024.5.5]
+[2024-05-12 01:46:00] INFO root fetch - processPackages [atop]: Downloading https://files.pythonhosted.org/packages/b6/94/5bc6efc20f791d8459ef18fd8ea4cdc82ac6101332312911dc4410330453/atop-0.1.9.tar.gz
+[2024-05-12 01:46:00] INFO root fetch - processPackages [staging-cacao-accounting-desktop]: Downloading https://files.pythonhosted.org/packages/70/6a/1bc4d285a22b1734ec98fb5fb8dba4eb63f426cd544039684a0abdc5a6bd/staging_cacao_accounting_desktop-2024.5.5.tar.gz
+[2024-05-12 01:46:00] INFO root fetch - processPackages [clear-skies-stripe]: Downloading https://files.pythonhosted.org/packages/a2/c8/e874d3bb04483680db01e3d02e23e66a7a890fff26f2c7565cfa63b06d75/clear_skies_stripe-0.9.3.tar.gz
+[2024-05-12 01:46:00] INFO root fetch - processPackages [atop]: Downloading https://files.pythonhosted.org/packages/48/e4/56eefd78856c740121ecb892c6b910be2004a1483938865361fb46629fde/atop-0.2.1.tar.gz
+[2024-05-12 01:46:00] INFO root fetch - processPackages [cycling-dynamics]: Downloading https://files.pythonhosted.org/packages/bf/0d/eb86860df9cad681d269880655b1ec2d25fb4b7fec23bf515c11452b9b50/cycling_dynamics-0.0.9.tar.gz
+[2024-05-12 01:46:00] INFO root fetch - processPackages [atop]: executing diffoscope
+[2024-05-12 01:46:00] INFO root fetch - processPackages [atop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atop-0.1.9.tar.gz tmp/atop-0.2.1.tar.gz --markdown 20240512/a/atop/0.1.9-0.2.1/README.md --exclude *.pyd
+[2024-05-12 01:46:00] INFO root fetch - processPackages [staging-cacao-accounting-desktop]: Downloading https://files.pythonhosted.org/packages/80/72/e3d007ceca3f5d64beaefee2f06ea97da2951de3e9317c074739317de06b/staging_cacao_accounting_desktop-2024.5.7.tar.gz
+[2024-05-12 01:46:00] INFO root fetch - processPackages [cycling-dynamics]: executing diffoscope
+[2024-05-12 01:46:00] INFO root fetch - processPackages [cycling-dynamics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycling_dynamics-0.0.8.tar.gz tmp/cycling_dynamics-0.0.9.tar.gz --markdown 20240512/c/cycling-dynamics/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 01:46:00] INFO root fetch - processPackages [clear-skies-stripe]: Downloading https://files.pythonhosted.org/packages/07/66/5974fe8923794a93041db9dc5a3275e878f334e468525cc4b4981b4f15f0/clear_skies_stripe-0.9.4.tar.gz
+[2024-05-12 01:46:00] INFO root fetch - processPackages [staging-cacao-accounting-desktop]: executing diffoscope
+[2024-05-12 01:46:00] INFO root fetch - processPackages [staging-cacao-accounting-desktop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/staging_cacao_accounting_desktop-2024.5.5.tar.gz tmp/staging_cacao_accounting_desktop-2024.5.7.tar.gz --markdown 20240512/s/staging-cacao-accounting-desktop/2024.5.5-2024.5.7/README.md --exclude *.pyd
+[2024-05-12 01:46:01] INFO root fetch - processPackages [clear-skies-stripe]: executing diffoscope
+[2024-05-12 01:46:01] INFO root fetch - processPackages [clear-skies-stripe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clear_skies_stripe-0.9.3.tar.gz tmp/clear_skies_stripe-0.9.4.tar.gz --markdown 20240512/c/clear-skies-stripe/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-05-12 01:46:01] INFO root fetch - processPackages [atop]: Remove: archive file [/home/abi/fetcher/tmp/atop-0.1.9.tar.gz]
+[2024-05-12 01:46:01] INFO root fetch - processPackages [atop]: Remove: archive file [/home/abi/fetcher/tmp/atop-0.2.1.tar.gz]
+[2024-05-12 01:46:01] INFO root fetch - main [MainThread]: End processing [atop]: success
+[2024-05-12 01:46:01] INFO root fetch - processPackages [staging-cacao-accounting-desktop]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting_desktop-2024.5.5.tar.gz]
+[2024-05-12 01:46:01] INFO root fetch - processPackages [staging-cacao-accounting-desktop]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting_desktop-2024.5.7.tar.gz]
+[2024-05-12 01:46:01] INFO root fetch - main [MainThread]: End processing [staging-cacao-accounting-desktop]: success
+[2024-05-12 01:46:01] INFO root fetch - processPackages [cycling-dynamics]: Remove: archive file [/home/abi/fetcher/tmp/cycling_dynamics-0.0.8.tar.gz]
+[2024-05-12 01:46:01] INFO root fetch - processPackages [cycling-dynamics]: Remove: archive file [/home/abi/fetcher/tmp/cycling_dynamics-0.0.9.tar.gz]
+[2024-05-12 01:46:01] INFO root fetch - main [MainThread]: End processing [cycling-dynamics]: success
+[2024-05-12 01:46:01] INFO root fetch - processPackages [clear-skies-stripe]: Remove: archive file [/home/abi/fetcher/tmp/clear_skies_stripe-0.9.3.tar.gz]
+[2024-05-12 01:46:01] INFO root fetch - processPackages [clear-skies-stripe]: Remove: archive file [/home/abi/fetcher/tmp/clear_skies_stripe-0.9.4.tar.gz]
+[2024-05-12 01:46:01] INFO root fetch - main [MainThread]: End processing [clear-skies-stripe]: success
+[2024-05-12 01:46:01] INFO root fetch - main [MainThread]: Store serial: [23165397]
