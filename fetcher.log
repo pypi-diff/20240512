@@ -873,3 +873,24 @@
 [2024-05-12 01:24:18] INFO root fetch - processPackages [staging-cacao-accounting]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting-0.0.1b20240512.tar.gz]
 [2024-05-12 01:24:18] INFO root fetch - main [MainThread]: End processing [staging-cacao-accounting]: success
 [2024-05-12 01:24:18] INFO root fetch - main [MainThread]: Store serial: [23165300]
+[2024-05-12 01:26:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165300]
+[2024-05-12 01:26:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 01:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gflabel
+[2024-05-12 01:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vdg
+[2024-05-12 01:26:27] INFO root fetch - processPackages [vdg]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-12 01:26:27] INFO root fetch - processPackages [gflabel]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-12 01:26:27] INFO root fetch - processPackages [gflabel]: Downloading https://files.pythonhosted.org/packages/84/82/896e749fa0dce11fe5ca1e43d4eb051ad202c762cbe927cfdc8a8d20bb5a/gflabel-0.1.3.tar.gz
+[2024-05-12 01:26:27] INFO root fetch - processPackages [vdg]: Downloading https://files.pythonhosted.org/packages/f5/b4/9fcacad63df7bd05b3ba39d0044a1ccbf4374e1d12d890360dd4c311c2d2/vdg-0.2.0.tar.gz
+[2024-05-12 01:26:27] INFO root fetch - processPackages [gflabel]: Downloading https://files.pythonhosted.org/packages/c4/7e/9d700366eb53ee9f15811f2f3eb797e5aa1b090da7b5c4bd8562cd9f3ee7/gflabel-0.1.4.tar.gz
+[2024-05-12 01:26:27] INFO root fetch - processPackages [vdg]: Downloading https://files.pythonhosted.org/packages/0a/4d/48d0eb0080d4fe141e362e0d62554680c839da2ee11cab86dbf5196aa2c4/vdg-0.2.1.tar.gz
+[2024-05-12 01:26:27] INFO root fetch - processPackages [gflabel]: executing diffoscope
+[2024-05-12 01:26:27] INFO root fetch - processPackages [gflabel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gflabel-0.1.3.tar.gz tmp/gflabel-0.1.4.tar.gz --markdown 20240512/g/gflabel/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-12 01:26:27] INFO root fetch - processPackages [vdg]: executing diffoscope
+[2024-05-12 01:26:27] INFO root fetch - processPackages [vdg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vdg-0.2.0.tar.gz tmp/vdg-0.2.1.tar.gz --markdown 20240512/v/vdg/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-12 01:26:28] INFO root fetch - processPackages [gflabel]: Remove: archive file [/home/abi/fetcher/tmp/gflabel-0.1.3.tar.gz]
+[2024-05-12 01:26:28] INFO root fetch - processPackages [gflabel]: Remove: archive file [/home/abi/fetcher/tmp/gflabel-0.1.4.tar.gz]
+[2024-05-12 01:26:28] INFO root fetch - main [MainThread]: End processing [gflabel]: success
+[2024-05-12 01:26:28] INFO root fetch - processPackages [vdg]: Remove: archive file [/home/abi/fetcher/tmp/vdg-0.2.0.tar.gz]
+[2024-05-12 01:26:28] INFO root fetch - processPackages [vdg]: Remove: archive file [/home/abi/fetcher/tmp/vdg-0.2.1.tar.gz]
+[2024-05-12 01:26:28] INFO root fetch - main [MainThread]: End processing [vdg]: success
+[2024-05-12 01:26:28] INFO root fetch - main [MainThread]: Store serial: [23165306]
