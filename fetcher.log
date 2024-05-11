@@ -645,3 +645,18 @@
 [2024-05-12 01:06:58] INFO root fetch - processPackages [ubo-app]: Remove: archive file [/home/abi/fetcher/tmp/ubo_app-0.9.9.tar.gz]
 [2024-05-12 01:06:58] INFO root fetch - main [MainThread]: End processing [ubo-app]: success
 [2024-05-12 01:06:58] INFO root fetch - main [MainThread]: Store serial: [23165193]
+[2024-05-12 01:09:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165193]
+[2024-05-12 01:09:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 01:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OZI.build
+[2024-05-12 01:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sprattledz
+[2024-05-12 01:09:06] INFO root fetch - processPackages [OZI.build]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 01:09:06] INFO root fetch - processPackages [OZI.build]: Downloading https://files.pythonhosted.org/packages/c2/68/445f96f8f6a7f7bc556936a301c80ff6e3b858eff7efa40c69e738b241fa/OZI.build-0.0.8.tar.gz
+[2024-05-12 01:09:06] WARNING root fetch - processPackages [sprattledz]: Skipping, unable to determine old version
+[2024-05-12 01:09:06] INFO root fetch - main [MainThread]: End processing [sprattledz] error
+[2024-05-12 01:09:06] INFO root fetch - processPackages [OZI.build]: Downloading https://files.pythonhosted.org/packages/b8/82/03697e429f995cc711a5f35ab319b525638b624dc6970aef7ef1879562c0/OZI.build-0.0.9.tar.gz
+[2024-05-12 01:09:06] INFO root fetch - processPackages [OZI.build]: executing diffoscope
+[2024-05-12 01:09:06] INFO root fetch - processPackages [OZI.build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI.build-0.0.8.tar.gz tmp/OZI.build-0.0.9.tar.gz --markdown 20240512/O/OZI.build/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 01:09:07] INFO root fetch - processPackages [OZI.build]: Remove: archive file [/home/abi/fetcher/tmp/OZI.build-0.0.8.tar.gz]
+[2024-05-12 01:09:07] INFO root fetch - processPackages [OZI.build]: Remove: archive file [/home/abi/fetcher/tmp/OZI.build-0.0.9.tar.gz]
+[2024-05-12 01:09:07] INFO root fetch - main [MainThread]: End processing [OZI.build]: success
+[2024-05-12 01:09:07] INFO root fetch - main [MainThread]: Store serial: [23165200]
