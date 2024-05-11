@@ -1149,3 +1149,12 @@
 [2024-05-12 01:48:11] INFO root fetch - processPackages [zugtierlasterz]: Remove: archive file [/home/abi/fetcher/tmp/zugtierlasterz-2.1.tar.gz]
 [2024-05-12 01:48:11] INFO root fetch - main [MainThread]: End processing [zugtierlasterz]: success
 [2024-05-12 01:48:11] INFO root fetch - main [MainThread]: Store serial: [23165404]
+[2024-05-12 01:50:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165404]
+[2024-05-12 01:50:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 01:50:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: theologianz
+[2024-05-12 01:50:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdbt
+[2024-05-12 01:50:19] WARNING root fetch - processPackages [cdbt]: Skipping, unable to determine old version
+[2024-05-12 01:50:19] INFO root fetch - main [MainThread]: End processing [cdbt] error
+[2024-05-12 01:50:20] WARNING root fetch - processPackages [theologianz]: Skipping, unable to determine old version
+[2024-05-12 01:50:20] INFO root fetch - main [MainThread]: End processing [theologianz] error
+[2024-05-12 01:50:20] INFO root fetch - main [MainThread]: Store serial: [23165412]
