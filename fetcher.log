@@ -705,3 +705,33 @@
 [2024-05-12 01:13:26] WARNING root fetch - processPackages [nunletz]: Skipping, unable to determine old version
 [2024-05-12 01:13:26] INFO root fetch - main [MainThread]: End processing [nunletz] error
 [2024-05-12 01:13:26] INFO root fetch - main [MainThread]: Store serial: [23165216]
+[2024-05-12 01:15:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165216]
+[2024-05-12 01:15:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 01:15:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: req-compile
+[2024-05-12 01:15:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scicookie
+[2024-05-12 01:15:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: manifast
+[2024-05-12 01:15:35] INFO root fetch - processPackages [manifast]: New version: [1.0.0] Old Version: [0.0.9]
+[2024-05-12 01:15:35] INFO root fetch - processPackages [req-compile]: New version: [1.0.0rc9] Old Version: [1.0.0rc8]
+[2024-05-12 01:15:35] INFO root fetch - processPackages [scicookie]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-05-12 01:15:35] INFO root fetch - processPackages [req-compile]: Downloading https://files.pythonhosted.org/packages/96/9b/d5e46a5c84a6cf0477d84a18587a02cef26b51708a41c9dcc16b6f6ec748/req-compile-1.0.0rc8.tar.gz
+[2024-05-12 01:15:35] INFO root fetch - processPackages [manifast]: Downloading https://files.pythonhosted.org/packages/57/ba/b199fd85bb13cb9c3846d1f9b76e0d143d4ef55451056b4cc69a454abf2e/manifast-0.0.9.tar.gz
+[2024-05-12 01:15:35] INFO root fetch - processPackages [scicookie]: Downloading https://files.pythonhosted.org/packages/99/ef/d1634e8d2b1bf38fcdea144aac57ca11edc2acb45feda6fae4d9c76932bf/scicookie-0.8.1.tar.gz
+[2024-05-12 01:15:35] INFO root fetch - processPackages [req-compile]: Downloading https://files.pythonhosted.org/packages/fc/cb/0a81d71ea9afc0f413877a3fa62c1fb73698e1166c5e241802b8739c7fcd/req-compile-1.0.0rc9.tar.gz
+[2024-05-12 01:15:35] INFO root fetch - processPackages [scicookie]: Downloading https://files.pythonhosted.org/packages/ae/74/ce430812532f4080d27598f35db036007edfe2c451695fd1dfc74f4d2c3a/scicookie-0.8.2.tar.gz
+[2024-05-12 01:15:35] INFO root fetch - processPackages [manifast]: Downloading https://files.pythonhosted.org/packages/ec/5c/90d495d5646054f6902e66c0e7b7256679536e2decb0556b25e59197e89a/manifast-1.0.0.tar.gz
+[2024-05-12 01:15:35] INFO root fetch - processPackages [scicookie]: executing diffoscope
+[2024-05-12 01:15:35] INFO root fetch - processPackages [scicookie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scicookie-0.8.1.tar.gz tmp/scicookie-0.8.2.tar.gz --markdown 20240512/s/scicookie/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-05-12 01:15:35] INFO root fetch - processPackages [manifast]: executing diffoscope
+[2024-05-12 01:15:36] INFO root fetch - processPackages [manifast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manifast-0.0.9.tar.gz tmp/manifast-1.0.0.tar.gz --markdown 20240512/m/manifast/0.0.9-1.0.0/README.md --exclude *.pyd
+[2024-05-12 01:15:36] INFO root fetch - processPackages [req-compile]: executing diffoscope
+[2024-05-12 01:15:36] INFO root fetch - processPackages [req-compile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/req-compile-1.0.0rc8.tar.gz tmp/req-compile-1.0.0rc9.tar.gz --markdown 20240512/r/req-compile/1.0.0rc8-1.0.0rc9/README.md --exclude *.pyd
+[2024-05-12 01:15:36] INFO root fetch - processPackages [manifast]: Remove: archive file [/home/abi/fetcher/tmp/manifast-0.0.9.tar.gz]
+[2024-05-12 01:15:36] INFO root fetch - processPackages [manifast]: Remove: archive file [/home/abi/fetcher/tmp/manifast-1.0.0.tar.gz]
+[2024-05-12 01:15:36] INFO root fetch - main [MainThread]: End processing [manifast]: success
+[2024-05-12 01:15:36] INFO root fetch - processPackages [req-compile]: Remove: archive file [/home/abi/fetcher/tmp/req-compile-1.0.0rc8.tar.gz]
+[2024-05-12 01:15:36] INFO root fetch - processPackages [req-compile]: Remove: archive file [/home/abi/fetcher/tmp/req-compile-1.0.0rc9.tar.gz]
+[2024-05-12 01:15:36] INFO root fetch - main [MainThread]: End processing [req-compile]: success
+[2024-05-12 01:15:36] INFO root fetch - processPackages [scicookie]: Remove: archive file [/home/abi/fetcher/tmp/scicookie-0.8.1.tar.gz]
+[2024-05-12 01:15:36] INFO root fetch - processPackages [scicookie]: Remove: archive file [/home/abi/fetcher/tmp/scicookie-0.8.2.tar.gz]
+[2024-05-12 01:15:36] INFO root fetch - main [MainThread]: End processing [scicookie]: success
+[2024-05-12 01:15:36] INFO root fetch - main [MainThread]: Store serial: [23165225]
