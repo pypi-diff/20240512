@@ -939,3 +939,42 @@
 [2024-05-12 01:32:57] INFO root fetch - processPackages [whosomez]: Remove: archive file [/home/abi/fetcher/tmp/whosomez-2.1.tar.gz]
 [2024-05-12 01:32:57] INFO root fetch - main [MainThread]: End processing [whosomez]: success
 [2024-05-12 01:32:57] INFO root fetch - main [MainThread]: Store serial: [23165324]
+[2024-05-12 01:35:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165324]
+[2024-05-12 01:35:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 01:35:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vanguard-api
+[2024-05-12 01:35:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yt-dlp
+[2024-05-12 01:35:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cycling-dynamics
+[2024-05-12 01:35:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OZI.build
+[2024-05-12 01:35:05] INFO root fetch - processPackages [cycling-dynamics]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 01:35:05] INFO root fetch - processPackages [OZI.build]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 01:35:05] INFO root fetch - processPackages [vanguard-api]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-12 01:35:05] INFO root fetch - processPackages [yt-dlp]: New version: [2024.5.8.232715.dev0] Old Version: [2024.5.5.232701.dev0]
+[2024-05-12 01:35:05] INFO root fetch - processPackages [cycling-dynamics]: Downloading https://files.pythonhosted.org/packages/64/2f/00e4212d68730aacdf9d6cbcbd10e7b37e08cbee91b5bf9e960f0ce2a043/cycling_dynamics-0.0.8.tar.gz
+[2024-05-12 01:35:05] INFO root fetch - processPackages [OZI.build]: Downloading https://files.pythonhosted.org/packages/c2/68/445f96f8f6a7f7bc556936a301c80ff6e3b858eff7efa40c69e738b241fa/OZI.build-0.0.8.tar.gz
+[2024-05-12 01:35:05] INFO root fetch - processPackages [vanguard-api]: Downloading https://files.pythonhosted.org/packages/b2/c6/cc6a0de33cf24e1a108eba8baf07bebe6ed0fd4283a615b511fd88539001/vanguard_api-0.0.4.tar.gz
+[2024-05-12 01:35:06] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/84/b9/776c1dd6af3d11b008b3d15993bd9675fea67e86f7b78a1dac88febb9fcf/yt_dlp-2024.5.5.232701.dev0.tar.gz
+[2024-05-12 01:35:06] INFO root fetch - processPackages [OZI.build]: Downloading https://files.pythonhosted.org/packages/b8/82/03697e429f995cc711a5f35ab319b525638b624dc6970aef7ef1879562c0/OZI.build-0.0.9.tar.gz
+[2024-05-12 01:35:06] INFO root fetch - processPackages [vanguard-api]: Downloading https://files.pythonhosted.org/packages/d7/a4/5ad366ee0be06ea0ff4c755df0b36870ba8dabe834b5201e365598936ef0/vanguard_api-0.0.5.tar.gz
+[2024-05-12 01:35:06] INFO root fetch - processPackages [OZI.build]: executing diffoscope
+[2024-05-12 01:35:06] INFO root fetch - processPackages [OZI.build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI.build-0.0.8.tar.gz tmp/OZI.build-0.0.9.tar.gz --markdown 20240512/O/OZI.build/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 01:35:06] INFO root fetch - processPackages [cycling-dynamics]: Downloading https://files.pythonhosted.org/packages/bf/0d/eb86860df9cad681d269880655b1ec2d25fb4b7fec23bf515c11452b9b50/cycling_dynamics-0.0.9.tar.gz
+[2024-05-12 01:35:06] INFO root fetch - processPackages [vanguard-api]: executing diffoscope
+[2024-05-12 01:35:06] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/29/37/4d7e7b1d095d515aef0e3e9af758d0dc33fceebfe46ebce02a1a240d274c/yt_dlp-2024.5.8.232715.dev0.tar.gz
+[2024-05-12 01:35:06] INFO root fetch - processPackages [vanguard-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vanguard_api-0.0.4.tar.gz tmp/vanguard_api-0.0.5.tar.gz --markdown 20240512/v/vanguard-api/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-12 01:35:06] INFO root fetch - processPackages [cycling-dynamics]: executing diffoscope
+[2024-05-12 01:35:06] INFO root fetch - processPackages [cycling-dynamics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycling_dynamics-0.0.8.tar.gz tmp/cycling_dynamics-0.0.9.tar.gz --markdown 20240512/c/cycling-dynamics/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 01:35:06] INFO root fetch - processPackages [yt-dlp]: executing diffoscope
+[2024-05-12 01:35:06] INFO root fetch - processPackages [yt-dlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt_dlp-2024.5.5.232701.dev0.tar.gz tmp/yt_dlp-2024.5.8.232715.dev0.tar.gz --markdown 20240512/y/yt-dlp/2024.5.5.232701.dev0-2024.5.8.232715.dev0/README.md --exclude *.pyd
+[2024-05-12 01:35:06] INFO root fetch - processPackages [OZI.build]: Remove: archive file [/home/abi/fetcher/tmp/OZI.build-0.0.8.tar.gz]
+[2024-05-12 01:35:06] INFO root fetch - processPackages [OZI.build]: Remove: archive file [/home/abi/fetcher/tmp/OZI.build-0.0.9.tar.gz]
+[2024-05-12 01:35:06] INFO root fetch - main [MainThread]: End processing [OZI.build]: success
+[2024-05-12 01:35:07] INFO root fetch - processPackages [vanguard-api]: Remove: archive file [/home/abi/fetcher/tmp/vanguard_api-0.0.4.tar.gz]
+[2024-05-12 01:35:07] INFO root fetch - processPackages [vanguard-api]: Remove: archive file [/home/abi/fetcher/tmp/vanguard_api-0.0.5.tar.gz]
+[2024-05-12 01:35:07] INFO root fetch - main [MainThread]: End processing [vanguard-api]: success
+[2024-05-12 01:35:07] INFO root fetch - processPackages [cycling-dynamics]: Remove: archive file [/home/abi/fetcher/tmp/cycling_dynamics-0.0.8.tar.gz]
+[2024-05-12 01:35:07] INFO root fetch - processPackages [cycling-dynamics]: Remove: archive file [/home/abi/fetcher/tmp/cycling_dynamics-0.0.9.tar.gz]
+[2024-05-12 01:35:07] INFO root fetch - main [MainThread]: End processing [cycling-dynamics]: success
+[2024-05-12 01:35:11] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.5.5.232701.dev0.tar.gz]
+[2024-05-12 01:35:11] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.5.8.232715.dev0.tar.gz]
+[2024-05-12 01:35:11] INFO root fetch - main [MainThread]: End processing [yt-dlp]: success
+[2024-05-12 01:35:11] INFO root fetch - main [MainThread]: Store serial: [23165337]
