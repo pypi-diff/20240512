@@ -1026,3 +1026,39 @@
 [2024-05-12 01:39:31] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.5.0.tar.gz]
 [2024-05-12 01:39:31] INFO root fetch - main [MainThread]: End processing [nokey]: success
 [2024-05-12 01:39:31] INFO root fetch - main [MainThread]: Store serial: [23165356]
+[2024-05-12 01:41:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165356]
+[2024-05-12 01:41:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 01:41:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: atop
+[2024-05-12 01:41:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-fide
+[2024-05-12 01:41:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: glpic
+[2024-05-12 01:41:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdbt
+[2024-05-12 01:41:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aim-flask
+[2024-05-12 01:41:40] INFO root fetch - processPackages [glpic]: New version: [99.0.202405111405] Old Version: [99.0.202405102340]
+[2024-05-12 01:41:40] INFO root fetch - processPackages [aim-flask]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-12 01:41:40] INFO root fetch - processPackages [aim-flask]: Downloading https://files.pythonhosted.org/packages/ee/26/b703f0af67febd926969d72ea7accb1f14c4352a3f9ac68a46234a27be48/aim_flask-1.0.8-py3-none-any.whl
+[2024-05-12 01:41:40] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/7a/4f/d3aafdab7bcdb6fd9735d59e11b8ea0962442c5d7b92460ad4367b7a709d/glpic-99.0.202405102340.tar.gz
+[2024-05-12 01:41:40] WARNING root fetch - processPackages [python-fide]: Skipping, unable to determine old version
+[2024-05-12 01:41:40] INFO root fetch - main [MainThread]: End processing [python-fide] error
+[2024-05-12 01:41:40] WARNING root fetch - processPackages [cdbt]: Skipping, unable to determine old version
+[2024-05-12 01:41:40] INFO root fetch - main [MainThread]: End processing [cdbt] error
+[2024-05-12 01:41:40] INFO root fetch - processPackages [atop]: New version: [0.2.1] Old Version: [0.1.9]
+[2024-05-12 01:41:40] INFO root fetch - processPackages [atop]: Downloading https://files.pythonhosted.org/packages/b6/94/5bc6efc20f791d8459ef18fd8ea4cdc82ac6101332312911dc4410330453/atop-0.1.9.tar.gz
+[2024-05-12 01:41:40] INFO root fetch - processPackages [aim-flask]: Downloading https://files.pythonhosted.org/packages/f7/a6/e6b84f0f2f800f18770a834b4a901a904f5164f4a39abed0bf1d78b6eacc/aim_flask-1.0.9-py3-none-any.whl
+[2024-05-12 01:41:40] INFO root fetch - processPackages [aim-flask]: executing diffoscope
+[2024-05-12 01:41:40] INFO root fetch - processPackages [aim-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim_flask-1.0.8-py3-none-any.whl.zip tmp/aim_flask-1.0.9-py3-none-any.whl.zip --markdown 20240512/a/aim-flask/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-12 01:41:40] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/ae/1d/9bdb8bc543c20c377a848a4d68d5fd79521112ea7b04bdf65b00582f2a0a/glpic-99.0.202405111405.tar.gz
+[2024-05-12 01:41:40] INFO root fetch - processPackages [glpic]: executing diffoscope
+[2024-05-12 01:41:40] INFO root fetch - processPackages [glpic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glpic-99.0.202405102340.tar.gz tmp/glpic-99.0.202405111405.tar.gz --markdown 20240512/g/glpic/99.0.202405102340-99.0.202405111405/README.md --exclude *.pyd
+[2024-05-12 01:41:41] INFO root fetch - processPackages [atop]: Downloading https://files.pythonhosted.org/packages/48/e4/56eefd78856c740121ecb892c6b910be2004a1483938865361fb46629fde/atop-0.2.1.tar.gz
+[2024-05-12 01:41:41] INFO root fetch - processPackages [atop]: executing diffoscope
+[2024-05-12 01:41:41] INFO root fetch - processPackages [atop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atop-0.1.9.tar.gz tmp/atop-0.2.1.tar.gz --markdown 20240512/a/atop/0.1.9-0.2.1/README.md --exclude *.pyd
+[2024-05-12 01:41:41] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405102340.tar.gz]
+[2024-05-12 01:41:41] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405111405.tar.gz]
+[2024-05-12 01:41:41] INFO root fetch - main [MainThread]: End processing [glpic]: success
+[2024-05-12 01:41:41] INFO root fetch - processPackages [aim-flask]: Remove: archive file [/home/abi/fetcher/tmp/aim_flask-1.0.8-py3-none-any.whl.zip]
+[2024-05-12 01:41:41] INFO root fetch - processPackages [aim-flask]: Remove: archive file [/home/abi/fetcher/tmp/aim_flask-1.0.9-py3-none-any.whl.zip]
+[2024-05-12 01:41:41] INFO root fetch - main [MainThread]: End processing [aim-flask]: success
+[2024-05-12 01:41:41] INFO root fetch - processPackages [atop]: Remove: archive file [/home/abi/fetcher/tmp/atop-0.1.9.tar.gz]
+[2024-05-12 01:41:41] INFO root fetch - processPackages [atop]: Remove: archive file [/home/abi/fetcher/tmp/atop-0.2.1.tar.gz]
+[2024-05-12 01:41:41] INFO root fetch - main [MainThread]: End processing [atop]: success
+[2024-05-12 01:41:41] INFO root fetch - main [MainThread]: Store serial: [23165374]
