@@ -735,3 +735,42 @@
 [2024-05-12 01:15:36] INFO root fetch - processPackages [scicookie]: Remove: archive file [/home/abi/fetcher/tmp/scicookie-0.8.2.tar.gz]
 [2024-05-12 01:15:36] INFO root fetch - main [MainThread]: End processing [scicookie]: success
 [2024-05-12 01:15:36] INFO root fetch - main [MainThread]: Store serial: [23165225]
+[2024-05-12 01:17:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165225]
+[2024-05-12 01:17:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 01:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-qs
+[2024-05-12 01:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wayfellowz
+[2024-05-12 01:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moji2
+[2024-05-12 01:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: igneous-pipeline
+[2024-05-12 01:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moji2
+[2024-05-12 01:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hypotensivez
+[2024-05-12 01:17:45] WARNING root fetch - processPackages [moji2]: Skipping, unable to determine old version
+[2024-05-12 01:17:45] INFO root fetch - main [MainThread]: End processing [moji2] error
+[2024-05-12 01:17:45] WARNING root fetch - processPackages [moji2]: Skipping, unable to determine old version
+[2024-05-12 01:17:45] INFO root fetch - main [MainThread]: End processing [moji2] error
+[2024-05-12 01:17:45] INFO root fetch - processPackages [streamlit-qs]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-12 01:17:45] INFO root fetch - processPackages [wayfellowz]: New version: [2.1] Old Version: [1.1]
+[2024-05-12 01:17:45] WARNING root fetch - processPackages [hypotensivez]: Skipping, unable to determine old version
+[2024-05-12 01:17:45] INFO root fetch - main [MainThread]: End processing [hypotensivez] error
+[2024-05-12 01:17:45] INFO root fetch - processPackages [igneous-pipeline]: New version: [4.9.0] Old Version: [4.8.0]
+[2024-05-12 01:17:45] INFO root fetch - processPackages [streamlit-qs]: Downloading https://files.pythonhosted.org/packages/a9/d2/8c5de1ec1ef8e3cadb51908bd78582d1e6bb890a122c19f2040eb4a46640/streamlit-qs-0.3.1.tar.gz
+[2024-05-12 01:17:45] INFO root fetch - processPackages [wayfellowz]: Downloading https://files.pythonhosted.org/packages/0e/80/c000f0cc5a1d236f0d66dae80e9c86b031194cc8a4d69a422bfacefb12a4/wayfellowz-1.1.tar.gz
+[2024-05-12 01:17:45] INFO root fetch - processPackages [igneous-pipeline]: Downloading https://files.pythonhosted.org/packages/44/05/223f9d80d8186c5262b494d43d08c25a5a57a20ec768157db3caa282edce/igneous-pipeline-4.8.0.tar.gz
+[2024-05-12 01:17:45] INFO root fetch - processPackages [streamlit-qs]: Downloading https://files.pythonhosted.org/packages/cb/94/73580b3d53b829afa919ce124e9e81a738fe1536b007f6cc9f7bf2f8514c/streamlit_qs-0.3.2.tar.gz
+[2024-05-12 01:17:45] INFO root fetch - processPackages [wayfellowz]: Downloading https://files.pythonhosted.org/packages/17/03/0a50bdcedcb637c0c5f77ab33c162fc83929d202a98d33a1484b0e19e50a/wayfellowz-2.1.tar.gz
+[2024-05-12 01:17:45] INFO root fetch - processPackages [igneous-pipeline]: Downloading https://files.pythonhosted.org/packages/73/89/99a97070bf7edb5db3d588a78566a88207c6a26324df583d79cf41561a44/igneous-pipeline-4.9.0.tar.gz
+[2024-05-12 01:17:46] INFO root fetch - processPackages [streamlit-qs]: executing diffoscope
+[2024-05-12 01:17:46] INFO root fetch - processPackages [streamlit-qs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-qs-0.3.1.tar.gz tmp/streamlit_qs-0.3.2.tar.gz --markdown 20240512/s/streamlit-qs/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-12 01:17:46] INFO root fetch - processPackages [wayfellowz]: executing diffoscope
+[2024-05-12 01:17:46] INFO root fetch - processPackages [wayfellowz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wayfellowz-1.1.tar.gz tmp/wayfellowz-2.1.tar.gz --markdown 20240512/w/wayfellowz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-12 01:17:46] INFO root fetch - processPackages [igneous-pipeline]: executing diffoscope
+[2024-05-12 01:17:46] INFO root fetch - processPackages [igneous-pipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/igneous-pipeline-4.8.0.tar.gz tmp/igneous-pipeline-4.9.0.tar.gz --markdown 20240512/i/igneous-pipeline/4.8.0-4.9.0/README.md --exclude *.pyd
+[2024-05-12 01:17:46] INFO root fetch - processPackages [wayfellowz]: Remove: archive file [/home/abi/fetcher/tmp/wayfellowz-1.1.tar.gz]
+[2024-05-12 01:17:46] INFO root fetch - processPackages [wayfellowz]: Remove: archive file [/home/abi/fetcher/tmp/wayfellowz-2.1.tar.gz]
+[2024-05-12 01:17:46] INFO root fetch - main [MainThread]: End processing [wayfellowz]: success
+[2024-05-12 01:17:46] INFO root fetch - processPackages [streamlit-qs]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-qs-0.3.1.tar.gz]
+[2024-05-12 01:17:46] INFO root fetch - processPackages [streamlit-qs]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_qs-0.3.2.tar.gz]
+[2024-05-12 01:17:46] INFO root fetch - main [MainThread]: End processing [streamlit-qs]: success
+[2024-05-12 01:17:46] INFO root fetch - processPackages [igneous-pipeline]: Remove: archive file [/home/abi/fetcher/tmp/igneous-pipeline-4.8.0.tar.gz]
+[2024-05-12 01:17:46] INFO root fetch - processPackages [igneous-pipeline]: Remove: archive file [/home/abi/fetcher/tmp/igneous-pipeline-4.9.0.tar.gz]
+[2024-05-12 01:17:46] INFO root fetch - main [MainThread]: End processing [igneous-pipeline]: success
+[2024-05-12 01:17:46] INFO root fetch - main [MainThread]: Store serial: [23165244]
