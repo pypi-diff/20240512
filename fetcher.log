@@ -513,3 +513,36 @@
 [2024-05-12 00:56:01] INFO root fetch - processPackages [staging-cacao-accounting]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting-0.0.1b20240511.tar.gz]
 [2024-05-12 00:56:01] INFO root fetch - main [MainThread]: End processing [staging-cacao-accounting]: success
 [2024-05-12 00:56:01] INFO root fetch - main [MainThread]: Store serial: [23165128]
+[2024-05-12 00:58:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165128]
+[2024-05-12 00:58:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 00:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rime-sdk
+[2024-05-12 00:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shebatz
+[2024-05-12 00:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bw-processing
+[2024-05-12 00:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: staging-cacao-accounting
+[2024-05-12 00:58:15] INFO root fetch - processPackages [staging-cacao-accounting]: New version: [0.0.1b20240511] Old Version: [0.0.1.dev20240507]
+[2024-05-12 00:58:15] INFO root fetch - processPackages [staging-cacao-accounting]: Downloading https://files.pythonhosted.org/packages/b5/83/d387110bdd4660e0e334ccc187d2d7fafceb460bdbe08027351cbfa2106b/staging_cacao_accounting-0.0.1.dev20240507.tar.gz
+[2024-05-12 00:58:15] WARNING root fetch - processPackages [shebatz]: Skipping, unable to determine old version
+[2024-05-12 00:58:15] INFO root fetch - main [MainThread]: End processing [shebatz] error
+[2024-05-12 00:58:15] INFO root fetch - processPackages [bw-processing]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-12 00:58:15] INFO root fetch - processPackages [rime-sdk]: New version: [2.8.0rc9] Old Version: [2.8.0rc8]
+[2024-05-12 00:58:15] INFO root fetch - processPackages [rime-sdk]: Downloading https://files.pythonhosted.org/packages/5f/ee/9f99cee94313fd0846bc0b261c0a705f5b9f0b87d20d6934a77d616566e0/rime_sdk-2.8.0rc8.tar.gz
+[2024-05-12 00:58:15] INFO root fetch - processPackages [bw-processing]: Downloading https://files.pythonhosted.org/packages/ce/a3/25e93848bc10eb91c25bde990a4a64c7e6cecdd968e5cc8140a9f798bc14/bw_processing-0.9.1.tar.gz
+[2024-05-12 00:58:15] INFO root fetch - processPackages [staging-cacao-accounting]: Downloading https://files.pythonhosted.org/packages/87/56/6edb580515ee27055b76bc878b22acde9dbe04b4a4febdc001ca2db91c46/staging_cacao_accounting-0.0.1b20240511.tar.gz
+[2024-05-12 00:58:16] INFO root fetch - processPackages [bw-processing]: Downloading https://files.pythonhosted.org/packages/f4/77/b52359aed7adb92792a52da609fa97cd124c9eb10b3610aab4c737669e4f/bw_processing-0.9.2.tar.gz
+[2024-05-12 00:58:16] INFO root fetch - processPackages [rime-sdk]: Downloading https://files.pythonhosted.org/packages/82/d0/af2bc54a7ae81e59f924b38132b45b3fa131069dcddc38c084be863230b7/rime_sdk-2.8.0rc9.tar.gz
+[2024-05-12 00:58:16] INFO root fetch - processPackages [bw-processing]: executing diffoscope
+[2024-05-12 00:58:16] INFO root fetch - processPackages [bw-processing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bw_processing-0.9.1.tar.gz tmp/bw_processing-0.9.2.tar.gz --markdown 20240512/b/bw-processing/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-05-12 00:58:16] INFO root fetch - processPackages [rime-sdk]: executing diffoscope
+[2024-05-12 00:58:16] INFO root fetch - processPackages [rime-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rime_sdk-2.8.0rc8.tar.gz tmp/rime_sdk-2.8.0rc9.tar.gz --markdown 20240512/r/rime-sdk/2.8.0rc8-2.8.0rc9/README.md --exclude *.pyd
+[2024-05-12 00:58:16] INFO root fetch - processPackages [staging-cacao-accounting]: executing diffoscope
+[2024-05-12 00:58:16] INFO root fetch - processPackages [staging-cacao-accounting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/staging_cacao_accounting-0.0.1.dev20240507.tar.gz tmp/staging_cacao_accounting-0.0.1b20240511.tar.gz --markdown 20240512/s/staging-cacao-accounting/0.0.1.dev20240507-0.0.1b20240511/README.md --exclude *.pyd
+[2024-05-12 00:58:16] INFO root fetch - processPackages [bw-processing]: Remove: archive file [/home/abi/fetcher/tmp/bw_processing-0.9.1.tar.gz]
+[2024-05-12 00:58:16] INFO root fetch - processPackages [bw-processing]: Remove: archive file [/home/abi/fetcher/tmp/bw_processing-0.9.2.tar.gz]
+[2024-05-12 00:58:16] INFO root fetch - main [MainThread]: End processing [bw-processing]: success
+[2024-05-12 00:58:18] INFO root fetch - processPackages [rime-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rime_sdk-2.8.0rc8.tar.gz]
+[2024-05-12 00:58:18] INFO root fetch - processPackages [rime-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rime_sdk-2.8.0rc9.tar.gz]
+[2024-05-12 00:58:18] INFO root fetch - main [MainThread]: End processing [rime-sdk]: success
+[2024-05-12 00:58:19] INFO root fetch - processPackages [staging-cacao-accounting]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting-0.0.1.dev20240507.tar.gz]
+[2024-05-12 00:58:19] INFO root fetch - processPackages [staging-cacao-accounting]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting-0.0.1b20240511.tar.gz]
+[2024-05-12 00:58:19] INFO root fetch - main [MainThread]: End processing [staging-cacao-accounting]: success
+[2024-05-12 00:58:19] INFO root fetch - main [MainThread]: Store serial: [23165159]
