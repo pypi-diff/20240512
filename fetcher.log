@@ -390,3 +390,21 @@
 [2024-05-12 00:45:08] INFO root fetch - processPackages [wordcel]: Remove: archive file [/home/abi/fetcher/tmp/wordcel-0.0.9.tar.gz]
 [2024-05-12 00:45:08] INFO root fetch - main [MainThread]: End processing [wordcel]: success
 [2024-05-12 00:45:08] INFO root fetch - main [MainThread]: Store serial: [23165075]
+[2024-05-12 00:47:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165075]
+[2024-05-12 00:47:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 00:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ediri-qovery
+[2024-05-12 00:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: logninja
+[2024-05-12 00:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: splenodiagnosisz
+[2024-05-12 00:47:16] WARNING root fetch - processPackages [logninja]: Skipping, unable to determine old version
+[2024-05-12 00:47:16] INFO root fetch - main [MainThread]: End processing [logninja] error
+[2024-05-12 00:47:16] WARNING root fetch - processPackages [splenodiagnosisz]: Skipping, unable to determine old version
+[2024-05-12 00:47:16] INFO root fetch - main [MainThread]: End processing [splenodiagnosisz] error
+[2024-05-12 00:47:16] INFO root fetch - processPackages [ediri-qovery]: New version: [0.28.9] Old Version: [0.28.8]
+[2024-05-12 00:47:17] INFO root fetch - processPackages [ediri-qovery]: Downloading https://files.pythonhosted.org/packages/67/84/1c075f58baabcb0bf16ba07aa18d20eb062adb5e2373c57d8872f75b3d09/ediri_qovery-0.28.8.tar.gz
+[2024-05-12 00:47:17] INFO root fetch - processPackages [ediri-qovery]: Downloading https://files.pythonhosted.org/packages/2f/4c/13c9a7416ab25bcc0c50ba27be73d00d2f755be9bccbe7225dd29fe9df12/ediri_qovery-0.28.9.tar.gz
+[2024-05-12 00:47:17] INFO root fetch - processPackages [ediri-qovery]: executing diffoscope
+[2024-05-12 00:47:17] INFO root fetch - processPackages [ediri-qovery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ediri_qovery-0.28.8.tar.gz tmp/ediri_qovery-0.28.9.tar.gz --markdown 20240512/e/ediri-qovery/0.28.8-0.28.9/README.md --exclude *.pyd
+[2024-05-12 00:47:18] INFO root fetch - processPackages [ediri-qovery]: Remove: archive file [/home/abi/fetcher/tmp/ediri_qovery-0.28.8.tar.gz]
+[2024-05-12 00:47:18] INFO root fetch - processPackages [ediri-qovery]: Remove: archive file [/home/abi/fetcher/tmp/ediri_qovery-0.28.9.tar.gz]
+[2024-05-12 00:47:18] INFO root fetch - main [MainThread]: End processing [ediri-qovery]: success
+[2024-05-12 00:47:18] INFO root fetch - main [MainThread]: Store serial: [23165084]
