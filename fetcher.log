@@ -1184,3 +1184,56 @@
 [2024-05-12 01:54:35] INFO root fetch - processPackages [kaizen-cloudcode]: Remove: archive file [/home/abi/fetcher/tmp/kaizen_cloudcode-0.1.1.tar.gz]
 [2024-05-12 01:54:35] INFO root fetch - main [MainThread]: End processing [kaizen-cloudcode]: success
 [2024-05-12 01:54:35] INFO root fetch - main [MainThread]: Store serial: [23165424]
+[2024-05-12 01:56:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165424]
+[2024-05-12 01:56:43] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-12 01:58:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165424]
+[2024-05-12 01:58:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 01:58:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moji2
+[2024-05-12 01:58:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: altscore-workflow-builder
+[2024-05-12 01:58:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: juliapkg
+[2024-05-12 01:58:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: finagg
+[2024-05-12 01:58:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: renegingz
+[2024-05-12 01:58:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xnlpy
+[2024-05-12 01:58:48] INFO root fetch - processPackages [moji2]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-12 01:58:48] INFO root fetch - processPackages [altscore-workflow-builder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 01:58:48] INFO root fetch - processPackages [finagg]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-12 01:58:48] INFO root fetch - processPackages [moji2]: Downloading https://files.pythonhosted.org/packages/35/f8/5e12901b55b7b276721a2d5b0fb8a7366834433b2bd5bd1b0d2d51cd8c4f/moji2-0.2.4.tar.gz
+[2024-05-12 01:58:48] WARNING root fetch - processPackages [renegingz]: Skipping, unable to determine old version
+[2024-05-12 01:58:48] INFO root fetch - main [MainThread]: End processing [renegingz] error
+[2024-05-12 01:58:48] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/f0/fa/89cca82209a4c117e11fbf9e81a7731baafe7d98942d787c62e02ca375da/altscore_workflow_builder-0.0.8.tar.gz
+[2024-05-12 01:58:48] INFO root fetch - processPackages [juliapkg]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 01:58:48] INFO root fetch - processPackages [xnlpy]: New version: [0.0.2.1] Old Version: [0.0.1]
+[2024-05-12 01:58:49] INFO root fetch - processPackages [juliapkg]: Downloading https://files.pythonhosted.org/packages/f1/32/04e824608d53769b87e64b6f40e09bfe7eb405d7f884f1fbacb56d4b7a1e/juliapkg-0.1.8.tar.gz
+[2024-05-12 01:58:49] INFO root fetch - processPackages [finagg]: Downloading https://files.pythonhosted.org/packages/72/da/4c2e52009a25a1bb36979659e83130e193dc27c65c72aff791f95719090a/finagg-1.0.0.tar.gz
+[2024-05-12 01:58:49] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/68/8d/c9a42a6d012c1a9fb9ef55b57e3251bfa8d248169a64513b839c30038528/altscore_workflow_builder-0.0.9.tar.gz
+[2024-05-12 01:58:49] INFO root fetch - processPackages [xnlpy]: Downloading https://files.pythonhosted.org/packages/e2/c5/cda16ab8bbedd58dc035645da4db99f4250e2f99fae89c1f36c7bb5305a5/xnlpy-0.0.1.tar.gz
+[2024-05-12 01:58:49] INFO root fetch - processPackages [moji2]: Downloading https://files.pythonhosted.org/packages/81/08/1affadeef7183eeb940c712ef9b91e51b86558adb2d3680487e3f3097ce5/moji2-0.2.5.tar.gz
+[2024-05-12 01:58:49] INFO root fetch - processPackages [altscore-workflow-builder]: executing diffoscope
+[2024-05-12 01:58:49] INFO root fetch - processPackages [altscore-workflow-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore_workflow_builder-0.0.8.tar.gz tmp/altscore_workflow_builder-0.0.9.tar.gz --markdown 20240512/a/altscore-workflow-builder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 01:58:49] INFO root fetch - processPackages [moji2]: executing diffoscope
+[2024-05-12 01:58:49] INFO root fetch - processPackages [moji2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moji2-0.2.4.tar.gz tmp/moji2-0.2.5.tar.gz --markdown 20240512/m/moji2/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-12 01:58:49] INFO root fetch - processPackages [juliapkg]: Downloading https://files.pythonhosted.org/packages/c1/4d/e68d9a4efce3f69f7be472fb29c86fe9d12d0cbdfcb21a72beb11ae94395/juliapkg-0.1.9.tar.gz
+[2024-05-12 01:58:49] INFO root fetch - processPackages [finagg]: Downloading https://files.pythonhosted.org/packages/65/6d/b6a26506a9d8d4ae7fd9d2ff154e6a8a2ae0f7489fcf42e5dfd66e1d19e0/finagg-1.0.1.tar.gz
+[2024-05-12 01:58:49] INFO root fetch - processPackages [xnlpy]: Downloading https://files.pythonhosted.org/packages/3f/f1/8a0ed481fff214fb7e45eaec3ee4efc7cda7f8eebfec54500572238d5d19/xnlpy-0.0.2.1-py3-none-any.whl
+[2024-05-12 01:58:49] INFO root fetch - processPackages [juliapkg]: executing diffoscope
+[2024-05-12 01:58:49] INFO root fetch - processPackages [juliapkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/juliapkg-0.1.8.tar.gz tmp/juliapkg-0.1.9.tar.gz --markdown 20240512/j/juliapkg/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 01:58:49] INFO root fetch - processPackages [finagg]: executing diffoscope
+[2024-05-12 01:58:49] INFO root fetch - processPackages [finagg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finagg-1.0.0.tar.gz tmp/finagg-1.0.1.tar.gz --markdown 20240512/f/finagg/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-12 01:58:49] INFO root fetch - processPackages [xnlpy]: executing diffoscope
+[2024-05-12 01:58:49] INFO root fetch - processPackages [xnlpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xnlpy-0.0.1.tar.gz tmp/xnlpy-0.0.2.1-py3-none-any.whl.zip --markdown 20240512/x/xnlpy/0.0.1-0.0.2.1/README.md --exclude *.pyd
+[2024-05-12 01:58:49] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.8.tar.gz]
+[2024-05-12 01:58:49] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.9.tar.gz]
+[2024-05-12 01:58:49] INFO root fetch - main [MainThread]: End processing [altscore-workflow-builder]: success
+[2024-05-12 01:58:49] INFO root fetch - processPackages [moji2]: Remove: archive file [/home/abi/fetcher/tmp/moji2-0.2.4.tar.gz]
+[2024-05-12 01:58:49] INFO root fetch - processPackages [moji2]: Remove: archive file [/home/abi/fetcher/tmp/moji2-0.2.5.tar.gz]
+[2024-05-12 01:58:49] INFO root fetch - main [MainThread]: End processing [moji2]: success
+[2024-05-12 01:58:50] INFO root fetch - processPackages [juliapkg]: Remove: archive file [/home/abi/fetcher/tmp/juliapkg-0.1.8.tar.gz]
+[2024-05-12 01:58:50] INFO root fetch - processPackages [juliapkg]: Remove: archive file [/home/abi/fetcher/tmp/juliapkg-0.1.9.tar.gz]
+[2024-05-12 01:58:50] INFO root fetch - main [MainThread]: End processing [juliapkg]: success
+[2024-05-12 01:58:50] INFO root fetch - processPackages [xnlpy]: Remove: archive file [/home/abi/fetcher/tmp/xnlpy-0.0.1.tar.gz]
+[2024-05-12 01:58:50] INFO root fetch - processPackages [xnlpy]: Remove: archive file [/home/abi/fetcher/tmp/xnlpy-0.0.2.1-py3-none-any.whl.zip]
+[2024-05-12 01:58:50] INFO root fetch - main [MainThread]: End processing [xnlpy]: success
+[2024-05-12 01:58:50] INFO root fetch - processPackages [finagg]: Remove: archive file [/home/abi/fetcher/tmp/finagg-1.0.0.tar.gz]
+[2024-05-12 01:58:50] INFO root fetch - processPackages [finagg]: Remove: archive file [/home/abi/fetcher/tmp/finagg-1.0.1.tar.gz]
+[2024-05-12 01:58:50] INFO root fetch - main [MainThread]: End processing [finagg]: success
+[2024-05-12 01:58:50] INFO root fetch - main [MainThread]: Store serial: [23165446]
