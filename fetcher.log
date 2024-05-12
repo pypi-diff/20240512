@@ -13636,3 +13636,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:26:32] INFO root fetch - processPackages [ansibleguy-webui]: Remove: archive file [/home/abi/fetcher/tmp/ansibleguy_webui-0.0.19.tar.gz]
 [2024-05-12 18:26:32] INFO root fetch - main [MainThread]: End processing [ansibleguy-webui]: success
 [2024-05-12 18:26:32] INFO root fetch - main [MainThread]: Store serial: [23171754]
+[2024-05-12 18:28:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171754]
+[2024-05-12 18:28:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 18:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-jupyter
+[2024-05-12 18:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: powerpathfinder-models
+[2024-05-12 18:28:41] WARNING root fetch - processPackages [llm-jupyter]: Skipping, unable to determine old version
+[2024-05-12 18:28:41] INFO root fetch - main [MainThread]: End processing [llm-jupyter] error
+[2024-05-12 18:28:41] WARNING root fetch - processPackages [powerpathfinder-models]: Skipping, unable to determine old version
+[2024-05-12 18:28:41] INFO root fetch - main [MainThread]: End processing [powerpathfinder-models] error
+[2024-05-12 18:28:41] INFO root fetch - main [MainThread]: Store serial: [23171758]
