@@ -2132,3 +2132,24 @@
 [2024-05-12 03:11:28] INFO root fetch - processPackages [seismicio]: Remove: archive file [/home/abi/fetcher/tmp/seismicio-0.0.9.tar.gz]
 [2024-05-12 03:11:28] INFO root fetch - main [MainThread]: End processing [seismicio]: success
 [2024-05-12 03:11:28] INFO root fetch - main [MainThread]: Store serial: [23165927]
+[2024-05-12 03:13:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165927]
+[2024-05-12 03:13:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 03:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AFRIT-NAME
+[2024-05-12 03:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matsubplots
+[2024-05-12 03:13:37] INFO root fetch - processPackages [AFRIT-NAME]: New version: [0.2] Old Version: [0.1]
+[2024-05-12 03:13:37] INFO root fetch - processPackages [matsubplots]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-05-12 03:13:37] INFO root fetch - processPackages [AFRIT-NAME]: Downloading https://files.pythonhosted.org/packages/43/8c/d236acec8d58056485c986c0c50e9fdf164ead2b6472fd2b9a8f6fd6a7fa/AFRIT_NAME-0.1.tar.gz
+[2024-05-12 03:13:37] INFO root fetch - processPackages [matsubplots]: Downloading https://files.pythonhosted.org/packages/05/5d/69608dbfcea0f0406afa69f8c591c207d16b853e3870da57cb1bf1fd5a03/matsubplots-1.1.1.tar.gz
+[2024-05-12 03:13:37] INFO root fetch - processPackages [AFRIT-NAME]: Downloading https://files.pythonhosted.org/packages/27/bd/7a448341c176b87c1bd7d24dbc1552c68202ca19967c4d4804bede5b7382/AFRIT_NAME-0.2.tar.gz
+[2024-05-12 03:13:37] INFO root fetch - processPackages [matsubplots]: Downloading https://files.pythonhosted.org/packages/2a/1d/f8e34dd35eaf39fdd2bd30a996c3ee91b1a7230fc6b642db7c1d4b9961b8/matsubplots-1.2.0.tar.gz
+[2024-05-12 03:13:37] INFO root fetch - processPackages [AFRIT-NAME]: executing diffoscope
+[2024-05-12 03:13:37] INFO root fetch - processPackages [AFRIT-NAME]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AFRIT_NAME-0.1.tar.gz tmp/AFRIT_NAME-0.2.tar.gz --markdown 20240512/A/AFRIT-NAME/0.1-0.2/README.md --exclude *.pyd
+[2024-05-12 03:13:37] INFO root fetch - processPackages [matsubplots]: executing diffoscope
+[2024-05-12 03:13:37] INFO root fetch - processPackages [matsubplots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matsubplots-1.1.1.tar.gz tmp/matsubplots-1.2.0.tar.gz --markdown 20240512/m/matsubplots/1.1.1-1.2.0/README.md --exclude *.pyd
+[2024-05-12 03:13:38] INFO root fetch - processPackages [AFRIT-NAME]: Remove: archive file [/home/abi/fetcher/tmp/AFRIT_NAME-0.1.tar.gz]
+[2024-05-12 03:13:38] INFO root fetch - processPackages [AFRIT-NAME]: Remove: archive file [/home/abi/fetcher/tmp/AFRIT_NAME-0.2.tar.gz]
+[2024-05-12 03:13:38] INFO root fetch - main [MainThread]: End processing [AFRIT-NAME]: success
+[2024-05-12 03:13:38] INFO root fetch - processPackages [matsubplots]: Remove: archive file [/home/abi/fetcher/tmp/matsubplots-1.1.1.tar.gz]
+[2024-05-12 03:13:38] INFO root fetch - processPackages [matsubplots]: Remove: archive file [/home/abi/fetcher/tmp/matsubplots-1.2.0.tar.gz]
+[2024-05-12 03:13:38] INFO root fetch - main [MainThread]: End processing [matsubplots]: success
+[2024-05-12 03:13:38] INFO root fetch - main [MainThread]: Store serial: [23165933]
