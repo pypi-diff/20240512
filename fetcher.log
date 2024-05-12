@@ -7184,3 +7184,30 @@
 [2024-05-12 10:45:20] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
 [2024-05-12 10:45:20] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2024-05-12 10:45:20] INFO root fetch - main [MainThread]: Store serial: [23168301]
+[2024-05-12 10:47:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168301]
+[2024-05-12 10:47:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 10:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cheiromegalyz
+[2024-05-12 10:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exceeddata-sdk-vdata
+[2024-05-12 10:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: seacrowd
+[2024-05-12 10:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-nightly-cpu
+[2024-05-12 10:47:29] INFO root fetch - processPackages [seacrowd]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 10:47:29] WARNING root fetch - processPackages [cheiromegalyz]: Skipping, unable to determine old version
+[2024-05-12 10:47:29] INFO root fetch - main [MainThread]: End processing [cheiromegalyz] error
+[2024-05-12 10:47:29] INFO root fetch - processPackages [seacrowd]: Downloading https://files.pythonhosted.org/packages/1f/ba/346de6683a7e18210cd836f5cfbcd169e5daa3d6a3cd013d360925353530/seacrowd-0.0.8.tar.gz
+[2024-05-12 10:47:29] WARNING root fetch - processPackages [exceeddata-sdk-vdata]: Skipping, unable to determine old version
+[2024-05-12 10:47:29] INFO root fetch - main [MainThread]: End processing [exceeddata-sdk-vdata] error
+[2024-05-12 10:47:30] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240512] Old Version: [2.17.0.dev20240511]
+[2024-05-12 10:47:30] INFO root fetch - processPackages [seacrowd]: Downloading https://files.pythonhosted.org/packages/db/e5/e823c1dd15f44fad1df7f17a4bc789afab1d6f35bdcec84ae1dcd8010936/seacrowd-0.0.9.tar.gz
+[2024-05-12 10:47:30] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/4f/67/225479b8337f5f2c9ca482d97d986ca4569e972d3119d5db388306cfba52/tf_nightly_cpu-2.17.0.dev20240511-cp39-cp39-win_amd64.whl
+[2024-05-12 10:47:30] INFO root fetch - processPackages [seacrowd]: executing diffoscope
+[2024-05-12 10:47:30] INFO root fetch - processPackages [seacrowd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seacrowd-0.0.8.tar.gz tmp/seacrowd-0.0.9.tar.gz --markdown 20240512/s/seacrowd/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 10:47:30] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/cc/53/a88632ad8bf3e76484ade9083c46e5c7f494882c33d0c6d5a0867f594ba1/tf_nightly_cpu-2.17.0.dev20240512-cp311-cp311-win_amd64.whl
+[2024-05-12 10:47:30] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-05-12 10:47:30] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240511-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240512-cp311-cp311-win_amd64.whl.zip --markdown 20240512/t/tf-nightly-cpu/2.17.0.dev20240511-2.17.0.dev20240512/README.md --exclude *.pyd
+[2024-05-12 10:47:31] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240511-cp39-cp39-win_amd64.whl.zip]
+[2024-05-12 10:47:31] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240512-cp311-cp311-win_amd64.whl.zip]
+[2024-05-12 10:47:31] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-05-12 10:47:32] INFO root fetch - processPackages [seacrowd]: Remove: archive file [/home/abi/fetcher/tmp/seacrowd-0.0.8.tar.gz]
+[2024-05-12 10:47:32] INFO root fetch - processPackages [seacrowd]: Remove: archive file [/home/abi/fetcher/tmp/seacrowd-0.0.9.tar.gz]
+[2024-05-12 10:47:32] INFO root fetch - main [MainThread]: End processing [seacrowd]: success
+[2024-05-12 10:47:32] INFO root fetch - main [MainThread]: Store serial: [23168313]
