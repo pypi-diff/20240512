@@ -18366,3 +18366,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:45:03] INFO root fetch - processPackages [dq-check]: Remove: archive file [/home/abi/fetcher/tmp/dq_check-0.3.0.tar.gz]
 [2024-05-12 23:45:03] INFO root fetch - main [MainThread]: End processing [dq-check]: success
 [2024-05-12 23:45:03] INFO root fetch - main [MainThread]: Store serial: [23174082]
+[2024-05-12 23:47:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23174082]
+[2024-05-12 23:47:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 23:47:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: g29py
+[2024-05-12 23:47:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scylla-cqlsh
+[2024-05-12 23:47:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fnschool
+[2024-05-12 23:47:11] INFO root fetch - processPackages [fnschool]: New version: [20240513.518.24] Old Version: [20240412.2301.19]
+[2024-05-12 23:47:11] INFO root fetch - processPackages [fnschool]: Downloading https://files.pythonhosted.org/packages/ca/97/f1481c8301596ab4e9ad9006db725009fc67185232ec859f6fca2c58653d/fnschool-20240412.2301.19.tar.gz
+[2024-05-12 23:47:11] INFO root fetch - processPackages [g29py]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-05-12 23:47:12] INFO root fetch - processPackages [g29py]: Downloading https://files.pythonhosted.org/packages/03/28/84d9dcf63192d2a922a33c568c12b8f41b6e4e36fff95d522b9a6c6479be/g29py-0.0.9.tar.gz
+[2024-05-12 23:47:12] INFO root fetch - processPackages [scylla-cqlsh]: New version: [6.0.9] Old Version: [6.0.8]
+[2024-05-12 23:47:12] INFO root fetch - processPackages [fnschool]: Downloading https://files.pythonhosted.org/packages/fd/b4/5c91678cd471e95d6ae57250e3b6ce58216a4bd52116dfeff78764fc7205/fnschool-20240513.518.24.tar.gz
+[2024-05-12 23:47:12] INFO root fetch - processPackages [fnschool]: executing diffoscope
+[2024-05-12 23:47:12] INFO root fetch - processPackages [fnschool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fnschool-20240412.2301.19.tar.gz tmp/fnschool-20240513.518.24.tar.gz --markdown 20240512/f/fnschool/20240412.2301.19-20240513.518.24/README.md --exclude *.pyd
+[2024-05-12 23:47:12] INFO root fetch - processPackages [scylla-cqlsh]: Downloading https://files.pythonhosted.org/packages/c3/44/6b5fdb40eb94f9bc6429a64df0ef93536f1704c686c2970ae7ccc34f81ed/scylla-cqlsh-6.0.8.tar.gz
+[2024-05-12 23:47:12] INFO root fetch - processPackages [g29py]: Downloading https://files.pythonhosted.org/packages/09/1f/bf902594438e9665a32a0a610c3f8e8bad72a19e51f5137b4770de1cf037/g29py-0.1.0.tar.gz
+[2024-05-12 23:47:12] INFO root fetch - processPackages [g29py]: executing diffoscope
+[2024-05-12 23:47:12] INFO root fetch - processPackages [g29py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g29py-0.0.9.tar.gz tmp/g29py-0.1.0.tar.gz --markdown 20240512/g/g29py/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-05-12 23:47:13] INFO root fetch - processPackages [fnschool]: Remove: archive file [/home/abi/fetcher/tmp/fnschool-20240412.2301.19.tar.gz]
+[2024-05-12 23:47:13] INFO root fetch - processPackages [fnschool]: Remove: archive file [/home/abi/fetcher/tmp/fnschool-20240513.518.24.tar.gz]
+[2024-05-12 23:47:13] INFO root fetch - main [MainThread]: End processing [fnschool]: success
+[2024-05-12 23:47:13] INFO root fetch - processPackages [g29py]: Remove: archive file [/home/abi/fetcher/tmp/g29py-0.0.9.tar.gz]
+[2024-05-12 23:47:13] INFO root fetch - processPackages [g29py]: Remove: archive file [/home/abi/fetcher/tmp/g29py-0.1.0.tar.gz]
+[2024-05-12 23:47:13] INFO root fetch - main [MainThread]: End processing [g29py]: success
+[2024-05-12 23:47:13] INFO root fetch - processPackages [scylla-cqlsh]: Downloading https://files.pythonhosted.org/packages/53/27/c44270b183ff5326eb16ffc1de7cd7313ce3ce5d68eb0100a87665e4aeed/scylla-cqlsh-6.0.9.tar.gz
+[2024-05-12 23:47:13] INFO root fetch - processPackages [scylla-cqlsh]: executing diffoscope
+[2024-05-12 23:47:13] INFO root fetch - processPackages [scylla-cqlsh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scylla-cqlsh-6.0.8.tar.gz tmp/scylla-cqlsh-6.0.9.tar.gz --markdown 20240512/s/scylla-cqlsh/6.0.8-6.0.9/README.md --exclude *.pyd
+[2024-05-12 23:47:14] INFO root fetch - processPackages [scylla-cqlsh]: Remove: archive file [/home/abi/fetcher/tmp/scylla-cqlsh-6.0.8.tar.gz]
+[2024-05-12 23:47:14] INFO root fetch - processPackages [scylla-cqlsh]: Remove: archive file [/home/abi/fetcher/tmp/scylla-cqlsh-6.0.9.tar.gz]
+[2024-05-12 23:47:14] INFO root fetch - main [MainThread]: End processing [scylla-cqlsh]: success
+[2024-05-12 23:47:14] INFO root fetch - main [MainThread]: Store serial: [23174146]
