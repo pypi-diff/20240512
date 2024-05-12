@@ -8084,3 +8084,12 @@
 [2024-05-12 12:01:15] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024051109.tar.gz]
 [2024-05-12 12:01:15] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
 [2024-05-12 12:01:15] INFO root fetch - main [MainThread]: Store serial: [23168781]
+[2024-05-12 12:03:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168781]
+[2024-05-12 12:03:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 12:03:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: auriculatelyz
+[2024-05-12 12:03:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: statedict2pytree
+[2024-05-12 12:03:24] WARNING root fetch - processPackages [statedict2pytree]: Skipping, unable to determine old version
+[2024-05-12 12:03:24] INFO root fetch - main [MainThread]: End processing [statedict2pytree] error
+[2024-05-12 12:03:24] WARNING root fetch - processPackages [auriculatelyz]: Skipping, unable to determine old version
+[2024-05-12 12:03:24] INFO root fetch - main [MainThread]: End processing [auriculatelyz] error
+[2024-05-12 12:03:24] INFO root fetch - main [MainThread]: Store serial: [23168795]
