@@ -8713,3 +8713,30 @@
 [2024-05-12 12:47:22] INFO root fetch - processPackages [arikaim]: Remove: archive file [/home/abi/fetcher/tmp/arikaim-0.5.7.tar.gz]
 [2024-05-12 12:47:22] INFO root fetch - main [MainThread]: End processing [arikaim]: success
 [2024-05-12 12:47:22] INFO root fetch - main [MainThread]: Store serial: [23169104]
+[2024-05-12 12:49:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169104]
+[2024-05-12 12:49:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 12:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: superficialz
+[2024-05-12 12:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gitlab-emulator
+[2024-05-12 12:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shadowsocks-manager
+[2024-05-12 12:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nnthon
+[2024-05-12 12:49:31] INFO root fetch - processPackages [shadowsocks-manager]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-12 12:49:31] INFO root fetch - processPackages [shadowsocks-manager]: Downloading https://files.pythonhosted.org/packages/d3/84/fc2a08e384c180c22759ade237f24e73da92449053c6eec60add1467e31a/shadowsocks_manager-0.1.6.tar.gz
+[2024-05-12 12:49:31] WARNING root fetch - processPackages [superficialz]: Skipping, unable to determine old version
+[2024-05-12 12:49:31] INFO root fetch - main [MainThread]: End processing [superficialz] error
+[2024-05-12 12:49:31] INFO root fetch - processPackages [gitlab-emulator]: New version: [16.2.5] Old Version: [16.2.4]
+[2024-05-12 12:49:31] WARNING root fetch - processPackages [nnthon]: Skipping, unable to determine old version
+[2024-05-12 12:49:31] INFO root fetch - main [MainThread]: End processing [nnthon] error
+[2024-05-12 12:49:31] INFO root fetch - processPackages [shadowsocks-manager]: Downloading https://files.pythonhosted.org/packages/7d/5c/b41a80a628c82fd6eb82379555538effc7dfbb1add4ece0a0872be3dd6a4/shadowsocks_manager-0.1.7.tar.gz
+[2024-05-12 12:49:32] INFO root fetch - processPackages [gitlab-emulator]: Downloading https://files.pythonhosted.org/packages/4c/f0/420b2c6f08ef124da2181bd799c9a55ceb7bedae7c34253fdf9a4d96967e/gitlab_emulator-16.2.4-py3-none-any.whl
+[2024-05-12 12:49:32] INFO root fetch - processPackages [shadowsocks-manager]: executing diffoscope
+[2024-05-12 12:49:32] INFO root fetch - processPackages [shadowsocks-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shadowsocks_manager-0.1.6.tar.gz tmp/shadowsocks_manager-0.1.7.tar.gz --markdown 20240512/s/shadowsocks-manager/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-12 12:49:32] INFO root fetch - processPackages [gitlab-emulator]: Downloading https://files.pythonhosted.org/packages/61/ae/10e24f7a9900a91e8e0344333ad260f4145ac39818ee66f10e5cc8546185/gitlab_emulator-16.2.5-py3-none-any.whl
+[2024-05-12 12:49:32] INFO root fetch - processPackages [gitlab-emulator]: executing diffoscope
+[2024-05-12 12:49:32] INFO root fetch - processPackages [gitlab-emulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlab_emulator-16.2.4-py3-none-any.whl.zip tmp/gitlab_emulator-16.2.5-py3-none-any.whl.zip --markdown 20240512/g/gitlab-emulator/16.2.4-16.2.5/README.md --exclude *.pyd
+[2024-05-12 12:49:32] INFO root fetch - processPackages [shadowsocks-manager]: Remove: archive file [/home/abi/fetcher/tmp/shadowsocks_manager-0.1.6.tar.gz]
+[2024-05-12 12:49:32] INFO root fetch - processPackages [shadowsocks-manager]: Remove: archive file [/home/abi/fetcher/tmp/shadowsocks_manager-0.1.7.tar.gz]
+[2024-05-12 12:49:32] INFO root fetch - main [MainThread]: End processing [shadowsocks-manager]: success
+[2024-05-12 12:49:33] INFO root fetch - processPackages [gitlab-emulator]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_emulator-16.2.4-py3-none-any.whl.zip]
+[2024-05-12 12:49:33] INFO root fetch - processPackages [gitlab-emulator]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_emulator-16.2.5-py3-none-any.whl.zip]
+[2024-05-12 12:49:33] INFO root fetch - main [MainThread]: End processing [gitlab-emulator]: success
+[2024-05-12 12:49:33] INFO root fetch - main [MainThread]: Store serial: [23169145]
