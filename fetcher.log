@@ -14392,3 +14392,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:20:57] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-1.2.11.tar.gz]
 [2024-05-12 19:20:57] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hx-yinying]: success
 [2024-05-12 19:20:57] INFO root fetch - main [MainThread]: Store serial: [23172164]
+[2024-05-12 19:23:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172164]
+[2024-05-12 19:23:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 19:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: model-checker
+[2024-05-12 19:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smart-parallelize
+[2024-05-12 19:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: underhewz
+[2024-05-12 19:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mmWrt
+[2024-05-12 19:23:06] INFO root fetch - processPackages [mmWrt]: New version: [0.0.6rc1] Old Version: [0.0.5rc3]
+[2024-05-12 19:23:06] INFO root fetch - processPackages [smart-parallelize]: New version: [2.0.8] Old Version: [2.0.7]
+[2024-05-12 19:23:06] WARNING root fetch - processPackages [underhewz]: Skipping, unable to determine old version
+[2024-05-12 19:23:06] INFO root fetch - main [MainThread]: End processing [underhewz] error
+[2024-05-12 19:23:06] INFO root fetch - processPackages [model-checker]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-12 19:23:06] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/36/72/40eaa3b9596db034647c3a0db610ac8cf658426656bdc4dd83c480119f68/smart_parallelize-2.0.7.tar.gz
+[2024-05-12 19:23:06] INFO root fetch - processPackages [model-checker]: Downloading https://files.pythonhosted.org/packages/af/30/4ed3932e6601fb2157b1867c447d2527ce33319207b9569a92999c51897d/model_checker-0.2.8.tar.gz
+[2024-05-12 19:23:06] INFO root fetch - processPackages [mmWrt]: Downloading https://files.pythonhosted.org/packages/cb/5f/76f9e5f2e48ab545ebb35eae042bfa38d137fe0e55c1a1862f4094e514dd/mmWrt-0.0.5rc3-py3-none-any.whl
+[2024-05-12 19:23:07] INFO root fetch - processPackages [model-checker]: Downloading https://files.pythonhosted.org/packages/b0/5d/2fd0841d97c92fe2c2e0aad9e80136575bc38e7eef167fe4380eda54a596/model_checker-0.2.9.tar.gz
+[2024-05-12 19:23:07] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/6a/fe/8ebbcab94845b3b9dc55872bfdc4aca22762d128d40bbf63a34bd61fac01/smart_parallelize-2.0.8.tar.gz
+[2024-05-12 19:23:07] INFO root fetch - processPackages [mmWrt]: Downloading https://files.pythonhosted.org/packages/9d/92/dc316bcdc9c0d066456bcef590e95e1bec3fc7c0a1ca88b205a813b9992b/mmWrt-0.0.6rc1-py3-none-any.whl
+[2024-05-12 19:23:07] INFO root fetch - processPackages [model-checker]: executing diffoscope
+[2024-05-12 19:23:07] INFO root fetch - processPackages [model-checker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_checker-0.2.8.tar.gz tmp/model_checker-0.2.9.tar.gz --markdown 20240512/m/model-checker/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-12 19:23:07] INFO root fetch - processPackages [smart-parallelize]: executing diffoscope
+[2024-05-12 19:23:07] INFO root fetch - processPackages [smart-parallelize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smart_parallelize-2.0.7.tar.gz tmp/smart_parallelize-2.0.8.tar.gz --markdown 20240512/s/smart-parallelize/2.0.7-2.0.8/README.md --exclude *.pyd
+[2024-05-12 19:23:07] INFO root fetch - processPackages [mmWrt]: executing diffoscope
+[2024-05-12 19:23:07] INFO root fetch - processPackages [mmWrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmWrt-0.0.5rc3-py3-none-any.whl.zip tmp/mmWrt-0.0.6rc1-py3-none-any.whl.zip --markdown 20240512/m/mmWrt/0.0.5rc3-0.0.6rc1/README.md --exclude *.pyd
+[2024-05-12 19:23:07] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.7.tar.gz]
+[2024-05-12 19:23:07] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.8.tar.gz]
+[2024-05-12 19:23:07] INFO root fetch - main [MainThread]: End processing [smart-parallelize]: success
+[2024-05-12 19:23:07] INFO root fetch - processPackages [model-checker]: Remove: archive file [/home/abi/fetcher/tmp/model_checker-0.2.8.tar.gz]
+[2024-05-12 19:23:07] INFO root fetch - processPackages [model-checker]: Remove: archive file [/home/abi/fetcher/tmp/model_checker-0.2.9.tar.gz]
+[2024-05-12 19:23:07] INFO root fetch - main [MainThread]: End processing [model-checker]: success
+[2024-05-12 19:23:08] INFO root fetch - processPackages [mmWrt]: Remove: archive file [/home/abi/fetcher/tmp/mmWrt-0.0.5rc3-py3-none-any.whl.zip]
+[2024-05-12 19:23:08] INFO root fetch - processPackages [mmWrt]: Remove: archive file [/home/abi/fetcher/tmp/mmWrt-0.0.6rc1-py3-none-any.whl.zip]
+[2024-05-12 19:23:08] INFO root fetch - main [MainThread]: End processing [mmWrt]: success
+[2024-05-12 19:23:08] INFO root fetch - main [MainThread]: Store serial: [23172176]
