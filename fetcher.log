@@ -4487,3 +4487,15 @@
 [2024-05-12 06:40:50] INFO root fetch - processPackages [g2opy]: Remove: archive file [/home/abi/fetcher/tmp/g2opy-0.0.8.tar.gz]
 [2024-05-12 06:40:50] INFO root fetch - main [MainThread]: End processing [g2opy]: success
 [2024-05-12 06:40:50] INFO root fetch - main [MainThread]: Store serial: [23167039]
+[2024-05-12 06:42:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167039]
+[2024-05-12 06:42:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 06:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zwave-js-server-python
+[2024-05-12 06:42:58] INFO root fetch - processPackages [zwave-js-server-python]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-12 06:42:58] INFO root fetch - processPackages [zwave-js-server-python]: Downloading https://files.pythonhosted.org/packages/d2/4e/d0ff6115142a87cf98a455f6bb2a40fe717c73d40a29a18508342bf64cb5/zwave-js-server-python-0.8.0.tar.gz
+[2024-05-12 06:42:59] INFO root fetch - processPackages [zwave-js-server-python]: Downloading https://files.pythonhosted.org/packages/3c/d7/f078929568a9191db249a7a2f8a27990a3132eafe6322079104067cb8d66/zwave-js-server-python-0.9.0.tar.gz
+[2024-05-12 06:42:59] INFO root fetch - processPackages [zwave-js-server-python]: executing diffoscope
+[2024-05-12 06:42:59] INFO root fetch - processPackages [zwave-js-server-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zwave-js-server-python-0.8.0.tar.gz tmp/zwave-js-server-python-0.9.0.tar.gz --markdown 20240512/z/zwave-js-server-python/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-12 06:43:00] INFO root fetch - processPackages [zwave-js-server-python]: Remove: archive file [/home/abi/fetcher/tmp/zwave-js-server-python-0.8.0.tar.gz]
+[2024-05-12 06:43:00] INFO root fetch - processPackages [zwave-js-server-python]: Remove: archive file [/home/abi/fetcher/tmp/zwave-js-server-python-0.9.0.tar.gz]
+[2024-05-12 06:43:00] INFO root fetch - main [MainThread]: End processing [zwave-js-server-python]: success
+[2024-05-12 06:43:00] INFO root fetch - main [MainThread]: Store serial: [23167042]
