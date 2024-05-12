@@ -1944,3 +1944,20 @@
 [2024-05-12 02:47:23] INFO root fetch - processPackages [hj-proj-module]: Remove: archive file [/home/abi/fetcher/tmp/hj_proj_module-0.1.9.tar.gz]
 [2024-05-12 02:47:23] INFO root fetch - main [MainThread]: End processing [hj-proj-module]: success
 [2024-05-12 02:47:23] INFO root fetch - main [MainThread]: Store serial: [23165835]
+[2024-05-12 02:49:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165835]
+[2024-05-12 02:49:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 02:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vespacli
+[2024-05-12 02:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moji2
+[2024-05-12 02:49:31] INFO root fetch - processPackages [moji2]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-05-12 02:49:32] INFO root fetch - processPackages [moji2]: Downloading https://files.pythonhosted.org/packages/2b/a8/07685f8b581c4fbfd3807e4ab5bdb52e445a42a1e129a42233651dfcd2ed/moji2-0.4.4.tar.gz
+[2024-05-12 02:49:32] INFO root fetch - processPackages [vespacli]: New version: [8.331.34] Old Version: [8.329.17]
+[2024-05-12 02:49:32] INFO root fetch - processPackages [vespacli]: Downloading https://files.pythonhosted.org/packages/f5/b7/b192f5587bc63f82ece4d586586d21bc2a0dfe492ca107fffb3f52408ed3/vespacli-8.329.17.tar.gz
+[2024-05-12 02:49:32] INFO root fetch - processPackages [moji2]: Downloading https://files.pythonhosted.org/packages/16/dd/d08d77ce4654e25509cde5291359b443cfe07f431cbe75a04f6d813eb3b4/moji2-0.4.5.tar.gz
+[2024-05-12 02:49:32] WARNING root fetch - processPackages [vespacli]: Skipping package: exceeds size limit 49213969>=10485760
+[2024-05-12 02:49:32] INFO root fetch - main [MainThread]: End processing [vespacli] error
+[2024-05-12 02:49:32] INFO root fetch - processPackages [moji2]: executing diffoscope
+[2024-05-12 02:49:32] INFO root fetch - processPackages [moji2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moji2-0.4.4.tar.gz tmp/moji2-0.4.5.tar.gz --markdown 20240512/m/moji2/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-05-12 02:49:32] INFO root fetch - processPackages [moji2]: Remove: archive file [/home/abi/fetcher/tmp/moji2-0.4.4.tar.gz]
+[2024-05-12 02:49:32] INFO root fetch - processPackages [moji2]: Remove: archive file [/home/abi/fetcher/tmp/moji2-0.4.5.tar.gz]
+[2024-05-12 02:49:32] INFO root fetch - main [MainThread]: End processing [moji2]: success
+[2024-05-12 02:49:32] INFO root fetch - main [MainThread]: Store serial: [23165843]
