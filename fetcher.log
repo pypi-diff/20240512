@@ -15794,3 +15794,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:58:36] WARNING root fetch - processPackages [disunitedz]: Skipping, unable to determine old version
 [2024-05-12 20:58:36] INFO root fetch - main [MainThread]: End processing [disunitedz] error
 [2024-05-12 20:58:36] INFO root fetch - main [MainThread]: Store serial: [23172839]
+[2024-05-12 21:00:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172839]
+[2024-05-12 21:00:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 21:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tdrpa.tdworker
+[2024-05-12 21:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tinctsz
+[2024-05-12 21:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-model-manager
+[2024-05-12 21:00:45] WARNING root fetch - processPackages [tdrpa.tdworker]: Skipping, unable to determine old version
+[2024-05-12 21:00:45] INFO root fetch - main [MainThread]: End processing [tdrpa.tdworker] error
+[2024-05-12 21:00:45] WARNING root fetch - processPackages [tinctsz]: Skipping, unable to determine old version
+[2024-05-12 21:00:45] INFO root fetch - main [MainThread]: End processing [tinctsz] error
+[2024-05-12 21:00:45] INFO root fetch - processPackages [torch-model-manager]: New version: [0.3.0.dev1] Old Version: [0.2.0.dev9]
+[2024-05-12 21:00:45] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/74/72/d37fb1c20b9919d276f0f36cc47753d4cd5f9a15720240bbdb098639efdc/torch_model_manager-0.2.0.dev9.tar.gz
+[2024-05-12 21:00:45] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/91/ef/df38fb3af367d7cf6d12227d9b8b7698273b59d7e6c141ddd55beaae6234/torch_model_manager-0.3.0.dev1.tar.gz
+[2024-05-12 21:00:46] INFO root fetch - processPackages [torch-model-manager]: executing diffoscope
+[2024-05-12 21:00:46] INFO root fetch - processPackages [torch-model-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_manager-0.2.0.dev9.tar.gz tmp/torch_model_manager-0.3.0.dev1.tar.gz --markdown 20240512/t/torch-model-manager/0.2.0.dev9-0.3.0.dev1/README.md --exclude *.pyd
+[2024-05-12 21:00:46] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.2.0.dev9.tar.gz]
+[2024-05-12 21:00:46] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.3.0.dev1.tar.gz]
+[2024-05-12 21:00:46] INFO root fetch - main [MainThread]: End processing [torch-model-manager]: success
+[2024-05-12 21:00:46] INFO root fetch - main [MainThread]: Store serial: [23172848]
