@@ -7633,3 +7633,51 @@
 [2024-05-12 11:28:43] INFO root fetch - processPackages [sts-libs]: Remove: archive file [/home/abi/fetcher/tmp/sts_libs-0.2.0.tar.gz]
 [2024-05-12 11:28:43] INFO root fetch - main [MainThread]: End processing [sts-libs]: success
 [2024-05-12 11:28:43] INFO root fetch - main [MainThread]: Store serial: [23168478]
+[2024-05-12 11:30:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168478]
+[2024-05-12 11:30:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 11:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jzchatbot
+[2024-05-12 11:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: data-prep-toolkit-kfp
+[2024-05-12 11:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-bench
+[2024-05-12 11:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: playlist2podcast
+[2024-05-12 11:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pdf-microarray
+[2024-05-12 11:30:52] INFO root fetch - processPackages [data-prep-toolkit-kfp]: New version: [0.0.1.dev5] Old Version: [0.0.1.dev4]
+[2024-05-12 11:30:52] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/d0/c2/7d3ba2c8742f0bc4f19140cff4af52a6757367520a41b615eded6b4a2a0f/data_prep_toolkit_kfp-0.0.1.dev4.tar.gz
+[2024-05-12 11:30:52] INFO root fetch - processPackages [llm-bench]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-05-12 11:30:52] INFO root fetch - processPackages [pdf-microarray]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-12 11:30:52] INFO root fetch - processPackages [jzchatbot]: New version: [59.83.93] Old Version: [59.83.92]
+[2024-05-12 11:30:52] INFO root fetch - processPackages [playlist2podcast]: New version: [1.0.0] Old Version: [0.6.8]
+[2024-05-12 11:30:52] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/b0/37/6fde4336fef4348f67644c3425bd3c6bcaf99282026daa63da40995af549/llm_bench-0.4.3.tar.gz
+[2024-05-12 11:30:52] INFO root fetch - processPackages [pdf-microarray]: Downloading https://files.pythonhosted.org/packages/e2/52/801a18d45aaa5883f666f0e9c5d0d534fe135d1f728e38c2f52ce60ac697/pdf_microarray-1.0.0.tar.gz
+[2024-05-12 11:30:52] INFO root fetch - processPackages [jzchatbot]: Downloading https://files.pythonhosted.org/packages/97/08/f92058f9b9003cc6b99d134e687d04f21e6f32a6f9a939fcf618bb11461a/jzchatbot-59.83.92.tar.gz
+[2024-05-12 11:30:52] INFO root fetch - processPackages [playlist2podcast]: Downloading https://files.pythonhosted.org/packages/d3/af/26cb12707cb2c6c5e6c67c0e2c6a55d2f3e281295f3792ebe307a3d85c66/playlist2podcast-0.6.8.tar.gz
+[2024-05-12 11:30:52] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/ee/fd/188b71c7ee91f2648abaf54279efc929888a483f8fc816d2226f0d0e0afd/data_prep_toolkit_kfp-0.0.1.dev5.tar.gz
+[2024-05-12 11:30:52] INFO root fetch - processPackages [data-prep-toolkit-kfp]: executing diffoscope
+[2024-05-12 11:30:52] INFO root fetch - processPackages [data-prep-toolkit-kfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_toolkit_kfp-0.0.1.dev4.tar.gz tmp/data_prep_toolkit_kfp-0.0.1.dev5.tar.gz --markdown 20240512/d/data-prep-toolkit-kfp/0.0.1.dev4-0.0.1.dev5/README.md --exclude *.pyd
+[2024-05-12 11:30:52] INFO root fetch - processPackages [jzchatbot]: Downloading https://files.pythonhosted.org/packages/99/be/30665b753d6c4c0da2c5a9a60f0122cc8050e7608ea4bab02d6844492ead/jzchatbot-59.83.93.tar.gz
+[2024-05-12 11:30:52] INFO root fetch - processPackages [pdf-microarray]: Downloading https://files.pythonhosted.org/packages/f1/e5/c72c8641164d47f5e93b0b293e9151aaffcbf7ac23b56300bb870cc92768/pdf_microarray-1.0.1.tar.gz
+[2024-05-12 11:30:52] INFO root fetch - processPackages [playlist2podcast]: Downloading https://files.pythonhosted.org/packages/b8/30/711f0cbaaa767428d69b7bc6e589c992065550c82787fbcb866a248e8136/playlist2podcast-1.0.0.tar.gz
+[2024-05-12 11:30:52] INFO root fetch - processPackages [jzchatbot]: executing diffoscope
+[2024-05-12 11:30:52] INFO root fetch - processPackages [jzchatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jzchatbot-59.83.92.tar.gz tmp/jzchatbot-59.83.93.tar.gz --markdown 20240512/j/jzchatbot/59.83.92-59.83.93/README.md --exclude *.pyd
+[2024-05-12 11:30:52] INFO root fetch - processPackages [pdf-microarray]: executing diffoscope
+[2024-05-12 11:30:52] INFO root fetch - processPackages [pdf-microarray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdf_microarray-1.0.0.tar.gz tmp/pdf_microarray-1.0.1.tar.gz --markdown 20240512/p/pdf-microarray/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-12 11:30:52] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/54/8b/02f4eb36f9a34beec79d420f9bb82f07d84d54fb67bd28a5458f74544956/llm_bench-0.4.4.tar.gz
+[2024-05-12 11:30:52] INFO root fetch - processPackages [playlist2podcast]: executing diffoscope
+[2024-05-12 11:30:52] INFO root fetch - processPackages [playlist2podcast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playlist2podcast-0.6.8.tar.gz tmp/playlist2podcast-1.0.0.tar.gz --markdown 20240512/p/playlist2podcast/0.6.8-1.0.0/README.md --exclude *.pyd
+[2024-05-12 11:30:52] INFO root fetch - processPackages [llm-bench]: executing diffoscope
+[2024-05-12 11:30:52] INFO root fetch - processPackages [llm-bench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_bench-0.4.3.tar.gz tmp/llm_bench-0.4.4.tar.gz --markdown 20240512/l/llm-bench/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-05-12 11:30:53] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev4.tar.gz]
+[2024-05-12 11:30:53] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev5.tar.gz]
+[2024-05-12 11:30:53] INFO root fetch - main [MainThread]: End processing [data-prep-toolkit-kfp]: success
+[2024-05-12 11:30:53] INFO root fetch - processPackages [jzchatbot]: Remove: archive file [/home/abi/fetcher/tmp/jzchatbot-59.83.92.tar.gz]
+[2024-05-12 11:30:53] INFO root fetch - processPackages [jzchatbot]: Remove: archive file [/home/abi/fetcher/tmp/jzchatbot-59.83.93.tar.gz]
+[2024-05-12 11:30:53] INFO root fetch - main [MainThread]: End processing [jzchatbot]: success
+[2024-05-12 11:30:53] INFO root fetch - processPackages [pdf-microarray]: Remove: archive file [/home/abi/fetcher/tmp/pdf_microarray-1.0.0.tar.gz]
+[2024-05-12 11:30:53] INFO root fetch - processPackages [pdf-microarray]: Remove: archive file [/home/abi/fetcher/tmp/pdf_microarray-1.0.1.tar.gz]
+[2024-05-12 11:30:53] INFO root fetch - main [MainThread]: End processing [pdf-microarray]: success
+[2024-05-12 11:30:53] INFO root fetch - processPackages [playlist2podcast]: Remove: archive file [/home/abi/fetcher/tmp/playlist2podcast-0.6.8.tar.gz]
+[2024-05-12 11:30:53] INFO root fetch - processPackages [playlist2podcast]: Remove: archive file [/home/abi/fetcher/tmp/playlist2podcast-1.0.0.tar.gz]
+[2024-05-12 11:30:53] INFO root fetch - main [MainThread]: End processing [playlist2podcast]: success
+[2024-05-12 11:30:53] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.3.tar.gz]
+[2024-05-12 11:30:53] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.4.tar.gz]
+[2024-05-12 11:30:53] INFO root fetch - main [MainThread]: End processing [llm-bench]: success
+[2024-05-12 11:30:53] INFO root fetch - main [MainThread]: Store serial: [23168493]
