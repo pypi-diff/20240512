@@ -18162,3 +18162,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:29:50] INFO root fetch - processPackages [sglang]: Remove: archive file [/home/abi/fetcher/tmp/sglang-0.1.9.tar.gz]
 [2024-05-12 23:29:50] INFO root fetch - main [MainThread]: End processing [sglang]: success
 [2024-05-12 23:29:50] INFO root fetch - main [MainThread]: Store serial: [23173981]
+[2024-05-12 23:31:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173981]
+[2024-05-12 23:31:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 23:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xaivision
+[2024-05-12 23:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flintifiedz
+[2024-05-12 23:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PayOpt
+[2024-05-12 23:31:59] INFO root fetch - processPackages [xaivision]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-12 23:31:59] WARNING root fetch - processPackages [PayOpt]: Skipping, unable to determine old version
+[2024-05-12 23:31:59] INFO root fetch - processPackages [xaivision]: Downloading https://files.pythonhosted.org/packages/3c/f9/b245bb9d22af04b7112ff9223490aae9000d93054c2a26464e8d25231332/xaivision-0.5.0.tar.gz
+[2024-05-12 23:31:59] INFO root fetch - main [MainThread]: End processing [PayOpt] error
+[2024-05-12 23:31:59] WARNING root fetch - processPackages [flintifiedz]: Skipping, unable to determine old version
+[2024-05-12 23:31:59] INFO root fetch - main [MainThread]: End processing [flintifiedz] error
+[2024-05-12 23:31:59] INFO root fetch - processPackages [xaivision]: Downloading https://files.pythonhosted.org/packages/fc/f6/1eb82258835602e15bde17cd264b7398e635fb646306da74ceb4fac8b7bc/xaivision-0.5.1.tar.gz
+[2024-05-12 23:31:59] INFO root fetch - processPackages [xaivision]: executing diffoscope
+[2024-05-12 23:31:59] INFO root fetch - processPackages [xaivision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xaivision-0.5.0.tar.gz tmp/xaivision-0.5.1.tar.gz --markdown 20240512/x/xaivision/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-12 23:32:00] INFO root fetch - processPackages [xaivision]: Remove: archive file [/home/abi/fetcher/tmp/xaivision-0.5.0.tar.gz]
+[2024-05-12 23:32:00] INFO root fetch - processPackages [xaivision]: Remove: archive file [/home/abi/fetcher/tmp/xaivision-0.5.1.tar.gz]
+[2024-05-12 23:32:00] INFO root fetch - main [MainThread]: End processing [xaivision]: success
+[2024-05-12 23:32:00] INFO root fetch - main [MainThread]: Store serial: [23173992]
