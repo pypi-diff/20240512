@@ -10683,3 +10683,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:14:20] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.9-cp39-cp39-manylinux2014_x86_64.whl.zip]
 [2024-05-12 15:14:20] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2024-05-12 15:14:20] INFO root fetch - main [MainThread]: Store serial: [23170059]
+[2024-05-12 15:16:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170059]
+[2024-05-12 15:16:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 15:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: holiday-predictor
+[2024-05-12 15:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: battleship-tui
+[2024-05-12 15:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: condolesz
+[2024-05-12 15:16:36] WARNING root fetch - processPackages [holiday-predictor]: Skipping, unable to determine old version
+[2024-05-12 15:16:36] INFO root fetch - main [MainThread]: End processing [holiday-predictor] error
+[2024-05-12 15:16:36] WARNING root fetch - processPackages [condolesz]: Skipping, unable to determine old version
+[2024-05-12 15:16:36] INFO root fetch - main [MainThread]: End processing [condolesz] error
+[2024-05-12 15:16:36] INFO root fetch - processPackages [battleship-tui]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-12 15:16:36] INFO root fetch - processPackages [battleship-tui]: Downloading https://files.pythonhosted.org/packages/b4/26/b06bec4a4520796024bdfa7fbda8628ba0ca9f2ff80f3fee9a83e4be93be/battleship_tui-0.9.0.tar.gz
+[2024-05-12 15:16:36] INFO root fetch - processPackages [battleship-tui]: Downloading https://files.pythonhosted.org/packages/7a/6f/b15aff96f7cff812b0694c4a531588c97787a0962dfaabb3c6cbd72d8597/battleship_tui-0.9.1.tar.gz
+[2024-05-12 15:16:36] INFO root fetch - processPackages [battleship-tui]: executing diffoscope
+[2024-05-12 15:16:36] INFO root fetch - processPackages [battleship-tui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/battleship_tui-0.9.0.tar.gz tmp/battleship_tui-0.9.1.tar.gz --markdown 20240512/b/battleship-tui/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-12 15:16:37] INFO root fetch - processPackages [battleship-tui]: Remove: archive file [/home/abi/fetcher/tmp/battleship_tui-0.9.0.tar.gz]
+[2024-05-12 15:16:37] INFO root fetch - processPackages [battleship-tui]: Remove: archive file [/home/abi/fetcher/tmp/battleship_tui-0.9.1.tar.gz]
+[2024-05-12 15:16:37] INFO root fetch - main [MainThread]: End processing [battleship-tui]: success
+[2024-05-12 15:16:37] INFO root fetch - main [MainThread]: Store serial: [23170072]
