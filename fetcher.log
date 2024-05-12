@@ -8051,3 +8051,36 @@
 [2024-05-12 11:59:04] INFO root fetch - processPackages [aipkgs-core]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_core-0.4.3.tar.gz]
 [2024-05-12 11:59:04] INFO root fetch - main [MainThread]: End processing [aipkgs-core]: success
 [2024-05-12 11:59:04] INFO root fetch - main [MainThread]: Store serial: [23168769]
+[2024-05-12 12:01:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168769]
+[2024-05-12 12:01:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 12:01:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: portfolio-tracker
+[2024-05-12 12:01:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-keras-nightly
+[2024-05-12 12:01:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jzchatbot
+[2024-05-12 12:01:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: teo
+[2024-05-12 12:01:12] INFO root fetch - processPackages [jzchatbot]: New version: [59.83.95] Old Version: [59.83.94]
+[2024-05-12 12:01:12] WARNING root fetch - processPackages [portfolio-tracker]: Skipping, unable to determine old version
+[2024-05-12 12:01:12] INFO root fetch - main [MainThread]: End processing [portfolio-tracker] error
+[2024-05-12 12:01:12] INFO root fetch - processPackages [tf-keras-nightly]: New version: [2.17.0.dev2024051109] Old Version: [2.17.0.dev2024051009]
+[2024-05-12 12:01:13] INFO root fetch - processPackages [jzchatbot]: Downloading https://files.pythonhosted.org/packages/e3/8a/965c14cb7c034bc8c2613460455137dcdd90862009c01c3d33e9bfdfbda2/jzchatbot-59.83.94.tar.gz
+[2024-05-12 12:01:13] INFO root fetch - processPackages [teo]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-12 12:01:13] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/7b/f7/fb62596ced8d9352a6bed2a3d09dee42042ad359971b5c95bd1d2e794d8a/tf_keras_nightly-2.17.0.dev2024051009.tar.gz
+[2024-05-12 12:01:13] INFO root fetch - processPackages [teo]: Downloading https://files.pythonhosted.org/packages/b1/e9/d6c6c71d9ba363284528d0085e2537ab5241ca9c41177346095254276a2c/teo-0.2.8.tar.gz
+[2024-05-12 12:01:13] INFO root fetch - processPackages [jzchatbot]: Downloading https://files.pythonhosted.org/packages/e2/d2/4055cb14d54f71313c3b8264bcdc3b3a1815926f8844fae3936f171fc5b9/jzchatbot-59.83.95.tar.gz
+[2024-05-12 12:01:13] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/51/45/0021c3b2132fd3558280468b4d478fcef600bdb393fb28d4a022a7f609b7/tf_keras_nightly-2.17.0.dev2024051109.tar.gz
+[2024-05-12 12:01:13] INFO root fetch - processPackages [jzchatbot]: executing diffoscope
+[2024-05-12 12:01:13] INFO root fetch - processPackages [jzchatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jzchatbot-59.83.94.tar.gz tmp/jzchatbot-59.83.95.tar.gz --markdown 20240512/j/jzchatbot/59.83.94-59.83.95/README.md --exclude *.pyd
+[2024-05-12 12:01:13] INFO root fetch - processPackages [tf-keras-nightly]: executing diffoscope
+[2024-05-12 12:01:13] INFO root fetch - processPackages [tf-keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_keras_nightly-2.17.0.dev2024051009.tar.gz tmp/tf_keras_nightly-2.17.0.dev2024051109.tar.gz --markdown 20240512/t/tf-keras-nightly/2.17.0.dev2024051009-2.17.0.dev2024051109/README.md --exclude *.pyd
+[2024-05-12 12:01:13] INFO root fetch - processPackages [teo]: Downloading https://files.pythonhosted.org/packages/1a/6e/79fac05caa23b6f8d6325ce41b4c00733012f08b4aee6cd1b1d45c11bd0a/teo-0.2.9.tar.gz
+[2024-05-12 12:01:13] INFO root fetch - processPackages [teo]: executing diffoscope
+[2024-05-12 12:01:13] INFO root fetch - processPackages [teo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teo-0.2.8.tar.gz tmp/teo-0.2.9.tar.gz --markdown 20240512/t/teo/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-12 12:01:13] INFO root fetch - processPackages [jzchatbot]: Remove: archive file [/home/abi/fetcher/tmp/jzchatbot-59.83.94.tar.gz]
+[2024-05-12 12:01:13] INFO root fetch - processPackages [jzchatbot]: Remove: archive file [/home/abi/fetcher/tmp/jzchatbot-59.83.95.tar.gz]
+[2024-05-12 12:01:13] INFO root fetch - main [MainThread]: End processing [jzchatbot]: success
+[2024-05-12 12:01:14] INFO root fetch - processPackages [teo]: Remove: archive file [/home/abi/fetcher/tmp/teo-0.2.8.tar.gz]
+[2024-05-12 12:01:14] INFO root fetch - processPackages [teo]: Remove: archive file [/home/abi/fetcher/tmp/teo-0.2.9.tar.gz]
+[2024-05-12 12:01:14] INFO root fetch - main [MainThread]: End processing [teo]: success
+[2024-05-12 12:01:15] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024051009.tar.gz]
+[2024-05-12 12:01:15] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024051109.tar.gz]
+[2024-05-12 12:01:15] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
+[2024-05-12 12:01:15] INFO root fetch - main [MainThread]: Store serial: [23168781]
