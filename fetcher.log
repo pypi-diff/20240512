@@ -11479,3 +11479,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:17:41] INFO root fetch - processPackages [django-admin-logentry-extension]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-logentry-extension-0.1.1.tar.gz]
 [2024-05-12 16:17:41] INFO root fetch - main [MainThread]: End processing [django-admin-logentry-extension]: success
 [2024-05-12 16:17:41] INFO root fetch - main [MainThread]: Store serial: [23170556]
+[2024-05-12 16:19:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170556]
+[2024-05-12 16:19:50] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 16:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lupaninz
+[2024-05-12 16:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dartrs
+[2024-05-12 16:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libera_utils
+[2024-05-12 16:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gitAppWebhook
+[2024-05-12 16:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: synfras
+[2024-05-12 16:19:50] INFO root fetch - processPackages [synfras]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-12 16:19:50] WARNING root fetch - processPackages [lupaninz]: Skipping, unable to determine old version
+[2024-05-12 16:19:50] INFO root fetch - main [MainThread]: End processing [lupaninz] error
+[2024-05-12 16:19:50] INFO root fetch - processPackages [libera_utils]: New version: [2.3.0rc4] Old Version: [2.3.0rc3]
+[2024-05-12 16:19:50] INFO root fetch - processPackages [gitAppWebhook]: New version: [0.4] Old Version: [0.3]
+[2024-05-12 16:19:50] INFO root fetch - processPackages [dartrs]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-12 16:19:50] INFO root fetch - processPackages [synfras]: Downloading https://files.pythonhosted.org/packages/1e/37/17d3ec0cbd4874ad0d71fdfc20da3d5cc93013d9e4b80a9a4e11b6526bf3/synfras-0.5.0.tar.gz
+[2024-05-12 16:19:50] INFO root fetch - processPackages [libera_utils]: Downloading https://files.pythonhosted.org/packages/70/70/c0c3351c642e57bc8816b2277a592609d62884d8a17f7645be79e45ad7f6/libera_utils-2.3.0rc3.tar.gz
+[2024-05-12 16:19:50] INFO root fetch - processPackages [gitAppWebhook]: Downloading https://files.pythonhosted.org/packages/5e/d9/868a6b20241ac39804da8a0b51c819c29dd9fab5657577b814070781c162/gitappwebhook-0.3.tar.gz
+[2024-05-12 16:19:50] INFO root fetch - processPackages [dartrs]: Downloading https://files.pythonhosted.org/packages/a2/f8/b01f05f4a49cce1f4392ff59a47c49147adf6296396c2554da1eaf4b62a0/dartrs-0.1.4.tar.gz
+[2024-05-12 16:19:51] INFO root fetch - processPackages [synfras]: Downloading https://files.pythonhosted.org/packages/97/a1/250e585e4f08b2e896f35a5b71b308ce397bfb0f72679c67227079a9adca/synfras-0.6.0.tar.gz
+[2024-05-12 16:19:51] INFO root fetch - processPackages [gitAppWebhook]: Downloading https://files.pythonhosted.org/packages/7f/09/6f65b2b8cfcc17cde83de03e67f7f705dc2512b7ec58ac3b0352d207f8ee/gitappwebhook-0.4.tar.gz
+[2024-05-12 16:19:51] INFO root fetch - processPackages [dartrs]: Downloading https://files.pythonhosted.org/packages/ca/10/ba32a3e0093e0e57471691538fb3c460015b9ec77dc109b29ab68ed5c8dd/dartrs-0.1.5.tar.gz
+[2024-05-12 16:19:51] WARNING root fetch - processPackages [libera_utils]: Skipping package: exceeds size limit 31162196>=10485760
+[2024-05-12 16:19:51] INFO root fetch - main [MainThread]: End processing [libera_utils] error
+[2024-05-12 16:19:51] INFO root fetch - processPackages [synfras]: executing diffoscope
+[2024-05-12 16:19:51] INFO root fetch - processPackages [synfras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synfras-0.5.0.tar.gz tmp/synfras-0.6.0.tar.gz --markdown 20240512/s/synfras/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-12 16:19:51] INFO root fetch - processPackages [gitAppWebhook]: executing diffoscope
+[2024-05-12 16:19:51] INFO root fetch - processPackages [gitAppWebhook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitappwebhook-0.3.tar.gz tmp/gitappwebhook-0.4.tar.gz --markdown 20240512/g/gitAppWebhook/0.3-0.4/README.md --exclude *.pyd
+[2024-05-12 16:19:51] INFO root fetch - processPackages [dartrs]: executing diffoscope
+[2024-05-12 16:19:51] INFO root fetch - processPackages [dartrs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dartrs-0.1.4.tar.gz tmp/dartrs-0.1.5.tar.gz --markdown 20240512/d/dartrs/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-12 16:19:51] INFO root fetch - processPackages [synfras]: Remove: archive file [/home/abi/fetcher/tmp/synfras-0.5.0.tar.gz]
+[2024-05-12 16:19:51] INFO root fetch - processPackages [synfras]: Remove: archive file [/home/abi/fetcher/tmp/synfras-0.6.0.tar.gz]
+[2024-05-12 16:19:51] INFO root fetch - main [MainThread]: End processing [synfras]: success
+[2024-05-12 16:19:51] INFO root fetch - processPackages [gitAppWebhook]: Remove: archive file [/home/abi/fetcher/tmp/gitappwebhook-0.3.tar.gz]
+[2024-05-12 16:19:51] INFO root fetch - processPackages [gitAppWebhook]: Remove: archive file [/home/abi/fetcher/tmp/gitappwebhook-0.4.tar.gz]
+[2024-05-12 16:19:51] INFO root fetch - main [MainThread]: End processing [gitAppWebhook]: success
+[2024-05-12 16:19:52] INFO root fetch - processPackages [dartrs]: Remove: archive file [/home/abi/fetcher/tmp/dartrs-0.1.4.tar.gz]
+[2024-05-12 16:19:52] INFO root fetch - processPackages [dartrs]: Remove: archive file [/home/abi/fetcher/tmp/dartrs-0.1.5.tar.gz]
+[2024-05-12 16:19:52] INFO root fetch - main [MainThread]: End processing [dartrs]: success
+[2024-05-12 16:19:52] INFO root fetch - main [MainThread]: Store serial: [23170615]
