@@ -14828,3 +14828,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:44:51] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.9052753601-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-12 19:44:51] INFO root fetch - main [MainThread]: End processing [pyhdl-if]: success
 [2024-05-12 19:44:51] INFO root fetch - main [MainThread]: Store serial: [23172383]
+[2024-05-12 19:46:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172383]
+[2024-05-12 19:47:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 19:47:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lib_ml_remla24_team02
+[2024-05-12 19:47:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SelfCalibratedConformal
+[2024-05-12 19:47:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flutelikez
+[2024-05-12 19:47:00] INFO root fetch - processPackages [lib_ml_remla24_team02]: New version: [1.0.0] Old Version: [0.1.1]
+[2024-05-12 19:47:00] INFO root fetch - processPackages [SelfCalibratedConformal]: New version: [0.35] Old Version: [0.34]
+[2024-05-12 19:47:00] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/76/78/cc6fd7b42953aadb587d0a7a29dfea3c7b1bbf5bcf93f9b7644f563a35cd/SelfCalibratedConformal-0.34.tar.gz
+[2024-05-12 19:47:00] WARNING root fetch - processPackages [flutelikez]: Skipping, unable to determine old version
+[2024-05-12 19:47:00] INFO root fetch - main [MainThread]: End processing [flutelikez] error
+[2024-05-12 19:47:00] INFO root fetch - processPackages [lib_ml_remla24_team02]: Downloading https://files.pythonhosted.org/packages/c5/e3/dadf64a461617fbf935ae28ad7248f34f461e8683193fb1aeb87d72368fb/lib_ml_remla24_team02-0.1.1.tar.gz
+[2024-05-12 19:47:00] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/0e/51/444fdb3e7e6509df12ce5f061414db586c3bc84e9ab9d3e26b25db579dc5/SelfCalibratedConformal-0.35.tar.gz
+[2024-05-12 19:47:00] INFO root fetch - processPackages [lib_ml_remla24_team02]: Downloading https://files.pythonhosted.org/packages/c1/89/478c6d284f4004516189e9fb7e38049943e1723d0e364f08d51dfb448df2/lib_ml_remla24_team02-1.0.0.tar.gz
+[2024-05-12 19:47:01] INFO root fetch - processPackages [lib_ml_remla24_team02]: executing diffoscope
+[2024-05-12 19:47:01] INFO root fetch - processPackages [lib_ml_remla24_team02]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib_ml_remla24_team02-0.1.1.tar.gz tmp/lib_ml_remla24_team02-1.0.0.tar.gz --markdown 20240512/l/lib_ml_remla24_team02/0.1.1-1.0.0/README.md --exclude *.pyd
+[2024-05-12 19:47:01] INFO root fetch - processPackages [SelfCalibratedConformal]: executing diffoscope
+[2024-05-12 19:47:01] INFO root fetch - processPackages [SelfCalibratedConformal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SelfCalibratedConformal-0.34.tar.gz tmp/SelfCalibratedConformal-0.35.tar.gz --markdown 20240512/S/SelfCalibratedConformal/0.34-0.35/README.md --exclude *.pyd
+[2024-05-12 19:47:01] INFO root fetch - processPackages [lib_ml_remla24_team02]: Remove: archive file [/home/abi/fetcher/tmp/lib_ml_remla24_team02-0.1.1.tar.gz]
+[2024-05-12 19:47:01] INFO root fetch - processPackages [lib_ml_remla24_team02]: Remove: archive file [/home/abi/fetcher/tmp/lib_ml_remla24_team02-1.0.0.tar.gz]
+[2024-05-12 19:47:01] INFO root fetch - main [MainThread]: End processing [lib_ml_remla24_team02]: success
+[2024-05-12 19:47:01] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.34.tar.gz]
+[2024-05-12 19:47:01] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.35.tar.gz]
+[2024-05-12 19:47:01] INFO root fetch - main [MainThread]: End processing [SelfCalibratedConformal]: success
+[2024-05-12 19:47:01] INFO root fetch - main [MainThread]: Store serial: [23172393]
