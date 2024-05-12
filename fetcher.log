@@ -4649,3 +4649,33 @@
 [2024-05-12 07:00:29] INFO root fetch - processPackages [genocide]: Remove: archive file [/home/abi/fetcher/tmp/genocide-91.tar.gz]
 [2024-05-12 07:00:29] INFO root fetch - main [MainThread]: End processing [genocide]: success
 [2024-05-12 07:00:29] INFO root fetch - main [MainThread]: Store serial: [23167117]
+[2024-05-12 07:02:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167117]
+[2024-05-12 07:02:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 07:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: image-component-streamlit
+[2024-05-12 07:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezside
+[2024-05-12 07:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ikvpy
+[2024-05-12 07:02:37] INFO root fetch - processPackages [image-component-streamlit]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-12 07:02:37] INFO root fetch - processPackages [ikvpy]: New version: [0.0.35] Old Version: [0.0.34]
+[2024-05-12 07:02:37] INFO root fetch - processPackages [ezside]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 07:02:37] INFO root fetch - processPackages [image-component-streamlit]: Downloading https://files.pythonhosted.org/packages/4f/d4/43ef034eda27263d2dc7ad2d075cd8c801fde4de39c7c46078e12bf7ee0c/image-component-streamlit-0.0.5.tar.gz
+[2024-05-12 07:02:37] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/01/6c/badb8cfd5e0b868ead99fe648b3ca90e3ab2534070412a6b81d478d2cb06/ikvpy-0.0.34.tar.gz
+[2024-05-12 07:02:37] INFO root fetch - processPackages [ezside]: Downloading https://files.pythonhosted.org/packages/5a/d4/1810386c07f848c78c2e8b15144f22482295b4040d1283a67e6675563952/ezside-0.1.8.tar.gz
+[2024-05-12 07:02:38] INFO root fetch - processPackages [ezside]: Downloading https://files.pythonhosted.org/packages/f1/e0/2cae952d702515bb0e82f0bacbe379367f4a416b2a3928f33850e21ae823/ezside-0.1.9.tar.gz
+[2024-05-12 07:02:38] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/54/53/fc602d7a5834f1c26ab8fe93415acb359119d066cbbd98814af8112cd82e/ikvpy-0.0.35.tar.gz
+[2024-05-12 07:02:38] INFO root fetch - processPackages [image-component-streamlit]: Downloading https://files.pythonhosted.org/packages/75/8a/8e8228df579ed7b71200166ecfed49a99bf0a4e19e53923f8f0fa37b27dd/image-component-streamlit-0.0.6.tar.gz
+[2024-05-12 07:02:38] INFO root fetch - processPackages [ikvpy]: executing diffoscope
+[2024-05-12 07:02:38] INFO root fetch - processPackages [ikvpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ikvpy-0.0.34.tar.gz tmp/ikvpy-0.0.35.tar.gz --markdown 20240512/i/ikvpy/0.0.34-0.0.35/README.md --exclude *.pyd
+[2024-05-12 07:02:38] INFO root fetch - processPackages [ezside]: executing diffoscope
+[2024-05-12 07:02:38] INFO root fetch - processPackages [ezside]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezside-0.1.8.tar.gz tmp/ezside-0.1.9.tar.gz --markdown 20240512/e/ezside/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 07:02:38] INFO root fetch - processPackages [image-component-streamlit]: executing diffoscope
+[2024-05-12 07:02:38] INFO root fetch - processPackages [image-component-streamlit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-component-streamlit-0.0.5.tar.gz tmp/image-component-streamlit-0.0.6.tar.gz --markdown 20240512/i/image-component-streamlit/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-12 07:02:38] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.34.tar.gz]
+[2024-05-12 07:02:38] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.35.tar.gz]
+[2024-05-12 07:02:38] INFO root fetch - main [MainThread]: End processing [ikvpy]: success
+[2024-05-12 07:02:38] INFO root fetch - processPackages [ezside]: Remove: archive file [/home/abi/fetcher/tmp/ezside-0.1.8.tar.gz]
+[2024-05-12 07:02:38] INFO root fetch - processPackages [ezside]: Remove: archive file [/home/abi/fetcher/tmp/ezside-0.1.9.tar.gz]
+[2024-05-12 07:02:38] INFO root fetch - main [MainThread]: End processing [ezside]: success
+[2024-05-12 07:02:50] INFO root fetch - processPackages [image-component-streamlit]: Remove: archive file [/home/abi/fetcher/tmp/image-component-streamlit-0.0.5.tar.gz]
+[2024-05-12 07:02:50] INFO root fetch - processPackages [image-component-streamlit]: Remove: archive file [/home/abi/fetcher/tmp/image-component-streamlit-0.0.6.tar.gz]
+[2024-05-12 07:02:50] INFO root fetch - main [MainThread]: End processing [image-component-streamlit]: success
+[2024-05-12 07:02:50] INFO root fetch - main [MainThread]: Store serial: [23167128]
