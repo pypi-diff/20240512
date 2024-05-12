@@ -10368,3 +10368,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:43:15] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240511-py3-none-win_amd64.whl.zip]
 [2024-05-12 14:43:15] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
 [2024-05-12 14:43:15] INFO root fetch - main [MainThread]: Store serial: [23169918]
+[2024-05-12 14:45:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169918]
+[2024-05-12 14:45:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 14:45:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-static-ionicons
+[2024-05-12 14:45:23] INFO root fetch - processPackages [django-static-ionicons]: New version: [2.0.1.5] Old Version: [2.0.1.4]
+[2024-05-12 14:45:24] INFO root fetch - processPackages [django-static-ionicons]: Downloading https://files.pythonhosted.org/packages/08/32/84f8b11772719dbe956e8b9fadadcef9f58faefb0a4d926fd9717fa1c268/django-static-ionicons-2.0.1.4.tar.gz
+[2024-05-12 14:45:24] INFO root fetch - processPackages [django-static-ionicons]: Downloading https://files.pythonhosted.org/packages/21/c4/971899d2b97b128c8d6bc4414466bf7139d696b51cbd710c84aa6bcdd5df/django-static-ionicons-2.0.1.5.tar.gz
+[2024-05-12 14:45:24] INFO root fetch - processPackages [django-static-ionicons]: executing diffoscope
+[2024-05-12 14:45:24] INFO root fetch - processPackages [django-static-ionicons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-static-ionicons-2.0.1.4.tar.gz tmp/django-static-ionicons-2.0.1.5.tar.gz --markdown 20240512/d/django-static-ionicons/2.0.1.4-2.0.1.5/README.md --exclude *.pyd
+[2024-05-12 14:45:25] INFO root fetch - processPackages [django-static-ionicons]: Remove: archive file [/home/abi/fetcher/tmp/django-static-ionicons-2.0.1.4.tar.gz]
+[2024-05-12 14:45:25] INFO root fetch - processPackages [django-static-ionicons]: Remove: archive file [/home/abi/fetcher/tmp/django-static-ionicons-2.0.1.5.tar.gz]
+[2024-05-12 14:45:25] INFO root fetch - main [MainThread]: End processing [django-static-ionicons]: success
+[2024-05-12 14:45:25] INFO root fetch - main [MainThread]: Store serial: [23169921]
