@@ -15785,3 +15785,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:56:27] INFO root fetch - processPackages [sqlite3-to-mysql]: Remove: archive file [/home/abi/fetcher/tmp/sqlite3_to_mysql-2.1.9.tar.gz]
 [2024-05-12 20:56:27] INFO root fetch - main [MainThread]: End processing [sqlite3-to-mysql]: success
 [2024-05-12 20:56:27] INFO root fetch - main [MainThread]: Store serial: [23172833]
+[2024-05-12 20:58:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172833]
+[2024-05-12 20:58:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 20:58:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Panis
+[2024-05-12 20:58:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: disunitedz
+[2024-05-12 20:58:36] WARNING root fetch - processPackages [Panis]: Skipping, unable to determine old version
+[2024-05-12 20:58:36] INFO root fetch - main [MainThread]: End processing [Panis] error
+[2024-05-12 20:58:36] WARNING root fetch - processPackages [disunitedz]: Skipping, unable to determine old version
+[2024-05-12 20:58:36] INFO root fetch - main [MainThread]: End processing [disunitedz] error
+[2024-05-12 20:58:36] INFO root fetch - main [MainThread]: Store serial: [23172839]
