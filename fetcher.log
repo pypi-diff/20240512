@@ -10404,3 +10404,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:47:35] INFO root fetch - processPackages [rococo]: Remove: archive file [/home/abi/fetcher/tmp/rococo-1.0.9.tar.gz]
 [2024-05-12 14:47:35] INFO root fetch - main [MainThread]: End processing [rococo]: success
 [2024-05-12 14:47:35] INFO root fetch - main [MainThread]: Store serial: [23169932]
+[2024-05-12 14:49:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169932]
+[2024-05-12 14:49:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 14:49:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coospace-automation
+[2024-05-12 14:49:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nodejs-wheel
+[2024-05-12 14:49:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nodejs-wheel-binaries
+[2024-05-12 14:49:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: statsnet-python-sdk
+[2024-05-12 14:49:43] INFO root fetch - processPackages [statsnet-python-sdk]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-12 14:49:43] WARNING root fetch - processPackages [coospace-automation]: Skipping, unable to determine old version
+[2024-05-12 14:49:43] INFO root fetch - main [MainThread]: End processing [coospace-automation] error
+[2024-05-12 14:49:43] INFO root fetch - processPackages [statsnet-python-sdk]: Downloading https://files.pythonhosted.org/packages/b3/00/d3004d065b959bd00a5edfe4eb52980bb27b44fa2fd2c213329f240bfada/statsnet_python_sdk-1.1.0.tar.gz
+[2024-05-12 14:49:43] INFO root fetch - processPackages [nodejs-wheel]: New version: [20.9.0] Old Version: [20.8.1]
+[2024-05-12 14:49:44] INFO root fetch - processPackages [nodejs-wheel]: Downloading https://files.pythonhosted.org/packages/08/da/4cff64cd8338d60e3ae9d3dc8f87150bac2ff2b304bfa045f3409e6d13ac/nodejs_wheel-20.8.1.tar.gz
+[2024-05-12 14:49:44] INFO root fetch - processPackages [nodejs-wheel-binaries]: New version: [20.13.1] Old Version: [20.13.0]
+[2024-05-12 14:49:44] INFO root fetch - processPackages [statsnet-python-sdk]: Downloading https://files.pythonhosted.org/packages/4e/e5/6d80cb1e7d3bbd539f16d78c3ee9773d52fe44916630ee3f6d710eb36ac3/statsnet_python_sdk-1.1.1.tar.gz
+[2024-05-12 14:49:44] INFO root fetch - processPackages [statsnet-python-sdk]: executing diffoscope
+[2024-05-12 14:49:44] INFO root fetch - processPackages [statsnet-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statsnet_python_sdk-1.1.0.tar.gz tmp/statsnet_python_sdk-1.1.1.tar.gz --markdown 20240512/s/statsnet-python-sdk/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-12 14:49:44] INFO root fetch - processPackages [nodejs-wheel-binaries]: Downloading https://files.pythonhosted.org/packages/0b/6a/603896774d75b1e0d3d8a48c07392ff8cb4c5cff428c2572212ea63d6593/nodejs_wheel_binaries-20.13.0.tar.gz
+[2024-05-12 14:49:44] INFO root fetch - processPackages [nodejs-wheel]: Downloading https://files.pythonhosted.org/packages/22/68/2fa9f980402a92b328bf00fcb038ac3ecfd14a727a50e4c6bf202f2050ff/nodejs_wheel-20.9.0.tar.gz
+[2024-05-12 14:49:44] INFO root fetch - processPackages [nodejs-wheel]: executing diffoscope
+[2024-05-12 14:49:44] INFO root fetch - processPackages [nodejs-wheel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nodejs_wheel-20.8.1.tar.gz tmp/nodejs_wheel-20.9.0.tar.gz --markdown 20240512/n/nodejs-wheel/20.8.1-20.9.0/README.md --exclude *.pyd
+[2024-05-12 14:49:44] INFO root fetch - processPackages [nodejs-wheel-binaries]: Downloading https://files.pythonhosted.org/packages/6b/e4/2e4d6baaa81f23ecacbbc1bcc0fa6c21d12dd042f05cc1d91c3ba181c70b/nodejs_wheel_binaries-20.13.1.tar.gz
+[2024-05-12 14:49:44] INFO root fetch - processPackages [nodejs-wheel-binaries]: executing diffoscope
+[2024-05-12 14:49:44] INFO root fetch - processPackages [nodejs-wheel-binaries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nodejs_wheel_binaries-20.13.0.tar.gz tmp/nodejs_wheel_binaries-20.13.1.tar.gz --markdown 20240512/n/nodejs-wheel-binaries/20.13.0-20.13.1/README.md --exclude *.pyd
+[2024-05-12 14:49:44] INFO root fetch - processPackages [statsnet-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/statsnet_python_sdk-1.1.0.tar.gz]
+[2024-05-12 14:49:44] INFO root fetch - processPackages [statsnet-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/statsnet_python_sdk-1.1.1.tar.gz]
+[2024-05-12 14:49:44] INFO root fetch - main [MainThread]: End processing [statsnet-python-sdk]: success
+[2024-05-12 14:49:45] INFO root fetch - processPackages [nodejs-wheel]: Remove: archive file [/home/abi/fetcher/tmp/nodejs_wheel-20.8.1.tar.gz]
+[2024-05-12 14:49:45] INFO root fetch - processPackages [nodejs-wheel]: Remove: archive file [/home/abi/fetcher/tmp/nodejs_wheel-20.9.0.tar.gz]
+[2024-05-12 14:49:45] INFO root fetch - main [MainThread]: End processing [nodejs-wheel]: success
+[2024-05-12 14:49:45] INFO root fetch - processPackages [nodejs-wheel-binaries]: Remove: archive file [/home/abi/fetcher/tmp/nodejs_wheel_binaries-20.13.0.tar.gz]
+[2024-05-12 14:49:45] INFO root fetch - processPackages [nodejs-wheel-binaries]: Remove: archive file [/home/abi/fetcher/tmp/nodejs_wheel_binaries-20.13.1.tar.gz]
+[2024-05-12 14:49:45] INFO root fetch - main [MainThread]: End processing [nodejs-wheel-binaries]: success
+[2024-05-12 14:49:45] INFO root fetch - main [MainThread]: Store serial: [23169949]
