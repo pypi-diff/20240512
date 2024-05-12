@@ -6318,3 +6318,15 @@
 [2024-05-12 09:23:59] INFO root fetch - processPackages [arikaim-service-server]: Remove: archive file [/home/abi/fetcher/tmp/arikaim_service_server-0.5.5.tar.gz]
 [2024-05-12 09:23:59] INFO root fetch - main [MainThread]: End processing [arikaim-service-server]: success
 [2024-05-12 09:23:59] INFO root fetch - main [MainThread]: Store serial: [23167813]
+[2024-05-12 09:26:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167813]
+[2024-05-12 09:26:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 09:26:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pklue
+[2024-05-12 09:26:08] INFO root fetch - processPackages [pklue]: New version: [1.0.0] Old Version: [0.3.2]
+[2024-05-12 09:26:08] INFO root fetch - processPackages [pklue]: Downloading https://files.pythonhosted.org/packages/97/22/8b17486881f868649916c91658a85220e4aba07d40c2d78da1a1fd7f083b/pklue-0.3.2.tar.gz
+[2024-05-12 09:26:08] INFO root fetch - processPackages [pklue]: Downloading https://files.pythonhosted.org/packages/47/83/7797e186308f46736b0e17f1842f539fc50b5a9861c6e6e5db5b97e3d48c/pklue-1.0.0.tar.gz
+[2024-05-12 09:26:08] INFO root fetch - processPackages [pklue]: executing diffoscope
+[2024-05-12 09:26:08] INFO root fetch - processPackages [pklue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pklue-0.3.2.tar.gz tmp/pklue-1.0.0.tar.gz --markdown 20240512/p/pklue/0.3.2-1.0.0/README.md --exclude *.pyd
+[2024-05-12 09:26:09] INFO root fetch - processPackages [pklue]: Remove: archive file [/home/abi/fetcher/tmp/pklue-0.3.2.tar.gz]
+[2024-05-12 09:26:09] INFO root fetch - processPackages [pklue]: Remove: archive file [/home/abi/fetcher/tmp/pklue-1.0.0.tar.gz]
+[2024-05-12 09:26:09] INFO root fetch - main [MainThread]: End processing [pklue]: success
+[2024-05-12 09:26:09] INFO root fetch - main [MainThread]: Store serial: [23167816]
