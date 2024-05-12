@@ -1546,3 +1546,33 @@
 [2024-05-12 02:16:21] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch_ignite-0.6.0.dev20240511.tar.gz]
 [2024-05-12 02:16:21] INFO root fetch - main [MainThread]: End processing [pytorch-ignite]: success
 [2024-05-12 02:16:21] INFO root fetch - main [MainThread]: Store serial: [23165553]
+[2024-05-12 02:18:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165553]
+[2024-05-12 02:18:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 02:18:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agentforge
+[2024-05-12 02:18:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdklabs.cdk-hyperledger-fabric-network
+[2024-05-12 02:18:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moji2
+[2024-05-12 02:18:30] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-05-12 02:18:30] INFO root fetch - processPackages [agentforge]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-12 02:18:30] INFO root fetch - processPackages [moji2]: New version: [0.4.1] Old Version: [0.3.8]
+[2024-05-12 02:18:30] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/9b/c8/ddb4d2575b42b36bf1ebf5daccec9c3c53a9ac9cadaeffb66bed93dc3bab/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz
+[2024-05-12 02:18:31] INFO root fetch - processPackages [agentforge]: Downloading https://files.pythonhosted.org/packages/ee/8e/66c93be2800c61a49a8e05255959440a964f61bc12fc350d687eef6e0468/agentforge-0.2.8.tar.gz
+[2024-05-12 02:18:31] INFO root fetch - processPackages [moji2]: Downloading https://files.pythonhosted.org/packages/68/0e/2f7dd8540eadd8fcba84ddeb34d3f3590676a772cea268021ffaad564b2d/moji2-0.3.8.tar.gz
+[2024-05-12 02:18:31] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/56/40/cbf52f4213018f2d82f0aad0f2fa90e69c2923704c1905bd7e090d3accf2/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz
+[2024-05-12 02:18:31] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: executing diffoscope
+[2024-05-12 02:18:31] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz --markdown 20240512/c/cdklabs.cdk-hyperledger-fabric-network/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-05-12 02:18:31] INFO root fetch - processPackages [moji2]: Downloading https://files.pythonhosted.org/packages/6a/19/f50817ebc9497136a4acd19f9b14dd99f04df64672c6ad052147a6d0d948/moji2-0.4.1.tar.gz
+[2024-05-12 02:18:31] INFO root fetch - processPackages [agentforge]: Downloading https://files.pythonhosted.org/packages/27/4d/3ba886c7d34c7b76efeb089e1e5644689d63133705549ac4d79f8c98afe0/agentforge-0.2.9.tar.gz
+[2024-05-12 02:18:31] INFO root fetch - processPackages [agentforge]: executing diffoscope
+[2024-05-12 02:18:31] INFO root fetch - processPackages [agentforge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agentforge-0.2.8.tar.gz tmp/agentforge-0.2.9.tar.gz --markdown 20240512/a/agentforge/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-12 02:18:31] INFO root fetch - processPackages [moji2]: executing diffoscope
+[2024-05-12 02:18:31] INFO root fetch - processPackages [moji2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moji2-0.3.8.tar.gz tmp/moji2-0.4.1.tar.gz --markdown 20240512/m/moji2/0.3.8-0.4.1/README.md --exclude *.pyd
+[2024-05-12 02:18:31] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz]
+[2024-05-12 02:18:31] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz]
+[2024-05-12 02:18:31] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-hyperledger-fabric-network]: success
+[2024-05-12 02:18:31] INFO root fetch - processPackages [moji2]: Remove: archive file [/home/abi/fetcher/tmp/moji2-0.3.8.tar.gz]
+[2024-05-12 02:18:31] INFO root fetch - processPackages [moji2]: Remove: archive file [/home/abi/fetcher/tmp/moji2-0.4.1.tar.gz]
+[2024-05-12 02:18:31] INFO root fetch - main [MainThread]: End processing [moji2]: success
+[2024-05-12 02:18:32] INFO root fetch - processPackages [agentforge]: Remove: archive file [/home/abi/fetcher/tmp/agentforge-0.2.8.tar.gz]
+[2024-05-12 02:18:32] INFO root fetch - processPackages [agentforge]: Remove: archive file [/home/abi/fetcher/tmp/agentforge-0.2.9.tar.gz]
+[2024-05-12 02:18:32] INFO root fetch - main [MainThread]: End processing [agentforge]: success
+[2024-05-12 02:18:32] INFO root fetch - main [MainThread]: Store serial: [23165569]
