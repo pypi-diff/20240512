@@ -10272,3 +10272,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:36:02] INFO root fetch - processPackages [mkdocs-material]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_material-9.5.9.tar.gz]
 [2024-05-12 14:36:02] INFO root fetch - main [MainThread]: End processing [mkdocs-material]: success
 [2024-05-12 14:36:02] INFO root fetch - main [MainThread]: Store serial: [23169875]
+[2024-05-12 14:38:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169875]
+[2024-05-12 14:38:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 14:38:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coddlingz
+[2024-05-12 14:38:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: queue-worker-local
+[2024-05-12 14:38:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-static-fontawesome
+[2024-05-12 14:38:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dooth
+[2024-05-12 14:38:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyranges1
+[2024-05-12 14:38:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pytumblrx
+[2024-05-12 14:38:12] INFO root fetch - processPackages [queue-worker-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 14:38:12] INFO root fetch - processPackages [queue-worker-local]: Downloading https://files.pythonhosted.org/packages/7f/d9/fa0def6b3a566ced04835c9ae35bd0c97f2e24eec77224b0908e1a709b35/queue-worker-local-0.0.8.tar.gz
+[2024-05-12 14:38:12] WARNING root fetch - processPackages [coddlingz]: Skipping, unable to determine old version
+[2024-05-12 14:38:12] INFO root fetch - main [MainThread]: End processing [coddlingz] error
+[2024-05-12 14:38:12] INFO root fetch - processPackages [django-static-fontawesome]: New version: [6.5.2.0] Old Version: [6.4.2.1]
+[2024-05-12 14:38:12] INFO root fetch - processPackages [dooth]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-12 14:38:12] INFO root fetch - processPackages [pytumblrx]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-12 14:38:12] INFO root fetch - processPackages [pyranges1]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-12 14:38:12] INFO root fetch - processPackages [dooth]: Downloading https://files.pythonhosted.org/packages/38/0f/7b9f678a3fd957541fc208671a879befc056b218509c0558006f6f9857a8/dooth-1.0.0-py3-none-any.whl
+[2024-05-12 14:38:12] INFO root fetch - processPackages [django-static-fontawesome]: Downloading https://files.pythonhosted.org/packages/32/1a/d605555b953b4d62243fbfca980e1486ef391ad1eff8f422819cd6bbeb78/django-static-fontawesome-6.4.2.1.tar.gz
+[2024-05-12 14:38:12] INFO root fetch - processPackages [queue-worker-local]: Downloading https://files.pythonhosted.org/packages/e7/be/a67b2e43f60298d9c8a3f8953b2cab611ed6508ecc046a1d9189e6ef932a/queue-worker-local-0.0.9.tar.gz
+[2024-05-12 14:38:12] INFO root fetch - processPackages [pytumblrx]: Downloading https://files.pythonhosted.org/packages/3d/9a/0f312379414555fcee09d648725a33e1c8f3d2bcaa6aaa5a05e83881ccab/pytumblrx-0.0.3.tar.gz
+[2024-05-12 14:38:12] INFO root fetch - processPackages [pyranges1]: Downloading https://files.pythonhosted.org/packages/0f/67/ff715ca87d232a1534d567ff9fa9031ef76d4da0dc768984225c80ff7b23/pyranges1-1.0.0.tar.gz
+[2024-05-12 14:38:12] INFO root fetch - processPackages [queue-worker-local]: executing diffoscope
+[2024-05-12 14:38:12] INFO root fetch - processPackages [queue-worker-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/queue-worker-local-0.0.8.tar.gz tmp/queue-worker-local-0.0.9.tar.gz --markdown 20240512/q/queue-worker-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 14:38:12] INFO root fetch - processPackages [dooth]: Downloading https://files.pythonhosted.org/packages/06/8f/a821c122bc77684050347910883b0e21db1b10b41e27d58d8b9ddc3d701d/dooth-1.0.1-py3-none-any.whl
+[2024-05-12 14:38:13] INFO root fetch - processPackages [dooth]: executing diffoscope
+[2024-05-12 14:38:13] INFO root fetch - processPackages [dooth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dooth-1.0.0-py3-none-any.whl.zip tmp/dooth-1.0.1-py3-none-any.whl.zip --markdown 20240512/d/dooth/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-12 14:38:13] INFO root fetch - processPackages [pytumblrx]: Downloading https://files.pythonhosted.org/packages/c4/fe/01c098308c6fb5446dbc0174d97cfc69b9333602f7863fced6430c2ccf84/pytumblrx-0.0.4.tar.gz
+[2024-05-12 14:38:13] INFO root fetch - processPackages [pyranges1]: Downloading https://files.pythonhosted.org/packages/15/5a/1622e6cc49d723976eecb40008ff3ece73f8145dd7ffec9d65677781a0d7/pyranges1-1.0.1.tar.gz
+[2024-05-12 14:38:13] INFO root fetch - processPackages [pytumblrx]: executing diffoscope
+[2024-05-12 14:38:13] INFO root fetch - processPackages [pytumblrx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytumblrx-0.0.3.tar.gz tmp/pytumblrx-0.0.4.tar.gz --markdown 20240512/p/pytumblrx/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-12 14:38:13] INFO root fetch - processPackages [pyranges1]: executing diffoscope
+[2024-05-12 14:38:13] INFO root fetch - processPackages [pyranges1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyranges1-1.0.0.tar.gz tmp/pyranges1-1.0.1.tar.gz --markdown 20240512/p/pyranges1/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-12 14:38:13] INFO root fetch - processPackages [queue-worker-local]: Remove: archive file [/home/abi/fetcher/tmp/queue-worker-local-0.0.8.tar.gz]
+[2024-05-12 14:38:13] INFO root fetch - processPackages [queue-worker-local]: Remove: archive file [/home/abi/fetcher/tmp/queue-worker-local-0.0.9.tar.gz]
+[2024-05-12 14:38:13] INFO root fetch - main [MainThread]: End processing [queue-worker-local]: success
+[2024-05-12 14:38:13] INFO root fetch - processPackages [dooth]: Remove: archive file [/home/abi/fetcher/tmp/dooth-1.0.0-py3-none-any.whl.zip]
+[2024-05-12 14:38:13] INFO root fetch - processPackages [dooth]: Remove: archive file [/home/abi/fetcher/tmp/dooth-1.0.1-py3-none-any.whl.zip]
+[2024-05-12 14:38:13] INFO root fetch - main [MainThread]: End processing [dooth]: success
+[2024-05-12 14:38:13] INFO root fetch - processPackages [django-static-fontawesome]: Downloading https://files.pythonhosted.org/packages/28/4b/e7bd4346afe11eb096414c3c653e98a5e56d86881964e17fccfd51f00851/django-static-fontawesome-6.5.2.0.tar.gz
+[2024-05-12 14:38:13] INFO root fetch - processPackages [pytumblrx]: Remove: archive file [/home/abi/fetcher/tmp/pytumblrx-0.0.3.tar.gz]
+[2024-05-12 14:38:13] INFO root fetch - processPackages [pytumblrx]: Remove: archive file [/home/abi/fetcher/tmp/pytumblrx-0.0.4.tar.gz]
+[2024-05-12 14:38:13] INFO root fetch - main [MainThread]: End processing [pytumblrx]: success
+[2024-05-12 14:38:14] INFO root fetch - processPackages [django-static-fontawesome]: executing diffoscope
+[2024-05-12 14:38:14] INFO root fetch - processPackages [django-static-fontawesome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-static-fontawesome-6.4.2.1.tar.gz tmp/django-static-fontawesome-6.5.2.0.tar.gz --markdown 20240512/d/django-static-fontawesome/6.4.2.1-6.5.2.0/README.md --exclude *.pyd
+[2024-05-12 14:38:14] INFO root fetch - processPackages [pyranges1]: Remove: archive file [/home/abi/fetcher/tmp/pyranges1-1.0.0.tar.gz]
+[2024-05-12 14:38:14] INFO root fetch - processPackages [pyranges1]: Remove: archive file [/home/abi/fetcher/tmp/pyranges1-1.0.1.tar.gz]
+[2024-05-12 14:38:14] INFO root fetch - main [MainThread]: End processing [pyranges1]: success
+[2024-05-12 14:38:47] INFO root fetch - processPackages [django-static-fontawesome]: Remove: archive file [/home/abi/fetcher/tmp/django-static-fontawesome-6.4.2.1.tar.gz]
+[2024-05-12 14:38:47] INFO root fetch - processPackages [django-static-fontawesome]: Remove: archive file [/home/abi/fetcher/tmp/django-static-fontawesome-6.5.2.0.tar.gz]
+[2024-05-12 14:38:47] INFO root fetch - main [MainThread]: End processing [django-static-fontawesome]: success
+[2024-05-12 14:38:47] INFO root fetch - main [MainThread]: Store serial: [23169895]
