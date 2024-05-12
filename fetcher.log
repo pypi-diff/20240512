@@ -4679,3 +4679,32 @@
 [2024-05-12 07:02:50] INFO root fetch - processPackages [image-component-streamlit]: Remove: archive file [/home/abi/fetcher/tmp/image-component-streamlit-0.0.6.tar.gz]
 [2024-05-12 07:02:50] INFO root fetch - main [MainThread]: End processing [image-component-streamlit]: success
 [2024-05-12 07:02:50] INFO root fetch - main [MainThread]: Store serial: [23167128]
+[2024-05-12 07:04:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167128]
+[2024-05-12 07:04:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 07:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: balokBeton
+[2024-05-12 07:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opendp
+[2024-05-12 07:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: readyapi-slim
+[2024-05-12 07:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: readyapi
+[2024-05-12 07:04:59] INFO root fetch - processPackages [readyapi]: New version: [0.111.0.dev1] Old Version: [0.110.3]
+[2024-05-12 07:04:59] WARNING root fetch - processPackages [balokBeton]: Skipping, unable to determine old version
+[2024-05-12 07:04:59] INFO root fetch - processPackages [readyapi-slim]: New version: [0.111.0.dev1] Old Version: [0.110.3]
+[2024-05-12 07:04:59] INFO root fetch - main [MainThread]: End processing [balokBeton] error
+[2024-05-12 07:04:59] INFO root fetch - processPackages [opendp]: New version: [0.9.2b20240207001] Old Version: [0.9.2a20240511001]
+[2024-05-12 07:04:59] INFO root fetch - processPackages [readyapi-slim]: Downloading https://files.pythonhosted.org/packages/74/dc/13dbb4e34eb3d352753ef734809ffb11d3466ca19735b830e241f89d9bae/readyapi_slim-0.110.3.tar.gz
+[2024-05-12 07:04:59] INFO root fetch - processPackages [readyapi]: Downloading https://files.pythonhosted.org/packages/76/7f/5143e1285b934f11fd4b5be8c2edcbbad4d0bcfb47bf4db37f0e8d1efa21/readyapi-0.110.3.tar.gz
+[2024-05-12 07:04:59] INFO root fetch - processPackages [opendp]: Downloading https://files.pythonhosted.org/packages/d0/e1/15c75ee94d00a0c3eb518d27b863abd34ab3da5638e846f578c66124e8f7/opendp-0.9.2a20240511001-pp310-pypy310_pp73-win_amd64.whl
+[2024-05-12 07:04:59] INFO root fetch - processPackages [readyapi-slim]: Downloading https://files.pythonhosted.org/packages/e3/84/385ca40250d6fea5a0ffe4a44643e001c18cd2bdb0115beed16325dd5774/readyapi_slim-0.111.0.dev1.tar.gz
+[2024-05-12 07:04:59] INFO root fetch - processPackages [readyapi]: Downloading https://files.pythonhosted.org/packages/bf/12/bba7f9ccc66da0b3a7d0f6c9fc71db421db88bda59859f06f844cc3f2e0d/readyapi-0.111.0.dev1.tar.gz
+[2024-05-12 07:04:59] INFO root fetch - processPackages [readyapi]: executing diffoscope
+[2024-05-12 07:04:59] INFO root fetch - processPackages [readyapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/readyapi-0.110.3.tar.gz tmp/readyapi-0.111.0.dev1.tar.gz --markdown 20240512/r/readyapi/0.110.3-0.111.0.dev1/README.md --exclude *.pyd
+[2024-05-12 07:04:59] INFO root fetch - processPackages [readyapi-slim]: executing diffoscope
+[2024-05-12 07:04:59] INFO root fetch - processPackages [readyapi-slim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/readyapi_slim-0.110.3.tar.gz tmp/readyapi_slim-0.111.0.dev1.tar.gz --markdown 20240512/r/readyapi-slim/0.110.3-0.111.0.dev1/README.md --exclude *.pyd
+[2024-05-12 07:05:00] WARNING root fetch - processPackages [opendp]: Skipping package: exceeds size limit 18176030>=10485760
+[2024-05-12 07:05:00] INFO root fetch - main [MainThread]: End processing [opendp] error
+[2024-05-12 07:05:02] INFO root fetch - processPackages [readyapi-slim]: Remove: archive file [/home/abi/fetcher/tmp/readyapi_slim-0.110.3.tar.gz]
+[2024-05-12 07:05:02] INFO root fetch - processPackages [readyapi-slim]: Remove: archive file [/home/abi/fetcher/tmp/readyapi_slim-0.111.0.dev1.tar.gz]
+[2024-05-12 07:05:02] INFO root fetch - main [MainThread]: End processing [readyapi-slim]: success
+[2024-05-12 07:05:03] INFO root fetch - processPackages [readyapi]: Remove: archive file [/home/abi/fetcher/tmp/readyapi-0.110.3.tar.gz]
+[2024-05-12 07:05:03] INFO root fetch - processPackages [readyapi]: Remove: archive file [/home/abi/fetcher/tmp/readyapi-0.111.0.dev1.tar.gz]
+[2024-05-12 07:05:03] INFO root fetch - main [MainThread]: End processing [readyapi]: success
+[2024-05-12 07:05:03] INFO root fetch - main [MainThread]: Store serial: [23167150]
