@@ -3368,3 +3368,27 @@
 [2024-05-12 04:51:08] INFO root fetch - processPackages [odoo14-addon-account-invoice-report-due-list]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_account_invoice_report_due_list-14.0.2.0.1.dev5-py3-none-any.whl.zip]
 [2024-05-12 04:51:08] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-invoice-report-due-list]: success
 [2024-05-12 04:51:08] INFO root fetch - main [MainThread]: Store serial: [23166489]
+[2024-05-12 04:53:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166489]
+[2024-05-12 04:53:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 04:53:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiogtrans
+[2024-05-12 04:53:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-RanFurryPic
+[2024-05-12 04:53:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dullestz
+[2024-05-12 04:53:17] INFO root fetch - processPackages [aiogtrans]: New version: [1.1.7] Old Version: [1.1.6]
+[2024-05-12 04:53:17] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-12 04:53:17] WARNING root fetch - processPackages [dullestz]: Skipping, unable to determine old version
+[2024-05-12 04:53:17] INFO root fetch - main [MainThread]: End processing [dullestz] error
+[2024-05-12 04:53:17] INFO root fetch - processPackages [aiogtrans]: Downloading https://files.pythonhosted.org/packages/3a/60/e054900c5f92a31d82d0da9abfaffda7348a291e0d9289d74ada4bdaf8c9/aiogtrans-1.1.6.tar.gz
+[2024-05-12 04:53:17] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/7e/50/c7a758a1e371a0a0294ca0d7d15eed3ff31645f8e0584f9ccea641ead256/nonebot_plugin_ranfurrypic-1.1.4.tar.gz
+[2024-05-12 04:53:18] INFO root fetch - processPackages [aiogtrans]: Downloading https://files.pythonhosted.org/packages/be/89/ef104bc3cc27c886098ec7f90307d1cd33a5d1decb3d5cede9a9eebcdfe7/aiogtrans-1.1.7.tar.gz
+[2024-05-12 04:53:18] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/2b/2c/dba8a1761875024b5d776ffdb288843ca54f196c391c27ecb287567a6e74/nonebot_plugin_ranfurrypic-1.1.5.tar.gz
+[2024-05-12 04:53:18] INFO root fetch - processPackages [aiogtrans]: executing diffoscope
+[2024-05-12 04:53:18] INFO root fetch - processPackages [aiogtrans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogtrans-1.1.6.tar.gz tmp/aiogtrans-1.1.7.tar.gz --markdown 20240512/a/aiogtrans/1.1.6-1.1.7/README.md --exclude *.pyd
+[2024-05-12 04:53:18] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: executing diffoscope
+[2024-05-12 04:53:18] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ranfurrypic-1.1.4.tar.gz tmp/nonebot_plugin_ranfurrypic-1.1.5.tar.gz --markdown 20240512/n/nonebot-plugin-RanFurryPic/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-12 04:53:18] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.1.4.tar.gz]
+[2024-05-12 04:53:18] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.1.5.tar.gz]
+[2024-05-12 04:53:18] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-RanFurryPic]: success
+[2024-05-12 04:53:18] INFO root fetch - processPackages [aiogtrans]: Remove: archive file [/home/abi/fetcher/tmp/aiogtrans-1.1.6.tar.gz]
+[2024-05-12 04:53:18] INFO root fetch - processPackages [aiogtrans]: Remove: archive file [/home/abi/fetcher/tmp/aiogtrans-1.1.7.tar.gz]
+[2024-05-12 04:53:18] INFO root fetch - main [MainThread]: End processing [aiogtrans]: success
+[2024-05-12 04:53:18] INFO root fetch - main [MainThread]: Store serial: [23166498]
