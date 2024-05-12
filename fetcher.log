@@ -16376,3 +16376,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:31:26] INFO root fetch - processPackages [ediri-scaleway]: Remove: archive file [/home/abi/fetcher/tmp/ediri_scaleway-2.36.0.tar.gz]
 [2024-05-12 21:31:26] INFO root fetch - main [MainThread]: End processing [ediri-scaleway]: success
 [2024-05-12 21:31:26] INFO root fetch - main [MainThread]: Store serial: [23173086]
+[2024-05-12 21:33:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173086]
+[2024-05-12 21:33:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 21:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chronomeleon
+[2024-05-12 21:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchani-step
+[2024-05-12 21:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: naan
+[2024-05-12 21:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: local_tuya_domoticz_tools
+[2024-05-12 21:33:35] INFO root fetch - processPackages [torchani-step]: New version: [2024.5.12] Old Version: [2023.2.28]
+[2024-05-12 21:33:35] INFO root fetch - processPackages [naan]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 21:33:35] INFO root fetch - processPackages [torchani-step]: Downloading https://files.pythonhosted.org/packages/dd/40/ad3d15742cd702e647684a7bf31ae56bd387fcfd3c9d0a017596703fbb38/torchani_step-2023.2.28.tar.gz
+[2024-05-12 21:33:35] INFO root fetch - processPackages [naan]: Downloading https://files.pythonhosted.org/packages/83/03/eb3530217e04a00e5089cec45264261d00a43a1ad3049fdf7ae1ce2cdfbd/naan-0.0.1.tar.gz
+[2024-05-12 21:33:35] WARNING root fetch - processPackages [chronomeleon]: Skipping, unable to determine old version
+[2024-05-12 21:33:35] INFO root fetch - main [MainThread]: End processing [chronomeleon] error
+[2024-05-12 21:33:35] INFO root fetch - processPackages [local_tuya_domoticz_tools]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-12 21:33:35] INFO root fetch - processPackages [local_tuya_domoticz_tools]: Downloading https://files.pythonhosted.org/packages/50/fc/0be5273b6b1814913bf9ddd77a318e91a86fce2397b2c732895b149946c6/local_tuya_domoticz_tools-1.1.1.tar.gz
+[2024-05-12 21:33:35] INFO root fetch - processPackages [naan]: Downloading https://files.pythonhosted.org/packages/b9/18/ac8acb94243e16ad6416710d0476b6081fb708376ed17b5e28b8d0e44f74/naan-0.0.2-py3-none-any.whl
+[2024-05-12 21:33:35] INFO root fetch - processPackages [torchani-step]: Downloading https://files.pythonhosted.org/packages/d8/1e/ad7246a32f08594edb293e87a13e5c6c66dd323e30d5ca4222e0ed5352de/torchani_step-2024.5.12.tar.gz
+[2024-05-12 21:33:35] INFO root fetch - processPackages [naan]: executing diffoscope
+[2024-05-12 21:33:35] INFO root fetch - processPackages [naan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naan-0.0.1.tar.gz tmp/naan-0.0.2-py3-none-any.whl.zip --markdown 20240512/n/naan/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-12 21:33:36] INFO root fetch - processPackages [torchani-step]: executing diffoscope
+[2024-05-12 21:33:36] INFO root fetch - processPackages [torchani-step]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchani_step-2023.2.28.tar.gz tmp/torchani_step-2024.5.12.tar.gz --markdown 20240512/t/torchani-step/2023.2.28-2024.5.12/README.md --exclude *.pyd
+[2024-05-12 21:33:36] INFO root fetch - processPackages [local_tuya_domoticz_tools]: Downloading https://files.pythonhosted.org/packages/ed/fc/5647b52c9f5af2a98f45ea495bd66f6b0b309571ebaebe2959afd546b8f5/local_tuya_domoticz_tools-1.1.2.tar.gz
+[2024-05-12 21:33:36] INFO root fetch - processPackages [naan]: Remove: archive file [/home/abi/fetcher/tmp/naan-0.0.1.tar.gz]
+[2024-05-12 21:33:36] INFO root fetch - processPackages [naan]: Remove: archive file [/home/abi/fetcher/tmp/naan-0.0.2-py3-none-any.whl.zip]
+[2024-05-12 21:33:36] INFO root fetch - main [MainThread]: End processing [naan]: success
+[2024-05-12 21:33:36] INFO root fetch - processPackages [local_tuya_domoticz_tools]: executing diffoscope
+[2024-05-12 21:33:36] INFO root fetch - processPackages [local_tuya_domoticz_tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local_tuya_domoticz_tools-1.1.1.tar.gz tmp/local_tuya_domoticz_tools-1.1.2.tar.gz --markdown 20240512/l/local_tuya_domoticz_tools/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-12 21:33:36] INFO root fetch - processPackages [torchani-step]: Remove: archive file [/home/abi/fetcher/tmp/torchani_step-2023.2.28.tar.gz]
+[2024-05-12 21:33:36] INFO root fetch - processPackages [torchani-step]: Remove: archive file [/home/abi/fetcher/tmp/torchani_step-2024.5.12.tar.gz]
+[2024-05-12 21:33:36] INFO root fetch - main [MainThread]: End processing [torchani-step]: success
+[2024-05-12 21:33:37] INFO root fetch - processPackages [local_tuya_domoticz_tools]: Remove: archive file [/home/abi/fetcher/tmp/local_tuya_domoticz_tools-1.1.1.tar.gz]
+[2024-05-12 21:33:37] INFO root fetch - processPackages [local_tuya_domoticz_tools]: Remove: archive file [/home/abi/fetcher/tmp/local_tuya_domoticz_tools-1.1.2.tar.gz]
+[2024-05-12 21:33:37] INFO root fetch - main [MainThread]: End processing [local_tuya_domoticz_tools]: success
+[2024-05-12 21:33:37] INFO root fetch - main [MainThread]: Store serial: [23173101]
