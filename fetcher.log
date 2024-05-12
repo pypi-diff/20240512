@@ -4292,3 +4292,48 @@
 [2024-05-12 06:23:20] INFO root fetch - processPackages [streamlit-screen-stats]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-screen-stats-0.0.9.tar.gz]
 [2024-05-12 06:23:20] INFO root fetch - main [MainThread]: End processing [streamlit-screen-stats]: success
 [2024-05-12 06:23:20] INFO root fetch - main [MainThread]: Store serial: [23166961]
+[2024-05-12 06:25:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166961]
+[2024-05-12 06:25:28] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 06:25:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: custom-card-metric-component
+[2024-05-12 06:25:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nostpy-cli
+[2024-05-12 06:25:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openllm
+[2024-05-12 06:25:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openllm-client
+[2024-05-12 06:25:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openllm-core
+[2024-05-12 06:25:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sonationz
+[2024-05-12 06:25:28] WARNING root fetch - processPackages [nostpy-cli]: Skipping, unable to determine old version
+[2024-05-12 06:25:28] INFO root fetch - main [MainThread]: End processing [nostpy-cli] error
+[2024-05-12 06:25:28] WARNING root fetch - processPackages [sonationz]: Skipping, unable to determine old version
+[2024-05-12 06:25:28] INFO root fetch - processPackages [custom-card-metric-component]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-12 06:25:28] INFO root fetch - main [MainThread]: End processing [sonationz] error
+[2024-05-12 06:25:28] INFO root fetch - processPackages [openllm-client]: New version: [0.5.0a9] Old Version: [0.5.0a8]
+[2024-05-12 06:25:28] INFO root fetch - processPackages [openllm]: New version: [0.5.0a9] Old Version: [0.5.0a8]
+[2024-05-12 06:25:28] INFO root fetch - processPackages [openllm-core]: New version: [0.5.0a9] Old Version: [0.5.0a8]
+[2024-05-12 06:25:28] INFO root fetch - processPackages [custom-card-metric-component]: Downloading https://files.pythonhosted.org/packages/83/9d/972468e2b617f7e7f7d8c1aa9a5c622334670776c380bc8d5ae79f66ec71/custom-card-metric-component-0.0.3.tar.gz
+[2024-05-12 06:25:28] INFO root fetch - processPackages [openllm-core]: Downloading https://files.pythonhosted.org/packages/76/67/05ea81f766677b9200494e8b14dfee33b358cd583a24b18cfccf4b5dceb4/openllm_core-0.5.0a8.tar.gz
+[2024-05-12 06:25:29] INFO root fetch - processPackages [openllm]: Downloading https://files.pythonhosted.org/packages/25/5e/a6b702d91e584020599e12b4e578356a53a057e41006cb4d052f87b5f529/openllm-0.5.0a8.tar.gz
+[2024-05-12 06:25:29] INFO root fetch - processPackages [openllm-client]: Downloading https://files.pythonhosted.org/packages/4d/a1/77e25ef6ae940d011349f3e76ae6a6504bb30758fb04c48f8996e1000da1/openllm_client-0.5.0a8.tar.gz
+[2024-05-12 06:25:29] INFO root fetch - processPackages [openllm-core]: Downloading https://files.pythonhosted.org/packages/5f/c2/f5c0438894dd21e79a2fafd6b9133bada1deb717adbae6f8ea2187dff0f0/openllm_core-0.5.0a9.tar.gz
+[2024-05-12 06:25:29] INFO root fetch - processPackages [openllm-client]: Downloading https://files.pythonhosted.org/packages/2d/40/495eb20184d9497a8efae2f6f2386e79914d06cdca3487408619f0767652/openllm_client-0.5.0a9.tar.gz
+[2024-05-12 06:25:29] INFO root fetch - processPackages [openllm]: Downloading https://files.pythonhosted.org/packages/d5/72/afd31477b3fe760b27b8778b8b2fee8e654798f516eb8e5a907791ed597a/openllm-0.5.0a9.tar.gz
+[2024-05-12 06:25:29] INFO root fetch - processPackages [custom-card-metric-component]: Downloading https://files.pythonhosted.org/packages/d4/f2/f7de3a5ec6d9b9829f2e5fec59489729066bf6e3864fa454cb377e8dd6a2/custom-card-metric-component-0.0.4.tar.gz
+[2024-05-12 06:25:29] INFO root fetch - processPackages [openllm-client]: executing diffoscope
+[2024-05-12 06:25:29] INFO root fetch - processPackages [openllm-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openllm_client-0.5.0a8.tar.gz tmp/openllm_client-0.5.0a9.tar.gz --markdown 20240512/o/openllm-client/0.5.0a8-0.5.0a9/README.md --exclude *.pyd
+[2024-05-12 06:25:29] INFO root fetch - processPackages [openllm-core]: executing diffoscope
+[2024-05-12 06:25:29] INFO root fetch - processPackages [openllm-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openllm_core-0.5.0a8.tar.gz tmp/openllm_core-0.5.0a9.tar.gz --markdown 20240512/o/openllm-core/0.5.0a8-0.5.0a9/README.md --exclude *.pyd
+[2024-05-12 06:25:29] INFO root fetch - processPackages [openllm]: executing diffoscope
+[2024-05-12 06:25:29] INFO root fetch - processPackages [openllm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openllm-0.5.0a8.tar.gz tmp/openllm-0.5.0a9.tar.gz --markdown 20240512/o/openllm/0.5.0a8-0.5.0a9/README.md --exclude *.pyd
+[2024-05-12 06:25:29] INFO root fetch - processPackages [custom-card-metric-component]: executing diffoscope
+[2024-05-12 06:25:29] INFO root fetch - processPackages [custom-card-metric-component]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom-card-metric-component-0.0.3.tar.gz tmp/custom-card-metric-component-0.0.4.tar.gz --markdown 20240512/c/custom-card-metric-component/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-12 06:25:30] INFO root fetch - processPackages [openllm-client]: Remove: archive file [/home/abi/fetcher/tmp/openllm_client-0.5.0a8.tar.gz]
+[2024-05-12 06:25:30] INFO root fetch - processPackages [openllm-client]: Remove: archive file [/home/abi/fetcher/tmp/openllm_client-0.5.0a9.tar.gz]
+[2024-05-12 06:25:30] INFO root fetch - main [MainThread]: End processing [openllm-client]: success
+[2024-05-12 06:25:30] INFO root fetch - processPackages [openllm-core]: Remove: archive file [/home/abi/fetcher/tmp/openllm_core-0.5.0a8.tar.gz]
+[2024-05-12 06:25:30] INFO root fetch - processPackages [openllm-core]: Remove: archive file [/home/abi/fetcher/tmp/openllm_core-0.5.0a9.tar.gz]
+[2024-05-12 06:25:30] INFO root fetch - main [MainThread]: End processing [openllm-core]: success
+[2024-05-12 06:25:30] INFO root fetch - processPackages [openllm]: Remove: archive file [/home/abi/fetcher/tmp/openllm-0.5.0a8.tar.gz]
+[2024-05-12 06:25:30] INFO root fetch - processPackages [openllm]: Remove: archive file [/home/abi/fetcher/tmp/openllm-0.5.0a9.tar.gz]
+[2024-05-12 06:25:30] INFO root fetch - main [MainThread]: End processing [openllm]: success
+[2024-05-12 06:25:42] INFO root fetch - processPackages [custom-card-metric-component]: Remove: archive file [/home/abi/fetcher/tmp/custom-card-metric-component-0.0.3.tar.gz]
+[2024-05-12 06:25:42] INFO root fetch - processPackages [custom-card-metric-component]: Remove: archive file [/home/abi/fetcher/tmp/custom-card-metric-component-0.0.4.tar.gz]
+[2024-05-12 06:25:42] INFO root fetch - main [MainThread]: End processing [custom-card-metric-component]: success
+[2024-05-12 06:25:42] INFO root fetch - main [MainThread]: Store serial: [23166980]
