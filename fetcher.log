@@ -11343,3 +11343,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:06:51] INFO root fetch - processPackages [bookio-fetchfox]: Remove: archive file [/home/abi/fetcher/tmp/bookio_fetchfox-2.6.0.tar.gz]
 [2024-05-12 16:06:51] INFO root fetch - main [MainThread]: End processing [bookio-fetchfox]: success
 [2024-05-12 16:06:51] INFO root fetch - main [MainThread]: Store serial: [23170492]
+[2024-05-12 16:08:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170492]
+[2024-05-12 16:09:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 16:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: slurpit-sdk
+[2024-05-12 16:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PKNSETools
+[2024-05-12 16:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sportivelyz
+[2024-05-12 16:09:00] INFO root fetch - processPackages [PKNSETools]: New version: [0.1.20240512.104] Old Version: [0.1.20240510.103]
+[2024-05-12 16:09:00] WARNING root fetch - processPackages [slurpit-sdk]: Skipping, unable to determine old version
+[2024-05-12 16:09:00] INFO root fetch - main [MainThread]: End processing [slurpit-sdk] error
+[2024-05-12 16:09:00] WARNING root fetch - processPackages [sportivelyz]: Skipping, unable to determine old version
+[2024-05-12 16:09:00] INFO root fetch - main [MainThread]: End processing [sportivelyz] error
+[2024-05-12 16:09:00] INFO root fetch - processPackages [PKNSETools]: Downloading https://files.pythonhosted.org/packages/7b/39/7d5b1c1a7807cc46813acef908f4e8f1408e6137b782991382a1911a5316/PKNSETools-0.1.20240510.103.tar.gz
+[2024-05-12 16:09:00] INFO root fetch - processPackages [PKNSETools]: Downloading https://files.pythonhosted.org/packages/5e/f5/713ce52f4bad3aa50cc79846a6f430d4541dad31a4afe157762edd79a6ee/PKNSETools-0.1.20240512.104.tar.gz
+[2024-05-12 16:09:01] INFO root fetch - processPackages [PKNSETools]: executing diffoscope
+[2024-05-12 16:09:01] INFO root fetch - processPackages [PKNSETools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKNSETools-0.1.20240510.103.tar.gz tmp/PKNSETools-0.1.20240512.104.tar.gz --markdown 20240512/P/PKNSETools/0.1.20240510.103-0.1.20240512.104/README.md --exclude *.pyd
+[2024-05-12 16:09:01] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240510.103.tar.gz]
+[2024-05-12 16:09:01] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240512.104.tar.gz]
+[2024-05-12 16:09:01] INFO root fetch - main [MainThread]: End processing [PKNSETools]: success
+[2024-05-12 16:09:01] INFO root fetch - main [MainThread]: Store serial: [23170503]
