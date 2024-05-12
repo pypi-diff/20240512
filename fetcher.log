@@ -11104,3 +11104,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:51:27] INFO root fetch - processPackages [django-admin-daterange-listfilter]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-daterange-listfilter-0.1.4.tar.gz]
 [2024-05-12 15:51:27] INFO root fetch - main [MainThread]: End processing [django-admin-daterange-listfilter]: success
 [2024-05-12 15:51:27] INFO root fetch - main [MainThread]: Store serial: [23170274]
+[2024-05-12 15:53:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170274]
+[2024-05-12 15:53:36] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 15:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: momapa
+[2024-05-12 15:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PKNSETools
+[2024-05-12 15:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arumsz
+[2024-05-12 15:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: 1337x
+[2024-05-12 15:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PKDevTools
+[2024-05-12 15:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyprland
+[2024-05-12 15:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: leafmap
+[2024-05-12 15:53:36] INFO root fetch - processPackages [pyprland]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-05-12 15:53:36] WARNING root fetch - processPackages [arumsz]: Skipping, unable to determine old version
+[2024-05-12 15:53:36] INFO root fetch - main [MainThread]: End processing [arumsz] error
+[2024-05-12 15:53:36] WARNING root fetch - processPackages [momapa]: Skipping, unable to determine old version
+[2024-05-12 15:53:36] INFO root fetch - main [MainThread]: End processing [momapa] error
+[2024-05-12 15:53:36] INFO root fetch - processPackages [1337x]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-05-12 15:53:36] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/50/9c/37941f87694596c8b3fb82481dbf8e340bfbd2ff72524d70105ecc40a267/pyprland-2.2.8.tar.gz
+[2024-05-12 15:53:36] INFO root fetch - processPackages [PKDevTools]: New version: [0.13.20240512.114] Old Version: [0.13.20240510.113]
+[2024-05-12 15:53:36] INFO root fetch - processPackages [PKNSETools]: New version: [0.1.20240512.104] Old Version: [0.1.20240510.103]
+[2024-05-12 15:53:36] INFO root fetch - processPackages [leafmap]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-05-12 15:53:37] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/e3/5e/5f80435aaf3f1479b126f2161009f77b682c30280cb8d023e7656d0fd204/PKDevTools-0.13.20240510.113.tar.gz
+[2024-05-12 15:53:37] INFO root fetch - processPackages [PKNSETools]: Downloading https://files.pythonhosted.org/packages/7b/39/7d5b1c1a7807cc46813acef908f4e8f1408e6137b782991382a1911a5316/PKNSETools-0.1.20240510.103.tar.gz
+[2024-05-12 15:53:37] INFO root fetch - processPackages [1337x]: Downloading https://files.pythonhosted.org/packages/88/40/8c93369ca75c91a428dce783f903abafab28b11f8bbc2cdf8bef2ceeca39/1337x-1.2.4.tar.gz
+[2024-05-12 15:53:37] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/95/54/b41c74cea0d530094950d0f33daa1e4b290d0fafa217c2a9c6605192e37e/pyprland-2.2.9.tar.gz
+[2024-05-12 15:53:37] INFO root fetch - processPackages [leafmap]: Downloading https://files.pythonhosted.org/packages/c7/06/719b97b642d663f4528bd69b8bd0c22e66eb9d8cab0e459bbabc20094b8d/leafmap-0.9.5.tar.gz
+[2024-05-12 15:53:37] INFO root fetch - processPackages [pyprland]: executing diffoscope
+[2024-05-12 15:53:37] INFO root fetch - processPackages [pyprland]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprland-2.2.8.tar.gz tmp/pyprland-2.2.9.tar.gz --markdown 20240512/p/pyprland/2.2.8-2.2.9/README.md --exclude *.pyd
+[2024-05-12 15:53:37] INFO root fetch - processPackages [1337x]: Downloading https://files.pythonhosted.org/packages/f3/be/f2cca3122f7501a0ce05ead5dbefde00c4cd16226f2bde3c61db131a88ad/1337x-1.2.5.tar.gz
+[2024-05-12 15:53:37] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/98/8d/af0dd6d07548ff05276819595976403483f78d60299203cbbdd71b9f2be2/PKDevTools-0.13.20240512.114.tar.gz
+[2024-05-12 15:53:37] INFO root fetch - processPackages [PKNSETools]: Downloading https://files.pythonhosted.org/packages/5e/f5/713ce52f4bad3aa50cc79846a6f430d4541dad31a4afe157762edd79a6ee/PKNSETools-0.1.20240512.104.tar.gz
+[2024-05-12 15:53:37] INFO root fetch - processPackages [1337x]: executing diffoscope
+[2024-05-12 15:53:37] INFO root fetch - processPackages [1337x]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/1337x-1.2.4.tar.gz tmp/1337x-1.2.5.tar.gz --markdown 20240512/1/1337x/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-05-12 15:53:37] INFO root fetch - processPackages [PKDevTools]: executing diffoscope
+[2024-05-12 15:53:37] INFO root fetch - processPackages [PKDevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKDevTools-0.13.20240510.113.tar.gz tmp/PKDevTools-0.13.20240512.114.tar.gz --markdown 20240512/P/PKDevTools/0.13.20240510.113-0.13.20240512.114/README.md --exclude *.pyd
+[2024-05-12 15:53:37] INFO root fetch - processPackages [PKNSETools]: executing diffoscope
+[2024-05-12 15:53:37] INFO root fetch - processPackages [PKNSETools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKNSETools-0.1.20240510.103.tar.gz tmp/PKNSETools-0.1.20240512.104.tar.gz --markdown 20240512/P/PKNSETools/0.1.20240510.103-0.1.20240512.104/README.md --exclude *.pyd
+[2024-05-12 15:53:37] INFO root fetch - processPackages [leafmap]: Downloading https://files.pythonhosted.org/packages/74/59/375f8e1ca2eb029e521f2e04761219f715186963c29a089229743730a6cd/leafmap-0.9.6.tar.gz
+[2024-05-12 15:53:37] INFO root fetch - processPackages [leafmap]: executing diffoscope
+[2024-05-12 15:53:37] INFO root fetch - processPackages [leafmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leafmap-0.9.5.tar.gz tmp/leafmap-0.9.6.tar.gz --markdown 20240512/l/leafmap/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-05-12 15:53:38] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.8.tar.gz]
+[2024-05-12 15:53:38] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.9.tar.gz]
+[2024-05-12 15:53:38] INFO root fetch - main [MainThread]: End processing [pyprland]: success
+[2024-05-12 15:53:38] INFO root fetch - processPackages [1337x]: Remove: archive file [/home/abi/fetcher/tmp/1337x-1.2.4.tar.gz]
+[2024-05-12 15:53:38] INFO root fetch - processPackages [1337x]: Remove: archive file [/home/abi/fetcher/tmp/1337x-1.2.5.tar.gz]
+[2024-05-12 15:53:38] INFO root fetch - main [MainThread]: End processing [1337x]: success
+[2024-05-12 15:53:38] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240510.103.tar.gz]
+[2024-05-12 15:53:38] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240512.104.tar.gz]
+[2024-05-12 15:53:38] INFO root fetch - main [MainThread]: End processing [PKNSETools]: success
+[2024-05-12 15:53:38] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240510.113.tar.gz]
+[2024-05-12 15:53:38] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240512.114.tar.gz]
+[2024-05-12 15:53:38] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
+[2024-05-12 15:53:38] INFO root fetch - processPackages [leafmap]: Remove: archive file [/home/abi/fetcher/tmp/leafmap-0.9.5.tar.gz]
+[2024-05-12 15:53:38] INFO root fetch - processPackages [leafmap]: Remove: archive file [/home/abi/fetcher/tmp/leafmap-0.9.6.tar.gz]
+[2024-05-12 15:53:38] INFO root fetch - main [MainThread]: End processing [leafmap]: success
+[2024-05-12 15:53:38] INFO root fetch - main [MainThread]: Store serial: [23170304]
