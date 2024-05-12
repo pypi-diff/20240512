@@ -6845,3 +6845,15 @@
 [2024-05-12 10:17:11] INFO root fetch - processPackages [jeedomdaemon]: Remove: archive file [/home/abi/fetcher/tmp/jeedomdaemon-0.8.6.tar.gz]
 [2024-05-12 10:17:11] INFO root fetch - main [MainThread]: End processing [jeedomdaemon]: success
 [2024-05-12 10:17:11] INFO root fetch - main [MainThread]: Store serial: [23168072]
+[2024-05-12 10:19:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168072]
+[2024-05-12 10:19:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 10:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mteb
+[2024-05-12 10:19:19] INFO root fetch - processPackages [mteb]: New version: [1.8.9] Old Version: [1.8.8]
+[2024-05-12 10:19:19] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/67/03/34ece901f53f12b3005b0a989c7feaee38cf202c3f4f5ee2b36118cf93b4/mteb-1.8.8.tar.gz
+[2024-05-12 10:19:20] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/36/94/67407adefa444b8ceed1f61e2d6c7d0033fcaa2851b13d3fc1762c34ad81/mteb-1.8.9.tar.gz
+[2024-05-12 10:19:20] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-05-12 10:19:20] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.8.8.tar.gz tmp/mteb-1.8.9.tar.gz --markdown 20240512/m/mteb/1.8.8-1.8.9/README.md --exclude *.pyd
+[2024-05-12 10:19:22] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.8.8.tar.gz]
+[2024-05-12 10:19:22] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.8.9.tar.gz]
+[2024-05-12 10:19:22] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-05-12 10:19:22] INFO root fetch - main [MainThread]: Store serial: [23168075]
