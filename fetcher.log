@@ -8899,3 +8899,21 @@
 [2024-05-12 13:07:10] INFO root fetch - processPackages [pyphetools]: Remove: archive file [/home/abi/fetcher/tmp/pyphetools-0.9.9.tar.gz]
 [2024-05-12 13:07:10] INFO root fetch - main [MainThread]: End processing [pyphetools]: success
 [2024-05-12 13:07:10] INFO root fetch - main [MainThread]: Store serial: [23169267]
+[2024-05-12 13:09:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169267]
+[2024-05-12 13:09:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 13:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: liangfei-FM
+[2024-05-12 13:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nornir-srl
+[2024-05-12 13:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: proplasticz
+[2024-05-12 13:09:19] WARNING root fetch - processPackages [liangfei-FM]: Skipping, unable to determine old version
+[2024-05-12 13:09:19] INFO root fetch - main [MainThread]: End processing [liangfei-FM] error
+[2024-05-12 13:09:19] WARNING root fetch - processPackages [proplasticz]: Skipping, unable to determine old version
+[2024-05-12 13:09:19] INFO root fetch - main [MainThread]: End processing [proplasticz] error
+[2024-05-12 13:09:19] INFO root fetch - processPackages [nornir-srl]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-12 13:09:19] INFO root fetch - processPackages [nornir-srl]: Downloading https://files.pythonhosted.org/packages/90/04/a49e2117b85b39232c9b14ae053dfda2c5423ebdd1acc8f6220e2819accd/nornir_srl-0.2.8.tar.gz
+[2024-05-12 13:09:19] INFO root fetch - processPackages [nornir-srl]: Downloading https://files.pythonhosted.org/packages/ab/77/9731e93322058feca4c8772d68f82492a4596a44971fd85ca8875ff684f5/nornir_srl-0.2.9.tar.gz
+[2024-05-12 13:09:19] INFO root fetch - processPackages [nornir-srl]: executing diffoscope
+[2024-05-12 13:09:19] INFO root fetch - processPackages [nornir-srl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nornir_srl-0.2.8.tar.gz tmp/nornir_srl-0.2.9.tar.gz --markdown 20240512/n/nornir-srl/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-12 13:09:20] INFO root fetch - processPackages [nornir-srl]: Remove: archive file [/home/abi/fetcher/tmp/nornir_srl-0.2.8.tar.gz]
+[2024-05-12 13:09:20] INFO root fetch - processPackages [nornir-srl]: Remove: archive file [/home/abi/fetcher/tmp/nornir_srl-0.2.9.tar.gz]
+[2024-05-12 13:09:20] INFO root fetch - main [MainThread]: End processing [nornir-srl]: success
+[2024-05-12 13:09:20] INFO root fetch - main [MainThread]: Store serial: [23169278]
