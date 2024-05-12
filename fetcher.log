@@ -2332,3 +2332,36 @@
 [2024-05-12 03:29:53] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.291.tar.gz]
 [2024-05-12 03:29:53] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
 [2024-05-12 03:29:53] INFO root fetch - main [MainThread]: Store serial: [23166005]
+[2024-05-12 03:31:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166005]
+[2024-05-12 03:32:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 03:32:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onediff
+[2024-05-12 03:32:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onediffx
+[2024-05-12 03:32:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: benchz
+[2024-05-12 03:32:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: swampyer
+[2024-05-12 03:32:01] INFO root fetch - processPackages [onediff]: New version: [1.0.0.dev202405110126] Old Version: [1.0.0.dev202405100127]
+[2024-05-12 03:32:01] INFO root fetch - processPackages [onediffx]: New version: [1.0.0.dev202405110126] Old Version: [1.0.0.dev202405100127]
+[2024-05-12 03:32:01] WARNING root fetch - processPackages [benchz]: Skipping, unable to determine old version
+[2024-05-12 03:32:01] INFO root fetch - main [MainThread]: End processing [benchz] error
+[2024-05-12 03:32:01] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/d2/76/b63ece6ba455a088f2f05effe20742fe6253be3320234322e6c43f3f2360/onediff-1.0.0.dev202405100127.tar.gz
+[2024-05-12 03:32:01] INFO root fetch - processPackages [swampyer]: New version: [3.0.20240511] Old Version: [3.0.20240124]
+[2024-05-12 03:32:01] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/29/be/7413050344863fc4e76bf78102c007d4fc3b551ebc05eac69310199434fa/onediffx-1.0.0.dev202405100127.tar.gz
+[2024-05-12 03:32:02] INFO root fetch - processPackages [swampyer]: Downloading https://files.pythonhosted.org/packages/e0/2d/8539947434361869dc86b1481f7927f34ef007378c3c88092b006d89f471/swampyer-3.0.20240124.tar.gz
+[2024-05-12 03:32:02] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/d3/85/c2c9cd26d937999f9b31cd85faaa7980a1bd71ed7820c51228dd865f44e3/onediffx-1.0.0.dev202405110126.tar.gz
+[2024-05-12 03:32:02] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/a9/97/ca13d9b5680760cecc8e6e6a3b7065c22d074b9cd3a5e6b63844670fdbb8/onediff-1.0.0.dev202405110126.tar.gz
+[2024-05-12 03:32:02] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-05-12 03:32:02] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-1.0.0.dev202405100127.tar.gz tmp/onediffx-1.0.0.dev202405110126.tar.gz --markdown 20240512/o/onediffx/1.0.0.dev202405100127-1.0.0.dev202405110126/README.md --exclude *.pyd
+[2024-05-12 03:32:02] INFO root fetch - processPackages [onediff]: executing diffoscope
+[2024-05-12 03:32:02] INFO root fetch - processPackages [onediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediff-1.0.0.dev202405100127.tar.gz tmp/onediff-1.0.0.dev202405110126.tar.gz --markdown 20240512/o/onediff/1.0.0.dev202405100127-1.0.0.dev202405110126/README.md --exclude *.pyd
+[2024-05-12 03:32:02] INFO root fetch - processPackages [swampyer]: Downloading https://files.pythonhosted.org/packages/46/5e/ab60a9a3b76d2924636443e04ea7a294f9a215eed0b027c7031dff9c9960/swampyer-3.0.20240511.tar.gz
+[2024-05-12 03:32:02] INFO root fetch - processPackages [swampyer]: executing diffoscope
+[2024-05-12 03:32:02] INFO root fetch - processPackages [swampyer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swampyer-3.0.20240124.tar.gz tmp/swampyer-3.0.20240511.tar.gz --markdown 20240512/s/swampyer/3.0.20240124-3.0.20240511/README.md --exclude *.pyd
+[2024-05-12 03:32:02] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202405100127.tar.gz]
+[2024-05-12 03:32:02] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202405110126.tar.gz]
+[2024-05-12 03:32:02] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-05-12 03:32:02] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202405100127.tar.gz]
+[2024-05-12 03:32:02] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202405110126.tar.gz]
+[2024-05-12 03:32:02] INFO root fetch - main [MainThread]: End processing [onediff]: success
+[2024-05-12 03:32:03] INFO root fetch - processPackages [swampyer]: Remove: archive file [/home/abi/fetcher/tmp/swampyer-3.0.20240124.tar.gz]
+[2024-05-12 03:32:03] INFO root fetch - processPackages [swampyer]: Remove: archive file [/home/abi/fetcher/tmp/swampyer-3.0.20240511.tar.gz]
+[2024-05-12 03:32:03] INFO root fetch - main [MainThread]: End processing [swampyer]: success
+[2024-05-12 03:32:03] INFO root fetch - main [MainThread]: Store serial: [23166018]
