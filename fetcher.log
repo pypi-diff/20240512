@@ -18315,3 +18315,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:40:42] INFO root fetch - processPackages [docsig]: Remove: archive file [/home/abi/fetcher/tmp/docsig-0.9.0.tar.gz]
 [2024-05-12 23:40:42] INFO root fetch - main [MainThread]: End processing [docsig]: success
 [2024-05-12 23:40:42] INFO root fetch - main [MainThread]: Store serial: [23174057]
+[2024-05-12 23:42:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23174057]
+[2024-05-12 23:42:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 23:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: semantic-poetry-demo
+[2024-05-12 23:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: HiFT
+[2024-05-12 23:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeastvision
+[2024-05-12 23:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hplc-data-analysis
+[2024-05-12 23:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rejectionsz
+[2024-05-12 23:42:51] WARNING root fetch - processPackages [semantic-poetry-demo]: Skipping, unable to determine old version
+[2024-05-12 23:42:51] INFO root fetch - main [MainThread]: End processing [semantic-poetry-demo] error
+[2024-05-12 23:42:51] INFO root fetch - processPackages [HiFT]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 23:42:51] WARNING root fetch - processPackages [rejectionsz]: Skipping, unable to determine old version
+[2024-05-12 23:42:51] INFO root fetch - main [MainThread]: End processing [rejectionsz] error
+[2024-05-12 23:42:51] INFO root fetch - processPackages [hplc-data-analysis]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-12 23:42:51] INFO root fetch - processPackages [yeastvision]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-05-12 23:42:51] INFO root fetch - processPackages [hplc-data-analysis]: Downloading https://files.pythonhosted.org/packages/23/94/d7e140a46d7865bedfda0865baae2191e54094975795444de48ae27c5fa0/hplc_data_analysis-1.0.4.tar.gz
+[2024-05-12 23:42:51] INFO root fetch - processPackages [HiFT]: Downloading https://files.pythonhosted.org/packages/b9/9b/015c7d00ed8c1f550c9068613e8226da63164484925abff313abbe6e4b8d/HiFT-0.0.1.tar.gz
+[2024-05-12 23:42:51] INFO root fetch - processPackages [yeastvision]: Downloading https://files.pythonhosted.org/packages/02/54/03ef7feb5a069c9ec29c9cc8bd7d30900248c1f02a425ca240a5698b718e/yeastvision-0.1.7.tar.gz
+[2024-05-12 23:42:52] INFO root fetch - processPackages [HiFT]: Downloading https://files.pythonhosted.org/packages/98/cd/cfc1bf3b149f3078971b7adabfdebfd30d62b4e5b48c7bba9d38bbba2a55/HiFT-0.0.2.tar.gz
+[2024-05-12 23:42:52] INFO root fetch - processPackages [yeastvision]: Downloading https://files.pythonhosted.org/packages/ca/b9/a6ea7d4301424e1292a0163c278c3763cc8a40c1437af17464222ff4badc/yeastvision-0.1.9.tar.gz
+[2024-05-12 23:42:52] INFO root fetch - processPackages [hplc-data-analysis]: Downloading https://files.pythonhosted.org/packages/c9/99/c3348232bed6845b82ba8625673a47b8dfcc264b9d479b0de3dcf4ca74f5/hplc_data_analysis-1.0.5.tar.gz
+[2024-05-12 23:42:52] INFO root fetch - processPackages [HiFT]: executing diffoscope
+[2024-05-12 23:42:52] INFO root fetch - processPackages [HiFT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HiFT-0.0.1.tar.gz tmp/HiFT-0.0.2.tar.gz --markdown 20240512/H/HiFT/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-12 23:42:52] INFO root fetch - processPackages [yeastvision]: executing diffoscope
+[2024-05-12 23:42:52] INFO root fetch - processPackages [yeastvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeastvision-0.1.7.tar.gz tmp/yeastvision-0.1.9.tar.gz --markdown 20240512/y/yeastvision/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-05-12 23:42:52] INFO root fetch - processPackages [hplc-data-analysis]: executing diffoscope
+[2024-05-12 23:42:52] INFO root fetch - processPackages [hplc-data-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hplc_data_analysis-1.0.4.tar.gz tmp/hplc_data_analysis-1.0.5.tar.gz --markdown 20240512/h/hplc-data-analysis/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-12 23:42:53] INFO root fetch - processPackages [hplc-data-analysis]: Remove: archive file [/home/abi/fetcher/tmp/hplc_data_analysis-1.0.4.tar.gz]
+[2024-05-12 23:42:53] INFO root fetch - processPackages [hplc-data-analysis]: Remove: archive file [/home/abi/fetcher/tmp/hplc_data_analysis-1.0.5.tar.gz]
+[2024-05-12 23:42:53] INFO root fetch - main [MainThread]: End processing [hplc-data-analysis]: success
+[2024-05-12 23:42:53] INFO root fetch - processPackages [HiFT]: Remove: archive file [/home/abi/fetcher/tmp/HiFT-0.0.1.tar.gz]
+[2024-05-12 23:42:53] INFO root fetch - processPackages [HiFT]: Remove: archive file [/home/abi/fetcher/tmp/HiFT-0.0.2.tar.gz]
+[2024-05-12 23:42:53] INFO root fetch - main [MainThread]: End processing [HiFT]: success
+[2024-05-12 23:42:53] INFO root fetch - processPackages [yeastvision]: Remove: archive file [/home/abi/fetcher/tmp/yeastvision-0.1.7.tar.gz]
+[2024-05-12 23:42:53] INFO root fetch - processPackages [yeastvision]: Remove: archive file [/home/abi/fetcher/tmp/yeastvision-0.1.9.tar.gz]
+[2024-05-12 23:42:53] INFO root fetch - main [MainThread]: End processing [yeastvision]: success
+[2024-05-12 23:42:53] INFO root fetch - main [MainThread]: Store serial: [23174074]
