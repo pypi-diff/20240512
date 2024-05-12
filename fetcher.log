@@ -11427,3 +11427,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:13:21] INFO root fetch - processPackages [PyAcoustiX]: Remove: archive file [/home/abi/fetcher/tmp/PyAcoustiX-1.0.0.tar.gz]
 [2024-05-12 16:13:21] INFO root fetch - main [MainThread]: End processing [PyAcoustiX]: success
 [2024-05-12 16:13:21] INFO root fetch - main [MainThread]: Store serial: [23170533]
+[2024-05-12 16:15:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170533]
+[2024-05-12 16:15:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 16:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-05-12 16:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-05-12 16:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-app-requires
+[2024-05-12 16:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nnfasta
+[2024-05-12 16:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: HalChat
+[2024-05-12 16:15:30] INFO root fetch - processPackages [nnfasta]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 16:15:30] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-12 16:15:30] WARNING root fetch - processPackages [HalChat]: Skipping, unable to determine old version
+[2024-05-12 16:15:30] INFO root fetch - main [MainThread]: End processing [HalChat] error
+[2024-05-12 16:15:30] INFO root fetch - processPackages [django-app-requires]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-12 16:15:30] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/4e/c3/1c7ed4f26b1b9cc648b71504527f94c7079a5e291de6426719031a060ef2/nnfasta-0.1.8.tar.gz
+[2024-05-12 16:15:30] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-12 16:15:30] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-12 16:15:30] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-12 16:15:30] INFO root fetch - processPackages [django-app-requires]: Downloading https://files.pythonhosted.org/packages/18/ed/db8131c0c38c6ae835741673e208ba131e9681aeedb659cca702a705a303/django-app-requires-0.3.2.tar.gz
+[2024-05-12 16:15:30] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/a8/4d/85bc07885211c7241d77234746e352e8814e59375b5f333c82680206268b/nnfasta-0.1.9.tar.gz
+[2024-05-12 16:15:31] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-12 16:15:31] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-12 16:15:31] INFO root fetch - processPackages [nnfasta]: executing diffoscope
+[2024-05-12 16:15:31] INFO root fetch - processPackages [nnfasta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnfasta-0.1.8.tar.gz tmp/nnfasta-0.1.9.tar.gz --markdown 20240512/n/nnfasta/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 16:15:31] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-12 16:15:31] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240512/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-12 16:15:31] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-12 16:15:31] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240512/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-12 16:15:31] INFO root fetch - processPackages [django-app-requires]: Downloading https://files.pythonhosted.org/packages/47/b3/a9188df643367cfaf4758c089420785a4221804eed5d48e301adb2add580/django-app-requires-0.3.3.tar.gz
+[2024-05-12 16:15:31] INFO root fetch - processPackages [django-app-requires]: executing diffoscope
+[2024-05-12 16:15:31] INFO root fetch - processPackages [django-app-requires]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-app-requires-0.3.2.tar.gz tmp/django-app-requires-0.3.3.tar.gz --markdown 20240512/d/django-app-requires/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-12 16:15:31] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.8.tar.gz]
+[2024-05-12 16:15:31] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.9.tar.gz]
+[2024-05-12 16:15:31] INFO root fetch - main [MainThread]: End processing [nnfasta]: success
+[2024-05-12 16:15:31] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-12 16:15:31] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-12 16:15:31] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-12 16:15:31] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-12 16:15:32] INFO root fetch - processPackages [django-app-requires]: Remove: archive file [/home/abi/fetcher/tmp/django-app-requires-0.3.2.tar.gz]
+[2024-05-12 16:15:32] INFO root fetch - processPackages [django-app-requires]: Remove: archive file [/home/abi/fetcher/tmp/django-app-requires-0.3.3.tar.gz]
+[2024-05-12 16:15:32] INFO root fetch - main [MainThread]: End processing [django-app-requires]: success
+[2024-05-12 16:15:32] INFO root fetch - main [MainThread]: Store serial: [23170551]
