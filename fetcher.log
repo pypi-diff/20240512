@@ -15474,3 +15474,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:32:36] WARNING root fetch - processPackages [ezr]: Skipping, unable to determine old version
 [2024-05-12 20:32:36] INFO root fetch - main [MainThread]: End processing [ezr] error
 [2024-05-12 20:32:36] INFO root fetch - main [MainThread]: Store serial: [23172662]
+[2024-05-12 20:34:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172662]
+[2024-05-12 20:34:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 20:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tdrpa.tdworker
+[2024-05-12 20:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sharepoint-graphql
+[2024-05-12 20:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: genomeshader
+[2024-05-12 20:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tempit
+[2024-05-12 20:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pkrcomponents
+[2024-05-12 20:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: promotionsz
+[2024-05-12 20:34:45] INFO root fetch - processPackages [pkrcomponents]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-12 20:34:45] INFO root fetch - processPackages [tempit]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 20:34:45] INFO root fetch - processPackages [genomeshader]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 20:34:45] WARNING root fetch - processPackages [promotionsz]: Skipping, unable to determine old version
+[2024-05-12 20:34:45] INFO root fetch - main [MainThread]: End processing [promotionsz] error
+[2024-05-12 20:34:45] WARNING root fetch - processPackages [sharepoint-graphql]: Skipping, unable to determine old version
+[2024-05-12 20:34:45] INFO root fetch - main [MainThread]: End processing [sharepoint-graphql] error
+[2024-05-12 20:34:45] WARNING root fetch - processPackages [tdrpa.tdworker]: Skipping, unable to determine old version
+[2024-05-12 20:34:45] INFO root fetch - main [MainThread]: End processing [tdrpa.tdworker] error
+[2024-05-12 20:34:45] INFO root fetch - processPackages [tempit]: Downloading https://files.pythonhosted.org/packages/71/a3/880b04d1d2d8e1687a81c88b7bae50b294b88a2f404e272743adab086269/tempit-0.1.1.tar.gz
+[2024-05-12 20:34:45] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/1c/84/39f1662d319381705e811acf6c7854194d08e68e45c79d57c5a763bdc863/genomeshader-0.1.8.tar.gz
+[2024-05-12 20:34:46] INFO root fetch - processPackages [pkrcomponents]: Downloading https://files.pythonhosted.org/packages/42/42/1212c2e8ab996b91e6303094efd6b71fbd0384d4d1d321efa329c2873451/pkrcomponents-1.2.2.tar.gz
+[2024-05-12 20:34:46] WARNING root fetch - processPackages [pkrcomponents]: Skipping package: exceeds size limit 21261095>=10485760
+[2024-05-12 20:34:46] INFO root fetch - main [MainThread]: End processing [pkrcomponents] error
+[2024-05-12 20:34:46] INFO root fetch - processPackages [tempit]: Downloading https://files.pythonhosted.org/packages/e8/59/40fbd695928eb169629ecd5241a01508dd8e73d0ade7947ff5766001c138/tempit-0.1.2.tar.gz
+[2024-05-12 20:34:46] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/99/48/90c7c052b1a65bbffd3e20c6f11964c9fc1a3dc182ef8de7c3611b26d473/genomeshader-0.1.9.tar.gz
+[2024-05-12 20:34:46] INFO root fetch - processPackages [tempit]: executing diffoscope
+[2024-05-12 20:34:46] INFO root fetch - processPackages [tempit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tempit-0.1.1.tar.gz tmp/tempit-0.1.2.tar.gz --markdown 20240512/t/tempit/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 20:34:46] INFO root fetch - processPackages [genomeshader]: executing diffoscope
+[2024-05-12 20:34:46] INFO root fetch - processPackages [genomeshader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genomeshader-0.1.8.tar.gz tmp/genomeshader-0.1.9.tar.gz --markdown 20240512/g/genomeshader/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 20:34:47] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.8.tar.gz]
+[2024-05-12 20:34:47] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.9.tar.gz]
+[2024-05-12 20:34:47] INFO root fetch - main [MainThread]: End processing [genomeshader]: success
+[2024-05-12 20:34:47] INFO root fetch - processPackages [tempit]: Remove: archive file [/home/abi/fetcher/tmp/tempit-0.1.1.tar.gz]
+[2024-05-12 20:34:47] INFO root fetch - processPackages [tempit]: Remove: archive file [/home/abi/fetcher/tmp/tempit-0.1.2.tar.gz]
+[2024-05-12 20:34:47] INFO root fetch - main [MainThread]: End processing [tempit]: success
+[2024-05-12 20:34:47] INFO root fetch - main [MainThread]: Store serial: [23172689]
