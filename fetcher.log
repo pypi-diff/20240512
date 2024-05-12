@@ -1459,3 +1459,46 @@
 [2024-05-12 02:11:57] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.7.dev202405110010.tar.gz]
 [2024-05-12 02:11:57] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
 [2024-05-12 02:11:57] INFO root fetch - main [MainThread]: Store serial: [23165519]
+[2024-05-12 02:14:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165519]
+[2024-05-12 02:14:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 02:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mct-quantizers-nightly
+[2024-05-12 02:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oakvar
+[2024-05-12 02:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-events-notify
+[2024-05-12 02:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yamlsql
+[2024-05-12 02:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: siderolitez
+[2024-05-12 02:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-events-notify
+[2024-05-12 02:14:06] INFO root fetch - processPackages [mct-quantizers-nightly]: New version: [1.5.0.20240511.post1052] Old Version: [1.5.0.20240510.post1052]
+[2024-05-12 02:14:06] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-12 02:14:06] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-12 02:14:06] WARNING root fetch - processPackages [yamlsql]: Skipping, unable to determine old version
+[2024-05-12 02:14:06] INFO root fetch - main [MainThread]: End processing [yamlsql] error
+[2024-05-12 02:14:06] WARNING root fetch - processPackages [siderolitez]: Skipping, unable to determine old version
+[2024-05-12 02:14:06] INFO root fetch - main [MainThread]: End processing [siderolitez] error
+[2024-05-12 02:14:06] INFO root fetch - processPackages [oakvar]: New version: [2.9.99] Old Version: [2.9.98]
+[2024-05-12 02:14:06] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/86/96/3c1e0a4aaab90a0e631f1c9b9104ac353eb5f2ccc1ac96644e9ed0485a09/mct-quantizers-nightly-1.5.0.20240510.post1052.tar.gz
+[2024-05-12 02:14:06] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/a3/ce/6968cab51f4cb7b955287af8ac7062bbc3d7ecfca4110e778aca096983b8/oakvar-2.9.98.tar.gz
+[2024-05-12 02:14:06] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/b7/7d/50ca1bff3db85ede28826faf2d11bb449770cac87fe89483636e0fe57d94/cdk-events-notify-2.2.98.tar.gz
+[2024-05-12 02:14:06] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/b7/7d/50ca1bff3db85ede28826faf2d11bb449770cac87fe89483636e0fe57d94/cdk-events-notify-2.2.98.tar.gz
+[2024-05-12 02:14:06] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/46/ab/cf17cad041afa36e5c437bcbf5ebea4ca05d4919beba3dd08ae52fdc0655/mct-quantizers-nightly-1.5.0.20240511.post1052.tar.gz
+[2024-05-12 02:14:06] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/56/4a/9c2a145913d7a35ac252cb2bddabca89cdc95c802a8e342f192100f709be/cdk-events-notify-2.2.99.tar.gz
+[2024-05-12 02:14:06] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/56/4a/9c2a145913d7a35ac252cb2bddabca89cdc95c802a8e342f192100f709be/cdk-events-notify-2.2.99.tar.gz
+[2024-05-12 02:14:07] INFO root fetch - processPackages [mct-quantizers-nightly]: executing diffoscope
+[2024-05-12 02:14:07] INFO root fetch - processPackages [mct-quantizers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-quantizers-nightly-1.5.0.20240510.post1052.tar.gz tmp/mct-quantizers-nightly-1.5.0.20240511.post1052.tar.gz --markdown 20240512/m/mct-quantizers-nightly/1.5.0.20240510.post1052-1.5.0.20240511.post1052/README.md --exclude *.pyd
+[2024-05-12 02:14:07] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-05-12 02:14:07] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.98.tar.gz tmp/cdk-events-notify-2.2.99.tar.gz --markdown 20240512/c/cdk-events-notify/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-12 02:14:07] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-05-12 02:14:07] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.98.tar.gz tmp/cdk-events-notify-2.2.99.tar.gz --markdown 20240512/c/cdk-events-notify/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-12 02:14:07] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/cf/2a/de8e0ae3bf287725294b151b3a458f4350c6be98fc7b2c5896e98a2a82a5/oakvar-2.9.99.tar.gz
+[2024-05-12 02:14:07] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.98.tar.gz]
+[2024-05-12 02:14:07] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.99.tar.gz]
+[2024-05-12 02:14:07] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-05-12 02:14:07] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-05-12 02:14:07] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240510.post1052.tar.gz]
+[2024-05-12 02:14:07] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240511.post1052.tar.gz]
+[2024-05-12 02:14:07] INFO root fetch - main [MainThread]: End processing [mct-quantizers-nightly]: success
+[2024-05-12 02:14:08] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2024-05-12 02:14:08] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.98.tar.gz tmp/oakvar-2.9.99.tar.gz --markdown 20240512/o/oakvar/2.9.98-2.9.99/README.md --exclude *.pyd
+[2024-05-12 02:14:11] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.98.tar.gz]
+[2024-05-12 02:14:11] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.99.tar.gz]
+[2024-05-12 02:14:11] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2024-05-12 02:14:11] INFO root fetch - main [MainThread]: Store serial: [23165538]
