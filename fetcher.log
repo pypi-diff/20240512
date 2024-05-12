@@ -3455,3 +3455,45 @@
 [2024-05-12 05:01:58] INFO root fetch - processPackages [aiapy]: Remove: archive file [/home/abi/fetcher/tmp/aiapy-0.8.0.tar.gz]
 [2024-05-12 05:01:58] INFO root fetch - main [MainThread]: End processing [aiapy]: success
 [2024-05-12 05:01:58] INFO root fetch - main [MainThread]: Store serial: [23166515]
+[2024-05-12 05:04:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166515]
+[2024-05-12 05:04:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 05:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RootsWeatherProject
+[2024-05-12 05:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: todoist-auto
+[2024-05-12 05:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: g2opy
+[2024-05-12 05:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: charkhasz
+[2024-05-12 05:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AyiinXd
+[2024-05-12 05:04:06] INFO root fetch - processPackages [g2opy]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-12 05:04:06] INFO root fetch - processPackages [todoist-auto]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-05-12 05:04:06] INFO root fetch - processPackages [AyiinXd]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 05:04:07] WARNING root fetch - processPackages [charkhasz]: Skipping, unable to determine old version
+[2024-05-12 05:04:07] INFO root fetch - main [MainThread]: End processing [charkhasz] error
+[2024-05-12 05:04:07] INFO root fetch - processPackages [RootsWeatherProject]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-12 05:04:07] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/b1/78/baea81138dfb8700e7a2b795b192569b97f1b353b15e6374ef7c32ec9bd9/todoist_auto-8.0.0.tar.gz
+[2024-05-12 05:04:07] INFO root fetch - processPackages [AyiinXd]: Downloading https://files.pythonhosted.org/packages/ef/4c/a30a4d59b20f16d3436451c2dbdc09ec42fb425d60f2999b9cc3c9415935/AyiinXd-0.1.1-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-12 05:04:07] INFO root fetch - processPackages [g2opy]: Downloading https://files.pythonhosted.org/packages/85/e3/b303eeb808ac891efeb189022e860de4b4f9723575d5d59823ef17351b86/g2opy-0.0.4.tar.gz
+[2024-05-12 05:04:07] INFO root fetch - processPackages [RootsWeatherProject]: Downloading https://files.pythonhosted.org/packages/57/2b/d399c6ce521a2611c508dc3be13438c383c4618b3178fb9fe7f903a303e9/RootsWeatherProject-1.0.8.tar.gz
+[2024-05-12 05:04:07] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/ad/42/49bc0ab11074d45b08e24c5a91b302992d6e5855e521f2a779d82a91eed5/todoist_auto-9.0.0.tar.gz
+[2024-05-12 05:04:07] INFO root fetch - processPackages [todoist-auto]: executing diffoscope
+[2024-05-12 05:04:07] INFO root fetch - processPackages [todoist-auto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/todoist_auto-8.0.0.tar.gz tmp/todoist_auto-9.0.0.tar.gz --markdown 20240512/t/todoist-auto/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-05-12 05:04:07] INFO root fetch - processPackages [RootsWeatherProject]: Downloading https://files.pythonhosted.org/packages/9b/a2/69301f3fbd872cb70af32b4f907b1e6efd171cd213e2f017930007c14da7/RootsWeatherProject-1.0.9.tar.gz
+[2024-05-12 05:04:07] INFO root fetch - processPackages [g2opy]: Downloading https://files.pythonhosted.org/packages/1c/54/6df6171a0444a52cf95aff2e5e39d86cddd1cad7f62e9d882137282f5fac/g2opy-0.0.5.tar.gz
+[2024-05-12 05:04:07] INFO root fetch - processPackages [RootsWeatherProject]: executing diffoscope
+[2024-05-12 05:04:07] INFO root fetch - processPackages [RootsWeatherProject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RootsWeatherProject-1.0.8.tar.gz tmp/RootsWeatherProject-1.0.9.tar.gz --markdown 20240512/R/RootsWeatherProject/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-12 05:04:07] INFO root fetch - processPackages [AyiinXd]: Downloading https://files.pythonhosted.org/packages/09/d6/42934ae334bde0e7cc6b0e8df3babc48ead97524f384b4d7a3705ea4417b/AyiinXd-0.1.2-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-12 05:04:07] INFO root fetch - processPackages [g2opy]: executing diffoscope
+[2024-05-12 05:04:07] INFO root fetch - processPackages [g2opy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g2opy-0.0.4.tar.gz tmp/g2opy-0.0.5.tar.gz --markdown 20240512/g/g2opy/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-12 05:04:08] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-8.0.0.tar.gz]
+[2024-05-12 05:04:08] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-9.0.0.tar.gz]
+[2024-05-12 05:04:08] INFO root fetch - main [MainThread]: End processing [todoist-auto]: success
+[2024-05-12 05:04:08] INFO root fetch - processPackages [RootsWeatherProject]: Remove: archive file [/home/abi/fetcher/tmp/RootsWeatherProject-1.0.8.tar.gz]
+[2024-05-12 05:04:08] INFO root fetch - processPackages [RootsWeatherProject]: Remove: archive file [/home/abi/fetcher/tmp/RootsWeatherProject-1.0.9.tar.gz]
+[2024-05-12 05:04:08] INFO root fetch - main [MainThread]: End processing [RootsWeatherProject]: success
+[2024-05-12 05:04:08] INFO root fetch - processPackages [g2opy]: Remove: archive file [/home/abi/fetcher/tmp/g2opy-0.0.4.tar.gz]
+[2024-05-12 05:04:08] INFO root fetch - processPackages [g2opy]: Remove: archive file [/home/abi/fetcher/tmp/g2opy-0.0.5.tar.gz]
+[2024-05-12 05:04:08] INFO root fetch - main [MainThread]: End processing [g2opy]: success
+[2024-05-12 05:04:09] INFO root fetch - processPackages [AyiinXd]: executing diffoscope
+[2024-05-12 05:04:09] INFO root fetch - processPackages [AyiinXd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AyiinXd-0.1.1-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/AyiinXd-0.1.2-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240512/A/AyiinXd/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 05:04:11] INFO root fetch - processPackages [AyiinXd]: Remove: archive file [/home/abi/fetcher/tmp/AyiinXd-0.1.1-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-12 05:04:11] INFO root fetch - processPackages [AyiinXd]: Remove: archive file [/home/abi/fetcher/tmp/AyiinXd-0.1.2-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-12 05:04:11] INFO root fetch - main [MainThread]: End processing [AyiinXd]: success
+[2024-05-12 05:04:11] INFO root fetch - main [MainThread]: Store serial: [23166534]
