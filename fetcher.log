@@ -16070,3 +16070,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:09:40] INFO root fetch - processPackages [python-search]: Remove: archive file [/home/abi/fetcher/tmp/python_search-0.9.9.tar.gz]
 [2024-05-12 21:09:40] INFO root fetch - main [MainThread]: End processing [python-search]: success
 [2024-05-12 21:09:40] INFO root fetch - main [MainThread]: Store serial: [23172945]
+[2024-05-12 21:11:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172945]
+[2024-05-12 21:11:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 21:11:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wondercraftz
+[2024-05-12 21:11:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tdrpa.tdworker
+[2024-05-12 21:11:49] INFO root fetch - processPackages [tdrpa.tdworker]: New version: [1.1.4.3] Old Version: [1.1.4.1]
+[2024-05-12 21:11:49] WARNING root fetch - processPackages [wondercraftz]: Skipping, unable to determine old version
+[2024-05-12 21:11:49] INFO root fetch - main [MainThread]: End processing [wondercraftz] error
+[2024-05-12 21:11:49] INFO root fetch - processPackages [tdrpa.tdworker]: Downloading https://files.pythonhosted.org/packages/95/22/4c809af422d3d1d53fe7fab3d2fb4d2015091f6a4886edce157a3dd7ba42/tdrpa.tdworker-1.1.4.1-py3-none-any.whl
+[2024-05-12 21:11:50] INFO root fetch - processPackages [tdrpa.tdworker]: Downloading https://files.pythonhosted.org/packages/ed/72/d460258270d9d230e027de1916869fcb276b28009254a9a8e5706fca8646/tdrpa.tdworker-1.1.4.3-py3-none-any.whl
+[2024-05-12 21:11:50] INFO root fetch - processPackages [tdrpa.tdworker]: executing diffoscope
+[2024-05-12 21:11:50] INFO root fetch - processPackages [tdrpa.tdworker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdrpa.tdworker-1.1.4.1-py3-none-any.whl.zip tmp/tdrpa.tdworker-1.1.4.3-py3-none-any.whl.zip --markdown 20240512/t/tdrpa.tdworker/1.1.4.1-1.1.4.3/README.md --exclude *.pyd
+[2024-05-12 21:11:50] INFO root fetch - processPackages [tdrpa.tdworker]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdworker-1.1.4.1-py3-none-any.whl.zip]
+[2024-05-12 21:11:50] INFO root fetch - processPackages [tdrpa.tdworker]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdworker-1.1.4.3-py3-none-any.whl.zip]
+[2024-05-12 21:11:50] INFO root fetch - main [MainThread]: End processing [tdrpa.tdworker]: success
+[2024-05-12 21:11:50] INFO root fetch - main [MainThread]: Store serial: [23172951]
