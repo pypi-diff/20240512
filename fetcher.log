@@ -16748,3 +16748,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:55:25] INFO root fetch - processPackages [llmail]: Remove: archive file [/home/abi/fetcher/tmp/llmail-0.2.1.tar.gz]
 [2024-05-12 21:55:25] INFO root fetch - main [MainThread]: End processing [llmail]: success
 [2024-05-12 21:55:25] INFO root fetch - main [MainThread]: Store serial: [23173266]
+[2024-05-12 21:57:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173266]
+[2024-05-12 21:57:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 21:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: msmart-ng
+[2024-05-12 21:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tahaz
+[2024-05-12 21:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyPDFForm
+[2024-05-12 21:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: exponentation
+[2024-05-12 21:57:34] INFO root fetch - processPackages [msmart-ng]: New version: [2024.5.4] Old Version: [2024.5.3]
+[2024-05-12 21:57:34] INFO root fetch - processPackages [exponentation]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-05-12 21:57:34] INFO root fetch - processPackages [msmart-ng]: Downloading https://files.pythonhosted.org/packages/34/36/ffe685c86f41e7c9c50d0ee82801e201b6387e2f301fb7dfa3982f0010e0/msmart_ng-2024.5.3.tar.gz
+[2024-05-12 21:57:34] INFO root fetch - processPackages [exponentation]: Downloading https://files.pythonhosted.org/packages/e8/a4/0a6e9f16d23eba3a81aa2a55be35cee8a3b51db93ca8dfcc60412a5ffe90/exponentation-0.0.2.tar.gz
+[2024-05-12 21:57:34] WARNING root fetch - processPackages [tahaz]: Skipping, unable to determine old version
+[2024-05-12 21:57:34] INFO root fetch - main [MainThread]: End processing [tahaz] error
+[2024-05-12 21:57:34] INFO root fetch - processPackages [PyPDFForm]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-05-12 21:57:34] WARNING root fetch - processPackages [msmart-ng]: Skipping package: exceeds size limit 21803595>=10485760
+[2024-05-12 21:57:34] INFO root fetch - main [MainThread]: End processing [msmart-ng] error
+[2024-05-12 21:57:34] INFO root fetch - processPackages [PyPDFForm]: Downloading https://files.pythonhosted.org/packages/69/9f/2ae6600de9a7bcb149411374a44be0c0f9f2c9ce362f6374e578ec5a4e26/PyPDFForm-1.4.8.tar.gz
+[2024-05-12 21:57:35] INFO root fetch - processPackages [exponentation]: Downloading https://files.pythonhosted.org/packages/6d/0f/c688ff636178a2fe2146451674e9d8817a85aac427c71c5b28c2dabea7ce/exponentation-0.0.4.tar.gz
+[2024-05-12 21:57:35] INFO root fetch - processPackages [PyPDFForm]: Downloading https://files.pythonhosted.org/packages/f0/86/8219b0802370fbdcae59e87d8b203196b52045c8375f1c043b5db3eb54ff/PyPDFForm-1.4.9.tar.gz
+[2024-05-12 21:57:35] INFO root fetch - processPackages [exponentation]: executing diffoscope
+[2024-05-12 21:57:35] INFO root fetch - processPackages [exponentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exponentation-0.0.2.tar.gz tmp/exponentation-0.0.4.tar.gz --markdown 20240512/e/exponentation/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-05-12 21:57:35] INFO root fetch - processPackages [PyPDFForm]: executing diffoscope
+[2024-05-12 21:57:35] INFO root fetch - processPackages [PyPDFForm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyPDFForm-1.4.8.tar.gz tmp/PyPDFForm-1.4.9.tar.gz --markdown 20240512/P/PyPDFForm/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-05-12 21:57:35] INFO root fetch - processPackages [PyPDFForm]: Remove: archive file [/home/abi/fetcher/tmp/PyPDFForm-1.4.8.tar.gz]
+[2024-05-12 21:57:35] INFO root fetch - processPackages [PyPDFForm]: Remove: archive file [/home/abi/fetcher/tmp/PyPDFForm-1.4.9.tar.gz]
+[2024-05-12 21:57:35] INFO root fetch - main [MainThread]: End processing [PyPDFForm]: success
+[2024-05-12 21:57:36] INFO root fetch - processPackages [exponentation]: Remove: archive file [/home/abi/fetcher/tmp/exponentation-0.0.2.tar.gz]
+[2024-05-12 21:57:36] INFO root fetch - processPackages [exponentation]: Remove: archive file [/home/abi/fetcher/tmp/exponentation-0.0.4.tar.gz]
+[2024-05-12 21:57:36] INFO root fetch - main [MainThread]: End processing [exponentation]: success
+[2024-05-12 21:57:36] INFO root fetch - main [MainThread]: Store serial: [23173289]
