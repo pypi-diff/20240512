@@ -8268,3 +8268,36 @@
 [2024-05-12 12:12:15] WARNING root fetch - processPackages [asm1-influent-generator]: Skipping package: exceeds size limit 43485213>=10485760
 [2024-05-12 12:12:15] INFO root fetch - main [MainThread]: End processing [asm1-influent-generator] error
 [2024-05-12 12:12:15] INFO root fetch - main [MainThread]: Store serial: [23168922]
+[2024-05-12 12:14:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168922]
+[2024-05-12 12:14:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 12:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: turcicz
+[2024-05-12 12:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlpro
+[2024-05-12 12:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: portfolio-tracker
+[2024-05-12 12:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: message-local
+[2024-05-12 12:14:24] WARNING root fetch - processPackages [turcicz]: Skipping, unable to determine old version
+[2024-05-12 12:14:24] INFO root fetch - main [MainThread]: End processing [turcicz] error
+[2024-05-12 12:14:24] INFO root fetch - processPackages [portfolio-tracker]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 12:14:24] INFO root fetch - processPackages [mlpro]: New version: [1.4.4] Old Version: [1.4.3]
+[2024-05-12 12:14:24] INFO root fetch - processPackages [message-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-12 12:14:24] INFO root fetch - processPackages [portfolio-tracker]: Downloading https://files.pythonhosted.org/packages/68/7f/6c511f6e8c1ddf662f3551a12b33e07f7624d3c0e62c0a58106e1c5a08c3/portfolio_tracker-0.1.0.tar.gz
+[2024-05-12 12:14:24] INFO root fetch - processPackages [mlpro]: Downloading https://files.pythonhosted.org/packages/9b/0e/00b463e21560ff2fd81081203a188b4de3b7db9367206e1daa26f6b09a63/mlpro-1.4.3.tar.gz
+[2024-05-12 12:14:24] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/58/98/6002a91d9f0eb23b635ecf892333a787e13c1e810b92090bc53584aa2f18/message-local-0.0.98.tar.gz
+[2024-05-12 12:14:25] INFO root fetch - processPackages [portfolio-tracker]: Downloading https://files.pythonhosted.org/packages/3c/12/56f724ec6481b4f3cf56992b6870f0e8371df8ef1f598994777cae1e17b8/portfolio_tracker-0.1.1.tar.gz
+[2024-05-12 12:14:25] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/78/17/d149670c7821186afe25a7b74020f68bd8db48497b170965d75952fbe2d8/message-local-0.0.99.tar.gz
+[2024-05-12 12:14:25] INFO root fetch - processPackages [portfolio-tracker]: executing diffoscope
+[2024-05-12 12:14:25] INFO root fetch - processPackages [portfolio-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portfolio_tracker-0.1.0.tar.gz tmp/portfolio_tracker-0.1.1.tar.gz --markdown 20240512/p/portfolio-tracker/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 12:14:25] INFO root fetch - processPackages [mlpro]: Downloading https://files.pythonhosted.org/packages/f5/fa/71060724023bd233e9cd3d6d1f0aae2d020735d7260e1dc80b8813b0871d/mlpro-1.4.4.tar.gz
+[2024-05-12 12:14:25] INFO root fetch - processPackages [message-local]: executing diffoscope
+[2024-05-12 12:14:25] INFO root fetch - processPackages [message-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/message-local-0.0.98.tar.gz tmp/message-local-0.0.99.tar.gz --markdown 20240512/m/message-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-12 12:14:25] INFO root fetch - processPackages [mlpro]: executing diffoscope
+[2024-05-12 12:14:25] INFO root fetch - processPackages [mlpro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpro-1.4.3.tar.gz tmp/mlpro-1.4.4.tar.gz --markdown 20240512/m/mlpro/1.4.3-1.4.4/README.md --exclude *.pyd
+[2024-05-12 12:14:25] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.98.tar.gz]
+[2024-05-12 12:14:25] INFO root fetch - processPackages [portfolio-tracker]: Remove: archive file [/home/abi/fetcher/tmp/portfolio_tracker-0.1.0.tar.gz]
+[2024-05-12 12:14:25] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.99.tar.gz]
+[2024-05-12 12:14:25] INFO root fetch - processPackages [portfolio-tracker]: Remove: archive file [/home/abi/fetcher/tmp/portfolio_tracker-0.1.1.tar.gz]
+[2024-05-12 12:14:25] INFO root fetch - main [MainThread]: End processing [message-local]: success
+[2024-05-12 12:14:25] INFO root fetch - main [MainThread]: End processing [portfolio-tracker]: success
+[2024-05-12 12:14:26] INFO root fetch - processPackages [mlpro]: Remove: archive file [/home/abi/fetcher/tmp/mlpro-1.4.3.tar.gz]
+[2024-05-12 12:14:26] INFO root fetch - processPackages [mlpro]: Remove: archive file [/home/abi/fetcher/tmp/mlpro-1.4.4.tar.gz]
+[2024-05-12 12:14:26] INFO root fetch - main [MainThread]: End processing [mlpro]: success
+[2024-05-12 12:14:26] INFO root fetch - main [MainThread]: Store serial: [23168936]
