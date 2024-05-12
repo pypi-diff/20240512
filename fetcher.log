@@ -13573,3 +13573,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:24:21] INFO root fetch - processPackages [damo]: Remove: archive file [/home/abi/fetcher/tmp/damo-2.3.4.tar.gz]
 [2024-05-12 18:24:21] INFO root fetch - main [MainThread]: End processing [damo]: success
 [2024-05-12 18:24:21] INFO root fetch - main [MainThread]: Store serial: [23171729]
+[2024-05-12 18:26:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171729]
+[2024-05-12 18:26:29] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-12 18:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-05-12 18:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llama-cpp-agent
+[2024-05-12 18:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: popoll-backend
+[2024-05-12 18:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: missing-mga
+[2024-05-12 18:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ansibleguy-webui
+[2024-05-12 18:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wotlinkz
+[2024-05-12 18:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dynamometricalz
+[2024-05-12 18:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: peopleprinter
+[2024-05-12 18:26:29] INFO root fetch - processPackages [missing-mga]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-12 18:26:29] INFO root fetch - processPackages [peopleprinter]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-12 18:26:30] INFO root fetch - processPackages [popoll-backend]: New version: [0.0.47] Old Version: [0.0.46]
+[2024-05-12 18:26:30] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-12 18:26:30] INFO root fetch - processPackages [missing-mga]: Downloading https://files.pythonhosted.org/packages/e6/27/9a766118dbc576d7fc6edb6379dc5d4bba63b96a782898764d1ab15f3013/missing_mga-0.4.1-py3-none-any.whl
+[2024-05-12 18:26:30] INFO root fetch - processPackages [peopleprinter]: Downloading https://files.pythonhosted.org/packages/ff/22/d8526caf31f50ed778a352aab7876ae337643389d31825010d6c88078c76/peopleprinter-0.0.5.tar.gz
+[2024-05-12 18:26:30] WARNING root fetch - processPackages [wotlinkz]: Skipping, unable to determine old version
+[2024-05-12 18:26:30] INFO root fetch - main [MainThread]: End processing [wotlinkz] error
+[2024-05-12 18:26:30] INFO root fetch - processPackages [ansibleguy-webui]: New version: [0.0.19] Old Version: [0.0.18]
+[2024-05-12 18:26:30] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/69/f3/072ac2cd525bc70d791eb4e6dbbce26cefc8799aad58181b5767be06ee5f/popoll_backend-0.0.46.tar.gz
+[2024-05-12 18:26:30] WARNING root fetch - processPackages [dynamometricalz]: Skipping, unable to determine old version
+[2024-05-12 18:26:30] INFO root fetch - main [MainThread]: End processing [dynamometricalz] error
+[2024-05-12 18:26:30] INFO root fetch - processPackages [llama-cpp-agent]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-05-12 18:26:30] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-12 18:26:30] INFO root fetch - processPackages [llama-cpp-agent]: Downloading https://files.pythonhosted.org/packages/61/52/ffe573bab5495155514a04558694b60872b8762552f8999a63993cc7b11d/llama_cpp_agent-0.1.4.tar.gz
+[2024-05-12 18:26:30] INFO root fetch - processPackages [peopleprinter]: Downloading https://files.pythonhosted.org/packages/24/52/316bf06f67817f03ee32d809cb07a348d6b5a2afb4512859ee148a74e066/peopleprinter-0.0.6.tar.gz
+[2024-05-12 18:26:30] INFO root fetch - processPackages [ansibleguy-webui]: Downloading https://files.pythonhosted.org/packages/37/33/3a09e00de29ed397e2228974c22ddf058dc3a8632fe68d6017b2847fa752/ansibleguy-webui-0.0.18.tar.gz
+[2024-05-12 18:26:30] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/fa/01/c362b35a04b95bd712f370436185b7e67a42ad779814b8dbc325ed5084f0/popoll_backend-0.0.47.tar.gz
+[2024-05-12 18:26:30] INFO root fetch - processPackages [missing-mga]: Downloading https://files.pythonhosted.org/packages/66/ec/5e1ed18df493efdaa70f31fe166dc2245259d86a7465a38414d853970798/missing_mga-0.4.2-py3-none-any.whl
+[2024-05-12 18:26:30] INFO root fetch - processPackages [peopleprinter]: executing diffoscope
+[2024-05-12 18:26:30] INFO root fetch - processPackages [peopleprinter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peopleprinter-0.0.5.tar.gz tmp/peopleprinter-0.0.6.tar.gz --markdown 20240512/p/peopleprinter/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-12 18:26:30] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-12 18:26:30] INFO root fetch - processPackages [popoll-backend]: executing diffoscope
+[2024-05-12 18:26:30] INFO root fetch - processPackages [popoll-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popoll_backend-0.0.46.tar.gz tmp/popoll_backend-0.0.47.tar.gz --markdown 20240512/p/popoll-backend/0.0.46-0.0.47/README.md --exclude *.pyd
+[2024-05-12 18:26:30] INFO root fetch - processPackages [missing-mga]: executing diffoscope
+[2024-05-12 18:26:30] INFO root fetch - processPackages [missing-mga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/missing_mga-0.4.1-py3-none-any.whl.zip tmp/missing_mga-0.4.2-py3-none-any.whl.zip --markdown 20240512/m/missing-mga/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-12 18:26:30] INFO root fetch - processPackages [llama-cpp-agent]: Downloading https://files.pythonhosted.org/packages/b6/14/2679f3c2b1f1699545063a231324266d8e059c9cc8ef6fd050ce8e8db05e/llama_cpp_agent-0.2.0.tar.gz
+[2024-05-12 18:26:30] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-12 18:26:30] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240512/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-12 18:26:30] INFO root fetch - processPackages [ansibleguy-webui]: Downloading https://files.pythonhosted.org/packages/b8/dd/59944aa74527d665694867b593f337750815e3d7de7d98e751ae3ffd2ab6/ansibleguy_webui-0.0.19.tar.gz
+[2024-05-12 18:26:30] INFO root fetch - processPackages [llama-cpp-agent]: executing diffoscope
+[2024-05-12 18:26:30] INFO root fetch - processPackages [llama-cpp-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_cpp_agent-0.1.4.tar.gz tmp/llama_cpp_agent-0.2.0.tar.gz --markdown 20240512/l/llama-cpp-agent/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-05-12 18:26:31] INFO root fetch - processPackages [ansibleguy-webui]: executing diffoscope
+[2024-05-12 18:26:31] INFO root fetch - processPackages [ansibleguy-webui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansibleguy-webui-0.0.18.tar.gz tmp/ansibleguy_webui-0.0.19.tar.gz --markdown 20240512/a/ansibleguy-webui/0.0.18-0.0.19/README.md --exclude *.pyd
+[2024-05-12 18:26:31] INFO root fetch - processPackages [missing-mga]: Remove: archive file [/home/abi/fetcher/tmp/missing_mga-0.4.1-py3-none-any.whl.zip]
+[2024-05-12 18:26:31] INFO root fetch - processPackages [missing-mga]: Remove: archive file [/home/abi/fetcher/tmp/missing_mga-0.4.2-py3-none-any.whl.zip]
+[2024-05-12 18:26:31] INFO root fetch - main [MainThread]: End processing [missing-mga]: success
+[2024-05-12 18:26:31] INFO root fetch - processPackages [peopleprinter]: Remove: archive file [/home/abi/fetcher/tmp/peopleprinter-0.0.5.tar.gz]
+[2024-05-12 18:26:31] INFO root fetch - processPackages [peopleprinter]: Remove: archive file [/home/abi/fetcher/tmp/peopleprinter-0.0.6.tar.gz]
+[2024-05-12 18:26:31] INFO root fetch - main [MainThread]: End processing [peopleprinter]: success
+[2024-05-12 18:26:31] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.46.tar.gz]
+[2024-05-12 18:26:31] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.47.tar.gz]
+[2024-05-12 18:26:31] INFO root fetch - main [MainThread]: End processing [popoll-backend]: success
+[2024-05-12 18:26:31] INFO root fetch - processPackages [llama-cpp-agent]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_agent-0.1.4.tar.gz]
+[2024-05-12 18:26:31] INFO root fetch - processPackages [llama-cpp-agent]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_agent-0.2.0.tar.gz]
+[2024-05-12 18:26:31] INFO root fetch - main [MainThread]: End processing [llama-cpp-agent]: success
+[2024-05-12 18:26:31] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-12 18:26:31] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-12 18:26:31] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-12 18:26:32] INFO root fetch - processPackages [ansibleguy-webui]: Remove: archive file [/home/abi/fetcher/tmp/ansibleguy-webui-0.0.18.tar.gz]
+[2024-05-12 18:26:32] INFO root fetch - processPackages [ansibleguy-webui]: Remove: archive file [/home/abi/fetcher/tmp/ansibleguy_webui-0.0.19.tar.gz]
+[2024-05-12 18:26:32] INFO root fetch - main [MainThread]: End processing [ansibleguy-webui]: success
+[2024-05-12 18:26:32] INFO root fetch - main [MainThread]: Store serial: [23171754]
