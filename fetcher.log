@@ -12510,3 +12510,90 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:21:13] INFO root fetch - processPackages [user-external-local]: Remove: archive file [/home/abi/fetcher/tmp/user_external_local-0.0.43.tar.gz]
 [2024-05-12 17:21:13] INFO root fetch - main [MainThread]: End processing [user-external-local]: success
 [2024-05-12 17:21:13] INFO root fetch - main [MainThread]: Store serial: [23171171]
+[2024-05-12 17:23:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171171]
+[2024-05-12 17:23:21] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-12 17:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tulona
+[2024-05-12 17:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: distributionsTCtest
+[2024-05-12 17:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: missing-mga
+[2024-05-12 17:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llm-bench
+[2024-05-12 17:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mpris-api
+[2024-05-12 17:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: recs-searcher
+[2024-05-12 17:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: reader-toolbox
+[2024-05-12 17:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dooth
+[2024-05-12 17:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: psplpy
+[2024-05-12 17:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: torchsense
+[2024-05-12 17:23:22] INFO root fetch - processPackages [llm-bench]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-12 17:23:22] INFO root fetch - processPackages [tulona]: New version: [0.7.8] Old Version: [0.7.6]
+[2024-05-12 17:23:22] INFO root fetch - processPackages [dooth]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-12 17:23:22] INFO root fetch - processPackages [mpris-api]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-12 17:23:22] INFO root fetch - processPackages [missing-mga]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-12 17:23:22] INFO root fetch - processPackages [psplpy]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-12 17:23:22] INFO root fetch - processPackages [recs-searcher]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 17:23:22] WARNING root fetch - processPackages [distributionsTCtest]: Skipping, unable to determine old version
+[2024-05-12 17:23:22] INFO root fetch - main [MainThread]: End processing [distributionsTCtest] error
+[2024-05-12 17:23:22] INFO root fetch - processPackages [torchsense]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 17:23:22] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/e4/1e/96e8e21a12cce6b75d40ef58ee187c01da8c44ea854f32fe4678648dcb90/llm_bench-0.4.8.tar.gz
+[2024-05-12 17:23:22] INFO root fetch - processPackages [reader-toolbox]: New version: [0.9] Old Version: [0.2.3]
+[2024-05-12 17:23:22] INFO root fetch - processPackages [dooth]: Downloading https://files.pythonhosted.org/packages/38/0f/7b9f678a3fd957541fc208671a879befc056b218509c0558006f6f9857a8/dooth-1.0.0-py3-none-any.whl
+[2024-05-12 17:23:22] INFO root fetch - processPackages [missing-mga]: Downloading https://files.pythonhosted.org/packages/88/c2/aa34285ee3720edf97c7cb9acc09e75887393ff3f2a54c080c0b23d6ef4d/missing_mga-0.4.0-py3-none-any.whl
+[2024-05-12 17:23:22] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/90/55/cc085253f0fd9ac36b91a470ef0c6ae1199ab2b7a53ccdf5f7d1bc593a50/tulona-0.7.6.tar.gz
+[2024-05-12 17:23:22] INFO root fetch - processPackages [mpris-api]: Downloading https://files.pythonhosted.org/packages/d8/8d/7ce3ec0124a5383864932f19833e2b6c59508043ece8d371934bd9683a48/mpris-api-1.0.0.tar.gz
+[2024-05-12 17:23:22] INFO root fetch - processPackages [psplpy]: Downloading https://files.pythonhosted.org/packages/b5/96/7aca3bf25a673c5b11b0633adc37264b60664fc22d0664e26b04c665bf91/psplpy-1.0.0.tar.gz
+[2024-05-12 17:23:22] INFO root fetch - processPackages [recs-searcher]: Downloading https://files.pythonhosted.org/packages/15/b6/10c7db014f8a6e2760ea53b639068e3cd121021f7a1babfb83c682bad2be/recs-searcher-0.1.0.tar.gz
+[2024-05-12 17:23:22] INFO root fetch - processPackages [reader-toolbox]: Downloading https://files.pythonhosted.org/packages/b5/7b/8ba8deb63bc5db404604be0686c2aece6b32c6f221b09209e21d1c568325/reader-toolbox-0.2.3.tar.gz
+[2024-05-12 17:23:22] INFO root fetch - processPackages [dooth]: Downloading https://files.pythonhosted.org/packages/06/8f/a821c122bc77684050347910883b0e21db1b10b41e27d58d8b9ddc3d701d/dooth-1.0.1-py3-none-any.whl
+[2024-05-12 17:23:22] INFO root fetch - processPackages [torchsense]: Downloading https://files.pythonhosted.org/packages/c7/d5/31eeca0dafecc113880652cda1624386d94888dd12acd7b3312c13d8a4e5/torchsense-0.0.1.tar.gz
+[2024-05-12 17:23:22] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/e4/75/2d98ade554705da63eb2766a12984f3f6fc8b6925b37f796ffa48846b3ef/llm_bench-0.4.9.tar.gz
+[2024-05-12 17:23:22] INFO root fetch - processPackages [mpris-api]: Downloading https://files.pythonhosted.org/packages/90/fd/0b0a8fb147a17d664e0f066ff39d0ddb2cce323d5ce036ce5ea2f61ea991/mpris-api-1.0.1.tar.gz
+[2024-05-12 17:23:22] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/fd/4e/04af3138caf4b6d7b2b12a9adbff2710ee2b4240c341fe2b3dcfe8ce3fd5/tulona-0.7.8.tar.gz
+[2024-05-12 17:23:22] INFO root fetch - processPackages [psplpy]: Downloading https://files.pythonhosted.org/packages/23/40/b4d15d9d79675d2990c1b5d5cbbd908920c89bdcad54268360b9b55cbc43/psplpy-1.1.0.tar.gz
+[2024-05-12 17:23:22] INFO root fetch - processPackages [dooth]: executing diffoscope
+[2024-05-12 17:23:22] INFO root fetch - processPackages [dooth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dooth-1.0.0-py3-none-any.whl.zip tmp/dooth-1.0.1-py3-none-any.whl.zip --markdown 20240512/d/dooth/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-12 17:23:22] INFO root fetch - processPackages [missing-mga]: Downloading https://files.pythonhosted.org/packages/e6/27/9a766118dbc576d7fc6edb6379dc5d4bba63b96a782898764d1ab15f3013/missing_mga-0.4.1-py3-none-any.whl
+[2024-05-12 17:23:22] INFO root fetch - processPackages [llm-bench]: executing diffoscope
+[2024-05-12 17:23:22] INFO root fetch - processPackages [llm-bench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_bench-0.4.8.tar.gz tmp/llm_bench-0.4.9.tar.gz --markdown 20240512/l/llm-bench/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-12 17:23:22] INFO root fetch - processPackages [mpris-api]: executing diffoscope
+[2024-05-12 17:23:22] INFO root fetch - processPackages [mpris-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpris-api-1.0.0.tar.gz tmp/mpris-api-1.0.1.tar.gz --markdown 20240512/m/mpris-api/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-12 17:23:22] INFO root fetch - processPackages [psplpy]: executing diffoscope
+[2024-05-12 17:23:22] INFO root fetch - processPackages [psplpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psplpy-1.0.0.tar.gz tmp/psplpy-1.1.0.tar.gz --markdown 20240512/p/psplpy/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-12 17:23:22] INFO root fetch - processPackages [tulona]: executing diffoscope
+[2024-05-12 17:23:22] INFO root fetch - processPackages [tulona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulona-0.7.6.tar.gz tmp/tulona-0.7.8.tar.gz --markdown 20240512/t/tulona/0.7.6-0.7.8/README.md --exclude *.pyd
+[2024-05-12 17:23:22] INFO root fetch - processPackages [missing-mga]: executing diffoscope
+[2024-05-12 17:23:22] INFO root fetch - processPackages [missing-mga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/missing_mga-0.4.0-py3-none-any.whl.zip tmp/missing_mga-0.4.1-py3-none-any.whl.zip --markdown 20240512/m/missing-mga/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-12 17:23:22] INFO root fetch - processPackages [torchsense]: Downloading https://files.pythonhosted.org/packages/5a/5f/760146a1ca5bac429d08983b537f0cb303d558d19b316710b32fc9309d50/torchsense-0.0.2.tar.gz
+[2024-05-12 17:23:22] INFO root fetch - processPackages [recs-searcher]: Downloading https://files.pythonhosted.org/packages/6a/fb/300d578631f375d1517ddc39209c20b83466dd3ad1109feb972820ea5dc5/recs-searcher-0.1.1.tar.gz
+[2024-05-12 17:23:22] INFO root fetch - processPackages [reader-toolbox]: Downloading https://files.pythonhosted.org/packages/21/b3/4db81cb49f29feccb2337ada109969216b230faf41cfb3cbd1a1233a6b38/reader_toolbox-0.9.tar.gz
+[2024-05-12 17:23:23] INFO root fetch - processPackages [reader-toolbox]: executing diffoscope
+[2024-05-12 17:23:23] INFO root fetch - processPackages [reader-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reader-toolbox-0.2.3.tar.gz tmp/reader_toolbox-0.9.tar.gz --markdown 20240512/r/reader-toolbox/0.2.3-0.9/README.md --exclude *.pyd
+[2024-05-12 17:23:23] INFO root fetch - processPackages [recs-searcher]: executing diffoscope
+[2024-05-12 17:23:23] INFO root fetch - processPackages [recs-searcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recs-searcher-0.1.0.tar.gz tmp/recs-searcher-0.1.1.tar.gz --markdown 20240512/r/recs-searcher/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 17:23:23] INFO root fetch - processPackages [torchsense]: executing diffoscope
+[2024-05-12 17:23:23] INFO root fetch - processPackages [torchsense]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchsense-0.0.1.tar.gz tmp/torchsense-0.0.2.tar.gz --markdown 20240512/t/torchsense/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-12 17:23:23] INFO root fetch - processPackages [dooth]: Remove: archive file [/home/abi/fetcher/tmp/dooth-1.0.0-py3-none-any.whl.zip]
+[2024-05-12 17:23:23] INFO root fetch - processPackages [dooth]: Remove: archive file [/home/abi/fetcher/tmp/dooth-1.0.1-py3-none-any.whl.zip]
+[2024-05-12 17:23:23] INFO root fetch - main [MainThread]: End processing [dooth]: success
+[2024-05-12 17:23:23] INFO root fetch - processPackages [mpris-api]: Remove: archive file [/home/abi/fetcher/tmp/mpris-api-1.0.0.tar.gz]
+[2024-05-12 17:23:23] INFO root fetch - processPackages [mpris-api]: Remove: archive file [/home/abi/fetcher/tmp/mpris-api-1.0.1.tar.gz]
+[2024-05-12 17:23:23] INFO root fetch - main [MainThread]: End processing [mpris-api]: success
+[2024-05-12 17:23:23] INFO root fetch - processPackages [missing-mga]: Remove: archive file [/home/abi/fetcher/tmp/missing_mga-0.4.0-py3-none-any.whl.zip]
+[2024-05-12 17:23:23] INFO root fetch - processPackages [missing-mga]: Remove: archive file [/home/abi/fetcher/tmp/missing_mga-0.4.1-py3-none-any.whl.zip]
+[2024-05-12 17:23:23] INFO root fetch - main [MainThread]: End processing [missing-mga]: success
+[2024-05-12 17:23:23] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.8.tar.gz]
+[2024-05-12 17:23:23] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.9.tar.gz]
+[2024-05-12 17:23:23] INFO root fetch - main [MainThread]: End processing [llm-bench]: success
+[2024-05-12 17:23:23] INFO root fetch - processPackages [psplpy]: Remove: archive file [/home/abi/fetcher/tmp/psplpy-1.0.0.tar.gz]
+[2024-05-12 17:23:23] INFO root fetch - processPackages [psplpy]: Remove: archive file [/home/abi/fetcher/tmp/psplpy-1.1.0.tar.gz]
+[2024-05-12 17:23:23] INFO root fetch - main [MainThread]: End processing [psplpy]: success
+[2024-05-12 17:23:23] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.7.6.tar.gz]
+[2024-05-12 17:23:23] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.7.8.tar.gz]
+[2024-05-12 17:23:23] INFO root fetch - main [MainThread]: End processing [tulona]: success
+[2024-05-12 17:23:23] INFO root fetch - processPackages [reader-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/reader-toolbox-0.2.3.tar.gz]
+[2024-05-12 17:23:23] INFO root fetch - processPackages [reader-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/reader_toolbox-0.9.tar.gz]
+[2024-05-12 17:23:23] INFO root fetch - main [MainThread]: End processing [reader-toolbox]: success
+[2024-05-12 17:23:24] INFO root fetch - processPackages [torchsense]: Remove: archive file [/home/abi/fetcher/tmp/torchsense-0.0.1.tar.gz]
+[2024-05-12 17:23:24] INFO root fetch - processPackages [torchsense]: Remove: archive file [/home/abi/fetcher/tmp/torchsense-0.0.2.tar.gz]
+[2024-05-12 17:23:24] INFO root fetch - main [MainThread]: End processing [torchsense]: success
+[2024-05-12 17:23:24] INFO root fetch - processPackages [recs-searcher]: Remove: archive file [/home/abi/fetcher/tmp/recs-searcher-0.1.0.tar.gz]
+[2024-05-12 17:23:24] INFO root fetch - processPackages [recs-searcher]: Remove: archive file [/home/abi/fetcher/tmp/recs-searcher-0.1.1.tar.gz]
+[2024-05-12 17:23:24] INFO root fetch - main [MainThread]: End processing [recs-searcher]: success
+[2024-05-12 17:23:24] INFO root fetch - main [MainThread]: Store serial: [23171201]
