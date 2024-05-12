@@ -2811,3 +2811,30 @@
 [2024-05-12 04:11:32] INFO root fetch - processPackages [wp-math3d]: Remove: archive file [/home/abi/fetcher/tmp/wp-math3d-0.6.9.tar.gz]
 [2024-05-12 04:11:32] INFO root fetch - main [MainThread]: End processing [wp-math3d]: success
 [2024-05-12 04:11:32] INFO root fetch - main [MainThread]: Store serial: [23166246]
+[2024-05-12 04:13:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166246]
+[2024-05-12 04:13:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 04:13:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: daftlyz
+[2024-05-12 04:13:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ikvpy
+[2024-05-12 04:13:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Sherlock-testABCYUEGUGHRIUHGU
+[2024-05-12 04:13:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: meetlify
+[2024-05-12 04:13:42] INFO root fetch - processPackages [ikvpy]: New version: [0.0.32] Old Version: [0.0.31]
+[2024-05-12 04:13:42] WARNING root fetch - processPackages [daftlyz]: Skipping, unable to determine old version
+[2024-05-12 04:13:42] INFO root fetch - main [MainThread]: End processing [daftlyz] error
+[2024-05-12 04:13:42] WARNING root fetch - processPackages [meetlify]: Skipping, unable to determine old version
+[2024-05-12 04:13:42] INFO root fetch - main [MainThread]: End processing [meetlify] error
+[2024-05-12 04:13:42] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/5a/f4/474db53f3b3bf2bfaff1b2529ddb12251f97a30f81c22d72626d2240d1e9/ikvpy-0.0.31.tar.gz
+[2024-05-12 04:13:42] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: New version: [0.14.6] Old Version: [0.14.5]
+[2024-05-12 04:13:42] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Downloading https://files.pythonhosted.org/packages/1c/3f/65924cb2e4268fd31e41d7810295091b3ff6646cc433d5aa43d0ec16f6a9/sherlock_testabcyuegughriuhgu-0.14.5.tar.gz
+[2024-05-12 04:13:42] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Downloading https://files.pythonhosted.org/packages/2a/83/10e0408b5078d16ca3422f4569b5e37f170b9c28f3e0949d1068de309e52/sherlock_testabcyuegughriuhgu-0.14.6.tar.gz
+[2024-05-12 04:13:42] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/5f/d1/6458907b30e6853bd1370b303ea18de9f855d85a775021468d4ff4cf27c4/ikvpy-0.0.32.tar.gz
+[2024-05-12 04:13:42] INFO root fetch - processPackages [ikvpy]: executing diffoscope
+[2024-05-12 04:13:42] INFO root fetch - processPackages [ikvpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ikvpy-0.0.31.tar.gz tmp/ikvpy-0.0.32.tar.gz --markdown 20240512/i/ikvpy/0.0.31-0.0.32/README.md --exclude *.pyd
+[2024-05-12 04:13:42] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: executing diffoscope
+[2024-05-12 04:13:42] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sherlock_testabcyuegughriuhgu-0.14.5.tar.gz tmp/sherlock_testabcyuegughriuhgu-0.14.6.tar.gz --markdown 20240512/S/Sherlock-testABCYUEGUGHRIUHGU/0.14.5-0.14.6/README.md --exclude *.pyd
+[2024-05-12 04:13:43] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.31.tar.gz]
+[2024-05-12 04:13:43] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.32.tar.gz]
+[2024-05-12 04:13:43] INFO root fetch - main [MainThread]: End processing [ikvpy]: success
+[2024-05-12 04:13:43] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Remove: archive file [/home/abi/fetcher/tmp/sherlock_testabcyuegughriuhgu-0.14.5.tar.gz]
+[2024-05-12 04:13:43] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Remove: archive file [/home/abi/fetcher/tmp/sherlock_testabcyuegughriuhgu-0.14.6.tar.gz]
+[2024-05-12 04:13:43] INFO root fetch - main [MainThread]: End processing [Sherlock-testABCYUEGUGHRIUHGU]: success
+[2024-05-12 04:13:43] INFO root fetch - main [MainThread]: Store serial: [23166259]
