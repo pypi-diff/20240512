@@ -7009,3 +7009,40 @@
 [2024-05-12 10:36:36] INFO root fetch - main [MainThread]: End processing [soma-integ]: success
 [2024-05-12 10:36:36] INFO root fetch - main [MainThread]: End processing [django-admin-daterange-listfilter]: success
 [2024-05-12 10:36:36] INFO root fetch - main [MainThread]: Store serial: [23168172]
+[2024-05-12 10:38:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168172]
+[2024-05-12 10:38:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 10:38:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-admin-daterange-listfilter
+[2024-05-12 10:38:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: peaqevcore
+[2024-05-12 10:38:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-admin-daterange-listfilter
+[2024-05-12 10:38:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: LVPocket
+[2024-05-12 10:38:45] INFO root fetch - processPackages [LVPocket]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-12 10:38:45] INFO root fetch - processPackages [django-admin-daterange-listfilter]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-12 10:38:45] INFO root fetch - processPackages [django-admin-daterange-listfilter]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-12 10:38:45] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2024-05-12 10:38:45] INFO root fetch - processPackages [LVPocket]: Downloading https://files.pythonhosted.org/packages/95/a5/8fdd08bd40a4e52f071269a00db8273daa30fbbfb3c939c19592e304da2f/LVPocket-0.1.9.tar.gz
+[2024-05-12 10:38:45] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/d3/3a/d595706eb589ecf59a8cba9b6d5b0456fc65fe7e1d2c1e2aec7feee838b8/peaqevcore-9.2.2.tar.gz
+[2024-05-12 10:38:45] INFO root fetch - processPackages [django-admin-daterange-listfilter]: Downloading https://files.pythonhosted.org/packages/35/de/f844fe729416f756c976eceebfe03b71b522f909eadde926e5f4751265a1/django-admin-daterange-listfilter-0.1.2.tar.gz
+[2024-05-12 10:38:45] INFO root fetch - processPackages [django-admin-daterange-listfilter]: Downloading https://files.pythonhosted.org/packages/35/de/f844fe729416f756c976eceebfe03b71b522f909eadde926e5f4751265a1/django-admin-daterange-listfilter-0.1.2.tar.gz
+[2024-05-12 10:38:45] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/7d/ed/173dd45b11e856f6a0a37a2fe90750405b19807684a9c94bd5e9388c29a2/peaqevcore-9.2.3.tar.gz
+[2024-05-12 10:38:45] INFO root fetch - processPackages [LVPocket]: Downloading https://files.pythonhosted.org/packages/48/ed/f82cd6c9703a4caf752a438993722c48147940a1e9d68879c17cac0b12c8/LVPocket-0.2.0.tar.gz
+[2024-05-12 10:38:45] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2024-05-12 10:38:45] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20240512/p/peaqevcore/9.2.2-9.2.3/README.md --exclude *.pyd
+[2024-05-12 10:38:45] INFO root fetch - processPackages [django-admin-daterange-listfilter]: Downloading https://files.pythonhosted.org/packages/c4/9a/290f049b3ec568a4ca3d3af5de58883a601c6fe536476870672ae72a193c/django-admin-daterange-listfilter-0.1.3.tar.gz
+[2024-05-12 10:38:45] INFO root fetch - processPackages [django-admin-daterange-listfilter]: Downloading https://files.pythonhosted.org/packages/c4/9a/290f049b3ec568a4ca3d3af5de58883a601c6fe536476870672ae72a193c/django-admin-daterange-listfilter-0.1.3.tar.gz
+[2024-05-12 10:38:45] INFO root fetch - processPackages [LVPocket]: executing diffoscope
+[2024-05-12 10:38:45] INFO root fetch - processPackages [LVPocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LVPocket-0.1.9.tar.gz tmp/LVPocket-0.2.0.tar.gz --markdown 20240512/L/LVPocket/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-12 10:38:45] INFO root fetch - processPackages [django-admin-daterange-listfilter]: executing diffoscope
+[2024-05-12 10:38:45] INFO root fetch - processPackages [django-admin-daterange-listfilter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-daterange-listfilter-0.1.2.tar.gz tmp/django-admin-daterange-listfilter-0.1.3.tar.gz --markdown 20240512/d/django-admin-daterange-listfilter/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-12 10:38:45] INFO root fetch - processPackages [django-admin-daterange-listfilter]: executing diffoscope
+[2024-05-12 10:38:45] INFO root fetch - processPackages [django-admin-daterange-listfilter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-daterange-listfilter-0.1.2.tar.gz tmp/django-admin-daterange-listfilter-0.1.3.tar.gz --markdown 20240512/d/django-admin-daterange-listfilter/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-12 10:38:46] INFO root fetch - processPackages [LVPocket]: Remove: archive file [/home/abi/fetcher/tmp/LVPocket-0.1.9.tar.gz]
+[2024-05-12 10:38:46] INFO root fetch - processPackages [LVPocket]: Remove: archive file [/home/abi/fetcher/tmp/LVPocket-0.2.0.tar.gz]
+[2024-05-12 10:38:46] INFO root fetch - main [MainThread]: End processing [LVPocket]: success
+[2024-05-12 10:38:46] INFO root fetch - processPackages [django-admin-daterange-listfilter]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-daterange-listfilter-0.1.2.tar.gz]
+[2024-05-12 10:38:46] INFO root fetch - processPackages [django-admin-daterange-listfilter]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-daterange-listfilter-0.1.3.tar.gz]
+[2024-05-12 10:38:46] INFO root fetch - main [MainThread]: End processing [django-admin-daterange-listfilter]: success
+[2024-05-12 10:38:46] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.2.tar.gz]
+[2024-05-12 10:38:46] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.3.tar.gz]
+[2024-05-12 10:38:46] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2024-05-12 10:38:46] INFO root fetch - main [MainThread]: End processing [django-admin-daterange-listfilter]: success
+[2024-05-12 10:38:46] INFO root fetch - main [MainThread]: Store serial: [23168184]
