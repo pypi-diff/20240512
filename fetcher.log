@@ -5786,3 +5786,51 @@
 [2024-05-12 08:48:49] INFO root fetch - processPackages [nagatoai_core]: Remove: archive file [/home/abi/fetcher/tmp/nagatoai_core-0.9.0.tar.gz]
 [2024-05-12 08:48:49] INFO root fetch - main [MainThread]: End processing [nagatoai_core]: success
 [2024-05-12 08:48:49] INFO root fetch - main [MainThread]: Store serial: [23167571]
+[2024-05-12 08:50:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167571]
+[2024-05-12 08:50:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 08:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: database-mysql-local
+[2024-05-12 08:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezside
+[2024-05-12 08:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mass-composition
+[2024-05-12 08:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aa-routing
+[2024-05-12 08:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bruhanimate
+[2024-05-12 08:50:57] INFO root fetch - processPackages [mass-composition]: New version: [0.4.6] Old Version: [0.4.3]
+[2024-05-12 08:50:57] INFO root fetch - processPackages [ezside]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 08:50:57] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.293] Old Version: [0.0.292]
+[2024-05-12 08:50:57] INFO root fetch - processPackages [bruhanimate]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-12 08:50:57] INFO root fetch - processPackages [aa-routing]: New version: [0.2.2a0] Old Version: [0.2.1a0]
+[2024-05-12 08:50:57] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/cf/89/581583c30035ff372cb3ed55b1561fca14d80924456b8e1ce509516a38cf/database_mysql_local-0.0.292-py3-none-any.whl
+[2024-05-12 08:50:57] INFO root fetch - processPackages [ezside]: Downloading https://files.pythonhosted.org/packages/5a/d4/1810386c07f848c78c2e8b15144f22482295b4040d1283a67e6675563952/ezside-0.1.8.tar.gz
+[2024-05-12 08:50:57] INFO root fetch - processPackages [mass-composition]: Downloading https://files.pythonhosted.org/packages/0a/37/f58ad2fb7a2fd3fbc60d77ada0efecbdf82c7dee8eafce3e82887baf366f/mass_composition-0.4.3.tar.gz
+[2024-05-12 08:50:57] INFO root fetch - processPackages [bruhanimate]: Downloading https://files.pythonhosted.org/packages/c6/57/095c701edc2b245ce61b81a58bbcffca96482e88b8959cf0f29bfff462f4/bruhanimate-0.2.8.tar.gz
+[2024-05-12 08:50:57] INFO root fetch - processPackages [aa-routing]: Downloading https://files.pythonhosted.org/packages/af/55/3bae6ee2d59294fff570727b2c7d251baebf1168b3ac5a7db9a3e543d2bf/aa_routing-0.2.1a0.tar.gz
+[2024-05-12 08:50:58] INFO root fetch - processPackages [bruhanimate]: Downloading https://files.pythonhosted.org/packages/2b/4a/71ab6f8b8a90ae4cbb391898ac5550ba56895062c0a9520b306d10c23329/bruhanimate-0.2.9.tar.gz
+[2024-05-12 08:50:58] INFO root fetch - processPackages [mass-composition]: Downloading https://files.pythonhosted.org/packages/82/a9/2770057bea8ea129d95170465b097ac9effdcd9f58c63f725cea603a7e65/mass_composition-0.4.6.tar.gz
+[2024-05-12 08:50:58] INFO root fetch - processPackages [ezside]: Downloading https://files.pythonhosted.org/packages/f1/e0/2cae952d702515bb0e82f0bacbe379367f4a416b2a3928f33850e21ae823/ezside-0.1.9.tar.gz
+[2024-05-12 08:50:58] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/ea/4d/10e782f88ad8a634a9e591abf43cad5c8e0ee9666ce232312cdb5e88525b/database_mysql_local-0.0.293.tar.gz
+[2024-05-12 08:50:58] INFO root fetch - processPackages [bruhanimate]: executing diffoscope
+[2024-05-12 08:50:58] INFO root fetch - processPackages [bruhanimate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bruhanimate-0.2.8.tar.gz tmp/bruhanimate-0.2.9.tar.gz --markdown 20240512/b/bruhanimate/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-12 08:50:58] INFO root fetch - processPackages [ezside]: executing diffoscope
+[2024-05-12 08:50:58] INFO root fetch - processPackages [ezside]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezside-0.1.8.tar.gz tmp/ezside-0.1.9.tar.gz --markdown 20240512/e/ezside/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 08:50:58] INFO root fetch - processPackages [mass-composition]: executing diffoscope
+[2024-05-12 08:50:58] INFO root fetch - processPackages [mass-composition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mass_composition-0.4.3.tar.gz tmp/mass_composition-0.4.6.tar.gz --markdown 20240512/m/mass-composition/0.4.3-0.4.6/README.md --exclude *.pyd
+[2024-05-12 08:50:58] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-12 08:50:58] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.292-py3-none-any.whl.zip tmp/database_mysql_local-0.0.293.tar.gz --markdown 20240512/d/database-mysql-local/0.0.292-0.0.293/README.md --exclude *.pyd
+[2024-05-12 08:50:58] INFO root fetch - processPackages [aa-routing]: Downloading https://files.pythonhosted.org/packages/f9/52/1c1512c74a14e0c9942fded26cd44c8c103352a701dd303fe79646b504f0/aa_routing-0.2.2a0.tar.gz
+[2024-05-12 08:50:58] INFO root fetch - processPackages [aa-routing]: executing diffoscope
+[2024-05-12 08:50:58] INFO root fetch - processPackages [aa-routing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_routing-0.2.1a0.tar.gz tmp/aa_routing-0.2.2a0.tar.gz --markdown 20240512/a/aa-routing/0.2.1a0-0.2.2a0/README.md --exclude *.pyd
+[2024-05-12 08:50:58] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.292-py3-none-any.whl.zip]
+[2024-05-12 08:50:58] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.293.tar.gz]
+[2024-05-12 08:50:58] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-12 08:50:58] INFO root fetch - processPackages [bruhanimate]: Remove: archive file [/home/abi/fetcher/tmp/bruhanimate-0.2.8.tar.gz]
+[2024-05-12 08:50:58] INFO root fetch - processPackages [bruhanimate]: Remove: archive file [/home/abi/fetcher/tmp/bruhanimate-0.2.9.tar.gz]
+[2024-05-12 08:50:58] INFO root fetch - main [MainThread]: End processing [bruhanimate]: success
+[2024-05-12 08:50:58] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.4.3.tar.gz]
+[2024-05-12 08:50:58] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.4.6.tar.gz]
+[2024-05-12 08:50:58] INFO root fetch - main [MainThread]: End processing [mass-composition]: success
+[2024-05-12 08:50:58] INFO root fetch - processPackages [ezside]: Remove: archive file [/home/abi/fetcher/tmp/ezside-0.1.8.tar.gz]
+[2024-05-12 08:50:58] INFO root fetch - processPackages [ezside]: Remove: archive file [/home/abi/fetcher/tmp/ezside-0.1.9.tar.gz]
+[2024-05-12 08:50:58] INFO root fetch - main [MainThread]: End processing [ezside]: success
+[2024-05-12 08:50:59] INFO root fetch - processPackages [aa-routing]: Remove: archive file [/home/abi/fetcher/tmp/aa_routing-0.2.1a0.tar.gz]
+[2024-05-12 08:50:59] INFO root fetch - processPackages [aa-routing]: Remove: archive file [/home/abi/fetcher/tmp/aa_routing-0.2.2a0.tar.gz]
+[2024-05-12 08:50:59] INFO root fetch - main [MainThread]: End processing [aa-routing]: success
+[2024-05-12 08:50:59] INFO root fetch - main [MainThread]: Store serial: [23167585]
