@@ -12088,3 +12088,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:56:50] INFO root fetch - processPackages [missing-mga]: Remove: archive file [/home/abi/fetcher/tmp/missing_mga-0.3.0-py3-none-any.whl.zip]
 [2024-05-12 16:56:50] INFO root fetch - main [MainThread]: End processing [missing-mga]: success
 [2024-05-12 16:56:50] INFO root fetch - main [MainThread]: Store serial: [23170921]
+[2024-05-12 16:58:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170921]
+[2024-05-12 16:58:58] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 16:58:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: model-resolver
+[2024-05-12 16:58:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: proadv
+[2024-05-12 16:58:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-bench
+[2024-05-12 16:58:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lib_ml_remla24_team02
+[2024-05-12 16:58:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lib-version-remla24-team02
+[2024-05-12 16:58:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sigaocaue-normalize-folder-name
+[2024-05-12 16:58:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: heterotopismz
+[2024-05-12 16:58:58] INFO root fetch - processPackages [llm-bench]: New version: [0.4.8] Old Version: [0.4.7]
+[2024-05-12 16:58:58] WARNING root fetch - processPackages [lib_ml_remla24_team02]: Skipping, unable to determine old version
+[2024-05-12 16:58:58] INFO root fetch - main [MainThread]: End processing [lib_ml_remla24_team02] error
+[2024-05-12 16:58:58] INFO root fetch - processPackages [lib-version-remla24-team02]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-05-12 16:58:58] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/30/ee/4d888659cc0afb687767dc7eaa03ae8d7e211da89cea96287509b5f2d96f/llm_bench-0.4.7.tar.gz
+[2024-05-12 16:58:58] WARNING root fetch - processPackages [sigaocaue-normalize-folder-name]: Skipping, unable to determine old version
+[2024-05-12 16:58:58] INFO root fetch - main [MainThread]: End processing [sigaocaue-normalize-folder-name] error
+[2024-05-12 16:58:58] WARNING root fetch - processPackages [heterotopismz]: Skipping, unable to determine old version
+[2024-05-12 16:58:58] INFO root fetch - main [MainThread]: End processing [heterotopismz] error
+[2024-05-12 16:58:58] WARNING root fetch - processPackages [proadv]: Skipping, unable to determine old version
+[2024-05-12 16:58:58] INFO root fetch - main [MainThread]: End processing [proadv] error
+[2024-05-12 16:58:58] WARNING root fetch - processPackages [model-resolver]: Skipping, unable to determine old version
+[2024-05-12 16:58:58] INFO root fetch - main [MainThread]: End processing [model-resolver] error
+[2024-05-12 16:58:58] INFO root fetch - processPackages [lib-version-remla24-team02]: Downloading https://files.pythonhosted.org/packages/f7/e5/5f7fc27d2f0a60c9ccb12db57d286a243a6b33840d1f0d7cde9ba4428fdf/lib_version_remla24_team02-0.0.0.tar.gz
+[2024-05-12 16:58:58] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/e4/1e/96e8e21a12cce6b75d40ef58ee187c01da8c44ea854f32fe4678648dcb90/llm_bench-0.4.8.tar.gz
+[2024-05-12 16:58:59] INFO root fetch - processPackages [llm-bench]: executing diffoscope
+[2024-05-12 16:58:59] INFO root fetch - processPackages [llm-bench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_bench-0.4.7.tar.gz tmp/llm_bench-0.4.8.tar.gz --markdown 20240512/l/llm-bench/0.4.7-0.4.8/README.md --exclude *.pyd
+[2024-05-12 16:58:59] INFO root fetch - processPackages [lib-version-remla24-team02]: Downloading https://files.pythonhosted.org/packages/5e/51/aefa05b5e05f6928a580a244410af22baa9dfc5a79f2c9b403703026959f/lib_version_remla24_team02-0.0.1.tar.gz
+[2024-05-12 16:58:59] INFO root fetch - processPackages [lib-version-remla24-team02]: executing diffoscope
+[2024-05-12 16:58:59] INFO root fetch - processPackages [lib-version-remla24-team02]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib_version_remla24_team02-0.0.0.tar.gz tmp/lib_version_remla24_team02-0.0.1.tar.gz --markdown 20240512/l/lib-version-remla24-team02/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-05-12 16:58:59] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.7.tar.gz]
+[2024-05-12 16:58:59] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.8.tar.gz]
+[2024-05-12 16:58:59] INFO root fetch - main [MainThread]: End processing [llm-bench]: success
+[2024-05-12 16:58:59] INFO root fetch - processPackages [lib-version-remla24-team02]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_remla24_team02-0.0.0.tar.gz]
+[2024-05-12 16:58:59] INFO root fetch - processPackages [lib-version-remla24-team02]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_remla24_team02-0.0.1.tar.gz]
+[2024-05-12 16:58:59] INFO root fetch - main [MainThread]: End processing [lib-version-remla24-team02]: success
+[2024-05-12 16:58:59] INFO root fetch - main [MainThread]: Store serial: [23170949]
