@@ -2093,3 +2093,15 @@
 [2024-05-12 03:07:08] WARNING root fetch - processPackages [sinisternessz]: Skipping, unable to determine old version
 [2024-05-12 03:07:08] INFO root fetch - main [MainThread]: End processing [sinisternessz] error
 [2024-05-12 03:07:08] INFO root fetch - main [MainThread]: Store serial: [23165910]
+[2024-05-12 03:09:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165910]
+[2024-05-12 03:09:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 03:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gravitino
+[2024-05-12 03:09:17] INFO root fetch - processPackages [gravitino]: New version: [0.5.0.dev7] Old Version: [0.5.0.dev6]
+[2024-05-12 03:09:17] INFO root fetch - processPackages [gravitino]: Downloading https://files.pythonhosted.org/packages/ef/f4/bba52b822721fe2f1b91fa0de4138517a81f3426d6f454965d4efd3e3e6f/gravitino-0.5.0.dev6.tar.gz
+[2024-05-12 03:09:17] INFO root fetch - processPackages [gravitino]: Downloading https://files.pythonhosted.org/packages/1a/50/03a9fca51446bb591a1f4a74eb57fac15fc59518f54e4914c1191ee0fef2/gravitino-0.5.0.dev7.tar.gz
+[2024-05-12 03:09:18] INFO root fetch - processPackages [gravitino]: executing diffoscope
+[2024-05-12 03:09:18] INFO root fetch - processPackages [gravitino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitino-0.5.0.dev6.tar.gz tmp/gravitino-0.5.0.dev7.tar.gz --markdown 20240512/g/gravitino/0.5.0.dev6-0.5.0.dev7/README.md --exclude *.pyd
+[2024-05-12 03:09:18] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev6.tar.gz]
+[2024-05-12 03:09:18] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev7.tar.gz]
+[2024-05-12 03:09:18] INFO root fetch - main [MainThread]: End processing [gravitino]: success
+[2024-05-12 03:09:18] INFO root fetch - main [MainThread]: Store serial: [23165912]
