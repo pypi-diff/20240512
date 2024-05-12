@@ -4118,3 +4118,20 @@
 [2024-05-12 06:01:05] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kurogames-0.1.6.tar.gz]
 [2024-05-12 06:01:05] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-kurogames]: success
 [2024-05-12 06:01:05] INFO root fetch - main [MainThread]: Store serial: [23166872]
+[2024-05-12 06:03:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166872]
+[2024-05-12 06:03:15] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-12 06:05:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166872]
+[2024-05-12 06:05:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 06:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dispersonificationz
+[2024-05-12 06:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chromedriver-binary
+[2024-05-12 06:05:20] INFO root fetch - processPackages [chromedriver-binary]: New version: [99.0.4844.51.0] Old Version: [99.0.4844.35.0]
+[2024-05-12 06:05:20] WARNING root fetch - processPackages [dispersonificationz]: Skipping, unable to determine old version
+[2024-05-12 06:05:20] INFO root fetch - main [MainThread]: End processing [dispersonificationz] error
+[2024-05-12 06:05:20] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/50/a2/f36a3d2f2aa37ccc496e5f81d594f06e3965b836712da14b4b01d2f05ca8/chromedriver-binary-99.0.4844.35.0.tar.gz
+[2024-05-12 06:05:20] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/d9/eb/3bd2a308b9e6f7441fbed7b759578bddade2cb983bb4ffe7fc3777863314/chromedriver-binary-99.0.4844.51.0.tar.gz
+[2024-05-12 06:05:21] INFO root fetch - processPackages [chromedriver-binary]: executing diffoscope
+[2024-05-12 06:05:21] INFO root fetch - processPackages [chromedriver-binary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromedriver-binary-99.0.4844.35.0.tar.gz tmp/chromedriver-binary-99.0.4844.51.0.tar.gz --markdown 20240512/c/chromedriver-binary/99.0.4844.35.0-99.0.4844.51.0/README.md --exclude *.pyd
+[2024-05-12 06:05:21] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.35.0.tar.gz]
+[2024-05-12 06:05:21] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.51.0.tar.gz]
+[2024-05-12 06:05:21] INFO root fetch - main [MainThread]: End processing [chromedriver-binary]: success
+[2024-05-12 06:05:21] INFO root fetch - main [MainThread]: Store serial: [23166878]
