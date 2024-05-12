@@ -7364,3 +7364,9 @@
 [2024-05-12 11:00:35] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.3.tar.gz]
 [2024-05-12 11:00:35] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
 [2024-05-12 11:00:35] INFO root fetch - main [MainThread]: Store serial: [23168371]
+[2024-05-12 11:02:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168371]
+[2024-05-12 11:02:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 11:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: silicatesz
+[2024-05-12 11:02:44] WARNING root fetch - processPackages [silicatesz]: Skipping, unable to determine old version
+[2024-05-12 11:02:44] INFO root fetch - main [MainThread]: End processing [silicatesz] error
+[2024-05-12 11:02:44] INFO root fetch - main [MainThread]: Store serial: [23168375]
