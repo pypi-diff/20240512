@@ -6525,3 +6525,24 @@
 [2024-05-12 09:45:30] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.6.4.tar.gz]
 [2024-05-12 09:45:30] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
 [2024-05-12 09:45:30] INFO root fetch - main [MainThread]: Store serial: [23167912]
+[2024-05-12 09:47:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167912]
+[2024-05-12 09:47:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 09:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Shellper
+[2024-05-12 09:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: data-prep-toolkit-kfp
+[2024-05-12 09:47:38] INFO root fetch - processPackages [Shellper]: New version: [0.2] Old Version: [0.1]
+[2024-05-12 09:47:38] INFO root fetch - processPackages [data-prep-toolkit-kfp]: New version: [0.0.1.dev4] Old Version: [0.0.1.dev3]
+[2024-05-12 09:47:39] INFO root fetch - processPackages [Shellper]: Downloading https://files.pythonhosted.org/packages/54/4d/7af89d7716d19d4a35bd1c95ff084c667da51919017172065126bd0fef09/shellper-0.1.tar.gz
+[2024-05-12 09:47:39] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/6f/18/2b66afae22e9001b19fe2018e5a11eeb25d3388aecd4d61477f8751f8402/data_prep_toolkit_kfp-0.0.1.dev3.tar.gz
+[2024-05-12 09:47:39] INFO root fetch - processPackages [Shellper]: Downloading https://files.pythonhosted.org/packages/35/85/8827914ca6b9fbc9ca9a12d2c0a8ba6bd2f98bc54ebf15c2d051ffa8f583/shellper-0.2.tar.gz
+[2024-05-12 09:47:39] INFO root fetch - processPackages [Shellper]: executing diffoscope
+[2024-05-12 09:47:39] INFO root fetch - processPackages [Shellper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellper-0.1.tar.gz tmp/shellper-0.2.tar.gz --markdown 20240512/S/Shellper/0.1-0.2/README.md --exclude *.pyd
+[2024-05-12 09:47:39] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/d0/c2/7d3ba2c8742f0bc4f19140cff4af52a6757367520a41b615eded6b4a2a0f/data_prep_toolkit_kfp-0.0.1.dev4.tar.gz
+[2024-05-12 09:47:39] INFO root fetch - processPackages [data-prep-toolkit-kfp]: executing diffoscope
+[2024-05-12 09:47:39] INFO root fetch - processPackages [data-prep-toolkit-kfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_toolkit_kfp-0.0.1.dev3.tar.gz tmp/data_prep_toolkit_kfp-0.0.1.dev4.tar.gz --markdown 20240512/d/data-prep-toolkit-kfp/0.0.1.dev3-0.0.1.dev4/README.md --exclude *.pyd
+[2024-05-12 09:47:39] INFO root fetch - processPackages [Shellper]: Remove: archive file [/home/abi/fetcher/tmp/shellper-0.1.tar.gz]
+[2024-05-12 09:47:39] INFO root fetch - processPackages [Shellper]: Remove: archive file [/home/abi/fetcher/tmp/shellper-0.2.tar.gz]
+[2024-05-12 09:47:39] INFO root fetch - main [MainThread]: End processing [Shellper]: success
+[2024-05-12 09:47:40] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev3.tar.gz]
+[2024-05-12 09:47:40] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev4.tar.gz]
+[2024-05-12 09:47:40] INFO root fetch - main [MainThread]: End processing [data-prep-toolkit-kfp]: success
+[2024-05-12 09:47:40] INFO root fetch - main [MainThread]: Store serial: [23167918]
