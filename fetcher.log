@@ -15175,3 +15175,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:08:45] INFO root fetch - processPackages [recce-nightly]: Remove: archive file [/home/abi/fetcher/tmp/recce-nightly-0.9.0.20240313.tar.gz]
 [2024-05-12 20:08:45] INFO root fetch - main [MainThread]: End processing [recce-nightly]: success
 [2024-05-12 20:08:45] INFO root fetch - main [MainThread]: Store serial: [23172527]
+[2024-05-12 20:10:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172527]
+[2024-05-12 20:10:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 20:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stackql-deploy
+[2024-05-12 20:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sysutil-lib
+[2024-05-12 20:10:54] INFO root fetch - processPackages [sysutil-lib]: New version: [0.4.4] Old Version: [0.4.2]
+[2024-05-12 20:10:54] INFO root fetch - processPackages [stackql-deploy]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-05-12 20:10:54] INFO root fetch - processPackages [sysutil-lib]: Downloading https://files.pythonhosted.org/packages/6a/b4/3d5e9394e0812118ffcdbaea8f6899457faf428d9aa9953e84b264220214/sysutil-lib-0.4.2.tar.gz
+[2024-05-12 20:10:54] INFO root fetch - processPackages [stackql-deploy]: Downloading https://files.pythonhosted.org/packages/29/cd/1c0b7bd81d7210fce0c5b1b21bbfc157d76ec3dd6753d2729870c28067fd/stackql_deploy-1.5.0.tar.gz
+[2024-05-12 20:10:55] INFO root fetch - processPackages [sysutil-lib]: Downloading https://files.pythonhosted.org/packages/a7/38/47ed80c9d49d843b35505674c9a6d3bdb12fb2713c88059e5f21d6207547/sysutil_lib-0.4.4.tar.gz
+[2024-05-12 20:10:55] INFO root fetch - processPackages [stackql-deploy]: Downloading https://files.pythonhosted.org/packages/0c/c6/f6a0f7f0c95d9d02a131e109d9892239bdcb2d26e949f14cc027b68a8d08/stackql_deploy-1.5.1.tar.gz
+[2024-05-12 20:10:55] INFO root fetch - processPackages [sysutil-lib]: executing diffoscope
+[2024-05-12 20:10:55] INFO root fetch - processPackages [sysutil-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sysutil-lib-0.4.2.tar.gz tmp/sysutil_lib-0.4.4.tar.gz --markdown 20240512/s/sysutil-lib/0.4.2-0.4.4/README.md --exclude *.pyd
+[2024-05-12 20:10:55] INFO root fetch - processPackages [stackql-deploy]: executing diffoscope
+[2024-05-12 20:10:55] INFO root fetch - processPackages [stackql-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stackql_deploy-1.5.0.tar.gz tmp/stackql_deploy-1.5.1.tar.gz --markdown 20240512/s/stackql-deploy/1.5.0-1.5.1/README.md --exclude *.pyd
+[2024-05-12 20:10:55] INFO root fetch - processPackages [sysutil-lib]: Remove: archive file [/home/abi/fetcher/tmp/sysutil-lib-0.4.2.tar.gz]
+[2024-05-12 20:10:55] INFO root fetch - processPackages [sysutil-lib]: Remove: archive file [/home/abi/fetcher/tmp/sysutil_lib-0.4.4.tar.gz]
+[2024-05-12 20:10:55] INFO root fetch - main [MainThread]: End processing [sysutil-lib]: success
+[2024-05-12 20:10:56] INFO root fetch - processPackages [stackql-deploy]: Remove: archive file [/home/abi/fetcher/tmp/stackql_deploy-1.5.0.tar.gz]
+[2024-05-12 20:10:56] INFO root fetch - processPackages [stackql-deploy]: Remove: archive file [/home/abi/fetcher/tmp/stackql_deploy-1.5.1.tar.gz]
+[2024-05-12 20:10:56] INFO root fetch - main [MainThread]: End processing [stackql-deploy]: success
+[2024-05-12 20:10:56] INFO root fetch - main [MainThread]: Store serial: [23172533]
