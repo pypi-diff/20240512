@@ -4415,3 +4415,27 @@
 [2024-05-12 06:34:19] INFO root fetch - processPackages [reyapi]: Remove: archive file [/home/abi/fetcher/tmp/reyapi-0.9-py3-none-any.whl.zip]
 [2024-05-12 06:34:19] INFO root fetch - main [MainThread]: End processing [reyapi]: success
 [2024-05-12 06:34:19] INFO root fetch - main [MainThread]: Store serial: [23167008]
+[2024-05-12 06:36:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167008]
+[2024-05-12 06:36:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 06:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: banneredz
+[2024-05-12 06:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezside
+[2024-05-12 06:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zafkiel
+[2024-05-12 06:36:28] WARNING root fetch - processPackages [banneredz]: Skipping, unable to determine old version
+[2024-05-12 06:36:28] INFO root fetch - main [MainThread]: End processing [banneredz] error
+[2024-05-12 06:36:28] INFO root fetch - processPackages [zafkiel]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 06:36:28] INFO root fetch - processPackages [ezside]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 06:36:28] INFO root fetch - processPackages [ezside]: Downloading https://files.pythonhosted.org/packages/5a/d4/1810386c07f848c78c2e8b15144f22482295b4040d1283a67e6675563952/ezside-0.1.8.tar.gz
+[2024-05-12 06:36:28] INFO root fetch - processPackages [zafkiel]: Downloading https://files.pythonhosted.org/packages/06/bf/4bc860638cfa3145a090aeb3bb536f314f9d172c4d9c5ff5ce736c429a02/zafkiel-0.1.1.tar.gz
+[2024-05-12 06:36:28] INFO root fetch - processPackages [zafkiel]: Downloading https://files.pythonhosted.org/packages/5f/15/5329a1471011d528b37b7461e12edd445fb79ab0f47e26a4a2826e511078/zafkiel-0.1.2.tar.gz
+[2024-05-12 06:36:29] INFO root fetch - processPackages [zafkiel]: executing diffoscope
+[2024-05-12 06:36:29] INFO root fetch - processPackages [zafkiel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zafkiel-0.1.1.tar.gz tmp/zafkiel-0.1.2.tar.gz --markdown 20240512/z/zafkiel/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 06:36:29] INFO root fetch - processPackages [ezside]: Downloading https://files.pythonhosted.org/packages/f1/e0/2cae952d702515bb0e82f0bacbe379367f4a416b2a3928f33850e21ae823/ezside-0.1.9.tar.gz
+[2024-05-12 06:36:29] INFO root fetch - processPackages [ezside]: executing diffoscope
+[2024-05-12 06:36:29] INFO root fetch - processPackages [ezside]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezside-0.1.8.tar.gz tmp/ezside-0.1.9.tar.gz --markdown 20240512/e/ezside/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 06:36:29] INFO root fetch - processPackages [zafkiel]: Remove: archive file [/home/abi/fetcher/tmp/zafkiel-0.1.1.tar.gz]
+[2024-05-12 06:36:29] INFO root fetch - processPackages [zafkiel]: Remove: archive file [/home/abi/fetcher/tmp/zafkiel-0.1.2.tar.gz]
+[2024-05-12 06:36:29] INFO root fetch - main [MainThread]: End processing [zafkiel]: success
+[2024-05-12 06:36:29] INFO root fetch - processPackages [ezside]: Remove: archive file [/home/abi/fetcher/tmp/ezside-0.1.8.tar.gz]
+[2024-05-12 06:36:29] INFO root fetch - processPackages [ezside]: Remove: archive file [/home/abi/fetcher/tmp/ezside-0.1.9.tar.gz]
+[2024-05-12 06:36:29] INFO root fetch - main [MainThread]: End processing [ezside]: success
+[2024-05-12 06:36:29] INFO root fetch - main [MainThread]: Store serial: [23167018]
