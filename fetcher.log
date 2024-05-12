@@ -3048,3 +3048,30 @@
 [2024-05-12 04:24:41] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.7.tar.gz]
 [2024-05-12 04:24:41] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
 [2024-05-12 04:24:41] INFO root fetch - main [MainThread]: Store serial: [23166352]
+[2024-05-12 04:26:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166352]
+[2024-05-12 04:26:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 04:26:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iam-actions
+[2024-05-12 04:26:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datamodel-code-generator-genson-wheel
+[2024-05-12 04:26:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cassiopeia
+[2024-05-12 04:26:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: trimethylmethanez
+[2024-05-12 04:26:49] WARNING root fetch - processPackages [datamodel-code-generator-genson-wheel]: Skipping, unable to determine old version
+[2024-05-12 04:26:49] INFO root fetch - main [MainThread]: End processing [datamodel-code-generator-genson-wheel] error
+[2024-05-12 04:26:49] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20240512] Old Version: [1.2.20240511]
+[2024-05-12 04:26:49] WARNING root fetch - processPackages [trimethylmethanez]: Skipping, unable to determine old version
+[2024-05-12 04:26:49] INFO root fetch - main [MainThread]: End processing [trimethylmethanez] error
+[2024-05-12 04:26:49] INFO root fetch - processPackages [cassiopeia]: New version: [5.1.2] Old Version: [5.1.1]
+[2024-05-12 04:26:50] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/a2/f1/dba4694714a8c4abe0c5e9321abfb5eacf470416d868da25b1976374068e/iam_actions-1.2.20240511.tar.gz
+[2024-05-12 04:26:50] INFO root fetch - processPackages [cassiopeia]: Downloading https://files.pythonhosted.org/packages/ae/d1/1b6332526a78da3fe1b5d840e8f2dd09e662c4e624657c43961600ed2b50/cassiopeia-5.1.1.tar.gz
+[2024-05-12 04:26:50] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/49/07/caf3a0e702b39e25f7ed588396389be0d7b69f93987a7fcd2cd4e1aa8fb2/iam_actions-1.2.20240512.tar.gz
+[2024-05-12 04:26:50] INFO root fetch - processPackages [cassiopeia]: Downloading https://files.pythonhosted.org/packages/61/d8/43e0f3ce44bd1e28877723fffabce48a307ce310c1db149448c462e7e7df/cassiopeia-5.1.2.tar.gz
+[2024-05-12 04:26:50] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2024-05-12 04:26:50] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20240511.tar.gz tmp/iam_actions-1.2.20240512.tar.gz --markdown 20240512/i/iam-actions/1.2.20240511-1.2.20240512/README.md --exclude *.pyd
+[2024-05-12 04:26:50] INFO root fetch - processPackages [cassiopeia]: executing diffoscope
+[2024-05-12 04:26:50] INFO root fetch - processPackages [cassiopeia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cassiopeia-5.1.1.tar.gz tmp/cassiopeia-5.1.2.tar.gz --markdown 20240512/c/cassiopeia/5.1.1-5.1.2/README.md --exclude *.pyd
+[2024-05-12 04:26:51] INFO root fetch - processPackages [cassiopeia]: Remove: archive file [/home/abi/fetcher/tmp/cassiopeia-5.1.1.tar.gz]
+[2024-05-12 04:26:51] INFO root fetch - processPackages [cassiopeia]: Remove: archive file [/home/abi/fetcher/tmp/cassiopeia-5.1.2.tar.gz]
+[2024-05-12 04:26:51] INFO root fetch - main [MainThread]: End processing [cassiopeia]: success
+[2024-05-12 04:26:52] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240511.tar.gz]
+[2024-05-12 04:26:52] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240512.tar.gz]
+[2024-05-12 04:26:52] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2024-05-12 04:26:52] INFO root fetch - main [MainThread]: Store serial: [23166363]
