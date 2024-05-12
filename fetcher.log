@@ -6875,3 +6875,36 @@
 [2024-05-12 10:23:41] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.3.tar.gz]
 [2024-05-12 10:23:41] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
 [2024-05-12 10:23:41] INFO root fetch - main [MainThread]: Store serial: [23168082]
+[2024-05-12 10:25:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168082]
+[2024-05-12 10:25:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 10:25:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ast-grep-py
+[2024-05-12 10:25:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: poselab
+[2024-05-12 10:25:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: knapweedsz
+[2024-05-12 10:25:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: queue-worker-local
+[2024-05-12 10:25:49] INFO root fetch - processPackages [poselab]: New version: [0.2.1] Old Version: [0.1.0]
+[2024-05-12 10:25:49] INFO root fetch - processPackages [poselab]: Downloading https://files.pythonhosted.org/packages/da/9e/52cb6de4960c5f82c75d92c8b8cd55892f302279a4e07fad9901bb3bc26e/poselab-0.1.0.tar.gz
+[2024-05-12 10:25:49] WARNING root fetch - processPackages [knapweedsz]: Skipping, unable to determine old version
+[2024-05-12 10:25:49] INFO root fetch - main [MainThread]: End processing [knapweedsz] error
+[2024-05-12 10:25:49] INFO root fetch - processPackages [queue-worker-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 10:25:49] INFO root fetch - processPackages [ast-grep-py]: New version: [0.22.1] Old Version: [0.22.0]
+[2024-05-12 10:25:49] INFO root fetch - processPackages [poselab]: Downloading https://files.pythonhosted.org/packages/ab/8f/616b86693e191dabf6c8934d0b455c4e4ebda63ea0dbc2ea341c70c5f724/poselab-0.2.1.tar.gz
+[2024-05-12 10:25:49] INFO root fetch - processPackages [queue-worker-local]: Downloading https://files.pythonhosted.org/packages/7f/d9/fa0def6b3a566ced04835c9ae35bd0c97f2e24eec77224b0908e1a709b35/queue-worker-local-0.0.8.tar.gz
+[2024-05-12 10:25:49] INFO root fetch - processPackages [ast-grep-py]: Downloading https://files.pythonhosted.org/packages/26/b1/6a3bf20b12bc4604952a97a3e95eb96519a4dcb20b231df4e1b0672e65d4/ast_grep_py-0.22.0.tar.gz
+[2024-05-12 10:25:50] INFO root fetch - processPackages [poselab]: executing diffoscope
+[2024-05-12 10:25:50] INFO root fetch - processPackages [poselab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poselab-0.1.0.tar.gz tmp/poselab-0.2.1.tar.gz --markdown 20240512/p/poselab/0.1.0-0.2.1/README.md --exclude *.pyd
+[2024-05-12 10:25:50] INFO root fetch - processPackages [ast-grep-py]: Downloading https://files.pythonhosted.org/packages/5b/c1/ab3bc6603a169eb6275ac0ab440f0b89b45b42b047089108177967f16963/ast_grep_py-0.22.1.tar.gz
+[2024-05-12 10:25:50] INFO root fetch - processPackages [queue-worker-local]: Downloading https://files.pythonhosted.org/packages/e7/be/a67b2e43f60298d9c8a3f8953b2cab611ed6508ecc046a1d9189e6ef932a/queue-worker-local-0.0.9.tar.gz
+[2024-05-12 10:25:50] INFO root fetch - processPackages [queue-worker-local]: executing diffoscope
+[2024-05-12 10:25:50] INFO root fetch - processPackages [queue-worker-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/queue-worker-local-0.0.8.tar.gz tmp/queue-worker-local-0.0.9.tar.gz --markdown 20240512/q/queue-worker-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 10:25:50] INFO root fetch - processPackages [ast-grep-py]: executing diffoscope
+[2024-05-12 10:25:50] INFO root fetch - processPackages [ast-grep-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ast_grep_py-0.22.0.tar.gz tmp/ast_grep_py-0.22.1.tar.gz --markdown 20240512/a/ast-grep-py/0.22.0-0.22.1/README.md --exclude *.pyd
+[2024-05-12 10:25:50] INFO root fetch - processPackages [poselab]: Remove: archive file [/home/abi/fetcher/tmp/poselab-0.1.0.tar.gz]
+[2024-05-12 10:25:50] INFO root fetch - processPackages [poselab]: Remove: archive file [/home/abi/fetcher/tmp/poselab-0.2.1.tar.gz]
+[2024-05-12 10:25:50] INFO root fetch - main [MainThread]: End processing [poselab]: success
+[2024-05-12 10:25:50] INFO root fetch - processPackages [queue-worker-local]: Remove: archive file [/home/abi/fetcher/tmp/queue-worker-local-0.0.8.tar.gz]
+[2024-05-12 10:25:50] INFO root fetch - processPackages [queue-worker-local]: Remove: archive file [/home/abi/fetcher/tmp/queue-worker-local-0.0.9.tar.gz]
+[2024-05-12 10:25:50] INFO root fetch - main [MainThread]: End processing [queue-worker-local]: success
+[2024-05-12 10:25:51] INFO root fetch - processPackages [ast-grep-py]: Remove: archive file [/home/abi/fetcher/tmp/ast_grep_py-0.22.0.tar.gz]
+[2024-05-12 10:25:51] INFO root fetch - processPackages [ast-grep-py]: Remove: archive file [/home/abi/fetcher/tmp/ast_grep_py-0.22.1.tar.gz]
+[2024-05-12 10:25:51] INFO root fetch - main [MainThread]: End processing [ast-grep-py]: success
+[2024-05-12 10:25:51] INFO root fetch - main [MainThread]: Store serial: [23168127]
