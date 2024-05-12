@@ -2485,3 +2485,18 @@
 [2024-05-12 03:45:08] INFO root fetch - processPackages [AyiinXd]: Remove: archive file [/home/abi/fetcher/tmp/AyiinXd-0.1.1-cp39-cp39-manylinux2014_x86_64.whl.zip]
 [2024-05-12 03:45:08] INFO root fetch - main [MainThread]: End processing [AyiinXd]: success
 [2024-05-12 03:45:08] INFO root fetch - main [MainThread]: Store serial: [23166123]
+[2024-05-12 03:47:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166123]
+[2024-05-12 03:47:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 03:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openadapt
+[2024-05-12 03:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: amniotesz
+[2024-05-12 03:47:17] INFO root fetch - processPackages [openadapt]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-05-12 03:47:17] INFO root fetch - processPackages [openadapt]: Downloading https://files.pythonhosted.org/packages/79/02/9909659ccbba301efcb1ca065eb1d9413e5e760d2cefd4a01ba5e723511b/openadapt-0.8.1.tar.gz
+[2024-05-12 03:47:17] WARNING root fetch - processPackages [amniotesz]: Skipping, unable to determine old version
+[2024-05-12 03:47:17] INFO root fetch - main [MainThread]: End processing [amniotesz] error
+[2024-05-12 03:47:17] INFO root fetch - processPackages [openadapt]: Downloading https://files.pythonhosted.org/packages/b7/9c/6198cbb491bbd32347e3741b41ee70e6ad1916e573ef76ae3aeb9e0fc8ef/openadapt-0.9.0.tar.gz
+[2024-05-12 03:47:18] INFO root fetch - processPackages [openadapt]: executing diffoscope
+[2024-05-12 03:47:18] INFO root fetch - processPackages [openadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openadapt-0.8.1.tar.gz tmp/openadapt-0.9.0.tar.gz --markdown 20240512/o/openadapt/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-05-12 03:47:18] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.8.1.tar.gz]
+[2024-05-12 03:47:18] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.9.0.tar.gz]
+[2024-05-12 03:47:18] INFO root fetch - main [MainThread]: End processing [openadapt]: success
+[2024-05-12 03:47:18] INFO root fetch - main [MainThread]: Store serial: [23166130]
