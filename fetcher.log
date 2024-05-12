@@ -2153,3 +2153,63 @@
 [2024-05-12 03:13:38] INFO root fetch - processPackages [matsubplots]: Remove: archive file [/home/abi/fetcher/tmp/matsubplots-1.2.0.tar.gz]
 [2024-05-12 03:13:38] INFO root fetch - main [MainThread]: End processing [matsubplots]: success
 [2024-05-12 03:13:38] INFO root fetch - main [MainThread]: Store serial: [23165933]
+[2024-05-12 03:15:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165933]
+[2024-05-12 03:15:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 03:15:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-settings-env
+[2024-05-12 03:15:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uiautomator2
+[2024-05-12 03:15:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytest-cmake
+[2024-05-12 03:15:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: checkroomz
+[2024-05-12 03:15:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rpi-rfm69
+[2024-05-12 03:15:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ytmusic-deleter
+[2024-05-12 03:15:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lnurl_nostr1
+[2024-05-12 03:15:46] INFO root fetch - processPackages [uiautomator2]: New version: [3.0.9] Old Version: [3.0.8]
+[2024-05-12 03:15:46] INFO root fetch - processPackages [lnurl_nostr1]: New version: [0.5.1rc1] Old Version: [0.5.0rc5]
+[2024-05-12 03:15:46] WARNING root fetch - processPackages [checkroomz]: Skipping, unable to determine old version
+[2024-05-12 03:15:46] INFO root fetch - main [MainThread]: End processing [checkroomz] error
+[2024-05-12 03:15:46] INFO root fetch - processPackages [uiautomator2]: Downloading https://files.pythonhosted.org/packages/42/54/adb8c6f4d5981c3a567cc1019010a45e1432f363bd027a2be23dad7c32eb/uiautomator2-3.0.8.tar.gz
+[2024-05-12 03:15:46] INFO root fetch - processPackages [rpi-rfm69]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-12 03:15:46] INFO root fetch - processPackages [pytest-cmake]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-05-12 03:15:46] INFO root fetch - processPackages [lnurl_nostr1]: Downloading https://files.pythonhosted.org/packages/7b/aa/70caae4727b8f3fad4b8e29fd93f2cda923e6e9efd081b11790494247904/lnurl_nostr1-0.5.0rc5.tar.gz
+[2024-05-12 03:15:46] INFO root fetch - processPackages [django-settings-env]: New version: [4.7.3] Old Version: [4.7.1]
+[2024-05-12 03:15:46] INFO root fetch - processPackages [ytmusic-deleter]: New version: [2.3.2] Old Version: [2.3.0]
+[2024-05-12 03:15:47] INFO root fetch - processPackages [pytest-cmake]: Downloading https://files.pythonhosted.org/packages/c3/b6/ef43de4504f6860cce7be98532fd5c895df58af9ff01586557ab2f29f46a/pytest_cmake-0.5.2.tar.gz
+[2024-05-12 03:15:47] INFO root fetch - processPackages [lnurl_nostr1]: Downloading https://files.pythonhosted.org/packages/97/b2/9b19e01df8895f568ac16e5429043de2ca1e2cc344087cbcd5faa26b52c4/lnurl_nostr1-0.5.1rc1.tar.gz
+[2024-05-12 03:15:47] INFO root fetch - processPackages [django-settings-env]: Downloading https://files.pythonhosted.org/packages/a2/b2/b2021790da502101235317ef2d2cd5366212e680a7851edc2fd7cbfbe36b/django_settings_env-4.7.1.tar.gz
+[2024-05-12 03:15:47] INFO root fetch - processPackages [rpi-rfm69]: Downloading https://files.pythonhosted.org/packages/b6/9a/2e3a5fe4062f1f03178c5d6048dc40de6d89ff191b4fab6b1d90a412c730/rpi-rfm69-0.6.0.tar.gz
+[2024-05-12 03:15:47] INFO root fetch - processPackages [ytmusic-deleter]: Downloading https://files.pythonhosted.org/packages/d2/d1/c8f16b060f55a93368e7918435b4d97dc78c39df8fca96529e925ca93894/ytmusic_deleter-2.3.0.tar.gz
+[2024-05-12 03:15:47] INFO root fetch - processPackages [lnurl_nostr1]: executing diffoscope
+[2024-05-12 03:15:47] INFO root fetch - processPackages [lnurl_nostr1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnurl_nostr1-0.5.0rc5.tar.gz tmp/lnurl_nostr1-0.5.1rc1.tar.gz --markdown 20240512/l/lnurl_nostr1/0.5.0rc5-0.5.1rc1/README.md --exclude *.pyd
+[2024-05-12 03:15:47] INFO root fetch - processPackages [uiautomator2]: Downloading https://files.pythonhosted.org/packages/45/e9/352ceaa7f871f2ff3b9c8cf661414f73c6857dffc42977c57b9a621b837c/uiautomator2-3.0.9.tar.gz
+[2024-05-12 03:15:47] INFO root fetch - processPackages [pytest-cmake]: Downloading https://files.pythonhosted.org/packages/86/b4/5e12f61d06b4ac5c446f2d5cc40aa17f219210d904756d8948347127d065/pytest_cmake-0.6.0.tar.gz
+[2024-05-12 03:15:47] INFO root fetch - processPackages [django-settings-env]: Downloading https://files.pythonhosted.org/packages/e0/c3/d4b0011dbb55144befae8743438210429fc876b35dce8e852c4ee9fd7ec4/django_settings_env-4.7.3.tar.gz
+[2024-05-12 03:15:47] INFO root fetch - processPackages [ytmusic-deleter]: Downloading https://files.pythonhosted.org/packages/37/6c/9ce2b1167ba4a84b40030e941bde24ca22bea6b8db2bcba29e5fe7ba8996/ytmusic_deleter-2.3.2.tar.gz
+[2024-05-12 03:15:47] INFO root fetch - processPackages [rpi-rfm69]: Downloading https://files.pythonhosted.org/packages/b2/40/9f11938c33d95521cf0331f2832a6b4d974bb4b93173e45e2618c26d72c2/rpi-rfm69-0.7.0.tar.gz
+[2024-05-12 03:15:47] INFO root fetch - processPackages [pytest-cmake]: executing diffoscope
+[2024-05-12 03:15:47] INFO root fetch - processPackages [pytest-cmake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_cmake-0.5.2.tar.gz tmp/pytest_cmake-0.6.0.tar.gz --markdown 20240512/p/pytest-cmake/0.5.2-0.6.0/README.md --exclude *.pyd
+[2024-05-12 03:15:47] INFO root fetch - processPackages [django-settings-env]: executing diffoscope
+[2024-05-12 03:15:47] INFO root fetch - processPackages [django-settings-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_settings_env-4.7.1.tar.gz tmp/django_settings_env-4.7.3.tar.gz --markdown 20240512/d/django-settings-env/4.7.1-4.7.3/README.md --exclude *.pyd
+[2024-05-12 03:15:47] INFO root fetch - processPackages [uiautomator2]: executing diffoscope
+[2024-05-12 03:15:47] INFO root fetch - processPackages [uiautomator2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uiautomator2-3.0.8.tar.gz tmp/uiautomator2-3.0.9.tar.gz --markdown 20240512/u/uiautomator2/3.0.8-3.0.9/README.md --exclude *.pyd
+[2024-05-12 03:15:47] INFO root fetch - processPackages [rpi-rfm69]: executing diffoscope
+[2024-05-12 03:15:47] INFO root fetch - processPackages [rpi-rfm69]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpi-rfm69-0.6.0.tar.gz tmp/rpi-rfm69-0.7.0.tar.gz --markdown 20240512/r/rpi-rfm69/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-12 03:15:47] INFO root fetch - processPackages [ytmusic-deleter]: executing diffoscope
+[2024-05-12 03:15:47] INFO root fetch - processPackages [ytmusic-deleter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytmusic_deleter-2.3.0.tar.gz tmp/ytmusic_deleter-2.3.2.tar.gz --markdown 20240512/y/ytmusic-deleter/2.3.0-2.3.2/README.md --exclude *.pyd
+[2024-05-12 03:15:47] INFO root fetch - processPackages [lnurl_nostr1]: Remove: archive file [/home/abi/fetcher/tmp/lnurl_nostr1-0.5.0rc5.tar.gz]
+[2024-05-12 03:15:47] INFO root fetch - processPackages [lnurl_nostr1]: Remove: archive file [/home/abi/fetcher/tmp/lnurl_nostr1-0.5.1rc1.tar.gz]
+[2024-05-12 03:15:47] INFO root fetch - main [MainThread]: End processing [lnurl_nostr1]: success
+[2024-05-12 03:15:48] INFO root fetch - processPackages [django-settings-env]: Remove: archive file [/home/abi/fetcher/tmp/django_settings_env-4.7.1.tar.gz]
+[2024-05-12 03:15:48] INFO root fetch - processPackages [django-settings-env]: Remove: archive file [/home/abi/fetcher/tmp/django_settings_env-4.7.3.tar.gz]
+[2024-05-12 03:15:48] INFO root fetch - main [MainThread]: End processing [django-settings-env]: success
+[2024-05-12 03:15:48] INFO root fetch - processPackages [pytest-cmake]: Remove: archive file [/home/abi/fetcher/tmp/pytest_cmake-0.5.2.tar.gz]
+[2024-05-12 03:15:48] INFO root fetch - processPackages [pytest-cmake]: Remove: archive file [/home/abi/fetcher/tmp/pytest_cmake-0.6.0.tar.gz]
+[2024-05-12 03:15:48] INFO root fetch - main [MainThread]: End processing [pytest-cmake]: success
+[2024-05-12 03:15:48] INFO root fetch - processPackages [ytmusic-deleter]: Remove: archive file [/home/abi/fetcher/tmp/ytmusic_deleter-2.3.0.tar.gz]
+[2024-05-12 03:15:48] INFO root fetch - processPackages [ytmusic-deleter]: Remove: archive file [/home/abi/fetcher/tmp/ytmusic_deleter-2.3.2.tar.gz]
+[2024-05-12 03:15:48] INFO root fetch - main [MainThread]: End processing [ytmusic-deleter]: success
+[2024-05-12 03:15:48] INFO root fetch - processPackages [rpi-rfm69]: Remove: archive file [/home/abi/fetcher/tmp/rpi-rfm69-0.6.0.tar.gz]
+[2024-05-12 03:15:48] INFO root fetch - processPackages [rpi-rfm69]: Remove: archive file [/home/abi/fetcher/tmp/rpi-rfm69-0.7.0.tar.gz]
+[2024-05-12 03:15:48] INFO root fetch - main [MainThread]: End processing [rpi-rfm69]: success
+[2024-05-12 03:15:48] INFO root fetch - processPackages [uiautomator2]: Remove: archive file [/home/abi/fetcher/tmp/uiautomator2-3.0.8.tar.gz]
+[2024-05-12 03:15:48] INFO root fetch - processPackages [uiautomator2]: Remove: archive file [/home/abi/fetcher/tmp/uiautomator2-3.0.9.tar.gz]
+[2024-05-12 03:15:48] INFO root fetch - main [MainThread]: End processing [uiautomator2]: success
+[2024-05-12 03:15:48] INFO root fetch - main [MainThread]: Store serial: [23165954]
