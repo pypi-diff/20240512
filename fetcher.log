@@ -11589,3 +11589,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:24:12] INFO root fetch - processPackages [PyAcoustiX]: Remove: archive file [/home/abi/fetcher/tmp/PyAcoustiX-0.9.9.tar.gz]
 [2024-05-12 16:24:12] INFO root fetch - main [MainThread]: End processing [PyAcoustiX]: success
 [2024-05-12 16:24:12] INFO root fetch - main [MainThread]: Store serial: [23170653]
+[2024-05-12 16:26:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170653]
+[2024-05-12 16:26:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 16:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-listfilter-media-extension
+[2024-05-12 16:26:21] WARNING root fetch - processPackages [django-listfilter-media-extension]: Skipping, unable to determine old version
+[2024-05-12 16:26:21] INFO root fetch - main [MainThread]: End processing [django-listfilter-media-extension] error
+[2024-05-12 16:26:21] INFO root fetch - main [MainThread]: Store serial: [23170656]
