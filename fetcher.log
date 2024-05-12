@@ -14332,3 +14332,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:16:36] INFO root fetch - processPackages [pycrdt]: Remove: archive file [/home/abi/fetcher/tmp/pycrdt-0.8.9.tar.gz]
 [2024-05-12 19:16:36] INFO root fetch - main [MainThread]: End processing [pycrdt]: success
 [2024-05-12 19:16:36] INFO root fetch - main [MainThread]: Store serial: [23172130]
+[2024-05-12 19:18:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172130]
+[2024-05-12 19:18:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 19:18:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notion-duplicates
+[2024-05-12 19:18:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Red-Web-Dashboard
+[2024-05-12 19:18:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Text-sentiment-ai-sdk
+[2024-05-12 19:18:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: underivednessz
+[2024-05-12 19:18:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llmpackagetestidk
+[2024-05-12 19:18:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: plum-dispatch
+[2024-05-12 19:18:44] INFO root fetch - processPackages [notion-duplicates]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-12 19:18:44] INFO root fetch - processPackages [llmpackagetestidk]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-12 19:18:44] INFO root fetch - processPackages [Red-Web-Dashboard]: New version: [1.6.0] Old Version: [1.5.4]
+[2024-05-12 19:18:44] WARNING root fetch - processPackages [Text-sentiment-ai-sdk]: Skipping, unable to determine old version
+[2024-05-12 19:18:44] INFO root fetch - main [MainThread]: End processing [Text-sentiment-ai-sdk] error
+[2024-05-12 19:18:44] WARNING root fetch - processPackages [underivednessz]: Skipping, unable to determine old version
+[2024-05-12 19:18:44] INFO root fetch - main [MainThread]: End processing [underivednessz] error
+[2024-05-12 19:18:44] INFO root fetch - processPackages [llmpackagetestidk]: Downloading https://files.pythonhosted.org/packages/f7/31/34ef68d01d18d5828d5f39e9836e550b6273335df200ba45c8b1d6cef05d/llmpackagetestidk-0.0.2.tar.gz
+[2024-05-12 19:18:44] INFO root fetch - processPackages [plum-dispatch]: New version: [2.3.6] Old Version: [2.3.5]
+[2024-05-12 19:18:44] INFO root fetch - processPackages [notion-duplicates]: Downloading https://files.pythonhosted.org/packages/30/79/f3548ee5b63be0338b03d9ad6397c570be40b9035338248e77a045855ffd/notion_duplicates-0.1.0.tar.gz
+[2024-05-12 19:18:45] INFO root fetch - processPackages [Red-Web-Dashboard]: Downloading https://files.pythonhosted.org/packages/ac/fe/fbcbbb6df6ee0e48169447fe216899896ad253904cd1fcc3c82a759bc637/red_web_dashboard-1.5.4.tar.gz
+[2024-05-12 19:18:45] INFO root fetch - processPackages [plum-dispatch]: Downloading https://files.pythonhosted.org/packages/7d/ce/c619ad4161bf38c4f3c9358fa02dca3ec3ce619b558a4cbe541dcbb2e800/plum_dispatch-2.3.5.tar.gz
+[2024-05-12 19:18:45] INFO root fetch - processPackages [llmpackagetestidk]: Downloading https://files.pythonhosted.org/packages/b0/b8/f81c6016394ef8f5138f88624546fc1402cb6d63e619af510144fc62f04d/llmpackagetestidk-0.0.3.tar.gz
+[2024-05-12 19:18:45] INFO root fetch - processPackages [notion-duplicates]: Downloading https://files.pythonhosted.org/packages/a6/b8/48577deb534feaae15a28172cc0af22384fa020879716c7318cb00bc1849/notion_duplicates-0.2.0.tar.gz
+[2024-05-12 19:18:45] INFO root fetch - processPackages [llmpackagetestidk]: executing diffoscope
+[2024-05-12 19:18:45] INFO root fetch - processPackages [llmpackagetestidk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmpackagetestidk-0.0.2.tar.gz tmp/llmpackagetestidk-0.0.3.tar.gz --markdown 20240512/l/llmpackagetestidk/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-12 19:18:45] INFO root fetch - processPackages [notion-duplicates]: executing diffoscope
+[2024-05-12 19:18:45] INFO root fetch - processPackages [notion-duplicates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notion_duplicates-0.1.0.tar.gz tmp/notion_duplicates-0.2.0.tar.gz --markdown 20240512/n/notion-duplicates/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-12 19:18:45] INFO root fetch - processPackages [plum-dispatch]: Downloading https://files.pythonhosted.org/packages/cf/bc/22150aa5e6e15e07f329f0437da8104d1b6b479d03b3f65b28ed90a611f2/plum_dispatch-2.3.6.tar.gz
+[2024-05-12 19:18:45] INFO root fetch - processPackages [Red-Web-Dashboard]: Downloading https://files.pythonhosted.org/packages/d6/7f/ca75c3a4b73e122c60ea07d6f8529da83e4738e5d49f6ec7bd2ae28486a1/red_web_dashboard-1.6.0.tar.gz
+[2024-05-12 19:18:45] INFO root fetch - processPackages [plum-dispatch]: executing diffoscope
+[2024-05-12 19:18:45] INFO root fetch - processPackages [plum-dispatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plum_dispatch-2.3.5.tar.gz tmp/plum_dispatch-2.3.6.tar.gz --markdown 20240512/p/plum-dispatch/2.3.5-2.3.6/README.md --exclude *.pyd
+[2024-05-12 19:18:45] INFO root fetch - processPackages [llmpackagetestidk]: Remove: archive file [/home/abi/fetcher/tmp/llmpackagetestidk-0.0.2.tar.gz]
+[2024-05-12 19:18:45] INFO root fetch - processPackages [llmpackagetestidk]: Remove: archive file [/home/abi/fetcher/tmp/llmpackagetestidk-0.0.3.tar.gz]
+[2024-05-12 19:18:45] INFO root fetch - main [MainThread]: End processing [llmpackagetestidk]: success
+[2024-05-12 19:18:45] INFO root fetch - processPackages [Red-Web-Dashboard]: executing diffoscope
+[2024-05-12 19:18:45] INFO root fetch - processPackages [Red-Web-Dashboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/red_web_dashboard-1.5.4.tar.gz tmp/red_web_dashboard-1.6.0.tar.gz --markdown 20240512/R/Red-Web-Dashboard/1.5.4-1.6.0/README.md --exclude *.pyd
+[2024-05-12 19:18:45] INFO root fetch - processPackages [notion-duplicates]: Remove: archive file [/home/abi/fetcher/tmp/notion_duplicates-0.1.0.tar.gz]
+[2024-05-12 19:18:45] INFO root fetch - processPackages [notion-duplicates]: Remove: archive file [/home/abi/fetcher/tmp/notion_duplicates-0.2.0.tar.gz]
+[2024-05-12 19:18:45] INFO root fetch - main [MainThread]: End processing [notion-duplicates]: success
+[2024-05-12 19:18:46] INFO root fetch - processPackages [plum-dispatch]: Remove: archive file [/home/abi/fetcher/tmp/plum_dispatch-2.3.5.tar.gz]
+[2024-05-12 19:18:46] INFO root fetch - processPackages [plum-dispatch]: Remove: archive file [/home/abi/fetcher/tmp/plum_dispatch-2.3.6.tar.gz]
+[2024-05-12 19:18:46] INFO root fetch - main [MainThread]: End processing [plum-dispatch]: success
+[2024-05-12 19:18:48] INFO root fetch - processPackages [Red-Web-Dashboard]: Remove: archive file [/home/abi/fetcher/tmp/red_web_dashboard-1.5.4.tar.gz]
+[2024-05-12 19:18:48] INFO root fetch - processPackages [Red-Web-Dashboard]: Remove: archive file [/home/abi/fetcher/tmp/red_web_dashboard-1.6.0.tar.gz]
+[2024-05-12 19:18:48] INFO root fetch - main [MainThread]: End processing [Red-Web-Dashboard]: success
+[2024-05-12 19:18:48] INFO root fetch - main [MainThread]: Store serial: [23172157]
