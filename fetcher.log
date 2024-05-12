@@ -6234,3 +6234,45 @@
 [2024-05-12 09:19:39] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev2.tar.gz]
 [2024-05-12 09:19:39] INFO root fetch - main [MainThread]: End processing [data-prep-toolkit-kfp]: success
 [2024-05-12 09:19:39] INFO root fetch - main [MainThread]: Store serial: [23167765]
+[2024-05-12 09:21:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167765]
+[2024-05-12 09:21:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 09:21:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bc-detect-secrets
+[2024-05-12 09:21:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: greatbrowser
+[2024-05-12 09:21:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpt-researcher
+[2024-05-12 09:21:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-RanFurryPic
+[2024-05-12 09:21:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sphyrna-service-manager
+[2024-05-12 09:21:47] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-05-12 09:21:47] INFO root fetch - processPackages [gpt-researcher]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-12 09:21:47] INFO root fetch - processPackages [sphyrna-service-manager]: New version: [0.3.7] Old Version: [0.3.0]
+[2024-05-12 09:21:47] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/2b/2c/dba8a1761875024b5d776ffdb288843ca54f196c391c27ecb287567a6e74/nonebot_plugin_ranfurrypic-1.1.5.tar.gz
+[2024-05-12 09:21:47] INFO root fetch - processPackages [gpt-researcher]: Downloading https://files.pythonhosted.org/packages/bb/74/20998ac1335ca44e7b91636df7d5f827b56055491594dfae23b9464204ed/gpt-researcher-0.4.0.tar.gz
+[2024-05-12 09:21:47] WARNING root fetch - processPackages [greatbrowser]: Skipping, unable to determine old version
+[2024-05-12 09:21:47] INFO root fetch - main [MainThread]: End processing [greatbrowser] error
+[2024-05-12 09:21:47] INFO root fetch - processPackages [bc-detect-secrets]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-05-12 09:21:47] INFO root fetch - processPackages [gpt-researcher]: Downloading https://files.pythonhosted.org/packages/72/ce/b5157ce21ac64e842fc0a5285509bddf6d2ecc25eadc81dd7c15eccd657f/gpt-researcher-0.4.1.tar.gz
+[2024-05-12 09:21:47] INFO root fetch - processPackages [bc-detect-secrets]: Downloading https://files.pythonhosted.org/packages/79/9c/627c3ef35c99626307581bb34033a4f71a8995bedcf8bed561e71ccd8811/bc-detect-secrets-1.5.8.tar.gz
+[2024-05-12 09:21:47] INFO root fetch - processPackages [sphyrna-service-manager]: Downloading https://files.pythonhosted.org/packages/3b/35/232f58efd6aea3c80b525c8dad292566206b242a101f00ffdbe84f418f43/sphyrna_service_manager-0.3.0.tar.gz
+[2024-05-12 09:21:47] INFO root fetch - processPackages [gpt-researcher]: executing diffoscope
+[2024-05-12 09:21:47] INFO root fetch - processPackages [gpt-researcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-researcher-0.4.0.tar.gz tmp/gpt-researcher-0.4.1.tar.gz --markdown 20240512/g/gpt-researcher/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-12 09:21:47] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/e5/d5/41310580eace8fd440b6447088e8a4a22ad7bd83842943db79485e9a38b5/nonebot_plugin_ranfurrypic-1.1.6.tar.gz
+[2024-05-12 09:21:47] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: executing diffoscope
+[2024-05-12 09:21:47] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ranfurrypic-1.1.5.tar.gz tmp/nonebot_plugin_ranfurrypic-1.1.6.tar.gz --markdown 20240512/n/nonebot-plugin-RanFurryPic/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-05-12 09:21:48] INFO root fetch - processPackages [bc-detect-secrets]: Downloading https://files.pythonhosted.org/packages/42/0f/25a1152db4487a6f53e4787ce51b1b616079396f2d6ec7ec952f17f417bb/bc-detect-secrets-1.5.9.tar.gz
+[2024-05-12 09:21:48] INFO root fetch - processPackages [sphyrna-service-manager]: Downloading https://files.pythonhosted.org/packages/50/64/1bee38f8778f347330dd69e5c732371b8b3edd3d9e16d3fe6637caa73994/sphyrna_service_manager-0.3.7.tar.gz
+[2024-05-12 09:21:48] INFO root fetch - processPackages [bc-detect-secrets]: executing diffoscope
+[2024-05-12 09:21:48] INFO root fetch - processPackages [bc-detect-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bc-detect-secrets-1.5.8.tar.gz tmp/bc-detect-secrets-1.5.9.tar.gz --markdown 20240512/b/bc-detect-secrets/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-05-12 09:21:48] INFO root fetch - processPackages [sphyrna-service-manager]: executing diffoscope
+[2024-05-12 09:21:48] INFO root fetch - processPackages [sphyrna-service-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphyrna_service_manager-0.3.0.tar.gz tmp/sphyrna_service_manager-0.3.7.tar.gz --markdown 20240512/s/sphyrna-service-manager/0.3.0-0.3.7/README.md --exclude *.pyd
+[2024-05-12 09:21:48] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.1.5.tar.gz]
+[2024-05-12 09:21:48] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.1.6.tar.gz]
+[2024-05-12 09:21:48] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-RanFurryPic]: success
+[2024-05-12 09:21:48] INFO root fetch - processPackages [gpt-researcher]: Remove: archive file [/home/abi/fetcher/tmp/gpt-researcher-0.4.0.tar.gz]
+[2024-05-12 09:21:48] INFO root fetch - processPackages [gpt-researcher]: Remove: archive file [/home/abi/fetcher/tmp/gpt-researcher-0.4.1.tar.gz]
+[2024-05-12 09:21:48] INFO root fetch - main [MainThread]: End processing [gpt-researcher]: success
+[2024-05-12 09:21:48] INFO root fetch - processPackages [bc-detect-secrets]: Remove: archive file [/home/abi/fetcher/tmp/bc-detect-secrets-1.5.8.tar.gz]
+[2024-05-12 09:21:48] INFO root fetch - processPackages [bc-detect-secrets]: Remove: archive file [/home/abi/fetcher/tmp/bc-detect-secrets-1.5.9.tar.gz]
+[2024-05-12 09:21:48] INFO root fetch - main [MainThread]: End processing [bc-detect-secrets]: success
+[2024-05-12 09:21:48] INFO root fetch - processPackages [sphyrna-service-manager]: Remove: archive file [/home/abi/fetcher/tmp/sphyrna_service_manager-0.3.0.tar.gz]
+[2024-05-12 09:21:48] INFO root fetch - processPackages [sphyrna-service-manager]: Remove: archive file [/home/abi/fetcher/tmp/sphyrna_service_manager-0.3.7.tar.gz]
+[2024-05-12 09:21:48] INFO root fetch - main [MainThread]: End processing [sphyrna-service-manager]: success
+[2024-05-12 09:21:48] INFO root fetch - main [MainThread]: Store serial: [23167797]
