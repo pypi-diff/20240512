@@ -9536,3 +9536,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:47:08] INFO root fetch - processPackages [napatrackmater]: Remove: archive file [/home/abi/fetcher/tmp/napatrackmater-5.2.2.tar.gz]
 [2024-05-12 13:47:08] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
 [2024-05-12 13:47:08] INFO root fetch - main [MainThread]: Store serial: [23169528]
+[2024-05-12 13:49:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169528]
+[2024-05-12 13:49:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 13:49:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: st-supabase-connection
+[2024-05-12 13:49:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wireviz
+[2024-05-12 13:49:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jwt-tui
+[2024-05-12 13:49:17] WARNING root fetch - processPackages [jwt-tui]: Skipping, unable to determine old version
+[2024-05-12 13:49:17] INFO root fetch - main [MainThread]: End processing [jwt-tui] error
+[2024-05-12 13:49:17] INFO root fetch - processPackages [st-supabase-connection]: New version: [2.0.0] Old Version: [1.2.2]
+[2024-05-12 13:49:17] INFO root fetch - processPackages [st-supabase-connection]: Downloading https://files.pythonhosted.org/packages/6a/7c/bb6e5b7a521fbe264c0b22287adb0663747d5b4777fc285498ae27278673/st-supabase-connection-1.2.2.tar.gz
+[2024-05-12 13:49:17] INFO root fetch - processPackages [wireviz]: New version: [0.4] Old Version: [0.3.2]
+[2024-05-12 13:49:17] INFO root fetch - processPackages [wireviz]: Downloading https://files.pythonhosted.org/packages/0b/58/2d1cf10a14c3426d1f8572958700d423a65d504da9ffe9665a374e5aa0aa/wireviz-0.3.2.tar.gz
+[2024-05-12 13:49:17] INFO root fetch - processPackages [st-supabase-connection]: Downloading https://files.pythonhosted.org/packages/e6/0e/05df35d7e28f2c147e99b0ae11cdf3992a4c7ab0fd50c05aa66c576bca25/st_supabase_connection-2.0.0.tar.gz
+[2024-05-12 13:49:17] INFO root fetch - processPackages [st-supabase-connection]: executing diffoscope
+[2024-05-12 13:49:17] INFO root fetch - processPackages [st-supabase-connection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st-supabase-connection-1.2.2.tar.gz tmp/st_supabase_connection-2.0.0.tar.gz --markdown 20240512/s/st-supabase-connection/1.2.2-2.0.0/README.md --exclude *.pyd
+[2024-05-12 13:49:17] INFO root fetch - processPackages [wireviz]: Downloading https://files.pythonhosted.org/packages/d5/c9/6273dbf96dcad5e58fbccf69e6afe2854a286b66902ceeb52ecf64f5ec9f/wireviz-0.4.tar.gz
+[2024-05-12 13:49:18] INFO root fetch - processPackages [wireviz]: executing diffoscope
+[2024-05-12 13:49:18] INFO root fetch - processPackages [wireviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wireviz-0.3.2.tar.gz tmp/wireviz-0.4.tar.gz --markdown 20240512/w/wireviz/0.3.2-0.4/README.md --exclude *.pyd
+[2024-05-12 13:49:18] INFO root fetch - processPackages [st-supabase-connection]: Remove: archive file [/home/abi/fetcher/tmp/st-supabase-connection-1.2.2.tar.gz]
+[2024-05-12 13:49:18] INFO root fetch - processPackages [st-supabase-connection]: Remove: archive file [/home/abi/fetcher/tmp/st_supabase_connection-2.0.0.tar.gz]
+[2024-05-12 13:49:18] INFO root fetch - main [MainThread]: End processing [st-supabase-connection]: success
+[2024-05-12 13:49:18] INFO root fetch - processPackages [wireviz]: Remove: archive file [/home/abi/fetcher/tmp/wireviz-0.3.2.tar.gz]
+[2024-05-12 13:49:18] INFO root fetch - processPackages [wireviz]: Remove: archive file [/home/abi/fetcher/tmp/wireviz-0.4.tar.gz]
+[2024-05-12 13:49:18] INFO root fetch - main [MainThread]: End processing [wireviz]: success
+[2024-05-12 13:49:18] INFO root fetch - main [MainThread]: Store serial: [23169538]
