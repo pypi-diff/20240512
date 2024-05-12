@@ -11950,3 +11950,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:45:58] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.46.tar.gz]
 [2024-05-12 16:45:58] INFO root fetch - main [MainThread]: End processing [popoll-backend]: success
 [2024-05-12 16:45:58] INFO root fetch - main [MainThread]: Store serial: [23170847]
+[2024-05-12 16:48:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170847]
+[2024-05-12 16:48:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 16:48:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zibuyu-LLM
+[2024-05-12 16:48:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyOpenGLAlwaysWorking
+[2024-05-12 16:48:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-mysql-replication
+[2024-05-12 16:48:07] INFO root fetch - processPackages [zibuyu-LLM]: New version: [0.1.9] Old Version: [0.1.11]
+[2024-05-12 16:48:07] WARNING root fetch - processPackages [PyOpenGLAlwaysWorking]: Skipping, unable to determine old version
+[2024-05-12 16:48:07] WARNING root fetch - processPackages [django-mysql-replication]: Skipping, unable to determine old version
+[2024-05-12 16:48:07] INFO root fetch - main [MainThread]: End processing [PyOpenGLAlwaysWorking] error
+[2024-05-12 16:48:07] INFO root fetch - main [MainThread]: End processing [django-mysql-replication] error
+[2024-05-12 16:48:07] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/7e/a7/9ca2135ae1445408b4eaffb9a88582cb62448141efd8a7bbf1b742cc59d6/zibuyu_LLM-0.1.11-py3-none-any.whl
+[2024-05-12 16:48:07] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/8b/1d/73751ba8bfaf5b2eb71d0251541264c73d9b0da5c2d08f0111dbee0978db/zibuyu_LLM-0.1.9-py3-none-any.whl
+[2024-05-12 16:48:07] INFO root fetch - processPackages [zibuyu-LLM]: executing diffoscope
+[2024-05-12 16:48:07] INFO root fetch - processPackages [zibuyu-LLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibuyu_LLM-0.1.11-py3-none-any.whl.zip tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip --markdown 20240512/z/zibuyu-LLM/0.1.11-0.1.9/README.md --exclude *.pyd
+[2024-05-12 16:48:08] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.1.11-py3-none-any.whl.zip]
+[2024-05-12 16:48:08] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip]
+[2024-05-12 16:48:08] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
+[2024-05-12 16:48:08] INFO root fetch - main [MainThread]: Store serial: [23170857]
