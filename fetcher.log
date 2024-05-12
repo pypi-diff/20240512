@@ -3971,3 +3971,12 @@
 [2024-05-12 05:47:53] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.6.0.tar.gz]
 [2024-05-12 05:47:53] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
 [2024-05-12 05:47:53] INFO root fetch - main [MainThread]: Store serial: [23166805]
+[2024-05-12 05:49:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166805]
+[2024-05-12 05:50:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 05:50:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GRCwjt
+[2024-05-12 05:50:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wifelkinz
+[2024-05-12 05:50:02] WARNING root fetch - processPackages [GRCwjt]: Skipping, unable to determine old version
+[2024-05-12 05:50:02] INFO root fetch - main [MainThread]: End processing [GRCwjt] error
+[2024-05-12 05:50:02] WARNING root fetch - processPackages [wifelkinz]: Skipping, unable to determine old version
+[2024-05-12 05:50:02] INFO root fetch - main [MainThread]: End processing [wifelkinz] error
+[2024-05-12 05:50:02] INFO root fetch - main [MainThread]: Store serial: [23166815]
