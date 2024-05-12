@@ -18351,3 +18351,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:42:53] INFO root fetch - processPackages [yeastvision]: Remove: archive file [/home/abi/fetcher/tmp/yeastvision-0.1.9.tar.gz]
 [2024-05-12 23:42:53] INFO root fetch - main [MainThread]: End processing [yeastvision]: success
 [2024-05-12 23:42:53] INFO root fetch - main [MainThread]: Store serial: [23174074]
+[2024-05-12 23:44:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23174074]
+[2024-05-12 23:45:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 23:45:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kukolinez
+[2024-05-12 23:45:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dq-check
+[2024-05-12 23:45:01] WARNING root fetch - processPackages [kukolinez]: Skipping, unable to determine old version
+[2024-05-12 23:45:01] INFO root fetch - main [MainThread]: End processing [kukolinez] error
+[2024-05-12 23:45:02] INFO root fetch - processPackages [dq-check]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-05-12 23:45:02] INFO root fetch - processPackages [dq-check]: Downloading https://files.pythonhosted.org/packages/72/90/56147b0f18e2514281ccc608877de1e49541c51cd2348df694bb011cd32b/dq_check-0.2.1.tar.gz
+[2024-05-12 23:45:02] INFO root fetch - processPackages [dq-check]: Downloading https://files.pythonhosted.org/packages/f6/15/7e3ddb57465fb0c338ebfab16d048d8bdb0b98f2b773067d386f00c306d0/dq_check-0.3.0.tar.gz
+[2024-05-12 23:45:02] INFO root fetch - processPackages [dq-check]: executing diffoscope
+[2024-05-12 23:45:02] INFO root fetch - processPackages [dq-check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dq_check-0.2.1.tar.gz tmp/dq_check-0.3.0.tar.gz --markdown 20240512/d/dq-check/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-05-12 23:45:03] INFO root fetch - processPackages [dq-check]: Remove: archive file [/home/abi/fetcher/tmp/dq_check-0.2.1.tar.gz]
+[2024-05-12 23:45:03] INFO root fetch - processPackages [dq-check]: Remove: archive file [/home/abi/fetcher/tmp/dq_check-0.3.0.tar.gz]
+[2024-05-12 23:45:03] INFO root fetch - main [MainThread]: End processing [dq-check]: success
+[2024-05-12 23:45:03] INFO root fetch - main [MainThread]: Store serial: [23174082]
