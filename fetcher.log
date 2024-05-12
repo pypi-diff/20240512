@@ -13540,3 +13540,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:22:10] WARNING root fetch - processPackages [vaticanalz]: Skipping, unable to determine old version
 [2024-05-12 18:22:10] INFO root fetch - main [MainThread]: End processing [vaticanalz] error
 [2024-05-12 18:22:10] INFO root fetch - main [MainThread]: Store serial: [23171715]
+[2024-05-12 18:24:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171715]
+[2024-05-12 18:24:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 18:24:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dooth
+[2024-05-12 18:24:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vertica-parser
+[2024-05-12 18:24:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: damo
+[2024-05-12 18:24:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rootdir
+[2024-05-12 18:24:19] INFO root fetch - processPackages [dooth]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-05-12 18:24:19] INFO root fetch - processPackages [rootdir]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 18:24:19] INFO root fetch - processPackages [dooth]: Downloading https://files.pythonhosted.org/packages/06/8f/a821c122bc77684050347910883b0e21db1b10b41e27d58d8b9ddc3d701d/dooth-1.0.1-py3-none-any.whl
+[2024-05-12 18:24:19] INFO root fetch - processPackages [rootdir]: Downloading https://files.pythonhosted.org/packages/8a/ed/3b22580d79de32999fe8e3f9785d253eb2c227292f8f1ab0771255eb1fdd/rootdir-0.1.0.tar.gz
+[2024-05-12 18:24:19] WARNING root fetch - processPackages [vertica-parser]: Skipping, unable to determine old version
+[2024-05-12 18:24:19] INFO root fetch - main [MainThread]: End processing [vertica-parser] error
+[2024-05-12 18:24:19] INFO root fetch - processPackages [damo]: New version: [2.3.4] Old Version: [2.3.3]
+[2024-05-12 18:24:19] INFO root fetch - processPackages [rootdir]: Downloading https://files.pythonhosted.org/packages/e5/5b/19c3ad8ca793915d98bb23523e9b41b1a42c370b0fc93ad1909596144795/rootdir-0.1.1.tar.gz
+[2024-05-12 18:24:20] INFO root fetch - processPackages [damo]: Downloading https://files.pythonhosted.org/packages/c7/e8/403ec6a49e621ad9e18b8f2eacb8a4088e3b9a882adc847824d5d8b68573/damo-2.3.3.tar.gz
+[2024-05-12 18:24:20] INFO root fetch - processPackages [rootdir]: executing diffoscope
+[2024-05-12 18:24:20] INFO root fetch - processPackages [rootdir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rootdir-0.1.0.tar.gz tmp/rootdir-0.1.1.tar.gz --markdown 20240512/r/rootdir/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 18:24:20] INFO root fetch - processPackages [damo]: Downloading https://files.pythonhosted.org/packages/36/cf/7a09dacb7d66a50eb3c02c77cfc59c6c15743c3bf756be98ae073a5f1c0a/damo-2.3.4.tar.gz
+[2024-05-12 18:24:20] INFO root fetch - processPackages [dooth]: Downloading https://files.pythonhosted.org/packages/c0/40/ce157690549629995a94081e9b651cee0fc33d0489bef0110d069717197c/dooth-1.1.0-py3-none-any.whl
+[2024-05-12 18:24:20] INFO root fetch - processPackages [dooth]: executing diffoscope
+[2024-05-12 18:24:20] INFO root fetch - processPackages [dooth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dooth-1.0.1-py3-none-any.whl.zip tmp/dooth-1.1.0-py3-none-any.whl.zip --markdown 20240512/d/dooth/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-05-12 18:24:20] INFO root fetch - processPackages [damo]: executing diffoscope
+[2024-05-12 18:24:20] INFO root fetch - processPackages [damo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/damo-2.3.3.tar.gz tmp/damo-2.3.4.tar.gz --markdown 20240512/d/damo/2.3.3-2.3.4/README.md --exclude *.pyd
+[2024-05-12 18:24:20] INFO root fetch - processPackages [rootdir]: Remove: archive file [/home/abi/fetcher/tmp/rootdir-0.1.0.tar.gz]
+[2024-05-12 18:24:20] INFO root fetch - processPackages [rootdir]: Remove: archive file [/home/abi/fetcher/tmp/rootdir-0.1.1.tar.gz]
+[2024-05-12 18:24:20] INFO root fetch - main [MainThread]: End processing [rootdir]: success
+[2024-05-12 18:24:20] INFO root fetch - processPackages [dooth]: Remove: archive file [/home/abi/fetcher/tmp/dooth-1.0.1-py3-none-any.whl.zip]
+[2024-05-12 18:24:20] INFO root fetch - processPackages [dooth]: Remove: archive file [/home/abi/fetcher/tmp/dooth-1.1.0-py3-none-any.whl.zip]
+[2024-05-12 18:24:21] INFO root fetch - main [MainThread]: End processing [dooth]: success
+[2024-05-12 18:24:21] INFO root fetch - processPackages [damo]: Remove: archive file [/home/abi/fetcher/tmp/damo-2.3.3.tar.gz]
+[2024-05-12 18:24:21] INFO root fetch - processPackages [damo]: Remove: archive file [/home/abi/fetcher/tmp/damo-2.3.4.tar.gz]
+[2024-05-12 18:24:21] INFO root fetch - main [MainThread]: End processing [damo]: success
+[2024-05-12 18:24:21] INFO root fetch - main [MainThread]: Store serial: [23171729]
