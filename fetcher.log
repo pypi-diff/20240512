@@ -12424,3 +12424,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:16:53] INFO root fetch - processPackages [locustdb]: Remove: archive file [/home/abi/fetcher/tmp/locustdb-0.5.1-cp39-cp39-macosx_11_0_arm64.whl.zip]
 [2024-05-12 17:16:53] INFO root fetch - main [MainThread]: End processing [locustdb]: success
 [2024-05-12 17:16:53] INFO root fetch - main [MainThread]: Store serial: [23171129]
+[2024-05-12 17:18:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171129]
+[2024-05-12 17:19:01] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 17:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: i2cpy
+[2024-05-12 17:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llm-bench
+[2024-05-12 17:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pkscreener
+[2024-05-12 17:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: superqt
+[2024-05-12 17:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigcode
+[2024-05-12 17:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zarth-utils
+[2024-05-12 17:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: test-actions
+[2024-05-12 17:19:01] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240512.362] Old Version: [0.44.20240512.361]
+[2024-05-12 17:19:01] INFO root fetch - processPackages [bigcode]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-12 17:19:01] INFO root fetch - processPackages [llm-bench]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-12 17:19:01] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/93/58/9edc0985122afad658d91529f29115a32c12e194fce03dc5f974cb3caf9e/pkscreener-0.44.20240512.361.tar.gz
+[2024-05-12 17:19:01] WARNING root fetch - processPackages [i2cpy]: Skipping, unable to determine old version
+[2024-05-12 17:19:01] INFO root fetch - main [MainThread]: End processing [i2cpy] error
+[2024-05-12 17:19:01] INFO root fetch - processPackages [superqt]: New version: [0.6.6] Old Version: [0.6.5]
+[2024-05-12 17:19:01] INFO root fetch - processPackages [bigcode]: Downloading https://files.pythonhosted.org/packages/0f/4c/c91d442f03213495ba70f7090b92671cbbfc9a2554aa18564a8158610e90/bigcode-1.0.4.tar.gz
+[2024-05-12 17:19:01] INFO root fetch - processPackages [zarth-utils]: New version: [1.1] Old Version: [1.0]
+[2024-05-12 17:19:01] WARNING root fetch - processPackages [test-actions]: Skipping, unable to determine old version
+[2024-05-12 17:19:01] INFO root fetch - main [MainThread]: End processing [test-actions] error
+[2024-05-12 17:19:02] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/e4/1e/96e8e21a12cce6b75d40ef58ee187c01da8c44ea854f32fe4678648dcb90/llm_bench-0.4.8.tar.gz
+[2024-05-12 17:19:02] INFO root fetch - processPackages [superqt]: Downloading https://files.pythonhosted.org/packages/a3/ea/af5960a94d77d4576b87c3bc65893dc2cf54d0c7a107ef3775e446e57c77/superqt-0.6.5.tar.gz
+[2024-05-12 17:19:02] INFO root fetch - processPackages [zarth-utils]: Downloading https://files.pythonhosted.org/packages/d6/17/16e64f8f250c4b2e368b08b18253d58ad0c3fc8efdcb686f47b09331e559/zarth_utils-1.0.tar.gz
+[2024-05-12 17:19:02] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/e4/75/2d98ade554705da63eb2766a12984f3f6fc8b6925b37f796ffa48846b3ef/llm_bench-0.4.9.tar.gz
+[2024-05-12 17:19:02] INFO root fetch - processPackages [bigcode]: Downloading https://files.pythonhosted.org/packages/65/98/73b648640d762b44ae1dbfa8043926a488721843638462743e63b4b7edfc/bigcode-1.0.5.tar.gz
+[2024-05-12 17:19:02] INFO root fetch - processPackages [llm-bench]: executing diffoscope
+[2024-05-12 17:19:02] INFO root fetch - processPackages [llm-bench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_bench-0.4.8.tar.gz tmp/llm_bench-0.4.9.tar.gz --markdown 20240512/l/llm-bench/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-12 17:19:02] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/90/1b/ffba6f7d38d2e1627e51171b5c04b0abf81c81afef44e88edb201f359080/pkscreener-0.44.20240512.362.tar.gz
+[2024-05-12 17:19:02] INFO root fetch - processPackages [bigcode]: executing diffoscope
+[2024-05-12 17:19:02] INFO root fetch - processPackages [bigcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigcode-1.0.4.tar.gz tmp/bigcode-1.0.5.tar.gz --markdown 20240512/b/bigcode/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-12 17:19:02] INFO root fetch - processPackages [superqt]: Downloading https://files.pythonhosted.org/packages/c3/2b/6dd62b25fb3957ec087d1ab0a67f4adb6cb3633b236c8aa4ce2cf5d60d86/superqt-0.6.6.tar.gz
+[2024-05-12 17:19:02] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-12 17:19:02] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240512.361.tar.gz tmp/pkscreener-0.44.20240512.362.tar.gz --markdown 20240512/p/pkscreener/0.44.20240512.361-0.44.20240512.362/README.md --exclude *.pyd
+[2024-05-12 17:19:02] INFO root fetch - processPackages [zarth-utils]: Downloading https://files.pythonhosted.org/packages/9c/80/5bbffac9219e967b714bc5adf3d86638bb59eda886b469673a8dfe830723/zarth_utils-1.1.tar.gz
+[2024-05-12 17:19:02] INFO root fetch - processPackages [superqt]: executing diffoscope
+[2024-05-12 17:19:02] INFO root fetch - processPackages [superqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superqt-0.6.5.tar.gz tmp/superqt-0.6.6.tar.gz --markdown 20240512/s/superqt/0.6.5-0.6.6/README.md --exclude *.pyd
+[2024-05-12 17:19:02] INFO root fetch - processPackages [zarth-utils]: executing diffoscope
+[2024-05-12 17:19:02] INFO root fetch - processPackages [zarth-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zarth_utils-1.0.tar.gz tmp/zarth_utils-1.1.tar.gz --markdown 20240512/z/zarth-utils/1.0-1.1/README.md --exclude *.pyd
+[2024-05-12 17:19:03] INFO root fetch - processPackages [bigcode]: Remove: archive file [/home/abi/fetcher/tmp/bigcode-1.0.4.tar.gz]
+[2024-05-12 17:19:03] INFO root fetch - processPackages [bigcode]: Remove: archive file [/home/abi/fetcher/tmp/bigcode-1.0.5.tar.gz]
+[2024-05-12 17:19:03] INFO root fetch - main [MainThread]: End processing [bigcode]: success
+[2024-05-12 17:19:03] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.8.tar.gz]
+[2024-05-12 17:19:03] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.9.tar.gz]
+[2024-05-12 17:19:03] INFO root fetch - main [MainThread]: End processing [llm-bench]: success
+[2024-05-12 17:19:03] INFO root fetch - processPackages [zarth-utils]: Remove: archive file [/home/abi/fetcher/tmp/zarth_utils-1.0.tar.gz]
+[2024-05-12 17:19:03] INFO root fetch - processPackages [zarth-utils]: Remove: archive file [/home/abi/fetcher/tmp/zarth_utils-1.1.tar.gz]
+[2024-05-12 17:19:03] INFO root fetch - main [MainThread]: End processing [zarth-utils]: success
+[2024-05-12 17:19:03] INFO root fetch - processPackages [superqt]: Remove: archive file [/home/abi/fetcher/tmp/superqt-0.6.5.tar.gz]
+[2024-05-12 17:19:03] INFO root fetch - processPackages [superqt]: Remove: archive file [/home/abi/fetcher/tmp/superqt-0.6.6.tar.gz]
+[2024-05-12 17:19:03] INFO root fetch - main [MainThread]: End processing [superqt]: success
+[2024-05-12 17:19:03] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240512.361.tar.gz]
+[2024-05-12 17:19:03] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240512.362.tar.gz]
+[2024-05-12 17:19:03] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-12 17:19:03] INFO root fetch - main [MainThread]: Store serial: [23171153]
