@@ -10839,3 +10839,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:29:51] INFO root fetch - processPackages [revTongYi]: Remove: archive file [/home/abi/fetcher/tmp/revtongyi-0.1.2.1.tar.gz]
 [2024-05-12 15:29:51] INFO root fetch - main [MainThread]: End processing [revTongYi]: success
 [2024-05-12 15:29:51] INFO root fetch - main [MainThread]: Store serial: [23170148]
+[2024-05-12 15:31:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170148]
+[2024-05-12 15:31:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 15:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: missing-mga
+[2024-05-12 15:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vasprocar
+[2024-05-12 15:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: expr-codegen
+[2024-05-12 15:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyutube
+[2024-05-12 15:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: poetry-stale-dependencies
+[2024-05-12 15:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rectotomyz
+[2024-05-12 15:32:00] INFO root fetch - processPackages [missing-mga]: New version: [0.2.0] Old Version: [0.1]
+[2024-05-12 15:32:00] INFO root fetch - processPackages [poetry-stale-dependencies]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-05-12 15:32:00] WARNING root fetch - processPackages [rectotomyz]: Skipping, unable to determine old version
+[2024-05-12 15:32:00] INFO root fetch - main [MainThread]: End processing [rectotomyz] error
+[2024-05-12 15:32:00] INFO root fetch - processPackages [expr-codegen]: New version: [0.6.5] Old Version: [0.6.4]
+[2024-05-12 15:32:00] INFO root fetch - processPackages [poetry-stale-dependencies]: Downloading https://files.pythonhosted.org/packages/f8/cf/10bd184f821112295d1687956495813144e47583790d7a2006b9f5a96b0b/poetry_stale_dependencies-0.1.2.tar.gz
+[2024-05-12 15:32:00] WARNING root fetch - processPackages [vasprocar]: Skipping, unable to determine old version
+[2024-05-12 15:32:00] INFO root fetch - main [MainThread]: End processing [vasprocar] error
+[2024-05-12 15:32:00] INFO root fetch - processPackages [pyutube]: New version: [1.2.6] Old Version: [1.2.5]
+[2024-05-12 15:32:00] INFO root fetch - processPackages [missing-mga]: Downloading https://files.pythonhosted.org/packages/0d/32/d525cd44a98f1a3682173dae5a5e4fe2aede41c8abc79217ba100925cb07/missing_mga-0.1.tar.gz
+[2024-05-12 15:32:00] INFO root fetch - processPackages [expr-codegen]: Downloading https://files.pythonhosted.org/packages/e4/2f/920ff731f4b95ab4aa8b0657c34f0c0c3228b94bd902a7ee459f3ec0f92e/expr_codegen-0.6.4.tar.gz
+[2024-05-12 15:32:00] INFO root fetch - processPackages [pyutube]: Downloading https://files.pythonhosted.org/packages/14/c1/268121f5c7547ee0971e40779c3e0b06c320b1e97450f831bd13633b3c83/pyutube-1.2.5.tar.gz
+[2024-05-12 15:32:00] INFO root fetch - processPackages [poetry-stale-dependencies]: Downloading https://files.pythonhosted.org/packages/b3/bf/07ea2e6bb1b9253de63ec86174f3c9452ef8d69d92d42ce464889092dc42/poetry_stale_dependencies-0.2.0.tar.gz
+[2024-05-12 15:32:00] INFO root fetch - processPackages [poetry-stale-dependencies]: executing diffoscope
+[2024-05-12 15:32:00] INFO root fetch - processPackages [poetry-stale-dependencies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_stale_dependencies-0.1.2.tar.gz tmp/poetry_stale_dependencies-0.2.0.tar.gz --markdown 20240512/p/poetry-stale-dependencies/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-05-12 15:32:00] INFO root fetch - processPackages [missing-mga]: Downloading https://files.pythonhosted.org/packages/0e/9a/e4d43502638b911844c3c10a1c00c5822b8ae1eff77cdcf1b2b1e7fe608e/missing_mga-0.2.0.tar.gz
+[2024-05-12 15:32:00] INFO root fetch - processPackages [expr-codegen]: Downloading https://files.pythonhosted.org/packages/21/47/739d3f1d197ce7174ab68e18a8e09809850dc6a274b8aa1e1776afa87b1f/expr_codegen-0.6.5.tar.gz
+[2024-05-12 15:32:00] INFO root fetch - processPackages [pyutube]: Downloading https://files.pythonhosted.org/packages/94/23/1747018c2c6d3cdbae6628b57c1abcf045312c8b289a1ba779f6fcd93412/pyutube-1.2.6.tar.gz
+[2024-05-12 15:32:00] INFO root fetch - processPackages [missing-mga]: executing diffoscope
+[2024-05-12 15:32:00] INFO root fetch - processPackages [missing-mga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/missing_mga-0.1.tar.gz tmp/missing_mga-0.2.0.tar.gz --markdown 20240512/m/missing-mga/0.1-0.2.0/README.md --exclude *.pyd
+[2024-05-12 15:32:00] INFO root fetch - processPackages [expr-codegen]: executing diffoscope
+[2024-05-12 15:32:00] INFO root fetch - processPackages [expr-codegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/expr_codegen-0.6.4.tar.gz tmp/expr_codegen-0.6.5.tar.gz --markdown 20240512/e/expr-codegen/0.6.4-0.6.5/README.md --exclude *.pyd
+[2024-05-12 15:32:00] INFO root fetch - processPackages [pyutube]: executing diffoscope
+[2024-05-12 15:32:00] INFO root fetch - processPackages [pyutube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyutube-1.2.5.tar.gz tmp/pyutube-1.2.6.tar.gz --markdown 20240512/p/pyutube/1.2.5-1.2.6/README.md --exclude *.pyd
+[2024-05-12 15:32:01] INFO root fetch - processPackages [poetry-stale-dependencies]: Remove: archive file [/home/abi/fetcher/tmp/poetry_stale_dependencies-0.1.2.tar.gz]
+[2024-05-12 15:32:01] INFO root fetch - processPackages [poetry-stale-dependencies]: Remove: archive file [/home/abi/fetcher/tmp/poetry_stale_dependencies-0.2.0.tar.gz]
+[2024-05-12 15:32:01] INFO root fetch - main [MainThread]: End processing [poetry-stale-dependencies]: success
+[2024-05-12 15:32:01] INFO root fetch - processPackages [missing-mga]: Remove: archive file [/home/abi/fetcher/tmp/missing_mga-0.1.tar.gz]
+[2024-05-12 15:32:01] INFO root fetch - processPackages [missing-mga]: Remove: archive file [/home/abi/fetcher/tmp/missing_mga-0.2.0.tar.gz]
+[2024-05-12 15:32:01] INFO root fetch - main [MainThread]: End processing [missing-mga]: success
+[2024-05-12 15:32:01] INFO root fetch - processPackages [expr-codegen]: Remove: archive file [/home/abi/fetcher/tmp/expr_codegen-0.6.4.tar.gz]
+[2024-05-12 15:32:01] INFO root fetch - processPackages [expr-codegen]: Remove: archive file [/home/abi/fetcher/tmp/expr_codegen-0.6.5.tar.gz]
+[2024-05-12 15:32:01] INFO root fetch - main [MainThread]: End processing [expr-codegen]: success
+[2024-05-12 15:32:01] INFO root fetch - processPackages [pyutube]: Remove: archive file [/home/abi/fetcher/tmp/pyutube-1.2.5.tar.gz]
+[2024-05-12 15:32:01] INFO root fetch - processPackages [pyutube]: Remove: archive file [/home/abi/fetcher/tmp/pyutube-1.2.6.tar.gz]
+[2024-05-12 15:32:01] INFO root fetch - main [MainThread]: End processing [pyutube]: success
+[2024-05-12 15:32:01] INFO root fetch - main [MainThread]: Store serial: [23170169]
