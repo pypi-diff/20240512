@@ -1366,3 +1366,42 @@
 [2024-05-12 02:05:23] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240511.435.tar.gz]
 [2024-05-12 02:05:23] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2024-05-12 02:05:23] INFO root fetch - main [MainThread]: Store serial: [23165489]
+[2024-05-12 02:07:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165489]
+[2024-05-12 02:07:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 02:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: minebannerlib
+[2024-05-12 02:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyExploitDb
+[2024-05-12 02:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jaxutils-nightly
+[2024-05-12 02:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wrapica
+[2024-05-12 02:07:32] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20240511] Old Version: [0.0.8.dev20240510]
+[2024-05-12 02:07:32] INFO root fetch - processPackages [pyExploitDb]: New version: [0.2.9] Old Version: [0.2.6]
+[2024-05-12 02:07:32] INFO root fetch - processPackages [minebannerlib]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-05-12 02:07:32] INFO root fetch - processPackages [wrapica]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-12 02:07:32] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/a6/3f/03bd25f683d753cc57312dc62c107873b094fb2e72bb2153e6cd7b9a8ef8/jaxutils-nightly-0.0.8.dev20240510.tar.gz
+[2024-05-12 02:07:33] INFO root fetch - processPackages [minebannerlib]: Downloading https://files.pythonhosted.org/packages/14/65/bea5ae9b2b94ab666cc6391e708d898cf226f2efb3f5e2028d96ed8b2936/minebannerlib-0.0.3.tar.gz
+[2024-05-12 02:07:33] INFO root fetch - processPackages [pyExploitDb]: Downloading https://files.pythonhosted.org/packages/db/f7/0a8a973ebf516134ee9f275887bb4bb1e53a0c4bfe9d08ef50c8a91f5685/pyExploitDb-0.2.6.tar.gz
+[2024-05-12 02:07:33] INFO root fetch - processPackages [wrapica]: Downloading https://files.pythonhosted.org/packages/94/62/a644ad0588f7fda6f6b2d669c3a972ee650a06084bc4f80fce2dc9155fbd/wrapica-1.0.4.tar.gz
+[2024-05-12 02:07:33] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/2c/3a/72e9e126cdcebe49fb9ff14fa1e0e403baa042da26a51fff99018690cbc9/jaxutils-nightly-0.0.8.dev20240511.tar.gz
+[2024-05-12 02:07:33] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2024-05-12 02:07:33] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20240510.tar.gz tmp/jaxutils-nightly-0.0.8.dev20240511.tar.gz --markdown 20240512/j/jaxutils-nightly/0.0.8.dev20240510-0.0.8.dev20240511/README.md --exclude *.pyd
+[2024-05-12 02:07:33] INFO root fetch - processPackages [wrapica]: Downloading https://files.pythonhosted.org/packages/04/2d/7e0fc58254ac950e9e08008d23dbe37d9723ec0aeb9ae852d7b3f9adcc7d/wrapica-1.0.5.tar.gz
+[2024-05-12 02:07:33] INFO root fetch - processPackages [pyExploitDb]: Downloading https://files.pythonhosted.org/packages/9c/eb/b8dfdf3b6b5313c0c99c1d10134a1ec6bf2af38cc490c82550e859fba37f/pyExploitDb-0.2.9.tar.gz
+[2024-05-12 02:07:33] INFO root fetch - processPackages [minebannerlib]: Downloading https://files.pythonhosted.org/packages/55/ed/ebb5d7cf507649e7afcd9dbd8de32d2d9ac4d20a421b28c8e30699594678/minebannerlib-0.0.5.tar.gz
+[2024-05-12 02:07:33] INFO root fetch - processPackages [minebannerlib]: executing diffoscope
+[2024-05-12 02:07:33] INFO root fetch - processPackages [minebannerlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minebannerlib-0.0.3.tar.gz tmp/minebannerlib-0.0.5.tar.gz --markdown 20240512/m/minebannerlib/0.0.3-0.0.5/README.md --exclude *.pyd
+[2024-05-12 02:07:33] INFO root fetch - processPackages [pyExploitDb]: executing diffoscope
+[2024-05-12 02:07:33] INFO root fetch - processPackages [pyExploitDb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyExploitDb-0.2.6.tar.gz tmp/pyExploitDb-0.2.9.tar.gz --markdown 20240512/p/pyExploitDb/0.2.6-0.2.9/README.md --exclude *.pyd
+[2024-05-12 02:07:33] INFO root fetch - processPackages [wrapica]: executing diffoscope
+[2024-05-12 02:07:33] INFO root fetch - processPackages [wrapica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wrapica-1.0.4.tar.gz tmp/wrapica-1.0.5.tar.gz --markdown 20240512/w/wrapica/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-12 02:07:34] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240510.tar.gz]
+[2024-05-12 02:07:34] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240511.tar.gz]
+[2024-05-12 02:07:34] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2024-05-12 02:07:34] INFO root fetch - processPackages [minebannerlib]: Remove: archive file [/home/abi/fetcher/tmp/minebannerlib-0.0.3.tar.gz]
+[2024-05-12 02:07:34] INFO root fetch - processPackages [minebannerlib]: Remove: archive file [/home/abi/fetcher/tmp/minebannerlib-0.0.5.tar.gz]
+[2024-05-12 02:07:34] INFO root fetch - main [MainThread]: End processing [minebannerlib]: success
+[2024-05-12 02:07:34] INFO root fetch - processPackages [wrapica]: Remove: archive file [/home/abi/fetcher/tmp/wrapica-1.0.4.tar.gz]
+[2024-05-12 02:07:34] INFO root fetch - processPackages [wrapica]: Remove: archive file [/home/abi/fetcher/tmp/wrapica-1.0.5.tar.gz]
+[2024-05-12 02:07:34] INFO root fetch - main [MainThread]: End processing [wrapica]: success
+[2024-05-12 02:07:35] INFO root fetch - processPackages [pyExploitDb]: Remove: archive file [/home/abi/fetcher/tmp/pyExploitDb-0.2.6.tar.gz]
+[2024-05-12 02:07:35] INFO root fetch - processPackages [pyExploitDb]: Remove: archive file [/home/abi/fetcher/tmp/pyExploitDb-0.2.9.tar.gz]
+[2024-05-12 02:07:35] INFO root fetch - main [MainThread]: End processing [pyExploitDb]: success
+[2024-05-12 02:07:35] INFO root fetch - main [MainThread]: Store serial: [23165500]
