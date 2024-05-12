@@ -5494,3 +5494,40 @@
 [2024-05-12 08:29:14] WARNING root fetch - processPackages [rhincospasmz]: Skipping, unable to determine old version
 [2024-05-12 08:29:14] INFO root fetch - main [MainThread]: End processing [rhincospasmz] error
 [2024-05-12 08:29:14] INFO root fetch - main [MainThread]: Store serial: [23167474]
+[2024-05-12 08:31:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167474]
+[2024-05-12 08:31:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 08:31:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-prep-toolkit-kfp
+[2024-05-12 08:31:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: obx
+[2024-05-12 08:31:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bruhanimate
+[2024-05-12 08:31:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bruhanimate
+[2024-05-12 08:31:22] INFO root fetch - processPackages [bruhanimate]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-12 08:31:22] INFO root fetch - processPackages [bruhanimate]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-12 08:31:22] INFO root fetch - processPackages [obx]: New version: [3] Old Version: [2]
+[2024-05-12 08:31:22] INFO root fetch - processPackages [data-prep-toolkit-kfp]: New version: [0.0.1.dev1] Old Version: [0.0.1]
+[2024-05-12 08:31:22] INFO root fetch - processPackages [bruhanimate]: Downloading https://files.pythonhosted.org/packages/c6/57/095c701edc2b245ce61b81a58bbcffca96482e88b8959cf0f29bfff462f4/bruhanimate-0.2.8.tar.gz
+[2024-05-12 08:31:22] INFO root fetch - processPackages [bruhanimate]: Downloading https://files.pythonhosted.org/packages/c6/57/095c701edc2b245ce61b81a58bbcffca96482e88b8959cf0f29bfff462f4/bruhanimate-0.2.8.tar.gz
+[2024-05-12 08:31:22] INFO root fetch - processPackages [obx]: Downloading https://files.pythonhosted.org/packages/21/4c/bc7cb86f39a09e1257867a207ea37b4a78e052b2659d52fc53cb3edbc95a/obx-2.tar.gz
+[2024-05-12 08:31:23] INFO root fetch - processPackages [bruhanimate]: Downloading https://files.pythonhosted.org/packages/2b/4a/71ab6f8b8a90ae4cbb391898ac5550ba56895062c0a9520b306d10c23329/bruhanimate-0.2.9.tar.gz
+[2024-05-12 08:31:23] INFO root fetch - processPackages [bruhanimate]: Downloading https://files.pythonhosted.org/packages/2b/4a/71ab6f8b8a90ae4cbb391898ac5550ba56895062c0a9520b306d10c23329/bruhanimate-0.2.9.tar.gz
+[2024-05-12 08:31:23] INFO root fetch - processPackages [bruhanimate]: executing diffoscope
+[2024-05-12 08:31:23] INFO root fetch - processPackages [bruhanimate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bruhanimate-0.2.8.tar.gz tmp/bruhanimate-0.2.9.tar.gz --markdown 20240512/b/bruhanimate/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-12 08:31:23] INFO root fetch - processPackages [bruhanimate]: executing diffoscope
+[2024-05-12 08:31:23] INFO root fetch - processPackages [bruhanimate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bruhanimate-0.2.8.tar.gz tmp/bruhanimate-0.2.9.tar.gz --markdown 20240512/b/bruhanimate/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-12 08:31:23] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/c6/4f/2d0bcdf768145cdaaf99718593d01fac9a087f1e14e588ea01d6ba5bb833/data_prep_toolkit_kfp-0.0.1.tar.gz
+[2024-05-12 08:31:23] INFO root fetch - processPackages [obx]: Downloading https://files.pythonhosted.org/packages/70/97/0c408dcb5ac975ad11e00b3d7f6a2236a01a0fce47e4bc9c1920a0843f78/obx-3.tar.gz
+[2024-05-12 08:31:23] INFO root fetch - processPackages [obx]: executing diffoscope
+[2024-05-12 08:31:23] INFO root fetch - processPackages [obx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obx-2.tar.gz tmp/obx-3.tar.gz --markdown 20240512/o/obx/2-3/README.md --exclude *.pyd
+[2024-05-12 08:31:23] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/8c/97/1cc0254a1ab2170ef9604ababd006dbcfb65dc04ec4f1cb1ba8c4a051f35/data_prep_toolkit_kfp-0.0.1.dev1.tar.gz
+[2024-05-12 08:31:23] INFO root fetch - processPackages [data-prep-toolkit-kfp]: executing diffoscope
+[2024-05-12 08:31:23] INFO root fetch - processPackages [data-prep-toolkit-kfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_toolkit_kfp-0.0.1.tar.gz tmp/data_prep_toolkit_kfp-0.0.1.dev1.tar.gz --markdown 20240512/d/data-prep-toolkit-kfp/0.0.1-0.0.1.dev1/README.md --exclude *.pyd
+[2024-05-12 08:31:23] INFO root fetch - processPackages [bruhanimate]: Remove: archive file [/home/abi/fetcher/tmp/bruhanimate-0.2.8.tar.gz]
+[2024-05-12 08:31:23] INFO root fetch - processPackages [bruhanimate]: Remove: archive file [/home/abi/fetcher/tmp/bruhanimate-0.2.9.tar.gz]
+[2024-05-12 08:31:23] INFO root fetch - main [MainThread]: End processing [bruhanimate]: success
+[2024-05-12 08:31:23] INFO root fetch - main [MainThread]: End processing [bruhanimate]: success
+[2024-05-12 08:31:24] INFO root fetch - processPackages [obx]: Remove: archive file [/home/abi/fetcher/tmp/obx-2.tar.gz]
+[2024-05-12 08:31:24] INFO root fetch - processPackages [obx]: Remove: archive file [/home/abi/fetcher/tmp/obx-3.tar.gz]
+[2024-05-12 08:31:24] INFO root fetch - main [MainThread]: End processing [obx]: success
+[2024-05-12 08:31:24] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.tar.gz]
+[2024-05-12 08:31:24] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev1.tar.gz]
+[2024-05-12 08:31:24] INFO root fetch - main [MainThread]: End processing [data-prep-toolkit-kfp]: success
+[2024-05-12 08:31:24] INFO root fetch - main [MainThread]: Store serial: [23167483]
