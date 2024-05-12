@@ -14559,3 +14559,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:29:39] INFO root fetch - processPackages [Qubx]: Remove: archive file [/home/abi/fetcher/tmp/qubx-0.1.5.tar.gz]
 [2024-05-12 19:29:39] INFO root fetch - main [MainThread]: End processing [Qubx]: success
 [2024-05-12 19:29:39] INFO root fetch - main [MainThread]: Store serial: [23172230]
+[2024-05-12 19:31:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172230]
+[2024-05-12 19:31:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 19:31:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: utilitarianizez
+[2024-05-12 19:31:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smart-parallelize
+[2024-05-12 19:31:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TonkaConstruction
+[2024-05-12 19:31:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mimllearning
+[2024-05-12 19:31:47] INFO root fetch - processPackages [smart-parallelize]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-12 19:31:47] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-12 19:31:47] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/6a/fe/8ebbcab94845b3b9dc55872bfdc4aca22762d128d40bbf63a34bd61fac01/smart_parallelize-2.0.8.tar.gz
+[2024-05-12 19:31:47] WARNING root fetch - processPackages [utilitarianizez]: Skipping, unable to determine old version
+[2024-05-12 19:31:47] INFO root fetch - main [MainThread]: End processing [utilitarianizez] error
+[2024-05-12 19:31:47] WARNING root fetch - processPackages [TonkaConstruction]: Skipping, unable to determine old version
+[2024-05-12 19:31:47] INFO root fetch - main [MainThread]: End processing [TonkaConstruction] error
+[2024-05-12 19:31:47] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-12 19:31:48] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/0f/6f/48731f1909b1b681d6a4a859ba23d0b9133c578aaf5ca409036f55dbe11e/smart_parallelize-2.0.9.tar.gz
+[2024-05-12 19:31:48] INFO root fetch - processPackages [smart-parallelize]: executing diffoscope
+[2024-05-12 19:31:48] INFO root fetch - processPackages [smart-parallelize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smart_parallelize-2.0.8.tar.gz tmp/smart_parallelize-2.0.9.tar.gz --markdown 20240512/s/smart-parallelize/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-12 19:31:48] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-12 19:31:48] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-12 19:31:48] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240512/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-12 19:31:48] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.8.tar.gz]
+[2024-05-12 19:31:48] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.9.tar.gz]
+[2024-05-12 19:31:48] INFO root fetch - main [MainThread]: End processing [smart-parallelize]: success
+[2024-05-12 19:31:49] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-12 19:31:49] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-12 19:31:49] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-12 19:31:49] INFO root fetch - main [MainThread]: Store serial: [23172284]
