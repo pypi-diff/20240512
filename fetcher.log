@@ -5723,3 +5723,33 @@
 [2024-05-12 08:44:29] INFO root fetch - processPackages [toui]: Remove: archive file [/home/abi/fetcher/tmp/toui-3.5.0a7.tar.gz]
 [2024-05-12 08:44:29] INFO root fetch - main [MainThread]: End processing [toui]: success
 [2024-05-12 08:44:29] INFO root fetch - main [MainThread]: Store serial: [23167547]
+[2024-05-12 08:46:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167547]
+[2024-05-12 08:46:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 08:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dashport
+[2024-05-12 08:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gdown
+[2024-05-12 08:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: data-prep-toolkit-kfp
+[2024-05-12 08:46:37] INFO root fetch - processPackages [dashport]: New version: [0.7.5] Old Version: [0.7.4]
+[2024-05-12 08:46:37] INFO root fetch - processPackages [data-prep-toolkit-kfp]: New version: [0.0.1.dev1] Old Version: [0.0.1]
+[2024-05-12 08:46:37] INFO root fetch - processPackages [gdown]: New version: [5.2.0] Old Version: [5.1.0]
+[2024-05-12 08:46:37] INFO root fetch - processPackages [dashport]: Downloading https://files.pythonhosted.org/packages/27/2e/dd6fedc72a6e2d4212eeb06a9b99ac66e0d2828694c1f29a2e4546e421dc/dashport-0.7.4.tar.gz
+[2024-05-12 08:46:37] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/c6/4f/2d0bcdf768145cdaaf99718593d01fac9a087f1e14e588ea01d6ba5bb833/data_prep_toolkit_kfp-0.0.1.tar.gz
+[2024-05-12 08:46:37] INFO root fetch - processPackages [gdown]: Downloading https://files.pythonhosted.org/packages/f0/c9/3dbaca0c3b134de17bbd69eeda1ff7f8eef2c64144a5e4303584bacd6177/gdown-5.1.0.tar.gz
+[2024-05-12 08:46:38] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/8c/97/1cc0254a1ab2170ef9604ababd006dbcfb65dc04ec4f1cb1ba8c4a051f35/data_prep_toolkit_kfp-0.0.1.dev1.tar.gz
+[2024-05-12 08:46:38] INFO root fetch - processPackages [data-prep-toolkit-kfp]: executing diffoscope
+[2024-05-12 08:46:38] INFO root fetch - processPackages [data-prep-toolkit-kfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_toolkit_kfp-0.0.1.tar.gz tmp/data_prep_toolkit_kfp-0.0.1.dev1.tar.gz --markdown 20240512/d/data-prep-toolkit-kfp/0.0.1-0.0.1.dev1/README.md --exclude *.pyd
+[2024-05-12 08:46:38] INFO root fetch - processPackages [dashport]: Downloading https://files.pythonhosted.org/packages/ba/b2/261801a7b70d4b663178118d711e894dc006e78e1b45053e55f2b3e2d519/dashport-0.7.5.tar.gz
+[2024-05-12 08:46:38] INFO root fetch - processPackages [gdown]: Downloading https://files.pythonhosted.org/packages/09/6a/37e6b70c5bda3161e40265861e63b64a86bfc6ca6a8f1c35328a675c84fd/gdown-5.2.0.tar.gz
+[2024-05-12 08:46:38] INFO root fetch - processPackages [dashport]: executing diffoscope
+[2024-05-12 08:46:38] INFO root fetch - processPackages [dashport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dashport-0.7.4.tar.gz tmp/dashport-0.7.5.tar.gz --markdown 20240512/d/dashport/0.7.4-0.7.5/README.md --exclude *.pyd
+[2024-05-12 08:46:38] INFO root fetch - processPackages [gdown]: executing diffoscope
+[2024-05-12 08:46:38] INFO root fetch - processPackages [gdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdown-5.1.0.tar.gz tmp/gdown-5.2.0.tar.gz --markdown 20240512/g/gdown/5.1.0-5.2.0/README.md --exclude *.pyd
+[2024-05-12 08:46:38] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.tar.gz]
+[2024-05-12 08:46:38] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev1.tar.gz]
+[2024-05-12 08:46:38] INFO root fetch - main [MainThread]: End processing [data-prep-toolkit-kfp]: success
+[2024-05-12 08:46:39] INFO root fetch - processPackages [gdown]: Remove: archive file [/home/abi/fetcher/tmp/gdown-5.1.0.tar.gz]
+[2024-05-12 08:46:39] INFO root fetch - processPackages [gdown]: Remove: archive file [/home/abi/fetcher/tmp/gdown-5.2.0.tar.gz]
+[2024-05-12 08:46:39] INFO root fetch - main [MainThread]: End processing [gdown]: success
+[2024-05-12 08:46:39] INFO root fetch - processPackages [dashport]: Remove: archive file [/home/abi/fetcher/tmp/dashport-0.7.4.tar.gz]
+[2024-05-12 08:46:39] INFO root fetch - processPackages [dashport]: Remove: archive file [/home/abi/fetcher/tmp/dashport-0.7.5.tar.gz]
+[2024-05-12 08:46:39] INFO root fetch - main [MainThread]: End processing [dashport]: success
+[2024-05-12 08:46:39] INFO root fetch - main [MainThread]: Store serial: [23167556]
