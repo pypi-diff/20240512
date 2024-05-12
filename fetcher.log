@@ -6276,3 +6276,45 @@
 [2024-05-12 09:21:48] INFO root fetch - processPackages [sphyrna-service-manager]: Remove: archive file [/home/abi/fetcher/tmp/sphyrna_service_manager-0.3.7.tar.gz]
 [2024-05-12 09:21:48] INFO root fetch - main [MainThread]: End processing [sphyrna-service-manager]: success
 [2024-05-12 09:21:48] INFO root fetch - main [MainThread]: Store serial: [23167797]
+[2024-05-12 09:23:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167797]
+[2024-05-12 09:23:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 09:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arikaim-service-server
+[2024-05-12 09:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-furryfusion
+[2024-05-12 09:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: preplacementz
+[2024-05-12 09:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-tbase-post-product
+[2024-05-12 09:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: whatshow-phy-mod-otfs
+[2024-05-12 09:23:57] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: New version: [2.1.5] Old Version: [2.1.4]
+[2024-05-12 09:23:57] INFO root fetch - processPackages [nonebot-plugin-furryfusion]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-12 09:23:57] INFO root fetch - processPackages [django-tbase-post-product]: New version: [2024.5.917151916] Old Version: [2024.5.1217154982]
+[2024-05-12 09:23:57] INFO root fetch - processPackages [nonebot-plugin-furryfusion]: Downloading https://files.pythonhosted.org/packages/0a/ef/c558d0a7dc0e84df6b78877950a566c941f94afaf9bdb9a94b3a5a7d99a8/nonebot_plugin_furryfusion-0.1.2.tar.gz
+[2024-05-12 09:23:57] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Downloading https://files.pythonhosted.org/packages/b4/52/de342c16576b9e7d430718a0ac370b2c2bd2446ceb9b8246532e07cc3616/whatshow_phy_mod_otfs-2.1.4.tar.gz
+[2024-05-12 09:23:57] WARNING root fetch - processPackages [preplacementz]: Skipping, unable to determine old version
+[2024-05-12 09:23:57] INFO root fetch - main [MainThread]: End processing [preplacementz] error
+[2024-05-12 09:23:57] INFO root fetch - processPackages [arikaim-service-server]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-05-12 09:23:57] INFO root fetch - processPackages [django-tbase-post-product]: Downloading https://files.pythonhosted.org/packages/7c/db/4e7c817ba5c02a52d6303b8511f113ccf28718ef27abb813e1e59fcfa632/django_tbase_post_product-2024.5.1217154982.tar.gz
+[2024-05-12 09:23:58] INFO root fetch - processPackages [arikaim-service-server]: Downloading https://files.pythonhosted.org/packages/7b/58/c21e825e7039702b44c1248c2e5da107d8e09e196e58e58aec588684580d/arikaim_service_server-0.5.4.tar.gz
+[2024-05-12 09:23:58] INFO root fetch - processPackages [django-tbase-post-product]: Downloading https://files.pythonhosted.org/packages/c0/98/62a51f9770498efbef63512b11daf7322e6692ff97b1c62f32ce787b15f3/django_tbase_post_product-2024.5.917151916.tar.gz
+[2024-05-12 09:23:58] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Downloading https://files.pythonhosted.org/packages/77/e0/cb5759a5ad3067c7713b17eec6c9b05e4de6933e53506e1122fd0fa64852/whatshow_phy_mod_otfs-2.1.5.tar.gz
+[2024-05-12 09:23:58] INFO root fetch - processPackages [nonebot-plugin-furryfusion]: Downloading https://files.pythonhosted.org/packages/0b/60/e8fdb7e98935ae284cc18b1f7da0b6efef081f5c4ac0913c533b1831664b/nonebot_plugin_furryfusion-0.1.3.tar.gz
+[2024-05-12 09:23:58] INFO root fetch - processPackages [django-tbase-post-product]: executing diffoscope
+[2024-05-12 09:23:58] INFO root fetch - processPackages [django-tbase-post-product]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tbase_post_product-2024.5.1217154982.tar.gz tmp/django_tbase_post_product-2024.5.917151916.tar.gz --markdown 20240512/d/django-tbase-post-product/2024.5.1217154982-2024.5.917151916/README.md --exclude *.pyd
+[2024-05-12 09:23:58] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: executing diffoscope
+[2024-05-12 09:23:58] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatshow_phy_mod_otfs-2.1.4.tar.gz tmp/whatshow_phy_mod_otfs-2.1.5.tar.gz --markdown 20240512/w/whatshow-phy-mod-otfs/2.1.4-2.1.5/README.md --exclude *.pyd
+[2024-05-12 09:23:58] INFO root fetch - processPackages [nonebot-plugin-furryfusion]: executing diffoscope
+[2024-05-12 09:23:58] INFO root fetch - processPackages [nonebot-plugin-furryfusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_furryfusion-0.1.2.tar.gz tmp/nonebot_plugin_furryfusion-0.1.3.tar.gz --markdown 20240512/n/nonebot-plugin-furryfusion/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-12 09:23:58] INFO root fetch - processPackages [arikaim-service-server]: Downloading https://files.pythonhosted.org/packages/d2/99/9bd4b3c1414ebf5aafaee7fdb8f5e92c45ebb185334d3cade73c6a3ded63/arikaim_service_server-0.5.5.tar.gz
+[2024-05-12 09:23:58] INFO root fetch - processPackages [arikaim-service-server]: executing diffoscope
+[2024-05-12 09:23:58] INFO root fetch - processPackages [arikaim-service-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arikaim_service_server-0.5.4.tar.gz tmp/arikaim_service_server-0.5.5.tar.gz --markdown 20240512/a/arikaim-service-server/0.5.4-0.5.5/README.md --exclude *.pyd
+[2024-05-12 09:23:59] INFO root fetch - processPackages [nonebot-plugin-furryfusion]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_furryfusion-0.1.2.tar.gz]
+[2024-05-12 09:23:59] INFO root fetch - processPackages [nonebot-plugin-furryfusion]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_furryfusion-0.1.3.tar.gz]
+[2024-05-12 09:23:59] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-furryfusion]: success
+[2024-05-12 09:23:59] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_phy_mod_otfs-2.1.4.tar.gz]
+[2024-05-12 09:23:59] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_phy_mod_otfs-2.1.5.tar.gz]
+[2024-05-12 09:23:59] INFO root fetch - main [MainThread]: End processing [whatshow-phy-mod-otfs]: success
+[2024-05-12 09:23:59] INFO root fetch - processPackages [django-tbase-post-product]: Remove: archive file [/home/abi/fetcher/tmp/django_tbase_post_product-2024.5.1217154982.tar.gz]
+[2024-05-12 09:23:59] INFO root fetch - processPackages [django-tbase-post-product]: Remove: archive file [/home/abi/fetcher/tmp/django_tbase_post_product-2024.5.917151916.tar.gz]
+[2024-05-12 09:23:59] INFO root fetch - main [MainThread]: End processing [django-tbase-post-product]: success
+[2024-05-12 09:23:59] INFO root fetch - processPackages [arikaim-service-server]: Remove: archive file [/home/abi/fetcher/tmp/arikaim_service_server-0.5.4.tar.gz]
+[2024-05-12 09:23:59] INFO root fetch - processPackages [arikaim-service-server]: Remove: archive file [/home/abi/fetcher/tmp/arikaim_service_server-0.5.5.tar.gz]
+[2024-05-12 09:23:59] INFO root fetch - main [MainThread]: End processing [arikaim-service-server]: success
+[2024-05-12 09:23:59] INFO root fetch - main [MainThread]: Store serial: [23167813]
