@@ -8511,3 +8511,24 @@
 [2024-05-12 12:29:51] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.4.5.tar.gz]
 [2024-05-12 12:29:51] INFO root fetch - main [MainThread]: End processing [phidata]: success
 [2024-05-12 12:29:51] INFO root fetch - main [MainThread]: Store serial: [23169022]
+[2024-05-12 12:31:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169022]
+[2024-05-12 12:31:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 12:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pythainlp
+[2024-05-12 12:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: txt2ebook
+[2024-05-12 12:32:00] INFO root fetch - processPackages [pythainlp]: New version: [5.0.3] Old Version: [5.0.2]
+[2024-05-12 12:32:00] INFO root fetch - processPackages [txt2ebook]: New version: [0.1.9] Old Version: [0.1.87]
+[2024-05-12 12:32:00] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/78/2c/29cb0312f08e73f00ac174cf75c812937a39871b73b28664f5c87a281786/txt2ebook-0.1.87.tar.gz
+[2024-05-12 12:32:00] INFO root fetch - processPackages [pythainlp]: Downloading https://files.pythonhosted.org/packages/44/61/027a8158ba5bf7ffb947308d3b554ab50f61c605c91fc52560a769f660c1/pythainlp-5.0.2.tar.gz
+[2024-05-12 12:32:00] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/2a/b8/8ad395f87b8f7685da9b3f389de9870183f09446c9f0624dfed431e3b9b8/txt2ebook-0.1.9.tar.gz
+[2024-05-12 12:32:00] INFO root fetch - processPackages [pythainlp]: Downloading https://files.pythonhosted.org/packages/8d/5a/84d4bd52375ff4a544344c21cdc3e3b6684d73914f1cf014e40881710b1e/pythainlp-5.0.3.tar.gz
+[2024-05-12 12:32:00] INFO root fetch - processPackages [txt2ebook]: executing diffoscope
+[2024-05-12 12:32:00] INFO root fetch - processPackages [txt2ebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txt2ebook-0.1.87.tar.gz tmp/txt2ebook-0.1.9.tar.gz --markdown 20240512/t/txt2ebook/0.1.87-0.1.9/README.md --exclude *.pyd
+[2024-05-12 12:32:00] INFO root fetch - processPackages [pythainlp]: executing diffoscope
+[2024-05-12 12:32:00] INFO root fetch - processPackages [pythainlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythainlp-5.0.2.tar.gz tmp/pythainlp-5.0.3.tar.gz --markdown 20240512/p/pythainlp/5.0.2-5.0.3/README.md --exclude *.pyd
+[2024-05-12 12:32:01] INFO root fetch - processPackages [txt2ebook]: Remove: archive file [/home/abi/fetcher/tmp/txt2ebook-0.1.87.tar.gz]
+[2024-05-12 12:32:01] INFO root fetch - processPackages [txt2ebook]: Remove: archive file [/home/abi/fetcher/tmp/txt2ebook-0.1.9.tar.gz]
+[2024-05-12 12:32:01] INFO root fetch - main [MainThread]: End processing [txt2ebook]: success
+[2024-05-12 12:32:01] INFO root fetch - processPackages [pythainlp]: Remove: archive file [/home/abi/fetcher/tmp/pythainlp-5.0.2.tar.gz]
+[2024-05-12 12:32:01] INFO root fetch - processPackages [pythainlp]: Remove: archive file [/home/abi/fetcher/tmp/pythainlp-5.0.3.tar.gz]
+[2024-05-12 12:32:01] INFO root fetch - main [MainThread]: End processing [pythainlp]: success
+[2024-05-12 12:32:01] INFO root fetch - main [MainThread]: Store serial: [23169028]
