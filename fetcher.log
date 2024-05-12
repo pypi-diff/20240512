@@ -8257,3 +8257,14 @@
 [2024-05-12 12:10:06] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.7.dev9.tar.gz]
 [2024-05-12 12:10:06] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-05-12 12:10:06] INFO root fetch - main [MainThread]: Store serial: [23168862]
+[2024-05-12 12:12:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168862]
+[2024-05-12 12:12:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 12:12:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asm1-influent-generator
+[2024-05-12 12:12:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: turcicz
+[2024-05-12 12:12:15] INFO root fetch - processPackages [asm1-influent-generator]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-12 12:12:15] WARNING root fetch - processPackages [turcicz]: Skipping, unable to determine old version
+[2024-05-12 12:12:15] INFO root fetch - main [MainThread]: End processing [turcicz] error
+[2024-05-12 12:12:15] INFO root fetch - processPackages [asm1-influent-generator]: Downloading https://files.pythonhosted.org/packages/14/14/da0e89ac14de2d935962270ef2e2b9fcaa62eb528e33f4392dfac64378e9/asm1_influent_generator-0.0.5.tar.gz
+[2024-05-12 12:12:15] WARNING root fetch - processPackages [asm1-influent-generator]: Skipping package: exceeds size limit 43485213>=10485760
+[2024-05-12 12:12:15] INFO root fetch - main [MainThread]: End processing [asm1-influent-generator] error
+[2024-05-12 12:12:15] INFO root fetch - main [MainThread]: Store serial: [23168922]
