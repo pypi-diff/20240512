@@ -7504,3 +7504,24 @@
 [2024-05-12 11:17:46] INFO root fetch - processPackages [shipper-shippy]: Remove: archive file [/home/abi/fetcher/tmp/shipper_shippy-2.37.1.tar.gz]
 [2024-05-12 11:17:46] INFO root fetch - main [MainThread]: End processing [shipper-shippy]: success
 [2024-05-12 11:17:46] INFO root fetch - main [MainThread]: Store serial: [23168423]
+[2024-05-12 11:19:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168423]
+[2024-05-12 11:19:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 11:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Glances
+[2024-05-12 11:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gitreporter
+[2024-05-12 11:19:55] INFO root fetch - processPackages [gitreporter]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-12 11:19:55] INFO root fetch - processPackages [Glances]: New version: [4.0.0] Old Version: [3.4.0.5]
+[2024-05-12 11:19:55] INFO root fetch - processPackages [Glances]: Downloading https://files.pythonhosted.org/packages/2d/5c/628323ef58132b4a093e7182bbb5c5c3063fbd598873f31024b58448be73/Glances-3.4.0.5.tar.gz
+[2024-05-12 11:19:55] INFO root fetch - processPackages [gitreporter]: Downloading https://files.pythonhosted.org/packages/89/a4/09bc3cf0aed3b9f02e71e3e2d88f1815d346db0cbb41989d8c78e63a3601/gitreporter-0.2.5.tar.gz
+[2024-05-12 11:19:55] INFO root fetch - processPackages [gitreporter]: Downloading https://files.pythonhosted.org/packages/cf/a7/01a17bd54d4a29ee4c7cf3a95f7bc35815f65acb1fb7efae40d96a78add5/gitreporter-0.2.6.tar.gz
+[2024-05-12 11:19:55] INFO root fetch - processPackages [gitreporter]: executing diffoscope
+[2024-05-12 11:19:55] INFO root fetch - processPackages [gitreporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitreporter-0.2.5.tar.gz tmp/gitreporter-0.2.6.tar.gz --markdown 20240512/g/gitreporter/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-12 11:19:56] INFO root fetch - processPackages [Glances]: Downloading https://files.pythonhosted.org/packages/04/3a/555afb44b84f770b9a270aa8cb8d9b13a79b826d8f53f297103dc0be6f62/glances-4.0.0.tar.gz
+[2024-05-12 11:19:56] INFO root fetch - processPackages [Glances]: executing diffoscope
+[2024-05-12 11:19:56] INFO root fetch - processPackages [Glances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Glances-3.4.0.5.tar.gz tmp/glances-4.0.0.tar.gz --markdown 20240512/G/Glances/3.4.0.5-4.0.0/README.md --exclude *.pyd
+[2024-05-12 11:19:56] INFO root fetch - processPackages [gitreporter]: Remove: archive file [/home/abi/fetcher/tmp/gitreporter-0.2.5.tar.gz]
+[2024-05-12 11:19:56] INFO root fetch - processPackages [gitreporter]: Remove: archive file [/home/abi/fetcher/tmp/gitreporter-0.2.6.tar.gz]
+[2024-05-12 11:19:56] INFO root fetch - main [MainThread]: End processing [gitreporter]: success
+[2024-05-12 11:20:03] INFO root fetch - processPackages [Glances]: Remove: archive file [/home/abi/fetcher/tmp/Glances-3.4.0.5.tar.gz]
+[2024-05-12 11:20:03] INFO root fetch - processPackages [Glances]: Remove: archive file [/home/abi/fetcher/tmp/glances-4.0.0.tar.gz]
+[2024-05-12 11:20:03] INFO root fetch - main [MainThread]: End processing [Glances]: success
+[2024-05-12 11:20:03] INFO root fetch - main [MainThread]: Store serial: [23168429]
