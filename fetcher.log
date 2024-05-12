@@ -2045,3 +2045,18 @@
 [2024-05-12 02:58:30] INFO root fetch - processPackages [tossnturn]: Remove: archive file [/home/abi/fetcher/tmp/tossnturn-0.1.2.tar.gz]
 [2024-05-12 02:58:30] INFO root fetch - main [MainThread]: End processing [tossnturn]: success
 [2024-05-12 02:58:30] INFO root fetch - main [MainThread]: Store serial: [23165885]
+[2024-05-12 03:00:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165885]
+[2024-05-12 03:00:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 03:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unconglutinatedz
+[2024-05-12 03:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bantam
+[2024-05-12 03:00:39] WARNING root fetch - processPackages [unconglutinatedz]: Skipping, unable to determine old version
+[2024-05-12 03:00:39] INFO root fetch - main [MainThread]: End processing [unconglutinatedz] error
+[2024-05-12 03:00:39] INFO root fetch - processPackages [bantam]: New version: [2.4.9] Old Version: [2.4.8]
+[2024-05-12 03:00:39] INFO root fetch - processPackages [bantam]: Downloading https://files.pythonhosted.org/packages/ff/c5/e83dfc5a3b00cbdcc83f7d76c63d2fb48e71947732e1e7f1346a5e84e650/bantam-2.4.8.tar.gz
+[2024-05-12 03:00:39] INFO root fetch - processPackages [bantam]: Downloading https://files.pythonhosted.org/packages/a4/e3/f6ae76173a8082d3121ab1ab91c821358649a8018eece5de89b7467d06ae/bantam-2.4.9.tar.gz
+[2024-05-12 03:00:40] INFO root fetch - processPackages [bantam]: executing diffoscope
+[2024-05-12 03:00:40] INFO root fetch - processPackages [bantam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bantam-2.4.8.tar.gz tmp/bantam-2.4.9.tar.gz --markdown 20240512/b/bantam/2.4.8-2.4.9/README.md --exclude *.pyd
+[2024-05-12 03:00:40] INFO root fetch - processPackages [bantam]: Remove: archive file [/home/abi/fetcher/tmp/bantam-2.4.8.tar.gz]
+[2024-05-12 03:00:40] INFO root fetch - processPackages [bantam]: Remove: archive file [/home/abi/fetcher/tmp/bantam-2.4.9.tar.gz]
+[2024-05-12 03:00:40] INFO root fetch - main [MainThread]: End processing [bantam]: success
+[2024-05-12 03:00:40] INFO root fetch - main [MainThread]: Store serial: [23165894]
