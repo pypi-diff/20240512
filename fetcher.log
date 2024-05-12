@@ -6605,3 +6605,21 @@
 [2024-05-12 09:58:24] INFO root fetch - processPackages [flowchart-explorer]: Remove: archive file [/home/abi/fetcher/tmp/flowchart_explorer-0.1.2.tar.gz]
 [2024-05-12 09:58:24] INFO root fetch - main [MainThread]: End processing [flowchart-explorer]: success
 [2024-05-12 09:58:24] INFO root fetch - main [MainThread]: Store serial: [23167944]
+[2024-05-12 10:00:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167944]
+[2024-05-12 10:00:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 10:00:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: objectbox
+[2024-05-12 10:00:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reprosz
+[2024-05-12 10:00:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dooyo
+[2024-05-12 10:00:32] INFO root fetch - processPackages [objectbox]: New version: [0.7.0a9] Old Version: [0.7.0a8]
+[2024-05-12 10:00:32] WARNING root fetch - processPackages [dooyo]: Skipping, unable to determine old version
+[2024-05-12 10:00:32] INFO root fetch - main [MainThread]: End processing [dooyo] error
+[2024-05-12 10:00:32] WARNING root fetch - processPackages [reprosz]: Skipping, unable to determine old version
+[2024-05-12 10:00:32] INFO root fetch - main [MainThread]: End processing [reprosz] error
+[2024-05-12 10:00:32] INFO root fetch - processPackages [objectbox]: Downloading https://files.pythonhosted.org/packages/cc/ba/44e8ce980ec0a88c80e70492fdf005fe438e7ad5d861fa6a1b4a6875fd8a/objectbox-0.7.0a8-py3-none-any.whl
+[2024-05-12 10:00:33] INFO root fetch - processPackages [objectbox]: Downloading https://files.pythonhosted.org/packages/c3/61/0aa9d0116287743c7d3ed3dcd0cecddd576b2c27bc58cd72ac9e9513a8be/objectbox-0.7.0a9-py3-none-any.whl
+[2024-05-12 10:00:33] INFO root fetch - processPackages [objectbox]: executing diffoscope
+[2024-05-12 10:00:33] INFO root fetch - processPackages [objectbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/objectbox-0.7.0a8-py3-none-any.whl.zip tmp/objectbox-0.7.0a9-py3-none-any.whl.zip --markdown 20240512/o/objectbox/0.7.0a8-0.7.0a9/README.md --exclude *.pyd
+[2024-05-12 10:01:17] INFO root fetch - processPackages [objectbox]: Remove: archive file [/home/abi/fetcher/tmp/objectbox-0.7.0a8-py3-none-any.whl.zip]
+[2024-05-12 10:01:17] INFO root fetch - processPackages [objectbox]: Remove: archive file [/home/abi/fetcher/tmp/objectbox-0.7.0a9-py3-none-any.whl.zip]
+[2024-05-12 10:01:17] INFO root fetch - main [MainThread]: End processing [objectbox]: success
+[2024-05-12 10:01:17] INFO root fetch - main [MainThread]: Store serial: [23167955]
