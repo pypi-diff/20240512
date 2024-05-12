@@ -4875,3 +4875,27 @@
 [2024-05-12 07:32:52] INFO root fetch - processPackages [odoo-addon-partner-manual-rank]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_partner_manual_rank-17.0.1.0.0.2-py3-none-any.whl.zip]
 [2024-05-12 07:32:52] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-manual-rank]: success
 [2024-05-12 07:32:52] INFO root fetch - main [MainThread]: Store serial: [23167257]
+[2024-05-12 07:34:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167257]
+[2024-05-12 07:35:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 07:35:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-pms
+[2024-05-12 07:35:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-easy-schedule
+[2024-05-12 07:35:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addons-oca-pms
+[2024-05-12 07:35:00] WARNING root fetch - processPackages [django-easy-schedule]: Skipping, unable to determine old version
+[2024-05-12 07:35:00] INFO root fetch - main [MainThread]: End processing [django-easy-schedule] error
+[2024-05-12 07:35:01] INFO root fetch - processPackages [odoo14-addons-oca-pms]: New version: [14.0.20240510.0] Old Version: [14.0.20231127.0]
+[2024-05-12 07:35:01] INFO root fetch - processPackages [odoo14-addon-pms]: New version: [14.0.2.9.0] Old Version: [14.0.2.8.0]
+[2024-05-12 07:35:01] INFO root fetch - processPackages [odoo14-addons-oca-pms]: Downloading https://files.pythonhosted.org/packages/62/9b/ff42ecaf19c8a9bc9767efa0067c2a031283ea8997cad83f9cdc3953a01a/odoo14_addons_oca_pms-14.0.20231127.0-py3-none-any.whl
+[2024-05-12 07:35:01] INFO root fetch - processPackages [odoo14-addon-pms]: Downloading https://files.pythonhosted.org/packages/35/dd/9ca9ec4be1214b080d690d035081114d6c68515ac18307d8cb5edc8c7664/odoo14_addon_pms-14.0.2.8.0-py3-none-any.whl
+[2024-05-12 07:35:01] INFO root fetch - processPackages [odoo14-addon-pms]: Downloading https://files.pythonhosted.org/packages/6b/d2/872d4271026f02e164cdf6773633ee7c39723165f305fdf11e37a2224677/odoo14_addon_pms-14.0.2.9.0-py3-none-any.whl
+[2024-05-12 07:35:01] INFO root fetch - processPackages [odoo14-addons-oca-pms]: Downloading https://files.pythonhosted.org/packages/33/4b/4deeff8c857b436065600104b3ef482d2115b57bca1a774fc20250feff29/odoo14_addons_oca_pms-14.0.20240510.0-py3-none-any.whl
+[2024-05-12 07:35:01] INFO root fetch - processPackages [odoo14-addons-oca-pms]: executing diffoscope
+[2024-05-12 07:35:01] INFO root fetch - processPackages [odoo14-addons-oca-pms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_pms-14.0.20231127.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_pms-14.0.20240510.0-py3-none-any.whl.zip --markdown 20240512/o/odoo14-addons-oca-pms/14.0.20231127.0-14.0.20240510.0/README.md --exclude *.pyd
+[2024-05-12 07:35:01] INFO root fetch - processPackages [odoo14-addon-pms]: executing diffoscope
+[2024-05-12 07:35:01] INFO root fetch - processPackages [odoo14-addon-pms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_pms-14.0.2.8.0-py3-none-any.whl.zip tmp/odoo14_addon_pms-14.0.2.9.0-py3-none-any.whl.zip --markdown 20240512/o/odoo14-addon-pms/14.0.2.8.0-14.0.2.9.0/README.md --exclude *.pyd
+[2024-05-12 07:35:02] INFO root fetch - processPackages [odoo14-addons-oca-pms]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_pms-14.0.20231127.0-py3-none-any.whl.zip]
+[2024-05-12 07:35:02] INFO root fetch - processPackages [odoo14-addons-oca-pms]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_pms-14.0.20240510.0-py3-none-any.whl.zip]
+[2024-05-12 07:35:02] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-pms]: success
+[2024-05-12 07:35:02] INFO root fetch - processPackages [odoo14-addon-pms]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_pms-14.0.2.8.0-py3-none-any.whl.zip]
+[2024-05-12 07:35:02] INFO root fetch - processPackages [odoo14-addon-pms]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_pms-14.0.2.9.0-py3-none-any.whl.zip]
+[2024-05-12 07:35:02] INFO root fetch - main [MainThread]: End processing [odoo14-addon-pms]: success
+[2024-05-12 07:35:02] INFO root fetch - main [MainThread]: Store serial: [23167265]
