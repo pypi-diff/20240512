@@ -2365,3 +2365,27 @@
 [2024-05-12 03:32:03] INFO root fetch - processPackages [swampyer]: Remove: archive file [/home/abi/fetcher/tmp/swampyer-3.0.20240511.tar.gz]
 [2024-05-12 03:32:03] INFO root fetch - main [MainThread]: End processing [swampyer]: success
 [2024-05-12 03:32:03] INFO root fetch - main [MainThread]: Store serial: [23166018]
+[2024-05-12 03:34:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166018]
+[2024-05-12 03:34:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 03:34:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: d2py
+[2024-05-12 03:34:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ikvpy
+[2024-05-12 03:34:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Sherlock-testABCYUEGUGHRIUHGU
+[2024-05-12 03:34:11] INFO root fetch - processPackages [ikvpy]: New version: [0.0.27] Old Version: [0.0.23]
+[2024-05-12 03:34:11] ERROR root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Unable to get metadata: No such project 'Sherlock-testABCYUEGUGHRIUHGU'
+[2024-05-12 03:34:11] INFO root fetch - main [MainThread]: End processing [Sherlock-testABCYUEGUGHRIUHGU] error
+[2024-05-12 03:34:11] INFO root fetch - processPackages [d2py]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-12 03:34:12] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/ce/9e/3de97a6fb21342039e0cdf5d50fd4908fcc4d9487a0a1e595c1f9d309675/ikvpy-0.0.23.tar.gz
+[2024-05-12 03:34:12] INFO root fetch - processPackages [d2py]: Downloading https://files.pythonhosted.org/packages/f3/81/c7b033bb503b49f1442a9d6bc3cc4af7e302daee072a977fc636be6a2283/d2py-0.5.8.tar.gz
+[2024-05-12 03:34:12] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/0e/3f/8f827fdc52b976f639411e9f7bd10346b44a94998fbdc9ab1ef29fe7be7c/ikvpy-0.0.27.tar.gz
+[2024-05-12 03:34:12] INFO root fetch - processPackages [d2py]: Downloading https://files.pythonhosted.org/packages/14/fc/cda0961877e36a22db31604df3f11ef36673afbb52c146d16d9f36c4d816/d2py-0.5.9.tar.gz
+[2024-05-12 03:34:12] INFO root fetch - processPackages [d2py]: executing diffoscope
+[2024-05-12 03:34:12] INFO root fetch - processPackages [d2py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d2py-0.5.8.tar.gz tmp/d2py-0.5.9.tar.gz --markdown 20240512/d/d2py/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-12 03:34:12] INFO root fetch - processPackages [ikvpy]: executing diffoscope
+[2024-05-12 03:34:12] INFO root fetch - processPackages [ikvpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ikvpy-0.0.23.tar.gz tmp/ikvpy-0.0.27.tar.gz --markdown 20240512/i/ikvpy/0.0.23-0.0.27/README.md --exclude *.pyd
+[2024-05-12 03:34:13] INFO root fetch - processPackages [d2py]: Remove: archive file [/home/abi/fetcher/tmp/d2py-0.5.8.tar.gz]
+[2024-05-12 03:34:13] INFO root fetch - processPackages [d2py]: Remove: archive file [/home/abi/fetcher/tmp/d2py-0.5.9.tar.gz]
+[2024-05-12 03:34:13] INFO root fetch - main [MainThread]: End processing [d2py]: success
+[2024-05-12 03:34:13] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.23.tar.gz]
+[2024-05-12 03:34:13] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.27.tar.gz]
+[2024-05-12 03:34:13] INFO root fetch - main [MainThread]: End processing [ikvpy]: success
+[2024-05-12 03:34:13] INFO root fetch - main [MainThread]: Store serial: [23166041]
