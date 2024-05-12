@@ -10437,3 +10437,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:49:45] INFO root fetch - processPackages [nodejs-wheel-binaries]: Remove: archive file [/home/abi/fetcher/tmp/nodejs_wheel_binaries-20.13.1.tar.gz]
 [2024-05-12 14:49:45] INFO root fetch - main [MainThread]: End processing [nodejs-wheel-binaries]: success
 [2024-05-12 14:49:45] INFO root fetch - main [MainThread]: Store serial: [23169949]
+[2024-05-12 14:51:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169949]
+[2024-05-12 14:51:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 14:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aahedz
+[2024-05-12 14:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CTG-Utils
+[2024-05-12 14:51:53] INFO root fetch - processPackages [CTG-Utils]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-12 14:51:53] WARNING root fetch - processPackages [aahedz]: Skipping, unable to determine old version
+[2024-05-12 14:51:53] INFO root fetch - main [MainThread]: End processing [aahedz] error
+[2024-05-12 14:51:53] INFO root fetch - processPackages [CTG-Utils]: Downloading https://files.pythonhosted.org/packages/0f/2b/9c7917b9ad6cd0498d1bbfdb243599b6276053b8c3b50e88ee16dca06723/CTG_Utils-1.1.0.tar.gz
+[2024-05-12 14:51:54] INFO root fetch - processPackages [CTG-Utils]: Downloading https://files.pythonhosted.org/packages/ce/ee/1e857c735be5dace63b7067a41b87f9cdc34350d067b8a076ba9887bb13a/CTG_Utils-1.1.1.tar.gz
+[2024-05-12 14:51:54] INFO root fetch - processPackages [CTG-Utils]: executing diffoscope
+[2024-05-12 14:51:54] INFO root fetch - processPackages [CTG-Utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTG_Utils-1.1.0.tar.gz tmp/CTG_Utils-1.1.1.tar.gz --markdown 20240512/C/CTG-Utils/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-12 14:51:55] INFO root fetch - processPackages [CTG-Utils]: Remove: archive file [/home/abi/fetcher/tmp/CTG_Utils-1.1.0.tar.gz]
+[2024-05-12 14:51:55] INFO root fetch - processPackages [CTG-Utils]: Remove: archive file [/home/abi/fetcher/tmp/CTG_Utils-1.1.1.tar.gz]
+[2024-05-12 14:51:55] INFO root fetch - main [MainThread]: End processing [CTG-Utils]: success
+[2024-05-12 14:51:55] INFO root fetch - main [MainThread]: Store serial: [23169956]
