@@ -18060,3 +18060,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:21:07] INFO root fetch - processPackages [nef-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/nef_pipelines-0.1.66.tar.gz]
 [2024-05-12 23:21:07] INFO root fetch - main [MainThread]: End processing [nef-pipelines]: success
 [2024-05-12 23:21:07] INFO root fetch - main [MainThread]: Store serial: [23173931]
+[2024-05-12 23:23:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173931]
+[2024-05-12 23:23:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 23:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlpr
+[2024-05-12 23:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cloudflare-gateway-adblocking
+[2024-05-12 23:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrainbird
+[2024-05-12 23:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: baldpatedz
+[2024-05-12 23:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyRepka
+[2024-05-12 23:23:16] INFO root fetch - processPackages [mlpr]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 23:23:16] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/73/3a/39153727c1ce2f4aa9d8d804e48fc7942f19f53dac796571b94f0121a129/mlpr-0.1.8.tar.gz
+[2024-05-12 23:23:16] WARNING root fetch - processPackages [baldpatedz]: Skipping, unable to determine old version
+[2024-05-12 23:23:16] INFO root fetch - main [MainThread]: End processing [baldpatedz] error
+[2024-05-12 23:23:16] WARNING root fetch - processPackages [pyRepka]: Skipping, unable to determine old version
+[2024-05-12 23:23:16] INFO root fetch - main [MainThread]: End processing [pyRepka] error
+[2024-05-12 23:23:16] INFO root fetch - processPackages [cloudflare-gateway-adblocking]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-12 23:23:16] INFO root fetch - processPackages [pyrainbird]: New version: [6.0.2] Old Version: [6.0.1]
+[2024-05-12 23:23:17] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/fc/c0/71f4eab477564c23412fe136584c09b6f94ce4a147fcdc8ac880eef388a2/mlpr-0.1.9.tar.gz
+[2024-05-12 23:23:17] INFO root fetch - processPackages [pyrainbird]: Downloading https://files.pythonhosted.org/packages/e9/ab/683ae9b1786b6257ff57feb9cd93abb37b75eab2446d07f58283d3e1c364/pyrainbird-6.0.1.tar.gz
+[2024-05-12 23:23:17] INFO root fetch - processPackages [cloudflare-gateway-adblocking]: Downloading https://files.pythonhosted.org/packages/d7/a0/bbf74ba822d35266c6984417a5e79bbfd4d30d3cae06e9afe6d9fffc4ed4/cloudflare_gateway_adblocking-0.1.3.tar.gz
+[2024-05-12 23:23:17] INFO root fetch - processPackages [mlpr]: executing diffoscope
+[2024-05-12 23:23:17] INFO root fetch - processPackages [mlpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpr-0.1.8.tar.gz tmp/mlpr-0.1.9.tar.gz --markdown 20240512/m/mlpr/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 23:23:17] INFO root fetch - processPackages [pyrainbird]: Downloading https://files.pythonhosted.org/packages/e3/c6/162a04b3f8746845f44ff236ca886db23c08f515c30c81f30e9fedda1b2c/pyrainbird-6.0.2.tar.gz
+[2024-05-12 23:23:17] INFO root fetch - processPackages [cloudflare-gateway-adblocking]: Downloading https://files.pythonhosted.org/packages/ad/ab/afb97fea3e654ff3af79b6ba85c6a3281c508503f9b413e2281d9e4cd1b2/cloudflare_gateway_adblocking-0.1.4.tar.gz
+[2024-05-12 23:23:17] INFO root fetch - processPackages [pyrainbird]: executing diffoscope
+[2024-05-12 23:23:17] INFO root fetch - processPackages [pyrainbird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrainbird-6.0.1.tar.gz tmp/pyrainbird-6.0.2.tar.gz --markdown 20240512/p/pyrainbird/6.0.1-6.0.2/README.md --exclude *.pyd
+[2024-05-12 23:23:17] INFO root fetch - processPackages [cloudflare-gateway-adblocking]: executing diffoscope
+[2024-05-12 23:23:17] INFO root fetch - processPackages [cloudflare-gateway-adblocking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudflare_gateway_adblocking-0.1.3.tar.gz tmp/cloudflare_gateway_adblocking-0.1.4.tar.gz --markdown 20240512/c/cloudflare-gateway-adblocking/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-12 23:23:17] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.8.tar.gz]
+[2024-05-12 23:23:17] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.9.tar.gz]
+[2024-05-12 23:23:17] INFO root fetch - main [MainThread]: End processing [mlpr]: success
+[2024-05-12 23:23:18] INFO root fetch - processPackages [cloudflare-gateway-adblocking]: Remove: archive file [/home/abi/fetcher/tmp/cloudflare_gateway_adblocking-0.1.3.tar.gz]
+[2024-05-12 23:23:18] INFO root fetch - processPackages [cloudflare-gateway-adblocking]: Remove: archive file [/home/abi/fetcher/tmp/cloudflare_gateway_adblocking-0.1.4.tar.gz]
+[2024-05-12 23:23:18] INFO root fetch - main [MainThread]: End processing [cloudflare-gateway-adblocking]: success
+[2024-05-12 23:23:18] INFO root fetch - processPackages [pyrainbird]: Remove: archive file [/home/abi/fetcher/tmp/pyrainbird-6.0.1.tar.gz]
+[2024-05-12 23:23:18] INFO root fetch - processPackages [pyrainbird]: Remove: archive file [/home/abi/fetcher/tmp/pyrainbird-6.0.2.tar.gz]
+[2024-05-12 23:23:18] INFO root fetch - main [MainThread]: End processing [pyrainbird]: success
+[2024-05-12 23:23:18] INFO root fetch - main [MainThread]: Store serial: [23173949]
