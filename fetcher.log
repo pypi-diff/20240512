@@ -4070,3 +4070,36 @@
 [2024-05-12 05:56:44] INFO root fetch - processPackages [odoo-addon-event-session]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_event_session-16.0.1.2.0.3-py3-none-any.whl.zip]
 [2024-05-12 05:56:44] INFO root fetch - main [MainThread]: End processing [odoo-addon-event-session]: success
 [2024-05-12 05:56:44] INFO root fetch - main [MainThread]: Store serial: [23166857]
+[2024-05-12 05:58:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166857]
+[2024-05-12 05:58:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 05:58:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addons-oca-field-service
+[2024-05-12 05:58:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Bigsansar
+[2024-05-12 05:58:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-field-service
+[2024-05-12 05:58:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: muggsz
+[2024-05-12 05:58:52] INFO root fetch - processPackages [Bigsansar]: New version: [2.6.1] Old Version: [2.6.0]
+[2024-05-12 05:58:52] INFO root fetch - processPackages [odoo-addons-oca-field-service]: New version: [16.0.20240511.0] Old Version: [16.0.20240416.0]
+[2024-05-12 05:58:52] INFO root fetch - processPackages [odoo14-addons-oca-field-service]: New version: [14.0.20240510.0] Old Version: [14.0.20240424.0]
+[2024-05-12 05:58:52] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/d1/4c/bc1da1edb60800eeff2980acdaf2eccbc04fa4aa7afbaaf8f447394ad787/bigsansar-2.6.0.tar.gz
+[2024-05-12 05:58:53] WARNING root fetch - processPackages [muggsz]: Skipping, unable to determine old version
+[2024-05-12 05:58:53] INFO root fetch - main [MainThread]: End processing [muggsz] error
+[2024-05-12 05:58:53] INFO root fetch - processPackages [odoo14-addons-oca-field-service]: Downloading https://files.pythonhosted.org/packages/9d/78/4595459930d9c53351741dc90bb440fa3e62d4c189bbb9ce0ca18c72542b/odoo14_addons_oca_field_service-14.0.20240424.0-py3-none-any.whl
+[2024-05-12 05:58:53] INFO root fetch - processPackages [odoo-addons-oca-field-service]: Downloading https://files.pythonhosted.org/packages/35/13/a734531adea6d108b642382c2be8c803d644ba58a87da4de50257f290e39/odoo_addons_oca_field_service-16.0.20240416.0-py3-none-any.whl
+[2024-05-12 05:58:53] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/ba/ae/0e635c7599dc6787223270ef69acccaefd6ca7bf539f5ac425a73ad8ddc2/bigsansar-2.6.1.tar.gz
+[2024-05-12 05:58:53] INFO root fetch - processPackages [odoo14-addons-oca-field-service]: Downloading https://files.pythonhosted.org/packages/d1/07/ee00bfe262c4101bbeeeabe0342bcff9a4b26fdd4fbdaeaf278c23e15007/odoo14_addons_oca_field_service-14.0.20240510.0-py3-none-any.whl
+[2024-05-12 05:58:53] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2024-05-12 05:58:53] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigsansar-2.6.0.tar.gz tmp/bigsansar-2.6.1.tar.gz --markdown 20240512/B/Bigsansar/2.6.0-2.6.1/README.md --exclude *.pyd
+[2024-05-12 05:58:53] INFO root fetch - processPackages [odoo-addons-oca-field-service]: Downloading https://files.pythonhosted.org/packages/da/0a/676f4250a2bd7007495dda51726e3f025f2fcf86788cf6629c7e48a79792/odoo_addons_oca_field_service-16.0.20240511.0-py3-none-any.whl
+[2024-05-12 05:58:53] INFO root fetch - processPackages [odoo14-addons-oca-field-service]: executing diffoscope
+[2024-05-12 05:58:53] INFO root fetch - processPackages [odoo14-addons-oca-field-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_field_service-14.0.20240424.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_field_service-14.0.20240510.0-py3-none-any.whl.zip --markdown 20240512/o/odoo14-addons-oca-field-service/14.0.20240424.0-14.0.20240510.0/README.md --exclude *.pyd
+[2024-05-12 05:58:53] INFO root fetch - processPackages [odoo-addons-oca-field-service]: executing diffoscope
+[2024-05-12 05:58:53] INFO root fetch - processPackages [odoo-addons-oca-field-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_field_service-16.0.20240416.0-py3-none-any.whl.zip tmp/odoo_addons_oca_field_service-16.0.20240511.0-py3-none-any.whl.zip --markdown 20240512/o/odoo-addons-oca-field-service/16.0.20240416.0-16.0.20240511.0/README.md --exclude *.pyd
+[2024-05-12 05:58:54] INFO root fetch - processPackages [odoo14-addons-oca-field-service]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_field_service-14.0.20240424.0-py3-none-any.whl.zip]
+[2024-05-12 05:58:54] INFO root fetch - processPackages [odoo14-addons-oca-field-service]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_field_service-14.0.20240510.0-py3-none-any.whl.zip]
+[2024-05-12 05:58:54] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-field-service]: success
+[2024-05-12 05:58:54] INFO root fetch - processPackages [odoo-addons-oca-field-service]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_field_service-16.0.20240416.0-py3-none-any.whl.zip]
+[2024-05-12 05:58:54] INFO root fetch - processPackages [odoo-addons-oca-field-service]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_field_service-16.0.20240511.0-py3-none-any.whl.zip]
+[2024-05-12 05:58:54] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-field-service]: success
+[2024-05-12 05:58:54] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.6.0.tar.gz]
+[2024-05-12 05:58:54] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.6.1.tar.gz]
+[2024-05-12 05:58:54] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2024-05-12 05:58:54] INFO root fetch - main [MainThread]: Store serial: [23166865]
