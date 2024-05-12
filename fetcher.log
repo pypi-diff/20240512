@@ -1612,3 +1612,56 @@
 [2024-05-12 02:20:41] INFO root fetch - processPackages [accurate-timed-loop]: Remove: archive file [/home/abi/fetcher/tmp/accurate_timed_loop-0.0.17.tar.gz]
 [2024-05-12 02:20:41] INFO root fetch - main [MainThread]: End processing [accurate-timed-loop]: success
 [2024-05-12 02:20:41] INFO root fetch - main [MainThread]: Store serial: [23165589]
+[2024-05-12 02:22:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165589]
+[2024-05-12 02:22:50] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 02:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moji2
+[2024-05-12 02:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-cr-constructs
+[2024-05-12 02:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdklabs.cdk-ethereum-node
+[2024-05-12 02:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-aurora-globaldatabase
+[2024-05-12 02:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kimimaro
+[2024-05-12 02:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: unicorn-binance-websocket-api
+[2024-05-12 02:22:50] INFO root fetch - processPackages [moji2]: New version: [0.4.1] Old Version: [0.3.8]
+[2024-05-12 02:22:50] INFO root fetch - processPackages [cdk-cr-constructs]: New version: [2.1.452] Old Version: [2.1.451]
+[2024-05-12 02:22:50] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-12 02:22:50] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-05-12 02:22:50] INFO root fetch - processPackages [moji2]: Downloading https://files.pythonhosted.org/packages/68/0e/2f7dd8540eadd8fcba84ddeb34d3f3590676a772cea268021ffaad564b2d/moji2-0.3.8.tar.gz
+[2024-05-12 02:22:50] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/d8/1a/417af84315b2d52f6063ccf2072677259777d28fb73cab91e17879faaa26/cdklabs.cdk-ethereum-node-0.0.98.tar.gz
+[2024-05-12 02:22:50] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-05-12 02:22:50] INFO root fetch - processPackages [kimimaro]: New version: [3.7.0] Old Version: [3.6.0]
+[2024-05-12 02:22:50] INFO root fetch - processPackages [cdk-cr-constructs]: Downloading https://files.pythonhosted.org/packages/f3/e6/44e604cc8d439dad37acbd77ca15280d50fecc5f93c8851247f8ab14dfcd/cdk-cr-constructs-2.1.451.tar.gz
+[2024-05-12 02:22:50] INFO root fetch - processPackages [unicorn-binance-websocket-api]: New version: [2.7.0] Old Version: [2.6.0]
+[2024-05-12 02:22:50] WARNING root fetch - processPackages [cdk-cr-constructs]: Skipping package: exceeds size limit 15161083>=10485760
+[2024-05-12 02:22:50] INFO root fetch - main [MainThread]: End processing [cdk-cr-constructs] error
+[2024-05-12 02:22:50] INFO root fetch - processPackages [moji2]: Downloading https://files.pythonhosted.org/packages/6a/19/f50817ebc9497136a4acd19f9b14dd99f04df64672c6ad052147a6d0d948/moji2-0.4.1.tar.gz
+[2024-05-12 02:22:50] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/2d/d8/3fd98f927d9988f7c189f488b1829ac7aa7f855bf93f6030e3bed9af9a97/cdklabs.cdk-ethereum-node-0.0.99.tar.gz
+[2024-05-12 02:22:50] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-05-12 02:22:50] INFO root fetch - processPackages [moji2]: executing diffoscope
+[2024-05-12 02:22:50] INFO root fetch - processPackages [moji2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moji2-0.3.8.tar.gz tmp/moji2-0.4.1.tar.gz --markdown 20240512/m/moji2/0.3.8-0.4.1/README.md --exclude *.pyd
+[2024-05-12 02:22:50] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: executing diffoscope
+[2024-05-12 02:22:50] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz --markdown 20240512/c/cdklabs.cdk-ethereum-node/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-12 02:22:50] INFO root fetch - processPackages [kimimaro]: Downloading https://files.pythonhosted.org/packages/57/0c/4bf27ca65d3e976840b053a8c776c2077e471a77c21ac0aff04b564ae9b2/kimimaro-3.6.0.tar.gz
+[2024-05-12 02:22:50] INFO root fetch - processPackages [unicorn-binance-websocket-api]: Downloading https://files.pythonhosted.org/packages/b5/ed/0706486e9a53d1df34d36565172e48529d9113f59137320b4a402af1d2d1/unicorn_binance_websocket_api-2.6.0.tar.gz
+[2024-05-12 02:22:50] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-05-12 02:22:50] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240512/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/README.md --exclude *.pyd
+[2024-05-12 02:22:51] INFO root fetch - processPackages [kimimaro]: Downloading https://files.pythonhosted.org/packages/e2/dc/3ad78c232f2d4e9155d64087baa280afc674a11698a3bd8bb23b76aa7c68/kimimaro-3.7.0-cp38-cp38-macosx_10_9_x86_64.whl
+[2024-05-12 02:22:51] INFO root fetch - processPackages [unicorn-binance-websocket-api]: Downloading https://files.pythonhosted.org/packages/86/5f/31932d5271f36e50e3cc6c42870bea3e342b87055cda0dcf25c32d1cf131/unicorn_binance_websocket_api-2.7.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-12 02:22:51] INFO root fetch - processPackages [moji2]: Remove: archive file [/home/abi/fetcher/tmp/moji2-0.3.8.tar.gz]
+[2024-05-12 02:22:51] INFO root fetch - processPackages [moji2]: Remove: archive file [/home/abi/fetcher/tmp/moji2-0.4.1.tar.gz]
+[2024-05-12 02:22:51] INFO root fetch - main [MainThread]: End processing [moji2]: success
+[2024-05-12 02:22:51] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz]
+[2024-05-12 02:22:51] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz]
+[2024-05-12 02:22:51] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-ethereum-node]: success
+[2024-05-12 02:22:51] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-05-12 02:22:51] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-05-12 02:22:51] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-05-12 02:22:52] INFO root fetch - processPackages [kimimaro]: executing diffoscope
+[2024-05-12 02:22:52] INFO root fetch - processPackages [kimimaro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kimimaro-3.6.0.tar.gz tmp/kimimaro-3.7.0-cp38-cp38-macosx_10_9_x86_64.whl.zip --markdown 20240512/k/kimimaro/3.6.0-3.7.0/README.md --exclude *.pyd
+[2024-05-12 02:22:52] INFO root fetch - processPackages [kimimaro]: Remove: archive file [/home/abi/fetcher/tmp/kimimaro-3.6.0.tar.gz]
+[2024-05-12 02:22:52] INFO root fetch - processPackages [kimimaro]: Remove: archive file [/home/abi/fetcher/tmp/kimimaro-3.7.0-cp38-cp38-macosx_10_9_x86_64.whl.zip]
+[2024-05-12 02:22:52] INFO root fetch - main [MainThread]: End processing [kimimaro]: success
+[2024-05-12 02:22:55] INFO root fetch - processPackages [unicorn-binance-websocket-api]: executing diffoscope
+[2024-05-12 02:22:55] INFO root fetch - processPackages [unicorn-binance-websocket-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicorn_binance_websocket_api-2.6.0.tar.gz tmp/unicorn_binance_websocket_api-2.7.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240512/u/unicorn-binance-websocket-api/2.6.0-2.7.0/README.md --exclude *.pyd
+[2024-05-12 02:23:03] INFO root fetch - processPackages [unicorn-binance-websocket-api]: Remove: archive file [/home/abi/fetcher/tmp/unicorn_binance_websocket_api-2.6.0.tar.gz]
+[2024-05-12 02:23:03] INFO root fetch - processPackages [unicorn-binance-websocket-api]: Remove: archive file [/home/abi/fetcher/tmp/unicorn_binance_websocket_api-2.7.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-12 02:23:03] INFO root fetch - main [MainThread]: End processing [unicorn-binance-websocket-api]: success
+[2024-05-12 02:23:03] INFO root fetch - main [MainThread]: Store serial: [23165637]
