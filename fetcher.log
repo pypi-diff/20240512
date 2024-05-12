@@ -6501,3 +6501,27 @@
 [2024-05-12 09:43:20] INFO root fetch - processPackages [data-prep-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit-0.0.1.dev2.tar.gz]
 [2024-05-12 09:43:20] INFO root fetch - main [MainThread]: End processing [data-prep-toolkit]: success
 [2024-05-12 09:43:20] INFO root fetch - main [MainThread]: Store serial: [23167902]
+[2024-05-12 09:45:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167902]
+[2024-05-12 09:45:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 09:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: helepolez
+[2024-05-12 09:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vipas
+[2024-05-12 09:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Bigsansar
+[2024-05-12 09:45:28] INFO root fetch - processPackages [vipas]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 09:45:28] INFO root fetch - processPackages [Bigsansar]: New version: [2.6.4] Old Version: [2.6.3]
+[2024-05-12 09:45:28] WARNING root fetch - processPackages [helepolez]: Skipping, unable to determine old version
+[2024-05-12 09:45:28] INFO root fetch - main [MainThread]: End processing [helepolez] error
+[2024-05-12 09:45:28] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/09/f0/ab4d847aa7c70ebd4c419a5f9e647ebf559408d4204dc907faa0437f4e46/bigsansar-2.6.3.tar.gz
+[2024-05-12 09:45:29] INFO root fetch - processPackages [vipas]: Downloading https://files.pythonhosted.org/packages/9b/ff/e71e69986b91e40ca9eee67c9b4824e225ad3dc976bdc7d3311bfcb610e2/vipas-0.0.1.tar.gz
+[2024-05-12 09:45:29] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/a3/b9/eeed7bd65f62142f655cf3ae41a5dbc0b6fc7af48c58642ec3722cbd32e6/bigsansar-2.6.4.tar.gz
+[2024-05-12 09:45:29] INFO root fetch - processPackages [vipas]: Downloading https://files.pythonhosted.org/packages/01/13/cda12e7fdb2e0feaf225ee311b3c4ff0ab61ee8303a179842cc91bfe942b/vipas-0.0.2.tar.gz
+[2024-05-12 09:45:29] INFO root fetch - processPackages [vipas]: executing diffoscope
+[2024-05-12 09:45:29] INFO root fetch - processPackages [vipas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vipas-0.0.1.tar.gz tmp/vipas-0.0.2.tar.gz --markdown 20240512/v/vipas/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-12 09:45:29] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2024-05-12 09:45:29] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigsansar-2.6.3.tar.gz tmp/bigsansar-2.6.4.tar.gz --markdown 20240512/B/Bigsansar/2.6.3-2.6.4/README.md --exclude *.pyd
+[2024-05-12 09:45:30] INFO root fetch - processPackages [vipas]: Remove: archive file [/home/abi/fetcher/tmp/vipas-0.0.1.tar.gz]
+[2024-05-12 09:45:30] INFO root fetch - processPackages [vipas]: Remove: archive file [/home/abi/fetcher/tmp/vipas-0.0.2.tar.gz]
+[2024-05-12 09:45:30] INFO root fetch - main [MainThread]: End processing [vipas]: success
+[2024-05-12 09:45:30] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.6.3.tar.gz]
+[2024-05-12 09:45:30] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.6.4.tar.gz]
+[2024-05-12 09:45:30] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2024-05-12 09:45:30] INFO root fetch - main [MainThread]: Store serial: [23167912]
