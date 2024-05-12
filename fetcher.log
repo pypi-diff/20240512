@@ -4547,3 +4547,18 @@
 [2024-05-12 06:47:19] INFO root fetch - processPackages [slidge]: Remove: archive file [/home/abi/fetcher/tmp/slidge-0.1.1.tar.gz]
 [2024-05-12 06:47:19] INFO root fetch - main [MainThread]: End processing [slidge]: success
 [2024-05-12 06:47:19] INFO root fetch - main [MainThread]: Store serial: [23167069]
+[2024-05-12 06:49:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167069]
+[2024-05-12 06:49:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 06:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GRCwjt
+[2024-05-12 06:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SelfCalibratedConformal
+[2024-05-12 06:49:28] WARNING root fetch - processPackages [GRCwjt]: Skipping, unable to determine old version
+[2024-05-12 06:49:28] INFO root fetch - main [MainThread]: End processing [GRCwjt] error
+[2024-05-12 06:49:28] INFO root fetch - processPackages [SelfCalibratedConformal]: New version: [0.3] Old Version: [0.2]
+[2024-05-12 06:49:28] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/1b/64/bced117813488e0d8131e7fe8c41f446b16c521082804a89a17c924f043f/SelfCalibratedConformal-0.2-py2-none-any.whl
+[2024-05-12 06:49:28] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/50/53/9c01702de7390cd3309328c5f9b26aba5720eea5872e8273c4f5452f6937/SelfCalibratedConformal-0.3.tar.gz
+[2024-05-12 06:49:28] INFO root fetch - processPackages [SelfCalibratedConformal]: executing diffoscope
+[2024-05-12 06:49:28] INFO root fetch - processPackages [SelfCalibratedConformal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SelfCalibratedConformal-0.2-py2-none-any.whl.zip tmp/SelfCalibratedConformal-0.3.tar.gz --markdown 20240512/S/SelfCalibratedConformal/0.2-0.3/README.md --exclude *.pyd
+[2024-05-12 06:49:29] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.2-py2-none-any.whl.zip]
+[2024-05-12 06:49:29] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.3.tar.gz]
+[2024-05-12 06:49:29] INFO root fetch - main [MainThread]: End processing [SelfCalibratedConformal]: success
+[2024-05-12 06:49:29] INFO root fetch - main [MainThread]: Store serial: [23167076]
