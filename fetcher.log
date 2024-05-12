@@ -11158,3 +11158,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:53:38] INFO root fetch - processPackages [leafmap]: Remove: archive file [/home/abi/fetcher/tmp/leafmap-0.9.6.tar.gz]
 [2024-05-12 15:53:38] INFO root fetch - main [MainThread]: End processing [leafmap]: success
 [2024-05-12 15:53:38] INFO root fetch - main [MainThread]: Store serial: [23170304]
+[2024-05-12 15:55:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170304]
+[2024-05-12 15:55:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 15:55:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bibla
+[2024-05-12 15:55:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jelysuubmdatmfir
+[2024-05-12 15:55:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tensordict-nightly
+[2024-05-12 15:55:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: soar-sml
+[2024-05-12 15:55:47] INFO root fetch - processPackages [bibla]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-05-12 15:55:47] INFO root fetch - processPackages [bibla]: Downloading https://files.pythonhosted.org/packages/5b/26/3537434dd646a7d54aa1d5c3b1ce345eef11ba5abbd75f88cdbc541c436e/bibla-2.0.2.tar.gz
+[2024-05-12 15:55:47] WARNING root fetch - processPackages [jelysuubmdatmfir]: Skipping, unable to determine old version
+[2024-05-12 15:55:47] INFO root fetch - main [MainThread]: End processing [jelysuubmdatmfir] error
+[2024-05-12 15:55:47] INFO root fetch - processPackages [soar-sml]: New version: [9.6.2a42] Old Version: [9.6.2a1]
+[2024-05-12 15:55:47] INFO root fetch - processPackages [tensordict-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-12 15:55:47] INFO root fetch - processPackages [soar-sml]: Downloading https://files.pythonhosted.org/packages/6c/ff/fc5e2bf4adcfb014b6e49403f0669a9b3b0755f66bd21512e77264c9c11b/soar_sml-9.6.2a1-cp39-cp39-win_amd64.whl
+[2024-05-12 15:55:47] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/92/36/819c077c6f13e604fee257ce897f68e5860a53e54214b83dce4b4878dff6/tensordict_nightly-2024.5.8-cp39-cp39-win_amd64.whl
+[2024-05-12 15:55:47] INFO root fetch - processPackages [bibla]: Downloading https://files.pythonhosted.org/packages/43/d0/110934df8bd33de0a144e716dd9d394b5686bf8d555203bad4215a6a9b89/bibla-2.0.3.tar.gz
+[2024-05-12 15:55:47] INFO root fetch - processPackages [bibla]: executing diffoscope
+[2024-05-12 15:55:47] INFO root fetch - processPackages [bibla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bibla-2.0.2.tar.gz tmp/bibla-2.0.3.tar.gz --markdown 20240512/b/bibla/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-05-12 15:55:48] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/b9/28/e296d4b168e87aedf19b6cf0d7e65b1474a3da33b8e5314b4a04050bda78/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl
+[2024-05-12 15:55:48] INFO root fetch - processPackages [soar-sml]: Downloading https://files.pythonhosted.org/packages/b5/f6/28b4f6885c66c069fe829a3adf8b81a03ead44e9ca6f2e9bf508dd9cadf9/soar_sml-9.6.2a42-cp39-cp39-win_amd64.whl
+[2024-05-12 15:55:48] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2024-05-12 15:55:48] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip tmp/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20240512/t/tensordict-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-12 15:55:48] INFO root fetch - processPackages [bibla]: Remove: archive file [/home/abi/fetcher/tmp/bibla-2.0.2.tar.gz]
+[2024-05-12 15:55:48] INFO root fetch - processPackages [bibla]: Remove: archive file [/home/abi/fetcher/tmp/bibla-2.0.3.tar.gz]
+[2024-05-12 15:55:48] INFO root fetch - main [MainThread]: End processing [bibla]: success
+[2024-05-12 15:55:48] INFO root fetch - processPackages [soar-sml]: executing diffoscope
+[2024-05-12 15:55:48] INFO root fetch - processPackages [soar-sml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soar_sml-9.6.2a1-cp39-cp39-win_amd64.whl.zip tmp/soar_sml-9.6.2a42-cp39-cp39-win_amd64.whl.zip --markdown 20240512/s/soar-sml/9.6.2a1-9.6.2a42/README.md --exclude *.pyd
+[2024-05-12 15:55:48] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip]
+[2024-05-12 15:55:48] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
+[2024-05-12 15:55:48] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2024-05-12 15:56:00] INFO root fetch - processPackages [soar-sml]: Remove: archive file [/home/abi/fetcher/tmp/soar_sml-9.6.2a1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-12 15:56:00] INFO root fetch - processPackages [soar-sml]: Remove: archive file [/home/abi/fetcher/tmp/soar_sml-9.6.2a42-cp39-cp39-win_amd64.whl.zip]
+[2024-05-12 15:56:00] INFO root fetch - main [MainThread]: End processing [soar-sml]: success
+[2024-05-12 15:56:00] INFO root fetch - main [MainThread]: Store serial: [23170348]
