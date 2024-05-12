@@ -10725,3 +10725,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:18:49] INFO root fetch - processPackages [mdpsolver]: Remove: archive file [/home/abi/fetcher/tmp/mdpsolver-0.9.5.tar.gz]
 [2024-05-12 15:18:49] INFO root fetch - main [MainThread]: End processing [mdpsolver]: success
 [2024-05-12 15:18:49] INFO root fetch - main [MainThread]: Store serial: [23170082]
+[2024-05-12 15:20:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170082]
+[2024-05-12 15:20:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 15:20:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fc-quantization
+[2024-05-12 15:20:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mm-sdk
+[2024-05-12 15:20:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sqlalchemy-tx-context
+[2024-05-12 15:20:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: batchstats
+[2024-05-12 15:20:59] INFO root fetch - processPackages [fc-quantization]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-12 15:20:59] WARNING root fetch - processPackages [batchstats]: Skipping, unable to determine old version
+[2024-05-12 15:20:59] INFO root fetch - main [MainThread]: End processing [batchstats] error
+[2024-05-12 15:20:59] INFO root fetch - processPackages [sqlalchemy-tx-context]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-05-12 15:20:59] INFO root fetch - processPackages [mm-sdk]: New version: [0.1.377] Old Version: [0.1.376]
+[2024-05-12 15:20:59] INFO root fetch - processPackages [fc-quantization]: Downloading https://files.pythonhosted.org/packages/54/49/1964995d6934d6e6aeb894535a94e4e0e0dceb80205a694e08020910292d/fc-quantization-0.0.2.tar.gz
+[2024-05-12 15:20:59] INFO root fetch - processPackages [mm-sdk]: Downloading https://files.pythonhosted.org/packages/b4/a5/c52e441b574c695130e488fa657c8d47369448d777904d74d955bad9169b/mm_sdk-0.1.376.tar.gz
+[2024-05-12 15:20:59] INFO root fetch - processPackages [sqlalchemy-tx-context]: Downloading https://files.pythonhosted.org/packages/58/2b/4206e07b3a6afe25bbc602387a31bd84ed4487688bedf88e7ccf6b22a4b5/sqlalchemy_tx_context-0.2.2.tar.gz
+[2024-05-12 15:20:59] INFO root fetch - processPackages [fc-quantization]: Downloading https://files.pythonhosted.org/packages/9d/2c/99a16ee4f732e1793440157814c008741671c012d5957e308644f06ef5fc/fc-quantization-0.0.3.tar.gz
+[2024-05-12 15:20:59] INFO root fetch - processPackages [fc-quantization]: executing diffoscope
+[2024-05-12 15:20:59] INFO root fetch - processPackages [fc-quantization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fc-quantization-0.0.2.tar.gz tmp/fc-quantization-0.0.3.tar.gz --markdown 20240512/f/fc-quantization/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-12 15:20:59] INFO root fetch - processPackages [mm-sdk]: Downloading https://files.pythonhosted.org/packages/53/c5/19005ba26fb004db1324c5a10878750a58112546bf8338fee709a74bbcd8/mm_sdk-0.1.377.tar.gz
+[2024-05-12 15:20:59] INFO root fetch - processPackages [sqlalchemy-tx-context]: Downloading https://files.pythonhosted.org/packages/57/28/4f166cf9df5974412441ae0918dc40b0fd121bb0b4c406d724d811c3a775/sqlalchemy_tx_context-0.3.0.tar.gz
+[2024-05-12 15:20:59] INFO root fetch - processPackages [sqlalchemy-tx-context]: executing diffoscope
+[2024-05-12 15:20:59] INFO root fetch - processPackages [sqlalchemy-tx-context]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy_tx_context-0.2.2.tar.gz tmp/sqlalchemy_tx_context-0.3.0.tar.gz --markdown 20240512/s/sqlalchemy-tx-context/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-05-12 15:20:59] INFO root fetch - processPackages [mm-sdk]: executing diffoscope
+[2024-05-12 15:20:59] INFO root fetch - processPackages [mm-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mm_sdk-0.1.376.tar.gz tmp/mm_sdk-0.1.377.tar.gz --markdown 20240512/m/mm-sdk/0.1.376-0.1.377/README.md --exclude *.pyd
+[2024-05-12 15:21:00] INFO root fetch - processPackages [fc-quantization]: Remove: archive file [/home/abi/fetcher/tmp/fc-quantization-0.0.2.tar.gz]
+[2024-05-12 15:21:00] INFO root fetch - processPackages [fc-quantization]: Remove: archive file [/home/abi/fetcher/tmp/fc-quantization-0.0.3.tar.gz]
+[2024-05-12 15:21:00] INFO root fetch - main [MainThread]: End processing [fc-quantization]: success
+[2024-05-12 15:21:00] INFO root fetch - processPackages [sqlalchemy-tx-context]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy_tx_context-0.2.2.tar.gz]
+[2024-05-12 15:21:00] INFO root fetch - processPackages [sqlalchemy-tx-context]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy_tx_context-0.3.0.tar.gz]
+[2024-05-12 15:21:00] INFO root fetch - main [MainThread]: End processing [sqlalchemy-tx-context]: success
+[2024-05-12 15:21:00] INFO root fetch - processPackages [mm-sdk]: Remove: archive file [/home/abi/fetcher/tmp/mm_sdk-0.1.376.tar.gz]
+[2024-05-12 15:21:00] INFO root fetch - processPackages [mm-sdk]: Remove: archive file [/home/abi/fetcher/tmp/mm_sdk-0.1.377.tar.gz]
+[2024-05-12 15:21:00] INFO root fetch - main [MainThread]: End processing [mm-sdk]: success
+[2024-05-12 15:21:00] INFO root fetch - main [MainThread]: Store serial: [23170094]
