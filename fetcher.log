@@ -4439,3 +4439,24 @@
 [2024-05-12 06:36:29] INFO root fetch - processPackages [ezside]: Remove: archive file [/home/abi/fetcher/tmp/ezside-0.1.9.tar.gz]
 [2024-05-12 06:36:29] INFO root fetch - main [MainThread]: End processing [ezside]: success
 [2024-05-12 06:36:29] INFO root fetch - main [MainThread]: Store serial: [23167018]
+[2024-05-12 06:38:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167018]
+[2024-05-12 06:38:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 06:38:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OZI
+[2024-05-12 06:38:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: homeharvest
+[2024-05-12 06:38:38] INFO root fetch - processPackages [homeharvest]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-12 06:38:38] INFO root fetch - processPackages [OZI]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-05-12 06:38:38] INFO root fetch - processPackages [homeharvest]: Downloading https://files.pythonhosted.org/packages/ee/35/82f17de156d1492ba0d7f70a81ed3e1f7ab03e7c2ff18bdee5221afa91e5/homeharvest-0.3.8.tar.gz
+[2024-05-12 06:38:39] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/22/c7/3411ff7a034ed78c289a7a1bca34181b7b6890c2934c1d710b82ce3aac58/OZI-1.6.0.tar.gz
+[2024-05-12 06:38:39] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/3a/7b/dadaa1c3b8883bd457d255603a0032ff727391192800616c8471837478ec/OZI-1.6.1.tar.gz
+[2024-05-12 06:38:39] INFO root fetch - processPackages [homeharvest]: Downloading https://files.pythonhosted.org/packages/14/3a/bcc101a19e2e5e446203d0d2bd533ee0645cf7ab9697bb8e9dc45c839790/homeharvest-0.3.9.tar.gz
+[2024-05-12 06:38:39] INFO root fetch - processPackages [homeharvest]: executing diffoscope
+[2024-05-12 06:38:39] INFO root fetch - processPackages [homeharvest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homeharvest-0.3.8.tar.gz tmp/homeharvest-0.3.9.tar.gz --markdown 20240512/h/homeharvest/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-12 06:38:39] INFO root fetch - processPackages [OZI]: executing diffoscope
+[2024-05-12 06:38:39] INFO root fetch - processPackages [OZI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI-1.6.0.tar.gz tmp/OZI-1.6.1.tar.gz --markdown 20240512/O/OZI/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-05-12 06:38:40] INFO root fetch - processPackages [homeharvest]: Remove: archive file [/home/abi/fetcher/tmp/homeharvest-0.3.8.tar.gz]
+[2024-05-12 06:38:40] INFO root fetch - processPackages [homeharvest]: Remove: archive file [/home/abi/fetcher/tmp/homeharvest-0.3.9.tar.gz]
+[2024-05-12 06:38:40] INFO root fetch - main [MainThread]: End processing [homeharvest]: success
+[2024-05-12 06:38:40] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.6.0.tar.gz]
+[2024-05-12 06:38:40] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.6.1.tar.gz]
+[2024-05-12 06:38:40] INFO root fetch - main [MainThread]: End processing [OZI]: success
+[2024-05-12 06:38:40] INFO root fetch - main [MainThread]: Store serial: [23167026]
