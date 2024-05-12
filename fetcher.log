@@ -8110,3 +8110,48 @@
 [2024-05-12 12:05:34] INFO root fetch - processPackages [fotolab]: Remove: archive file [/home/abi/fetcher/tmp/fotolab-0.9.1.tar.gz]
 [2024-05-12 12:05:34] INFO root fetch - main [MainThread]: End processing [fotolab]: success
 [2024-05-12 12:05:34] INFO root fetch - main [MainThread]: Store serial: [23168801]
+[2024-05-12 12:07:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168801]
+[2024-05-12 12:07:43] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 12:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: portfolio-tracker
+[2024-05-12 12:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dslog
+[2024-05-12 12:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: boxmot
+[2024-05-12 12:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jzchatbot
+[2024-05-12 12:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aa-ravworks-exporter
+[2024-05-12 12:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: carcelz
+[2024-05-12 12:07:43] WARNING root fetch - processPackages [portfolio-tracker]: Skipping, unable to determine old version
+[2024-05-12 12:07:43] INFO root fetch - main [MainThread]: End processing [portfolio-tracker] error
+[2024-05-12 12:07:43] INFO root fetch - processPackages [jzchatbot]: New version: [59.83.96] Old Version: [59.83.95]
+[2024-05-12 12:07:43] INFO root fetch - processPackages [jzchatbot]: Downloading https://files.pythonhosted.org/packages/e2/d2/4055cb14d54f71313c3b8264bcdc3b3a1815926f8844fae3936f171fc5b9/jzchatbot-59.83.95.tar.gz
+[2024-05-12 12:07:43] INFO root fetch - processPackages [aa-ravworks-exporter]: New version: [0.4.0] Old Version: [0.3.0a2]
+[2024-05-12 12:07:43] INFO root fetch - processPackages [dslog]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 12:07:43] WARNING root fetch - processPackages [carcelz]: Skipping, unable to determine old version
+[2024-05-12 12:07:43] INFO root fetch - main [MainThread]: End processing [carcelz] error
+[2024-05-12 12:07:43] INFO root fetch - processPackages [boxmot]: New version: [10.0.9] Old Version: [10.0.8]
+[2024-05-12 12:07:43] INFO root fetch - processPackages [aa-ravworks-exporter]: Downloading https://files.pythonhosted.org/packages/d9/1b/b5c8984ff9bbd29019dc29f101a8b13ac9a79722011ac43d69ce1151242f/aa_ravworks_exporter-0.3.0a2.tar.gz
+[2024-05-12 12:07:43] INFO root fetch - processPackages [dslog]: Downloading https://files.pythonhosted.org/packages/63/fb/4b1e3a7f325eba56c02c07962abedc26e7933b0eae4a0e00c0ead2156348/dslog-0.1.8.tar.gz
+[2024-05-12 12:07:43] INFO root fetch - processPackages [boxmot]: Downloading https://files.pythonhosted.org/packages/dc/ac/76303db770d03a3713ab4d08bd38dac0c0208b589d081f3e6a9818f39c59/boxmot-10.0.8.tar.gz
+[2024-05-12 12:07:43] INFO root fetch - processPackages [jzchatbot]: Downloading https://files.pythonhosted.org/packages/4c/b2/3a93ffefbd6f355dda289aeba8384c50c1edf86c939df7287e1c39fb0479/jzchatbot-59.83.96.tar.gz
+[2024-05-12 12:07:44] INFO root fetch - processPackages [jzchatbot]: executing diffoscope
+[2024-05-12 12:07:44] INFO root fetch - processPackages [jzchatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jzchatbot-59.83.95.tar.gz tmp/jzchatbot-59.83.96.tar.gz --markdown 20240512/j/jzchatbot/59.83.95-59.83.96/README.md --exclude *.pyd
+[2024-05-12 12:07:44] INFO root fetch - processPackages [aa-ravworks-exporter]: Downloading https://files.pythonhosted.org/packages/0c/82/6a24855b92e0643d0c6c46dbfbe23a00427ea58d268a797e69868e1aa626/aa_ravworks_exporter-0.4.0.tar.gz
+[2024-05-12 12:07:44] INFO root fetch - processPackages [dslog]: Downloading https://files.pythonhosted.org/packages/84/7f/bbbaacdb430e31b9d64cb06159d601bd7ebe5d200dd76d9cfd868409e8e2/dslog-0.1.9.tar.gz
+[2024-05-12 12:07:44] INFO root fetch - processPackages [boxmot]: Downloading https://files.pythonhosted.org/packages/8a/f5/03723049ad0e1bb7544e74ca77c734bc6cd4f4244b98def429efd2b73d9e/boxmot-10.0.9.tar.gz
+[2024-05-12 12:07:44] INFO root fetch - processPackages [aa-ravworks-exporter]: executing diffoscope
+[2024-05-12 12:07:44] INFO root fetch - processPackages [aa-ravworks-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_ravworks_exporter-0.3.0a2.tar.gz tmp/aa_ravworks_exporter-0.4.0.tar.gz --markdown 20240512/a/aa-ravworks-exporter/0.3.0a2-0.4.0/README.md --exclude *.pyd
+[2024-05-12 12:07:44] INFO root fetch - processPackages [dslog]: executing diffoscope
+[2024-05-12 12:07:44] INFO root fetch - processPackages [dslog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dslog-0.1.8.tar.gz tmp/dslog-0.1.9.tar.gz --markdown 20240512/d/dslog/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 12:07:44] INFO root fetch - processPackages [boxmot]: executing diffoscope
+[2024-05-12 12:07:44] INFO root fetch - processPackages [boxmot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boxmot-10.0.8.tar.gz tmp/boxmot-10.0.9.tar.gz --markdown 20240512/b/boxmot/10.0.8-10.0.9/README.md --exclude *.pyd
+[2024-05-12 12:07:44] INFO root fetch - processPackages [jzchatbot]: Remove: archive file [/home/abi/fetcher/tmp/jzchatbot-59.83.95.tar.gz]
+[2024-05-12 12:07:44] INFO root fetch - processPackages [jzchatbot]: Remove: archive file [/home/abi/fetcher/tmp/jzchatbot-59.83.96.tar.gz]
+[2024-05-12 12:07:44] INFO root fetch - main [MainThread]: End processing [jzchatbot]: success
+[2024-05-12 12:07:44] INFO root fetch - processPackages [dslog]: Remove: archive file [/home/abi/fetcher/tmp/dslog-0.1.8.tar.gz]
+[2024-05-12 12:07:44] INFO root fetch - processPackages [dslog]: Remove: archive file [/home/abi/fetcher/tmp/dslog-0.1.9.tar.gz]
+[2024-05-12 12:07:44] INFO root fetch - main [MainThread]: End processing [dslog]: success
+[2024-05-12 12:07:44] INFO root fetch - processPackages [aa-ravworks-exporter]: Remove: archive file [/home/abi/fetcher/tmp/aa_ravworks_exporter-0.3.0a2.tar.gz]
+[2024-05-12 12:07:44] INFO root fetch - processPackages [aa-ravworks-exporter]: Remove: archive file [/home/abi/fetcher/tmp/aa_ravworks_exporter-0.4.0.tar.gz]
+[2024-05-12 12:07:44] INFO root fetch - main [MainThread]: End processing [aa-ravworks-exporter]: success
+[2024-05-12 12:07:45] INFO root fetch - processPackages [boxmot]: Remove: archive file [/home/abi/fetcher/tmp/boxmot-10.0.8.tar.gz]
+[2024-05-12 12:07:45] INFO root fetch - processPackages [boxmot]: Remove: archive file [/home/abi/fetcher/tmp/boxmot-10.0.9.tar.gz]
+[2024-05-12 12:07:45] INFO root fetch - main [MainThread]: End processing [boxmot]: success
+[2024-05-12 12:07:45] INFO root fetch - main [MainThread]: Store serial: [23168824]
