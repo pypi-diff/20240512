@@ -17309,3 +17309,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:28:08] INFO root fetch - processPackages [dphelper]: Remove: archive file [/home/abi/fetcher/tmp/dphelper-0.0.8.tar.gz]
 [2024-05-12 22:28:08] INFO root fetch - main [MainThread]: End processing [dphelper]: success
 [2024-05-12 22:28:08] INFO root fetch - main [MainThread]: Store serial: [23173575]
+[2024-05-12 22:30:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173575]
+[2024-05-12 22:30:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 22:30:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: substool
+[2024-05-12 22:30:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ekzexport
+[2024-05-12 22:30:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: celi-framework
+[2024-05-12 22:30:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: poetryx
+[2024-05-12 22:30:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tdrpa.tdworker
+[2024-05-12 22:30:17] WARNING root fetch - processPackages [ekzexport]: Skipping, unable to determine old version
+[2024-05-12 22:30:17] INFO root fetch - main [MainThread]: End processing [ekzexport] error
+[2024-05-12 22:30:17] INFO root fetch - processPackages [celi-framework]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-12 22:30:17] WARNING root fetch - processPackages [poetryx]: Skipping, unable to determine old version
+[2024-05-12 22:30:17] INFO root fetch - main [MainThread]: End processing [poetryx] error
+[2024-05-12 22:30:17] INFO root fetch - processPackages [tdrpa.tdworker]: New version: [1.1.4.6] Old Version: [1.1.4.5]
+[2024-05-12 22:30:17] WARNING root fetch - processPackages [substool]: Skipping, unable to determine old version
+[2024-05-12 22:30:17] INFO root fetch - main [MainThread]: End processing [substool] error
+[2024-05-12 22:30:17] INFO root fetch - processPackages [celi-framework]: Downloading https://files.pythonhosted.org/packages/55/65/7ec5e08c3ba3d1d55a619653dac9eebde1a7516afd68b30821f50adc92ed/celi_framework-0.2.0.tar.gz
+[2024-05-12 22:30:17] INFO root fetch - processPackages [tdrpa.tdworker]: Downloading https://files.pythonhosted.org/packages/58/12/c5b0414d2233e54bc43a251142e4b0ca4762a53322fd227caef7df0266d5/tdrpa.tdworker-1.1.4.5-py3-none-any.whl
+[2024-05-12 22:30:17] INFO root fetch - processPackages [celi-framework]: Downloading https://files.pythonhosted.org/packages/e6/8f/2f0647d2a46165e128ad8d44897eaca9f7bc9180373f7937f4968ae8846e/celi_framework-0.2.1.tar.gz
+[2024-05-12 22:30:17] INFO root fetch - processPackages [tdrpa.tdworker]: Downloading https://files.pythonhosted.org/packages/41/5d/752865fec83daa57345c09e563ba519ef913b2f1bafd32d8e00b0fdbcf9b/tdrpa.tdworker-1.1.4.6-py3-none-any.whl
+[2024-05-12 22:30:17] INFO root fetch - processPackages [celi-framework]: executing diffoscope
+[2024-05-12 22:30:17] INFO root fetch - processPackages [celi-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/celi_framework-0.2.0.tar.gz tmp/celi_framework-0.2.1.tar.gz --markdown 20240512/c/celi-framework/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-12 22:30:17] INFO root fetch - processPackages [tdrpa.tdworker]: executing diffoscope
+[2024-05-12 22:30:17] INFO root fetch - processPackages [tdrpa.tdworker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdrpa.tdworker-1.1.4.5-py3-none-any.whl.zip tmp/tdrpa.tdworker-1.1.4.6-py3-none-any.whl.zip --markdown 20240512/t/tdrpa.tdworker/1.1.4.5-1.1.4.6/README.md --exclude *.pyd
+[2024-05-12 22:30:18] INFO root fetch - processPackages [tdrpa.tdworker]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdworker-1.1.4.5-py3-none-any.whl.zip]
+[2024-05-12 22:30:18] INFO root fetch - processPackages [tdrpa.tdworker]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdworker-1.1.4.6-py3-none-any.whl.zip]
+[2024-05-12 22:30:18] INFO root fetch - main [MainThread]: End processing [tdrpa.tdworker]: success
+[2024-05-12 22:30:18] INFO root fetch - processPackages [celi-framework]: Remove: archive file [/home/abi/fetcher/tmp/celi_framework-0.2.0.tar.gz]
+[2024-05-12 22:30:18] INFO root fetch - processPackages [celi-framework]: Remove: archive file [/home/abi/fetcher/tmp/celi_framework-0.2.1.tar.gz]
+[2024-05-12 22:30:18] INFO root fetch - main [MainThread]: End processing [celi-framework]: success
+[2024-05-12 22:30:18] INFO root fetch - main [MainThread]: Store serial: [23173594]
