@@ -11625,3 +11625,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:28:31] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240512.361.tar.gz]
 [2024-05-12 16:28:31] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-12 16:28:31] INFO root fetch - main [MainThread]: Store serial: [23170671]
+[2024-05-12 16:30:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170671]
+[2024-05-12 16:30:41] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 16:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ouvrierez
+[2024-05-12 16:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: johnsnowlabs
+[2024-05-12 16:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: johnsnowlabs-for-databricks
+[2024-05-12 16:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: x-transformers
+[2024-05-12 16:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vsdpir
+[2024-05-12 16:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: b7w-cli
+[2024-05-12 16:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-admin-logentry-extension
+[2024-05-12 16:30:41] WARNING root fetch - processPackages [ouvrierez]: Skipping, unable to determine old version
+[2024-05-12 16:30:41] INFO root fetch - main [MainThread]: End processing [ouvrierez] error
+[2024-05-12 16:30:41] INFO root fetch - processPackages [django-admin-logentry-extension]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 16:30:41] INFO root fetch - processPackages [x-transformers]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-05-12 16:30:41] INFO root fetch - processPackages [django-admin-logentry-extension]: Downloading https://files.pythonhosted.org/packages/ca/23/eab10557ea6e194bf3a5d9171e6c6f2e73c8cdaf4e19217d2454be9f45c2/django-admin-logentry-extension-0.1.1.tar.gz
+[2024-05-12 16:30:41] INFO root fetch - processPackages [x-transformers]: Downloading https://files.pythonhosted.org/packages/4c/e4/1f4432d217a1facf7a79aa2e2a08ffdbcf411f13bef9bd9bd3307a99a1af/x-transformers-1.9.1.tar.gz
+[2024-05-12 16:30:42] INFO root fetch - processPackages [vsdpir]: New version: [4.0.0] Old Version: [3.1.1]
+[2024-05-12 16:30:42] INFO root fetch - processPackages [b7w-cli]: New version: [0.3.0] Old Version: [0.1.9]
+[2024-05-12 16:30:42] INFO root fetch - processPackages [johnsnowlabs-for-databricks]: New version: [5.3.5] Old Version: [5.3.4rc2]
+[2024-05-12 16:30:42] INFO root fetch - processPackages [johnsnowlabs]: New version: [5.3.5] Old Version: [5.3.4rc2]
+[2024-05-12 16:30:42] INFO root fetch - processPackages [johnsnowlabs]: Downloading https://files.pythonhosted.org/packages/78/cb/813f15a85a4ef64b65c4fd5f36965d56d5ee2eb46226fadf2ae88e03f7a5/johnsnowlabs-5.3.4rc2.tar.gz
+[2024-05-12 16:30:42] INFO root fetch - processPackages [x-transformers]: Downloading https://files.pythonhosted.org/packages/ce/c4/a338a8fcfd77c21d7b28960180987b186017522eb0ad53cfdce2ad6c59f5/x-transformers-1.9.2.tar.gz
+[2024-05-12 16:30:42] INFO root fetch - processPackages [vsdpir]: Downloading https://files.pythonhosted.org/packages/50/6b/51086093dd0ca63704f09fda0c02ae2a41c7e3907aa1d652f1b9f452dbb7/vsdpir-3.1.1-py3-none-any.whl
+[2024-05-12 16:30:42] INFO root fetch - processPackages [b7w-cli]: Downloading https://files.pythonhosted.org/packages/06/56/ad0845c687c45049e92923b175557f6c8c2428f30f3e65d18df9943bc050/b7w-cli-0.1.9.tar.gz
+[2024-05-12 16:30:42] INFO root fetch - processPackages [johnsnowlabs-for-databricks]: Downloading https://files.pythonhosted.org/packages/8c/71/59ea4d57c455060e2cb4eaca7f2b7bf0eb21e848eef27dcdebffdea03d02/johnsnowlabs_for_databricks-5.3.4rc2.tar.gz
+[2024-05-12 16:30:42] INFO root fetch - processPackages [x-transformers]: executing diffoscope
+[2024-05-12 16:30:42] INFO root fetch - processPackages [x-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-transformers-1.9.1.tar.gz tmp/x-transformers-1.9.2.tar.gz --markdown 20240512/x/x-transformers/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-05-12 16:30:42] INFO root fetch - processPackages [django-admin-logentry-extension]: Downloading https://files.pythonhosted.org/packages/ac/61/ec4b0a6097d13ac56dc0ecb9deee3ca1afe2941ff7d5c555729312634e67/django-admin-logentry-extension-0.1.2.tar.gz
+[2024-05-12 16:30:42] INFO root fetch - processPackages [django-admin-logentry-extension]: executing diffoscope
+[2024-05-12 16:30:42] INFO root fetch - processPackages [django-admin-logentry-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-logentry-extension-0.1.1.tar.gz tmp/django-admin-logentry-extension-0.1.2.tar.gz --markdown 20240512/d/django-admin-logentry-extension/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 16:30:42] INFO root fetch - processPackages [b7w-cli]: Downloading https://files.pythonhosted.org/packages/fb/3f/6e1a8d914eb5b366cf926bd08be0e4dc34b081bf424c64b0bc0ebb75e9a7/b7w_cli-0.3.0.tar.gz
+[2024-05-12 16:30:42] INFO root fetch - processPackages [johnsnowlabs]: Downloading https://files.pythonhosted.org/packages/fe/aa/a041866d6288a74ff0e5f954a8c4a540e2f0ad3405a5e2a9928c5e03221e/johnsnowlabs-5.3.5.tar.gz
+[2024-05-12 16:30:42] INFO root fetch - processPackages [vsdpir]: Downloading https://files.pythonhosted.org/packages/b0/e7/14b9ebddbadd92df3ddf27882a2a18df768802b222948f1515126f3d2683/vsdpir-4.0.0-py3-none-any.whl
+[2024-05-12 16:30:42] INFO root fetch - processPackages [b7w-cli]: executing diffoscope
+[2024-05-12 16:30:42] INFO root fetch - processPackages [b7w-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/b7w-cli-0.1.9.tar.gz tmp/b7w_cli-0.3.0.tar.gz --markdown 20240512/b/b7w-cli/0.1.9-0.3.0/README.md --exclude *.pyd
+[2024-05-12 16:30:42] INFO root fetch - processPackages [johnsnowlabs-for-databricks]: Downloading https://files.pythonhosted.org/packages/03/fb/13ff7be0cfc920b4c26362acc0b9600d4b2141efad02057cbc1f52f75f46/johnsnowlabs_for_databricks-5.3.5.tar.gz
+[2024-05-12 16:30:42] INFO root fetch - processPackages [johnsnowlabs]: executing diffoscope
+[2024-05-12 16:30:42] INFO root fetch - processPackages [johnsnowlabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs-5.3.4rc2.tar.gz tmp/johnsnowlabs-5.3.5.tar.gz --markdown 20240512/j/johnsnowlabs/5.3.4rc2-5.3.5/README.md --exclude *.pyd
+[2024-05-12 16:30:42] INFO root fetch - processPackages [vsdpir]: executing diffoscope
+[2024-05-12 16:30:42] INFO root fetch - processPackages [vsdpir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsdpir-3.1.1-py3-none-any.whl.zip tmp/vsdpir-4.0.0-py3-none-any.whl.zip --markdown 20240512/v/vsdpir/3.1.1-4.0.0/README.md --exclude *.pyd
+[2024-05-12 16:30:42] INFO root fetch - processPackages [johnsnowlabs-for-databricks]: executing diffoscope
+[2024-05-12 16:30:42] INFO root fetch - processPackages [johnsnowlabs-for-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs_for_databricks-5.3.4rc2.tar.gz tmp/johnsnowlabs_for_databricks-5.3.5.tar.gz --markdown 20240512/j/johnsnowlabs-for-databricks/5.3.4rc2-5.3.5/README.md --exclude *.pyd
+[2024-05-12 16:30:43] INFO root fetch - processPackages [django-admin-logentry-extension]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-logentry-extension-0.1.1.tar.gz]
+[2024-05-12 16:30:43] INFO root fetch - processPackages [django-admin-logentry-extension]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-logentry-extension-0.1.2.tar.gz]
+[2024-05-12 16:30:43] INFO root fetch - main [MainThread]: End processing [django-admin-logentry-extension]: success
+[2024-05-12 16:30:43] INFO root fetch - processPackages [x-transformers]: Remove: archive file [/home/abi/fetcher/tmp/x-transformers-1.9.1.tar.gz]
+[2024-05-12 16:30:43] INFO root fetch - processPackages [x-transformers]: Remove: archive file [/home/abi/fetcher/tmp/x-transformers-1.9.2.tar.gz]
+[2024-05-12 16:30:43] INFO root fetch - main [MainThread]: End processing [x-transformers]: success
+[2024-05-12 16:30:43] INFO root fetch - processPackages [b7w-cli]: Remove: archive file [/home/abi/fetcher/tmp/b7w-cli-0.1.9.tar.gz]
+[2024-05-12 16:30:43] INFO root fetch - processPackages [b7w-cli]: Remove: archive file [/home/abi/fetcher/tmp/b7w_cli-0.3.0.tar.gz]
+[2024-05-12 16:30:43] INFO root fetch - main [MainThread]: End processing [b7w-cli]: success
+[2024-05-12 16:30:43] INFO root fetch - processPackages [vsdpir]: Remove: archive file [/home/abi/fetcher/tmp/vsdpir-3.1.1-py3-none-any.whl.zip]
+[2024-05-12 16:30:43] INFO root fetch - processPackages [vsdpir]: Remove: archive file [/home/abi/fetcher/tmp/vsdpir-4.0.0-py3-none-any.whl.zip]
+[2024-05-12 16:30:43] INFO root fetch - main [MainThread]: End processing [vsdpir]: success
+[2024-05-12 16:30:43] INFO root fetch - processPackages [johnsnowlabs]: Remove: archive file [/home/abi/fetcher/tmp/johnsnowlabs-5.3.4rc2.tar.gz]
+[2024-05-12 16:30:43] INFO root fetch - processPackages [johnsnowlabs]: Remove: archive file [/home/abi/fetcher/tmp/johnsnowlabs-5.3.5.tar.gz]
+[2024-05-12 16:30:43] INFO root fetch - main [MainThread]: End processing [johnsnowlabs]: success
+[2024-05-12 16:30:43] INFO root fetch - processPackages [johnsnowlabs-for-databricks]: Remove: archive file [/home/abi/fetcher/tmp/johnsnowlabs_for_databricks-5.3.4rc2.tar.gz]
+[2024-05-12 16:30:43] INFO root fetch - processPackages [johnsnowlabs-for-databricks]: Remove: archive file [/home/abi/fetcher/tmp/johnsnowlabs_for_databricks-5.3.5.tar.gz]
+[2024-05-12 16:30:43] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-for-databricks]: success
+[2024-05-12 16:30:43] INFO root fetch - main [MainThread]: Store serial: [23170694]
