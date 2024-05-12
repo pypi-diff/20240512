@@ -11595,3 +11595,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:26:21] WARNING root fetch - processPackages [django-listfilter-media-extension]: Skipping, unable to determine old version
 [2024-05-12 16:26:21] INFO root fetch - main [MainThread]: End processing [django-listfilter-media-extension] error
 [2024-05-12 16:26:21] INFO root fetch - main [MainThread]: Store serial: [23170656]
+[2024-05-12 16:28:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170656]
+[2024-05-12 16:28:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 16:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigcode
+[2024-05-12 16:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blues-lib
+[2024-05-12 16:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plutobook
+[2024-05-12 16:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pkscreener
+[2024-05-12 16:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ouvrierez
+[2024-05-12 16:28:30] WARNING root fetch - processPackages [bigcode]: Skipping, unable to determine old version
+[2024-05-12 16:28:30] INFO root fetch - main [MainThread]: End processing [bigcode] error
+[2024-05-12 16:28:30] INFO root fetch - processPackages [blues-lib]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-12 16:28:30] WARNING root fetch - processPackages [plutobook]: Skipping, unable to determine old version
+[2024-05-12 16:28:30] INFO root fetch - main [MainThread]: End processing [plutobook] error
+[2024-05-12 16:28:30] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240512.361] Old Version: [0.44.20240511.360]
+[2024-05-12 16:28:30] WARNING root fetch - processPackages [ouvrierez]: Skipping, unable to determine old version
+[2024-05-12 16:28:30] INFO root fetch - main [MainThread]: End processing [ouvrierez] error
+[2024-05-12 16:28:30] INFO root fetch - processPackages [blues-lib]: Downloading https://files.pythonhosted.org/packages/68/00/c720963e6ca9087c1db9d4d4e41e6a79f3d0265826d602d99d433f2fa699/blues_lib-1.1.0.tar.gz
+[2024-05-12 16:28:30] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/93/8b/af1410af946e93d71322cab97c08064fc29f2ae72892011eac2173a509ed/pkscreener-0.44.20240511.360.tar.gz
+[2024-05-12 16:28:30] INFO root fetch - processPackages [blues-lib]: Downloading https://files.pythonhosted.org/packages/0c/0e/cb0a04a657c5d2d75ca8be11158903c2464f23f2bbe070b831e79cd07c1f/blues_lib-1.1.1.tar.gz
+[2024-05-12 16:28:30] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/93/58/9edc0985122afad658d91529f29115a32c12e194fce03dc5f974cb3caf9e/pkscreener-0.44.20240512.361.tar.gz
+[2024-05-12 16:28:30] INFO root fetch - processPackages [blues-lib]: executing diffoscope
+[2024-05-12 16:28:30] INFO root fetch - processPackages [blues-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blues_lib-1.1.0.tar.gz tmp/blues_lib-1.1.1.tar.gz --markdown 20240512/b/blues-lib/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-12 16:28:30] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-12 16:28:30] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240511.360.tar.gz tmp/pkscreener-0.44.20240512.361.tar.gz --markdown 20240512/p/pkscreener/0.44.20240511.360-0.44.20240512.361/README.md --exclude *.pyd
+[2024-05-12 16:28:31] INFO root fetch - processPackages [blues-lib]: Remove: archive file [/home/abi/fetcher/tmp/blues_lib-1.1.0.tar.gz]
+[2024-05-12 16:28:31] INFO root fetch - processPackages [blues-lib]: Remove: archive file [/home/abi/fetcher/tmp/blues_lib-1.1.1.tar.gz]
+[2024-05-12 16:28:31] INFO root fetch - main [MainThread]: End processing [blues-lib]: success
+[2024-05-12 16:28:31] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240511.360.tar.gz]
+[2024-05-12 16:28:31] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240512.361.tar.gz]
+[2024-05-12 16:28:31] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-12 16:28:31] INFO root fetch - main [MainThread]: Store serial: [23170671]
