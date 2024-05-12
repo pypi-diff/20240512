@@ -9497,3 +9497,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:44:57] INFO root fetch - processPackages [malet]: Remove: archive file [/home/abi/fetcher/tmp/malet-0.1.9.tar.gz]
 [2024-05-12 13:44:57] INFO root fetch - main [MainThread]: End processing [malet]: success
 [2024-05-12 13:44:57] INFO root fetch - main [MainThread]: Store serial: [23169512]
+[2024-05-12 13:47:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169512]
+[2024-05-12 13:47:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 13:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: WaveFormer
+[2024-05-12 13:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fc-quantization
+[2024-05-12 13:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tsugu
+[2024-05-12 13:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: logplus
+[2024-05-12 13:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: napatrackmater
+[2024-05-12 13:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: st-supabase-connection
+[2024-05-12 13:47:05] WARNING root fetch - processPackages [logplus]: Skipping, unable to determine old version
+[2024-05-12 13:47:05] INFO root fetch - main [MainThread]: End processing [logplus] error
+[2024-05-12 13:47:05] WARNING root fetch - processPackages [WaveFormer]: Skipping, unable to determine old version
+[2024-05-12 13:47:05] INFO root fetch - main [MainThread]: End processing [WaveFormer] error
+[2024-05-12 13:47:05] INFO root fetch - processPackages [tsugu]: New version: [0.6.0] Old Version: [0.5.7]
+[2024-05-12 13:47:05] WARNING root fetch - processPackages [fc-quantization]: Skipping, unable to determine old version
+[2024-05-12 13:47:05] INFO root fetch - main [MainThread]: End processing [fc-quantization] error
+[2024-05-12 13:47:05] INFO root fetch - processPackages [tsugu]: Downloading https://files.pythonhosted.org/packages/6c/2d/9f63c7bbdbd7b38e26d51f78f41a9fbb5a0a64cb0cf5d3889272b573ceba/tsugu-0.5.7.tar.gz
+[2024-05-12 13:47:06] INFO root fetch - processPackages [napatrackmater]: New version: [5.2.2] Old Version: [5.2.1]
+[2024-05-12 13:47:06] INFO root fetch - processPackages [st-supabase-connection]: New version: [2.0.0] Old Version: [1.2.2]
+[2024-05-12 13:47:06] INFO root fetch - processPackages [tsugu]: Downloading https://files.pythonhosted.org/packages/bc/18/759c4e1da1888e5aad0aaf3c934b39d06e579a8169117c5514a09b23c6b2/tsugu-0.6.0.tar.gz
+[2024-05-12 13:47:06] INFO root fetch - processPackages [st-supabase-connection]: Downloading https://files.pythonhosted.org/packages/6a/7c/bb6e5b7a521fbe264c0b22287adb0663747d5b4777fc285498ae27278673/st-supabase-connection-1.2.2.tar.gz
+[2024-05-12 13:47:06] INFO root fetch - processPackages [tsugu]: executing diffoscope
+[2024-05-12 13:47:06] INFO root fetch - processPackages [tsugu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsugu-0.5.7.tar.gz tmp/tsugu-0.6.0.tar.gz --markdown 20240512/t/tsugu/0.5.7-0.6.0/README.md --exclude *.pyd
+[2024-05-12 13:47:06] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/5c/a8/5cdba4f0fea2021b2884e7022330cb69aab99391b0a35c58415eb20083a3/napatrackmater-5.2.1.tar.gz
+[2024-05-12 13:47:06] INFO root fetch - processPackages [st-supabase-connection]: Downloading https://files.pythonhosted.org/packages/e6/0e/05df35d7e28f2c147e99b0ae11cdf3992a4c7ab0fd50c05aa66c576bca25/st_supabase_connection-2.0.0.tar.gz
+[2024-05-12 13:47:06] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/6a/82/3cae4a25bbaa9ca6ad0d3ffdd028a853b66fee74d225e31d4b6d47d42a08/napatrackmater-5.2.2.tar.gz
+[2024-05-12 13:47:06] INFO root fetch - processPackages [st-supabase-connection]: executing diffoscope
+[2024-05-12 13:47:06] INFO root fetch - processPackages [st-supabase-connection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st-supabase-connection-1.2.2.tar.gz tmp/st_supabase_connection-2.0.0.tar.gz --markdown 20240512/s/st-supabase-connection/1.2.2-2.0.0/README.md --exclude *.pyd
+[2024-05-12 13:47:06] INFO root fetch - processPackages [tsugu]: Remove: archive file [/home/abi/fetcher/tmp/tsugu-0.5.7.tar.gz]
+[2024-05-12 13:47:06] INFO root fetch - processPackages [tsugu]: Remove: archive file [/home/abi/fetcher/tmp/tsugu-0.6.0.tar.gz]
+[2024-05-12 13:47:06] INFO root fetch - main [MainThread]: End processing [tsugu]: success
+[2024-05-12 13:47:07] INFO root fetch - processPackages [napatrackmater]: executing diffoscope
+[2024-05-12 13:47:07] INFO root fetch - processPackages [napatrackmater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napatrackmater-5.2.1.tar.gz tmp/napatrackmater-5.2.2.tar.gz --markdown 20240512/n/napatrackmater/5.2.1-5.2.2/README.md --exclude *.pyd
+[2024-05-12 13:47:07] INFO root fetch - processPackages [st-supabase-connection]: Remove: archive file [/home/abi/fetcher/tmp/st-supabase-connection-1.2.2.tar.gz]
+[2024-05-12 13:47:07] INFO root fetch - processPackages [st-supabase-connection]: Remove: archive file [/home/abi/fetcher/tmp/st_supabase_connection-2.0.0.tar.gz]
+[2024-05-12 13:47:07] INFO root fetch - main [MainThread]: End processing [st-supabase-connection]: success
+[2024-05-12 13:47:08] INFO root fetch - processPackages [napatrackmater]: Remove: archive file [/home/abi/fetcher/tmp/napatrackmater-5.2.1.tar.gz]
+[2024-05-12 13:47:08] INFO root fetch - processPackages [napatrackmater]: Remove: archive file [/home/abi/fetcher/tmp/napatrackmater-5.2.2.tar.gz]
+[2024-05-12 13:47:08] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
+[2024-05-12 13:47:08] INFO root fetch - main [MainThread]: Store serial: [23169528]
