@@ -2689,3 +2689,48 @@
 [2024-05-12 04:04:49] INFO root fetch - processPackages [zebrafy]: Remove: archive file [/home/abi/fetcher/tmp/zebrafy-1.1.1.tar.gz]
 [2024-05-12 04:04:49] INFO root fetch - main [MainThread]: End processing [zebrafy]: success
 [2024-05-12 04:04:49] INFO root fetch - main [MainThread]: Store serial: [23166205]
+[2024-05-12 04:06:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166205]
+[2024-05-12 04:06:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 04:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zebrafy
+[2024-05-12 04:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-furryfusion
+[2024-05-12 04:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drawlib
+[2024-05-12 04:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prefermentz
+[2024-05-12 04:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: streamlit-screen-stats
+[2024-05-12 04:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: elevenlabs
+[2024-05-12 04:06:58] INFO root fetch - processPackages [zebrafy]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-12 04:06:58] WARNING root fetch - processPackages [nonebot-plugin-furryfusion]: Skipping, unable to determine old version
+[2024-05-12 04:06:58] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-furryfusion] error
+[2024-05-12 04:06:58] INFO root fetch - processPackages [streamlit-screen-stats]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 04:06:58] INFO root fetch - processPackages [zebrafy]: Downloading https://files.pythonhosted.org/packages/2d/6b/aed47b0696b8af755cd1deec64b57dd2d5e842c0588640bf336364cc0d0f/zebrafy-1.1.0.tar.gz
+[2024-05-12 04:06:58] INFO root fetch - processPackages [streamlit-screen-stats]: Downloading https://files.pythonhosted.org/packages/b5/f3/ffa1db6a0713ba6b2fc4ac5b1e057f98d7180131b56db9b54f5e09b8ea3d/streamlit-screen-stats-0.0.8.tar.gz
+[2024-05-12 04:06:58] INFO root fetch - processPackages [drawlib]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-12 04:06:58] WARNING root fetch - processPackages [prefermentz]: Skipping, unable to determine old version
+[2024-05-12 04:06:58] INFO root fetch - main [MainThread]: End processing [prefermentz] error
+[2024-05-12 04:06:58] INFO root fetch - processPackages [elevenlabs]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-12 04:06:58] INFO root fetch - processPackages [zebrafy]: Downloading https://files.pythonhosted.org/packages/9d/05/49614d47fc07f75e8f8f21ab085c83e6b4bd9f67b4fcedaa1d5df2b955e9/zebrafy-1.1.1.tar.gz
+[2024-05-12 04:06:58] INFO root fetch - processPackages [drawlib]: Downloading https://files.pythonhosted.org/packages/f3/1d/6974527ae451d6e7db992801160ea6dbf7a7221a031fb0a96fb037d2d111/drawlib-0.1.3.tar.gz
+[2024-05-12 04:06:58] INFO root fetch - processPackages [streamlit-screen-stats]: Downloading https://files.pythonhosted.org/packages/47/c1/551994788e8d7fbca93c51782419b6f14c5db12208b833677955f6412aab/streamlit-screen-stats-0.0.9.tar.gz
+[2024-05-12 04:06:58] INFO root fetch - processPackages [elevenlabs]: Downloading https://files.pythonhosted.org/packages/69/39/c9bb3b1c757f5c6c056b68ceb226828f9f51ec024828e385d2d7668effea/elevenlabs-1.2.1.tar.gz
+[2024-05-12 04:06:58] INFO root fetch - processPackages [zebrafy]: executing diffoscope
+[2024-05-12 04:06:58] INFO root fetch - processPackages [zebrafy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zebrafy-1.1.0.tar.gz tmp/zebrafy-1.1.1.tar.gz --markdown 20240512/z/zebrafy/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-12 04:06:58] INFO root fetch - processPackages [streamlit-screen-stats]: executing diffoscope
+[2024-05-12 04:06:58] INFO root fetch - processPackages [streamlit-screen-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-screen-stats-0.0.8.tar.gz tmp/streamlit-screen-stats-0.0.9.tar.gz --markdown 20240512/s/streamlit-screen-stats/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 04:06:58] INFO root fetch - processPackages [drawlib]: Downloading https://files.pythonhosted.org/packages/7a/9f/852be639a28b824cf19d833a27ecf49dac3d3a803d946c4dc254aeceadbf/drawlib-0.1.4.tar.gz
+[2024-05-12 04:06:58] INFO root fetch - processPackages [drawlib]: executing diffoscope
+[2024-05-12 04:06:58] INFO root fetch - processPackages [drawlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drawlib-0.1.3.tar.gz tmp/drawlib-0.1.4.tar.gz --markdown 20240512/d/drawlib/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-12 04:06:58] INFO root fetch - processPackages [elevenlabs]: Downloading https://files.pythonhosted.org/packages/ef/dd/eb488a1e14e680e71652d392140d37e50581f2511ae52dbef741ef653861/elevenlabs-1.2.2.tar.gz
+[2024-05-12 04:06:59] INFO root fetch - processPackages [zebrafy]: Remove: archive file [/home/abi/fetcher/tmp/zebrafy-1.1.0.tar.gz]
+[2024-05-12 04:06:59] INFO root fetch - processPackages [zebrafy]: Remove: archive file [/home/abi/fetcher/tmp/zebrafy-1.1.1.tar.gz]
+[2024-05-12 04:06:59] INFO root fetch - main [MainThread]: End processing [zebrafy]: success
+[2024-05-12 04:06:59] INFO root fetch - processPackages [elevenlabs]: executing diffoscope
+[2024-05-12 04:06:59] INFO root fetch - processPackages [elevenlabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elevenlabs-1.2.1.tar.gz tmp/elevenlabs-1.2.2.tar.gz --markdown 20240512/e/elevenlabs/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-12 04:06:59] INFO root fetch - processPackages [drawlib]: Remove: archive file [/home/abi/fetcher/tmp/drawlib-0.1.3.tar.gz]
+[2024-05-12 04:06:59] INFO root fetch - processPackages [drawlib]: Remove: archive file [/home/abi/fetcher/tmp/drawlib-0.1.4.tar.gz]
+[2024-05-12 04:06:59] INFO root fetch - main [MainThread]: End processing [drawlib]: success
+[2024-05-12 04:07:00] INFO root fetch - processPackages [elevenlabs]: Remove: archive file [/home/abi/fetcher/tmp/elevenlabs-1.2.1.tar.gz]
+[2024-05-12 04:07:00] INFO root fetch - processPackages [elevenlabs]: Remove: archive file [/home/abi/fetcher/tmp/elevenlabs-1.2.2.tar.gz]
+[2024-05-12 04:07:00] INFO root fetch - main [MainThread]: End processing [elevenlabs]: success
+[2024-05-12 04:07:11] INFO root fetch - processPackages [streamlit-screen-stats]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-screen-stats-0.0.8.tar.gz]
+[2024-05-12 04:07:11] INFO root fetch - processPackages [streamlit-screen-stats]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-screen-stats-0.0.9.tar.gz]
+[2024-05-12 04:07:11] INFO root fetch - main [MainThread]: End processing [streamlit-screen-stats]: success
+[2024-05-12 04:07:11] INFO root fetch - main [MainThread]: Store serial: [23166220]
