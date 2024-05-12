@@ -9292,3 +9292,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:28:55] INFO root fetch - processPackages [mapeathor]: Remove: archive file [/home/abi/fetcher/tmp/mapeathor-1.7.5.tar.gz]
 [2024-05-12 13:28:55] INFO root fetch - main [MainThread]: End processing [mapeathor]: success
 [2024-05-12 13:28:55] INFO root fetch - main [MainThread]: Store serial: [23169398]
+[2024-05-12 13:30:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169398]
+[2024-05-12 13:31:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 13:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unplatitudinousz
+[2024-05-12 13:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strawberry-graphql
+[2024-05-12 13:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vdlpy
+[2024-05-12 13:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wg-utilities
+[2024-05-12 13:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pydecs
+[2024-05-12 13:31:04] INFO root fetch - processPackages [strawberry-graphql]: New version: [0.99.3] Old Version: [0.99.2]
+[2024-05-12 13:31:04] WARNING root fetch - processPackages [unplatitudinousz]: Skipping, unable to determine old version
+[2024-05-12 13:31:04] INFO root fetch - main [MainThread]: End processing [unplatitudinousz] error
+[2024-05-12 13:31:04] INFO root fetch - processPackages [vdlpy]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-05-12 13:31:04] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/dd/38/4efb20ccf1f04c0901e6d5de6eb222b8a9e74692ae34f6f4618b0f0cc8b3/strawberry-graphql-0.99.2.tar.gz
+[2024-05-12 13:31:04] INFO root fetch - processPackages [wg-utilities]: New version: [5.9.0] Old Version: [5.8.4]
+[2024-05-12 13:31:04] INFO root fetch - processPackages [pydecs]: New version: [2024.5.12] Old Version: [2024.4.6]
+[2024-05-12 13:31:04] INFO root fetch - processPackages [vdlpy]: Downloading https://files.pythonhosted.org/packages/cc/9e/91a89e330fbcbbf37055def29fbc928dc03ab1a27c448eca00b0c0e61098/vdlpy-2.0.1.tar.gz
+[2024-05-12 13:31:04] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/e8/62/3a58fe3751e9dc961f72fbe825e32f12e9cd544dafd44bc5fdddb290b881/strawberry-graphql-0.99.3.tar.gz
+[2024-05-12 13:31:04] INFO root fetch - processPackages [wg-utilities]: Downloading https://files.pythonhosted.org/packages/a2/7f/84a6f7a987704a196fb4a41e13f84850ea59dd73e5749d1f956e99a42c6f/wg_utilities-5.8.4.tar.gz
+[2024-05-12 13:31:04] INFO root fetch - processPackages [pydecs]: Downloading https://files.pythonhosted.org/packages/18/bb/9dcfec88f01785bf52a628b1b1d41654949bfa0b842c6cef7afba55367b6/pydecs-2024.4.6.tar.gz
+[2024-05-12 13:31:04] INFO root fetch - processPackages [strawberry-graphql]: executing diffoscope
+[2024-05-12 13:31:04] INFO root fetch - processPackages [strawberry-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry-graphql-0.99.2.tar.gz tmp/strawberry-graphql-0.99.3.tar.gz --markdown 20240512/s/strawberry-graphql/0.99.2-0.99.3/README.md --exclude *.pyd
+[2024-05-12 13:31:04] INFO root fetch - processPackages [vdlpy]: Downloading https://files.pythonhosted.org/packages/6b/f4/664c3979563a3c7f06ec9fc8273a7129cdf92ff7a70d3571781743785753/vdlpy-2.0.2.tar.gz
+[2024-05-12 13:31:05] INFO root fetch - processPackages [vdlpy]: executing diffoscope
+[2024-05-12 13:31:05] INFO root fetch - processPackages [vdlpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vdlpy-2.0.1.tar.gz tmp/vdlpy-2.0.2.tar.gz --markdown 20240512/v/vdlpy/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-05-12 13:31:05] INFO root fetch - processPackages [pydecs]: Downloading https://files.pythonhosted.org/packages/9e/c7/a0efcfbf58cf785180c3cc8d58c2eb33b27a5a677bff5179452316f921c0/pydecs-2024.5.12.tar.gz
+[2024-05-12 13:31:05] INFO root fetch - processPackages [wg-utilities]: Downloading https://files.pythonhosted.org/packages/23/bc/396a6e7516320d7c839831333bc832b8f2e2fa8cefd2e0dfe566c8a17a44/wg_utilities-5.9.0.tar.gz
+[2024-05-12 13:31:05] INFO root fetch - processPackages [wg-utilities]: executing diffoscope
+[2024-05-12 13:31:05] INFO root fetch - processPackages [wg-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wg_utilities-5.8.4.tar.gz tmp/wg_utilities-5.9.0.tar.gz --markdown 20240512/w/wg-utilities/5.8.4-5.9.0/README.md --exclude *.pyd
+[2024-05-12 13:31:05] INFO root fetch - processPackages [pydecs]: executing diffoscope
+[2024-05-12 13:31:05] INFO root fetch - processPackages [pydecs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydecs-2024.4.6.tar.gz tmp/pydecs-2024.5.12.tar.gz --markdown 20240512/p/pydecs/2024.4.6-2024.5.12/README.md --exclude *.pyd
+[2024-05-12 13:31:05] INFO root fetch - processPackages [vdlpy]: Remove: archive file [/home/abi/fetcher/tmp/vdlpy-2.0.1.tar.gz]
+[2024-05-12 13:31:05] INFO root fetch - processPackages [vdlpy]: Remove: archive file [/home/abi/fetcher/tmp/vdlpy-2.0.2.tar.gz]
+[2024-05-12 13:31:05] INFO root fetch - main [MainThread]: End processing [vdlpy]: success
+[2024-05-12 13:31:05] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.2.tar.gz]
+[2024-05-12 13:31:05] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
+[2024-05-12 13:31:05] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
+[2024-05-12 13:31:05] INFO root fetch - processPackages [pydecs]: Remove: archive file [/home/abi/fetcher/tmp/pydecs-2024.4.6.tar.gz]
+[2024-05-12 13:31:05] INFO root fetch - processPackages [pydecs]: Remove: archive file [/home/abi/fetcher/tmp/pydecs-2024.5.12.tar.gz]
+[2024-05-12 13:31:05] INFO root fetch - main [MainThread]: End processing [pydecs]: success
+[2024-05-12 13:31:06] INFO root fetch - processPackages [wg-utilities]: Remove: archive file [/home/abi/fetcher/tmp/wg_utilities-5.8.4.tar.gz]
+[2024-05-12 13:31:06] INFO root fetch - processPackages [wg-utilities]: Remove: archive file [/home/abi/fetcher/tmp/wg_utilities-5.9.0.tar.gz]
+[2024-05-12 13:31:06] INFO root fetch - main [MainThread]: End processing [wg-utilities]: success
+[2024-05-12 13:31:06] INFO root fetch - main [MainThread]: Store serial: [23169430]
