@@ -7211,3 +7211,45 @@
 [2024-05-12 10:47:32] INFO root fetch - processPackages [seacrowd]: Remove: archive file [/home/abi/fetcher/tmp/seacrowd-0.0.9.tar.gz]
 [2024-05-12 10:47:32] INFO root fetch - main [MainThread]: End processing [seacrowd]: success
 [2024-05-12 10:47:32] INFO root fetch - main [MainThread]: Store serial: [23168313]
+[2024-05-12 10:49:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168313]
+[2024-05-12 10:49:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 10:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly-cpu
+[2024-05-12 10:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qwak-core
+[2024-05-12 10:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-admin-logentry-extension
+[2024-05-12 10:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: LVPocket
+[2024-05-12 10:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kv-azure-blob
+[2024-05-12 10:49:40] INFO root fetch - processPackages [LVPocket]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-12 10:49:40] INFO root fetch - processPackages [kv-azure-blob]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 10:49:40] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240512] Old Version: [2.17.0.dev20240511]
+[2024-05-12 10:49:40] INFO root fetch - processPackages [LVPocket]: Downloading https://files.pythonhosted.org/packages/48/ed/f82cd6c9703a4caf752a438993722c48147940a1e9d68879c17cac0b12c8/LVPocket-0.2.0.tar.gz
+[2024-05-12 10:49:40] WARNING root fetch - processPackages [django-admin-logentry-extension]: Skipping, unable to determine old version
+[2024-05-12 10:49:40] INFO root fetch - main [MainThread]: End processing [django-admin-logentry-extension] error
+[2024-05-12 10:49:40] INFO root fetch - processPackages [kv-azure-blob]: Downloading https://files.pythonhosted.org/packages/7d/90/aab8099604d566ab08ed345342bba5020a099d50b020e970d5b28d439f91/kv_azure_blob-0.1.1.tar.gz
+[2024-05-12 10:49:40] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/4f/67/225479b8337f5f2c9ca482d97d986ca4569e972d3119d5db388306cfba52/tf_nightly_cpu-2.17.0.dev20240511-cp39-cp39-win_amd64.whl
+[2024-05-12 10:49:40] INFO root fetch - processPackages [qwak-core]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-12 10:49:41] INFO root fetch - processPackages [kv-azure-blob]: Downloading https://files.pythonhosted.org/packages/e2/6c/66977dfc62a7e169f5f421a42ccde75b690b7d10ad926b533f6e7ce21bff/kv_azure_blob-0.1.2.tar.gz
+[2024-05-12 10:49:41] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/cc/53/a88632ad8bf3e76484ade9083c46e5c7f494882c33d0c6d5a0867f594ba1/tf_nightly_cpu-2.17.0.dev20240512-cp311-cp311-win_amd64.whl
+[2024-05-12 10:49:41] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/40/dc/9bf7a0a11e5d16704620fd9a2d038eee79e38d502983f2c9975412d1053c/qwak_core-0.4.8.tar.gz
+[2024-05-12 10:49:41] INFO root fetch - processPackages [LVPocket]: Downloading https://files.pythonhosted.org/packages/3d/fc/00c7e257dff30976c538a00d1ae1d8d4be41b661c39f4dd36d9cfd9226f0/LVPocket-0.2.1.tar.gz
+[2024-05-12 10:49:41] INFO root fetch - processPackages [kv-azure-blob]: executing diffoscope
+[2024-05-12 10:49:41] INFO root fetch - processPackages [kv-azure-blob]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kv_azure_blob-0.1.1.tar.gz tmp/kv_azure_blob-0.1.2.tar.gz --markdown 20240512/k/kv-azure-blob/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 10:49:41] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-05-12 10:49:41] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240511-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240512-cp311-cp311-win_amd64.whl.zip --markdown 20240512/t/tf-nightly-cpu/2.17.0.dev20240511-2.17.0.dev20240512/README.md --exclude *.pyd
+[2024-05-12 10:49:41] INFO root fetch - processPackages [LVPocket]: executing diffoscope
+[2024-05-12 10:49:41] INFO root fetch - processPackages [LVPocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LVPocket-0.2.0.tar.gz tmp/LVPocket-0.2.1.tar.gz --markdown 20240512/L/LVPocket/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-12 10:49:41] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/fe/09/8867573c92d18e200499a583b45f6adb1552d9e721e39370c8aa578b7080/qwak_core-0.4.9.tar.gz
+[2024-05-12 10:49:41] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2024-05-12 10:49:41] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.4.8.tar.gz tmp/qwak_core-0.4.9.tar.gz --markdown 20240512/q/qwak-core/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-12 10:49:41] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240511-cp39-cp39-win_amd64.whl.zip]
+[2024-05-12 10:49:41] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240512-cp311-cp311-win_amd64.whl.zip]
+[2024-05-12 10:49:41] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-05-12 10:49:41] INFO root fetch - processPackages [kv-azure-blob]: Remove: archive file [/home/abi/fetcher/tmp/kv_azure_blob-0.1.1.tar.gz]
+[2024-05-12 10:49:41] INFO root fetch - processPackages [kv-azure-blob]: Remove: archive file [/home/abi/fetcher/tmp/kv_azure_blob-0.1.2.tar.gz]
+[2024-05-12 10:49:41] INFO root fetch - main [MainThread]: End processing [kv-azure-blob]: success
+[2024-05-12 10:49:42] INFO root fetch - processPackages [LVPocket]: Remove: archive file [/home/abi/fetcher/tmp/LVPocket-0.2.0.tar.gz]
+[2024-05-12 10:49:42] INFO root fetch - processPackages [LVPocket]: Remove: archive file [/home/abi/fetcher/tmp/LVPocket-0.2.1.tar.gz]
+[2024-05-12 10:49:42] INFO root fetch - main [MainThread]: End processing [LVPocket]: success
+[2024-05-12 10:49:44] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.4.8.tar.gz]
+[2024-05-12 10:49:44] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.4.9.tar.gz]
+[2024-05-12 10:49:44] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2024-05-12 10:49:44] INFO root fetch - main [MainThread]: Store serial: [23168332]
