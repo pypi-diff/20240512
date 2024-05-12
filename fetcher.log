@@ -18228,3 +18228,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:34:12] INFO root fetch - processPackages [nef-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/nef_pipelines-0.1.66.tar.gz]
 [2024-05-12 23:34:12] INFO root fetch - main [MainThread]: End processing [nef-pipelines]: success
 [2024-05-12 23:34:12] INFO root fetch - main [MainThread]: Store serial: [23174016]
+[2024-05-12 23:36:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23174016]
+[2024-05-12 23:36:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 23:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: STO-OSCR
+[2024-05-12 23:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xnlpy
+[2024-05-12 23:36:21] INFO root fetch - processPackages [xnlpy]: New version: [0.0.2.3] Old Version: [0.0.1]
+[2024-05-12 23:36:21] INFO root fetch - processPackages [xnlpy]: Downloading https://files.pythonhosted.org/packages/e2/c5/cda16ab8bbedd58dc035645da4db99f4250e2f99fae89c1f36c7bb5305a5/xnlpy-0.0.1.tar.gz
+[2024-05-12 23:36:21] INFO root fetch - processPackages [STO-OSCR]: New version: [2024.5b120] Old Version: [2024.4b20]
+[2024-05-12 23:36:21] INFO root fetch - processPackages [STO-OSCR]: Downloading https://files.pythonhosted.org/packages/7d/80/f6c8b5cf1e23507eb36c000b61a3f71ed3aebefafe4a0dc4f1a2141ae4a7/sto_oscr-2024.4b20.tar.gz
+[2024-05-12 23:36:21] INFO root fetch - processPackages [xnlpy]: Downloading https://files.pythonhosted.org/packages/51/be/c1d755354bb5fc3c8d3613d79ae92f78d7f93fdb0da1696b110ad5c520df/xnlpy-0.0.2.3-py3-none-any.whl
+[2024-05-12 23:36:21] INFO root fetch - processPackages [xnlpy]: executing diffoscope
+[2024-05-12 23:36:21] INFO root fetch - processPackages [xnlpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xnlpy-0.0.1.tar.gz tmp/xnlpy-0.0.2.3-py3-none-any.whl.zip --markdown 20240512/x/xnlpy/0.0.1-0.0.2.3/README.md --exclude *.pyd
+[2024-05-12 23:36:21] INFO root fetch - processPackages [STO-OSCR]: Downloading https://files.pythonhosted.org/packages/7c/ca/f79db0d681445efba2505da33a6e4839e23457716648e362d763b26ea280/sto_oscr-2024.5b120.tar.gz
+[2024-05-12 23:36:21] INFO root fetch - processPackages [STO-OSCR]: executing diffoscope
+[2024-05-12 23:36:21] INFO root fetch - processPackages [STO-OSCR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sto_oscr-2024.4b20.tar.gz tmp/sto_oscr-2024.5b120.tar.gz --markdown 20240512/S/STO-OSCR/2024.4b20-2024.5b120/README.md --exclude *.pyd
+[2024-05-12 23:36:22] INFO root fetch - processPackages [xnlpy]: Remove: archive file [/home/abi/fetcher/tmp/xnlpy-0.0.1.tar.gz]
+[2024-05-12 23:36:22] INFO root fetch - processPackages [xnlpy]: Remove: archive file [/home/abi/fetcher/tmp/xnlpy-0.0.2.3-py3-none-any.whl.zip]
+[2024-05-12 23:36:22] INFO root fetch - main [MainThread]: End processing [xnlpy]: success
+[2024-05-12 23:36:22] INFO root fetch - processPackages [STO-OSCR]: Remove: archive file [/home/abi/fetcher/tmp/sto_oscr-2024.4b20.tar.gz]
+[2024-05-12 23:36:22] INFO root fetch - processPackages [STO-OSCR]: Remove: archive file [/home/abi/fetcher/tmp/sto_oscr-2024.5b120.tar.gz]
+[2024-05-12 23:36:22] INFO root fetch - main [MainThread]: End processing [STO-OSCR]: success
+[2024-05-12 23:36:22] INFO root fetch - main [MainThread]: Store serial: [23174021]
