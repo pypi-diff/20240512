@@ -1665,3 +1665,12 @@
 [2024-05-12 02:23:03] INFO root fetch - processPackages [unicorn-binance-websocket-api]: Remove: archive file [/home/abi/fetcher/tmp/unicorn_binance_websocket_api-2.7.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-12 02:23:03] INFO root fetch - main [MainThread]: End processing [unicorn-binance-websocket-api]: success
 [2024-05-12 02:23:03] INFO root fetch - main [MainThread]: Store serial: [23165637]
+[2024-05-12 02:25:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165637]
+[2024-05-12 02:25:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 02:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: socket-oneline
+[2024-05-12 02:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mutawalliz
+[2024-05-12 02:25:20] WARNING root fetch - processPackages [socket-oneline]: Skipping, unable to determine old version
+[2024-05-12 02:25:20] INFO root fetch - main [MainThread]: End processing [socket-oneline] error
+[2024-05-12 02:25:20] WARNING root fetch - processPackages [mutawalliz]: Skipping, unable to determine old version
+[2024-05-12 02:25:20] INFO root fetch - main [MainThread]: End processing [mutawalliz] error
+[2024-05-12 02:25:20] INFO root fetch - main [MainThread]: Store serial: [23165706]
