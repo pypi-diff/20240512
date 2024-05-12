@@ -14762,3 +14762,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:40:30] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.296.tar.gz]
 [2024-05-12 19:40:30] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
 [2024-05-12 19:40:30] INFO root fetch - main [MainThread]: Store serial: [23172356]
+[2024-05-12 19:42:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172356]
+[2024-05-12 19:42:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 19:42:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdiscount-api-client
+[2024-05-12 19:42:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: satisfiednessz
+[2024-05-12 19:42:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cyberonix
+[2024-05-12 19:42:39] INFO root fetch - processPackages [cyberonix]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-12 19:42:39] INFO root fetch - processPackages [cdiscount-api-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 19:42:39] WARNING root fetch - processPackages [satisfiednessz]: Skipping, unable to determine old version
+[2024-05-12 19:42:39] INFO root fetch - main [MainThread]: End processing [satisfiednessz] error
+[2024-05-12 19:42:39] INFO root fetch - processPackages [cyberonix]: Downloading https://files.pythonhosted.org/packages/27/3c/0d38022477654891f8aec91a29fd3156fbd6904a912579f506f848a9af1a/cyberonix-2.0.8.tar.gz
+[2024-05-12 19:42:39] INFO root fetch - processPackages [cdiscount-api-client]: Downloading https://files.pythonhosted.org/packages/5c/92/1c19960555762471f86c0ca8cb2ddf9e37bce42ed5fbaa5dc12404554538/cdiscount-api-client-0.0.8.tar.gz
+[2024-05-12 19:42:40] INFO root fetch - processPackages [cyberonix]: Downloading https://files.pythonhosted.org/packages/cc/34/7b235fd9c8ec906c3aa5033ce74e3bd46e86cee680519bcbfcb69587c539/cyberonix-2.0.9.tar.gz
+[2024-05-12 19:42:40] INFO root fetch - processPackages [cdiscount-api-client]: Downloading https://files.pythonhosted.org/packages/a8/a2/02e08f64b554698929d51eb36be8921612d14340464cd85ddb09c51be069/cdiscount-api-client-0.0.9.tar.gz
+[2024-05-12 19:42:40] INFO root fetch - processPackages [cyberonix]: executing diffoscope
+[2024-05-12 19:42:40] INFO root fetch - processPackages [cyberonix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberonix-2.0.8.tar.gz tmp/cyberonix-2.0.9.tar.gz --markdown 20240512/c/cyberonix/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-12 19:42:40] INFO root fetch - processPackages [cdiscount-api-client]: executing diffoscope
+[2024-05-12 19:42:40] INFO root fetch - processPackages [cdiscount-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdiscount-api-client-0.0.8.tar.gz tmp/cdiscount-api-client-0.0.9.tar.gz --markdown 20240512/c/cdiscount-api-client/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 19:42:40] INFO root fetch - processPackages [cdiscount-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cdiscount-api-client-0.0.8.tar.gz]
+[2024-05-12 19:42:40] INFO root fetch - processPackages [cdiscount-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cdiscount-api-client-0.0.9.tar.gz]
+[2024-05-12 19:42:40] INFO root fetch - main [MainThread]: End processing [cdiscount-api-client]: success
+[2024-05-12 19:42:41] INFO root fetch - processPackages [cyberonix]: Remove: archive file [/home/abi/fetcher/tmp/cyberonix-2.0.8.tar.gz]
+[2024-05-12 19:42:41] INFO root fetch - processPackages [cyberonix]: Remove: archive file [/home/abi/fetcher/tmp/cyberonix-2.0.9.tar.gz]
+[2024-05-12 19:42:41] INFO root fetch - main [MainThread]: End processing [cyberonix]: success
+[2024-05-12 19:42:41] INFO root fetch - main [MainThread]: Store serial: [23172365]
