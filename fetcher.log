@@ -14020,3 +14020,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:56:54] INFO root fetch - processPackages [topologicpy]: Remove: archive file [/home/abi/fetcher/tmp/topologicpy-6.0.0-py3-none-any.whl.zip]
 [2024-05-12 18:56:54] INFO root fetch - main [MainThread]: End processing [topologicpy]: success
 [2024-05-12 18:56:54] INFO root fetch - main [MainThread]: Store serial: [23171957]
+[2024-05-12 18:58:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171957]
+[2024-05-12 18:59:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 18:59:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: retailingz
+[2024-05-12 18:59:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: entomologicallyz
+[2024-05-12 18:59:03] WARNING root fetch - processPackages [entomologicallyz]: Skipping, unable to determine old version
+[2024-05-12 18:59:03] INFO root fetch - main [MainThread]: End processing [entomologicallyz] error
+[2024-05-12 18:59:03] WARNING root fetch - processPackages [retailingz]: Skipping, unable to determine old version
+[2024-05-12 18:59:03] INFO root fetch - main [MainThread]: End processing [retailingz] error
+[2024-05-12 18:59:03] INFO root fetch - main [MainThread]: Store serial: [23171965]
