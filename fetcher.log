@@ -2395,3 +2395,42 @@
 [2024-05-12 03:36:21] WARNING root fetch - processPackages [tachyphylaxiaz]: Skipping, unable to determine old version
 [2024-05-12 03:36:21] INFO root fetch - main [MainThread]: End processing [tachyphylaxiaz] error
 [2024-05-12 03:36:21] INFO root fetch - main [MainThread]: Store serial: [23166057]
+[2024-05-12 03:38:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166057]
+[2024-05-12 03:38:29] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 03:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyAgrum-nightly
+[2024-05-12 03:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hj-proj-module
+[2024-05-12 03:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyircsdk
+[2024-05-12 03:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SelfCalibratedConformal
+[2024-05-12 03:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wlkata-mirobot-Virtual
+[2024-05-12 03:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SelfCalibratedConformal
+[2024-05-12 03:38:29] INFO root fetch - processPackages [hj-proj-module]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-05-12 03:38:29] WARNING root fetch - processPackages [SelfCalibratedConformal]: Skipping, unable to determine old version
+[2024-05-12 03:38:29] INFO root fetch - main [MainThread]: End processing [SelfCalibratedConformal] error
+[2024-05-12 03:38:29] WARNING root fetch - processPackages [SelfCalibratedConformal]: Skipping, unable to determine old version
+[2024-05-12 03:38:29] INFO root fetch - main [MainThread]: End processing [SelfCalibratedConformal] error
+[2024-05-12 03:38:30] INFO root fetch - processPackages [hj-proj-module]: Downloading https://files.pythonhosted.org/packages/db/12/7bb0e640457f3bbbbc0b77439e6b03839642728f5b9676f3a6cdbf41672e/hj_proj_module-0.1.7.tar.gz
+[2024-05-12 03:38:30] WARNING root fetch - processPackages [wlkata-mirobot-Virtual]: Skipping, unable to determine old version
+[2024-05-12 03:38:30] INFO root fetch - main [MainThread]: End processing [wlkata-mirobot-Virtual] error
+[2024-05-12 03:38:30] INFO root fetch - processPackages [pyircsdk]: New version: [1.5.0] Old Version: [1.4.0]
+[2024-05-12 03:38:30] INFO root fetch - processPackages [pyAgrum-nightly]: New version: [1.9.0.9.dev202310191697564854] Old Version: [1.9.0.9.dev202310181697564854]
+[2024-05-12 03:38:30] INFO root fetch - processPackages [pyircsdk]: Downloading https://files.pythonhosted.org/packages/45/b8/ff881f1edc6a6079e9872ed153cd1542455e352732ca673ccc022aba8013/pyircsdk-1.4.0.tar.gz
+[2024-05-12 03:38:30] INFO root fetch - processPackages [hj-proj-module]: Downloading https://files.pythonhosted.org/packages/94/49/69693d7a64f73d84255649b427048581401581af1b2733dd7b132cd4a620/hj_proj_module-0.1.9.tar.gz
+[2024-05-12 03:38:30] INFO root fetch - processPackages [hj-proj-module]: executing diffoscope
+[2024-05-12 03:38:30] INFO root fetch - processPackages [hj-proj-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hj_proj_module-0.1.7.tar.gz tmp/hj_proj_module-0.1.9.tar.gz --markdown 20240512/h/hj-proj-module/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-05-12 03:38:30] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/64/23/4308469c4be3abcfc53ec2ccbd7dcca1618077035522cae4b364a9c6cc56/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl
+[2024-05-12 03:38:30] INFO root fetch - processPackages [pyircsdk]: Downloading https://files.pythonhosted.org/packages/2e/e8/ba5c1afc5de4541e5c6683e2c4b060926a37a3dafbea568c5d173c28e20d/pyircsdk-1.5.0.tar.gz
+[2024-05-12 03:38:30] INFO root fetch - processPackages [pyircsdk]: executing diffoscope
+[2024-05-12 03:38:30] INFO root fetch - processPackages [pyircsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyircsdk-1.4.0.tar.gz tmp/pyircsdk-1.5.0.tar.gz --markdown 20240512/p/pyircsdk/1.4.0-1.5.0/README.md --exclude *.pyd
+[2024-05-12 03:38:30] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/84/cc/6d2d3b13a2080cfbfa9792321774075d119b4fa37902c5a9d93d8eccf13d/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl
+[2024-05-12 03:38:30] INFO root fetch - processPackages [hj-proj-module]: Remove: archive file [/home/abi/fetcher/tmp/hj_proj_module-0.1.7.tar.gz]
+[2024-05-12 03:38:30] INFO root fetch - processPackages [hj-proj-module]: Remove: archive file [/home/abi/fetcher/tmp/hj_proj_module-0.1.9.tar.gz]
+[2024-05-12 03:38:30] INFO root fetch - main [MainThread]: End processing [hj-proj-module]: success
+[2024-05-12 03:38:31] INFO root fetch - processPackages [pyAgrum-nightly]: executing diffoscope
+[2024-05-12 03:38:31] INFO root fetch - processPackages [pyAgrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip --markdown 20240512/p/pyAgrum-nightly/1.9.0.9.dev202310181697564854-1.9.0.9.dev202310191697564854/README.md --exclude *.pyd
+[2024-05-12 03:38:31] INFO root fetch - processPackages [pyircsdk]: Remove: archive file [/home/abi/fetcher/tmp/pyircsdk-1.4.0.tar.gz]
+[2024-05-12 03:38:31] INFO root fetch - processPackages [pyircsdk]: Remove: archive file [/home/abi/fetcher/tmp/pyircsdk-1.5.0.tar.gz]
+[2024-05-12 03:38:31] INFO root fetch - main [MainThread]: End processing [pyircsdk]: success
+[2024-05-12 03:38:31] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-05-12 03:38:31] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-05-12 03:38:31] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
+[2024-05-12 03:38:31] INFO root fetch - main [MainThread]: Store serial: [23166100]
