@@ -4899,3 +4899,9 @@
 [2024-05-12 07:35:02] INFO root fetch - processPackages [odoo14-addon-pms]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_pms-14.0.2.9.0-py3-none-any.whl.zip]
 [2024-05-12 07:35:02] INFO root fetch - main [MainThread]: End processing [odoo14-addon-pms]: success
 [2024-05-12 07:35:02] INFO root fetch - main [MainThread]: Store serial: [23167265]
+[2024-05-12 07:37:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167265]
+[2024-05-12 07:37:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 07:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: merycopotamusz
+[2024-05-12 07:37:11] WARNING root fetch - processPackages [merycopotamusz]: Skipping, unable to determine old version
+[2024-05-12 07:37:11] INFO root fetch - main [MainThread]: End processing [merycopotamusz] error
+[2024-05-12 07:37:11] INFO root fetch - main [MainThread]: Store serial: [23167269]
