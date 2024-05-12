@@ -12265,3 +12265,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:05:30] INFO root fetch - processPackages [leafmap]: Remove: archive file [/home/abi/fetcher/tmp/leafmap-0.9.6.tar.gz]
 [2024-05-12 17:05:30] INFO root fetch - main [MainThread]: End processing [leafmap]: success
 [2024-05-12 17:05:30] INFO root fetch - main [MainThread]: Store serial: [23171007]
+[2024-05-12 17:07:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171007]
+[2024-05-12 17:07:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 17:07:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiogtrans
+[2024-05-12 17:07:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: speedmeter
+[2024-05-12 17:07:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-12 17:07:38] INFO root fetch - processPackages [aiogtrans]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-12 17:07:38] INFO root fetch - processPackages [aiogtrans]: Downloading https://files.pythonhosted.org/packages/a3/8c/217a624ccf754fa340380858a110bc8a83c50506bf57ae670fd1c6b04467/aiogtrans-1.1.8.tar.gz
+[2024-05-12 17:07:38] WARNING root fetch - processPackages [speedmeter]: Skipping, unable to determine old version
+[2024-05-12 17:07:38] INFO root fetch - main [MainThread]: End processing [speedmeter] error
+[2024-05-12 17:07:38] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-12 17:07:39] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-12 17:07:39] INFO root fetch - processPackages [aiogtrans]: Downloading https://files.pythonhosted.org/packages/94/df/bcbe82709b2c0fc455e0a606310dad44fd4b359ba3d3d77abfd8cd047feb/aiogtrans-1.1.9.tar.gz
+[2024-05-12 17:07:39] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-12 17:07:39] INFO root fetch - processPackages [aiogtrans]: executing diffoscope
+[2024-05-12 17:07:39] INFO root fetch - processPackages [aiogtrans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogtrans-1.1.8.tar.gz tmp/aiogtrans-1.1.9.tar.gz --markdown 20240512/a/aiogtrans/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-12 17:07:39] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-12 17:07:39] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240512/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-12 17:07:40] INFO root fetch - processPackages [aiogtrans]: Remove: archive file [/home/abi/fetcher/tmp/aiogtrans-1.1.8.tar.gz]
+[2024-05-12 17:07:40] INFO root fetch - processPackages [aiogtrans]: Remove: archive file [/home/abi/fetcher/tmp/aiogtrans-1.1.9.tar.gz]
+[2024-05-12 17:07:40] INFO root fetch - main [MainThread]: End processing [aiogtrans]: success
+[2024-05-12 17:07:40] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-12 17:07:40] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-12 17:07:40] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-12 17:07:40] INFO root fetch - main [MainThread]: Store serial: [23171017]
