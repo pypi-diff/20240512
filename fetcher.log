@@ -14206,3 +14206,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:10:02] INFO root fetch - processPackages [pygame-gamma]: Remove: archive file [/home/abi/fetcher/tmp/pygame_gamma-0.4.2.tar.gz]
 [2024-05-12 19:10:02] INFO root fetch - main [MainThread]: End processing [pygame-gamma]: success
 [2024-05-12 19:10:02] INFO root fetch - main [MainThread]: Store serial: [23172030]
+[2024-05-12 19:12:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172030]
+[2024-05-12 19:12:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 19:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moulti
+[2024-05-12 19:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mimllearning
+[2024-05-12 19:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SelfCalibratedConformal
+[2024-05-12 19:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: experiment-helpers
+[2024-05-12 19:12:11] INFO root fetch - processPackages [moulti]: New version: [1.8.1] Old Version: [1.8.0]
+[2024-05-12 19:12:11] INFO root fetch - processPackages [SelfCalibratedConformal]: New version: [0.32] Old Version: [0.31]
+[2024-05-12 19:12:11] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-12 19:12:11] INFO root fetch - processPackages [moulti]: Downloading https://files.pythonhosted.org/packages/97/e9/590f2b32716baa761cca3a52a5dcaa1b0563a83ee679de240c7626b8367d/moulti-1.8.0.tar.gz
+[2024-05-12 19:12:11] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/8f/69/b77339f83bfba8dcaf9458907062da632d469eb6b02a10bc27391e7df3de/SelfCalibratedConformal-0.31.tar.gz
+[2024-05-12 19:12:11] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-12 19:12:11] INFO root fetch - processPackages [experiment-helpers]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 19:12:11] INFO root fetch - processPackages [moulti]: Downloading https://files.pythonhosted.org/packages/4f/dd/919f811128430b72d8e6428eca72095e15cd854d4c334c4c985427b2c703/moulti-1.8.1-py3-none-any.whl
+[2024-05-12 19:12:11] INFO root fetch - processPackages [experiment-helpers]: Downloading https://files.pythonhosted.org/packages/d8/b8/4d2059d553d489beb944d46490e92a1c756a53a2151fe5a13ac31f8c7e2d/experiment_helpers-0.0.8.tar.gz
+[2024-05-12 19:12:11] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/8c/f1/d2332e4ffeeeae9136ff205914322918ebd9f5655e92b79b8123600c8875/SelfCalibratedConformal-0.32.tar.gz
+[2024-05-12 19:12:11] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-12 19:12:11] INFO root fetch - processPackages [moulti]: executing diffoscope
+[2024-05-12 19:12:11] INFO root fetch - processPackages [moulti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moulti-1.8.0.tar.gz tmp/moulti-1.8.1-py3-none-any.whl.zip --markdown 20240512/m/moulti/1.8.0-1.8.1/README.md --exclude *.pyd
+[2024-05-12 19:12:11] INFO root fetch - processPackages [SelfCalibratedConformal]: executing diffoscope
+[2024-05-12 19:12:11] INFO root fetch - processPackages [SelfCalibratedConformal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SelfCalibratedConformal-0.31.tar.gz tmp/SelfCalibratedConformal-0.32.tar.gz --markdown 20240512/S/SelfCalibratedConformal/0.31-0.32/README.md --exclude *.pyd
+[2024-05-12 19:12:11] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-12 19:12:11] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240512/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-12 19:12:12] INFO root fetch - processPackages [experiment-helpers]: Downloading https://files.pythonhosted.org/packages/91/85/d55140197c7fbdcf545e299dfef55310447c595a8fc02678c5384bed232b/experiment_helpers-0.0.9.tar.gz
+[2024-05-12 19:12:12] INFO root fetch - processPackages [experiment-helpers]: executing diffoscope
+[2024-05-12 19:12:12] INFO root fetch - processPackages [experiment-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/experiment_helpers-0.0.8.tar.gz tmp/experiment_helpers-0.0.9.tar.gz --markdown 20240512/e/experiment-helpers/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 19:12:12] INFO root fetch - processPackages [moulti]: Remove: archive file [/home/abi/fetcher/tmp/moulti-1.8.0.tar.gz]
+[2024-05-12 19:12:12] INFO root fetch - processPackages [moulti]: Remove: archive file [/home/abi/fetcher/tmp/moulti-1.8.1-py3-none-any.whl.zip]
+[2024-05-12 19:12:12] INFO root fetch - main [MainThread]: End processing [moulti]: success
+[2024-05-12 19:12:12] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.31.tar.gz]
+[2024-05-12 19:12:12] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.32.tar.gz]
+[2024-05-12 19:12:12] INFO root fetch - main [MainThread]: End processing [SelfCalibratedConformal]: success
+[2024-05-12 19:12:12] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-12 19:12:12] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-12 19:12:12] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-12 19:12:12] INFO root fetch - processPackages [experiment-helpers]: Remove: archive file [/home/abi/fetcher/tmp/experiment_helpers-0.0.8.tar.gz]
+[2024-05-12 19:12:12] INFO root fetch - processPackages [experiment-helpers]: Remove: archive file [/home/abi/fetcher/tmp/experiment_helpers-0.0.9.tar.gz]
+[2024-05-12 19:12:12] INFO root fetch - main [MainThread]: End processing [experiment-helpers]: success
+[2024-05-12 19:12:12] INFO root fetch - main [MainThread]: Store serial: [23172039]
