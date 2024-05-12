@@ -1502,3 +1502,47 @@
 [2024-05-12 02:14:11] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.99.tar.gz]
 [2024-05-12 02:14:11] INFO root fetch - main [MainThread]: End processing [oakvar]: success
 [2024-05-12 02:14:11] INFO root fetch - main [MainThread]: Store serial: [23165538]
+[2024-05-12 02:16:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165538]
+[2024-05-12 02:16:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 02:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdktf-gitlab-runner
+[2024-05-12 02:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytorch-ignite
+[2024-05-12 02:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-common
+[2024-05-12 02:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: readyapi
+[2024-05-12 02:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gui-api-tkinter
+[2024-05-12 02:16:20] INFO root fetch - processPackages [cdktf-gitlab-runner]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-12 02:16:20] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-12 02:16:20] INFO root fetch - processPackages [pytorch-ignite]: New version: [0.6.0.dev20240511] Old Version: [0.6.0.dev20240510]
+[2024-05-12 02:16:20] INFO root fetch - processPackages [gui-api-tkinter]: New version: [0.0.24] Old Version: [0.0.23]
+[2024-05-12 02:16:20] INFO root fetch - processPackages [readyapi]: New version: [0.110.2.dev1] Old Version: [0.110.2]
+[2024-05-12 02:16:20] INFO root fetch - processPackages [cdktf-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/8a/6e/f1c520e407ce3adf90b51d2d1ca84d283a08c808fc00c9deeff4f4734d82/cdktf-gitlab-runner-0.0.98.tar.gz
+[2024-05-12 02:16:20] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-05-12 02:16:20] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/51/5d/65809b9d45bb6e7d912c9342d3d3426867459742eb4c6635e617fe4f4496/pytorch_ignite-0.6.0.dev20240510.tar.gz
+[2024-05-12 02:16:20] INFO root fetch - processPackages [gui-api-tkinter]: Downloading https://files.pythonhosted.org/packages/fe/b8/41a5abefb3bc3be11a2176b0048a85967690c3210b16bbeb367cecc61edd/gui-api-tkinter-0.0.23.tar.gz
+[2024-05-12 02:16:20] INFO root fetch - processPackages [readyapi]: Downloading https://files.pythonhosted.org/packages/6d/9c/a4f61e9aa6858d62d14055cd5643c36bdfba8b493fded2b41db91298719c/readyapi-0.110.2.tar.gz
+[2024-05-12 02:16:20] INFO root fetch - processPackages [cdktf-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/59/f2/0d7ab5ec05a2b43bd92c00fd237afddb1e2770c7edaf03b1f7ddef6c0793/cdktf-gitlab-runner-0.0.99.tar.gz
+[2024-05-12 02:16:20] WARNING root fetch - processPackages [readyapi]: Skipping package: exceeds size limit 11998836>=10485760
+[2024-05-12 02:16:20] INFO root fetch - main [MainThread]: End processing [readyapi] error
+[2024-05-12 02:16:20] INFO root fetch - processPackages [cdktf-gitlab-runner]: executing diffoscope
+[2024-05-12 02:16:20] INFO root fetch - processPackages [cdktf-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-gitlab-runner-0.0.98.tar.gz tmp/cdktf-gitlab-runner-0.0.99.tar.gz --markdown 20240512/c/cdktf-gitlab-runner/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-12 02:16:20] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-05-12 02:16:20] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/37/2a/64abc42b84a1fa6482dad575b80022bd9add97249b356410258b2b23f8e7/pytorch_ignite-0.6.0.dev20240511.tar.gz
+[2024-05-12 02:16:20] INFO root fetch - processPackages [gui-api-tkinter]: Downloading https://files.pythonhosted.org/packages/b9/96/6c4f9a610ada959c3d0bf3ca1580924a988f9e028ad59f3539dde1bd0754/gui_api_tkinter-0.0.24.tar.gz
+[2024-05-12 02:16:20] INFO root fetch - processPackages [gui-api-tkinter]: executing diffoscope
+[2024-05-12 02:16:20] INFO root fetch - processPackages [gui-api-tkinter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gui-api-tkinter-0.0.23.tar.gz tmp/gui_api_tkinter-0.0.24.tar.gz --markdown 20240512/g/gui-api-tkinter/0.0.23-0.0.24/README.md --exclude *.pyd
+[2024-05-12 02:16:20] INFO root fetch - processPackages [pytorch-ignite]: executing diffoscope
+[2024-05-12 02:16:20] INFO root fetch - processPackages [pytorch-ignite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch_ignite-0.6.0.dev20240510.tar.gz tmp/pytorch_ignite-0.6.0.dev20240511.tar.gz --markdown 20240512/p/pytorch-ignite/0.6.0.dev20240510-0.6.0.dev20240511/README.md --exclude *.pyd
+[2024-05-12 02:16:21] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-05-12 02:16:21] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240512/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-12 02:16:21] INFO root fetch - processPackages [cdktf-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-gitlab-runner-0.0.98.tar.gz]
+[2024-05-12 02:16:21] INFO root fetch - processPackages [cdktf-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-gitlab-runner-0.0.99.tar.gz]
+[2024-05-12 02:16:21] INFO root fetch - main [MainThread]: End processing [cdktf-gitlab-runner]: success
+[2024-05-12 02:16:21] INFO root fetch - processPackages [gui-api-tkinter]: Remove: archive file [/home/abi/fetcher/tmp/gui-api-tkinter-0.0.23.tar.gz]
+[2024-05-12 02:16:21] INFO root fetch - processPackages [gui-api-tkinter]: Remove: archive file [/home/abi/fetcher/tmp/gui_api_tkinter-0.0.24.tar.gz]
+[2024-05-12 02:16:21] INFO root fetch - main [MainThread]: End processing [gui-api-tkinter]: success
+[2024-05-12 02:16:21] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-05-12 02:16:21] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-05-12 02:16:21] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-05-12 02:16:21] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch_ignite-0.6.0.dev20240510.tar.gz]
+[2024-05-12 02:16:21] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch_ignite-0.6.0.dev20240511.tar.gz]
+[2024-05-12 02:16:21] INFO root fetch - main [MainThread]: End processing [pytorch-ignite]: success
+[2024-05-12 02:16:21] INFO root fetch - main [MainThread]: Store serial: [23165553]
