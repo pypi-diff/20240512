@@ -4211,3 +4211,12 @@
 [2024-05-12 06:12:20] WARNING root fetch - processPackages [GRCwjt]: Skipping, unable to determine old version
 [2024-05-12 06:12:20] INFO root fetch - main [MainThread]: End processing [GRCwjt] error
 [2024-05-12 06:12:20] INFO root fetch - main [MainThread]: Store serial: [23166915]
+[2024-05-12 06:14:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166915]
+[2024-05-12 06:14:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 06:14:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hayez
+[2024-05-12 06:14:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: normino
+[2024-05-12 06:14:29] WARNING root fetch - processPackages [normino]: Skipping, unable to determine old version
+[2024-05-12 06:14:29] INFO root fetch - main [MainThread]: End processing [normino] error
+[2024-05-12 06:14:29] WARNING root fetch - processPackages [hayez]: Skipping, unable to determine old version
+[2024-05-12 06:14:29] INFO root fetch - main [MainThread]: End processing [hayez] error
+[2024-05-12 06:14:29] INFO root fetch - main [MainThread]: Store serial: [23166922]
