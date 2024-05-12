@@ -6484,3 +6484,20 @@
 [2024-05-12 09:39:04] INFO root fetch - processPackages [linktest]: Remove: archive file [/home/abi/fetcher/tmp/linktest-2.7.7.tar.gz]
 [2024-05-12 09:39:04] INFO root fetch - main [MainThread]: End processing [linktest]: success
 [2024-05-12 09:39:04] INFO root fetch - main [MainThread]: Store serial: [23167886]
+[2024-05-12 09:41:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167886]
+[2024-05-12 09:41:13] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-12 09:43:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167896]
+[2024-05-12 09:43:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 09:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sarathi
+[2024-05-12 09:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: data-prep-toolkit
+[2024-05-12 09:43:18] WARNING root fetch - processPackages [sarathi]: Skipping, unable to determine old version
+[2024-05-12 09:43:18] INFO root fetch - main [MainThread]: End processing [sarathi] error
+[2024-05-12 09:43:18] INFO root fetch - processPackages [data-prep-toolkit]: New version: [0.0.1.dev2] Old Version: [0.0.1.dev1]
+[2024-05-12 09:43:18] INFO root fetch - processPackages [data-prep-toolkit]: Downloading https://files.pythonhosted.org/packages/b8/0d/f1105e7ca349812cdc6dcaaab34680ae74f9c6c0761cfb91930932651e4e/data_prep_toolkit-0.0.1.dev1.tar.gz
+[2024-05-12 09:43:19] INFO root fetch - processPackages [data-prep-toolkit]: Downloading https://files.pythonhosted.org/packages/a9/c8/7f7d862a1811132a25cf47a5e4084620a79a9b04db679f5842991422e662/data_prep_toolkit-0.0.1.dev2.tar.gz
+[2024-05-12 09:43:19] INFO root fetch - processPackages [data-prep-toolkit]: executing diffoscope
+[2024-05-12 09:43:19] INFO root fetch - processPackages [data-prep-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_toolkit-0.0.1.dev1.tar.gz tmp/data_prep_toolkit-0.0.1.dev2.tar.gz --markdown 20240512/d/data-prep-toolkit/0.0.1.dev1-0.0.1.dev2/README.md --exclude *.pyd
+[2024-05-12 09:43:20] INFO root fetch - processPackages [data-prep-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit-0.0.1.dev1.tar.gz]
+[2024-05-12 09:43:20] INFO root fetch - processPackages [data-prep-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit-0.0.1.dev2.tar.gz]
+[2024-05-12 09:43:20] INFO root fetch - main [MainThread]: End processing [data-prep-toolkit]: success
+[2024-05-12 09:43:20] INFO root fetch - main [MainThread]: Store serial: [23167902]
