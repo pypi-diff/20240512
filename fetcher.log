@@ -12678,3 +12678,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:29:55] INFO root fetch - processPackages [sssm]: Remove: archive file [/home/abi/fetcher/tmp/sssm-0.0.3.tar.gz]
 [2024-05-12 17:29:55] INFO root fetch - main [MainThread]: End processing [sssm]: success
 [2024-05-12 17:29:55] INFO root fetch - main [MainThread]: Store serial: [23171246]
+[2024-05-12 17:31:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171246]
+[2024-05-12 17:32:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 17:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cairnz
+[2024-05-12 17:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webflask
+[2024-05-12 17:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: akshare
+[2024-05-12 17:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: syslogserver-to-cloudwatch
+[2024-05-12 17:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bw-aggregation
+[2024-05-12 17:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: austroasiaticz
+[2024-05-12 17:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bltzr
+[2024-05-12 17:32:03] INFO root fetch - processPackages [webflask]: New version: [0.2.1] Old Version: [0.2]
+[2024-05-12 17:32:03] WARNING root fetch - processPackages [cairnz]: Skipping, unable to determine old version
+[2024-05-12 17:32:03] INFO root fetch - main [MainThread]: End processing [cairnz] error
+[2024-05-12 17:32:03] INFO root fetch - processPackages [bltzr]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 17:32:03] INFO root fetch - processPackages [bw-aggregation]: New version: [1.0rc1] Old Version: [1.0]
+[2024-05-12 17:32:03] INFO root fetch - processPackages [syslogserver-to-cloudwatch]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 17:32:03] WARNING root fetch - processPackages [austroasiaticz]: Skipping, unable to determine old version
+[2024-05-12 17:32:03] INFO root fetch - main [MainThread]: End processing [austroasiaticz] error
+[2024-05-12 17:32:04] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2024-05-12 17:32:04] INFO root fetch - processPackages [webflask]: Downloading https://files.pythonhosted.org/packages/8e/8f/213b1a73b6bd58aa26452bfdc9264576860d312b4329c448e0b483440f0f/webflask-0.2.tar.gz
+[2024-05-12 17:32:04] INFO root fetch - processPackages [bltzr]: Downloading https://files.pythonhosted.org/packages/bd/0d/a9d5494ef9f2b47be8d0f1a6621c81239e87980f20659b7dcddf90a2ec3f/bltzr-0.1.1.tar.gz
+[2024-05-12 17:32:04] INFO root fetch - processPackages [bw-aggregation]: Downloading https://files.pythonhosted.org/packages/20/b6/4a9ea1fdfcd0f770a695b49e7ed73efe6438c52b208d6ac3f0f25743efa7/bw_aggregation-1.0.tar.gz
+[2024-05-12 17:32:04] INFO root fetch - processPackages [syslogserver-to-cloudwatch]: Downloading https://files.pythonhosted.org/packages/5f/f4/84bf84219de1a327e86aa743a99aacdabdc6cf1c40ee3e4db7e261d04989/syslogserver_to_cloudwatch-0.1.0.tar.gz
+[2024-05-12 17:32:04] INFO root fetch - processPackages [webflask]: Downloading https://files.pythonhosted.org/packages/9e/5f/c41bcff610423bc24a1b5f60a8c0fadb228d8e493f7940635ab6cfb80271/webflask-0.2.1.tar.gz
+[2024-05-12 17:32:04] INFO root fetch - processPackages [syslogserver-to-cloudwatch]: Downloading https://files.pythonhosted.org/packages/92/d3/1b840952374cbcbbe350476ef540d5b4e018f3e6b2b438e7a062541682a9/syslogserver_to_cloudwatch-0.1.1.tar.gz
+[2024-05-12 17:32:04] INFO root fetch - processPackages [bltzr]: Downloading https://files.pythonhosted.org/packages/4e/0b/2cc9ea3f8ba31bb89678c23551b7f24ba3af291d4b10becefee613ca7cf4/bltzr-0.1.2.tar.gz
+[2024-05-12 17:32:04] INFO root fetch - processPackages [bw-aggregation]: Downloading https://files.pythonhosted.org/packages/52/80/ae474ebf1b7ed4bd5efec038bb2ccb858a34a97f6ee09427359eedf319cc/bw_aggregation-1.0rc1.tar.gz
+[2024-05-12 17:32:04] INFO root fetch - processPackages [webflask]: executing diffoscope
+[2024-05-12 17:32:04] INFO root fetch - processPackages [webflask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webflask-0.2.tar.gz tmp/webflask-0.2.1.tar.gz --markdown 20240512/w/webflask/0.2-0.2.1/README.md --exclude *.pyd
+[2024-05-12 17:32:04] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2024-05-12 17:32:04] INFO root fetch - processPackages [syslogserver-to-cloudwatch]: executing diffoscope
+[2024-05-12 17:32:04] INFO root fetch - processPackages [syslogserver-to-cloudwatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syslogserver_to_cloudwatch-0.1.0.tar.gz tmp/syslogserver_to_cloudwatch-0.1.1.tar.gz --markdown 20240512/s/syslogserver-to-cloudwatch/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 17:32:04] INFO root fetch - processPackages [bltzr]: executing diffoscope
+[2024-05-12 17:32:04] INFO root fetch - processPackages [bltzr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bltzr-0.1.1.tar.gz tmp/bltzr-0.1.2.tar.gz --markdown 20240512/b/bltzr/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 17:32:04] INFO root fetch - processPackages [bw-aggregation]: executing diffoscope
+[2024-05-12 17:32:04] INFO root fetch - processPackages [bw-aggregation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bw_aggregation-1.0.tar.gz tmp/bw_aggregation-1.0rc1.tar.gz --markdown 20240512/b/bw-aggregation/1.0-1.0rc1/README.md --exclude *.pyd
+[2024-05-12 17:32:04] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2024-05-12 17:32:05] INFO root fetch - processPackages [bltzr]: Remove: archive file [/home/abi/fetcher/tmp/bltzr-0.1.1.tar.gz]
+[2024-05-12 17:32:05] INFO root fetch - processPackages [bltzr]: Remove: archive file [/home/abi/fetcher/tmp/bltzr-0.1.2.tar.gz]
+[2024-05-12 17:32:05] INFO root fetch - main [MainThread]: End processing [bltzr]: success
+[2024-05-12 17:32:05] INFO root fetch - processPackages [webflask]: Remove: archive file [/home/abi/fetcher/tmp/webflask-0.2.tar.gz]
+[2024-05-12 17:32:05] INFO root fetch - processPackages [webflask]: Remove: archive file [/home/abi/fetcher/tmp/webflask-0.2.1.tar.gz]
+[2024-05-12 17:32:05] INFO root fetch - main [MainThread]: End processing [webflask]: success
+[2024-05-12 17:32:05] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2024-05-12 17:32:05] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20240512/a/akshare/1.9.98-1.9.99/README.md --exclude *.pyd
+[2024-05-12 17:32:05] INFO root fetch - processPackages [syslogserver-to-cloudwatch]: Remove: archive file [/home/abi/fetcher/tmp/syslogserver_to_cloudwatch-0.1.0.tar.gz]
+[2024-05-12 17:32:05] INFO root fetch - processPackages [syslogserver-to-cloudwatch]: Remove: archive file [/home/abi/fetcher/tmp/syslogserver_to_cloudwatch-0.1.1.tar.gz]
+[2024-05-12 17:32:05] INFO root fetch - main [MainThread]: End processing [syslogserver-to-cloudwatch]: success
+[2024-05-12 17:32:05] INFO root fetch - processPackages [bw-aggregation]: Remove: archive file [/home/abi/fetcher/tmp/bw_aggregation-1.0.tar.gz]
+[2024-05-12 17:32:05] INFO root fetch - processPackages [bw-aggregation]: Remove: archive file [/home/abi/fetcher/tmp/bw_aggregation-1.0rc1.tar.gz]
+[2024-05-12 17:32:05] INFO root fetch - main [MainThread]: End processing [bw-aggregation]: success
+[2024-05-12 17:32:07] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.98.tar.gz]
+[2024-05-12 17:32:07] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
+[2024-05-12 17:32:07] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2024-05-12 17:32:07] INFO root fetch - main [MainThread]: Store serial: [23171271]
