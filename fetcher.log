@@ -11071,3 +11071,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:47:07] INFO root fetch - processPackages [fastf1]: Remove: archive file [/home/abi/fetcher/tmp/fastf1-3.4.0a0.tar.gz]
 [2024-05-12 15:47:07] INFO root fetch - main [MainThread]: End processing [fastf1]: success
 [2024-05-12 15:47:07] INFO root fetch - main [MainThread]: Store serial: [23170241]
+[2024-05-12 15:49:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170241]
+[2024-05-12 15:49:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 15:49:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pinicz
+[2024-05-12 15:49:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FiveMCipherFinder
+[2024-05-12 15:49:16] WARNING root fetch - processPackages [pinicz]: Skipping, unable to determine old version
+[2024-05-12 15:49:16] INFO root fetch - main [MainThread]: End processing [pinicz] error
+[2024-05-12 15:49:16] INFO root fetch - processPackages [FiveMCipherFinder]: New version: [2.6.3] Old Version: [2.6.2]
+[2024-05-12 15:49:17] INFO root fetch - processPackages [FiveMCipherFinder]: Downloading https://files.pythonhosted.org/packages/17/59/b0cb806dd1212526a45d1e331f54b4cf4a32eb43fe123e1e5ee84b342584/FiveMCipherFinder-2.6.2.tar.gz
+[2024-05-12 15:49:17] INFO root fetch - processPackages [FiveMCipherFinder]: Downloading https://files.pythonhosted.org/packages/f7/16/95827bcda3f493cde95024c3575666cbd91f4be4ffea0758f748c26c528e/fivemcipherfinder-2.6.3.tar.gz
+[2024-05-12 15:49:17] INFO root fetch - processPackages [FiveMCipherFinder]: executing diffoscope
+[2024-05-12 15:49:17] INFO root fetch - processPackages [FiveMCipherFinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FiveMCipherFinder-2.6.2.tar.gz tmp/fivemcipherfinder-2.6.3.tar.gz --markdown 20240512/F/FiveMCipherFinder/2.6.2-2.6.3/README.md --exclude *.pyd
+[2024-05-12 15:49:18] INFO root fetch - processPackages [FiveMCipherFinder]: Remove: archive file [/home/abi/fetcher/tmp/FiveMCipherFinder-2.6.2.tar.gz]
+[2024-05-12 15:49:18] INFO root fetch - processPackages [FiveMCipherFinder]: Remove: archive file [/home/abi/fetcher/tmp/fivemcipherfinder-2.6.3.tar.gz]
+[2024-05-12 15:49:18] INFO root fetch - main [MainThread]: End processing [FiveMCipherFinder]: success
+[2024-05-12 15:49:18] INFO root fetch - main [MainThread]: Store serial: [23170256]
