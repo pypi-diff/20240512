@@ -9661,3 +9661,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:58:00] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14511809>=10485760
 [2024-05-12 13:58:00] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
 [2024-05-12 13:58:00] INFO root fetch - main [MainThread]: Store serial: [23169581]
+[2024-05-12 14:00:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169581]
+[2024-05-12 14:00:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 14:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiorubika
+[2024-05-12 14:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: QtHarmony
+[2024-05-12 14:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: domainlab
+[2024-05-12 14:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: madapolamz
+[2024-05-12 14:00:09] INFO root fetch - processPackages [QtHarmony]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-12 14:00:09] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/33/61/19f1b4b00a827b32e6045f0926ca755f3b945f774ecb8c6f0e9a4bdfe262/qtharmony-0.1.9.tar.gz
+[2024-05-12 14:00:09] INFO root fetch - processPackages [aiorubika]: New version: [1.0.0] Old Version: [0.0.2]
+[2024-05-12 14:00:09] WARNING root fetch - processPackages [madapolamz]: Skipping, unable to determine old version
+[2024-05-12 14:00:09] INFO root fetch - main [MainThread]: End processing [madapolamz] error
+[2024-05-12 14:00:09] INFO root fetch - processPackages [domainlab]: New version: [0.6.4] Old Version: [0.6.3]
+[2024-05-12 14:00:09] INFO root fetch - processPackages [aiorubika]: Downloading https://files.pythonhosted.org/packages/be/ea/969cc440cc4d2388e30b686a32badeb3e7d89a89b68faa67c2c939359652/aiorubika-0.0.2.tar.gz
+[2024-05-12 14:00:09] INFO root fetch - processPackages [domainlab]: Downloading https://files.pythonhosted.org/packages/49/ed/143cc588f3f3f5f01547209a7804038c3acfad8d16f18128d46c478ed116/domainlab-0.6.3.tar.gz
+[2024-05-12 14:00:09] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/5d/d6/6d4b8b3e7891433d4a53ecf7f81726a549551362075ee8d85b8c34878080/qtharmony-0.2.0.tar.gz
+[2024-05-12 14:00:09] INFO root fetch - processPackages [QtHarmony]: executing diffoscope
+[2024-05-12 14:00:09] INFO root fetch - processPackages [QtHarmony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtharmony-0.1.9.tar.gz tmp/qtharmony-0.2.0.tar.gz --markdown 20240512/Q/QtHarmony/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-12 14:00:09] INFO root fetch - processPackages [aiorubika]: Downloading https://files.pythonhosted.org/packages/f8/bc/cabc814ca34de1924f7cb0cfe4e006d57ab2f964567d1920fc81908bd603/aiorubika-1.0.0.tar.gz
+[2024-05-12 14:00:09] INFO root fetch - processPackages [aiorubika]: executing diffoscope
+[2024-05-12 14:00:09] INFO root fetch - processPackages [aiorubika]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiorubika-0.0.2.tar.gz tmp/aiorubika-1.0.0.tar.gz --markdown 20240512/a/aiorubika/0.0.2-1.0.0/README.md --exclude *.pyd
+[2024-05-12 14:00:10] INFO root fetch - processPackages [domainlab]: Downloading https://files.pythonhosted.org/packages/df/53/0ae1c3e0ec4ae577153b81ffffc112a099746737439f5063b94755d803c9/domainlab-0.6.4.tar.gz
+[2024-05-12 14:00:10] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.1.9.tar.gz]
+[2024-05-12 14:00:10] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.2.0.tar.gz]
+[2024-05-12 14:00:10] INFO root fetch - main [MainThread]: End processing [QtHarmony]: success
+[2024-05-12 14:00:10] INFO root fetch - processPackages [domainlab]: executing diffoscope
+[2024-05-12 14:00:10] INFO root fetch - processPackages [domainlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domainlab-0.6.3.tar.gz tmp/domainlab-0.6.4.tar.gz --markdown 20240512/d/domainlab/0.6.3-0.6.4/README.md --exclude *.pyd
+[2024-05-12 14:00:11] INFO root fetch - processPackages [aiorubika]: Remove: archive file [/home/abi/fetcher/tmp/aiorubika-0.0.2.tar.gz]
+[2024-05-12 14:00:11] INFO root fetch - processPackages [aiorubika]: Remove: archive file [/home/abi/fetcher/tmp/aiorubika-1.0.0.tar.gz]
+[2024-05-12 14:00:11] INFO root fetch - main [MainThread]: End processing [aiorubika]: success
+[2024-05-12 14:00:12] INFO root fetch - processPackages [domainlab]: Remove: archive file [/home/abi/fetcher/tmp/domainlab-0.6.3.tar.gz]
+[2024-05-12 14:00:12] INFO root fetch - processPackages [domainlab]: Remove: archive file [/home/abi/fetcher/tmp/domainlab-0.6.4.tar.gz]
+[2024-05-12 14:00:12] INFO root fetch - main [MainThread]: End processing [domainlab]: success
+[2024-05-12 14:00:12] INFO root fetch - main [MainThread]: Store serial: [23169594]
