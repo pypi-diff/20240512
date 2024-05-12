@@ -17432,3 +17432,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:36:49] INFO root fetch - processPackages [promptulate]: Remove: archive file [/home/abi/fetcher/tmp/promptulate-1.9.1.tar.gz]
 [2024-05-12 22:36:49] INFO root fetch - main [MainThread]: End processing [promptulate]: success
 [2024-05-12 22:36:49] INFO root fetch - main [MainThread]: Store serial: [23173640]
+[2024-05-12 22:38:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173640]
+[2024-05-12 22:38:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 22:38:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: overmultiplicationz
+[2024-05-12 22:38:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: echordpost
+[2024-05-12 22:38:58] WARNING root fetch - processPackages [overmultiplicationz]: Skipping, unable to determine old version
+[2024-05-12 22:38:58] INFO root fetch - main [MainThread]: End processing [overmultiplicationz] error
+[2024-05-12 22:38:58] WARNING root fetch - processPackages [echordpost]: Skipping, unable to determine old version
+[2024-05-12 22:38:58] INFO root fetch - main [MainThread]: End processing [echordpost] error
+[2024-05-12 22:38:58] INFO root fetch - main [MainThread]: Store serial: [23173649]
