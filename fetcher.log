@@ -6641,3 +6641,36 @@
 [2024-05-12 10:03:36] INFO root fetch - processPackages [mlforge]: Remove: archive file [/home/abi/fetcher/tmp/mlforge-0.1.5a0.tar.gz]
 [2024-05-12 10:03:36] INFO root fetch - main [MainThread]: End processing [mlforge]: success
 [2024-05-12 10:03:36] INFO root fetch - main [MainThread]: Store serial: [23167976]
+[2024-05-12 10:05:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167976]
+[2024-05-12 10:05:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 10:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zadarapyV2
+[2024-05-12 10:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-mysticism
+[2024-05-12 10:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zoopaleontologyz
+[2024-05-12 10:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: langfun
+[2024-05-12 10:05:45] INFO root fetch - processPackages [nonebot-plugin-mysticism]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-12 10:05:45] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240511] Old Version: [0.0.2.dev20240510]
+[2024-05-12 10:05:45] INFO root fetch - processPackages [nonebot-plugin-mysticism]: Downloading https://files.pythonhosted.org/packages/5b/d0/9ffaa3aefb2b6cd125a5b44dff8fdcaf1e790ec168775892a3363d698ec4/nonebot_plugin_mysticism-0.1.4.tar.gz
+[2024-05-12 10:05:45] WARNING root fetch - processPackages [zoopaleontologyz]: Skipping, unable to determine old version
+[2024-05-12 10:05:45] INFO root fetch - main [MainThread]: End processing [zoopaleontologyz] error
+[2024-05-12 10:05:45] INFO root fetch - processPackages [zadarapyV2]: New version: [23.9.1.222] Old Version: [23.9.0.220]
+[2024-05-12 10:05:45] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/8a/34/3a0e85dd56a2753cdb6ba4f8e67b1d0b5975b044e7835b388613a2f408c2/langfun-0.0.2.dev20240510.tar.gz
+[2024-05-12 10:05:45] INFO root fetch - processPackages [zadarapyV2]: Downloading https://files.pythonhosted.org/packages/c2/c6/6be41c77d9586c3439b2241b1eca49220f9dd0028bc9e7203d02862c0cc7/zadarapyV2-23.9.0.220.tar.gz
+[2024-05-12 10:05:45] INFO root fetch - processPackages [nonebot-plugin-mysticism]: Downloading https://files.pythonhosted.org/packages/ff/13/ebaecd0cc2ea71f567cc8503e1af82df0b2561d8fc1f7b8ab13813250dd4/nonebot_plugin_mysticism-0.1.5.tar.gz
+[2024-05-12 10:05:45] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/4d/df/96e72e9425de1ad167fc0f56dccc5000bf511de5a65fbe9a29e9f9846ea3/langfun-0.0.2.dev20240511.tar.gz
+[2024-05-12 10:05:45] INFO root fetch - processPackages [nonebot-plugin-mysticism]: executing diffoscope
+[2024-05-12 10:05:45] INFO root fetch - processPackages [nonebot-plugin-mysticism]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_mysticism-0.1.4.tar.gz tmp/nonebot_plugin_mysticism-0.1.5.tar.gz --markdown 20240512/n/nonebot-plugin-mysticism/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-12 10:05:45] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-05-12 10:05:45] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240510.tar.gz tmp/langfun-0.0.2.dev20240511.tar.gz --markdown 20240512/l/langfun/0.0.2.dev20240510-0.0.2.dev20240511/README.md --exclude *.pyd
+[2024-05-12 10:05:46] INFO root fetch - processPackages [zadarapyV2]: Downloading https://files.pythonhosted.org/packages/41/ee/1cce29161d56bb6c5bb62083015768fc396005fe25d17f3324ebe4b1bb0d/zadarapyV2-23.9.1.222.tar.gz
+[2024-05-12 10:05:46] INFO root fetch - processPackages [zadarapyV2]: executing diffoscope
+[2024-05-12 10:05:46] INFO root fetch - processPackages [zadarapyV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zadarapyV2-23.9.0.220.tar.gz tmp/zadarapyV2-23.9.1.222.tar.gz --markdown 20240512/z/zadarapyV2/23.9.0.220-23.9.1.222/README.md --exclude *.pyd
+[2024-05-12 10:05:46] INFO root fetch - processPackages [nonebot-plugin-mysticism]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_mysticism-0.1.4.tar.gz]
+[2024-05-12 10:05:46] INFO root fetch - processPackages [nonebot-plugin-mysticism]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_mysticism-0.1.5.tar.gz]
+[2024-05-12 10:05:46] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mysticism]: success
+[2024-05-12 10:05:46] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240510.tar.gz]
+[2024-05-12 10:05:46] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240511.tar.gz]
+[2024-05-12 10:05:46] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-05-12 10:06:19] INFO root fetch - processPackages [zadarapyV2]: Remove: archive file [/home/abi/fetcher/tmp/zadarapyV2-23.9.0.220.tar.gz]
+[2024-05-12 10:06:19] INFO root fetch - processPackages [zadarapyV2]: Remove: archive file [/home/abi/fetcher/tmp/zadarapyV2-23.9.1.222.tar.gz]
+[2024-05-12 10:06:19] INFO root fetch - main [MainThread]: End processing [zadarapyV2]: success
+[2024-05-12 10:06:19] INFO root fetch - main [MainThread]: Store serial: [23167990]
