@@ -2578,3 +2578,30 @@
 [2024-05-12 03:53:59] INFO root fetch - processPackages [deepdog]: Remove: archive file [/home/abi/fetcher/tmp/deepdog-1.2.1.tar.gz]
 [2024-05-12 03:53:59] INFO root fetch - main [MainThread]: End processing [deepdog]: success
 [2024-05-12 03:53:59] INFO root fetch - main [MainThread]: Store serial: [23166160]
+[2024-05-12 03:56:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166160]
+[2024-05-12 03:56:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 03:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ikvpy
+[2024-05-12 03:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-furryfusion
+[2024-05-12 03:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: meetlify
+[2024-05-12 03:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tesla-fleet-api
+[2024-05-12 03:56:08] INFO root fetch - processPackages [ikvpy]: New version: [0.0.29] Old Version: [0.0.28]
+[2024-05-12 03:56:08] INFO root fetch - processPackages [tesla-fleet-api]: New version: [0.5.8] Old Version: [0.5.7]
+[2024-05-12 03:56:08] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/52/c1/e2828fa20fd18cb8aea7c14fc0ce84e318c9b0f05d12a840596af148d9b1/ikvpy-0.0.28.tar.gz
+[2024-05-12 03:56:08] WARNING root fetch - processPackages [meetlify]: Skipping, unable to determine old version
+[2024-05-12 03:56:08] INFO root fetch - main [MainThread]: End processing [meetlify] error
+[2024-05-12 03:56:08] INFO root fetch - processPackages [tesla-fleet-api]: Downloading https://files.pythonhosted.org/packages/72/d9/10086c853fd6e8b2e80e8aa6c085e2f81c3d536ef1a3dc65fa6592f5d8dc/tesla_fleet_api-0.5.7.tar.gz
+[2024-05-12 03:56:08] WARNING root fetch - processPackages [nonebot-plugin-furryfusion]: Skipping, unable to determine old version
+[2024-05-12 03:56:08] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-furryfusion] error
+[2024-05-12 03:56:08] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/ea/29/3aa53cc60c5c27c4f1dcb3c554765fc1930176c9e2187d2f2f7c9b06abd1/ikvpy-0.0.29.tar.gz
+[2024-05-12 03:56:08] INFO root fetch - processPackages [tesla-fleet-api]: Downloading https://files.pythonhosted.org/packages/a8/43/22557f5eee1dcbb990fc879c88f0eabf17ee6ceed249b0680f354698798e/tesla_fleet_api-0.5.8.tar.gz
+[2024-05-12 03:56:08] INFO root fetch - processPackages [ikvpy]: executing diffoscope
+[2024-05-12 03:56:08] INFO root fetch - processPackages [ikvpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ikvpy-0.0.28.tar.gz tmp/ikvpy-0.0.29.tar.gz --markdown 20240512/i/ikvpy/0.0.28-0.0.29/README.md --exclude *.pyd
+[2024-05-12 03:56:08] INFO root fetch - processPackages [tesla-fleet-api]: executing diffoscope
+[2024-05-12 03:56:08] INFO root fetch - processPackages [tesla-fleet-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tesla_fleet_api-0.5.7.tar.gz tmp/tesla_fleet_api-0.5.8.tar.gz --markdown 20240512/t/tesla-fleet-api/0.5.7-0.5.8/README.md --exclude *.pyd
+[2024-05-12 03:56:09] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.28.tar.gz]
+[2024-05-12 03:56:09] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.29.tar.gz]
+[2024-05-12 03:56:09] INFO root fetch - main [MainThread]: End processing [ikvpy]: success
+[2024-05-12 03:56:09] INFO root fetch - processPackages [tesla-fleet-api]: Remove: archive file [/home/abi/fetcher/tmp/tesla_fleet_api-0.5.7.tar.gz]
+[2024-05-12 03:56:09] INFO root fetch - processPackages [tesla-fleet-api]: Remove: archive file [/home/abi/fetcher/tmp/tesla_fleet_api-0.5.8.tar.gz]
+[2024-05-12 03:56:09] INFO root fetch - main [MainThread]: End processing [tesla-fleet-api]: success
+[2024-05-12 03:56:09] INFO root fetch - main [MainThread]: Store serial: [23166174]
