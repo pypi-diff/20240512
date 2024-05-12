@@ -15130,3 +15130,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:06:33] INFO root fetch - processPackages [piperider-nightly]: Remove: archive file [/home/abi/fetcher/tmp/piperider-nightly-0.9.0.20220921.tar.gz]
 [2024-05-12 20:06:33] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
 [2024-05-12 20:06:33] INFO root fetch - main [MainThread]: Store serial: [23172508]
+[2024-05-12 20:08:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172508]
+[2024-05-12 20:08:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 20:08:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: recce-nightly
+[2024-05-12 20:08:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DebugInfo
+[2024-05-12 20:08:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: preexistentz
+[2024-05-12 20:08:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vnerrant
+[2024-05-12 20:08:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: espy-pdfier
+[2024-05-12 20:08:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dwindledz
+[2024-05-12 20:08:42] INFO root fetch - processPackages [vnerrant]: New version: [1.0.1rc2] Old Version: [1.0.1rc1]
+[2024-05-12 20:08:42] INFO root fetch - processPackages [espy-pdfier]: New version: [0.5] Old Version: [0.4]
+[2024-05-12 20:08:42] INFO root fetch - processPackages [DebugInfo]: New version: [9.1.0] Old Version: [9.0.0]
+[2024-05-12 20:08:42] INFO root fetch - processPackages [vnerrant]: Downloading https://files.pythonhosted.org/packages/54/5b/ee3478607c8373db5852a8fcf0e1b5972d750c7b5e70203f39026621510b/vnerrant-1.0.1rc1.tar.gz
+[2024-05-12 20:08:42] INFO root fetch - processPackages [espy-pdfier]: Downloading https://files.pythonhosted.org/packages/6d/3c/5dcb48149a0272ce0ca665665c0e7ad8cd61c7208170346655ef0f1b2af5/espy_pdfier-0.4.tar.gz
+[2024-05-12 20:08:42] WARNING root fetch - processPackages [preexistentz]: Skipping, unable to determine old version
+[2024-05-12 20:08:42] INFO root fetch - main [MainThread]: End processing [preexistentz] error
+[2024-05-12 20:08:42] WARNING root fetch - processPackages [dwindledz]: Skipping, unable to determine old version
+[2024-05-12 20:08:42] INFO root fetch - main [MainThread]: End processing [dwindledz] error
+[2024-05-12 20:08:42] INFO root fetch - processPackages [recce-nightly]: New version: [0.9.0.20240313] Old Version: [0.9.0.20240312]
+[2024-05-12 20:08:42] INFO root fetch - processPackages [DebugInfo]: Downloading https://files.pythonhosted.org/packages/06/dc/6f041269ad379c07e91b1bbf9bbcea47f424f3d9b04bf58b8af95b10bd3a/DebugInfo-9.0.0.tar.gz
+[2024-05-12 20:08:43] INFO root fetch - processPackages [recce-nightly]: Downloading https://files.pythonhosted.org/packages/c6/8c/cde0615abf888d0ccade0e1fc90482c4c402fedef38bf8fb00d1202e6ad2/recce-nightly-0.9.0.20240312.tar.gz
+[2024-05-12 20:08:43] INFO root fetch - processPackages [espy-pdfier]: Downloading https://files.pythonhosted.org/packages/f1/6a/e96f56cc7a6cca6163f69dc824de958c4b1b272ef0c7afb57dc35076f665/espy_pdfier-0.5.tar.gz
+[2024-05-12 20:08:43] INFO root fetch - processPackages [DebugInfo]: Downloading https://files.pythonhosted.org/packages/3a/f6/279accf5d57aa0fb1b9308ac3c3f52eb99a26d6af32968ec7ea6a2d3e079/DebugInfo-9.1.0.tar.gz
+[2024-05-12 20:08:43] INFO root fetch - processPackages [vnerrant]: Downloading https://files.pythonhosted.org/packages/e7/ab/390a1d43220a016a4e1ad2c03a11fe6376754c98aa6b7778004cedd17322/vnerrant-1.0.1rc2.tar.gz
+[2024-05-12 20:08:43] INFO root fetch - processPackages [espy-pdfier]: executing diffoscope
+[2024-05-12 20:08:43] INFO root fetch - processPackages [espy-pdfier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_pdfier-0.4.tar.gz tmp/espy_pdfier-0.5.tar.gz --markdown 20240512/e/espy-pdfier/0.4-0.5/README.md --exclude *.pyd
+[2024-05-12 20:08:43] INFO root fetch - processPackages [DebugInfo]: executing diffoscope
+[2024-05-12 20:08:43] INFO root fetch - processPackages [DebugInfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DebugInfo-9.0.0.tar.gz tmp/DebugInfo-9.1.0.tar.gz --markdown 20240512/D/DebugInfo/9.0.0-9.1.0/README.md --exclude *.pyd
+[2024-05-12 20:08:43] INFO root fetch - processPackages [vnerrant]: executing diffoscope
+[2024-05-12 20:08:43] INFO root fetch - processPackages [vnerrant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnerrant-1.0.1rc1.tar.gz tmp/vnerrant-1.0.1rc2.tar.gz --markdown 20240512/v/vnerrant/1.0.1rc1-1.0.1rc2/README.md --exclude *.pyd
+[2024-05-12 20:08:43] INFO root fetch - processPackages [recce-nightly]: Downloading https://files.pythonhosted.org/packages/52/11/d0c59f6609b46f5766293823d2b30e4fd872dbea146425e2d959b41a44a4/recce-nightly-0.9.0.20240313.tar.gz
+[2024-05-12 20:08:43] INFO root fetch - processPackages [recce-nightly]: executing diffoscope
+[2024-05-12 20:08:43] INFO root fetch - processPackages [recce-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recce-nightly-0.9.0.20240312.tar.gz tmp/recce-nightly-0.9.0.20240313.tar.gz --markdown 20240512/r/recce-nightly/0.9.0.20240312-0.9.0.20240313/README.md --exclude *.pyd
+[2024-05-12 20:08:43] INFO root fetch - processPackages [espy-pdfier]: Remove: archive file [/home/abi/fetcher/tmp/espy_pdfier-0.4.tar.gz]
+[2024-05-12 20:08:43] INFO root fetch - processPackages [espy-pdfier]: Remove: archive file [/home/abi/fetcher/tmp/espy_pdfier-0.5.tar.gz]
+[2024-05-12 20:08:43] INFO root fetch - main [MainThread]: End processing [espy-pdfier]: success
+[2024-05-12 20:08:43] INFO root fetch - processPackages [DebugInfo]: Remove: archive file [/home/abi/fetcher/tmp/DebugInfo-9.0.0.tar.gz]
+[2024-05-12 20:08:43] INFO root fetch - processPackages [DebugInfo]: Remove: archive file [/home/abi/fetcher/tmp/DebugInfo-9.1.0.tar.gz]
+[2024-05-12 20:08:43] INFO root fetch - main [MainThread]: End processing [DebugInfo]: success
+[2024-05-12 20:08:44] INFO root fetch - processPackages [vnerrant]: Remove: archive file [/home/abi/fetcher/tmp/vnerrant-1.0.1rc1.tar.gz]
+[2024-05-12 20:08:44] INFO root fetch - processPackages [vnerrant]: Remove: archive file [/home/abi/fetcher/tmp/vnerrant-1.0.1rc2.tar.gz]
+[2024-05-12 20:08:44] INFO root fetch - main [MainThread]: End processing [vnerrant]: success
+[2024-05-12 20:08:45] INFO root fetch - processPackages [recce-nightly]: Remove: archive file [/home/abi/fetcher/tmp/recce-nightly-0.9.0.20240312.tar.gz]
+[2024-05-12 20:08:45] INFO root fetch - processPackages [recce-nightly]: Remove: archive file [/home/abi/fetcher/tmp/recce-nightly-0.9.0.20240313.tar.gz]
+[2024-05-12 20:08:45] INFO root fetch - main [MainThread]: End processing [recce-nightly]: success
+[2024-05-12 20:08:45] INFO root fetch - main [MainThread]: Store serial: [23172527]
