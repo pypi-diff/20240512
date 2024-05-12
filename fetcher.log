@@ -11361,3 +11361,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:09:01] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240512.104.tar.gz]
 [2024-05-12 16:09:01] INFO root fetch - main [MainThread]: End processing [PKNSETools]: success
 [2024-05-12 16:09:01] INFO root fetch - main [MainThread]: Store serial: [23170503]
+[2024-05-12 16:11:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170503]
+[2024-05-12 16:11:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 16:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: topobank-contact
+[2024-05-12 16:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: socket.d
+[2024-05-12 16:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lib-version-remla24-team02
+[2024-05-12 16:11:10] INFO root fetch - processPackages [socket.d]: New version: [2.4.15] Old Version: [2.4.14.5]
+[2024-05-12 16:11:10] INFO root fetch - processPackages [socket.d]: Downloading https://files.pythonhosted.org/packages/d3/ec/2fb7de9d8f4d951140201a67d524d83ff3961c12b9c23254a8dbc270e985/socket.d-2.4.14.5.tar.gz
+[2024-05-12 16:11:10] INFO root fetch - processPackages [topobank-contact]: New version: [1.3.0] Old Version: [1.2.4]
+[2024-05-12 16:11:10] WARNING root fetch - processPackages [lib-version-remla24-team02]: Skipping, unable to determine old version
+[2024-05-12 16:11:10] INFO root fetch - main [MainThread]: End processing [lib-version-remla24-team02] error
+[2024-05-12 16:11:10] INFO root fetch - processPackages [topobank-contact]: Downloading https://files.pythonhosted.org/packages/dc/b0/655c537ab35745f7934ad4a259441bafd73c076626d792232028a004d3ae/topobank_contact-1.2.4.tar.gz
+[2024-05-12 16:11:10] INFO root fetch - processPackages [socket.d]: Downloading https://files.pythonhosted.org/packages/64/24/6a621c1453fa6edee056daf411fc734c2b81a4ee01f7d6c6bb90653d7077/socket.d-2.4.15.tar.gz
+[2024-05-12 16:11:10] INFO root fetch - processPackages [socket.d]: executing diffoscope
+[2024-05-12 16:11:10] INFO root fetch - processPackages [socket.d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socket.d-2.4.14.5.tar.gz tmp/socket.d-2.4.15.tar.gz --markdown 20240512/s/socket.d/2.4.14.5-2.4.15/README.md --exclude *.pyd
+[2024-05-12 16:11:10] INFO root fetch - processPackages [topobank-contact]: Downloading https://files.pythonhosted.org/packages/00/12/f5acf29ac8b36a4ac387f78f008d45b913dd4bc2b7128986990602c166ef/topobank_contact-1.3.0.tar.gz
+[2024-05-12 16:11:10] INFO root fetch - processPackages [topobank-contact]: executing diffoscope
+[2024-05-12 16:11:10] INFO root fetch - processPackages [topobank-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/topobank_contact-1.2.4.tar.gz tmp/topobank_contact-1.3.0.tar.gz --markdown 20240512/t/topobank-contact/1.2.4-1.3.0/README.md --exclude *.pyd
+[2024-05-12 16:11:11] INFO root fetch - processPackages [socket.d]: Remove: archive file [/home/abi/fetcher/tmp/socket.d-2.4.14.5.tar.gz]
+[2024-05-12 16:11:11] INFO root fetch - processPackages [socket.d]: Remove: archive file [/home/abi/fetcher/tmp/socket.d-2.4.15.tar.gz]
+[2024-05-12 16:11:11] INFO root fetch - main [MainThread]: End processing [socket.d]: success
+[2024-05-12 16:11:11] INFO root fetch - processPackages [topobank-contact]: Remove: archive file [/home/abi/fetcher/tmp/topobank_contact-1.2.4.tar.gz]
+[2024-05-12 16:11:11] INFO root fetch - processPackages [topobank-contact]: Remove: archive file [/home/abi/fetcher/tmp/topobank_contact-1.3.0.tar.gz]
+[2024-05-12 16:11:11] INFO root fetch - main [MainThread]: End processing [topobank-contact]: success
+[2024-05-12 16:11:11] INFO root fetch - main [MainThread]: Store serial: [23170517]
