@@ -8917,3 +8917,24 @@
 [2024-05-12 13:09:20] INFO root fetch - processPackages [nornir-srl]: Remove: archive file [/home/abi/fetcher/tmp/nornir_srl-0.2.9.tar.gz]
 [2024-05-12 13:09:20] INFO root fetch - main [MainThread]: End processing [nornir-srl]: success
 [2024-05-12 13:09:20] INFO root fetch - main [MainThread]: Store serial: [23169278]
+[2024-05-12 13:11:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169278]
+[2024-05-12 13:11:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 13:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ForMoSA
+[2024-05-12 13:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ara-cli
+[2024-05-12 13:11:28] INFO root fetch - processPackages [ara-cli]: New version: [0.1.4.34] Old Version: [0.1.4.33]
+[2024-05-12 13:11:28] INFO root fetch - processPackages [ara-cli]: Downloading https://files.pythonhosted.org/packages/ef/ab/d70701e0475bd433ebbe5714d8bc526de3adf210d8770ade356b2cd0dd56/ara_cli-0.1.4.33.tar.gz
+[2024-05-12 13:11:28] INFO root fetch - processPackages [ForMoSA]: New version: [2.0.0] Old Version: [1.0.9]
+[2024-05-12 13:11:28] INFO root fetch - processPackages [ForMoSA]: Downloading https://files.pythonhosted.org/packages/28/7c/94afc7c568948a35a174f1aac2688df4b3c3d5659fddfff125e6b4741752/ForMoSA-1.0.9.tar.gz
+[2024-05-12 13:11:29] INFO root fetch - processPackages [ara-cli]: Downloading https://files.pythonhosted.org/packages/03/0d/be864a27fa942b68ddde27ce41c9ce01f4146503962141255ccab74a009a/ara_cli-0.1.4.34.tar.gz
+[2024-05-12 13:11:29] INFO root fetch - processPackages [ara-cli]: executing diffoscope
+[2024-05-12 13:11:29] INFO root fetch - processPackages [ara-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ara_cli-0.1.4.33.tar.gz tmp/ara_cli-0.1.4.34.tar.gz --markdown 20240512/a/ara-cli/0.1.4.33-0.1.4.34/README.md --exclude *.pyd
+[2024-05-12 13:11:29] INFO root fetch - processPackages [ForMoSA]: Downloading https://files.pythonhosted.org/packages/2b/23/d1cf0b017317f3ed0fc363f1b19dc7ba3761716a38f7e9fe6758e9ba8338/formosa-2.0.0.tar.gz
+[2024-05-12 13:11:29] INFO root fetch - processPackages [ForMoSA]: executing diffoscope
+[2024-05-12 13:11:29] INFO root fetch - processPackages [ForMoSA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ForMoSA-1.0.9.tar.gz tmp/formosa-2.0.0.tar.gz --markdown 20240512/F/ForMoSA/1.0.9-2.0.0/README.md --exclude *.pyd
+[2024-05-12 13:11:29] INFO root fetch - processPackages [ForMoSA]: Remove: archive file [/home/abi/fetcher/tmp/ForMoSA-1.0.9.tar.gz]
+[2024-05-12 13:11:29] INFO root fetch - processPackages [ForMoSA]: Remove: archive file [/home/abi/fetcher/tmp/formosa-2.0.0.tar.gz]
+[2024-05-12 13:11:29] INFO root fetch - main [MainThread]: End processing [ForMoSA]: success
+[2024-05-12 13:11:29] INFO root fetch - processPackages [ara-cli]: Remove: archive file [/home/abi/fetcher/tmp/ara_cli-0.1.4.33.tar.gz]
+[2024-05-12 13:11:29] INFO root fetch - processPackages [ara-cli]: Remove: archive file [/home/abi/fetcher/tmp/ara_cli-0.1.4.34.tar.gz]
+[2024-05-12 13:11:29] INFO root fetch - main [MainThread]: End processing [ara-cli]: success
+[2024-05-12 13:11:29] INFO root fetch - main [MainThread]: Store serial: [23169284]
