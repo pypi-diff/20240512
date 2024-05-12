@@ -6800,3 +6800,21 @@
 [2024-05-12 10:12:52] INFO root fetch - processPackages [python-amazon-sp-api]: Remove: archive file [/home/abi/fetcher/tmp/python-amazon-sp-api-1.5.2.tar.gz]
 [2024-05-12 10:12:52] INFO root fetch - main [MainThread]: End processing [python-amazon-sp-api]: success
 [2024-05-12 10:12:52] INFO root fetch - main [MainThread]: Store serial: [23168044]
+[2024-05-12 10:14:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168044]
+[2024-05-12 10:15:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 10:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arikaim
+[2024-05-12 10:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fgo-api-types
+[2024-05-12 10:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: contagionz
+[2024-05-12 10:15:00] WARNING root fetch - processPackages [contagionz]: Skipping, unable to determine old version
+[2024-05-12 10:15:00] WARNING root fetch - processPackages [arikaim]: Skipping, unable to determine old version
+[2024-05-12 10:15:00] INFO root fetch - main [MainThread]: End processing [contagionz] error
+[2024-05-12 10:15:00] INFO root fetch - main [MainThread]: End processing [arikaim] error
+[2024-05-12 10:15:00] INFO root fetch - processPackages [fgo-api-types]: New version: [2024.5.2.2.18.47] Old Version: [2024.5.12.8.13.58]
+[2024-05-12 10:15:00] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/24/97/6f41a3bd1b40c3ede9204fdad25375e49555ae8e2804a7801f0a128563d9/fgo_api_types-2024.5.12.8.13.58.tar.gz
+[2024-05-12 10:15:01] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/01/77/8eec59bab9bb0a00924cc2e584d4048c2dc18936dc15a156c7e659b71c19/fgo_api_types-2024.5.2.2.18.47.tar.gz
+[2024-05-12 10:15:01] INFO root fetch - processPackages [fgo-api-types]: executing diffoscope
+[2024-05-12 10:15:01] INFO root fetch - processPackages [fgo-api-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fgo_api_types-2024.5.12.8.13.58.tar.gz tmp/fgo_api_types-2024.5.2.2.18.47.tar.gz --markdown 20240512/f/fgo-api-types/2024.5.12.8.13.58-2024.5.2.2.18.47/README.md --exclude *.pyd
+[2024-05-12 10:15:01] INFO root fetch - processPackages [fgo-api-types]: Remove: archive file [/home/abi/fetcher/tmp/fgo_api_types-2024.5.12.8.13.58.tar.gz]
+[2024-05-12 10:15:01] INFO root fetch - processPackages [fgo-api-types]: Remove: archive file [/home/abi/fetcher/tmp/fgo_api_types-2024.5.2.2.18.47.tar.gz]
+[2024-05-12 10:15:01] INFO root fetch - main [MainThread]: End processing [fgo-api-types]: success
+[2024-05-12 10:15:01] INFO root fetch - main [MainThread]: Store serial: [23168055]
