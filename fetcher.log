@@ -17441,3 +17441,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:38:58] WARNING root fetch - processPackages [echordpost]: Skipping, unable to determine old version
 [2024-05-12 22:38:58] INFO root fetch - main [MainThread]: End processing [echordpost] error
 [2024-05-12 22:38:58] INFO root fetch - main [MainThread]: Store serial: [23173649]
+[2024-05-12 22:41:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173649]
+[2024-05-12 22:41:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 22:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-05-12 22:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pazok
+[2024-05-12 22:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi-problem
+[2024-05-12 22:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: circular-dict
+[2024-05-12 22:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ekzexport
+[2024-05-12 22:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pinyinlize
+[2024-05-12 22:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: stack-graphs-python-bindings
+[2024-05-12 22:41:07] INFO root fetch - processPackages [circular-dict]: New version: [1.8] Old Version: [1.7]
+[2024-05-12 22:41:07] WARNING root fetch - processPackages [ekzexport]: Skipping, unable to determine old version
+[2024-05-12 22:41:07] INFO root fetch - main [MainThread]: End processing [ekzexport] error
+[2024-05-12 22:41:07] WARNING root fetch - processPackages [pinyinlize]: Skipping, unable to determine old version
+[2024-05-12 22:41:07] INFO root fetch - main [MainThread]: End processing [pinyinlize] error
+[2024-05-12 22:41:07] WARNING root fetch - processPackages [pazok]: Skipping, unable to determine old version
+[2024-05-12 22:41:07] INFO root fetch - main [MainThread]: End processing [pazok] error
+[2024-05-12 22:41:07] INFO root fetch - processPackages [mimllearning]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-12 22:41:07] INFO root fetch - processPackages [circular-dict]: Downloading https://files.pythonhosted.org/packages/e3/58/7cbb399fe7a117604bed7375b0e860dd3434b1d696ddcae11496b54d96b1/circular-dict-1.7.tar.gz
+[2024-05-12 22:41:07] INFO root fetch - processPackages [fastapi-problem]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-05-12 22:41:07] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/3a/be/65ae172fb843e24990669f7614713b648b0c6f9171e4ba1b7fa2ce4e759d/mimllearning-0.4.1.tar.gz
+[2024-05-12 22:41:07] INFO root fetch - processPackages [stack-graphs-python-bindings]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-12 22:41:08] INFO root fetch - processPackages [circular-dict]: Downloading https://files.pythonhosted.org/packages/53/30/4fa16442ad22ccbaf22836359a5c9e433bf752d986038b3231eb2edf51c0/circular_dict-1.8.tar.gz
+[2024-05-12 22:41:08] INFO root fetch - processPackages [fastapi-problem]: Downloading https://files.pythonhosted.org/packages/10/54/18b332a499ecc5f4e9aab2d1e74d46df745eb47e82428f01a6861411c8c4/fastapi_problem-0.7.1.tar.gz
+[2024-05-12 22:41:08] INFO root fetch - processPackages [stack-graphs-python-bindings]: Downloading https://files.pythonhosted.org/packages/03/45/2ae9dbb59006711111a6493ec7dd0d40ef15233e1a83cd1d710f6b922c5f/stack_graphs_python_bindings-0.0.4.tar.gz
+[2024-05-12 22:41:08] INFO root fetch - processPackages [circular-dict]: executing diffoscope
+[2024-05-12 22:41:08] INFO root fetch - processPackages [circular-dict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circular-dict-1.7.tar.gz tmp/circular_dict-1.8.tar.gz --markdown 20240512/c/circular-dict/1.7-1.8/README.md --exclude *.pyd
+[2024-05-12 22:41:08] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/87/06/2a158412d402db9ac5d7e5e4423dab671a89aa193285fac2a78faf3629db/mimllearning-0.4.2.tar.gz
+[2024-05-12 22:41:08] INFO root fetch - processPackages [fastapi-problem]: Downloading https://files.pythonhosted.org/packages/4e/a9/3189bbef989692830e31801848dc4439e060653cd789055ddf454fcedfbe/fastapi_problem-0.7.2.tar.gz
+[2024-05-12 22:41:08] INFO root fetch - processPackages [stack-graphs-python-bindings]: Downloading https://files.pythonhosted.org/packages/ad/ea/07c3439581599a2f18fdbc560e80a8ab7a30fd561698df53a73b44c2b20f/stack_graphs_python_bindings-0.0.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-12 22:41:08] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-12 22:41:08] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.4.1.tar.gz tmp/mimllearning-0.4.2.tar.gz --markdown 20240512/m/mimllearning/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-12 22:41:08] INFO root fetch - processPackages [fastapi-problem]: executing diffoscope
+[2024-05-12 22:41:08] INFO root fetch - processPackages [fastapi-problem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_problem-0.7.1.tar.gz tmp/fastapi_problem-0.7.2.tar.gz --markdown 20240512/f/fastapi-problem/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-05-12 22:41:08] INFO root fetch - processPackages [circular-dict]: Remove: archive file [/home/abi/fetcher/tmp/circular-dict-1.7.tar.gz]
+[2024-05-12 22:41:08] INFO root fetch - processPackages [circular-dict]: Remove: archive file [/home/abi/fetcher/tmp/circular_dict-1.8.tar.gz]
+[2024-05-12 22:41:08] INFO root fetch - main [MainThread]: End processing [circular-dict]: success
+[2024-05-12 22:41:09] INFO root fetch - processPackages [fastapi-problem]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_problem-0.7.1.tar.gz]
+[2024-05-12 22:41:09] INFO root fetch - processPackages [fastapi-problem]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_problem-0.7.2.tar.gz]
+[2024-05-12 22:41:09] INFO root fetch - main [MainThread]: End processing [fastapi-problem]: success
+[2024-05-12 22:41:09] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.1.tar.gz]
+[2024-05-12 22:41:09] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.2.tar.gz]
+[2024-05-12 22:41:09] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-12 22:41:09] INFO root fetch - processPackages [stack-graphs-python-bindings]: executing diffoscope
+[2024-05-12 22:41:09] INFO root fetch - processPackages [stack-graphs-python-bindings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stack_graphs_python_bindings-0.0.4.tar.gz tmp/stack_graphs_python_bindings-0.0.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240512/s/stack-graphs-python-bindings/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-12 22:41:10] INFO root fetch - processPackages [stack-graphs-python-bindings]: Remove: archive file [/home/abi/fetcher/tmp/stack_graphs_python_bindings-0.0.4.tar.gz]
+[2024-05-12 22:41:10] INFO root fetch - processPackages [stack-graphs-python-bindings]: Remove: archive file [/home/abi/fetcher/tmp/stack_graphs_python_bindings-0.0.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-12 22:41:10] INFO root fetch - main [MainThread]: End processing [stack-graphs-python-bindings]: success
+[2024-05-12 22:41:10] INFO root fetch - main [MainThread]: Store serial: [23173672]
