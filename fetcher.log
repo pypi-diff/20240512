@@ -11191,3 +11191,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:56:00] INFO root fetch - processPackages [soar-sml]: Remove: archive file [/home/abi/fetcher/tmp/soar_sml-9.6.2a42-cp39-cp39-win_amd64.whl.zip]
 [2024-05-12 15:56:00] INFO root fetch - main [MainThread]: End processing [soar-sml]: success
 [2024-05-12 15:56:00] INFO root fetch - main [MainThread]: Store serial: [23170348]
+[2024-05-12 15:58:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170348]
+[2024-05-12 15:58:08] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 15:58:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adb-tool-py
+[2024-05-12 15:58:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: djangorestframework-pagination
+[2024-05-12 15:58:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: netbox-data-flows
+[2024-05-12 15:58:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maya-umbrella
+[2024-05-12 15:58:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: am2r-yams
+[2024-05-12 15:58:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyllmtools
+[2024-05-12 15:58:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: supersaintlyz
+[2024-05-12 15:58:08] WARNING root fetch - processPackages [pyllmtools]: Skipping, unable to determine old version
+[2024-05-12 15:58:08] INFO root fetch - main [MainThread]: End processing [pyllmtools] error
+[2024-05-12 15:58:08] INFO root fetch - processPackages [djangorestframework-pagination]: New version: [1.2] Old Version: [1.1]
+[2024-05-12 15:58:08] INFO root fetch - processPackages [maya-umbrella]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-12 15:58:08] WARNING root fetch - processPackages [adb-tool-py]: Skipping, unable to determine old version
+[2024-05-12 15:58:08] WARNING root fetch - processPackages [supersaintlyz]: Skipping, unable to determine old version
+[2024-05-12 15:58:08] INFO root fetch - processPackages [am2r-yams]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-05-12 15:58:08] INFO root fetch - main [MainThread]: End processing [adb-tool-py] error
+[2024-05-12 15:58:08] INFO root fetch - main [MainThread]: End processing [supersaintlyz] error
+[2024-05-12 15:58:08] INFO root fetch - processPackages [netbox-data-flows]: New version: [1.0.0] Old Version: [0.9.0]
+[2024-05-12 15:58:09] INFO root fetch - processPackages [maya-umbrella]: Downloading https://files.pythonhosted.org/packages/ea/6b/26c26f681f5b1f45934840440691471fa200f1ccbc8578c21fae359d1fb0/maya_umbrella-0.8.0.tar.gz
+[2024-05-12 15:58:09] INFO root fetch - processPackages [djangorestframework-pagination]: Downloading https://files.pythonhosted.org/packages/af/c8/a84acf62632ea99105bdb23ebeaddb2e9fe4a591c0b390824ac337c4e0ba/djangorestframework_pagination-1.1.tar.gz
+[2024-05-12 15:58:09] INFO root fetch - processPackages [netbox-data-flows]: Downloading https://files.pythonhosted.org/packages/19/a7/36fca1a87c461de4bbbb23e2deb375e5d298eff66ce96315d284ae2a7b4c/netbox_data_flows-0.9.0.tar.gz
+[2024-05-12 15:58:09] INFO root fetch - processPackages [am2r-yams]: Downloading https://files.pythonhosted.org/packages/95/ad/3df02c1ffb1920d2fe9115d51704f32e0a7c186bbfca932f23c998cf6679/am2r_yams-2.0.0.tar.gz
+[2024-05-12 15:58:10] INFO root fetch - processPackages [maya-umbrella]: Downloading https://files.pythonhosted.org/packages/ec/b1/f3d7b22945a630095c335f5ac74d05e26b4c5ba425a01e9660d169d29b99/maya_umbrella-0.9.0.tar.gz
+[2024-05-12 15:58:10] INFO root fetch - processPackages [netbox-data-flows]: Downloading https://files.pythonhosted.org/packages/75/34/090b33d509452c55c2e9fbb4cf64c88e64b505e6c2c06e86094ce5290277/netbox_data_flows-1.0.0.tar.gz
+[2024-05-12 15:58:10] INFO root fetch - processPackages [djangorestframework-pagination]: Downloading https://files.pythonhosted.org/packages/16/bb/020e227dec54e612418698bfae48aee8b66fab414d616047cfb7d325362f/djangorestframework_pagination-1.2.tar.gz
+[2024-05-12 15:58:10] INFO root fetch - processPackages [maya-umbrella]: executing diffoscope
+[2024-05-12 15:58:10] INFO root fetch - processPackages [maya-umbrella]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maya_umbrella-0.8.0.tar.gz tmp/maya_umbrella-0.9.0.tar.gz --markdown 20240512/m/maya-umbrella/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-12 15:58:10] INFO root fetch - processPackages [netbox-data-flows]: executing diffoscope
+[2024-05-12 15:58:10] INFO root fetch - processPackages [netbox-data-flows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox_data_flows-0.9.0.tar.gz tmp/netbox_data_flows-1.0.0.tar.gz --markdown 20240512/n/netbox-data-flows/0.9.0-1.0.0/README.md --exclude *.pyd
+[2024-05-12 15:58:10] INFO root fetch - processPackages [djangorestframework-pagination]: executing diffoscope
+[2024-05-12 15:58:10] INFO root fetch - processPackages [djangorestframework-pagination]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangorestframework_pagination-1.1.tar.gz tmp/djangorestframework_pagination-1.2.tar.gz --markdown 20240512/d/djangorestframework-pagination/1.1-1.2/README.md --exclude *.pyd
+[2024-05-12 15:58:10] INFO root fetch - processPackages [am2r-yams]: Downloading https://files.pythonhosted.org/packages/ce/93/c0069bad55c82deed18a3b956b59e1cbd122bd7320a02b5f3225273506c9/am2r_yams-2.1.0.tar.gz
+[2024-05-12 15:58:11] INFO root fetch - processPackages [am2r-yams]: executing diffoscope
+[2024-05-12 15:58:11] INFO root fetch - processPackages [am2r-yams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/am2r_yams-2.0.0.tar.gz tmp/am2r_yams-2.1.0.tar.gz --markdown 20240512/a/am2r-yams/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-05-12 15:58:11] INFO root fetch - processPackages [djangorestframework-pagination]: Remove: archive file [/home/abi/fetcher/tmp/djangorestframework_pagination-1.1.tar.gz]
+[2024-05-12 15:58:11] INFO root fetch - processPackages [djangorestframework-pagination]: Remove: archive file [/home/abi/fetcher/tmp/djangorestframework_pagination-1.2.tar.gz]
+[2024-05-12 15:58:11] INFO root fetch - main [MainThread]: End processing [djangorestframework-pagination]: success
+[2024-05-12 15:58:11] INFO root fetch - processPackages [netbox-data-flows]: Remove: archive file [/home/abi/fetcher/tmp/netbox_data_flows-0.9.0.tar.gz]
+[2024-05-12 15:58:11] INFO root fetch - processPackages [netbox-data-flows]: Remove: archive file [/home/abi/fetcher/tmp/netbox_data_flows-1.0.0.tar.gz]
+[2024-05-12 15:58:11] INFO root fetch - main [MainThread]: End processing [netbox-data-flows]: success
+[2024-05-12 15:58:11] INFO root fetch - processPackages [maya-umbrella]: Remove: archive file [/home/abi/fetcher/tmp/maya_umbrella-0.8.0.tar.gz]
+[2024-05-12 15:58:11] INFO root fetch - processPackages [maya-umbrella]: Remove: archive file [/home/abi/fetcher/tmp/maya_umbrella-0.9.0.tar.gz]
+[2024-05-12 15:58:11] INFO root fetch - main [MainThread]: End processing [maya-umbrella]: success
+[2024-05-12 15:58:12] INFO root fetch - processPackages [am2r-yams]: Remove: archive file [/home/abi/fetcher/tmp/am2r_yams-2.0.0.tar.gz]
+[2024-05-12 15:58:12] INFO root fetch - processPackages [am2r-yams]: Remove: archive file [/home/abi/fetcher/tmp/am2r_yams-2.1.0.tar.gz]
+[2024-05-12 15:58:12] INFO root fetch - main [MainThread]: End processing [am2r-yams]: success
+[2024-05-12 15:58:12] INFO root fetch - main [MainThread]: Store serial: [23170387]
