@@ -14729,3 +14729,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:38:21] INFO root fetch - processPackages [dymoprint]: Remove: archive file [/home/abi/fetcher/tmp/dymoprint-2.5.0.tar.gz]
 [2024-05-12 19:38:21] INFO root fetch - main [MainThread]: End processing [dymoprint]: success
 [2024-05-12 19:38:21] INFO root fetch - main [MainThread]: Store serial: [23172344]
+[2024-05-12 19:40:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172344]
+[2024-05-12 19:40:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 19:40:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: database-mysql-local
+[2024-05-12 19:40:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: funprogram
+[2024-05-12 19:40:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llmpackagetestidk
+[2024-05-12 19:40:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SelfCalibratedConformal
+[2024-05-12 19:40:29] INFO root fetch - processPackages [SelfCalibratedConformal]: New version: [0.34] Old Version: [0.33]
+[2024-05-12 19:40:29] WARNING root fetch - processPackages [funprogram]: Skipping, unable to determine old version
+[2024-05-12 19:40:29] INFO root fetch - main [MainThread]: End processing [funprogram] error
+[2024-05-12 19:40:29] INFO root fetch - processPackages [llmpackagetestidk]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-12 19:40:29] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.296] Old Version: [0.0.295]
+[2024-05-12 19:40:29] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/1a/5d/8c3f6ea299e33443cdf48679845263c65f053b289f7dc8df816a59b555ae/SelfCalibratedConformal-0.33.tar.gz
+[2024-05-12 19:40:29] INFO root fetch - processPackages [llmpackagetestidk]: Downloading https://files.pythonhosted.org/packages/ae/6a/f404207036460e58527b4006f102a74da0ebb56cded3e4325d8309c6247d/llmpackagetestidk-0.0.4.tar.gz
+[2024-05-12 19:40:29] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/f7/e8/c0cbae429689bfe8306655a4ca3fabbc1db83fc2d0d615f236eea89962a8/database_mysql_local-0.0.295.tar.gz
+[2024-05-12 19:40:30] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/76/78/cc6fd7b42953aadb587d0a7a29dfea3c7b1bbf5bcf93f9b7644f563a35cd/SelfCalibratedConformal-0.34.tar.gz
+[2024-05-12 19:40:30] INFO root fetch - processPackages [llmpackagetestidk]: Downloading https://files.pythonhosted.org/packages/ea/39/efad54712bf0eb913b253fc6211648566cf52180232b684dcf984ef2605e/llmpackagetestidk-0.0.5.tar.gz
+[2024-05-12 19:40:30] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/c9/95/55dd4ff9b47375c048d9fc8cc8a04a10d7fff9b781745bdb2562dc1cb98b/database_mysql_local-0.0.296.tar.gz
+[2024-05-12 19:40:30] INFO root fetch - processPackages [SelfCalibratedConformal]: executing diffoscope
+[2024-05-12 19:40:30] INFO root fetch - processPackages [SelfCalibratedConformal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SelfCalibratedConformal-0.33.tar.gz tmp/SelfCalibratedConformal-0.34.tar.gz --markdown 20240512/S/SelfCalibratedConformal/0.33-0.34/README.md --exclude *.pyd
+[2024-05-12 19:40:30] INFO root fetch - processPackages [llmpackagetestidk]: executing diffoscope
+[2024-05-12 19:40:30] INFO root fetch - processPackages [llmpackagetestidk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmpackagetestidk-0.0.4.tar.gz tmp/llmpackagetestidk-0.0.5.tar.gz --markdown 20240512/l/llmpackagetestidk/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-12 19:40:30] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-12 19:40:30] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.295.tar.gz tmp/database_mysql_local-0.0.296.tar.gz --markdown 20240512/d/database-mysql-local/0.0.295-0.0.296/README.md --exclude *.pyd
+[2024-05-12 19:40:30] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.33.tar.gz]
+[2024-05-12 19:40:30] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.34.tar.gz]
+[2024-05-12 19:40:30] INFO root fetch - main [MainThread]: End processing [SelfCalibratedConformal]: success
+[2024-05-12 19:40:30] INFO root fetch - processPackages [llmpackagetestidk]: Remove: archive file [/home/abi/fetcher/tmp/llmpackagetestidk-0.0.4.tar.gz]
+[2024-05-12 19:40:30] INFO root fetch - processPackages [llmpackagetestidk]: Remove: archive file [/home/abi/fetcher/tmp/llmpackagetestidk-0.0.5.tar.gz]
+[2024-05-12 19:40:30] INFO root fetch - main [MainThread]: End processing [llmpackagetestidk]: success
+[2024-05-12 19:40:30] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.295.tar.gz]
+[2024-05-12 19:40:30] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.296.tar.gz]
+[2024-05-12 19:40:30] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-12 19:40:30] INFO root fetch - main [MainThread]: Store serial: [23172356]
