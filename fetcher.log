@@ -13825,3 +13825,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:39:37] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240512.1.tar.gz]
 [2024-05-12 18:39:37] INFO root fetch - main [MainThread]: End processing [medicafe]: success
 [2024-05-12 18:39:37] INFO root fetch - main [MainThread]: Store serial: [23171850]
+[2024-05-12 18:41:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171850]
+[2024-05-12 18:41:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 18:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mwxlib
+[2024-05-12 18:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: highdaddyz
+[2024-05-12 18:41:46] INFO root fetch - processPackages [mwxlib]: New version: [0.95.0] Old Version: [0.94.8]
+[2024-05-12 18:41:46] WARNING root fetch - processPackages [highdaddyz]: Skipping, unable to determine old version
+[2024-05-12 18:41:46] INFO root fetch - main [MainThread]: End processing [highdaddyz] error
+[2024-05-12 18:41:46] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/56/4f/964310a0eba984f0fc10110b97d86f174d6c0041263038a9120aac8a01f0/mwxlib-0.94.8-py3-none-any.whl
+[2024-05-12 18:41:46] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/90/6f/af025088f88cc55e0d86c0e4c134961a2a17c50670bdcf9c1e5216f76725/mwxlib-0.95.0-py3-none-any.whl
+[2024-05-12 18:41:46] INFO root fetch - processPackages [mwxlib]: executing diffoscope
+[2024-05-12 18:41:46] INFO root fetch - processPackages [mwxlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mwxlib-0.94.8-py3-none-any.whl.zip tmp/mwxlib-0.95.0-py3-none-any.whl.zip --markdown 20240512/m/mwxlib/0.94.8-0.95.0/README.md --exclude *.pyd
+[2024-05-12 18:41:47] INFO root fetch - processPackages [mwxlib]: Remove: archive file [/home/abi/fetcher/tmp/mwxlib-0.94.8-py3-none-any.whl.zip]
+[2024-05-12 18:41:47] INFO root fetch - processPackages [mwxlib]: Remove: archive file [/home/abi/fetcher/tmp/mwxlib-0.95.0-py3-none-any.whl.zip]
+[2024-05-12 18:41:47] INFO root fetch - main [MainThread]: End processing [mwxlib]: success
+[2024-05-12 18:41:47] INFO root fetch - main [MainThread]: Store serial: [23171857]
