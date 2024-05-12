@@ -1288,3 +1288,81 @@
 [2024-05-12 02:03:11] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis-framework-v0.6.0.tar.gz]
 [2024-05-12 02:03:11] INFO root fetch - main [MainThread]: End processing [ibis-framework]: success
 [2024-05-12 02:03:11] INFO root fetch - main [MainThread]: Store serial: [23165461]
+[2024-05-12 02:05:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165461]
+[2024-05-12 02:05:20] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-12 02:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toothlessz
+[2024-05-12 02:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ReverseBox
+[2024-05-12 02:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lnurl_nostr1
+[2024-05-12 02:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ara-cli
+[2024-05-12 02:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mct-nightly
+[2024-05-12 02:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: onnxscript
+[2024-05-12 02:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: moji2
+[2024-05-12 02:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: anabih-python-test
+[2024-05-12 02:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jaxkern-nightly
+[2024-05-12 02:05:20] INFO root fetch - processPackages [anabih-python-test]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-05-12 02:05:20] INFO root fetch - processPackages [moji2]: New version: [0.3.7] Old Version: [0.2.7]
+[2024-05-12 02:05:20] INFO root fetch - processPackages [onnxscript]: New version: [0.1.0.dev20240511] Old Version: [0.1.0.dev20240510]
+[2024-05-12 02:05:20] INFO root fetch - processPackages [lnurl_nostr1]: New version: [0.5.1rc1] Old Version: [0.5.0rc5]
+[2024-05-12 02:05:20] INFO root fetch - processPackages [mct-nightly]: New version: [2.0.0.20240511.435] Old Version: [2.0.0.20240510.421]
+[2024-05-12 02:05:20] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2024-05-12 02:05:20] WARNING root fetch - processPackages [toothlessz]: Skipping, unable to determine old version
+[2024-05-12 02:05:20] INFO root fetch - main [MainThread]: End processing [toothlessz] error
+[2024-05-12 02:05:20] INFO root fetch - processPackages [ara-cli]: New version: [0.1.4.32] Old Version: [0.1.4.31]
+[2024-05-12 02:05:20] INFO root fetch - processPackages [ReverseBox]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-05-12 02:05:21] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/8f/0d/cb4164f3f11269487379fdf0c45ca126f81d3ab4355ce23e4cdf8dd2b4cd/anabih_python_test-8.0.0.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [moji2]: Downloading https://files.pythonhosted.org/packages/a1/61/97bdd4909f10a3589dac92a11c86465af5bfd383fffd54cf0856bb6ba5fc/moji2-0.2.7.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/7a/9c/723cf1b7f6ffa76c2c9e8b70f66caa9d733d11e1c9fd21d908f646bd037c/onnxscript-0.1.0.dev20240510.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/a2/94/3e2c523d36b3df41b450589a11b57ec216aed1e73e99d2e87e18503e0aa5/mct-nightly-2.0.0.20240510.421.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/76/55/ef13835e3e8e1570e91b3bc7235725e556f183e3222d5e7e66ac8de58ba0/jaxkern-nightly-0.dev20221221.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/e8/5d/3eb4ebf94c7153ef18d5051c5e03d408240d031992950d763e41bfa41ab2/ReverseBox-0.9.6.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [lnurl_nostr1]: Downloading https://files.pythonhosted.org/packages/7b/aa/70caae4727b8f3fad4b8e29fd93f2cda923e6e9efd081b11790494247904/lnurl_nostr1-0.5.0rc5.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [ara-cli]: Downloading https://files.pythonhosted.org/packages/28/0a/4be7e667e271a4587610cb5cf063446ee6d4c836f102d93d40e47a1ff325/ara_cli-0.1.4.31.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/ea/b1/fbac44f07e48f8800aada2de8e9114775baf3f3d605ee80382db18a1c728/jaxkern-nightly-0.dev20221222.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [moji2]: Downloading https://files.pythonhosted.org/packages/20/cc/18679665845fb13edb61e05c94b744d7ea962ef5c96deabc9bb9b87fc301/moji2-0.3.7.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/83/16/9305f1d0ffc310349acc9a6c48a942e3c816874b788e87e5252e12b1a42a/anabih_python_test-9.0.0.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2024-05-12 02:05:21] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20240512/j/jaxkern-nightly/0.dev20221221-0.dev20221222/README.md --exclude *.pyd
+[2024-05-12 02:05:21] INFO root fetch - processPackages [moji2]: executing diffoscope
+[2024-05-12 02:05:21] INFO root fetch - processPackages [moji2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moji2-0.2.7.tar.gz tmp/moji2-0.3.7.tar.gz --markdown 20240512/m/moji2/0.2.7-0.3.7/README.md --exclude *.pyd
+[2024-05-12 02:05:21] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/94/35/5ed9c402996b301dd396e581a82ee870ad827fd74dbb2bf70b6b27085b7c/onnxscript-0.1.0.dev20240511.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/a3/fc/8b24a56d5098cfabfe924efcff0776f5d486e880a901cac74beae81b681c/mct-nightly-2.0.0.20240511.435.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [anabih-python-test]: executing diffoscope
+[2024-05-12 02:05:21] INFO root fetch - processPackages [anabih-python-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anabih_python_test-8.0.0.tar.gz tmp/anabih_python_test-9.0.0.tar.gz --markdown 20240512/a/anabih-python-test/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-05-12 02:05:21] INFO root fetch - processPackages [lnurl_nostr1]: Downloading https://files.pythonhosted.org/packages/97/b2/9b19e01df8895f568ac16e5429043de2ca1e2cc344087cbcd5faa26b52c4/lnurl_nostr1-0.5.1rc1.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [ara-cli]: Downloading https://files.pythonhosted.org/packages/b8/41/f8caf54180d5859eba9ebfe9b365efc0f72633427fe664a1da0c4890e073/ara_cli-0.1.4.32.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/80/3d/3662db128377bd6c548cfb2737946884e3879d79644ff9e3f7eac0ac31f9/ReverseBox-0.9.7.tar.gz
+[2024-05-12 02:05:21] INFO root fetch - processPackages [onnxscript]: executing diffoscope
+[2024-05-12 02:05:21] INFO root fetch - processPackages [onnxscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxscript-0.1.0.dev20240510.tar.gz tmp/onnxscript-0.1.0.dev20240511.tar.gz --markdown 20240512/o/onnxscript/0.1.0.dev20240510-0.1.0.dev20240511/README.md --exclude *.pyd
+[2024-05-12 02:05:21] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2024-05-12 02:05:21] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-2.0.0.20240510.421.tar.gz tmp/mct-nightly-2.0.0.20240511.435.tar.gz --markdown 20240512/m/mct-nightly/2.0.0.20240510.421-2.0.0.20240511.435/README.md --exclude *.pyd
+[2024-05-12 02:05:21] INFO root fetch - processPackages [lnurl_nostr1]: executing diffoscope
+[2024-05-12 02:05:21] INFO root fetch - processPackages [lnurl_nostr1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnurl_nostr1-0.5.0rc5.tar.gz tmp/lnurl_nostr1-0.5.1rc1.tar.gz --markdown 20240512/l/lnurl_nostr1/0.5.0rc5-0.5.1rc1/README.md --exclude *.pyd
+[2024-05-12 02:05:21] INFO root fetch - processPackages [ara-cli]: executing diffoscope
+[2024-05-12 02:05:21] INFO root fetch - processPackages [ara-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ara_cli-0.1.4.31.tar.gz tmp/ara_cli-0.1.4.32.tar.gz --markdown 20240512/a/ara-cli/0.1.4.31-0.1.4.32/README.md --exclude *.pyd
+[2024-05-12 02:05:21] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2024-05-12 02:05:21] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.9.6.tar.gz tmp/ReverseBox-0.9.7.tar.gz --markdown 20240512/R/ReverseBox/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-05-12 02:05:22] INFO root fetch - processPackages [moji2]: Remove: archive file [/home/abi/fetcher/tmp/moji2-0.2.7.tar.gz]
+[2024-05-12 02:05:22] INFO root fetch - processPackages [moji2]: Remove: archive file [/home/abi/fetcher/tmp/moji2-0.3.7.tar.gz]
+[2024-05-12 02:05:22] INFO root fetch - main [MainThread]: End processing [moji2]: success
+[2024-05-12 02:05:22] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221221.tar.gz]
+[2024-05-12 02:05:22] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221222.tar.gz]
+[2024-05-12 02:05:22] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2024-05-12 02:05:22] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-8.0.0.tar.gz]
+[2024-05-12 02:05:22] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-9.0.0.tar.gz]
+[2024-05-12 02:05:22] INFO root fetch - main [MainThread]: End processing [anabih-python-test]: success
+[2024-05-12 02:05:22] INFO root fetch - processPackages [lnurl_nostr1]: Remove: archive file [/home/abi/fetcher/tmp/lnurl_nostr1-0.5.0rc5.tar.gz]
+[2024-05-12 02:05:22] INFO root fetch - processPackages [lnurl_nostr1]: Remove: archive file [/home/abi/fetcher/tmp/lnurl_nostr1-0.5.1rc1.tar.gz]
+[2024-05-12 02:05:22] INFO root fetch - main [MainThread]: End processing [lnurl_nostr1]: success
+[2024-05-12 02:05:22] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.9.6.tar.gz]
+[2024-05-12 02:05:22] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.9.7.tar.gz]
+[2024-05-12 02:05:22] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2024-05-12 02:05:22] INFO root fetch - processPackages [ara-cli]: Remove: archive file [/home/abi/fetcher/tmp/ara_cli-0.1.4.31.tar.gz]
+[2024-05-12 02:05:22] INFO root fetch - processPackages [ara-cli]: Remove: archive file [/home/abi/fetcher/tmp/ara_cli-0.1.4.32.tar.gz]
+[2024-05-12 02:05:22] INFO root fetch - main [MainThread]: End processing [ara-cli]: success
+[2024-05-12 02:05:23] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240510.tar.gz]
+[2024-05-12 02:05:23] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240511.tar.gz]
+[2024-05-12 02:05:23] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
+[2024-05-12 02:05:23] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240510.421.tar.gz]
+[2024-05-12 02:05:23] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240511.435.tar.gz]
+[2024-05-12 02:05:23] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2024-05-12 02:05:23] INFO root fetch - main [MainThread]: Store serial: [23165489]
