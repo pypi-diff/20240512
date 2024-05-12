@@ -8487,3 +8487,27 @@
 [2024-05-12 12:27:40] INFO root fetch - processPackages [tinyscript]: Remove: archive file [/home/abi/fetcher/tmp/tinyscript-1.9.5.tar.gz]
 [2024-05-12 12:27:40] INFO root fetch - main [MainThread]: End processing [tinyscript]: success
 [2024-05-12 12:27:40] INFO root fetch - main [MainThread]: Store serial: [23169012]
+[2024-05-12 12:29:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169012]
+[2024-05-12 12:29:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 12:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: liangfei-first-module
+[2024-05-12 12:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cashews
+[2024-05-12 12:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phidata
+[2024-05-12 12:29:49] WARNING root fetch - processPackages [liangfei-first-module]: Skipping, unable to determine old version
+[2024-05-12 12:29:49] INFO root fetch - main [MainThread]: End processing [liangfei-first-module] error
+[2024-05-12 12:29:49] INFO root fetch - processPackages [cashews]: New version: [7.1.0] Old Version: [7.0.2]
+[2024-05-12 12:29:49] INFO root fetch - processPackages [phidata]: New version: [2.4.5] Old Version: [2.4.4]
+[2024-05-12 12:29:49] INFO root fetch - processPackages [cashews]: Downloading https://files.pythonhosted.org/packages/f1/d0/d6f65da50b39e28004584e1e6672bc6147caf81646be9014aece2d3ae0ac/cashews-7.0.2.tar.gz
+[2024-05-12 12:29:49] INFO root fetch - processPackages [phidata]: Downloading https://files.pythonhosted.org/packages/75/91/e2811d3b89055a2bc7eba7ab867636781f80cd175402f6b4c28b3e6cf118/phidata-2.4.4.tar.gz
+[2024-05-12 12:29:49] INFO root fetch - processPackages [cashews]: Downloading https://files.pythonhosted.org/packages/10/e9/07a767b36e218d221e86d095e0c0983c7f6658122174434234a29a844863/cashews-7.1.0.tar.gz
+[2024-05-12 12:29:49] INFO root fetch - processPackages [phidata]: Downloading https://files.pythonhosted.org/packages/94/59/085a2709bff0de5b946092dd063669b55669a429dd789966a977b3ad14f7/phidata-2.4.5.tar.gz
+[2024-05-12 12:29:49] INFO root fetch - processPackages [cashews]: executing diffoscope
+[2024-05-12 12:29:49] INFO root fetch - processPackages [cashews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cashews-7.0.2.tar.gz tmp/cashews-7.1.0.tar.gz --markdown 20240512/c/cashews/7.0.2-7.1.0/README.md --exclude *.pyd
+[2024-05-12 12:29:49] INFO root fetch - processPackages [phidata]: executing diffoscope
+[2024-05-12 12:29:49] INFO root fetch - processPackages [phidata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phidata-2.4.4.tar.gz tmp/phidata-2.4.5.tar.gz --markdown 20240512/p/phidata/2.4.4-2.4.5/README.md --exclude *.pyd
+[2024-05-12 12:29:50] INFO root fetch - processPackages [cashews]: Remove: archive file [/home/abi/fetcher/tmp/cashews-7.0.2.tar.gz]
+[2024-05-12 12:29:50] INFO root fetch - processPackages [cashews]: Remove: archive file [/home/abi/fetcher/tmp/cashews-7.1.0.tar.gz]
+[2024-05-12 12:29:50] INFO root fetch - main [MainThread]: End processing [cashews]: success
+[2024-05-12 12:29:51] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.4.4.tar.gz]
+[2024-05-12 12:29:51] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.4.5.tar.gz]
+[2024-05-12 12:29:51] INFO root fetch - main [MainThread]: End processing [phidata]: success
+[2024-05-12 12:29:51] INFO root fetch - main [MainThread]: Store serial: [23169022]
