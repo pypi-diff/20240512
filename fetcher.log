@@ -14290,3 +14290,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:14:24] INFO root fetch - processPackages [mlrun]: Remove: archive file [/home/abi/fetcher/tmp/mlrun-1.7.0rc9-py3-none-any.whl.zip]
 [2024-05-12 19:14:24] INFO root fetch - main [MainThread]: End processing [mlrun]: success
 [2024-05-12 19:14:24] INFO root fetch - main [MainThread]: Store serial: [23172060]
+[2024-05-12 19:16:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172060]
+[2024-05-12 19:16:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 19:16:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: greatbrowser
+[2024-05-12 19:16:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llmpackagetestidk
+[2024-05-12 19:16:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycrdt
+[2024-05-12 19:16:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webflask
+[2024-05-12 19:16:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: limits
+[2024-05-12 19:16:34] INFO root fetch - processPackages [webflask]: New version: [0.4] Old Version: [0.2.5]
+[2024-05-12 19:16:34] INFO root fetch - processPackages [llmpackagetestidk]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 19:16:34] INFO root fetch - processPackages [webflask]: Downloading https://files.pythonhosted.org/packages/c4/d3/e31852bece90b6d644ce62e18ca0cd58d44f42d6b61b875d3bf1f1eeb3b7/webflask-0.2.5.tar.gz
+[2024-05-12 19:16:34] WARNING root fetch - processPackages [greatbrowser]: Skipping, unable to determine old version
+[2024-05-12 19:16:34] INFO root fetch - main [MainThread]: End processing [greatbrowser] error
+[2024-05-12 19:16:34] INFO root fetch - processPackages [limits]: New version: [3.9.0] Old Version: [3.8.0]
+[2024-05-12 19:16:34] INFO root fetch - processPackages [llmpackagetestidk]: Downloading https://files.pythonhosted.org/packages/48/fb/a659fb102675bca948000a6124d606412cc69aabf78bad86c91ef968525f/llmpackagetestidk-0.0.1.tar.gz
+[2024-05-12 19:16:34] INFO root fetch - processPackages [limits]: Downloading https://files.pythonhosted.org/packages/5e/58/dff803a5506e6404d72576029bf4d35ffb1df8272bbaa865acce0d313ff4/limits-3.8.0.tar.gz
+[2024-05-12 19:16:34] INFO root fetch - processPackages [webflask]: Downloading https://files.pythonhosted.org/packages/da/19/a2198151b0e2cd6680f196a9d32814045564353998aeede66ca455df53ed/webflask-0.4.tar.gz
+[2024-05-12 19:16:34] INFO root fetch - processPackages [llmpackagetestidk]: Downloading https://files.pythonhosted.org/packages/f7/31/34ef68d01d18d5828d5f39e9836e550b6273335df200ba45c8b1d6cef05d/llmpackagetestidk-0.0.2.tar.gz
+[2024-05-12 19:16:34] INFO root fetch - processPackages [llmpackagetestidk]: executing diffoscope
+[2024-05-12 19:16:34] INFO root fetch - processPackages [llmpackagetestidk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmpackagetestidk-0.0.1.tar.gz tmp/llmpackagetestidk-0.0.2.tar.gz --markdown 20240512/l/llmpackagetestidk/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-12 19:16:34] INFO root fetch - processPackages [pycrdt]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-12 19:16:34] INFO root fetch - processPackages [limits]: Downloading https://files.pythonhosted.org/packages/42/f8/6516b81e926899ebbd6ec0376fa33141fc9ef529117860a6de23fbd7e6da/limits-3.9.0.tar.gz
+[2024-05-12 19:16:34] INFO root fetch - processPackages [webflask]: executing diffoscope
+[2024-05-12 19:16:34] INFO root fetch - processPackages [webflask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webflask-0.2.5.tar.gz tmp/webflask-0.4.tar.gz --markdown 20240512/w/webflask/0.2.5-0.4/README.md --exclude *.pyd
+[2024-05-12 19:16:34] INFO root fetch - processPackages [pycrdt]: Downloading https://files.pythonhosted.org/packages/93/23/0799d6c98c5ba4abf174c18a0b275626e439d9c9583ce663a124bf4d53e3/pycrdt-0.8.8.tar.gz
+[2024-05-12 19:16:35] INFO root fetch - processPackages [limits]: executing diffoscope
+[2024-05-12 19:16:35] INFO root fetch - processPackages [limits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/limits-3.8.0.tar.gz tmp/limits-3.9.0.tar.gz --markdown 20240512/l/limits/3.8.0-3.9.0/README.md --exclude *.pyd
+[2024-05-12 19:16:35] INFO root fetch - processPackages [llmpackagetestidk]: Remove: archive file [/home/abi/fetcher/tmp/llmpackagetestidk-0.0.1.tar.gz]
+[2024-05-12 19:16:35] INFO root fetch - processPackages [llmpackagetestidk]: Remove: archive file [/home/abi/fetcher/tmp/llmpackagetestidk-0.0.2.tar.gz]
+[2024-05-12 19:16:35] INFO root fetch - main [MainThread]: End processing [llmpackagetestidk]: success
+[2024-05-12 19:16:35] INFO root fetch - processPackages [pycrdt]: Downloading https://files.pythonhosted.org/packages/e1/8d/1a192121bb657c5e119f3f4d64361b806fcb9423021725407252a919e987/pycrdt-0.8.9.tar.gz
+[2024-05-12 19:16:35] INFO root fetch - processPackages [pycrdt]: executing diffoscope
+[2024-05-12 19:16:35] INFO root fetch - processPackages [pycrdt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycrdt-0.8.8.tar.gz tmp/pycrdt-0.8.9.tar.gz --markdown 20240512/p/pycrdt/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-12 19:16:35] INFO root fetch - processPackages [webflask]: Remove: archive file [/home/abi/fetcher/tmp/webflask-0.2.5.tar.gz]
+[2024-05-12 19:16:35] INFO root fetch - processPackages [webflask]: Remove: archive file [/home/abi/fetcher/tmp/webflask-0.4.tar.gz]
+[2024-05-12 19:16:35] INFO root fetch - main [MainThread]: End processing [webflask]: success
+[2024-05-12 19:16:35] INFO root fetch - processPackages [limits]: Remove: archive file [/home/abi/fetcher/tmp/limits-3.8.0.tar.gz]
+[2024-05-12 19:16:35] INFO root fetch - processPackages [limits]: Remove: archive file [/home/abi/fetcher/tmp/limits-3.9.0.tar.gz]
+[2024-05-12 19:16:35] INFO root fetch - main [MainThread]: End processing [limits]: success
+[2024-05-12 19:16:36] INFO root fetch - processPackages [pycrdt]: Remove: archive file [/home/abi/fetcher/tmp/pycrdt-0.8.8.tar.gz]
+[2024-05-12 19:16:36] INFO root fetch - processPackages [pycrdt]: Remove: archive file [/home/abi/fetcher/tmp/pycrdt-0.8.9.tar.gz]
+[2024-05-12 19:16:36] INFO root fetch - main [MainThread]: End processing [pycrdt]: success
+[2024-05-12 19:16:36] INFO root fetch - main [MainThread]: Store serial: [23172130]
