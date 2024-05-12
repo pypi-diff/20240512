@@ -6623,3 +6623,21 @@
 [2024-05-12 10:01:17] INFO root fetch - processPackages [objectbox]: Remove: archive file [/home/abi/fetcher/tmp/objectbox-0.7.0a9-py3-none-any.whl.zip]
 [2024-05-12 10:01:17] INFO root fetch - main [MainThread]: End processing [objectbox]: success
 [2024-05-12 10:01:17] INFO root fetch - main [MainThread]: Store serial: [23167955]
+[2024-05-12 10:03:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167955]
+[2024-05-12 10:03:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 10:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlforge
+[2024-05-12 10:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LVPocket
+[2024-05-12 10:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: donetools
+[2024-05-12 10:03:35] WARNING root fetch - processPackages [LVPocket]: Skipping, unable to determine old version
+[2024-05-12 10:03:35] INFO root fetch - main [MainThread]: End processing [LVPocket] error
+[2024-05-12 10:03:35] INFO root fetch - processPackages [mlforge]: New version: [0.1.5a0] Old Version: [0.1.4a0]
+[2024-05-12 10:03:35] ERROR root fetch - processPackages [donetools]: Unable to get metadata: No such project 'donetools'
+[2024-05-12 10:03:35] INFO root fetch - main [MainThread]: End processing [donetools] error
+[2024-05-12 10:03:35] INFO root fetch - processPackages [mlforge]: Downloading https://files.pythonhosted.org/packages/cd/33/e864c903be8c84c4e7e8b05e2ba680ea214e8f5c58df34f97cf73b6bb679/mlforge-0.1.4a0.tar.gz
+[2024-05-12 10:03:35] INFO root fetch - processPackages [mlforge]: Downloading https://files.pythonhosted.org/packages/0c/54/145c1542d343df3f0c5774a099d89a84897722c52e9452ebd1faf796050e/mlforge-0.1.5a0.tar.gz
+[2024-05-12 10:03:36] INFO root fetch - processPackages [mlforge]: executing diffoscope
+[2024-05-12 10:03:36] INFO root fetch - processPackages [mlforge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlforge-0.1.4a0.tar.gz tmp/mlforge-0.1.5a0.tar.gz --markdown 20240512/m/mlforge/0.1.4a0-0.1.5a0/README.md --exclude *.pyd
+[2024-05-12 10:03:36] INFO root fetch - processPackages [mlforge]: Remove: archive file [/home/abi/fetcher/tmp/mlforge-0.1.4a0.tar.gz]
+[2024-05-12 10:03:36] INFO root fetch - processPackages [mlforge]: Remove: archive file [/home/abi/fetcher/tmp/mlforge-0.1.5a0.tar.gz]
+[2024-05-12 10:03:36] INFO root fetch - main [MainThread]: End processing [mlforge]: success
+[2024-05-12 10:03:36] INFO root fetch - main [MainThread]: Store serial: [23167976]
