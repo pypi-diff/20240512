@@ -7843,3 +7843,33 @@
 [2024-05-12 11:43:56] INFO root fetch - processPackages [sparrow-python]: Remove: archive file [/home/abi/fetcher/tmp/sparrow_python-0.2.3.1.tar.gz]
 [2024-05-12 11:43:56] INFO root fetch - main [MainThread]: End processing [sparrow-python]: success
 [2024-05-12 11:43:56] INFO root fetch - main [MainThread]: Store serial: [23168569]
+[2024-05-12 11:46:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168569]
+[2024-05-12 11:46:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 11:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ftb-snbt-lib
+[2024-05-12 11:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: detrain
+[2024-05-12 11:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lolcatt
+[2024-05-12 11:46:05] INFO root fetch - processPackages [lolcatt]: New version: [0.4.1] Old Version: [0.3.1]
+[2024-05-12 11:46:05] INFO root fetch - processPackages [lolcatt]: Downloading https://files.pythonhosted.org/packages/74/a0/8e84ac8f0ebe416d0d105a86d17c20097740d3a1fd1e07d5d6f30e38e1fc/lolcatt-0.3.1.tar.gz
+[2024-05-12 11:46:05] INFO root fetch - processPackages [ftb-snbt-lib]: New version: [0.3.0] Old Version: [0.2.3]
+[2024-05-12 11:46:05] INFO root fetch - processPackages [detrain]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-12 11:46:05] INFO root fetch - processPackages [ftb-snbt-lib]: Downloading https://files.pythonhosted.org/packages/c6/ee/af959b5c5fabf350921c849ce49acb97907179359c3e8995f07903b6b33c/ftb_snbt_lib-0.2.3.tar.gz
+[2024-05-12 11:46:05] INFO root fetch - processPackages [detrain]: Downloading https://files.pythonhosted.org/packages/75/12/53bc6c4835ca39b93db1451ade6daad6b2c07cfe318e5b15dce7c151175e/detrain-0.2.5.tar.gz
+[2024-05-12 11:46:05] INFO root fetch - processPackages [lolcatt]: Downloading https://files.pythonhosted.org/packages/a0/5a/ab1e9b7348a063a0dd8b7b01dc5547729a64149bc7bad78aab202d6acb1a/lolcatt-0.4.1.tar.gz
+[2024-05-12 11:46:05] INFO root fetch - processPackages [lolcatt]: executing diffoscope
+[2024-05-12 11:46:05] INFO root fetch - processPackages [lolcatt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lolcatt-0.3.1.tar.gz tmp/lolcatt-0.4.1.tar.gz --markdown 20240512/l/lolcatt/0.3.1-0.4.1/README.md --exclude *.pyd
+[2024-05-12 11:46:05] INFO root fetch - processPackages [detrain]: Downloading https://files.pythonhosted.org/packages/a7/91/53324575d8608d11920d0b4e647c31ae16c51540af4387973771140dc81e/detrain-0.2.6.tar.gz
+[2024-05-12 11:46:05] INFO root fetch - processPackages [ftb-snbt-lib]: Downloading https://files.pythonhosted.org/packages/d4/38/3d931596076926c0a34417744e4cef7bd9392d05be0ed14b41dcf78dd551/ftb_snbt_lib-0.3.0.tar.gz
+[2024-05-12 11:46:06] INFO root fetch - processPackages [ftb-snbt-lib]: executing diffoscope
+[2024-05-12 11:46:06] INFO root fetch - processPackages [ftb-snbt-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ftb_snbt_lib-0.2.3.tar.gz tmp/ftb_snbt_lib-0.3.0.tar.gz --markdown 20240512/f/ftb-snbt-lib/0.2.3-0.3.0/README.md --exclude *.pyd
+[2024-05-12 11:46:06] INFO root fetch - processPackages [detrain]: executing diffoscope
+[2024-05-12 11:46:06] INFO root fetch - processPackages [detrain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/detrain-0.2.5.tar.gz tmp/detrain-0.2.6.tar.gz --markdown 20240512/d/detrain/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-12 11:46:06] INFO root fetch - processPackages [lolcatt]: Remove: archive file [/home/abi/fetcher/tmp/lolcatt-0.3.1.tar.gz]
+[2024-05-12 11:46:06] INFO root fetch - processPackages [lolcatt]: Remove: archive file [/home/abi/fetcher/tmp/lolcatt-0.4.1.tar.gz]
+[2024-05-12 11:46:06] INFO root fetch - main [MainThread]: End processing [lolcatt]: success
+[2024-05-12 11:46:06] INFO root fetch - processPackages [ftb-snbt-lib]: Remove: archive file [/home/abi/fetcher/tmp/ftb_snbt_lib-0.2.3.tar.gz]
+[2024-05-12 11:46:06] INFO root fetch - processPackages [ftb-snbt-lib]: Remove: archive file [/home/abi/fetcher/tmp/ftb_snbt_lib-0.3.0.tar.gz]
+[2024-05-12 11:46:06] INFO root fetch - main [MainThread]: End processing [ftb-snbt-lib]: success
+[2024-05-12 11:46:06] INFO root fetch - processPackages [detrain]: Remove: archive file [/home/abi/fetcher/tmp/detrain-0.2.5.tar.gz]
+[2024-05-12 11:46:06] INFO root fetch - processPackages [detrain]: Remove: archive file [/home/abi/fetcher/tmp/detrain-0.2.6.tar.gz]
+[2024-05-12 11:46:06] INFO root fetch - main [MainThread]: End processing [detrain]: success
+[2024-05-12 11:46:06] INFO root fetch - main [MainThread]: Store serial: [23168579]
