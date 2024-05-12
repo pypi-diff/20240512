@@ -9756,3 +9756,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:04:33] INFO root fetch - processPackages [parse-llm-code]: Remove: archive file [/home/abi/fetcher/tmp/parse_llm_code-0.1.5.tar.gz]
 [2024-05-12 14:04:33] INFO root fetch - main [MainThread]: End processing [parse-llm-code]: success
 [2024-05-12 14:04:33] INFO root fetch - main [MainThread]: Store serial: [23169622]
+[2024-05-12 14:06:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169622]
+[2024-05-12 14:06:41] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-12 14:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TrialPy4
+[2024-05-12 14:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paraphylliaz
+[2024-05-12 14:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: musictree
+[2024-05-12 14:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyvector-rs
+[2024-05-12 14:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mpris-api
+[2024-05-12 14:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: senfenico
+[2024-05-12 14:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mass-composition
+[2024-05-12 14:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: torcheval-nightly
+[2024-05-12 14:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: MITgcmutils
+[2024-05-12 14:06:41] INFO root fetch - processPackages [mass-composition]: New version: [0.4.8] Old Version: [0.4.7]
+[2024-05-12 14:06:42] INFO root fetch - processPackages [torcheval-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-12 14:06:42] INFO root fetch - processPackages [mass-composition]: Downloading https://files.pythonhosted.org/packages/81/68/21ee3062ec191a5bc2cd20d2de04574a263b4c664e74cc24db0a3bd43bb1/mass_composition-0.4.7.tar.gz
+[2024-05-12 14:06:42] WARNING root fetch - processPackages [pyvector-rs]: Skipping, unable to determine old version
+[2024-05-12 14:06:42] INFO root fetch - main [MainThread]: End processing [pyvector-rs] error
+[2024-05-12 14:06:42] INFO root fetch - processPackages [senfenico]: New version: [0.2.0] Old Version: [0.1.5]
+[2024-05-12 14:06:42] WARNING root fetch - processPackages [TrialPy4]: Skipping, unable to determine old version
+[2024-05-12 14:06:42] INFO root fetch - main [MainThread]: End processing [TrialPy4] error
+[2024-05-12 14:06:42] WARNING root fetch - processPackages [paraphylliaz]: Skipping, unable to determine old version
+[2024-05-12 14:06:42] INFO root fetch - main [MainThread]: End processing [paraphylliaz] error
+[2024-05-12 14:06:42] INFO root fetch - processPackages [MITgcmutils]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-12 14:06:42] WARNING root fetch - processPackages [musictree]: Skipping, unable to determine old version
+[2024-05-12 14:06:42] INFO root fetch - main [MainThread]: End processing [musictree] error
+[2024-05-12 14:06:42] WARNING root fetch - processPackages [mpris-api]: Skipping, unable to determine old version
+[2024-05-12 14:06:42] INFO root fetch - main [MainThread]: End processing [mpris-api] error
+[2024-05-12 14:06:42] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/98/c1/96a1c122528ea0121ecc29466d1a6b26c68b8a6036aae6bdb121ddcfdbff/torcheval_nightly-2024.5.8.tar.gz
+[2024-05-12 14:06:42] INFO root fetch - processPackages [senfenico]: Downloading https://files.pythonhosted.org/packages/67/48/8a97469ea2c1ea68e17ebb3f21e87b5737f4670bec346d85bdfb30cf5c7e/senfenico-0.1.5.tar.gz
+[2024-05-12 14:06:42] INFO root fetch - processPackages [MITgcmutils]: Downloading https://files.pythonhosted.org/packages/b3/cf/a28c5ffa52cf943f4e4ca874fc2c519db8b5b9e0edef6fc0106ddeb011e4/MITgcmutils-0.1.2.tar.gz
+[2024-05-12 14:06:42] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/60/c3/da56bee236b598ba0c7ed2929a00a2cf4f41f79676194a22cd34a85b00eb/torcheval_nightly-2024.5.9.tar.gz
+[2024-05-12 14:06:42] INFO root fetch - processPackages [MITgcmutils]: Downloading https://files.pythonhosted.org/packages/a3/eb/bf969d34dc53651189d3a26e20d766e2ba9972d5fc9f938b47b7e18c8fa0/MITgcmutils-0.1.3.tar.gz
+[2024-05-12 14:06:42] INFO root fetch - processPackages [mass-composition]: Downloading https://files.pythonhosted.org/packages/ac/d8/a7a7fc02d215c0b82f15700da97b7dff1935b484e48f6f90564e9253daef/mass_composition-0.4.8.tar.gz
+[2024-05-12 14:06:42] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2024-05-12 14:06:42] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval_nightly-2024.5.8.tar.gz tmp/torcheval_nightly-2024.5.9.tar.gz --markdown 20240512/t/torcheval-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-12 14:06:42] INFO root fetch - processPackages [senfenico]: Downloading https://files.pythonhosted.org/packages/dc/18/f61527887d1c0fb70ea7f49211842caccc5bbea6c5e48e6395484e61d8b7/senfenico-0.2.0.tar.gz
+[2024-05-12 14:06:42] INFO root fetch - processPackages [mass-composition]: executing diffoscope
+[2024-05-12 14:06:42] INFO root fetch - processPackages [mass-composition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mass_composition-0.4.7.tar.gz tmp/mass_composition-0.4.8.tar.gz --markdown 20240512/m/mass-composition/0.4.7-0.4.8/README.md --exclude *.pyd
+[2024-05-12 14:06:42] INFO root fetch - processPackages [senfenico]: executing diffoscope
+[2024-05-12 14:06:42] INFO root fetch - processPackages [senfenico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/senfenico-0.1.5.tar.gz tmp/senfenico-0.2.0.tar.gz --markdown 20240512/s/senfenico/0.1.5-0.2.0/README.md --exclude *.pyd
+[2024-05-12 14:06:42] INFO root fetch - processPackages [MITgcmutils]: executing diffoscope
+[2024-05-12 14:06:42] INFO root fetch - processPackages [MITgcmutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MITgcmutils-0.1.2.tar.gz tmp/MITgcmutils-0.1.3.tar.gz --markdown 20240512/M/MITgcmutils/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-12 14:06:43] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.4.7.tar.gz]
+[2024-05-12 14:06:43] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.4.8.tar.gz]
+[2024-05-12 14:06:43] INFO root fetch - main [MainThread]: End processing [mass-composition]: success
+[2024-05-12 14:06:43] INFO root fetch - processPackages [MITgcmutils]: Remove: archive file [/home/abi/fetcher/tmp/MITgcmutils-0.1.2.tar.gz]
+[2024-05-12 14:06:43] INFO root fetch - processPackages [MITgcmutils]: Remove: archive file [/home/abi/fetcher/tmp/MITgcmutils-0.1.3.tar.gz]
+[2024-05-12 14:06:43] INFO root fetch - main [MainThread]: End processing [MITgcmutils]: success
+[2024-05-12 14:06:43] INFO root fetch - processPackages [senfenico]: Remove: archive file [/home/abi/fetcher/tmp/senfenico-0.1.5.tar.gz]
+[2024-05-12 14:06:43] INFO root fetch - processPackages [senfenico]: Remove: archive file [/home/abi/fetcher/tmp/senfenico-0.2.0.tar.gz]
+[2024-05-12 14:06:43] INFO root fetch - main [MainThread]: End processing [senfenico]: success
+[2024-05-12 14:06:43] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval_nightly-2024.5.8.tar.gz]
+[2024-05-12 14:06:43] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval_nightly-2024.5.9.tar.gz]
+[2024-05-12 14:06:43] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
+[2024-05-12 14:06:43] INFO root fetch - main [MainThread]: Store serial: [23169682]
