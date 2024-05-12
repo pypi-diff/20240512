@@ -4517,3 +4517,33 @@
 [2024-05-12 06:45:09] INFO root fetch - processPackages [nostpy-cli]: Remove: archive file [/home/abi/fetcher/tmp/nostpy_cli-0.1.3.tar.gz]
 [2024-05-12 06:45:09] INFO root fetch - main [MainThread]: End processing [nostpy-cli]: success
 [2024-05-12 06:45:09] INFO root fetch - main [MainThread]: Store serial: [23167059]
+[2024-05-12 06:47:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167059]
+[2024-05-12 06:47:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 06:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: slidge
+[2024-05-12 06:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ikvpy
+[2024-05-12 06:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xorius
+[2024-05-12 06:47:18] INFO root fetch - processPackages [xorius]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-12 06:47:18] INFO root fetch - processPackages [ikvpy]: New version: [0.0.35] Old Version: [0.0.34]
+[2024-05-12 06:47:18] INFO root fetch - processPackages [slidge]: New version: [0.1.1] Old Version: [0.1.0rc1]
+[2024-05-12 06:47:18] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/01/6c/badb8cfd5e0b868ead99fe648b3ca90e3ab2534070412a6b81d478d2cb06/ikvpy-0.0.34.tar.gz
+[2024-05-12 06:47:18] INFO root fetch - processPackages [slidge]: Downloading https://files.pythonhosted.org/packages/8c/8a/2c9578dc6eea4310b39ec27e7b52e5c7794084dede834542db0b10bd13fd/slidge-0.1.0rc1.tar.gz
+[2024-05-12 06:47:18] INFO root fetch - processPackages [xorius]: Downloading https://files.pythonhosted.org/packages/a2/cb/459183ac2b41545bd6ec58c2db78096f34d93f8736e8ccf6ffcaa73ae603/xorius-0.0.3.tar.gz
+[2024-05-12 06:47:18] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/54/53/fc602d7a5834f1c26ab8fe93415acb359119d066cbbd98814af8112cd82e/ikvpy-0.0.35.tar.gz
+[2024-05-12 06:47:18] INFO root fetch - processPackages [ikvpy]: executing diffoscope
+[2024-05-12 06:47:18] INFO root fetch - processPackages [ikvpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ikvpy-0.0.34.tar.gz tmp/ikvpy-0.0.35.tar.gz --markdown 20240512/i/ikvpy/0.0.34-0.0.35/README.md --exclude *.pyd
+[2024-05-12 06:47:18] INFO root fetch - processPackages [xorius]: Downloading https://files.pythonhosted.org/packages/c9/4d/900b6fc7deaa2ef5aa4c9693e500c1274b74beb5acb264abdd849a60de95/xorius-0.0.4.tar.gz
+[2024-05-12 06:47:18] INFO root fetch - processPackages [slidge]: Downloading https://files.pythonhosted.org/packages/91/67/1054310c3f10837f2808b13d8be9f0c7ef57ca47744d956e4719dddfd028/slidge-0.1.1.tar.gz
+[2024-05-12 06:47:18] INFO root fetch - processPackages [xorius]: executing diffoscope
+[2024-05-12 06:47:18] INFO root fetch - processPackages [xorius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xorius-0.0.3.tar.gz tmp/xorius-0.0.4.tar.gz --markdown 20240512/x/xorius/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-12 06:47:18] INFO root fetch - processPackages [slidge]: executing diffoscope
+[2024-05-12 06:47:18] INFO root fetch - processPackages [slidge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slidge-0.1.0rc1.tar.gz tmp/slidge-0.1.1.tar.gz --markdown 20240512/s/slidge/0.1.0rc1-0.1.1/README.md --exclude *.pyd
+[2024-05-12 06:47:19] INFO root fetch - processPackages [xorius]: Remove: archive file [/home/abi/fetcher/tmp/xorius-0.0.3.tar.gz]
+[2024-05-12 06:47:19] INFO root fetch - processPackages [xorius]: Remove: archive file [/home/abi/fetcher/tmp/xorius-0.0.4.tar.gz]
+[2024-05-12 06:47:19] INFO root fetch - main [MainThread]: End processing [xorius]: success
+[2024-05-12 06:47:19] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.34.tar.gz]
+[2024-05-12 06:47:19] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.35.tar.gz]
+[2024-05-12 06:47:19] INFO root fetch - main [MainThread]: End processing [ikvpy]: success
+[2024-05-12 06:47:19] INFO root fetch - processPackages [slidge]: Remove: archive file [/home/abi/fetcher/tmp/slidge-0.1.0rc1.tar.gz]
+[2024-05-12 06:47:19] INFO root fetch - processPackages [slidge]: Remove: archive file [/home/abi/fetcher/tmp/slidge-0.1.1.tar.gz]
+[2024-05-12 06:47:19] INFO root fetch - main [MainThread]: End processing [slidge]: success
+[2024-05-12 06:47:19] INFO root fetch - main [MainThread]: Store serial: [23167069]
