@@ -11562,3 +11562,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:22:02] INFO root fetch - processPackages [bbot]: Remove: archive file [/home/abi/fetcher/tmp/bbot-1.1.7.7rc0.tar.gz]
 [2024-05-12 16:22:02] INFO root fetch - main [MainThread]: End processing [bbot]: success
 [2024-05-12 16:22:02] INFO root fetch - main [MainThread]: Store serial: [23170638]
+[2024-05-12 16:24:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170638]
+[2024-05-12 16:24:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 16:24:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lib_ml_remla24_team02
+[2024-05-12 16:24:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyAcoustiX
+[2024-05-12 16:24:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xtn-tools-pro
+[2024-05-12 16:24:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quadriserialz
+[2024-05-12 16:24:11] INFO root fetch - processPackages [PyAcoustiX]: New version: [0.9.9] Old Version: [0.9.10]
+[2024-05-12 16:24:11] INFO root fetch - processPackages [xtn-tools-pro]: New version: [1.0.0.0.5] Old Version: [1.0.0.0.4]
+[2024-05-12 16:24:11] WARNING root fetch - processPackages [quadriserialz]: Skipping, unable to determine old version
+[2024-05-12 16:24:11] INFO root fetch - main [MainThread]: End processing [quadriserialz] error
+[2024-05-12 16:24:11] WARNING root fetch - processPackages [lib_ml_remla24_team02]: Skipping, unable to determine old version
+[2024-05-12 16:24:11] INFO root fetch - main [MainThread]: End processing [lib_ml_remla24_team02] error
+[2024-05-12 16:24:11] INFO root fetch - processPackages [PyAcoustiX]: Downloading https://files.pythonhosted.org/packages/91/65/d43405ed40add9444d91d5a2dadd63a57b0076f13ff320b4bcc7ac13ea86/PyAcoustiX-0.9.10.tar.gz
+[2024-05-12 16:24:11] INFO root fetch - processPackages [xtn-tools-pro]: Downloading https://files.pythonhosted.org/packages/31/ae/be7c89e7b11cccbf218eaf3387e0a98ab7a803ca8c2e4ea7b4e6c1e6f305/xtn-tools-pro-1.0.0.0.4.tar.gz
+[2024-05-12 16:24:11] INFO root fetch - processPackages [xtn-tools-pro]: Downloading https://files.pythonhosted.org/packages/1d/54/0f9434dbbf02c7c3d801cae8d88b322898596825848a3cc4d712d02a2cdf/xtn-tools-pro-1.0.0.0.5.tar.gz
+[2024-05-12 16:24:11] INFO root fetch - processPackages [PyAcoustiX]: Downloading https://files.pythonhosted.org/packages/ea/be/0118a9663965ed08cd50455d22984953df1b92d7ace78dc9a8eb912c4f09/PyAcoustiX-0.9.9.tar.gz
+[2024-05-12 16:24:12] INFO root fetch - processPackages [xtn-tools-pro]: executing diffoscope
+[2024-05-12 16:24:12] INFO root fetch - processPackages [xtn-tools-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtn-tools-pro-1.0.0.0.4.tar.gz tmp/xtn-tools-pro-1.0.0.0.5.tar.gz --markdown 20240512/x/xtn-tools-pro/1.0.0.0.4-1.0.0.0.5/README.md --exclude *.pyd
+[2024-05-12 16:24:12] INFO root fetch - processPackages [PyAcoustiX]: executing diffoscope
+[2024-05-12 16:24:12] INFO root fetch - processPackages [PyAcoustiX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAcoustiX-0.9.10.tar.gz tmp/PyAcoustiX-0.9.9.tar.gz --markdown 20240512/P/PyAcoustiX/0.9.10-0.9.9/README.md --exclude *.pyd
+[2024-05-12 16:24:12] INFO root fetch - processPackages [xtn-tools-pro]: Remove: archive file [/home/abi/fetcher/tmp/xtn-tools-pro-1.0.0.0.4.tar.gz]
+[2024-05-12 16:24:12] INFO root fetch - processPackages [xtn-tools-pro]: Remove: archive file [/home/abi/fetcher/tmp/xtn-tools-pro-1.0.0.0.5.tar.gz]
+[2024-05-12 16:24:12] INFO root fetch - main [MainThread]: End processing [xtn-tools-pro]: success
+[2024-05-12 16:24:12] INFO root fetch - processPackages [PyAcoustiX]: Remove: archive file [/home/abi/fetcher/tmp/PyAcoustiX-0.9.10.tar.gz]
+[2024-05-12 16:24:12] INFO root fetch - processPackages [PyAcoustiX]: Remove: archive file [/home/abi/fetcher/tmp/PyAcoustiX-0.9.9.tar.gz]
+[2024-05-12 16:24:12] INFO root fetch - main [MainThread]: End processing [PyAcoustiX]: success
+[2024-05-12 16:24:12] INFO root fetch - main [MainThread]: Store serial: [23170653]
