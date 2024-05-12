@@ -17202,3 +17202,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:17:22] INFO root fetch - processPackages [TDSR-UWB]: Remove: archive file [/home/abi/fetcher/tmp/TDSR-UWB-1.536.tar.gz]
 [2024-05-12 22:17:22] INFO root fetch - main [MainThread]: End processing [TDSR-UWB]: success
 [2024-05-12 22:17:22] INFO root fetch - main [MainThread]: Store serial: [23173516]
+[2024-05-12 22:19:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173516]
+[2024-05-12 22:19:31] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-12 22:21:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173521]
+[2024-05-12 22:21:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 22:21:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gink
+[2024-05-12 22:21:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hecaticz
+[2024-05-12 22:21:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sequentialdw
+[2024-05-12 22:21:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-tetris-stats
+[2024-05-12 22:21:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shepherdyz
+[2024-05-12 22:21:36] INFO root fetch - processPackages [sequentialdw]: New version: [3.2] Old Version: [3.1]
+[2024-05-12 22:21:37] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/b8/1b/ae6555ef9be29333da5f1902a3a6e991c59ead40e94924908a7c0f5450a9/sequentialdw-3.1.tar.gz
+[2024-05-12 22:21:37] WARNING root fetch - processPackages [shepherdyz]: Skipping, unable to determine old version
+[2024-05-12 22:21:37] INFO root fetch - main [MainThread]: End processing [shepherdyz] error
+[2024-05-12 22:21:37] WARNING root fetch - processPackages [hecaticz]: Skipping, unable to determine old version
+[2024-05-12 22:21:37] INFO root fetch - main [MainThread]: End processing [hecaticz] error
+[2024-05-12 22:21:37] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-12 22:21:37] INFO root fetch - processPackages [gink]: New version: [0.20240512.1715545134] Old Version: [0.20240510.1715313864]
+[2024-05-12 22:21:37] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/66/66/2fd82a19d0c317a6753eff16781d1bb84db76b1e1fe580c981b32700faee/gink-0.20240510.1715313864.tar.gz
+[2024-05-12 22:21:37] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: Downloading https://files.pythonhosted.org/packages/82/f6/295a4cc7c05b1e3edd1d4442fac4576f7efebfb77b116cb7745944873dd5/nonebot_plugin_tetris_stats-1.1.4.tar.gz
+[2024-05-12 22:21:37] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/54/df/1ec51601e13049a1d680260d732e66ff861f8e0a4f62c6f288679cb67ad5/sequentialdw-3.2.tar.gz
+[2024-05-12 22:21:37] INFO root fetch - processPackages [sequentialdw]: executing diffoscope
+[2024-05-12 22:21:37] INFO root fetch - processPackages [sequentialdw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sequentialdw-3.1.tar.gz tmp/sequentialdw-3.2.tar.gz --markdown 20240512/s/sequentialdw/3.1-3.2/README.md --exclude *.pyd
+[2024-05-12 22:21:37] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/d6/29/7b6c924c913303b441e4fc047c0f82e8ec2f663d75853138655544654048/gink-0.20240512.1715545134.tar.gz
+[2024-05-12 22:21:37] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: Downloading https://files.pythonhosted.org/packages/39/ca/4ea2a28f9aef7588ed16512ca0fa1b59028b51403b0dacda7e43f854ac94/nonebot_plugin_tetris_stats-1.1.5.tar.gz
+[2024-05-12 22:21:37] INFO root fetch - processPackages [gink]: executing diffoscope
+[2024-05-12 22:21:37] INFO root fetch - processPackages [gink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gink-0.20240510.1715313864.tar.gz tmp/gink-0.20240512.1715545134.tar.gz --markdown 20240512/g/gink/0.20240510.1715313864-0.20240512.1715545134/README.md --exclude *.pyd
+[2024-05-12 22:21:37] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: executing diffoscope
+[2024-05-12 22:21:37] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_tetris_stats-1.1.4.tar.gz tmp/nonebot_plugin_tetris_stats-1.1.5.tar.gz --markdown 20240512/n/nonebot-plugin-tetris-stats/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-12 22:21:38] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-3.1.tar.gz]
+[2024-05-12 22:21:38] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-3.2.tar.gz]
+[2024-05-12 22:21:38] INFO root fetch - main [MainThread]: End processing [sequentialdw]: success
+[2024-05-12 22:21:38] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_tetris_stats-1.1.4.tar.gz]
+[2024-05-12 22:21:38] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_tetris_stats-1.1.5.tar.gz]
+[2024-05-12 22:21:38] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-tetris-stats]: success
+[2024-05-12 22:21:38] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240510.1715313864.tar.gz]
+[2024-05-12 22:21:38] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240512.1715545134.tar.gz]
+[2024-05-12 22:21:38] INFO root fetch - main [MainThread]: End processing [gink]: success
+[2024-05-12 22:21:38] INFO root fetch - main [MainThread]: Store serial: [23173543]
