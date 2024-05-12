@@ -8820,3 +8820,28 @@
 [2024-05-12 13:00:28] INFO root fetch - processPackages [narration]: Remove: archive file [/home/abi/fetcher/tmp/narration-0.2.9-py2.py3-none-any.whl.zip]
 [2024-05-12 13:00:28] INFO root fetch - main [MainThread]: End processing [narration]: success
 [2024-05-12 13:00:28] INFO root fetch - main [MainThread]: Store serial: [23169230]
+[2024-05-12 13:02:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169230]
+[2024-05-12 13:02:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 13:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: strawberry-graphql
+[2024-05-12 13:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-settings-env
+[2024-05-12 13:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: httpdiff
+[2024-05-12 13:02:37] INFO root fetch - processPackages [httpdiff]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 13:02:37] INFO root fetch - processPackages [django-settings-env]: New version: [4.7.4] Old Version: [4.7.3]
+[2024-05-12 13:02:37] INFO root fetch - processPackages [strawberry-graphql]: New version: [0.99.3] Old Version: [0.99.2]
+[2024-05-12 13:02:37] INFO root fetch - processPackages [django-settings-env]: Downloading https://files.pythonhosted.org/packages/e0/c3/d4b0011dbb55144befae8743438210429fc876b35dce8e852c4ee9fd7ec4/django_settings_env-4.7.3.tar.gz
+[2024-05-12 13:02:37] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/dd/38/4efb20ccf1f04c0901e6d5de6eb222b8a9e74692ae34f6f4618b0f0cc8b3/strawberry-graphql-0.99.2.tar.gz
+[2024-05-12 13:02:37] ERROR root fetch - processPackages [httpdiff]: Unable to fetch info: No such project/version 'httpdiff' 0.0.1
+[2024-05-12 13:02:37] INFO root fetch - main [MainThread]: End processing [httpdiff] error
+[2024-05-12 13:02:37] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/e8/62/3a58fe3751e9dc961f72fbe825e32f12e9cd544dafd44bc5fdddb290b881/strawberry-graphql-0.99.3.tar.gz
+[2024-05-12 13:02:37] INFO root fetch - processPackages [django-settings-env]: Downloading https://files.pythonhosted.org/packages/22/4b/b8da65d83f3ef1548d2fedf9c6a074be900e28073b2d745b823135ef3a91/django_settings_env-4.7.4.tar.gz
+[2024-05-12 13:02:37] INFO root fetch - processPackages [strawberry-graphql]: executing diffoscope
+[2024-05-12 13:02:37] INFO root fetch - processPackages [strawberry-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry-graphql-0.99.2.tar.gz tmp/strawberry-graphql-0.99.3.tar.gz --markdown 20240512/s/strawberry-graphql/0.99.2-0.99.3/README.md --exclude *.pyd
+[2024-05-12 13:02:38] INFO root fetch - processPackages [django-settings-env]: executing diffoscope
+[2024-05-12 13:02:38] INFO root fetch - processPackages [django-settings-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_settings_env-4.7.3.tar.gz tmp/django_settings_env-4.7.4.tar.gz --markdown 20240512/d/django-settings-env/4.7.3-4.7.4/README.md --exclude *.pyd
+[2024-05-12 13:02:38] INFO root fetch - processPackages [django-settings-env]: Remove: archive file [/home/abi/fetcher/tmp/django_settings_env-4.7.3.tar.gz]
+[2024-05-12 13:02:38] INFO root fetch - processPackages [django-settings-env]: Remove: archive file [/home/abi/fetcher/tmp/django_settings_env-4.7.4.tar.gz]
+[2024-05-12 13:02:38] INFO root fetch - main [MainThread]: End processing [django-settings-env]: success
+[2024-05-12 13:02:38] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.2.tar.gz]
+[2024-05-12 13:02:38] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
+[2024-05-12 13:02:38] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
+[2024-05-12 13:02:38] INFO root fetch - main [MainThread]: Store serial: [23169248]
