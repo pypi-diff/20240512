@@ -12361,3 +12361,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:12:27] INFO root fetch - processPackages [sssm]: Remove: archive file [/home/abi/fetcher/tmp/sssm-0.0.2.tar.gz]
 [2024-05-12 17:12:27] INFO root fetch - main [MainThread]: End processing [sssm]: success
 [2024-05-12 17:12:27] INFO root fetch - main [MainThread]: Store serial: [23171053]
+[2024-05-12 17:14:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171053]
+[2024-05-12 17:14:36] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 17:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cv2-enumerate-cameras
+[2024-05-12 17:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lancedb-tables
+[2024-05-12 17:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fast-flights
+[2024-05-12 17:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ugmmryzpspynvvlv
+[2024-05-12 17:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyhdl-if
+[2024-05-12 17:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fishgarthz
+[2024-05-12 17:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: busyhtyhxdlrfbsn
+[2024-05-12 17:14:36] WARNING root fetch - processPackages [lancedb-tables]: Skipping, unable to determine old version
+[2024-05-12 17:14:36] INFO root fetch - main [MainThread]: End processing [lancedb-tables] error
+[2024-05-12 17:14:36] WARNING root fetch - processPackages [ugmmryzpspynvvlv]: Skipping, unable to determine old version
+[2024-05-12 17:14:36] INFO root fetch - main [MainThread]: End processing [ugmmryzpspynvvlv] error
+[2024-05-12 17:14:36] WARNING root fetch - processPackages [fast-flights]: Skipping, unable to determine old version
+[2024-05-12 17:14:36] INFO root fetch - main [MainThread]: End processing [fast-flights] error
+[2024-05-12 17:14:36] WARNING root fetch - processPackages [fishgarthz]: Skipping, unable to determine old version
+[2024-05-12 17:14:36] INFO root fetch - main [MainThread]: End processing [fishgarthz] error
+[2024-05-12 17:14:36] INFO root fetch - processPackages [cv2-enumerate-cameras]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-12 17:14:36] INFO root fetch - processPackages [pyhdl-if]: New version: [0.0.1.9052343530] Old Version: [0.0.1.8774423738]
+[2024-05-12 17:14:36] WARNING root fetch - processPackages [busyhtyhxdlrfbsn]: Skipping, unable to determine old version
+[2024-05-12 17:14:36] INFO root fetch - main [MainThread]: End processing [busyhtyhxdlrfbsn] error
+[2024-05-12 17:14:36] INFO root fetch - processPackages [cv2-enumerate-cameras]: Downloading https://files.pythonhosted.org/packages/9a/fd/167a6f7a297550dee8e667a9c045de24d6fe479f256c17f8035ec534184b/cv2_enumerate_cameras-1.1.8.tar.gz
+[2024-05-12 17:14:36] INFO root fetch - processPackages [pyhdl-if]: Downloading https://files.pythonhosted.org/packages/88/ef/cdcb5acd01558c666011379e77384ec6e9bf21caea707d915ddb51f96497/pyhdl_if-0.0.1.8774423738-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-12 17:14:37] INFO root fetch - processPackages [cv2-enumerate-cameras]: Downloading https://files.pythonhosted.org/packages/8d/de/2f292505961a44bd8774947b085af8f2209eb79a9354796c6b4a82bd4c90/cv2_enumerate_cameras-1.1.9.tar.gz
+[2024-05-12 17:14:37] INFO root fetch - processPackages [cv2-enumerate-cameras]: executing diffoscope
+[2024-05-12 17:14:37] INFO root fetch - processPackages [cv2-enumerate-cameras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cv2_enumerate_cameras-1.1.8.tar.gz tmp/cv2_enumerate_cameras-1.1.9.tar.gz --markdown 20240512/c/cv2-enumerate-cameras/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-12 17:14:37] INFO root fetch - processPackages [pyhdl-if]: Downloading https://files.pythonhosted.org/packages/07/f7/f325de4d2d05949b03c4c4d2252ab7f03c0b4742c807d201725e5a56294b/pyhdl_if-0.0.1.9052343530-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-12 17:14:38] INFO root fetch - processPackages [cv2-enumerate-cameras]: Remove: archive file [/home/abi/fetcher/tmp/cv2_enumerate_cameras-1.1.8.tar.gz]
+[2024-05-12 17:14:38] INFO root fetch - processPackages [cv2-enumerate-cameras]: Remove: archive file [/home/abi/fetcher/tmp/cv2_enumerate_cameras-1.1.9.tar.gz]
+[2024-05-12 17:14:38] INFO root fetch - main [MainThread]: End processing [cv2-enumerate-cameras]: success
+[2024-05-12 17:14:38] INFO root fetch - processPackages [pyhdl-if]: executing diffoscope
+[2024-05-12 17:14:38] INFO root fetch - processPackages [pyhdl-if]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhdl_if-0.0.1.8774423738-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pyhdl_if-0.0.1.9052343530-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240512/p/pyhdl-if/0.0.1.8774423738-0.0.1.9052343530/README.md --exclude *.pyd
+[2024-05-12 17:14:40] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.8774423738-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-12 17:14:40] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.9052343530-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-12 17:14:40] INFO root fetch - main [MainThread]: End processing [pyhdl-if]: success
+[2024-05-12 17:14:40] INFO root fetch - main [MainThread]: Store serial: [23171108]
