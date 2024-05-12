@@ -7579,3 +7579,9 @@
 [2024-05-12 11:24:23] INFO root fetch - processPackages [loadspinner]: Remove: archive file [/home/abi/fetcher/tmp/loadspinner-0.4.tar.gz]
 [2024-05-12 11:24:23] INFO root fetch - main [MainThread]: End processing [loadspinner]: success
 [2024-05-12 11:24:23] INFO root fetch - main [MainThread]: Store serial: [23168459]
+[2024-05-12 11:26:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168459]
+[2024-05-12 11:26:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 11:26:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: relacquerz
+[2024-05-12 11:26:32] WARNING root fetch - processPackages [relacquerz]: Skipping, unable to determine old version
+[2024-05-12 11:26:32] INFO root fetch - main [MainThread]: End processing [relacquerz] error
+[2024-05-12 11:26:32] INFO root fetch - main [MainThread]: Store serial: [23168463]
