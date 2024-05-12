@@ -2557,3 +2557,24 @@
 [2024-05-12 03:51:50] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
 [2024-05-12 03:51:50] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
 [2024-05-12 03:51:50] INFO root fetch - main [MainThread]: Store serial: [23166155]
+[2024-05-12 03:53:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166155]
+[2024-05-12 03:53:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 03:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tanu
+[2024-05-12 03:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deepdog
+[2024-05-12 03:53:58] INFO root fetch - processPackages [tanu]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 03:53:58] INFO root fetch - processPackages [deepdog]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-12 03:53:58] INFO root fetch - processPackages [tanu]: Downloading https://files.pythonhosted.org/packages/39/dc/38dc2cd5e0b427db0e6b9828683b0b54cc5197b3707120cafb204f432e73/tanu-0.1.0.tar.gz
+[2024-05-12 03:53:58] INFO root fetch - processPackages [deepdog]: Downloading https://files.pythonhosted.org/packages/e2/36/43471bf710b5147a857db24bc8246a15961e3604fd64d921332e50cd3c01/deepdog-1.2.0.tar.gz
+[2024-05-12 03:53:59] INFO root fetch - processPackages [tanu]: Downloading https://files.pythonhosted.org/packages/57/91/b4617dec4bc94bb2f958494972e1921891e3910c5979e22968fc2f38eed5/tanu-0.1.1.tar.gz
+[2024-05-12 03:53:59] INFO root fetch - processPackages [deepdog]: Downloading https://files.pythonhosted.org/packages/77/40/485592aadd7e57b179379e63e63408a8257d7b1ba5213e8e942f4e970d8e/deepdog-1.2.1.tar.gz
+[2024-05-12 03:53:59] INFO root fetch - processPackages [tanu]: executing diffoscope
+[2024-05-12 03:53:59] INFO root fetch - processPackages [tanu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tanu-0.1.0.tar.gz tmp/tanu-0.1.1.tar.gz --markdown 20240512/t/tanu/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 03:53:59] INFO root fetch - processPackages [deepdog]: executing diffoscope
+[2024-05-12 03:53:59] INFO root fetch - processPackages [deepdog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdog-1.2.0.tar.gz tmp/deepdog-1.2.1.tar.gz --markdown 20240512/d/deepdog/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-12 03:53:59] INFO root fetch - processPackages [tanu]: Remove: archive file [/home/abi/fetcher/tmp/tanu-0.1.0.tar.gz]
+[2024-05-12 03:53:59] INFO root fetch - processPackages [tanu]: Remove: archive file [/home/abi/fetcher/tmp/tanu-0.1.1.tar.gz]
+[2024-05-12 03:53:59] INFO root fetch - main [MainThread]: End processing [tanu]: success
+[2024-05-12 03:53:59] INFO root fetch - processPackages [deepdog]: Remove: archive file [/home/abi/fetcher/tmp/deepdog-1.2.0.tar.gz]
+[2024-05-12 03:53:59] INFO root fetch - processPackages [deepdog]: Remove: archive file [/home/abi/fetcher/tmp/deepdog-1.2.1.tar.gz]
+[2024-05-12 03:53:59] INFO root fetch - main [MainThread]: End processing [deepdog]: success
+[2024-05-12 03:53:59] INFO root fetch - main [MainThread]: Store serial: [23166160]
