@@ -9334,3 +9334,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:31:06] INFO root fetch - processPackages [wg-utilities]: Remove: archive file [/home/abi/fetcher/tmp/wg_utilities-5.9.0.tar.gz]
 [2024-05-12 13:31:06] INFO root fetch - main [MainThread]: End processing [wg-utilities]: success
 [2024-05-12 13:31:06] INFO root fetch - main [MainThread]: Store serial: [23169430]
+[2024-05-12 13:33:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169430]
+[2024-05-12 13:33:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 13:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asterixparse
+[2024-05-12 13:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yacv-server
+[2024-05-12 13:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Subsearch
+[2024-05-12 13:33:15] WARNING root fetch - processPackages [asterixparse]: Skipping, unable to determine old version
+[2024-05-12 13:33:15] INFO root fetch - main [MainThread]: End processing [asterixparse] error
+[2024-05-12 13:33:15] INFO root fetch - processPackages [yacv-server]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-12 13:33:15] INFO root fetch - processPackages [Subsearch]: New version: [2.45.0] Old Version: [2.44.1]
+[2024-05-12 13:33:15] INFO root fetch - processPackages [yacv-server]: Downloading https://files.pythonhosted.org/packages/3e/33/bd306d9737ef31d795d2ee07d88dbe2a7b35ebf7a7600d389f6e723f2912/yacv_server-0.8.8.tar.gz
+[2024-05-12 13:33:15] INFO root fetch - processPackages [Subsearch]: Downloading https://files.pythonhosted.org/packages/b6/44/8f95de660042e6c3b2ad1feb5442d9922283f4a34775d28db324e1ab6b68/subsearch-2.44.1.tar.gz
+[2024-05-12 13:33:15] INFO root fetch - processPackages [yacv-server]: Downloading https://files.pythonhosted.org/packages/21/92/6adafd209a4ecf4cec15bbb5d96fa7adb6ca0b7c496afb6607928229e0c7/yacv_server-0.8.9.tar.gz
+[2024-05-12 13:33:15] INFO root fetch - processPackages [Subsearch]: Downloading https://files.pythonhosted.org/packages/0d/6c/49aebee56e1ae956809ce6171942f5fafd3a26c5f45ba1bb04c7d299c11c/subsearch-2.45.0.tar.gz
+[2024-05-12 13:33:16] INFO root fetch - processPackages [Subsearch]: executing diffoscope
+[2024-05-12 13:33:16] INFO root fetch - processPackages [Subsearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subsearch-2.44.1.tar.gz tmp/subsearch-2.45.0.tar.gz --markdown 20240512/S/Subsearch/2.44.1-2.45.0/README.md --exclude *.pyd
+[2024-05-12 13:33:16] INFO root fetch - processPackages [yacv-server]: executing diffoscope
+[2024-05-12 13:33:16] INFO root fetch - processPackages [yacv-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yacv_server-0.8.8.tar.gz tmp/yacv_server-0.8.9.tar.gz --markdown 20240512/y/yacv-server/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-12 13:33:16] INFO root fetch - processPackages [Subsearch]: Remove: archive file [/home/abi/fetcher/tmp/subsearch-2.44.1.tar.gz]
+[2024-05-12 13:33:16] INFO root fetch - processPackages [Subsearch]: Remove: archive file [/home/abi/fetcher/tmp/subsearch-2.45.0.tar.gz]
+[2024-05-12 13:33:16] INFO root fetch - main [MainThread]: End processing [Subsearch]: success
+[2024-05-12 13:34:07] INFO root fetch - processPackages [yacv-server]: Remove: archive file [/home/abi/fetcher/tmp/yacv_server-0.8.8.tar.gz]
+[2024-05-12 13:34:07] INFO root fetch - processPackages [yacv-server]: Remove: archive file [/home/abi/fetcher/tmp/yacv_server-0.8.9.tar.gz]
+[2024-05-12 13:34:07] INFO root fetch - main [MainThread]: End processing [yacv-server]: success
+[2024-05-12 13:34:07] INFO root fetch - main [MainThread]: Store serial: [23169443]
