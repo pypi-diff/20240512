@@ -6177,3 +6177,45 @@
 [2024-05-12 09:15:19] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.9.0b8.tar.gz]
 [2024-05-12 09:15:19] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
 [2024-05-12 09:15:19] INFO root fetch - main [MainThread]: Store serial: [23167743]
+[2024-05-12 09:17:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167743]
+[2024-05-12 09:17:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 09:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QtHarmony
+[2024-05-12 09:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wlkata-mirobot-Virtual
+[2024-05-12 09:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: data-prep-toolkit
+[2024-05-12 09:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: queue-local
+[2024-05-12 09:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-tbase-post-product
+[2024-05-12 09:17:27] INFO root fetch - processPackages [data-prep-toolkit]: New version: [0.0.1.dev1] Old Version: [0.0.1]
+[2024-05-12 09:17:27] INFO root fetch - processPackages [QtHarmony]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-12 09:17:27] WARNING root fetch - processPackages [wlkata-mirobot-Virtual]: Skipping, unable to determine old version
+[2024-05-12 09:17:27] INFO root fetch - main [MainThread]: End processing [wlkata-mirobot-Virtual] error
+[2024-05-12 09:17:27] INFO root fetch - processPackages [queue-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 09:17:27] INFO root fetch - processPackages [data-prep-toolkit]: Downloading https://files.pythonhosted.org/packages/18/06/d8aad5e98cb6887b2577a439aedf196452807a5c8555cff195764a6022fa/data_prep_toolkit-0.0.1.tar.gz
+[2024-05-12 09:17:27] INFO root fetch - processPackages [django-tbase-post-product]: New version: [2024.5.917151916] Old Version: [2024.5.1217154982]
+[2024-05-12 09:17:27] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/3f/31/cb703ee99a990ea709f8ef18f734d297df1fb573baa5c4e45c0c77705456/qtharmony-0.1.7.tar.gz
+[2024-05-12 09:17:27] INFO root fetch - processPackages [queue-local]: Downloading https://files.pythonhosted.org/packages/74/2a/11e7cf27d1a339b3be58b722b335bd5427d0e0cd5df02c853c6fc2f70e89/queue-local-0.0.8.tar.gz
+[2024-05-12 09:17:28] INFO root fetch - processPackages [django-tbase-post-product]: Downloading https://files.pythonhosted.org/packages/7c/db/4e7c817ba5c02a52d6303b8511f113ccf28718ef27abb813e1e59fcfa632/django_tbase_post_product-2024.5.1217154982.tar.gz
+[2024-05-12 09:17:28] INFO root fetch - processPackages [queue-local]: Downloading https://files.pythonhosted.org/packages/a8/6d/85b9e7808db253376ca4b0f171843555d3b647703fd759861abdc4f9c44f/queue-local-0.0.9.tar.gz
+[2024-05-12 09:17:28] INFO root fetch - processPackages [data-prep-toolkit]: Downloading https://files.pythonhosted.org/packages/b8/0d/f1105e7ca349812cdc6dcaaab34680ae74f9c6c0761cfb91930932651e4e/data_prep_toolkit-0.0.1.dev1.tar.gz
+[2024-05-12 09:17:28] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/71/86/0843d8069bf4f5dfa4af8c5fe4faa7de41b7394826dcd55d91251bfc2c54/qtharmony-0.1.8.tar.gz
+[2024-05-12 09:17:28] INFO root fetch - processPackages [queue-local]: executing diffoscope
+[2024-05-12 09:17:28] INFO root fetch - processPackages [queue-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/queue-local-0.0.8.tar.gz tmp/queue-local-0.0.9.tar.gz --markdown 20240512/q/queue-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 09:17:28] INFO root fetch - processPackages [data-prep-toolkit]: executing diffoscope
+[2024-05-12 09:17:28] INFO root fetch - processPackages [data-prep-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_toolkit-0.0.1.tar.gz tmp/data_prep_toolkit-0.0.1.dev1.tar.gz --markdown 20240512/d/data-prep-toolkit/0.0.1-0.0.1.dev1/README.md --exclude *.pyd
+[2024-05-12 09:17:28] INFO root fetch - processPackages [QtHarmony]: executing diffoscope
+[2024-05-12 09:17:28] INFO root fetch - processPackages [QtHarmony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtharmony-0.1.7.tar.gz tmp/qtharmony-0.1.8.tar.gz --markdown 20240512/Q/QtHarmony/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-12 09:17:28] INFO root fetch - processPackages [django-tbase-post-product]: Downloading https://files.pythonhosted.org/packages/c0/98/62a51f9770498efbef63512b11daf7322e6692ff97b1c62f32ce787b15f3/django_tbase_post_product-2024.5.917151916.tar.gz
+[2024-05-12 09:17:28] INFO root fetch - processPackages [django-tbase-post-product]: executing diffoscope
+[2024-05-12 09:17:28] INFO root fetch - processPackages [django-tbase-post-product]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tbase_post_product-2024.5.1217154982.tar.gz tmp/django_tbase_post_product-2024.5.917151916.tar.gz --markdown 20240512/d/django-tbase-post-product/2024.5.1217154982-2024.5.917151916/README.md --exclude *.pyd
+[2024-05-12 09:17:28] INFO root fetch - processPackages [queue-local]: Remove: archive file [/home/abi/fetcher/tmp/queue-local-0.0.8.tar.gz]
+[2024-05-12 09:17:28] INFO root fetch - processPackages [queue-local]: Remove: archive file [/home/abi/fetcher/tmp/queue-local-0.0.9.tar.gz]
+[2024-05-12 09:17:28] INFO root fetch - main [MainThread]: End processing [queue-local]: success
+[2024-05-12 09:17:29] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.1.7.tar.gz]
+[2024-05-12 09:17:29] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.1.8.tar.gz]
+[2024-05-12 09:17:29] INFO root fetch - main [MainThread]: End processing [QtHarmony]: success
+[2024-05-12 09:17:29] INFO root fetch - processPackages [data-prep-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit-0.0.1.tar.gz]
+[2024-05-12 09:17:29] INFO root fetch - processPackages [data-prep-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit-0.0.1.dev1.tar.gz]
+[2024-05-12 09:17:29] INFO root fetch - main [MainThread]: End processing [data-prep-toolkit]: success
+[2024-05-12 09:17:29] INFO root fetch - processPackages [django-tbase-post-product]: Remove: archive file [/home/abi/fetcher/tmp/django_tbase_post_product-2024.5.1217154982.tar.gz]
+[2024-05-12 09:17:29] INFO root fetch - processPackages [django-tbase-post-product]: Remove: archive file [/home/abi/fetcher/tmp/django_tbase_post_product-2024.5.917151916.tar.gz]
+[2024-05-12 09:17:29] INFO root fetch - main [MainThread]: End processing [django-tbase-post-product]: success
+[2024-05-12 09:17:29] INFO root fetch - main [MainThread]: Store serial: [23167758]
