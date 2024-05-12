@@ -5753,3 +5753,36 @@
 [2024-05-12 08:46:39] INFO root fetch - processPackages [dashport]: Remove: archive file [/home/abi/fetcher/tmp/dashport-0.7.5.tar.gz]
 [2024-05-12 08:46:39] INFO root fetch - main [MainThread]: End processing [dashport]: success
 [2024-05-12 08:46:39] INFO root fetch - main [MainThread]: Store serial: [23167556]
+[2024-05-12 08:48:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167556]
+[2024-05-12 08:48:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 08:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: todoist-auto
+[2024-05-12 08:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-easy-schedule
+[2024-05-12 08:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lichtedz
+[2024-05-12 08:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nagatoai_core
+[2024-05-12 08:48:47] INFO root fetch - processPackages [todoist-auto]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-05-12 08:48:47] INFO root fetch - processPackages [django-easy-schedule]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-12 08:48:47] INFO root fetch - processPackages [nagatoai_core]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-12 08:48:47] WARNING root fetch - processPackages [lichtedz]: Skipping, unable to determine old version
+[2024-05-12 08:48:47] INFO root fetch - main [MainThread]: End processing [lichtedz] error
+[2024-05-12 08:48:47] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/b1/78/baea81138dfb8700e7a2b795b192569b97f1b353b15e6374ef7c32ec9bd9/todoist_auto-8.0.0.tar.gz
+[2024-05-12 08:48:47] INFO root fetch - processPackages [django-easy-schedule]: Downloading https://files.pythonhosted.org/packages/b0/8e/e31d574a6f281f3e0262a023f635fc7f010cacc7bfd048f33c3eeb22b9a0/django-easy-schedule-0.1.5.tar.gz
+[2024-05-12 08:48:48] INFO root fetch - processPackages [nagatoai_core]: Downloading https://files.pythonhosted.org/packages/64/f2/eca6ce9dfcf2846072e1dd078d3f779979be11631f9fbfed4a8de904ec68/nagatoai_core-0.8.0.tar.gz
+[2024-05-12 08:48:48] INFO root fetch - processPackages [django-easy-schedule]: Downloading https://files.pythonhosted.org/packages/0f/c5/66eec63431c75d7108a48452da46fabafadf65a230c6fe5fd093e68faa8e/django-easy-schedule-0.1.6.tar.gz
+[2024-05-12 08:48:48] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/ad/42/49bc0ab11074d45b08e24c5a91b302992d6e5855e521f2a779d82a91eed5/todoist_auto-9.0.0.tar.gz
+[2024-05-12 08:48:48] INFO root fetch - processPackages [django-easy-schedule]: executing diffoscope
+[2024-05-12 08:48:48] INFO root fetch - processPackages [django-easy-schedule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-easy-schedule-0.1.5.tar.gz tmp/django-easy-schedule-0.1.6.tar.gz --markdown 20240512/d/django-easy-schedule/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-12 08:48:48] INFO root fetch - processPackages [todoist-auto]: executing diffoscope
+[2024-05-12 08:48:48] INFO root fetch - processPackages [todoist-auto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/todoist_auto-8.0.0.tar.gz tmp/todoist_auto-9.0.0.tar.gz --markdown 20240512/t/todoist-auto/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-05-12 08:48:48] INFO root fetch - processPackages [nagatoai_core]: Downloading https://files.pythonhosted.org/packages/79/56/eaaca906dc31aa5afee4de05ed86891e107f7ff92fa83a812b3eb3ae4c5f/nagatoai_core-0.9.0.tar.gz
+[2024-05-12 08:48:48] INFO root fetch - processPackages [nagatoai_core]: executing diffoscope
+[2024-05-12 08:48:48] INFO root fetch - processPackages [nagatoai_core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nagatoai_core-0.8.0.tar.gz tmp/nagatoai_core-0.9.0.tar.gz --markdown 20240512/n/nagatoai_core/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-12 08:48:48] INFO root fetch - processPackages [django-easy-schedule]: Remove: archive file [/home/abi/fetcher/tmp/django-easy-schedule-0.1.5.tar.gz]
+[2024-05-12 08:48:48] INFO root fetch - processPackages [django-easy-schedule]: Remove: archive file [/home/abi/fetcher/tmp/django-easy-schedule-0.1.6.tar.gz]
+[2024-05-12 08:48:48] INFO root fetch - main [MainThread]: End processing [django-easy-schedule]: success
+[2024-05-12 08:48:49] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-8.0.0.tar.gz]
+[2024-05-12 08:48:49] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-9.0.0.tar.gz]
+[2024-05-12 08:48:49] INFO root fetch - main [MainThread]: End processing [todoist-auto]: success
+[2024-05-12 08:48:49] INFO root fetch - processPackages [nagatoai_core]: Remove: archive file [/home/abi/fetcher/tmp/nagatoai_core-0.8.0.tar.gz]
+[2024-05-12 08:48:49] INFO root fetch - processPackages [nagatoai_core]: Remove: archive file [/home/abi/fetcher/tmp/nagatoai_core-0.9.0.tar.gz]
+[2024-05-12 08:48:49] INFO root fetch - main [MainThread]: End processing [nagatoai_core]: success
+[2024-05-12 08:48:49] INFO root fetch - main [MainThread]: Store serial: [23167571]
