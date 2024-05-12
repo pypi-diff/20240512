@@ -16595,3 +16595,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:46:38] INFO root fetch - processPackages [beets-ytimport]: Remove: archive file [/home/abi/fetcher/tmp/beets_ytimport-1.7.2-py3-none-any.whl.zip]
 [2024-05-12 21:46:38] INFO root fetch - main [MainThread]: End processing [beets-ytimport]: success
 [2024-05-12 21:46:38] INFO root fetch - main [MainThread]: Store serial: [23173177]
+[2024-05-12 21:48:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173177]
+[2024-05-12 21:48:47] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 21:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: medietyz
+[2024-05-12 21:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: juntagrico
+[2024-05-12 21:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wild-code
+[2024-05-12 21:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: transit2
+[2024-05-12 21:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: locustdb
+[2024-05-12 21:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: adafruit-circuitpython-minimqtt
+[2024-05-12 21:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: exponentation
+[2024-05-12 21:48:47] INFO root fetch - processPackages [exponentation]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 21:48:47] INFO root fetch - processPackages [wild-code]: New version: [0.4.0] Old Version: [0.3.0.dev0]
+[2024-05-12 21:48:47] INFO root fetch - processPackages [locustdb]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-05-12 21:48:47] INFO root fetch - processPackages [transit2]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-12 21:48:47] WARNING root fetch - processPackages [medietyz]: Skipping, unable to determine old version
+[2024-05-12 21:48:47] INFO root fetch - main [MainThread]: End processing [medietyz] error
+[2024-05-12 21:48:47] INFO root fetch - processPackages [juntagrico]: New version: [1.6.0rc5] Old Version: [1.6.0rc4]
+[2024-05-12 21:48:47] INFO root fetch - processPackages [wild-code]: Downloading https://files.pythonhosted.org/packages/e2/8b/d5f39f234c14ef6402e92d925f7f63b2cbc32796bb7f2e4b551e735205f2/wild_code-0.3.0.dev0.tar.gz
+[2024-05-12 21:48:47] INFO root fetch - processPackages [exponentation]: Downloading https://files.pythonhosted.org/packages/8e/fa/0060b3db73f1040d96251cb000b38cbee42eed086a1064ac8f663358d2a7/exponentation-0.0.1.tar.gz
+[2024-05-12 21:48:47] INFO root fetch - processPackages [adafruit-circuitpython-minimqtt]: New version: [7.7.0] Old Version: [7.6.3]
+[2024-05-12 21:48:48] INFO root fetch - processPackages [transit2]: Downloading https://files.pythonhosted.org/packages/65/07/b71382057b4c6dd1402f3f379fdc72319fa12f81dcc87889a076fa58e1d3/transit2-1.1.0.tar.gz
+[2024-05-12 21:48:48] INFO root fetch - processPackages [juntagrico]: Downloading https://files.pythonhosted.org/packages/9f/62/ee414434d5852dd7cddd40703a47a86efc55ee3f139c36cabb377b69b3e7/juntagrico-1.6.0rc4.tar.gz
+[2024-05-12 21:48:48] INFO root fetch - processPackages [locustdb]: Downloading https://files.pythonhosted.org/packages/c1/66/cbf2bea18b2e91784c7f013a0c19e6dd27ed40b0c12971f7825d827f9e9e/locustdb-0.5.1-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-12 21:48:48] INFO root fetch - processPackages [exponentation]: Downloading https://files.pythonhosted.org/packages/e8/a4/0a6e9f16d23eba3a81aa2a55be35cee8a3b51db93ca8dfcc60412a5ffe90/exponentation-0.0.2.tar.gz
+[2024-05-12 21:48:48] INFO root fetch - processPackages [wild-code]: Downloading https://files.pythonhosted.org/packages/2e/dc/8524c1f85ab1294990e1357e4173679924a6510030591b9ee92961e0c350/wild_code-0.4.0.tar.gz
+[2024-05-12 21:48:48] INFO root fetch - processPackages [adafruit-circuitpython-minimqtt]: Downloading https://files.pythonhosted.org/packages/78/b4/d0bdfeb43235ef24fa23303862d581d3d95e9e4dddac8d504a513960307b/adafruit-circuitpython-minimqtt-7.6.3.tar.gz
+[2024-05-12 21:48:48] WARNING root fetch - processPackages [transit2]: Skipping package: exceeds size limit 98948077>=10485760
+[2024-05-12 21:48:48] INFO root fetch - main [MainThread]: End processing [transit2] error
+[2024-05-12 21:48:48] INFO root fetch - processPackages [exponentation]: executing diffoscope
+[2024-05-12 21:48:48] INFO root fetch - processPackages [exponentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exponentation-0.0.1.tar.gz tmp/exponentation-0.0.2.tar.gz --markdown 20240512/e/exponentation/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-12 21:48:48] INFO root fetch - processPackages [wild-code]: executing diffoscope
+[2024-05-12 21:48:48] INFO root fetch - processPackages [wild-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wild_code-0.3.0.dev0.tar.gz tmp/wild_code-0.4.0.tar.gz --markdown 20240512/w/wild-code/0.3.0.dev0-0.4.0/README.md --exclude *.pyd
+[2024-05-12 21:48:48] INFO root fetch - processPackages [adafruit-circuitpython-minimqtt]: Downloading https://files.pythonhosted.org/packages/3f/60/b7ede5f85dda706643398c680b0483b9336a6141a0522cf13c490135ee40/adafruit_circuitpython_minimqtt-7.7.0.tar.gz
+[2024-05-12 21:48:48] INFO root fetch - processPackages [adafruit-circuitpython-minimqtt]: executing diffoscope
+[2024-05-12 21:48:48] INFO root fetch - processPackages [adafruit-circuitpython-minimqtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit-circuitpython-minimqtt-7.6.3.tar.gz tmp/adafruit_circuitpython_minimqtt-7.7.0.tar.gz --markdown 20240512/a/adafruit-circuitpython-minimqtt/7.6.3-7.7.0/README.md --exclude *.pyd
+[2024-05-12 21:48:48] INFO root fetch - processPackages [exponentation]: Remove: archive file [/home/abi/fetcher/tmp/exponentation-0.0.1.tar.gz]
+[2024-05-12 21:48:48] INFO root fetch - processPackages [exponentation]: Remove: archive file [/home/abi/fetcher/tmp/exponentation-0.0.2.tar.gz]
+[2024-05-12 21:48:48] INFO root fetch - main [MainThread]: End processing [exponentation]: success
+[2024-05-12 21:48:49] INFO root fetch - processPackages [wild-code]: Remove: archive file [/home/abi/fetcher/tmp/wild_code-0.3.0.dev0.tar.gz]
+[2024-05-12 21:48:49] INFO root fetch - processPackages [wild-code]: Remove: archive file [/home/abi/fetcher/tmp/wild_code-0.4.0.tar.gz]
+[2024-05-12 21:48:49] INFO root fetch - main [MainThread]: End processing [wild-code]: success
+[2024-05-12 21:48:49] INFO root fetch - processPackages [locustdb]: Downloading https://files.pythonhosted.org/packages/4f/1f/d3da07c0bbfe96bf61b789a2182ce58983d1af3479adece17fc441039378/locustdb-0.5.2-cp39-cp39-macosx_11_0_arm64.whl
+[2024-05-12 21:48:49] INFO root fetch - processPackages [juntagrico]: Downloading https://files.pythonhosted.org/packages/a5/20/8f41c00f5e11480dbaba0e00b5478f32b7cad6f225d56de2fd12539d9c23/juntagrico-1.6.0rc5.tar.gz
+[2024-05-12 21:48:49] INFO root fetch - processPackages [adafruit-circuitpython-minimqtt]: Remove: archive file [/home/abi/fetcher/tmp/adafruit-circuitpython-minimqtt-7.6.3.tar.gz]
+[2024-05-12 21:48:49] INFO root fetch - processPackages [adafruit-circuitpython-minimqtt]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_minimqtt-7.7.0.tar.gz]
+[2024-05-12 21:48:49] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-minimqtt]: success
+[2024-05-12 21:48:49] INFO root fetch - processPackages [juntagrico]: executing diffoscope
+[2024-05-12 21:48:49] INFO root fetch - processPackages [juntagrico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/juntagrico-1.6.0rc4.tar.gz tmp/juntagrico-1.6.0rc5.tar.gz --markdown 20240512/j/juntagrico/1.6.0rc4-1.6.0rc5/README.md --exclude *.pyd
+[2024-05-12 21:48:49] INFO root fetch - processPackages [locustdb]: executing diffoscope
+[2024-05-12 21:48:49] INFO root fetch - processPackages [locustdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locustdb-0.5.1-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/locustdb-0.5.2-cp39-cp39-macosx_11_0_arm64.whl.zip --markdown 20240512/l/locustdb/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-05-12 21:48:50] INFO root fetch - processPackages [locustdb]: Remove: archive file [/home/abi/fetcher/tmp/locustdb-0.5.1-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-12 21:48:50] INFO root fetch - processPackages [locustdb]: Remove: archive file [/home/abi/fetcher/tmp/locustdb-0.5.2-cp39-cp39-macosx_11_0_arm64.whl.zip]
+[2024-05-12 21:48:50] INFO root fetch - main [MainThread]: End processing [locustdb]: success
+[2024-05-12 21:48:53] INFO root fetch - processPackages [juntagrico]: Remove: archive file [/home/abi/fetcher/tmp/juntagrico-1.6.0rc4.tar.gz]
+[2024-05-12 21:48:53] INFO root fetch - processPackages [juntagrico]: Remove: archive file [/home/abi/fetcher/tmp/juntagrico-1.6.0rc5.tar.gz]
+[2024-05-12 21:48:53] INFO root fetch - main [MainThread]: End processing [juntagrico]: success
+[2024-05-12 21:48:53] INFO root fetch - main [MainThread]: Store serial: [23173202]
