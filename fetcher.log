@@ -14852,3 +14852,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:47:01] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.35.tar.gz]
 [2024-05-12 19:47:01] INFO root fetch - main [MainThread]: End processing [SelfCalibratedConformal]: success
 [2024-05-12 19:47:01] INFO root fetch - main [MainThread]: Store serial: [23172393]
+[2024-05-12 19:49:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172393]
+[2024-05-12 19:49:10] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 19:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clear-skies-stripe
+[2024-05-12 19:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: postparalyticz
+[2024-05-12 19:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: listpicker
+[2024-05-12 19:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: whatapp
+[2024-05-12 19:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: medicafe
+[2024-05-12 19:49:10] INFO root fetch - processPackages [clear-skies-stripe]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-12 19:49:10] INFO root fetch - processPackages [medicafe]: New version: [0.240512.5] Old Version: [0.240512.4]
+[2024-05-12 19:49:10] INFO root fetch - processPackages [clear-skies-stripe]: Downloading https://files.pythonhosted.org/packages/07/66/5974fe8923794a93041db9dc5a3275e878f334e468525cc4b4981b4f15f0/clear_skies_stripe-0.9.4.tar.gz
+[2024-05-12 19:49:10] WARNING root fetch - processPackages [postparalyticz]: Skipping, unable to determine old version
+[2024-05-12 19:49:10] INFO root fetch - main [MainThread]: End processing [postparalyticz] error
+[2024-05-12 19:49:10] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/d1/6b/c213c05cea4da7389c46cbf013863c318799a570cca9646309723257ebbc/medicafe-0.240512.4.tar.gz
+[2024-05-12 19:49:10] INFO root fetch - processPackages [listpicker]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-12 19:49:10] WARNING root fetch - processPackages [whatapp]: Skipping, unable to determine old version
+[2024-05-12 19:49:10] INFO root fetch - main [MainThread]: End processing [whatapp] error
+[2024-05-12 19:49:10] INFO root fetch - processPackages [listpicker]: Downloading https://files.pythonhosted.org/packages/5e/40/a24dba76d7953c601334333be40b399a52ac2dff2eebcd6764eb69b20e75/listpicker-0.3.0.tar.gz
+[2024-05-12 19:49:10] INFO root fetch - processPackages [clear-skies-stripe]: Downloading https://files.pythonhosted.org/packages/8a/91/a803bf576db463ab0d817ce5e170c91d59a518f63d59da7d0357da8a40b7/clear_skies_stripe-0.9.5.tar.gz
+[2024-05-12 19:49:10] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/7f/20/23c77f564aa8dfe5e6d252600137f557d020ddbd8368d383274a790b0397/medicafe-0.240512.5.tar.gz
+[2024-05-12 19:49:10] INFO root fetch - processPackages [clear-skies-stripe]: executing diffoscope
+[2024-05-12 19:49:10] INFO root fetch - processPackages [clear-skies-stripe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clear_skies_stripe-0.9.4.tar.gz tmp/clear_skies_stripe-0.9.5.tar.gz --markdown 20240512/c/clear-skies-stripe/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-12 19:49:10] INFO root fetch - processPackages [medicafe]: executing diffoscope
+[2024-05-12 19:49:10] INFO root fetch - processPackages [medicafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medicafe-0.240512.4.tar.gz tmp/medicafe-0.240512.5.tar.gz --markdown 20240512/m/medicafe/0.240512.4-0.240512.5/README.md --exclude *.pyd
+[2024-05-12 19:49:10] INFO root fetch - processPackages [listpicker]: Downloading https://files.pythonhosted.org/packages/b1/ba/5bb3b28c6e688f475b0f23e0ef2c704e6ea96fa49b2d0df1cd64cfd9e8da/listpicker-0.3.1.tar.gz
+[2024-05-12 19:49:11] INFO root fetch - processPackages [listpicker]: executing diffoscope
+[2024-05-12 19:49:11] INFO root fetch - processPackages [listpicker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/listpicker-0.3.0.tar.gz tmp/listpicker-0.3.1.tar.gz --markdown 20240512/l/listpicker/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-12 19:49:11] INFO root fetch - processPackages [clear-skies-stripe]: Remove: archive file [/home/abi/fetcher/tmp/clear_skies_stripe-0.9.4.tar.gz]
+[2024-05-12 19:49:11] INFO root fetch - processPackages [clear-skies-stripe]: Remove: archive file [/home/abi/fetcher/tmp/clear_skies_stripe-0.9.5.tar.gz]
+[2024-05-12 19:49:11] INFO root fetch - main [MainThread]: End processing [clear-skies-stripe]: success
+[2024-05-12 19:49:11] INFO root fetch - processPackages [listpicker]: Remove: archive file [/home/abi/fetcher/tmp/listpicker-0.3.0.tar.gz]
+[2024-05-12 19:49:11] INFO root fetch - processPackages [listpicker]: Remove: archive file [/home/abi/fetcher/tmp/listpicker-0.3.1.tar.gz]
+[2024-05-12 19:49:11] INFO root fetch - main [MainThread]: End processing [listpicker]: success
+[2024-05-12 19:49:11] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240512.4.tar.gz]
+[2024-05-12 19:49:11] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240512.5.tar.gz]
+[2024-05-12 19:49:11] INFO root fetch - main [MainThread]: End processing [medicafe]: success
+[2024-05-12 19:49:11] INFO root fetch - main [MainThread]: Store serial: [23172411]
