@@ -8301,3 +8301,33 @@
 [2024-05-12 12:14:26] INFO root fetch - processPackages [mlpro]: Remove: archive file [/home/abi/fetcher/tmp/mlpro-1.4.4.tar.gz]
 [2024-05-12 12:14:26] INFO root fetch - main [MainThread]: End processing [mlpro]: success
 [2024-05-12 12:14:26] INFO root fetch - main [MainThread]: Store serial: [23168936]
+[2024-05-12 12:16:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168936]
+[2024-05-12 12:16:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 12:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qwak-sdk
+[2024-05-12 12:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cjtool
+[2024-05-12 12:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: v2share
+[2024-05-12 12:16:35] INFO root fetch - processPackages [cjtool]: New version: [0.29.6] Old Version: [0.29.5]
+[2024-05-12 12:16:35] INFO root fetch - processPackages [v2share]: New version: [0.1.0a6] Old Version: [0.1.0a5]
+[2024-05-12 12:16:35] INFO root fetch - processPackages [qwak-sdk]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-12 12:16:35] INFO root fetch - processPackages [cjtool]: Downloading https://files.pythonhosted.org/packages/36/cd/99cb2de77683addecc3cf99afd51dfb2c1261b6c8af714451af2ac5562ed/cjtool-0.29.5-py2.py3-none-any.whl
+[2024-05-12 12:16:35] INFO root fetch - processPackages [v2share]: Downloading https://files.pythonhosted.org/packages/9e/55/092659bf1f611c2ab1d44991508182e456c8f2b04e1fde6032969d97b011/v2share-0.1.0a5.tar.gz
+[2024-05-12 12:16:35] INFO root fetch - processPackages [qwak-sdk]: Downloading https://files.pythonhosted.org/packages/54/73/b232213196f61ccf5d744e25bd0300ead695e86f48708d735193d80f05ff/qwak_sdk-0.5.8.tar.gz
+[2024-05-12 12:16:35] INFO root fetch - processPackages [cjtool]: Downloading https://files.pythonhosted.org/packages/1e/65/b51962842fb163f66b79221eb920da8b2ca57fdf585d2d183918097ad442/cjtool-0.29.6-py2.py3-none-any.whl
+[2024-05-12 12:16:35] INFO root fetch - processPackages [v2share]: Downloading https://files.pythonhosted.org/packages/31/9c/5c91b2166fa674cd1b43e8a4ae9e3c2b78f1ffd50cb9ee92b964e026a464/v2share-0.1.0a6.tar.gz
+[2024-05-12 12:16:35] INFO root fetch - processPackages [cjtool]: executing diffoscope
+[2024-05-12 12:16:35] INFO root fetch - processPackages [cjtool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cjtool-0.29.5-py2.py3-none-any.whl.zip tmp/cjtool-0.29.6-py2.py3-none-any.whl.zip --markdown 20240512/c/cjtool/0.29.5-0.29.6/README.md --exclude *.pyd
+[2024-05-12 12:16:35] INFO root fetch - processPackages [v2share]: executing diffoscope
+[2024-05-12 12:16:35] INFO root fetch - processPackages [v2share]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/v2share-0.1.0a5.tar.gz tmp/v2share-0.1.0a6.tar.gz --markdown 20240512/v/v2share/0.1.0a5-0.1.0a6/README.md --exclude *.pyd
+[2024-05-12 12:16:35] INFO root fetch - processPackages [qwak-sdk]: Downloading https://files.pythonhosted.org/packages/d4/93/8fee5951ae6175bb756e71b252346e876a32a52652955f82fb606c69fb2c/qwak_sdk-0.5.9.tar.gz
+[2024-05-12 12:16:36] INFO root fetch - processPackages [qwak-sdk]: executing diffoscope
+[2024-05-12 12:16:36] INFO root fetch - processPackages [qwak-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_sdk-0.5.8.tar.gz tmp/qwak_sdk-0.5.9.tar.gz --markdown 20240512/q/qwak-sdk/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-12 12:16:36] INFO root fetch - processPackages [cjtool]: Remove: archive file [/home/abi/fetcher/tmp/cjtool-0.29.5-py2.py3-none-any.whl.zip]
+[2024-05-12 12:16:36] INFO root fetch - processPackages [cjtool]: Remove: archive file [/home/abi/fetcher/tmp/cjtool-0.29.6-py2.py3-none-any.whl.zip]
+[2024-05-12 12:16:36] INFO root fetch - main [MainThread]: End processing [cjtool]: success
+[2024-05-12 12:16:36] INFO root fetch - processPackages [v2share]: Remove: archive file [/home/abi/fetcher/tmp/v2share-0.1.0a5.tar.gz]
+[2024-05-12 12:16:36] INFO root fetch - processPackages [v2share]: Remove: archive file [/home/abi/fetcher/tmp/v2share-0.1.0a6.tar.gz]
+[2024-05-12 12:16:36] INFO root fetch - main [MainThread]: End processing [v2share]: success
+[2024-05-12 12:16:37] INFO root fetch - processPackages [qwak-sdk]: Remove: archive file [/home/abi/fetcher/tmp/qwak_sdk-0.5.8.tar.gz]
+[2024-05-12 12:16:37] INFO root fetch - processPackages [qwak-sdk]: Remove: archive file [/home/abi/fetcher/tmp/qwak_sdk-0.5.9.tar.gz]
+[2024-05-12 12:16:37] INFO root fetch - main [MainThread]: End processing [qwak-sdk]: success
+[2024-05-12 12:16:37] INFO root fetch - main [MainThread]: Store serial: [23168944]
