@@ -5429,3 +5429,39 @@
 [2024-05-12 08:20:39] INFO root fetch - processPackages [nonebot-adapter-kritor]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_kritor-0.2.0.tar.gz]
 [2024-05-12 08:20:39] INFO root fetch - main [MainThread]: End processing [nonebot-adapter-kritor]: success
 [2024-05-12 08:20:39] INFO root fetch - main [MainThread]: Store serial: [23167449]
+[2024-05-12 08:22:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167449]
+[2024-05-12 08:22:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 08:22:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-auth-session-timeout
+[2024-05-12 08:22:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mr-hawk
+[2024-05-12 08:22:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: juvenilifyz
+[2024-05-12 08:22:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: modal
+[2024-05-12 08:22:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: modal-client
+[2024-05-12 08:22:47] INFO root fetch - processPackages [odoo-addon-auth-session-timeout]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2024-05-12 08:22:47] WARNING root fetch - processPackages [juvenilifyz]: Skipping, unable to determine old version
+[2024-05-12 08:22:47] INFO root fetch - main [MainThread]: End processing [juvenilifyz] error
+[2024-05-12 08:22:47] WARNING root fetch - processPackages [mr-hawk]: Skipping, unable to determine old version
+[2024-05-12 08:22:47] INFO root fetch - main [MainThread]: End processing [mr-hawk] error
+[2024-05-12 08:22:47] INFO root fetch - processPackages [modal]: New version: [0.62.99] Old Version: [0.62.98]
+[2024-05-12 08:22:47] INFO root fetch - processPackages [modal-client]: New version: [0.62.99] Old Version: [0.62.98]
+[2024-05-12 08:22:48] INFO root fetch - processPackages [odoo-addon-auth-session-timeout]: Downloading https://files.pythonhosted.org/packages/c4/0f/fd9129c59b947997ca4d5ad096b939ba313c6063f01b1e0eacd4fa7cd076/odoo_addon_auth_session_timeout-16.0.1.0.0.8-py3-none-any.whl
+[2024-05-12 08:22:48] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/b5/38/bb0788928bcf76bff83916023bd1f84d88b1eb03c43f34ae832eff523ed0/modal-0.62.98-py3-none-any.whl
+[2024-05-12 08:22:48] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/e1/43/8909e36efe8c88188326519159ac1faa149227f01c6a0d968acc30efedde/modal_client-0.62.98-py3-none-any.whl
+[2024-05-12 08:22:48] INFO root fetch - processPackages [odoo-addon-auth-session-timeout]: Downloading https://files.pythonhosted.org/packages/e7/a8/46e85502a2ccb3b038d50b0554537f99ae55ed52b31613844162cadfbda7/odoo_addon_auth_session_timeout-16.0.1.0.0.9-py3-none-any.whl
+[2024-05-12 08:22:48] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/b4/3a/7e3a60540b0de2b4f28de13c20c04bab97a40c022bd147b48a204b987fc1/modal_client-0.62.99-py3-none-any.whl
+[2024-05-12 08:22:48] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/c7/ec/8086cd0c36b12ca7d4d2ac1f4bf86cbe082ba12dae2dd7c3cccb68a4746e/modal-0.62.99-py3-none-any.whl
+[2024-05-12 08:22:48] INFO root fetch - processPackages [odoo-addon-auth-session-timeout]: executing diffoscope
+[2024-05-12 08:22:48] INFO root fetch - processPackages [odoo-addon-auth-session-timeout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_auth_session_timeout-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_auth_session_timeout-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20240512/o/odoo-addon-auth-session-timeout/16.0.1.0.0.8-16.0.1.0.0.9/README.md --exclude *.pyd
+[2024-05-12 08:22:48] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2024-05-12 08:22:48] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.62.98-py3-none-any.whl.zip tmp/modal_client-0.62.99-py3-none-any.whl.zip --markdown 20240512/m/modal-client/0.62.98-0.62.99/README.md --exclude *.pyd
+[2024-05-12 08:22:48] INFO root fetch - processPackages [modal]: executing diffoscope
+[2024-05-12 08:22:48] INFO root fetch - processPackages [modal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal-0.62.98-py3-none-any.whl.zip tmp/modal-0.62.99-py3-none-any.whl.zip --markdown 20240512/m/modal/0.62.98-0.62.99/README.md --exclude *.pyd
+[2024-05-12 08:22:49] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.98-py3-none-any.whl.zip]
+[2024-05-12 08:22:49] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.99-py3-none-any.whl.zip]
+[2024-05-12 08:22:49] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2024-05-12 08:22:49] INFO root fetch - processPackages [odoo-addon-auth-session-timeout]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_auth_session_timeout-16.0.1.0.0.8-py3-none-any.whl.zip]
+[2024-05-12 08:22:49] INFO root fetch - processPackages [odoo-addon-auth-session-timeout]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_auth_session_timeout-16.0.1.0.0.9-py3-none-any.whl.zip]
+[2024-05-12 08:22:49] INFO root fetch - main [MainThread]: End processing [odoo-addon-auth-session-timeout]: success
+[2024-05-12 08:22:49] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.98-py3-none-any.whl.zip]
+[2024-05-12 08:22:49] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.99-py3-none-any.whl.zip]
+[2024-05-12 08:22:49] INFO root fetch - main [MainThread]: End processing [modal]: success
+[2024-05-12 08:22:49] INFO root fetch - main [MainThread]: Store serial: [23167464]
