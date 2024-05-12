@@ -12397,3 +12397,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:14:40] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.9052343530-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-12 17:14:40] INFO root fetch - main [MainThread]: End processing [pyhdl-if]: success
 [2024-05-12 17:14:40] INFO root fetch - main [MainThread]: Store serial: [23171108]
+[2024-05-12 17:16:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171108]
+[2024-05-12 17:16:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 17:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: busyhtyhxdlrfbsn
+[2024-05-12 17:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sigaocaue-normalize-folder-name
+[2024-05-12 17:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: debouchedz
+[2024-05-12 17:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: locustdb
+[2024-05-12 17:16:50] WARNING root fetch - processPackages [busyhtyhxdlrfbsn]: Skipping, unable to determine old version
+[2024-05-12 17:16:50] INFO root fetch - main [MainThread]: End processing [busyhtyhxdlrfbsn] error
+[2024-05-12 17:16:50] WARNING root fetch - processPackages [debouchedz]: Skipping, unable to determine old version
+[2024-05-12 17:16:50] INFO root fetch - main [MainThread]: End processing [debouchedz] error
+[2024-05-12 17:16:50] INFO root fetch - processPackages [sigaocaue-normalize-folder-name]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 17:16:50] INFO root fetch - processPackages [locustdb]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-12 17:16:50] INFO root fetch - processPackages [sigaocaue-normalize-folder-name]: Downloading https://files.pythonhosted.org/packages/d3/b0/ab293edb76ca06a0629f1807065707dfda21d16c0abd9c5d559250232e35/sigaocaue_normalize_folder_name-0.1.0.tar.gz
+[2024-05-12 17:16:51] INFO root fetch - processPackages [locustdb]: Downloading https://files.pythonhosted.org/packages/5d/a5/18f79bcd9d588f351b06c623f71a64e40a39d99c6979ca45ae782fdbc529/locustdb-0.5.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-12 17:16:51] INFO root fetch - processPackages [sigaocaue-normalize-folder-name]: Downloading https://files.pythonhosted.org/packages/12/70/bc6df0887dbd531e435a9f776a7aa07f0f43aa7f108821e9d9130b702d68/sigaocaue_normalize_folder_name-0.1.1.tar.gz
+[2024-05-12 17:16:51] INFO root fetch - processPackages [sigaocaue-normalize-folder-name]: executing diffoscope
+[2024-05-12 17:16:51] INFO root fetch - processPackages [sigaocaue-normalize-folder-name]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigaocaue_normalize_folder_name-0.1.0.tar.gz tmp/sigaocaue_normalize_folder_name-0.1.1.tar.gz --markdown 20240512/s/sigaocaue-normalize-folder-name/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 17:16:51] INFO root fetch - processPackages [locustdb]: Downloading https://files.pythonhosted.org/packages/53/4d/b1a6f7571ece2bcef468b60b7adad15c333d545eabfca144b4f509b2de4a/locustdb-0.5.1-cp39-cp39-macosx_11_0_arm64.whl
+[2024-05-12 17:16:51] INFO root fetch - processPackages [sigaocaue-normalize-folder-name]: Remove: archive file [/home/abi/fetcher/tmp/sigaocaue_normalize_folder_name-0.1.0.tar.gz]
+[2024-05-12 17:16:51] INFO root fetch - processPackages [sigaocaue-normalize-folder-name]: Remove: archive file [/home/abi/fetcher/tmp/sigaocaue_normalize_folder_name-0.1.1.tar.gz]
+[2024-05-12 17:16:51] INFO root fetch - main [MainThread]: End processing [sigaocaue-normalize-folder-name]: success
+[2024-05-12 17:16:52] INFO root fetch - processPackages [locustdb]: executing diffoscope
+[2024-05-12 17:16:52] INFO root fetch - processPackages [locustdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locustdb-0.5.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/locustdb-0.5.1-cp39-cp39-macosx_11_0_arm64.whl.zip --markdown 20240512/l/locustdb/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-12 17:16:53] INFO root fetch - processPackages [locustdb]: Remove: archive file [/home/abi/fetcher/tmp/locustdb-0.5.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-12 17:16:53] INFO root fetch - processPackages [locustdb]: Remove: archive file [/home/abi/fetcher/tmp/locustdb-0.5.1-cp39-cp39-macosx_11_0_arm64.whl.zip]
+[2024-05-12 17:16:53] INFO root fetch - main [MainThread]: End processing [locustdb]: success
+[2024-05-12 17:16:53] INFO root fetch - main [MainThread]: Store serial: [23171129]
