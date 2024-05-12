@@ -1576,3 +1576,39 @@
 [2024-05-12 02:18:32] INFO root fetch - processPackages [agentforge]: Remove: archive file [/home/abi/fetcher/tmp/agentforge-0.2.9.tar.gz]
 [2024-05-12 02:18:32] INFO root fetch - main [MainThread]: End processing [agentforge]: success
 [2024-05-12 02:18:32] INFO root fetch - main [MainThread]: Store serial: [23165569]
+[2024-05-12 02:20:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165569]
+[2024-05-12 02:20:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 02:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anabih-python-test
+[2024-05-12 02:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: accurate-timed-loop
+[2024-05-12 02:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ptyalolithz
+[2024-05-12 02:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-gitlab-runner
+[2024-05-12 02:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AFRIT-NAME
+[2024-05-12 02:20:40] INFO root fetch - processPackages [anabih-python-test]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-05-12 02:20:40] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/8f/0d/cb4164f3f11269487379fdf0c45ca126f81d3ab4355ce23e4cdf8dd2b4cd/anabih_python_test-8.0.0.tar.gz
+[2024-05-12 02:20:40] INFO root fetch - processPackages [accurate-timed-loop]: New version: [0.0.17] Old Version: [0.0.16]
+[2024-05-12 02:20:40] WARNING root fetch - processPackages [ptyalolithz]: Skipping, unable to determine old version
+[2024-05-12 02:20:40] INFO root fetch - main [MainThread]: End processing [ptyalolithz] error
+[2024-05-12 02:20:40] WARNING root fetch - processPackages [AFRIT-NAME]: Skipping, unable to determine old version
+[2024-05-12 02:20:40] INFO root fetch - main [MainThread]: End processing [AFRIT-NAME] error
+[2024-05-12 02:20:40] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-12 02:20:40] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/07/29/9f2cc8590770873b6073743e94ff15a2a7913eb0de3e6a4d2fc133008f62/cdk-gitlab-runner-2.2.98.tar.gz
+[2024-05-12 02:20:40] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/83/16/9305f1d0ffc310349acc9a6c48a942e3c816874b788e87e5252e12b1a42a/anabih_python_test-9.0.0.tar.gz
+[2024-05-12 02:20:40] INFO root fetch - processPackages [accurate-timed-loop]: Downloading https://files.pythonhosted.org/packages/2a/05/9390784cc8d989ddab42b453042694ad160b566ba899a1fef3a116ebbeaf/accurate-timed-loop-0.0.16.tar.gz
+[2024-05-12 02:20:40] INFO root fetch - processPackages [anabih-python-test]: executing diffoscope
+[2024-05-12 02:20:40] INFO root fetch - processPackages [anabih-python-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anabih_python_test-8.0.0.tar.gz tmp/anabih_python_test-9.0.0.tar.gz --markdown 20240512/a/anabih-python-test/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-05-12 02:20:40] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/16/61/e9f00b4e877a6352bd641de360f7577c27548fbcedc3aab19b1cf3852b9a/cdk-gitlab-runner-2.2.99.tar.gz
+[2024-05-12 02:20:41] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2024-05-12 02:20:41] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.2.98.tar.gz tmp/cdk-gitlab-runner-2.2.99.tar.gz --markdown 20240512/c/cdk-gitlab-runner/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-12 02:20:41] INFO root fetch - processPackages [accurate-timed-loop]: Downloading https://files.pythonhosted.org/packages/b0/0d/81e3fed964890a56826f640369e03d8563126c82194831f1eed9e7070b3f/accurate_timed_loop-0.0.17.tar.gz
+[2024-05-12 02:20:41] INFO root fetch - processPackages [accurate-timed-loop]: executing diffoscope
+[2024-05-12 02:20:41] INFO root fetch - processPackages [accurate-timed-loop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/accurate-timed-loop-0.0.16.tar.gz tmp/accurate_timed_loop-0.0.17.tar.gz --markdown 20240512/a/accurate-timed-loop/0.0.16-0.0.17/README.md --exclude *.pyd
+[2024-05-12 02:20:41] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-8.0.0.tar.gz]
+[2024-05-12 02:20:41] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-9.0.0.tar.gz]
+[2024-05-12 02:20:41] INFO root fetch - main [MainThread]: End processing [anabih-python-test]: success
+[2024-05-12 02:20:41] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.98.tar.gz]
+[2024-05-12 02:20:41] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
+[2024-05-12 02:20:41] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2024-05-12 02:20:41] INFO root fetch - processPackages [accurate-timed-loop]: Remove: archive file [/home/abi/fetcher/tmp/accurate-timed-loop-0.0.16.tar.gz]
+[2024-05-12 02:20:41] INFO root fetch - processPackages [accurate-timed-loop]: Remove: archive file [/home/abi/fetcher/tmp/accurate_timed_loop-0.0.17.tar.gz]
+[2024-05-12 02:20:41] INFO root fetch - main [MainThread]: End processing [accurate-timed-loop]: success
+[2024-05-12 02:20:41] INFO root fetch - main [MainThread]: Store serial: [23165589]
