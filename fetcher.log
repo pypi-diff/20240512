@@ -13402,3 +13402,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:11:21] INFO root fetch - processPackages [netbox-config-diff]: Remove: archive file [/home/abi/fetcher/tmp/netbox_config_diff-2.4.0.tar.gz]
 [2024-05-12 18:11:21] INFO root fetch - main [MainThread]: End processing [netbox-config-diff]: success
 [2024-05-12 18:11:21] INFO root fetch - main [MainThread]: Store serial: [23171639]
+[2024-05-12 18:13:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171639]
+[2024-05-12 18:13:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 18:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mtbase
+[2024-05-12 18:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: orso
+[2024-05-12 18:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiob2
+[2024-05-12 18:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mrsegmentator
+[2024-05-12 18:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: circup
+[2024-05-12 18:13:29] INFO root fetch - processPackages [mrsegmentator]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-12 18:13:29] INFO root fetch - processPackages [mrsegmentator]: Downloading https://files.pythonhosted.org/packages/ab/eb/65e6ad08fc577117fcfd3ee243e35bdd0b1f81409ce3cabf1e899f65040e/mrsegmentator-1.0.2.tar.gz
+[2024-05-12 18:13:29] INFO root fetch - processPackages [aiob2]: New version: [0.8.4] Old Version: [0.8.3]
+[2024-05-12 18:13:29] INFO root fetch - processPackages [mtbase]: New version: [4.9.202309220816] Old Version: [4.8.202309011515]
+[2024-05-12 18:13:29] INFO root fetch - processPackages [circup]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-12 18:13:30] INFO root fetch - processPackages [orso]: New version: [0.0.99] Old Version: [0.0.97]
+[2024-05-12 18:13:30] INFO root fetch - processPackages [mtbase]: Downloading https://files.pythonhosted.org/packages/8e/33/d2d7dc6b7e6b578fc9184354f38e3c32dd476eacdd9036d5548638fa6480/mtbase-4.8.202309011515-py3-none-any.whl
+[2024-05-12 18:13:30] INFO root fetch - processPackages [orso]: Downloading https://files.pythonhosted.org/packages/7f/44/c9b678951273a9e9d68f6792efdb0a6d7c20d4d59015b193b974dd2cc5f3/orso-0.0.97.tar.gz
+[2024-05-12 18:13:30] INFO root fetch - processPackages [aiob2]: Downloading https://files.pythonhosted.org/packages/dc/f5/8d54a4a5e167aae7c7ecd96cc151aa55ed7e67b832040767d8316219fcca/aiob2-0.8.3.tar.gz
+[2024-05-12 18:13:30] INFO root fetch - processPackages [circup]: Downloading https://files.pythonhosted.org/packages/7c/ce/8ff82df705b2a6ea5cbbdabb95b55e7411acdea4a9edf2db873b5cfc4950/circup-1.8.0.tar.gz
+[2024-05-12 18:13:30] INFO root fetch - processPackages [mrsegmentator]: Downloading https://files.pythonhosted.org/packages/f1/84/1f059f5250119bbd91a9a1ad3a2495ff52af6639b0fdf7328b7727517129/mrsegmentator-1.0.3.tar.gz
+[2024-05-12 18:13:30] INFO root fetch - processPackages [mrsegmentator]: executing diffoscope
+[2024-05-12 18:13:30] INFO root fetch - processPackages [mrsegmentator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrsegmentator-1.0.2.tar.gz tmp/mrsegmentator-1.0.3.tar.gz --markdown 20240512/m/mrsegmentator/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-12 18:13:30] INFO root fetch - processPackages [orso]: Downloading https://files.pythonhosted.org/packages/03/62/532b5a6178cc484d36c6b124c65d4de27ba7fd3af10850166b93c9a661cd/orso-0.0.99.tar.gz
+[2024-05-12 18:13:30] INFO root fetch - processPackages [aiob2]: Downloading https://files.pythonhosted.org/packages/bc/4c/a260927d294d513d733c8d95ea16fb93c5f9feea128639e2120518aa8f07/aiob2-0.8.4.tar.gz
+[2024-05-12 18:13:30] INFO root fetch - processPackages [circup]: Downloading https://files.pythonhosted.org/packages/14/98/4858c01065bf505a43ed5a190c73bc9f0107a19954a91ecb3ae97d4d5369/circup-1.9.0.tar.gz
+[2024-05-12 18:13:30] INFO root fetch - processPackages [mtbase]: Downloading https://files.pythonhosted.org/packages/82/a1/ef943c8a10072b9ff95ccde25411ccdaf534516582d288aa6c1b3531fa73/mtbase-4.9.202309220816-py3-none-any.whl
+[2024-05-12 18:13:30] INFO root fetch - processPackages [orso]: executing diffoscope
+[2024-05-12 18:13:30] INFO root fetch - processPackages [orso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orso-0.0.97.tar.gz tmp/orso-0.0.99.tar.gz --markdown 20240512/o/orso/0.0.97-0.0.99/README.md --exclude *.pyd
+[2024-05-12 18:13:30] INFO root fetch - processPackages [circup]: executing diffoscope
+[2024-05-12 18:13:30] INFO root fetch - processPackages [circup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circup-1.8.0.tar.gz tmp/circup-1.9.0.tar.gz --markdown 20240512/c/circup/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-12 18:13:30] INFO root fetch - processPackages [aiob2]: executing diffoscope
+[2024-05-12 18:13:30] INFO root fetch - processPackages [aiob2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiob2-0.8.3.tar.gz tmp/aiob2-0.8.4.tar.gz --markdown 20240512/a/aiob2/0.8.3-0.8.4/README.md --exclude *.pyd
+[2024-05-12 18:13:30] INFO root fetch - processPackages [mtbase]: executing diffoscope
+[2024-05-12 18:13:30] INFO root fetch - processPackages [mtbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtbase-4.8.202309011515-py3-none-any.whl.zip tmp/mtbase-4.9.202309220816-py3-none-any.whl.zip --markdown 20240512/m/mtbase/4.8.202309011515-4.9.202309220816/README.md --exclude *.pyd
+[2024-05-12 18:13:31] INFO root fetch - processPackages [mrsegmentator]: Remove: archive file [/home/abi/fetcher/tmp/mrsegmentator-1.0.2.tar.gz]
+[2024-05-12 18:13:31] INFO root fetch - processPackages [mrsegmentator]: Remove: archive file [/home/abi/fetcher/tmp/mrsegmentator-1.0.3.tar.gz]
+[2024-05-12 18:13:31] INFO root fetch - main [MainThread]: End processing [mrsegmentator]: success
+[2024-05-12 18:13:31] INFO root fetch - processPackages [aiob2]: Remove: archive file [/home/abi/fetcher/tmp/aiob2-0.8.3.tar.gz]
+[2024-05-12 18:13:31] INFO root fetch - processPackages [aiob2]: Remove: archive file [/home/abi/fetcher/tmp/aiob2-0.8.4.tar.gz]
+[2024-05-12 18:13:31] INFO root fetch - main [MainThread]: End processing [aiob2]: success
+[2024-05-12 18:13:31] INFO root fetch - processPackages [circup]: Remove: archive file [/home/abi/fetcher/tmp/circup-1.8.0.tar.gz]
+[2024-05-12 18:13:31] INFO root fetch - processPackages [circup]: Remove: archive file [/home/abi/fetcher/tmp/circup-1.9.0.tar.gz]
+[2024-05-12 18:13:31] INFO root fetch - main [MainThread]: End processing [circup]: success
+[2024-05-12 18:13:31] INFO root fetch - processPackages [orso]: Remove: archive file [/home/abi/fetcher/tmp/orso-0.0.97.tar.gz]
+[2024-05-12 18:13:31] INFO root fetch - processPackages [orso]: Remove: archive file [/home/abi/fetcher/tmp/orso-0.0.99.tar.gz]
+[2024-05-12 18:13:31] INFO root fetch - main [MainThread]: End processing [orso]: success
+[2024-05-12 18:13:31] INFO root fetch - processPackages [mtbase]: Remove: archive file [/home/abi/fetcher/tmp/mtbase-4.8.202309011515-py3-none-any.whl.zip]
+[2024-05-12 18:13:31] INFO root fetch - processPackages [mtbase]: Remove: archive file [/home/abi/fetcher/tmp/mtbase-4.9.202309220816-py3-none-any.whl.zip]
+[2024-05-12 18:13:31] INFO root fetch - main [MainThread]: End processing [mtbase]: success
+[2024-05-12 18:13:31] INFO root fetch - main [MainThread]: Store serial: [23171666]
