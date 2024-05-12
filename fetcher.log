@@ -3431,3 +3431,27 @@
 [2024-05-12 04:59:49] INFO root fetch - processPackages [aiapy]: Remove: archive file [/home/abi/fetcher/tmp/aiapy-0.8.0.tar.gz]
 [2024-05-12 04:59:49] INFO root fetch - main [MainThread]: End processing [aiapy]: success
 [2024-05-12 04:59:49] INFO root fetch - main [MainThread]: Store serial: [23166507]
+[2024-05-12 05:01:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166507]
+[2024-05-12 05:01:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 05:01:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiapy
+[2024-05-12 05:01:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cowboy-client
+[2024-05-12 05:01:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addons-oca-bank-payment
+[2024-05-12 05:01:57] INFO root fetch - processPackages [aiapy]: New version: [0.8.0] Old Version: [0.7.4]
+[2024-05-12 05:01:57] WARNING root fetch - processPackages [cowboy-client]: Skipping, unable to determine old version
+[2024-05-12 05:01:57] INFO root fetch - main [MainThread]: End processing [cowboy-client] error
+[2024-05-12 05:01:57] INFO root fetch - processPackages [aiapy]: Downloading https://files.pythonhosted.org/packages/0b/80/b66d94b65c3220e6ca3fb0533c56afc0641f04880f24738573253c9cfb2d/aiapy-0.7.4.tar.gz
+[2024-05-12 05:01:57] INFO root fetch - processPackages [odoo14-addons-oca-bank-payment]: New version: [14.0.20240510.0] Old Version: [14.0.20230208.0]
+[2024-05-12 05:01:57] INFO root fetch - processPackages [odoo14-addons-oca-bank-payment]: Downloading https://files.pythonhosted.org/packages/10/32/25a59478fc90abc92574113f1b591cd0c99b2e35a763cdff919a212af417/odoo14_addons_oca_bank_payment-14.0.20230208.0-py3-none-any.whl
+[2024-05-12 05:01:57] INFO root fetch - processPackages [aiapy]: Downloading https://files.pythonhosted.org/packages/e8/e4/03296d3b205c07f2fcb5a204314acbf8bb23c8985c2d6b7914439536b85f/aiapy-0.8.0.tar.gz
+[2024-05-12 05:01:57] INFO root fetch - processPackages [aiapy]: executing diffoscope
+[2024-05-12 05:01:57] INFO root fetch - processPackages [aiapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiapy-0.7.4.tar.gz tmp/aiapy-0.8.0.tar.gz --markdown 20240512/a/aiapy/0.7.4-0.8.0/README.md --exclude *.pyd
+[2024-05-12 05:01:57] INFO root fetch - processPackages [odoo14-addons-oca-bank-payment]: Downloading https://files.pythonhosted.org/packages/b2/2f/07b2c164eef3d5fba4ff95431252c8e17fbfb3c0d167e30b82b3f3466dd7/odoo14_addons_oca_bank_payment-14.0.20240510.0-py3-none-any.whl
+[2024-05-12 05:01:58] INFO root fetch - processPackages [odoo14-addons-oca-bank-payment]: executing diffoscope
+[2024-05-12 05:01:58] INFO root fetch - processPackages [odoo14-addons-oca-bank-payment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_bank_payment-14.0.20230208.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_bank_payment-14.0.20240510.0-py3-none-any.whl.zip --markdown 20240512/o/odoo14-addons-oca-bank-payment/14.0.20230208.0-14.0.20240510.0/README.md --exclude *.pyd
+[2024-05-12 05:01:58] INFO root fetch - processPackages [odoo14-addons-oca-bank-payment]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_bank_payment-14.0.20230208.0-py3-none-any.whl.zip]
+[2024-05-12 05:01:58] INFO root fetch - processPackages [odoo14-addons-oca-bank-payment]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_bank_payment-14.0.20240510.0-py3-none-any.whl.zip]
+[2024-05-12 05:01:58] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-bank-payment]: success
+[2024-05-12 05:01:58] INFO root fetch - processPackages [aiapy]: Remove: archive file [/home/abi/fetcher/tmp/aiapy-0.7.4.tar.gz]
+[2024-05-12 05:01:58] INFO root fetch - processPackages [aiapy]: Remove: archive file [/home/abi/fetcher/tmp/aiapy-0.8.0.tar.gz]
+[2024-05-12 05:01:58] INFO root fetch - main [MainThread]: End processing [aiapy]: success
+[2024-05-12 05:01:58] INFO root fetch - main [MainThread]: Store serial: [23166515]
