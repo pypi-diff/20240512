@@ -17051,3 +17051,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:08:41] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
 [2024-05-12 22:08:41] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2024-05-12 22:08:41] INFO root fetch - main [MainThread]: Store serial: [23173385]
+[2024-05-12 22:10:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173385]
+[2024-05-12 22:10:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 22:10:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphinxcontrib-confluencebuilder
+[2024-05-12 22:10:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: manylog
+[2024-05-12 22:10:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sequentialdw
+[2024-05-12 22:10:49] INFO root fetch - processPackages [sequentialdw]: New version: [2.7] Old Version: [2.6]
+[2024-05-12 22:10:50] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/84/58/fde0b856046c1729b6b128f1a8cbdd8d1695ee03ccf4d607b35d5b3c0793/sequentialdw-2.6.tar.gz
+[2024-05-12 22:10:50] INFO root fetch - processPackages [manylog]: New version: [0.1.0a4] Old Version: [0.1.0a3]
+[2024-05-12 22:10:50] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: New version: [2.5.2] Old Version: [2.5.1]
+[2024-05-12 22:10:50] INFO root fetch - processPackages [manylog]: Downloading https://files.pythonhosted.org/packages/f4/d5/3851756fc6f86be5c4c844241b6bda8f82981f87ef2e1aa6054d8a5f3656/manylog-0.1.0a3.tar.gz
+[2024-05-12 22:10:50] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: Downloading https://files.pythonhosted.org/packages/21/6b/aca56f1e73d12a1d6c4ab5d5a62e87aa2c96ee1712be9be179cd5923a39e/sphinxcontrib_confluencebuilder-2.5.1.tar.gz
+[2024-05-12 22:10:50] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/3c/82/d3fa7fbc351218a5b793876183ef202976883d081e805c7f02168eb82e48/sequentialdw-2.7.tar.gz
+[2024-05-12 22:10:50] INFO root fetch - processPackages [sequentialdw]: executing diffoscope
+[2024-05-12 22:10:50] INFO root fetch - processPackages [sequentialdw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sequentialdw-2.6.tar.gz tmp/sequentialdw-2.7.tar.gz --markdown 20240512/s/sequentialdw/2.6-2.7/README.md --exclude *.pyd
+[2024-05-12 22:10:50] INFO root fetch - processPackages [manylog]: Downloading https://files.pythonhosted.org/packages/c7/ac/ce0d51cc3b4716a717af1050954e13c7a48f7be604cb8a0e8141e2a93720/manylog-0.1.0a4.tar.gz
+[2024-05-12 22:10:50] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: Downloading https://files.pythonhosted.org/packages/b8/c7/ba796edae021f040b1a8cb343086881235b5b844a67e993253809a272748/sphinxcontrib_confluencebuilder-2.5.2.tar.gz
+[2024-05-12 22:10:50] INFO root fetch - processPackages [manylog]: executing diffoscope
+[2024-05-12 22:10:50] INFO root fetch - processPackages [manylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manylog-0.1.0a3.tar.gz tmp/manylog-0.1.0a4.tar.gz --markdown 20240512/m/manylog/0.1.0a3-0.1.0a4/README.md --exclude *.pyd
+[2024-05-12 22:10:50] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: executing diffoscope
+[2024-05-12 22:10:50] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_confluencebuilder-2.5.1.tar.gz tmp/sphinxcontrib_confluencebuilder-2.5.2.tar.gz --markdown 20240512/s/sphinxcontrib-confluencebuilder/2.5.1-2.5.2/README.md --exclude *.pyd
+[2024-05-12 22:10:51] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-2.6.tar.gz]
+[2024-05-12 22:10:51] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-2.7.tar.gz]
+[2024-05-12 22:10:51] INFO root fetch - main [MainThread]: End processing [sequentialdw]: success
+[2024-05-12 22:10:51] INFO root fetch - processPackages [manylog]: Remove: archive file [/home/abi/fetcher/tmp/manylog-0.1.0a3.tar.gz]
+[2024-05-12 22:10:51] INFO root fetch - processPackages [manylog]: Remove: archive file [/home/abi/fetcher/tmp/manylog-0.1.0a4.tar.gz]
+[2024-05-12 22:10:51] INFO root fetch - main [MainThread]: End processing [manylog]: success
+[2024-05-12 22:10:51] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_confluencebuilder-2.5.1.tar.gz]
+[2024-05-12 22:10:51] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_confluencebuilder-2.5.2.tar.gz]
+[2024-05-12 22:10:51] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-confluencebuilder]: success
+[2024-05-12 22:10:51] INFO root fetch - main [MainThread]: Store serial: [23173397]
