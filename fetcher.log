@@ -11727,3 +11727,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:32:54] INFO root fetch - processPackages [pyrtz2]: Remove: archive file [/home/abi/fetcher/tmp/pyrtz2-1.1.24.tar.gz]
 [2024-05-12 16:32:54] INFO root fetch - main [MainThread]: End processing [pyrtz2]: success
 [2024-05-12 16:32:54] INFO root fetch - main [MainThread]: Store serial: [23170711]
+[2024-05-12 16:34:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170711]
+[2024-05-12 16:35:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 16:35:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webflask
+[2024-05-12 16:35:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: path-reducer
+[2024-05-12 16:35:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: magnifiersz
+[2024-05-12 16:35:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: few-shot-learning-nlp
+[2024-05-12 16:35:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: regipy
+[2024-05-12 16:35:03] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-12 16:35:03] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/a6/79/b3668feedfda2562967026cb87b66da4a70de26a58b44be828a4afcdd3b4/few_shot_learning_nlp-1.0.1.tar.gz
+[2024-05-12 16:35:03] WARNING root fetch - processPackages [path-reducer]: Skipping, unable to determine old version
+[2024-05-12 16:35:03] INFO root fetch - main [MainThread]: End processing [path-reducer] error
+[2024-05-12 16:35:03] WARNING root fetch - processPackages [webflask]: Skipping, unable to determine old version
+[2024-05-12 16:35:03] INFO root fetch - main [MainThread]: End processing [webflask] error
+[2024-05-12 16:35:03] WARNING root fetch - processPackages [magnifiersz]: Skipping, unable to determine old version
+[2024-05-12 16:35:03] INFO root fetch - main [MainThread]: End processing [magnifiersz] error
+[2024-05-12 16:35:03] INFO root fetch - processPackages [regipy]: New version: [4.2.1] Old Version: [4.2.0]
+[2024-05-12 16:35:03] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/cf/db/ca088bc53bdf4f1eea0ce85e77ec2adf9a9f6153e2c37903a13956a272fb/few_shot_learning_nlp-1.0.2-py3-none-any.whl
+[2024-05-12 16:35:03] INFO root fetch - processPackages [regipy]: Downloading https://files.pythonhosted.org/packages/ab/69/59864fb77359018a16170be2ace82de8d40b547029bdc2dda4e8421f3971/regipy-4.2.0.tar.gz
+[2024-05-12 16:35:03] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-05-12 16:35:03] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-1.0.1.tar.gz tmp/few_shot_learning_nlp-1.0.2-py3-none-any.whl.zip --markdown 20240512/f/few-shot-learning-nlp/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-12 16:35:03] INFO root fetch - processPackages [regipy]: Downloading https://files.pythonhosted.org/packages/a3/61/041b38dc8058f0e99725bc6b72065afba1d2d55b3f4f58cf68f881b92e3d/regipy-4.2.1.tar.gz
+[2024-05-12 16:35:03] INFO root fetch - processPackages [regipy]: executing diffoscope
+[2024-05-12 16:35:03] INFO root fetch - processPackages [regipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regipy-4.2.0.tar.gz tmp/regipy-4.2.1.tar.gz --markdown 20240512/r/regipy/4.2.0-4.2.1/README.md --exclude *.pyd
+[2024-05-12 16:35:03] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-1.0.1.tar.gz]
+[2024-05-12 16:35:03] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-1.0.2-py3-none-any.whl.zip]
+[2024-05-12 16:35:03] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-05-12 16:35:04] INFO root fetch - processPackages [regipy]: Remove: archive file [/home/abi/fetcher/tmp/regipy-4.2.0.tar.gz]
+[2024-05-12 16:35:04] INFO root fetch - processPackages [regipy]: Remove: archive file [/home/abi/fetcher/tmp/regipy-4.2.1.tar.gz]
+[2024-05-12 16:35:04] INFO root fetch - main [MainThread]: End processing [regipy]: success
+[2024-05-12 16:35:04] INFO root fetch - main [MainThread]: Store serial: [23170731]
