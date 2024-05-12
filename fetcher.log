@@ -16442,3 +16442,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:35:47] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.8.6.tar.gz]
 [2024-05-12 21:35:47] INFO root fetch - main [MainThread]: End processing [ipyslides]: success
 [2024-05-12 21:35:47] INFO root fetch - main [MainThread]: Store serial: [23173114]
+[2024-05-12 21:37:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173114]
+[2024-05-12 21:37:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 21:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: p-template-generator
+[2024-05-12 21:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: narcohypniaz
+[2024-05-12 21:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sequentialdw
+[2024-05-12 21:37:56] INFO root fetch - processPackages [sequentialdw]: New version: [2.1] Old Version: [1.1]
+[2024-05-12 21:37:56] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-12 21:37:56] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/07/72/f66132c66274d311386419321c7975f7805e934d7467f790e38efb64dd63/sequentialdw-1.1.tar.gz
+[2024-05-12 21:37:56] WARNING root fetch - processPackages [narcohypniaz]: Skipping, unable to determine old version
+[2024-05-12 21:37:56] INFO root fetch - main [MainThread]: End processing [narcohypniaz] error
+[2024-05-12 21:37:56] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/5c/a2/02f0b3cf41b76949deb937b95c8970f032447d82aa090fc0b68084fc59df/p-template-generator-0.1.98.tar.gz
+[2024-05-12 21:37:56] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/3c/92/735a4794e7893d9414647fd7fa233433163bf5beabcb8d1c4ddab3240ee8/sequentialdw-2.1.tar.gz
+[2024-05-12 21:37:56] INFO root fetch - processPackages [sequentialdw]: executing diffoscope
+[2024-05-12 21:37:56] INFO root fetch - processPackages [sequentialdw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sequentialdw-1.1.tar.gz tmp/sequentialdw-2.1.tar.gz --markdown 20240512/s/sequentialdw/1.1-2.1/README.md --exclude *.pyd
+[2024-05-12 21:37:56] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/f6/11/746908384a91b5aacce7afb9782527293e24c5740c72a201daffb937e988/p-template-generator-0.1.99.tar.gz
+[2024-05-12 21:37:57] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-1.1.tar.gz]
+[2024-05-12 21:37:57] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-2.1.tar.gz]
+[2024-05-12 21:37:57] INFO root fetch - main [MainThread]: End processing [sequentialdw]: success
+[2024-05-12 21:37:57] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2024-05-12 21:37:57] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.98.tar.gz tmp/p-template-generator-0.1.99.tar.gz --markdown 20240512/p/p-template-generator/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-12 21:37:58] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.98.tar.gz]
+[2024-05-12 21:37:58] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.99.tar.gz]
+[2024-05-12 21:37:58] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
+[2024-05-12 21:37:58] INFO root fetch - main [MainThread]: Store serial: [23173123]
