@@ -2641,3 +2641,24 @@
 [2024-05-12 03:58:19] INFO root fetch - main [MainThread]: End processing [Sherlock-testABCYUEGUGHRIUHGU]: success
 [2024-05-12 03:58:19] INFO root fetch - main [MainThread]: End processing [Sherlock-testABCYUEGUGHRIUHGU]: success
 [2024-05-12 03:58:19] INFO root fetch - main [MainThread]: Store serial: [23166191]
+[2024-05-12 04:00:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166191]
+[2024-05-12 04:00:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 04:00:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: database-mysql-local
+[2024-05-12 04:00:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abses
+[2024-05-12 04:00:28] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.291] Old Version: [0.0.290]
+[2024-05-12 04:00:28] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/ca/64/61c48e3fd67ef89888b2d4a5d79f2614faf1535818a6b36058afeca12b02/database_mysql_local-0.0.290.tar.gz
+[2024-05-12 04:00:28] INFO root fetch - processPackages [abses]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-12 04:00:28] INFO root fetch - processPackages [abses]: Downloading https://files.pythonhosted.org/packages/b7/85/6f217e3bf3a3b325b2bcaf85332753d3f2e39e3646a6cacc80dfe4a2ff60/abses-0.6.0.tar.gz
+[2024-05-12 04:00:28] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/e4/3b/126b1fbf22136b1339dbaf155579d6330bd5322addf82167846d93d342af/database_mysql_local-0.0.291.tar.gz
+[2024-05-12 04:00:28] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-12 04:00:28] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.290.tar.gz tmp/database_mysql_local-0.0.291.tar.gz --markdown 20240512/d/database-mysql-local/0.0.290-0.0.291/README.md --exclude *.pyd
+[2024-05-12 04:00:28] INFO root fetch - processPackages [abses]: Downloading https://files.pythonhosted.org/packages/4b/2e/ea43560091340d00ac15babd0d3e0fec2d9a57dfe828243c3745d4c94ff0/abses-0.6.1.tar.gz
+[2024-05-12 04:00:29] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.290.tar.gz]
+[2024-05-12 04:00:29] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.291.tar.gz]
+[2024-05-12 04:00:29] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-12 04:00:29] INFO root fetch - processPackages [abses]: executing diffoscope
+[2024-05-12 04:00:29] INFO root fetch - processPackages [abses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abses-0.6.0.tar.gz tmp/abses-0.6.1.tar.gz --markdown 20240512/a/abses/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-12 04:00:30] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.6.0.tar.gz]
+[2024-05-12 04:00:30] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.6.1.tar.gz]
+[2024-05-12 04:00:30] INFO root fetch - main [MainThread]: End processing [abses]: success
+[2024-05-12 04:00:30] INFO root fetch - main [MainThread]: Store serial: [23166197]
