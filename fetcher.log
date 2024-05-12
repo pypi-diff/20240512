@@ -4796,3 +4796,14 @@
 [2024-05-12 07:17:54] INFO root fetch - main [MainThread]: End processing [infinitybots-kittycat]: success
 [2024-05-12 07:17:54] INFO root fetch - main [MainThread]: End processing [infinitybots-kittycat]: success
 [2024-05-12 07:17:54] INFO root fetch - main [MainThread]: Store serial: [23167206]
+[2024-05-12 07:19:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167206]
+[2024-05-12 07:20:03] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-12 07:22:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167207]
+[2024-05-12 07:22:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 07:22:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dockedz
+[2024-05-12 07:22:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: usherai-006
+[2024-05-12 07:22:08] WARNING root fetch - processPackages [dockedz]: Skipping, unable to determine old version
+[2024-05-12 07:22:08] INFO root fetch - main [MainThread]: End processing [dockedz] error
+[2024-05-12 07:22:08] WARNING root fetch - processPackages [usherai-006]: Skipping, unable to determine old version
+[2024-05-12 07:22:08] INFO root fetch - main [MainThread]: End processing [usherai-006] error
+[2024-05-12 07:22:08] INFO root fetch - main [MainThread]: Store serial: [23167231]
