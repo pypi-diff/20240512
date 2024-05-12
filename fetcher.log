@@ -8552,3 +8552,24 @@
 [2024-05-12 12:34:19] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.91.tar.gz]
 [2024-05-12 12:34:19] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2024-05-12 12:34:19] INFO root fetch - main [MainThread]: Store serial: [23169041]
+[2024-05-12 12:36:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169041]
+[2024-05-12 12:36:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 12:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: samples-filter
+[2024-05-12 12:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dycw-utilities
+[2024-05-12 12:36:28] INFO root fetch - processPackages [dycw-utilities]: New version: [0.9.0] Old Version: [0.8.8]
+[2024-05-12 12:36:28] INFO root fetch - processPackages [samples-filter]: New version: [0.5.1] Old Version: [0.4.1]
+[2024-05-12 12:36:28] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/a5/a4/993374a162ca6d880ff284c54df5acfb25a9f3347426746bb1aeeae915b9/dycw_utilities-0.8.8.tar.gz
+[2024-05-12 12:36:28] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/18/5f/14fd12b36288c6f50f412854105898b537e348c0c10e7cedb0b54a05a56e/dycw_utilities-0.9.0.tar.gz
+[2024-05-12 12:36:28] INFO root fetch - processPackages [samples-filter]: Downloading https://files.pythonhosted.org/packages/07/8e/0f9ca27e81bd854d499f7dc69c635d3b7e3cf4a3465e8248310b002b9df2/samples-filter-0.4.1.tar.gz
+[2024-05-12 12:36:28] INFO root fetch - processPackages [dycw-utilities]: executing diffoscope
+[2024-05-12 12:36:28] INFO root fetch - processPackages [dycw-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dycw_utilities-0.8.8.tar.gz tmp/dycw_utilities-0.9.0.tar.gz --markdown 20240512/d/dycw-utilities/0.8.8-0.9.0/README.md --exclude *.pyd
+[2024-05-12 12:36:28] INFO root fetch - processPackages [samples-filter]: Downloading https://files.pythonhosted.org/packages/3c/2e/a4c4e313d2c7534afed024a861a9209b797fcd02bb4021bfcfdaadd1e35e/samples-filter-0.5.1.tar.gz
+[2024-05-12 12:36:28] INFO root fetch - processPackages [samples-filter]: executing diffoscope
+[2024-05-12 12:36:28] INFO root fetch - processPackages [samples-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/samples-filter-0.4.1.tar.gz tmp/samples-filter-0.5.1.tar.gz --markdown 20240512/s/samples-filter/0.4.1-0.5.1/README.md --exclude *.pyd
+[2024-05-12 12:36:29] INFO root fetch - processPackages [samples-filter]: Remove: archive file [/home/abi/fetcher/tmp/samples-filter-0.4.1.tar.gz]
+[2024-05-12 12:36:29] INFO root fetch - processPackages [samples-filter]: Remove: archive file [/home/abi/fetcher/tmp/samples-filter-0.5.1.tar.gz]
+[2024-05-12 12:36:29] INFO root fetch - main [MainThread]: End processing [samples-filter]: success
+[2024-05-12 12:36:29] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.8.8.tar.gz]
+[2024-05-12 12:36:29] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.9.0.tar.gz]
+[2024-05-12 12:36:29] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
+[2024-05-12 12:36:29] INFO root fetch - main [MainThread]: Store serial: [23169048]
