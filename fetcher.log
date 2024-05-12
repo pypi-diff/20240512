@@ -7097,3 +7097,15 @@
 [2024-05-12 10:40:57] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.2.dev5-cp38-cp38-win_amd64.whl.zip]
 [2024-05-12 10:40:57] INFO root fetch - main [MainThread]: End processing [kuzu]: success
 [2024-05-12 10:40:57] INFO root fetch - main [MainThread]: Store serial: [23168241]
+[2024-05-12 10:43:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168241]
+[2024-05-12 10:43:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 10:43:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: comwatt
+[2024-05-12 10:43:06] INFO root fetch - processPackages [comwatt]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-05-12 10:43:06] INFO root fetch - processPackages [comwatt]: Downloading https://files.pythonhosted.org/packages/df/a5/2441b1206615ea559015f6a63abda8ffe4f8355d5199046a0b512565365e/comwatt-0.7.0.tar.gz
+[2024-05-12 10:43:07] INFO root fetch - processPackages [comwatt]: Downloading https://files.pythonhosted.org/packages/1f/23/d186e4a4611ba2ae93a56c513554cc52e1f08cfaafb553ff9f0727cae776/comwatt-0.8.0.tar.gz
+[2024-05-12 10:43:07] INFO root fetch - processPackages [comwatt]: executing diffoscope
+[2024-05-12 10:43:07] INFO root fetch - processPackages [comwatt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comwatt-0.7.0.tar.gz tmp/comwatt-0.8.0.tar.gz --markdown 20240512/c/comwatt/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-05-12 10:43:07] INFO root fetch - processPackages [comwatt]: Remove: archive file [/home/abi/fetcher/tmp/comwatt-0.7.0.tar.gz]
+[2024-05-12 10:43:07] INFO root fetch - processPackages [comwatt]: Remove: archive file [/home/abi/fetcher/tmp/comwatt-0.8.0.tar.gz]
+[2024-05-12 10:43:07] INFO root fetch - main [MainThread]: End processing [comwatt]: success
+[2024-05-12 10:43:07] INFO root fetch - main [MainThread]: Store serial: [23168272]
