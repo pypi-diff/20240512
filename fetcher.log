@@ -8869,3 +8869,33 @@
 [2024-05-12 13:04:59] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.7.dev9.tar.gz]
 [2024-05-12 13:04:59] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-05-12 13:04:59] INFO root fetch - main [MainThread]: Store serial: [23169258]
+[2024-05-12 13:07:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169258]
+[2024-05-12 13:07:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 13:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyphetools
+[2024-05-12 13:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezside
+[2024-05-12 13:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: whatshow-phy-mod-otfs
+[2024-05-12 13:07:09] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: New version: [2.1.6] Old Version: [2.1.5]
+[2024-05-12 13:07:09] INFO root fetch - processPackages [ezside]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 13:07:09] INFO root fetch - processPackages [pyphetools]: New version: [0.9.9] Old Version: [0.9.85]
+[2024-05-12 13:07:09] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Downloading https://files.pythonhosted.org/packages/77/e0/cb5759a5ad3067c7713b17eec6c9b05e4de6933e53506e1122fd0fa64852/whatshow_phy_mod_otfs-2.1.5.tar.gz
+[2024-05-12 13:07:09] INFO root fetch - processPackages [ezside]: Downloading https://files.pythonhosted.org/packages/5a/d4/1810386c07f848c78c2e8b15144f22482295b4040d1283a67e6675563952/ezside-0.1.8.tar.gz
+[2024-05-12 13:07:09] INFO root fetch - processPackages [pyphetools]: Downloading https://files.pythonhosted.org/packages/b9/b0/b7f42df57335ad464d08d5b03fe6e29074a0f730fd79c0fa50aa1a54075b/pyphetools-0.9.85.tar.gz
+[2024-05-12 13:07:09] INFO root fetch - processPackages [ezside]: Downloading https://files.pythonhosted.org/packages/f1/e0/2cae952d702515bb0e82f0bacbe379367f4a416b2a3928f33850e21ae823/ezside-0.1.9.tar.gz
+[2024-05-12 13:07:09] INFO root fetch - processPackages [pyphetools]: Downloading https://files.pythonhosted.org/packages/21/0f/082981f834d44e19354002ae37884bb9cf87bb330242ae69908f6f893dcf/pyphetools-0.9.9.tar.gz
+[2024-05-12 13:07:09] INFO root fetch - processPackages [ezside]: executing diffoscope
+[2024-05-12 13:07:09] INFO root fetch - processPackages [ezside]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezside-0.1.8.tar.gz tmp/ezside-0.1.9.tar.gz --markdown 20240512/e/ezside/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 13:07:09] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Downloading https://files.pythonhosted.org/packages/93/23/de3b298668ab906997b09c1dc5350498c7865fe1b48414f4a0eac759b0e5/whatshow_phy_mod_otfs-2.1.6.tar.gz
+[2024-05-12 13:07:09] INFO root fetch - processPackages [pyphetools]: executing diffoscope
+[2024-05-12 13:07:09] INFO root fetch - processPackages [pyphetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyphetools-0.9.85.tar.gz tmp/pyphetools-0.9.9.tar.gz --markdown 20240512/p/pyphetools/0.9.85-0.9.9/README.md --exclude *.pyd
+[2024-05-12 13:07:09] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: executing diffoscope
+[2024-05-12 13:07:09] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatshow_phy_mod_otfs-2.1.5.tar.gz tmp/whatshow_phy_mod_otfs-2.1.6.tar.gz --markdown 20240512/w/whatshow-phy-mod-otfs/2.1.5-2.1.6/README.md --exclude *.pyd
+[2024-05-12 13:07:10] INFO root fetch - processPackages [ezside]: Remove: archive file [/home/abi/fetcher/tmp/ezside-0.1.8.tar.gz]
+[2024-05-12 13:07:10] INFO root fetch - processPackages [ezside]: Remove: archive file [/home/abi/fetcher/tmp/ezside-0.1.9.tar.gz]
+[2024-05-12 13:07:10] INFO root fetch - main [MainThread]: End processing [ezside]: success
+[2024-05-12 13:07:10] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_phy_mod_otfs-2.1.5.tar.gz]
+[2024-05-12 13:07:10] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_phy_mod_otfs-2.1.6.tar.gz]
+[2024-05-12 13:07:10] INFO root fetch - main [MainThread]: End processing [whatshow-phy-mod-otfs]: success
+[2024-05-12 13:07:10] INFO root fetch - processPackages [pyphetools]: Remove: archive file [/home/abi/fetcher/tmp/pyphetools-0.9.85.tar.gz]
+[2024-05-12 13:07:10] INFO root fetch - processPackages [pyphetools]: Remove: archive file [/home/abi/fetcher/tmp/pyphetools-0.9.9.tar.gz]
+[2024-05-12 13:07:10] INFO root fetch - main [MainThread]: End processing [pyphetools]: success
+[2024-05-12 13:07:10] INFO root fetch - main [MainThread]: Store serial: [23169267]
