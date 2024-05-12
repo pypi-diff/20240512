@@ -7549,3 +7549,33 @@
 [2024-05-12 11:22:13] INFO root fetch - processPackages [enconnect]: Remove: archive file [/home/abi/fetcher/tmp/enconnect-0.5.0.tar.gz]
 [2024-05-12 11:22:13] INFO root fetch - main [MainThread]: End processing [enconnect]: success
 [2024-05-12 11:22:13] INFO root fetch - main [MainThread]: Store serial: [23168450]
+[2024-05-12 11:24:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168450]
+[2024-05-12 11:24:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 11:24:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: strawberry-graphql
+[2024-05-12 11:24:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mdpython
+[2024-05-12 11:24:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: loadspinner
+[2024-05-12 11:24:22] INFO root fetch - processPackages [strawberry-graphql]: New version: [0.99.3] Old Version: [0.99.2]
+[2024-05-12 11:24:22] INFO root fetch - processPackages [mdpython]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 11:24:22] INFO root fetch - processPackages [loadspinner]: New version: [0.4] Old Version: [0.3]
+[2024-05-12 11:24:22] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/dd/38/4efb20ccf1f04c0901e6d5de6eb222b8a9e74692ae34f6f4618b0f0cc8b3/strawberry-graphql-0.99.2.tar.gz
+[2024-05-12 11:24:22] INFO root fetch - processPackages [mdpython]: Downloading https://files.pythonhosted.org/packages/18/24/6748a8ef4b2da855b1a0273985077d2979d39b902f4b8a49a275a38a446d/mdpython-0.0.8.tar.gz
+[2024-05-12 11:24:22] INFO root fetch - processPackages [loadspinner]: Downloading https://files.pythonhosted.org/packages/84/d0/8d3fa04c0eb4ee2117bd88a357a7c791f94fa17db390f46e03bbfd9c8be6/loadspinner-0.3.tar.gz
+[2024-05-12 11:24:22] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/e8/62/3a58fe3751e9dc961f72fbe825e32f12e9cd544dafd44bc5fdddb290b881/strawberry-graphql-0.99.3.tar.gz
+[2024-05-12 11:24:22] INFO root fetch - processPackages [strawberry-graphql]: executing diffoscope
+[2024-05-12 11:24:22] INFO root fetch - processPackages [strawberry-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry-graphql-0.99.2.tar.gz tmp/strawberry-graphql-0.99.3.tar.gz --markdown 20240512/s/strawberry-graphql/0.99.2-0.99.3/README.md --exclude *.pyd
+[2024-05-12 11:24:22] INFO root fetch - processPackages [loadspinner]: Downloading https://files.pythonhosted.org/packages/cc/46/4e927029dca75ea115eb990c86008c4b71dc2e38f73fcd8d7d8e9195accb/loadspinner-0.4.tar.gz
+[2024-05-12 11:24:22] INFO root fetch - processPackages [mdpython]: Downloading https://files.pythonhosted.org/packages/c3/ff/42fe2647f11fc103cf56ea82f523be2b35531896ce9eba0f27674009bad6/mdpython-0.0.9.tar.gz
+[2024-05-12 11:24:22] INFO root fetch - processPackages [loadspinner]: executing diffoscope
+[2024-05-12 11:24:22] INFO root fetch - processPackages [loadspinner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loadspinner-0.3.tar.gz tmp/loadspinner-0.4.tar.gz --markdown 20240512/l/loadspinner/0.3-0.4/README.md --exclude *.pyd
+[2024-05-12 11:24:22] INFO root fetch - processPackages [mdpython]: executing diffoscope
+[2024-05-12 11:24:22] INFO root fetch - processPackages [mdpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdpython-0.0.8.tar.gz tmp/mdpython-0.0.9.tar.gz --markdown 20240512/m/mdpython/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 11:24:23] INFO root fetch - processPackages [mdpython]: Remove: archive file [/home/abi/fetcher/tmp/mdpython-0.0.8.tar.gz]
+[2024-05-12 11:24:23] INFO root fetch - processPackages [mdpython]: Remove: archive file [/home/abi/fetcher/tmp/mdpython-0.0.9.tar.gz]
+[2024-05-12 11:24:23] INFO root fetch - main [MainThread]: End processing [mdpython]: success
+[2024-05-12 11:24:23] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.2.tar.gz]
+[2024-05-12 11:24:23] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
+[2024-05-12 11:24:23] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
+[2024-05-12 11:24:23] INFO root fetch - processPackages [loadspinner]: Remove: archive file [/home/abi/fetcher/tmp/loadspinner-0.3.tar.gz]
+[2024-05-12 11:24:23] INFO root fetch - processPackages [loadspinner]: Remove: archive file [/home/abi/fetcher/tmp/loadspinner-0.4.tar.gz]
+[2024-05-12 11:24:23] INFO root fetch - main [MainThread]: End processing [loadspinner]: success
+[2024-05-12 11:24:23] INFO root fetch - main [MainThread]: Store serial: [23168459]
