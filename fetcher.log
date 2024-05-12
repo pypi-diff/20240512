@@ -10587,3 +10587,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:05:00] INFO root fetch - processPackages [ytpb]: Remove: archive file [/home/abi/fetcher/tmp/ytpb-2024.5.3.tar.gz]
 [2024-05-12 15:05:00] INFO root fetch - main [MainThread]: End processing [ytpb]: success
 [2024-05-12 15:05:00] INFO root fetch - main [MainThread]: Store serial: [23170022]
+[2024-05-12 15:07:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170022]
+[2024-05-12 15:07:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 15:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: remla2024-team9-lib-ml
+[2024-05-12 15:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bactericidesz
+[2024-05-12 15:07:09] WARNING root fetch - processPackages [remla2024-team9-lib-ml]: Skipping, unable to determine old version
+[2024-05-12 15:07:09] INFO root fetch - main [MainThread]: End processing [remla2024-team9-lib-ml] error
+[2024-05-12 15:07:10] WARNING root fetch - processPackages [bactericidesz]: Skipping, unable to determine old version
+[2024-05-12 15:07:10] INFO root fetch - main [MainThread]: End processing [bactericidesz] error
+[2024-05-12 15:07:10] INFO root fetch - main [MainThread]: Store serial: [23170032]
