@@ -10815,3 +10815,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:27:41] WARNING root fetch - processPackages [helvellalesz]: Skipping, unable to determine old version
 [2024-05-12 15:27:41] INFO root fetch - main [MainThread]: End processing [helvellalesz] error
 [2024-05-12 15:27:41] INFO root fetch - main [MainThread]: Store serial: [23170130]
+[2024-05-12 15:29:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170130]
+[2024-05-12 15:29:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 15:29:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: revTongYi
+[2024-05-12 15:29:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kappamodules
+[2024-05-12 15:29:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: missing-mga
+[2024-05-12 15:29:50] WARNING root fetch - processPackages [missing-mga]: Skipping, unable to determine old version
+[2024-05-12 15:29:50] INFO root fetch - main [MainThread]: End processing [missing-mga] error
+[2024-05-12 15:29:50] INFO root fetch - processPackages [kappamodules]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-12 15:29:50] INFO root fetch - processPackages [revTongYi]: New version: [0.1.2.1] Old Version: [0.1.2.0]
+[2024-05-12 15:29:50] INFO root fetch - processPackages [kappamodules]: Downloading https://files.pythonhosted.org/packages/3b/e2/1ae9387d8409532bc4bf07acb0b2668b501b1cde2d63e40733fb972b1f4c/kappamodules-0.1.7.tar.gz
+[2024-05-12 15:29:50] INFO root fetch - processPackages [revTongYi]: Downloading https://files.pythonhosted.org/packages/48/61/4db18fcf515fdc3bcb3ffaadef54f84810e04638835bd815ce702aea8345/revtongyi-0.1.2.0.tar.gz
+[2024-05-12 15:29:50] INFO root fetch - processPackages [kappamodules]: Downloading https://files.pythonhosted.org/packages/81/fc/bada4aae7de7149188e11f5ee6f6bb78d0725367f860197922b557fbd65b/kappamodules-0.1.8.tar.gz
+[2024-05-12 15:29:50] INFO root fetch - processPackages [kappamodules]: executing diffoscope
+[2024-05-12 15:29:50] INFO root fetch - processPackages [kappamodules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kappamodules-0.1.7.tar.gz tmp/kappamodules-0.1.8.tar.gz --markdown 20240512/k/kappamodules/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-12 15:29:50] INFO root fetch - processPackages [revTongYi]: Downloading https://files.pythonhosted.org/packages/b4/d8/184e9786b76fd0ca450f5322b9353ecdfbd92488631faea1199946845c9c/revtongyi-0.1.2.1.tar.gz
+[2024-05-12 15:29:50] INFO root fetch - processPackages [revTongYi]: executing diffoscope
+[2024-05-12 15:29:50] INFO root fetch - processPackages [revTongYi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revtongyi-0.1.2.0.tar.gz tmp/revtongyi-0.1.2.1.tar.gz --markdown 20240512/r/revTongYi/0.1.2.0-0.1.2.1/README.md --exclude *.pyd
+[2024-05-12 15:29:51] INFO root fetch - processPackages [kappamodules]: Remove: archive file [/home/abi/fetcher/tmp/kappamodules-0.1.7.tar.gz]
+[2024-05-12 15:29:51] INFO root fetch - processPackages [kappamodules]: Remove: archive file [/home/abi/fetcher/tmp/kappamodules-0.1.8.tar.gz]
+[2024-05-12 15:29:51] INFO root fetch - main [MainThread]: End processing [kappamodules]: success
+[2024-05-12 15:29:51] INFO root fetch - processPackages [revTongYi]: Remove: archive file [/home/abi/fetcher/tmp/revtongyi-0.1.2.0.tar.gz]
+[2024-05-12 15:29:51] INFO root fetch - processPackages [revTongYi]: Remove: archive file [/home/abi/fetcher/tmp/revtongyi-0.1.2.1.tar.gz]
+[2024-05-12 15:29:51] INFO root fetch - main [MainThread]: End processing [revTongYi]: success
+[2024-05-12 15:29:51] INFO root fetch - main [MainThread]: Store serial: [23170148]
