@@ -9202,3 +9202,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:24:32] INFO root fetch - processPackages [mabel]: Remove: archive file [/home/abi/fetcher/tmp/mabel-0.6.9.tar.gz]
 [2024-05-12 13:24:32] INFO root fetch - main [MainThread]: End processing [mabel]: success
 [2024-05-12 13:24:32] INFO root fetch - main [MainThread]: Store serial: [23169362]
+[2024-05-12 13:26:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169362]
+[2024-05-12 13:26:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 13:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wedeliver-core-plus
+[2024-05-12 13:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchrl-nightly
+[2024-05-12 13:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: portfolio-tracker
+[2024-05-12 13:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchx-nightly
+[2024-05-12 13:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kurumii
+[2024-05-12 13:26:42] INFO root fetch - processPackages [portfolio-tracker]: New version: [0.1.2.1] Old Version: [0.1.2]
+[2024-05-12 13:26:42] INFO root fetch - processPackages [torchx-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-12 13:26:42] INFO root fetch - processPackages [portfolio-tracker]: Downloading https://files.pythonhosted.org/packages/99/1c/ee7d4e1db136eb90a70f1398ade3bc01fcf8c5e6488f9ff6533e3725f50f/portfolio_tracker-0.1.2.tar.gz
+[2024-05-12 13:26:42] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/4f/2c/1b1fd11c1eb29345cef72d90c551ee6ca39cb1ca91dcb13a62e39d09d3e9/torchx_nightly-2024.5.8-py3-none-any.whl
+[2024-05-12 13:26:42] INFO root fetch - processPackages [wedeliver-core-plus]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 13:26:42] INFO root fetch - processPackages [kurumii]: New version: [1.4.8.3] Old Version: [1.4.8.2]
+[2024-05-12 13:26:42] INFO root fetch - processPackages [torchrl-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-12 13:26:42] INFO root fetch - processPackages [wedeliver-core-plus]: Downloading https://files.pythonhosted.org/packages/0a/ba/4882245612cfe682dc6822cb19e03c51e1a9033e752dc11eefac80d88b8f/wedeliver_core_plus-0.1.8.tar.gz
+[2024-05-12 13:26:42] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/a5/6d/9461214af24f1d24305421c7f45896fa740108e193fceb8f3145648e07e2/torchrl_nightly-2024.5.8-cp39-cp39-win_amd64.whl
+[2024-05-12 13:26:42] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/77/19/3475ceeec15466054f155b399d006faaf128258c35d771397c04ac9cf1e4/torchx_nightly-2024.5.9-py3-none-any.whl
+[2024-05-12 13:26:42] INFO root fetch - processPackages [kurumii]: Downloading https://files.pythonhosted.org/packages/9d/a9/4f7c25aa806e7a0b0e1ab2bf985ac646a454a11627ef3be23e109cfa0431/kurumii-1.4.8.2.tar.gz
+[2024-05-12 13:26:42] INFO root fetch - processPackages [portfolio-tracker]: Downloading https://files.pythonhosted.org/packages/e3/8a/f01b535862586c07cb25fce1d86251119bdd115f3c02220d7fb54e4d34ae/portfolio_tracker-0.1.2.1.tar.gz
+[2024-05-12 13:26:42] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2024-05-12 13:26:42] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2024.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2024.5.9-py3-none-any.whl.zip --markdown 20240512/t/torchx-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-12 13:26:42] INFO root fetch - processPackages [portfolio-tracker]: executing diffoscope
+[2024-05-12 13:26:42] INFO root fetch - processPackages [portfolio-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portfolio_tracker-0.1.2.tar.gz tmp/portfolio_tracker-0.1.2.1.tar.gz --markdown 20240512/p/portfolio-tracker/0.1.2-0.1.2.1/README.md --exclude *.pyd
+[2024-05-12 13:26:42] INFO root fetch - processPackages [wedeliver-core-plus]: Downloading https://files.pythonhosted.org/packages/55/d8/a99eecb14648332c6895324483d3d00999805fec7405ab9c131d0b8d6c2b/wedeliver_core_plus-0.1.9.tar.gz
+[2024-05-12 13:26:42] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/e9/e4/1d21a71adb0d6367cd81a5f47617cabf90f99ac96a421dda991f6aeefff2/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl
+[2024-05-12 13:26:42] INFO root fetch - processPackages [wedeliver-core-plus]: executing diffoscope
+[2024-05-12 13:26:42] INFO root fetch - processPackages [wedeliver-core-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wedeliver_core_plus-0.1.8.tar.gz tmp/wedeliver_core_plus-0.1.9.tar.gz --markdown 20240512/w/wedeliver-core-plus/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 13:26:42] INFO root fetch - processPackages [kurumii]: Downloading https://files.pythonhosted.org/packages/40/b0/b19176bc615bdedbc193290f4ec8a992085af7cbd47d99bdafda7c8a54bd/kurumii-1.4.8.3.tar.gz
+[2024-05-12 13:26:43] INFO root fetch - processPackages [kurumii]: executing diffoscope
+[2024-05-12 13:26:43] INFO root fetch - processPackages [kurumii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kurumii-1.4.8.2.tar.gz tmp/kurumii-1.4.8.3.tar.gz --markdown 20240512/k/kurumii/1.4.8.2-1.4.8.3/README.md --exclude *.pyd
+[2024-05-12 13:26:43] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2024-05-12 13:26:43] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20240512/t/torchrl-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-12 13:26:43] INFO root fetch - processPackages [portfolio-tracker]: Remove: archive file [/home/abi/fetcher/tmp/portfolio_tracker-0.1.2.tar.gz]
+[2024-05-12 13:26:43] INFO root fetch - processPackages [portfolio-tracker]: Remove: archive file [/home/abi/fetcher/tmp/portfolio_tracker-0.1.2.1.tar.gz]
+[2024-05-12 13:26:43] INFO root fetch - main [MainThread]: End processing [portfolio-tracker]: success
+[2024-05-12 13:26:43] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.8-py3-none-any.whl.zip]
+[2024-05-12 13:26:43] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-05-12 13:26:43] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2024-05-12 13:26:43] INFO root fetch - processPackages [kurumii]: Remove: archive file [/home/abi/fetcher/tmp/kurumii-1.4.8.2.tar.gz]
+[2024-05-12 13:26:43] INFO root fetch - processPackages [kurumii]: Remove: archive file [/home/abi/fetcher/tmp/kurumii-1.4.8.3.tar.gz]
+[2024-05-12 13:26:43] INFO root fetch - main [MainThread]: End processing [kurumii]: success
+[2024-05-12 13:26:43] INFO root fetch - processPackages [wedeliver-core-plus]: Remove: archive file [/home/abi/fetcher/tmp/wedeliver_core_plus-0.1.8.tar.gz]
+[2024-05-12 13:26:43] INFO root fetch - processPackages [wedeliver-core-plus]: Remove: archive file [/home/abi/fetcher/tmp/wedeliver_core_plus-0.1.9.tar.gz]
+[2024-05-12 13:26:43] INFO root fetch - main [MainThread]: End processing [wedeliver-core-plus]: success
+[2024-05-12 13:26:44] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip]
+[2024-05-12 13:26:44] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
+[2024-05-12 13:26:44] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2024-05-12 13:26:44] INFO root fetch - main [MainThread]: Store serial: [23169378]
