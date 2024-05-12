@@ -17339,3 +17339,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:30:18] INFO root fetch - processPackages [celi-framework]: Remove: archive file [/home/abi/fetcher/tmp/celi_framework-0.2.1.tar.gz]
 [2024-05-12 22:30:18] INFO root fetch - main [MainThread]: End processing [celi-framework]: success
 [2024-05-12 22:30:18] INFO root fetch - main [MainThread]: Store serial: [23173594]
+[2024-05-12 22:32:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173594]
+[2024-05-12 22:32:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 22:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unforfeitablez
+[2024-05-12 22:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: substool
+[2024-05-12 22:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wrentailz
+[2024-05-12 22:32:27] WARNING root fetch - processPackages [substool]: Skipping, unable to determine old version
+[2024-05-12 22:32:27] INFO root fetch - main [MainThread]: End processing [substool] error
+[2024-05-12 22:32:27] WARNING root fetch - processPackages [wrentailz]: Skipping, unable to determine old version
+[2024-05-12 22:32:27] INFO root fetch - main [MainThread]: End processing [wrentailz] error
+[2024-05-12 22:32:27] WARNING root fetch - processPackages [unforfeitablez]: Skipping, unable to determine old version
+[2024-05-12 22:32:27] INFO root fetch - main [MainThread]: End processing [unforfeitablez] error
+[2024-05-12 22:32:27] INFO root fetch - main [MainThread]: Store serial: [23173605]
