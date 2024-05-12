@@ -13528,3 +13528,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:20:02] INFO root fetch - processPackages [prefab]: Remove: archive file [/home/abi/fetcher/tmp/prefab-1.0.0-py3-none-any.whl.zip]
 [2024-05-12 18:20:02] INFO root fetch - main [MainThread]: End processing [prefab]: success
 [2024-05-12 18:20:02] INFO root fetch - main [MainThread]: Store serial: [23171701]
+[2024-05-12 18:22:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171701]
+[2024-05-12 18:22:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 18:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vaticanalz
+[2024-05-12 18:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: courantsz
+[2024-05-12 18:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: swirl-code
+[2024-05-12 18:22:10] WARNING root fetch - processPackages [courantsz]: Skipping, unable to determine old version
+[2024-05-12 18:22:10] INFO root fetch - main [MainThread]: End processing [courantsz] error
+[2024-05-12 18:22:10] WARNING root fetch - processPackages [swirl-code]: Skipping, unable to determine old version
+[2024-05-12 18:22:10] INFO root fetch - main [MainThread]: End processing [swirl-code] error
+[2024-05-12 18:22:10] WARNING root fetch - processPackages [vaticanalz]: Skipping, unable to determine old version
+[2024-05-12 18:22:10] INFO root fetch - main [MainThread]: End processing [vaticanalz] error
+[2024-05-12 18:22:10] INFO root fetch - main [MainThread]: Store serial: [23171715]
