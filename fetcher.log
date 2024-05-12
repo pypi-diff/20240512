@@ -12840,3 +12840,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:36:30] INFO root fetch - processPackages [pyrimidine]: Remove: archive file [/home/abi/fetcher/tmp/pyrimidine-1.6.tar.gz]
 [2024-05-12 17:36:30] INFO root fetch - main [MainThread]: End processing [pyrimidine]: success
 [2024-05-12 17:36:30] INFO root fetch - main [MainThread]: Store serial: [23171315]
+[2024-05-12 17:38:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171315]
+[2024-05-12 17:38:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 17:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anemone-daisy-maker
+[2024-05-12 17:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonsubstitutionallyz
+[2024-05-12 17:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anemone-daisy-maker
+[2024-05-12 17:38:39] WARNING root fetch - processPackages [anemone-daisy-maker]: Skipping, unable to determine old version
+[2024-05-12 17:38:39] INFO root fetch - main [MainThread]: End processing [anemone-daisy-maker] error
+[2024-05-12 17:38:39] WARNING root fetch - processPackages [anemone-daisy-maker]: Skipping, unable to determine old version
+[2024-05-12 17:38:39] INFO root fetch - main [MainThread]: End processing [anemone-daisy-maker] error
+[2024-05-12 17:38:39] WARNING root fetch - processPackages [nonsubstitutionallyz]: Skipping, unable to determine old version
+[2024-05-12 17:38:39] INFO root fetch - main [MainThread]: End processing [nonsubstitutionallyz] error
+[2024-05-12 17:38:39] INFO root fetch - main [MainThread]: Store serial: [23171324]
