@@ -2982,3 +2982,39 @@
 [2024-05-12 04:20:18] INFO root fetch - processPackages [hypothesis-torch]: Remove: archive file [/home/abi/fetcher/tmp/hypothesis_torch-0.6.3.tar.gz]
 [2024-05-12 04:20:18] INFO root fetch - main [MainThread]: End processing [hypothesis-torch]: success
 [2024-05-12 04:20:18] INFO root fetch - main [MainThread]: Store serial: [23166323]
+[2024-05-12 04:22:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166323]
+[2024-05-12 04:22:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 04:22:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: g2opy
+[2024-05-12 04:22:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bw-graph-tools
+[2024-05-12 04:22:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sponsingz
+[2024-05-12 04:22:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-furryfusion
+[2024-05-12 04:22:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyanno4rt
+[2024-05-12 04:22:26] INFO root fetch - processPackages [nonebot-plugin-furryfusion]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 04:22:26] WARNING root fetch - processPackages [g2opy]: Skipping, unable to determine old version
+[2024-05-12 04:22:26] INFO root fetch - main [MainThread]: End processing [g2opy] error
+[2024-05-12 04:22:26] INFO root fetch - processPackages [bw-graph-tools]: New version: [0.3.1] Old Version: [0.3]
+[2024-05-12 04:22:26] INFO root fetch - processPackages [pyanno4rt]: New version: [0.18.0] Old Version: [0.17.0]
+[2024-05-12 04:22:26] WARNING root fetch - processPackages [sponsingz]: Skipping, unable to determine old version
+[2024-05-12 04:22:26] INFO root fetch - main [MainThread]: End processing [sponsingz] error
+[2024-05-12 04:22:26] INFO root fetch - processPackages [nonebot-plugin-furryfusion]: Downloading https://files.pythonhosted.org/packages/44/9f/9bc14154cb574d3ad43d6e50fe934f5f5fc8af6060f12f8e0c0d382bf035/nonebot_plugin_furryfusion-0.1.0.tar.gz
+[2024-05-12 04:22:26] INFO root fetch - processPackages [bw-graph-tools]: Downloading https://files.pythonhosted.org/packages/8e/ac/37ce924f5cf10cf8d8bf9523a7042e60065826947b2c23349ffad92580cf/bw_graph_tools-0.3.tar.gz
+[2024-05-12 04:22:26] INFO root fetch - processPackages [pyanno4rt]: Downloading https://files.pythonhosted.org/packages/6b/9f/7a6414acf5ed3f95097e5bd996f79eb38911d77b68d83772f604a1dd6a7c/pyanno4rt-0.17.0.tar.gz
+[2024-05-12 04:22:27] INFO root fetch - processPackages [nonebot-plugin-furryfusion]: Downloading https://files.pythonhosted.org/packages/cf/bf/fa561064ce6d6f8c5f722abf090c00c0221cdb55e17d628cd2b01dced8aa/nonebot_plugin_furryfusion-0.1.1.tar.gz
+[2024-05-12 04:22:27] INFO root fetch - processPackages [bw-graph-tools]: Downloading https://files.pythonhosted.org/packages/d3/7b/329b80ee746631814d6a4713d35bd31a41645f7572e532309a7166f4585f/bw_graph_tools-0.3.1.tar.gz
+[2024-05-12 04:22:27] INFO root fetch - processPackages [nonebot-plugin-furryfusion]: executing diffoscope
+[2024-05-12 04:22:27] INFO root fetch - processPackages [nonebot-plugin-furryfusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_furryfusion-0.1.0.tar.gz tmp/nonebot_plugin_furryfusion-0.1.1.tar.gz --markdown 20240512/n/nonebot-plugin-furryfusion/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 04:22:27] INFO root fetch - processPackages [bw-graph-tools]: executing diffoscope
+[2024-05-12 04:22:27] INFO root fetch - processPackages [bw-graph-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bw_graph_tools-0.3.tar.gz tmp/bw_graph_tools-0.3.1.tar.gz --markdown 20240512/b/bw-graph-tools/0.3-0.3.1/README.md --exclude *.pyd
+[2024-05-12 04:22:27] INFO root fetch - processPackages [pyanno4rt]: Downloading https://files.pythonhosted.org/packages/66/b0/2c5cf1306f6d3bdec3458d67b0c689b790eccca92ea9cc476d0ea3a7f53f/pyanno4rt-0.18.0.tar.gz
+[2024-05-12 04:22:27] INFO root fetch - processPackages [pyanno4rt]: executing diffoscope
+[2024-05-12 04:22:27] INFO root fetch - processPackages [pyanno4rt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyanno4rt-0.17.0.tar.gz tmp/pyanno4rt-0.18.0.tar.gz --markdown 20240512/p/pyanno4rt/0.17.0-0.18.0/README.md --exclude *.pyd
+[2024-05-12 04:22:27] INFO root fetch - processPackages [nonebot-plugin-furryfusion]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_furryfusion-0.1.0.tar.gz]
+[2024-05-12 04:22:27] INFO root fetch - processPackages [nonebot-plugin-furryfusion]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_furryfusion-0.1.1.tar.gz]
+[2024-05-12 04:22:27] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-furryfusion]: success
+[2024-05-12 04:22:27] INFO root fetch - processPackages [bw-graph-tools]: Remove: archive file [/home/abi/fetcher/tmp/bw_graph_tools-0.3.tar.gz]
+[2024-05-12 04:22:27] INFO root fetch - processPackages [bw-graph-tools]: Remove: archive file [/home/abi/fetcher/tmp/bw_graph_tools-0.3.1.tar.gz]
+[2024-05-12 04:22:27] INFO root fetch - main [MainThread]: End processing [bw-graph-tools]: success
+[2024-05-12 04:22:31] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.17.0.tar.gz]
+[2024-05-12 04:22:31] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.18.0.tar.gz]
+[2024-05-12 04:22:31] INFO root fetch - main [MainThread]: End processing [pyanno4rt]: success
+[2024-05-12 04:22:31] INFO root fetch - main [MainThread]: Store serial: [23166342]
