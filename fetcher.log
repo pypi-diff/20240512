@@ -10185,3 +10185,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:30:39] INFO root fetch - processPackages [pytest-ranking]: Remove: archive file [/home/abi/fetcher/tmp/pytest_ranking-0.3.0.tar.gz]
 [2024-05-12 14:30:39] INFO root fetch - main [MainThread]: End processing [pytest-ranking]: success
 [2024-05-12 14:30:39] INFO root fetch - main [MainThread]: Store serial: [23169845]
+[2024-05-12 14:32:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169845]
+[2024-05-12 14:32:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 14:32:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: minecraft-script
+[2024-05-12 14:32:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lexwolf
+[2024-05-12 14:32:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: optuna-distributed
+[2024-05-12 14:32:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: loggingA
+[2024-05-12 14:32:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: LLMEasyTools
+[2024-05-12 14:32:48] INFO root fetch - processPackages [loggingA]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 14:32:48] INFO root fetch - processPackages [lexwolf]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-12 14:32:48] INFO root fetch - processPackages [minecraft-script]: New version: [0.2.0] Old Version: [0.1.417]
+[2024-05-12 14:32:48] INFO root fetch - processPackages [optuna-distributed]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-12 14:32:48] INFO root fetch - processPackages [lexwolf]: Downloading https://files.pythonhosted.org/packages/fd/80/be192918b8de776f9ab3305adfedbf0d6326881e95bd2b31d792e4f431fa/lexwolf-0.2.1.tar.gz
+[2024-05-12 14:32:48] INFO root fetch - processPackages [LLMEasyTools]: New version: [0.9] Old Version: [0.8]
+[2024-05-12 14:32:48] INFO root fetch - processPackages [loggingA]: Downloading https://files.pythonhosted.org/packages/fc/28/9c75f4fe652e0c8209c699d3a86430fff9bd820b6fc51cb1e938fe4f598d/loggingA-0.0.1.tar.gz
+[2024-05-12 14:32:48] INFO root fetch - processPackages [optuna-distributed]: Downloading https://files.pythonhosted.org/packages/51/02/954e90468820184d2e525bd6f96f92474cf8c5caa6aa936fe11f603ab03f/optuna-distributed-0.6.1.tar.gz
+[2024-05-12 14:32:48] INFO root fetch - processPackages [minecraft-script]: Downloading https://files.pythonhosted.org/packages/12/d9/6940269ea2bdf41ede422bb3a672e04597e291bec9abfe6edb8ce43a5923/minecraft_script-0.1.417.tar.gz
+[2024-05-12 14:32:48] INFO root fetch - processPackages [LLMEasyTools]: Downloading https://files.pythonhosted.org/packages/82/92/3b67230d7ddb3b80cc3c61e5bd7678372c21db75cd4249fc296e1e48663c/LLMEasyTools-0.8.tar.gz
+[2024-05-12 14:32:48] INFO root fetch - processPackages [lexwolf]: Downloading https://files.pythonhosted.org/packages/21/60/7ec6f2e22f763d527f9ebee6d4da5be20cc675af93a06c80e25e49654cd0/lexwolf-0.2.2.tar.gz
+[2024-05-12 14:32:48] INFO root fetch - processPackages [loggingA]: Downloading https://files.pythonhosted.org/packages/e6/cc/d1ca919026aeeb117b9073a7f1a8b0fcef831f67744542e49c9afba225f2/logginga-0.0.2.tar.gz
+[2024-05-12 14:32:48] INFO root fetch - processPackages [lexwolf]: executing diffoscope
+[2024-05-12 14:32:48] INFO root fetch - processPackages [lexwolf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lexwolf-0.2.1.tar.gz tmp/lexwolf-0.2.2.tar.gz --markdown 20240512/l/lexwolf/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-12 14:32:48] INFO root fetch - processPackages [loggingA]: executing diffoscope
+[2024-05-12 14:32:48] INFO root fetch - processPackages [loggingA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loggingA-0.0.1.tar.gz tmp/logginga-0.0.2.tar.gz --markdown 20240512/l/loggingA/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-12 14:32:48] INFO root fetch - processPackages [optuna-distributed]: Downloading https://files.pythonhosted.org/packages/c2/5b/c948eb9355a59f66fd45f39fe8bc24de4e5a71cdabd7bdad9a497e6c9565/optuna_distributed-0.6.2.tar.gz
+[2024-05-12 14:32:48] INFO root fetch - processPackages [minecraft-script]: Downloading https://files.pythonhosted.org/packages/95/49/9cb13aadd02b77e1bc95d709da98029878969bae784804b44f329ed6cde2/minecraft_script-0.2.0.tar.gz
+[2024-05-12 14:32:48] INFO root fetch - processPackages [LLMEasyTools]: Downloading https://files.pythonhosted.org/packages/72/a3/c49ac0fb7ddf156d6a831d2b908fcf1ca4c36f2081aec1178176f19d3958/LLMEasyTools-0.9.tar.gz
+[2024-05-12 14:32:48] INFO root fetch - processPackages [optuna-distributed]: executing diffoscope
+[2024-05-12 14:32:48] INFO root fetch - processPackages [optuna-distributed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optuna-distributed-0.6.1.tar.gz tmp/optuna_distributed-0.6.2.tar.gz --markdown 20240512/o/optuna-distributed/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-12 14:32:48] INFO root fetch - processPackages [minecraft-script]: executing diffoscope
+[2024-05-12 14:32:48] INFO root fetch - processPackages [minecraft-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minecraft_script-0.1.417.tar.gz tmp/minecraft_script-0.2.0.tar.gz --markdown 20240512/m/minecraft-script/0.1.417-0.2.0/README.md --exclude *.pyd
+[2024-05-12 14:32:48] INFO root fetch - processPackages [LLMEasyTools]: executing diffoscope
+[2024-05-12 14:32:48] INFO root fetch - processPackages [LLMEasyTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LLMEasyTools-0.8.tar.gz tmp/LLMEasyTools-0.9.tar.gz --markdown 20240512/L/LLMEasyTools/0.8-0.9/README.md --exclude *.pyd
+[2024-05-12 14:32:49] INFO root fetch - processPackages [lexwolf]: Remove: archive file [/home/abi/fetcher/tmp/lexwolf-0.2.1.tar.gz]
+[2024-05-12 14:32:49] INFO root fetch - processPackages [lexwolf]: Remove: archive file [/home/abi/fetcher/tmp/lexwolf-0.2.2.tar.gz]
+[2024-05-12 14:32:49] INFO root fetch - main [MainThread]: End processing [lexwolf]: success
+[2024-05-12 14:32:49] INFO root fetch - processPackages [loggingA]: Remove: archive file [/home/abi/fetcher/tmp/loggingA-0.0.1.tar.gz]
+[2024-05-12 14:32:49] INFO root fetch - processPackages [loggingA]: Remove: archive file [/home/abi/fetcher/tmp/logginga-0.0.2.tar.gz]
+[2024-05-12 14:32:49] INFO root fetch - main [MainThread]: End processing [loggingA]: success
+[2024-05-12 14:32:49] INFO root fetch - processPackages [minecraft-script]: Remove: archive file [/home/abi/fetcher/tmp/minecraft_script-0.1.417.tar.gz]
+[2024-05-12 14:32:49] INFO root fetch - processPackages [minecraft-script]: Remove: archive file [/home/abi/fetcher/tmp/minecraft_script-0.2.0.tar.gz]
+[2024-05-12 14:32:49] INFO root fetch - main [MainThread]: End processing [minecraft-script]: success
+[2024-05-12 14:32:49] INFO root fetch - processPackages [LLMEasyTools]: Remove: archive file [/home/abi/fetcher/tmp/LLMEasyTools-0.8.tar.gz]
+[2024-05-12 14:32:49] INFO root fetch - processPackages [LLMEasyTools]: Remove: archive file [/home/abi/fetcher/tmp/LLMEasyTools-0.9.tar.gz]
+[2024-05-12 14:32:49] INFO root fetch - main [MainThread]: End processing [LLMEasyTools]: success
+[2024-05-12 14:32:49] INFO root fetch - processPackages [optuna-distributed]: Remove: archive file [/home/abi/fetcher/tmp/optuna-distributed-0.6.1.tar.gz]
+[2024-05-12 14:32:49] INFO root fetch - processPackages [optuna-distributed]: Remove: archive file [/home/abi/fetcher/tmp/optuna_distributed-0.6.2.tar.gz]
+[2024-05-12 14:32:49] INFO root fetch - main [MainThread]: End processing [optuna-distributed]: success
+[2024-05-12 14:32:49] INFO root fetch - main [MainThread]: Store serial: [23169862]
