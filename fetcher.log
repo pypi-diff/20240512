@@ -3018,3 +3018,33 @@
 [2024-05-12 04:22:31] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.18.0.tar.gz]
 [2024-05-12 04:22:31] INFO root fetch - main [MainThread]: End processing [pyanno4rt]: success
 [2024-05-12 04:22:31] INFO root fetch - main [MainThread]: Store serial: [23166342]
+[2024-05-12 04:24:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166342]
+[2024-05-12 04:24:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 04:24:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpl-markers
+[2024-05-12 04:24:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: types-regex
+[2024-05-12 04:24:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cyberdrop-dl
+[2024-05-12 04:24:39] INFO root fetch - processPackages [cyberdrop-dl]: New version: [5.3.7] Old Version: [5.3.6]
+[2024-05-12 04:24:39] INFO root fetch - processPackages [mpl-markers]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 04:24:39] INFO root fetch - processPackages [types-regex]: New version: [2024.5.10.20240512] Old Version: [2024.5.10.20240511]
+[2024-05-12 04:24:39] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/3d/a5/838330b2cdc8fe97e347e353f91bb8dce143fd32732dce05f62de2e8ae6f/cyberdrop_dl-5.3.6.tar.gz
+[2024-05-12 04:24:39] INFO root fetch - processPackages [types-regex]: Downloading https://files.pythonhosted.org/packages/3f/ea/dece30e6c695456a669ce85c3ae5243ceba196d531d6ddfed86f99ed103e/types-regex-2024.5.10.20240511.tar.gz
+[2024-05-12 04:24:39] INFO root fetch - processPackages [mpl-markers]: Downloading https://files.pythonhosted.org/packages/54/08/0e67139dd1ebbe34dbeb16a83587f2b8fb2837c3048695f21853845751c9/mpl_markers-0.0.8.tar.gz
+[2024-05-12 04:24:40] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/62/cd/50c40c52f5fc73b5d44b96d23289bebbafc0c5a92bc188902a0f4f6e3894/cyberdrop_dl-5.3.7.tar.gz
+[2024-05-12 04:24:40] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2024-05-12 04:24:40] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop_dl-5.3.6.tar.gz tmp/cyberdrop_dl-5.3.7.tar.gz --markdown 20240512/c/cyberdrop-dl/5.3.6-5.3.7/README.md --exclude *.pyd
+[2024-05-12 04:24:40] INFO root fetch - processPackages [types-regex]: Downloading https://files.pythonhosted.org/packages/3e/61/3a3c437a8a6444db6ce510d52e46ddc408f6af3510ca5c9e110a8ed4209d/types-regex-2024.5.10.20240512.tar.gz
+[2024-05-12 04:24:40] INFO root fetch - processPackages [mpl-markers]: Downloading https://files.pythonhosted.org/packages/67/d9/8427d49b46567f550e8ef4372a35e6c8d44ce8ed823a6bddcb7245b5f5be/mpl_markers-0.0.9.tar.gz
+[2024-05-12 04:24:40] INFO root fetch - processPackages [types-regex]: executing diffoscope
+[2024-05-12 04:24:40] INFO root fetch - processPackages [types-regex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-regex-2024.5.10.20240511.tar.gz tmp/types-regex-2024.5.10.20240512.tar.gz --markdown 20240512/t/types-regex/2024.5.10.20240511-2024.5.10.20240512/README.md --exclude *.pyd
+[2024-05-12 04:24:40] INFO root fetch - processPackages [mpl-markers]: executing diffoscope
+[2024-05-12 04:24:40] INFO root fetch - processPackages [mpl-markers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpl_markers-0.0.8.tar.gz tmp/mpl_markers-0.0.9.tar.gz --markdown 20240512/m/mpl-markers/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 04:24:41] INFO root fetch - processPackages [types-regex]: Remove: archive file [/home/abi/fetcher/tmp/types-regex-2024.5.10.20240511.tar.gz]
+[2024-05-12 04:24:41] INFO root fetch - processPackages [types-regex]: Remove: archive file [/home/abi/fetcher/tmp/types-regex-2024.5.10.20240512.tar.gz]
+[2024-05-12 04:24:41] INFO root fetch - main [MainThread]: End processing [types-regex]: success
+[2024-05-12 04:24:41] INFO root fetch - processPackages [mpl-markers]: Remove: archive file [/home/abi/fetcher/tmp/mpl_markers-0.0.8.tar.gz]
+[2024-05-12 04:24:41] INFO root fetch - processPackages [mpl-markers]: Remove: archive file [/home/abi/fetcher/tmp/mpl_markers-0.0.9.tar.gz]
+[2024-05-12 04:24:41] INFO root fetch - main [MainThread]: End processing [mpl-markers]: success
+[2024-05-12 04:24:41] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.6.tar.gz]
+[2024-05-12 04:24:41] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.7.tar.gz]
+[2024-05-12 04:24:41] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2024-05-12 04:24:41] INFO root fetch - main [MainThread]: Store serial: [23166352]
