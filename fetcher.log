@@ -14164,3 +14164,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:07:51] INFO root fetch - processPackages [Glances]: Remove: archive file [/home/abi/fetcher/tmp/glances-4.0.1.tar.gz]
 [2024-05-12 19:07:51] INFO root fetch - main [MainThread]: End processing [Glances]: success
 [2024-05-12 19:07:51] INFO root fetch - main [MainThread]: Store serial: [23172017]
+[2024-05-12 19:09:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172017]
+[2024-05-12 19:10:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 19:10:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rootdir
+[2024-05-12 19:10:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heelgripz
+[2024-05-12 19:10:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pygame-gamma
+[2024-05-12 19:10:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: symetrics
+[2024-05-12 19:10:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moulti
+[2024-05-12 19:10:00] INFO root fetch - processPackages [rootdir]: New version: [0.1.2.post4] Old Version: [0.1.2.post3]
+[2024-05-12 19:10:00] INFO root fetch - processPackages [pygame-gamma]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-12 19:10:00] INFO root fetch - processPackages [rootdir]: Downloading https://files.pythonhosted.org/packages/04/13/15a766840e2be8a8fd625bf41c4a7f7a3c4ec54d462c6d1ed57248149910/rootdir-0.1.2.post3.tar.gz
+[2024-05-12 19:10:00] WARNING root fetch - processPackages [heelgripz]: Skipping, unable to determine old version
+[2024-05-12 19:10:00] INFO root fetch - main [MainThread]: End processing [heelgripz] error
+[2024-05-12 19:10:00] INFO root fetch - processPackages [symetrics]: New version: [9.1.0] Old Version: [9.0.0]
+[2024-05-12 19:10:00] INFO root fetch - processPackages [moulti]: New version: [1.8.1] Old Version: [1.8.0]
+[2024-05-12 19:10:00] INFO root fetch - processPackages [pygame-gamma]: Downloading https://files.pythonhosted.org/packages/af/33/b2db27d2b66d1b2935302c450038cdba3d89488ed779d2ecdf983a92f6e0/pygame_gamma-0.4.1.tar.gz
+[2024-05-12 19:10:00] INFO root fetch - processPackages [symetrics]: Downloading https://files.pythonhosted.org/packages/5f/97/0d0de56df529478afbeb5c857d6bd592ea4a9cba4e2dbbdc3039c2b841e9/symetrics-9.0.0.tar.gz
+[2024-05-12 19:10:00] INFO root fetch - processPackages [moulti]: Downloading https://files.pythonhosted.org/packages/97/e9/590f2b32716baa761cca3a52a5dcaa1b0563a83ee679de240c7626b8367d/moulti-1.8.0.tar.gz
+[2024-05-12 19:10:00] INFO root fetch - processPackages [rootdir]: Downloading https://files.pythonhosted.org/packages/73/63/73e436d22692e7f3a37e5fba9c2057ea22a69e10336ec03612de6468bc55/rootdir-0.1.2.post4.tar.gz
+[2024-05-12 19:10:00] INFO root fetch - processPackages [rootdir]: executing diffoscope
+[2024-05-12 19:10:00] INFO root fetch - processPackages [rootdir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rootdir-0.1.2.post3.tar.gz tmp/rootdir-0.1.2.post4.tar.gz --markdown 20240512/r/rootdir/0.1.2.post3-0.1.2.post4/README.md --exclude *.pyd
+[2024-05-12 19:10:00] INFO root fetch - processPackages [symetrics]: Downloading https://files.pythonhosted.org/packages/c4/79/456d704d0244b9a357090dab4beec8b9e55abc760bbeed7a775fe289fa11/symetrics-9.1.0.tar.gz
+[2024-05-12 19:10:00] INFO root fetch - processPackages [pygame-gamma]: Downloading https://files.pythonhosted.org/packages/5a/c9/35a3769c7261914ab7301b1ed2d01e55ec594e8d129d6f7226d576069e18/pygame_gamma-0.4.2.tar.gz
+[2024-05-12 19:10:01] INFO root fetch - processPackages [moulti]: Downloading https://files.pythonhosted.org/packages/4f/dd/919f811128430b72d8e6428eca72095e15cd854d4c334c4c985427b2c703/moulti-1.8.1-py3-none-any.whl
+[2024-05-12 19:10:01] INFO root fetch - processPackages [symetrics]: executing diffoscope
+[2024-05-12 19:10:01] INFO root fetch - processPackages [symetrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symetrics-9.0.0.tar.gz tmp/symetrics-9.1.0.tar.gz --markdown 20240512/s/symetrics/9.0.0-9.1.0/README.md --exclude *.pyd
+[2024-05-12 19:10:01] INFO root fetch - processPackages [moulti]: executing diffoscope
+[2024-05-12 19:10:01] INFO root fetch - processPackages [moulti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moulti-1.8.0.tar.gz tmp/moulti-1.8.1-py3-none-any.whl.zip --markdown 20240512/m/moulti/1.8.0-1.8.1/README.md --exclude *.pyd
+[2024-05-12 19:10:01] INFO root fetch - processPackages [pygame-gamma]: executing diffoscope
+[2024-05-12 19:10:01] INFO root fetch - processPackages [pygame-gamma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygame_gamma-0.4.1.tar.gz tmp/pygame_gamma-0.4.2.tar.gz --markdown 20240512/p/pygame-gamma/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-12 19:10:01] INFO root fetch - processPackages [rootdir]: Remove: archive file [/home/abi/fetcher/tmp/rootdir-0.1.2.post3.tar.gz]
+[2024-05-12 19:10:01] INFO root fetch - processPackages [rootdir]: Remove: archive file [/home/abi/fetcher/tmp/rootdir-0.1.2.post4.tar.gz]
+[2024-05-12 19:10:01] INFO root fetch - main [MainThread]: End processing [rootdir]: success
+[2024-05-12 19:10:01] INFO root fetch - processPackages [symetrics]: Remove: archive file [/home/abi/fetcher/tmp/symetrics-9.0.0.tar.gz]
+[2024-05-12 19:10:01] INFO root fetch - processPackages [symetrics]: Remove: archive file [/home/abi/fetcher/tmp/symetrics-9.1.0.tar.gz]
+[2024-05-12 19:10:01] INFO root fetch - main [MainThread]: End processing [symetrics]: success
+[2024-05-12 19:10:01] INFO root fetch - processPackages [moulti]: Remove: archive file [/home/abi/fetcher/tmp/moulti-1.8.0.tar.gz]
+[2024-05-12 19:10:01] INFO root fetch - processPackages [moulti]: Remove: archive file [/home/abi/fetcher/tmp/moulti-1.8.1-py3-none-any.whl.zip]
+[2024-05-12 19:10:01] INFO root fetch - main [MainThread]: End processing [moulti]: success
+[2024-05-12 19:10:02] INFO root fetch - processPackages [pygame-gamma]: Remove: archive file [/home/abi/fetcher/tmp/pygame_gamma-0.4.1.tar.gz]
+[2024-05-12 19:10:02] INFO root fetch - processPackages [pygame-gamma]: Remove: archive file [/home/abi/fetcher/tmp/pygame_gamma-0.4.2.tar.gz]
+[2024-05-12 19:10:02] INFO root fetch - main [MainThread]: End processing [pygame-gamma]: success
+[2024-05-12 19:10:02] INFO root fetch - main [MainThread]: Store serial: [23172030]
