@@ -13295,3 +13295,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:04:49] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.6.2-cp310-cp310-musllinux_1_1_x86_64.whl.zip]
 [2024-05-12 18:04:49] INFO root fetch - main [MainThread]: End processing [anycrc]: success
 [2024-05-12 18:04:49] INFO root fetch - main [MainThread]: Store serial: [23171539]
+[2024-05-12 18:06:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171539]
+[2024-05-12 18:06:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 18:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: medicafe
+[2024-05-12 18:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkrcomponents
+[2024-05-12 18:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sacramentarianismz
+[2024-05-12 18:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hotsos
+[2024-05-12 18:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: KnockoffOrigins
+[2024-05-12 18:06:57] INFO root fetch - processPackages [pkrcomponents]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-05-12 18:06:58] INFO root fetch - processPackages [medicafe]: New version: [0.240511.0] Old Version: [0.240510.3]
+[2024-05-12 18:06:58] INFO root fetch - processPackages [pkrcomponents]: Downloading https://files.pythonhosted.org/packages/cd/d5/2837fc216670a6adc76567be3afcd078d017d4c9d3b0fc34f9c1978f87fb/pkrcomponents-1.1.0.tar.gz
+[2024-05-12 18:06:58] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/c1/d0/e40ad01b722f61e13c6a171afa612ca029d5d153909fbcc4ec9ff2f7c331/medicafe-0.240510.3.tar.gz
+[2024-05-12 18:06:58] WARNING root fetch - processPackages [sacramentarianismz]: Skipping, unable to determine old version
+[2024-05-12 18:06:58] INFO root fetch - main [MainThread]: End processing [sacramentarianismz] error
+[2024-05-12 18:06:58] INFO root fetch - processPackages [KnockoffOrigins]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-12 18:06:58] INFO root fetch - processPackages [hotsos]: New version: [1.17.0.post9] Old Version: [1.17.0.post8]
+[2024-05-12 18:06:58] WARNING root fetch - processPackages [pkrcomponents]: Skipping package: exceeds size limit 29787082>=10485760
+[2024-05-12 18:06:58] INFO root fetch - main [MainThread]: End processing [pkrcomponents] error
+[2024-05-12 18:06:58] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/56/6c/c34bb2215108b143642b6d022d3c097df0347b3e42a52741f640307ff4c4/medicafe-0.240511.0.tar.gz
+[2024-05-12 18:06:58] INFO root fetch - processPackages [KnockoffOrigins]: Downloading https://files.pythonhosted.org/packages/c2/c7/68c0b01eaa4114c9ce2d3ecd5af74c2f5a7edecc6a70eaaa7c16db0ce77b/knockofforigins-0.1.3.tar.gz
+[2024-05-12 18:06:58] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/a7/57/15e4fe4e4dbc4381d9bf00a81267a7c13df4ca3f2dc3b2afa7db65518860/hotsos-1.17.0.post8.tar.gz
+[2024-05-12 18:06:58] INFO root fetch - processPackages [medicafe]: executing diffoscope
+[2024-05-12 18:06:58] INFO root fetch - processPackages [medicafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medicafe-0.240510.3.tar.gz tmp/medicafe-0.240511.0.tar.gz --markdown 20240512/m/medicafe/0.240510.3-0.240511.0/README.md --exclude *.pyd
+[2024-05-12 18:06:58] INFO root fetch - processPackages [KnockoffOrigins]: Downloading https://files.pythonhosted.org/packages/e6/6d/55766e4a3a5142461a3e972f0b4d7e75b6eef4999da3ca8e7f76dc7cfec8/knockofforigins-0.1.4.tar.gz
+[2024-05-12 18:06:58] INFO root fetch - processPackages [KnockoffOrigins]: executing diffoscope
+[2024-05-12 18:06:58] INFO root fetch - processPackages [KnockoffOrigins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knockofforigins-0.1.3.tar.gz tmp/knockofforigins-0.1.4.tar.gz --markdown 20240512/K/KnockoffOrigins/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-12 18:06:58] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/7f/57/f6a4fc3900f977e567bcf108bd2787ce8624445d42b84c26b710b18c7c3d/hotsos-1.17.0.post9.tar.gz
+[2024-05-12 18:06:58] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2024-05-12 18:06:58] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.17.0.post8.tar.gz tmp/hotsos-1.17.0.post9.tar.gz --markdown 20240512/h/hotsos/1.17.0.post8-1.17.0.post9/README.md --exclude *.pyd
+[2024-05-12 18:06:59] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240510.3.tar.gz]
+[2024-05-12 18:06:59] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240511.0.tar.gz]
+[2024-05-12 18:06:59] INFO root fetch - main [MainThread]: End processing [medicafe]: success
+[2024-05-12 18:06:59] INFO root fetch - processPackages [KnockoffOrigins]: Remove: archive file [/home/abi/fetcher/tmp/knockofforigins-0.1.3.tar.gz]
+[2024-05-12 18:06:59] INFO root fetch - processPackages [KnockoffOrigins]: Remove: archive file [/home/abi/fetcher/tmp/knockofforigins-0.1.4.tar.gz]
+[2024-05-12 18:06:59] INFO root fetch - main [MainThread]: End processing [KnockoffOrigins]: success
+[2024-05-12 18:07:00] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post8.tar.gz]
+[2024-05-12 18:07:00] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post9.tar.gz]
+[2024-05-12 18:07:00] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2024-05-12 18:07:00] INFO root fetch - main [MainThread]: Store serial: [23171610]
