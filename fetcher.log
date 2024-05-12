@@ -2521,3 +2521,39 @@
 [2024-05-12 03:49:40] INFO root fetch - processPackages [streamlit-screen-stats]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-screen-stats-0.0.9.tar.gz]
 [2024-05-12 03:49:40] INFO root fetch - main [MainThread]: End processing [streamlit-screen-stats]: success
 [2024-05-12 03:49:40] INFO root fetch - main [MainThread]: Store serial: [23166137]
+[2024-05-12 03:51:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166137]
+[2024-05-12 03:51:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 03:51:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TamilEnkal
+[2024-05-12 03:51:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hj-proj-module
+[2024-05-12 03:51:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quickstart-vdk
+[2024-05-12 03:51:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ikvpy
+[2024-05-12 03:51:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ectocorneaz
+[2024-05-12 03:51:48] INFO root fetch - processPackages [ikvpy]: New version: [0.0.28] Old Version: [0.0.27]
+[2024-05-12 03:51:48] INFO root fetch - processPackages [hj-proj-module]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-05-12 03:51:49] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/0e/3f/8f827fdc52b976f639411e9f7bd10346b44a94998fbdc9ab1ef29fe7be7c/ikvpy-0.0.27.tar.gz
+[2024-05-12 03:51:49] INFO root fetch - processPackages [hj-proj-module]: Downloading https://files.pythonhosted.org/packages/db/12/7bb0e640457f3bbbbc0b77439e6b03839642728f5b9676f3a6cdbf41672e/hj_proj_module-0.1.7.tar.gz
+[2024-05-12 03:51:49] WARNING root fetch - processPackages [TamilEnkal]: Skipping, unable to determine old version
+[2024-05-12 03:51:49] WARNING root fetch - processPackages [ectocorneaz]: Skipping, unable to determine old version
+[2024-05-12 03:51:49] INFO root fetch - main [MainThread]: End processing [TamilEnkal] error
+[2024-05-12 03:51:49] INFO root fetch - main [MainThread]: End processing [ectocorneaz] error
+[2024-05-12 03:51:49] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-05-12 03:51:49] INFO root fetch - processPackages [hj-proj-module]: Downloading https://files.pythonhosted.org/packages/94/49/69693d7a64f73d84255649b427048581401581af1b2733dd7b132cd4a620/hj_proj_module-0.1.9.tar.gz
+[2024-05-12 03:51:49] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-05-12 03:51:49] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/52/c1/e2828fa20fd18cb8aea7c14fc0ce84e318c9b0f05d12a840596af148d9b1/ikvpy-0.0.28.tar.gz
+[2024-05-12 03:51:49] INFO root fetch - processPackages [hj-proj-module]: executing diffoscope
+[2024-05-12 03:51:49] INFO root fetch - processPackages [hj-proj-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hj_proj_module-0.1.7.tar.gz tmp/hj_proj_module-0.1.9.tar.gz --markdown 20240512/h/hj-proj-module/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-05-12 03:51:49] INFO root fetch - processPackages [ikvpy]: executing diffoscope
+[2024-05-12 03:51:49] INFO root fetch - processPackages [ikvpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ikvpy-0.0.27.tar.gz tmp/ikvpy-0.0.28.tar.gz --markdown 20240512/i/ikvpy/0.0.27-0.0.28/README.md --exclude *.pyd
+[2024-05-12 03:51:49] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-05-12 03:51:49] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-05-12 03:51:49] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240512/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-05-12 03:51:49] INFO root fetch - processPackages [hj-proj-module]: Remove: archive file [/home/abi/fetcher/tmp/hj_proj_module-0.1.7.tar.gz]
+[2024-05-12 03:51:49] INFO root fetch - processPackages [hj-proj-module]: Remove: archive file [/home/abi/fetcher/tmp/hj_proj_module-0.1.9.tar.gz]
+[2024-05-12 03:51:49] INFO root fetch - main [MainThread]: End processing [hj-proj-module]: success
+[2024-05-12 03:51:49] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.27.tar.gz]
+[2024-05-12 03:51:49] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.28.tar.gz]
+[2024-05-12 03:51:49] INFO root fetch - main [MainThread]: End processing [ikvpy]: success
+[2024-05-12 03:51:50] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-05-12 03:51:50] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-05-12 03:51:50] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-05-12 03:51:50] INFO root fetch - main [MainThread]: Store serial: [23166155]
