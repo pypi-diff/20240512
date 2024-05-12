@@ -4729,3 +4729,20 @@
 [2024-05-12 07:07:13] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240511.tar.gz]
 [2024-05-12 07:07:13] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
 [2024-05-12 07:07:13] INFO root fetch - main [MainThread]: Store serial: [23167173]
+[2024-05-12 07:09:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167173]
+[2024-05-12 07:09:21] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-12 07:11:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167173]
+[2024-05-12 07:11:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 07:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tsugu-api-python
+[2024-05-12 07:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: creationisticz
+[2024-05-12 07:11:27] WARNING root fetch - processPackages [creationisticz]: Skipping, unable to determine old version
+[2024-05-12 07:11:27] INFO root fetch - main [MainThread]: End processing [creationisticz] error
+[2024-05-12 07:11:27] INFO root fetch - processPackages [tsugu-api-python]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-12 07:11:27] INFO root fetch - processPackages [tsugu-api-python]: Downloading https://files.pythonhosted.org/packages/9e/a6/3f5bc542fd676366a9ca3b4ffa6eb0b5dac7878f707fc7d3f05cc5eba33e/tsugu-api-python-0.2.1.tar.gz
+[2024-05-12 07:11:27] INFO root fetch - processPackages [tsugu-api-python]: Downloading https://files.pythonhosted.org/packages/92/64/8e25ba86686cb4bf06c67c26667ecfd2803efd2f350ee0f9bc7f162032ae/tsugu-api-python-0.2.2.tar.gz
+[2024-05-12 07:11:28] INFO root fetch - processPackages [tsugu-api-python]: executing diffoscope
+[2024-05-12 07:11:28] INFO root fetch - processPackages [tsugu-api-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsugu-api-python-0.2.1.tar.gz tmp/tsugu-api-python-0.2.2.tar.gz --markdown 20240512/t/tsugu-api-python/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-12 07:11:28] INFO root fetch - processPackages [tsugu-api-python]: Remove: archive file [/home/abi/fetcher/tmp/tsugu-api-python-0.2.1.tar.gz]
+[2024-05-12 07:11:28] INFO root fetch - processPackages [tsugu-api-python]: Remove: archive file [/home/abi/fetcher/tmp/tsugu-api-python-0.2.2.tar.gz]
+[2024-05-12 07:11:28] INFO root fetch - main [MainThread]: End processing [tsugu-api-python]: success
+[2024-05-12 07:11:28] INFO root fetch - main [MainThread]: Store serial: [23167180]
