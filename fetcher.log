@@ -3908,3 +3908,30 @@
 [2024-05-12 05:41:24] INFO root fetch - processPackages [streamlit-screen-stats]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-screen-stats-0.0.9.tar.gz]
 [2024-05-12 05:41:24] INFO root fetch - main [MainThread]: End processing [streamlit-screen-stats]: success
 [2024-05-12 05:41:24] INFO root fetch - main [MainThread]: Store serial: [23166752]
+[2024-05-12 05:43:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166752]
+[2024-05-12 05:43:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 05:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nostpy-cli
+[2024-05-12 05:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zed-assistant
+[2024-05-12 05:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tileget
+[2024-05-12 05:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nondisinterestedz
+[2024-05-12 05:43:33] INFO root fetch - processPackages [tileget]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-05-12 05:43:33] INFO root fetch - processPackages [tileget]: Downloading https://files.pythonhosted.org/packages/db/3c/4807581c2b46cbe2d861c91dae6c9f22c98867689c1ab7458562dadcd258/tileget-0.3.1.tar.gz
+[2024-05-12 05:43:33] INFO root fetch - processPackages [zed-assistant]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-12 05:43:33] WARNING root fetch - processPackages [nostpy-cli]: Skipping, unable to determine old version
+[2024-05-12 05:43:33] INFO root fetch - main [MainThread]: End processing [nostpy-cli] error
+[2024-05-12 05:43:33] WARNING root fetch - processPackages [nondisinterestedz]: Skipping, unable to determine old version
+[2024-05-12 05:43:33] INFO root fetch - main [MainThread]: End processing [nondisinterestedz] error
+[2024-05-12 05:43:33] INFO root fetch - processPackages [zed-assistant]: Downloading https://files.pythonhosted.org/packages/8f/f7/5857d9deb9fedd2a14dc64eb0f843fb86370dbffde8d171345ecce0247f2/zed_assistant-0.0.2.tar.gz
+[2024-05-12 05:43:33] INFO root fetch - processPackages [tileget]: Downloading https://files.pythonhosted.org/packages/1f/ef/00c8e4206c0d28094f27b65e188614ec2042a1eb26b745dcd6d74df72099/tileget-0.4.0.tar.gz
+[2024-05-12 05:43:33] INFO root fetch - processPackages [tileget]: executing diffoscope
+[2024-05-12 05:43:33] INFO root fetch - processPackages [tileget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tileget-0.3.1.tar.gz tmp/tileget-0.4.0.tar.gz --markdown 20240512/t/tileget/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-05-12 05:43:33] INFO root fetch - processPackages [zed-assistant]: Downloading https://files.pythonhosted.org/packages/46/5c/0a3a89ccac47ed9812ff2a225320252f9c57cdac347df9b42ebba4da8664/zed_assistant-0.0.3.tar.gz
+[2024-05-12 05:43:33] INFO root fetch - processPackages [zed-assistant]: executing diffoscope
+[2024-05-12 05:43:33] INFO root fetch - processPackages [zed-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zed_assistant-0.0.2.tar.gz tmp/zed_assistant-0.0.3.tar.gz --markdown 20240512/z/zed-assistant/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-12 05:43:34] INFO root fetch - processPackages [tileget]: Remove: archive file [/home/abi/fetcher/tmp/tileget-0.3.1.tar.gz]
+[2024-05-12 05:43:34] INFO root fetch - processPackages [tileget]: Remove: archive file [/home/abi/fetcher/tmp/tileget-0.4.0.tar.gz]
+[2024-05-12 05:43:34] INFO root fetch - main [MainThread]: End processing [tileget]: success
+[2024-05-12 05:43:34] INFO root fetch - processPackages [zed-assistant]: Remove: archive file [/home/abi/fetcher/tmp/zed_assistant-0.0.2.tar.gz]
+[2024-05-12 05:43:34] INFO root fetch - processPackages [zed-assistant]: Remove: archive file [/home/abi/fetcher/tmp/zed_assistant-0.0.3.tar.gz]
+[2024-05-12 05:43:34] INFO root fetch - main [MainThread]: End processing [zed-assistant]: success
+[2024-05-12 05:43:34] INFO root fetch - main [MainThread]: Store serial: [23166763]
