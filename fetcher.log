@@ -6459,3 +6459,28 @@
 [2024-05-12 09:34:49] INFO root fetch - processPackages [gologin]: Remove: archive file [/home/abi/fetcher/tmp/gologin-2024.5.12073431.tar.gz]
 [2024-05-12 09:34:49] INFO root fetch - main [MainThread]: End processing [gologin]: success
 [2024-05-12 09:34:49] INFO root fetch - main [MainThread]: Store serial: [23167870]
+[2024-05-12 09:36:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167870]
+[2024-05-12 09:36:58] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-12 09:38:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167870]
+[2024-05-12 09:39:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 09:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apiframe
+[2024-05-12 09:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lalsuite
+[2024-05-12 09:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: linktest
+[2024-05-12 09:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: insculpz
+[2024-05-12 09:39:03] WARNING root fetch - processPackages [apiframe]: Skipping, unable to determine old version
+[2024-05-12 09:39:03] INFO root fetch - main [MainThread]: End processing [apiframe] error
+[2024-05-12 09:39:03] INFO root fetch - processPackages [linktest]: New version: [2.7.7] Old Version: [2.7.6]
+[2024-05-12 09:39:03] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/31/36/0c27aa0ec2299a0080df5a2fd7390337f6b684352ae417b3fe22f93c1b3e/linktest-2.7.6.tar.gz
+[2024-05-12 09:39:03] WARNING root fetch - processPackages [insculpz]: Skipping, unable to determine old version
+[2024-05-12 09:39:03] INFO root fetch - main [MainThread]: End processing [insculpz] error
+[2024-05-12 09:39:03] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2024-05-12 09:39:03] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/5f/a8/6725353ebc672400ac51adf0319ff4d65607389ca67ef5693b58c62c734b/linktest-2.7.7.tar.gz
+[2024-05-12 09:39:03] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-12 09:39:03] INFO root fetch - processPackages [linktest]: executing diffoscope
+[2024-05-12 09:39:03] INFO root fetch - processPackages [linktest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linktest-2.7.6.tar.gz tmp/linktest-2.7.7.tar.gz --markdown 20240512/l/linktest/2.7.6-2.7.7/README.md --exclude *.pyd
+[2024-05-12 09:39:04] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2024-05-12 09:39:04] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2024-05-12 09:39:04] INFO root fetch - processPackages [linktest]: Remove: archive file [/home/abi/fetcher/tmp/linktest-2.7.6.tar.gz]
+[2024-05-12 09:39:04] INFO root fetch - processPackages [linktest]: Remove: archive file [/home/abi/fetcher/tmp/linktest-2.7.7.tar.gz]
+[2024-05-12 09:39:04] INFO root fetch - main [MainThread]: End processing [linktest]: success
+[2024-05-12 09:39:04] INFO root fetch - main [MainThread]: Store serial: [23167886]
