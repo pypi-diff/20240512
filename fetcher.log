@@ -12175,3 +12175,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:01:09] INFO root fetch - processPackages [geocif]: Remove: archive file [/home/abi/fetcher/tmp/geocif-0.1.25.tar.gz]
 [2024-05-12 17:01:09] INFO root fetch - main [MainThread]: End processing [geocif]: success
 [2024-05-12 17:01:09] INFO root fetch - main [MainThread]: Store serial: [23170969]
+[2024-05-12 17:03:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170969]
+[2024-05-12 17:03:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 17:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: port-ocean
+[2024-05-12 17:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psplpy
+[2024-05-12 17:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wconsole-extractor
+[2024-05-12 17:03:18] WARNING root fetch - processPackages [wconsole-extractor]: Skipping, unable to determine old version
+[2024-05-12 17:03:18] INFO root fetch - main [MainThread]: End processing [wconsole-extractor] error
+[2024-05-12 17:03:18] INFO root fetch - processPackages [psplpy]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-12 17:03:18] INFO root fetch - processPackages [port-ocean]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-12 17:03:18] INFO root fetch - processPackages [psplpy]: Downloading https://files.pythonhosted.org/packages/b5/96/7aca3bf25a673c5b11b0633adc37264b60664fc22d0664e26b04c665bf91/psplpy-1.0.0.tar.gz
+[2024-05-12 17:03:18] INFO root fetch - processPackages [port-ocean]: Downloading https://files.pythonhosted.org/packages/78/bc/7cc9e8e2e79075a3c79c00273aaeb13f895d17585c027c53b61f77bdaba4/port_ocean-0.5.8.tar.gz
+[2024-05-12 17:03:19] INFO root fetch - processPackages [psplpy]: Downloading https://files.pythonhosted.org/packages/23/40/b4d15d9d79675d2990c1b5d5cbbd908920c89bdcad54268360b9b55cbc43/psplpy-1.1.0.tar.gz
+[2024-05-12 17:03:19] INFO root fetch - processPackages [port-ocean]: Downloading https://files.pythonhosted.org/packages/9a/b8/b4b21f5c3d509271ff988cb9644c8429ce3f2eb23c44e309e16fc3f2c3d6/port_ocean-0.5.9.tar.gz
+[2024-05-12 17:03:19] INFO root fetch - processPackages [port-ocean]: executing diffoscope
+[2024-05-12 17:03:19] INFO root fetch - processPackages [port-ocean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/port_ocean-0.5.8.tar.gz tmp/port_ocean-0.5.9.tar.gz --markdown 20240512/p/port-ocean/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-12 17:03:19] INFO root fetch - processPackages [psplpy]: executing diffoscope
+[2024-05-12 17:03:19] INFO root fetch - processPackages [psplpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psplpy-1.0.0.tar.gz tmp/psplpy-1.1.0.tar.gz --markdown 20240512/p/psplpy/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-12 17:03:19] INFO root fetch - processPackages [psplpy]: Remove: archive file [/home/abi/fetcher/tmp/psplpy-1.0.0.tar.gz]
+[2024-05-12 17:03:19] INFO root fetch - processPackages [psplpy]: Remove: archive file [/home/abi/fetcher/tmp/psplpy-1.1.0.tar.gz]
+[2024-05-12 17:03:19] INFO root fetch - main [MainThread]: End processing [psplpy]: success
+[2024-05-12 17:03:19] INFO root fetch - processPackages [port-ocean]: Remove: archive file [/home/abi/fetcher/tmp/port_ocean-0.5.8.tar.gz]
+[2024-05-12 17:03:19] INFO root fetch - processPackages [port-ocean]: Remove: archive file [/home/abi/fetcher/tmp/port_ocean-0.5.9.tar.gz]
+[2024-05-12 17:03:19] INFO root fetch - main [MainThread]: End processing [port-ocean]: success
+[2024-05-12 17:03:19] INFO root fetch - main [MainThread]: Store serial: [23170979]
