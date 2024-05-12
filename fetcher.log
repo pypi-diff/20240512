@@ -4708,3 +4708,24 @@
 [2024-05-12 07:05:03] INFO root fetch - processPackages [readyapi]: Remove: archive file [/home/abi/fetcher/tmp/readyapi-0.111.0.dev1.tar.gz]
 [2024-05-12 07:05:03] INFO root fetch - main [MainThread]: End processing [readyapi]: success
 [2024-05-12 07:05:03] INFO root fetch - main [MainThread]: Store serial: [23167150]
+[2024-05-12 07:07:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167150]
+[2024-05-12 07:07:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 07:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rapid-pe
+[2024-05-12 07:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stalematez
+[2024-05-12 07:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LIANGFEIPY302
+[2024-05-12 07:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GRCwjt
+[2024-05-12 07:07:11] WARNING root fetch - processPackages [GRCwjt]: Skipping, unable to determine old version
+[2024-05-12 07:07:11] INFO root fetch - main [MainThread]: End processing [GRCwjt] error
+[2024-05-12 07:07:11] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.2.dev20240511] Old Version: [0.1.2.dev20240510]
+[2024-05-12 07:07:12] WARNING root fetch - processPackages [LIANGFEIPY302]: Skipping, unable to determine old version
+[2024-05-12 07:07:12] INFO root fetch - main [MainThread]: End processing [LIANGFEIPY302] error
+[2024-05-12 07:07:12] WARNING root fetch - processPackages [stalematez]: Skipping, unable to determine old version
+[2024-05-12 07:07:12] INFO root fetch - main [MainThread]: End processing [stalematez] error
+[2024-05-12 07:07:12] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/da/7e/6f9c1c242a85cc364b7298cd41ae0a4136a3a9d1667e3c007085c8f0e14b/rapid_pe-0.1.2.dev20240510.tar.gz
+[2024-05-12 07:07:12] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/ae/a4/47bd16de4ff8518dfc7148b1c865cf09e7a303f4fc9e6f0fd1faebf328c4/rapid_pe-0.1.2.dev20240511.tar.gz
+[2024-05-12 07:07:12] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2024-05-12 07:07:12] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.2.dev20240510.tar.gz tmp/rapid_pe-0.1.2.dev20240511.tar.gz --markdown 20240512/r/rapid-pe/0.1.2.dev20240510-0.1.2.dev20240511/README.md --exclude *.pyd
+[2024-05-12 07:07:13] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240510.tar.gz]
+[2024-05-12 07:07:13] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240511.tar.gz]
+[2024-05-12 07:07:13] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2024-05-12 07:07:13] INFO root fetch - main [MainThread]: Store serial: [23167173]
