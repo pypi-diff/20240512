@@ -4373,3 +4373,15 @@
 [2024-05-12 06:30:00] WARNING root fetch - processPackages [giddyingz]: Skipping, unable to determine old version
 [2024-05-12 06:30:00] INFO root fetch - main [MainThread]: End processing [giddyingz] error
 [2024-05-12 06:30:00] INFO root fetch - main [MainThread]: Store serial: [23166996]
+[2024-05-12 06:32:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166996]
+[2024-05-12 06:32:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 06:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anabih-python-test
+[2024-05-12 06:32:09] INFO root fetch - processPackages [anabih-python-test]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-05-12 06:32:09] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/8f/0d/cb4164f3f11269487379fdf0c45ca126f81d3ab4355ce23e4cdf8dd2b4cd/anabih_python_test-8.0.0.tar.gz
+[2024-05-12 06:32:09] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/83/16/9305f1d0ffc310349acc9a6c48a942e3c816874b788e87e5252e12b1a42a/anabih_python_test-9.0.0.tar.gz
+[2024-05-12 06:32:09] INFO root fetch - processPackages [anabih-python-test]: executing diffoscope
+[2024-05-12 06:32:09] INFO root fetch - processPackages [anabih-python-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anabih_python_test-8.0.0.tar.gz tmp/anabih_python_test-9.0.0.tar.gz --markdown 20240512/a/anabih-python-test/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-05-12 06:32:10] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-8.0.0.tar.gz]
+[2024-05-12 06:32:10] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-9.0.0.tar.gz]
+[2024-05-12 06:32:10] INFO root fetch - main [MainThread]: End processing [anabih-python-test]: success
+[2024-05-12 06:32:10] INFO root fetch - main [MainThread]: Store serial: [23166999]
