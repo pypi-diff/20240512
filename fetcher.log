@@ -8573,3 +8573,27 @@
 [2024-05-12 12:36:29] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.9.0.tar.gz]
 [2024-05-12 12:36:29] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
 [2024-05-12 12:36:29] INFO root fetch - main [MainThread]: Store serial: [23169048]
+[2024-05-12 12:38:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169048]
+[2024-05-12 12:38:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 12:38:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: databricks-labs-blueprint
+[2024-05-12 12:38:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pseudoviperinez
+[2024-05-12 12:38:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: skypilot-nightly
+[2024-05-12 12:38:38] INFO root fetch - processPackages [skypilot-nightly]: New version: [1.0.0.dev20240511] Old Version: [1.0.0.dev20240510]
+[2024-05-12 12:38:38] WARNING root fetch - processPackages [pseudoviperinez]: Skipping, unable to determine old version
+[2024-05-12 12:38:38] INFO root fetch - main [MainThread]: End processing [pseudoviperinez] error
+[2024-05-12 12:38:38] INFO root fetch - processPackages [databricks-labs-blueprint]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-12 12:38:38] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/6f/88/ba39303914df6680a8ac96361282fe139d5bba2326a52e860b4d72191827/skypilot_nightly-1.0.0.dev20240510.tar.gz
+[2024-05-12 12:38:38] INFO root fetch - processPackages [databricks-labs-blueprint]: Downloading https://files.pythonhosted.org/packages/b3/55/bd52ca19dc93f174ca7c9d22676e3ae4f2f057048dab9f9404437435c23b/databricks_labs_blueprint-0.5.0.tar.gz
+[2024-05-12 12:38:38] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/41/4f/dc68cb4ca9e19881916621ddc47d443ab97c60be920ff111eb683689823d/skypilot_nightly-1.0.0.dev20240511.tar.gz
+[2024-05-12 12:38:38] INFO root fetch - processPackages [databricks-labs-blueprint]: Downloading https://files.pythonhosted.org/packages/88/bf/50beb49756116e6c0bd51088749dd38ce6c8ded3e63a4b3e040e3c667642/databricks_labs_blueprint-0.6.0.tar.gz
+[2024-05-12 12:38:39] INFO root fetch - processPackages [skypilot-nightly]: executing diffoscope
+[2024-05-12 12:38:39] INFO root fetch - processPackages [skypilot-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skypilot_nightly-1.0.0.dev20240510.tar.gz tmp/skypilot_nightly-1.0.0.dev20240511.tar.gz --markdown 20240512/s/skypilot-nightly/1.0.0.dev20240510-1.0.0.dev20240511/README.md --exclude *.pyd
+[2024-05-12 12:38:39] INFO root fetch - processPackages [databricks-labs-blueprint]: executing diffoscope
+[2024-05-12 12:38:39] INFO root fetch - processPackages [databricks-labs-blueprint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databricks_labs_blueprint-0.5.0.tar.gz tmp/databricks_labs_blueprint-0.6.0.tar.gz --markdown 20240512/d/databricks-labs-blueprint/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-12 12:38:39] INFO root fetch - processPackages [databricks-labs-blueprint]: Remove: archive file [/home/abi/fetcher/tmp/databricks_labs_blueprint-0.5.0.tar.gz]
+[2024-05-12 12:38:39] INFO root fetch - processPackages [databricks-labs-blueprint]: Remove: archive file [/home/abi/fetcher/tmp/databricks_labs_blueprint-0.6.0.tar.gz]
+[2024-05-12 12:38:39] INFO root fetch - main [MainThread]: End processing [databricks-labs-blueprint]: success
+[2024-05-12 12:38:40] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240510.tar.gz]
+[2024-05-12 12:38:40] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240511.tar.gz]
+[2024-05-12 12:38:40] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
+[2024-05-12 12:38:40] INFO root fetch - main [MainThread]: Store serial: [23169058]
