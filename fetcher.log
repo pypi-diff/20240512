@@ -18420,3 +18420,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:49:25] INFO root fetch - processPackages [symcirc]: Remove: archive file [/home/abi/fetcher/tmp/symcirc-0.0.9-py3-none-any.whl.zip]
 [2024-05-12 23:49:25] INFO root fetch - main [MainThread]: End processing [symcirc]: success
 [2024-05-12 23:49:25] INFO root fetch - main [MainThread]: Store serial: [23174174]
+[2024-05-12 23:51:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23174174]
+[2024-05-12 23:51:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 23:51:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lyriks
+[2024-05-12 23:51:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dreamhack
+[2024-05-12 23:51:33] INFO root fetch - processPackages [dreamhack]: New version: [1.0.6] Old Version: [1.0.4]
+[2024-05-12 23:51:33] INFO root fetch - processPackages [dreamhack]: Downloading https://files.pythonhosted.org/packages/f8/f0/bbcb12f94831d9572ae1a3c6a268f5feafa9dff6263665e128f576960ee7/dreamhack-1.0.4.tar.gz
+[2024-05-12 23:51:33] INFO root fetch - processPackages [lyriks]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 23:51:33] INFO root fetch - processPackages [lyriks]: Downloading https://files.pythonhosted.org/packages/a9/d2/1488fb882c094fafbd651ab094dd3b009f23a922231c6a9062076fe7a9d0/lyriks-0.1.0.tar.gz
+[2024-05-12 23:51:34] INFO root fetch - processPackages [dreamhack]: Downloading https://files.pythonhosted.org/packages/d6/35/bb21176a3391f2202e64a224f4eca87ad93450df73df87bf7daf3c5528b8/dreamhack-1.0.6.tar.gz
+[2024-05-12 23:51:34] INFO root fetch - processPackages [dreamhack]: executing diffoscope
+[2024-05-12 23:51:34] INFO root fetch - processPackages [dreamhack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamhack-1.0.4.tar.gz tmp/dreamhack-1.0.6.tar.gz --markdown 20240512/d/dreamhack/1.0.4-1.0.6/README.md --exclude *.pyd
+[2024-05-12 23:51:34] INFO root fetch - processPackages [lyriks]: Downloading https://files.pythonhosted.org/packages/de/e1/0b59df23bd51613e8f34a91dd09a02036bc1305439196c27af812e158b6f/lyriks-0.1.1.tar.gz
+[2024-05-12 23:51:34] INFO root fetch - processPackages [lyriks]: executing diffoscope
+[2024-05-12 23:51:34] INFO root fetch - processPackages [lyriks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lyriks-0.1.0.tar.gz tmp/lyriks-0.1.1.tar.gz --markdown 20240512/l/lyriks/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 23:51:34] INFO root fetch - processPackages [dreamhack]: Remove: archive file [/home/abi/fetcher/tmp/dreamhack-1.0.4.tar.gz]
+[2024-05-12 23:51:34] INFO root fetch - processPackages [dreamhack]: Remove: archive file [/home/abi/fetcher/tmp/dreamhack-1.0.6.tar.gz]
+[2024-05-12 23:51:34] INFO root fetch - main [MainThread]: End processing [dreamhack]: success
+[2024-05-12 23:51:34] INFO root fetch - processPackages [lyriks]: Remove: archive file [/home/abi/fetcher/tmp/lyriks-0.1.0.tar.gz]
+[2024-05-12 23:51:34] INFO root fetch - processPackages [lyriks]: Remove: archive file [/home/abi/fetcher/tmp/lyriks-0.1.1.tar.gz]
+[2024-05-12 23:51:34] INFO root fetch - main [MainThread]: End processing [lyriks]: success
+[2024-05-12 23:51:34] INFO root fetch - main [MainThread]: Store serial: [23174186]
