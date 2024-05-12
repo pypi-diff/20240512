@@ -3542,3 +3542,38 @@
 [2024-05-12 05:08:31] INFO root fetch - processPackages [standard-distutils]: Remove: archive file [/home/abi/fetcher/tmp/standard_distutils-3.8.19.tar.gz]
 [2024-05-12 05:08:31] INFO root fetch - main [MainThread]: End processing [standard-distutils]: success
 [2024-05-12 05:08:31] INFO root fetch - main [MainThread]: Store serial: [23166549]
+[2024-05-12 05:10:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166549]
+[2024-05-12 05:10:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 05:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polars-ds
+[2024-05-12 05:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: g2opy
+[2024-05-12 05:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cowboy-client
+[2024-05-12 05:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlpr
+[2024-05-12 05:10:39] INFO root fetch - processPackages [g2opy]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-12 05:10:39] INFO root fetch - processPackages [cowboy-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 05:10:39] INFO root fetch - processPackages [mlpr]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 05:10:39] INFO root fetch - processPackages [polars-ds]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-05-12 05:10:40] INFO root fetch - processPackages [g2opy]: Downloading https://files.pythonhosted.org/packages/1c/54/6df6171a0444a52cf95aff2e5e39d86cddd1cad7f62e9d882137282f5fac/g2opy-0.0.5.tar.gz
+[2024-05-12 05:10:40] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/73/3a/39153727c1ce2f4aa9d8d804e48fc7942f19f53dac796571b94f0121a129/mlpr-0.1.8.tar.gz
+[2024-05-12 05:10:40] INFO root fetch - processPackages [cowboy-client]: Downloading https://files.pythonhosted.org/packages/c2/5f/9816d3fa31f30a821a6fb33dce132be8e19344b171e2bc6974137e84315b/cowboy_client-0.0.8.tar.gz
+[2024-05-12 05:10:40] INFO root fetch - processPackages [polars-ds]: Downloading https://files.pythonhosted.org/packages/82/d9/2d2c0e08b8d4081780923db90f3a4902faf9808a56c9f3ea374f06f4cc0b/polars_ds-0.4.4-cp38-abi3-macosx_10_12_x86_64.whl
+[2024-05-12 05:10:40] WARNING root fetch - processPackages [polars-ds]: Skipping package: exceeds size limit 12696438>=10485760
+[2024-05-12 05:10:40] INFO root fetch - main [MainThread]: End processing [polars-ds] error
+[2024-05-12 05:10:40] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/fc/c0/71f4eab477564c23412fe136584c09b6f94ce4a147fcdc8ac880eef388a2/mlpr-0.1.9.tar.gz
+[2024-05-12 05:10:40] INFO root fetch - processPackages [cowboy-client]: Downloading https://files.pythonhosted.org/packages/f8/1c/a6c123d6265ad8f3ce3accddd485ac97be52129124066f56f44e5133e07f/cowboy_client-0.0.9.tar.gz
+[2024-05-12 05:10:40] INFO root fetch - processPackages [g2opy]: Downloading https://files.pythonhosted.org/packages/e9/71/ba5a296042e17f3f469520b9342453d28eb1dc2ceb3c2bcdb84b4aec99d9/g2opy-0.0.6.tar.gz
+[2024-05-12 05:10:40] INFO root fetch - processPackages [mlpr]: executing diffoscope
+[2024-05-12 05:10:40] INFO root fetch - processPackages [mlpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpr-0.1.8.tar.gz tmp/mlpr-0.1.9.tar.gz --markdown 20240512/m/mlpr/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 05:10:40] INFO root fetch - processPackages [cowboy-client]: executing diffoscope
+[2024-05-12 05:10:40] INFO root fetch - processPackages [cowboy-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cowboy_client-0.0.8.tar.gz tmp/cowboy_client-0.0.9.tar.gz --markdown 20240512/c/cowboy-client/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 05:10:40] INFO root fetch - processPackages [g2opy]: executing diffoscope
+[2024-05-12 05:10:40] INFO root fetch - processPackages [g2opy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g2opy-0.0.5.tar.gz tmp/g2opy-0.0.6.tar.gz --markdown 20240512/g/g2opy/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-12 05:10:41] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.8.tar.gz]
+[2024-05-12 05:10:41] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.9.tar.gz]
+[2024-05-12 05:10:41] INFO root fetch - main [MainThread]: End processing [mlpr]: success
+[2024-05-12 05:10:41] INFO root fetch - processPackages [cowboy-client]: Remove: archive file [/home/abi/fetcher/tmp/cowboy_client-0.0.8.tar.gz]
+[2024-05-12 05:10:41] INFO root fetch - processPackages [cowboy-client]: Remove: archive file [/home/abi/fetcher/tmp/cowboy_client-0.0.9.tar.gz]
+[2024-05-12 05:10:41] INFO root fetch - main [MainThread]: End processing [cowboy-client]: success
+[2024-05-12 05:10:41] INFO root fetch - processPackages [g2opy]: Remove: archive file [/home/abi/fetcher/tmp/g2opy-0.0.5.tar.gz]
+[2024-05-12 05:10:41] INFO root fetch - processPackages [g2opy]: Remove: archive file [/home/abi/fetcher/tmp/g2opy-0.0.6.tar.gz]
+[2024-05-12 05:10:41] INFO root fetch - main [MainThread]: End processing [g2opy]: success
+[2024-05-12 05:10:41] INFO root fetch - main [MainThread]: Store serial: [23166564]
