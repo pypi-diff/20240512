@@ -14960,3 +14960,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:55:40] INFO root fetch - processPackages [vnerrant]: Remove: archive file [/home/abi/fetcher/tmp/vnerrant-1.0.1rc2.tar.gz]
 [2024-05-12 19:55:40] INFO root fetch - main [MainThread]: End processing [vnerrant]: success
 [2024-05-12 19:55:40] INFO root fetch - main [MainThread]: Store serial: [23172442]
+[2024-05-12 19:57:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172442]
+[2024-05-12 19:57:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 19:57:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beets-ytimport
+[2024-05-12 19:57:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: semispiritousz
+[2024-05-12 19:57:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smart-parallelize
+[2024-05-12 19:57:49] INFO root fetch - processPackages [smart-parallelize]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-12 19:57:49] INFO root fetch - processPackages [beets-ytimport]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-05-12 19:57:49] INFO root fetch - processPackages [beets-ytimport]: Downloading https://files.pythonhosted.org/packages/7d/ec/801cbe78084b01c770ea782dfb5bc4951b689bc60af4eb7d33fca4e81319/beets_ytimport-1.7.0-py3-none-any.whl
+[2024-05-12 19:57:49] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/6a/fe/8ebbcab94845b3b9dc55872bfdc4aca22762d128d40bbf63a34bd61fac01/smart_parallelize-2.0.8.tar.gz
+[2024-05-12 19:57:49] WARNING root fetch - processPackages [semispiritousz]: Skipping, unable to determine old version
+[2024-05-12 19:57:49] INFO root fetch - main [MainThread]: End processing [semispiritousz] error
+[2024-05-12 19:57:49] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/0f/6f/48731f1909b1b681d6a4a859ba23d0b9133c578aaf5ca409036f55dbe11e/smart_parallelize-2.0.9.tar.gz
+[2024-05-12 19:57:49] INFO root fetch - processPackages [beets-ytimport]: Downloading https://files.pythonhosted.org/packages/da/6c/1fe9d4d6a12e7f2a27c24bbdfc0eb188150d9cb8fd81e85a4594fbf04dfd/beets_ytimport-1.7.1-py3-none-any.whl
+[2024-05-12 19:57:49] INFO root fetch - processPackages [smart-parallelize]: executing diffoscope
+[2024-05-12 19:57:49] INFO root fetch - processPackages [smart-parallelize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smart_parallelize-2.0.8.tar.gz tmp/smart_parallelize-2.0.9.tar.gz --markdown 20240512/s/smart-parallelize/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-12 19:57:49] INFO root fetch - processPackages [beets-ytimport]: executing diffoscope
+[2024-05-12 19:57:49] INFO root fetch - processPackages [beets-ytimport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets_ytimport-1.7.0-py3-none-any.whl.zip tmp/beets_ytimport-1.7.1-py3-none-any.whl.zip --markdown 20240512/b/beets-ytimport/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-05-12 19:57:50] INFO root fetch - processPackages [beets-ytimport]: Remove: archive file [/home/abi/fetcher/tmp/beets_ytimport-1.7.0-py3-none-any.whl.zip]
+[2024-05-12 19:57:50] INFO root fetch - processPackages [beets-ytimport]: Remove: archive file [/home/abi/fetcher/tmp/beets_ytimport-1.7.1-py3-none-any.whl.zip]
+[2024-05-12 19:57:50] INFO root fetch - main [MainThread]: End processing [beets-ytimport]: success
+[2024-05-12 19:57:50] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.8.tar.gz]
+[2024-05-12 19:57:50] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.9.tar.gz]
+[2024-05-12 19:57:50] INFO root fetch - main [MainThread]: End processing [smart-parallelize]: success
+[2024-05-12 19:57:50] INFO root fetch - main [MainThread]: Store serial: [23172451]
