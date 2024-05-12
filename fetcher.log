@@ -17614,3 +17614,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:45:31] INFO root fetch - processPackages [robotcode]: Remove: archive file [/home/abi/fetcher/tmp/robotcode-0.9.6.tar.gz]
 [2024-05-12 22:45:31] INFO root fetch - main [MainThread]: End processing [robotcode]: success
 [2024-05-12 22:45:31] INFO root fetch - main [MainThread]: Store serial: [23173728]
+[2024-05-12 22:47:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173728]
+[2024-05-12 22:47:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 22:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-otp-webauthn
+[2024-05-12 22:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-historical-currencies
+[2024-05-12 22:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: antalkaliz
+[2024-05-12 22:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: osmateriaz
+[2024-05-12 22:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-cast
+[2024-05-12 22:47:41] WARNING root fetch - processPackages [osmateriaz]: Skipping, unable to determine old version
+[2024-05-12 22:47:41] INFO root fetch - main [MainThread]: End processing [osmateriaz] error
+[2024-05-12 22:47:41] WARNING root fetch - processPackages [antalkaliz]: Skipping, unable to determine old version
+[2024-05-12 22:47:41] INFO root fetch - main [MainThread]: End processing [antalkaliz] error
+[2024-05-12 22:47:41] WARNING root fetch - processPackages [django-otp-webauthn]: Skipping, unable to determine old version
+[2024-05-12 22:47:41] INFO root fetch - main [MainThread]: End processing [django-otp-webauthn] error
+[2024-05-12 22:47:41] INFO root fetch - processPackages [django-historical-currencies]: New version: [0.0.3] Old Version: [0.0.2.post1]
+[2024-05-12 22:47:41] INFO root fetch - processPackages [django-cast]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-12 22:47:41] INFO root fetch - processPackages [django-historical-currencies]: Downloading https://files.pythonhosted.org/packages/9c/d6/a78a94866ee010c12fff68e9da958c93112be0c020980195249913339b8b/django-historical-currencies-0.0.2.post1.tar.gz
+[2024-05-12 22:47:41] INFO root fetch - processPackages [django-cast]: Downloading https://files.pythonhosted.org/packages/08/d0/6455a8c6cc1a455997e400140263ce181dbcef2b961935fa657f84fa4304/django-cast-0.2.8.tar.gz
+[2024-05-12 22:47:41] INFO root fetch - processPackages [django-historical-currencies]: Downloading https://files.pythonhosted.org/packages/21/20/6382fa35291be93fe1a72ade724f8d30c47b707958da10eebd927fb84a8c/django_historical_currencies-0.0.3.tar.gz
+[2024-05-12 22:47:41] INFO root fetch - processPackages [django-historical-currencies]: executing diffoscope
+[2024-05-12 22:47:41] INFO root fetch - processPackages [django-historical-currencies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-historical-currencies-0.0.2.post1.tar.gz tmp/django_historical_currencies-0.0.3.tar.gz --markdown 20240512/d/django-historical-currencies/0.0.2.post1-0.0.3/README.md --exclude *.pyd
+[2024-05-12 22:47:42] INFO root fetch - processPackages [django-historical-currencies]: Remove: archive file [/home/abi/fetcher/tmp/django-historical-currencies-0.0.2.post1.tar.gz]
+[2024-05-12 22:47:42] INFO root fetch - processPackages [django-historical-currencies]: Remove: archive file [/home/abi/fetcher/tmp/django_historical_currencies-0.0.3.tar.gz]
+[2024-05-12 22:47:42] INFO root fetch - main [MainThread]: End processing [django-historical-currencies]: success
+[2024-05-12 22:47:42] INFO root fetch - processPackages [django-cast]: Downloading https://files.pythonhosted.org/packages/1e/ba/729f0c86f18455387a69c10dd88886e8da0093c7771abb6bd65065a7b70c/django-cast-0.2.9.tar.gz
+[2024-05-12 22:47:43] INFO root fetch - processPackages [django-cast]: executing diffoscope
+[2024-05-12 22:47:43] INFO root fetch - processPackages [django-cast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-cast-0.2.8.tar.gz tmp/django-cast-0.2.9.tar.gz --markdown 20240512/d/django-cast/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-12 22:47:44] INFO root fetch - processPackages [django-cast]: Remove: archive file [/home/abi/fetcher/tmp/django-cast-0.2.8.tar.gz]
+[2024-05-12 22:47:44] INFO root fetch - processPackages [django-cast]: Remove: archive file [/home/abi/fetcher/tmp/django-cast-0.2.9.tar.gz]
+[2024-05-12 22:47:44] INFO root fetch - main [MainThread]: End processing [django-cast]: success
+[2024-05-12 22:47:44] INFO root fetch - main [MainThread]: Store serial: [23173749]
