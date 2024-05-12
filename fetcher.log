@@ -16481,3 +16481,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:40:08] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.3.0.dev2.tar.gz]
 [2024-05-12 21:40:08] INFO root fetch - main [MainThread]: End processing [torch-model-manager]: success
 [2024-05-12 21:40:08] INFO root fetch - main [MainThread]: Store serial: [23173128]
+[2024-05-12 21:42:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173128]
+[2024-05-12 21:42:16] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-12 21:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torch-model-manager
+[2024-05-12 21:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tcrutils
+[2024-05-12 21:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypharm
+[2024-05-12 21:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: profitpulse
+[2024-05-12 21:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: proconfiscationz
+[2024-05-12 21:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: causalimpactx
+[2024-05-12 21:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: luma-ml
+[2024-05-12 21:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fastapi-file-router
+[2024-05-12 21:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: counterparadoxz
+[2024-05-12 21:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: colvert
+[2024-05-12 21:42:17] INFO root fetch - processPackages [profitpulse]: New version: [2.1.0] Old Version: [2.0.1]
+[2024-05-12 21:42:17] WARNING root fetch - processPackages [colvert]: Skipping, unable to determine old version
+[2024-05-12 21:42:17] INFO root fetch - main [MainThread]: End processing [colvert] error
+[2024-05-12 21:42:17] INFO root fetch - processPackages [torch-model-manager]: New version: [0.3.0.dev3] Old Version: [0.3.0.dev2]
+[2024-05-12 21:42:17] INFO root fetch - processPackages [profitpulse]: Downloading https://files.pythonhosted.org/packages/24/48/36be22a9c0569bdaf6078e26a19d8b43b262a472e55360cbdf5cdad0417b/profitpulse-2.0.1.tar.gz
+[2024-05-12 21:42:17] INFO root fetch - processPackages [pypharm]: New version: [1.3.5] Old Version: [1.3.3]
+[2024-05-12 21:42:17] INFO root fetch - processPackages [causalimpactx]: New version: [1.0.0] Old Version: [0.0.2]
+[2024-05-12 21:42:17] WARNING root fetch - processPackages [counterparadoxz]: Skipping, unable to determine old version
+[2024-05-12 21:42:17] INFO root fetch - main [MainThread]: End processing [counterparadoxz] error
+[2024-05-12 21:42:17] WARNING root fetch - processPackages [proconfiscationz]: Skipping, unable to determine old version
+[2024-05-12 21:42:17] INFO root fetch - main [MainThread]: End processing [proconfiscationz] error
+[2024-05-12 21:42:17] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/23/b0/86d67352be4b48db81e5d596c4a0675da6184dd7a0322393331fbe75f0ea/torch_model_manager-0.3.0.dev2.tar.gz
+[2024-05-12 21:42:17] WARNING root fetch - processPackages [fastapi-file-router]: Skipping, unable to determine old version
+[2024-05-12 21:42:17] INFO root fetch - main [MainThread]: End processing [fastapi-file-router] error
+[2024-05-12 21:42:17] INFO root fetch - processPackages [luma-ml]: New version: [0.7.5] Old Version: [0.7.4]
+[2024-05-12 21:42:17] INFO root fetch - processPackages [tcrutils]: New version: [12.0.156] Old Version: [12.0.154]
+[2024-05-12 21:42:17] INFO root fetch - processPackages [pypharm]: Downloading https://files.pythonhosted.org/packages/9d/cb/7613e382c6d86597a93c61fcedf637a0e6c88236e48aa9a9c12ae8108dee/pypharm-1.3.3.tar.gz
+[2024-05-12 21:42:17] INFO root fetch - processPackages [causalimpactx]: Downloading https://files.pythonhosted.org/packages/b1/01/15f97583c90253da6111a1db868b0d899ab0b09fd8183df9da7e713ff56c/causalimpactx-0.0.2.tar.gz
+[2024-05-12 21:42:17] INFO root fetch - processPackages [luma-ml]: Downloading https://files.pythonhosted.org/packages/2b/8e/3869e6d45407ce20f858d27f1ed43e62d0aae4304e630bcf96742997ba05/luma-ml-0.7.4.tar.gz
+[2024-05-12 21:42:17] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/73/48/e8a68c51cdbda23acca03cfe5dfa452f12aaaeb1cda173617be1b10ac586/tcrutils-12.0.154.tar.gz
+[2024-05-12 21:42:17] INFO root fetch - processPackages [profitpulse]: Downloading https://files.pythonhosted.org/packages/66/c6/1eb88cbb229175a6866c5c37d691318e98a48d303c3fd83c8e4985d4180c/profitpulse-2.1.0.tar.gz
+[2024-05-12 21:42:17] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/bc/a5/9f28cf2a90dd034c79e2ceae0990b373ab8ec47b7951cca6281f8b232b3e/torch_model_manager-0.3.0.dev3.tar.gz
+[2024-05-12 21:42:17] INFO root fetch - processPackages [profitpulse]: executing diffoscope
+[2024-05-12 21:42:17] INFO root fetch - processPackages [profitpulse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profitpulse-2.0.1.tar.gz tmp/profitpulse-2.1.0.tar.gz --markdown 20240512/p/profitpulse/2.0.1-2.1.0/README.md --exclude *.pyd
+[2024-05-12 21:42:17] INFO root fetch - processPackages [torch-model-manager]: executing diffoscope
+[2024-05-12 21:42:17] INFO root fetch - processPackages [torch-model-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_manager-0.3.0.dev2.tar.gz tmp/torch_model_manager-0.3.0.dev3.tar.gz --markdown 20240512/t/torch-model-manager/0.3.0.dev2-0.3.0.dev3/README.md --exclude *.pyd
+[2024-05-12 21:42:17] INFO root fetch - processPackages [pypharm]: Downloading https://files.pythonhosted.org/packages/c8/ce/e59c3e1db1949b0fba9514682ca7e438cae52ae45c310c13a4d88eaaa0c0/pypharm-1.3.5.tar.gz
+[2024-05-12 21:42:17] INFO root fetch - processPackages [causalimpactx]: Downloading https://files.pythonhosted.org/packages/76/3e/35ff43c854a27a299a5a16bc83a9b38f5880405269b2937ba28519c6d84a/causalimpactx-1.0.0.tar.gz
+[2024-05-12 21:42:17] INFO root fetch - processPackages [luma-ml]: Downloading https://files.pythonhosted.org/packages/4c/c4/8874f4031cec9b20faffec55cd9355f30504d37586884e43a6f25d83056b/luma-ml-0.7.5.tar.gz
+[2024-05-12 21:42:17] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/3e/0e/6c70806652428e28f168d55a7bdb5c58b398545182425fcdbaaf1863c497/tcrutils-12.0.156.tar.gz
+[2024-05-12 21:42:17] INFO root fetch - processPackages [pypharm]: executing diffoscope
+[2024-05-12 21:42:17] INFO root fetch - processPackages [pypharm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypharm-1.3.3.tar.gz tmp/pypharm-1.3.5.tar.gz --markdown 20240512/p/pypharm/1.3.3-1.3.5/README.md --exclude *.pyd
+[2024-05-12 21:42:17] INFO root fetch - processPackages [causalimpactx]: executing diffoscope
+[2024-05-12 21:42:17] INFO root fetch - processPackages [causalimpactx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/causalimpactx-0.0.2.tar.gz tmp/causalimpactx-1.0.0.tar.gz --markdown 20240512/c/causalimpactx/0.0.2-1.0.0/README.md --exclude *.pyd
+[2024-05-12 21:42:17] INFO root fetch - processPackages [luma-ml]: executing diffoscope
+[2024-05-12 21:42:17] INFO root fetch - processPackages [luma-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luma-ml-0.7.4.tar.gz tmp/luma-ml-0.7.5.tar.gz --markdown 20240512/l/luma-ml/0.7.4-0.7.5/README.md --exclude *.pyd
+[2024-05-12 21:42:17] INFO root fetch - processPackages [tcrutils]: executing diffoscope
+[2024-05-12 21:42:17] INFO root fetch - processPackages [tcrutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcrutils-12.0.154.tar.gz tmp/tcrutils-12.0.156.tar.gz --markdown 20240512/t/tcrutils/12.0.154-12.0.156/README.md --exclude *.pyd
+[2024-05-12 21:42:18] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.3.0.dev2.tar.gz]
+[2024-05-12 21:42:18] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.3.0.dev3.tar.gz]
+[2024-05-12 21:42:18] INFO root fetch - main [MainThread]: End processing [torch-model-manager]: success
+[2024-05-12 21:42:18] INFO root fetch - processPackages [profitpulse]: Remove: archive file [/home/abi/fetcher/tmp/profitpulse-2.0.1.tar.gz]
+[2024-05-12 21:42:18] INFO root fetch - processPackages [profitpulse]: Remove: archive file [/home/abi/fetcher/tmp/profitpulse-2.1.0.tar.gz]
+[2024-05-12 21:42:18] INFO root fetch - main [MainThread]: End processing [profitpulse]: success
+[2024-05-12 21:42:18] INFO root fetch - processPackages [pypharm]: Remove: archive file [/home/abi/fetcher/tmp/pypharm-1.3.3.tar.gz]
+[2024-05-12 21:42:18] INFO root fetch - processPackages [pypharm]: Remove: archive file [/home/abi/fetcher/tmp/pypharm-1.3.5.tar.gz]
+[2024-05-12 21:42:18] INFO root fetch - main [MainThread]: End processing [pypharm]: success
+[2024-05-12 21:42:18] INFO root fetch - processPackages [causalimpactx]: Remove: archive file [/home/abi/fetcher/tmp/causalimpactx-0.0.2.tar.gz]
+[2024-05-12 21:42:18] INFO root fetch - processPackages [causalimpactx]: Remove: archive file [/home/abi/fetcher/tmp/causalimpactx-1.0.0.tar.gz]
+[2024-05-12 21:42:18] INFO root fetch - main [MainThread]: End processing [causalimpactx]: success
+[2024-05-12 21:42:18] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.154.tar.gz]
+[2024-05-12 21:42:18] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.156.tar.gz]
+[2024-05-12 21:42:18] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
+[2024-05-12 21:42:18] INFO root fetch - processPackages [luma-ml]: Remove: archive file [/home/abi/fetcher/tmp/luma-ml-0.7.4.tar.gz]
+[2024-05-12 21:42:18] INFO root fetch - processPackages [luma-ml]: Remove: archive file [/home/abi/fetcher/tmp/luma-ml-0.7.5.tar.gz]
+[2024-05-12 21:42:18] INFO root fetch - main [MainThread]: End processing [luma-ml]: success
+[2024-05-12 21:42:18] INFO root fetch - main [MainThread]: Store serial: [23173162]
