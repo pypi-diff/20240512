@@ -5153,3 +5153,15 @@
 [2024-05-12 07:56:47] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_phy_mod_otfs-2.1.5.tar.gz]
 [2024-05-12 07:56:47] INFO root fetch - main [MainThread]: End processing [whatshow-phy-mod-otfs]: success
 [2024-05-12 07:56:47] INFO root fetch - main [MainThread]: Store serial: [23167360]
+[2024-05-12 07:58:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167360]
+[2024-05-12 07:58:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 07:58:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sbn
+[2024-05-12 07:58:55] INFO root fetch - processPackages [sbn]: New version: [95] Old Version: [94]
+[2024-05-12 07:58:56] INFO root fetch - processPackages [sbn]: Downloading https://files.pythonhosted.org/packages/b4/00/34859e773da7c6865dd524d01fa94b51c3bb9129a3b60b513814baeb8da7/sbn-94.tar.gz
+[2024-05-12 07:58:57] INFO root fetch - processPackages [sbn]: Downloading https://files.pythonhosted.org/packages/17/ef/af825578ef2450b415ac488748e6cbc2b6ec844cb2696f0702ccaacba789/sbn-95.tar.gz
+[2024-05-12 07:58:57] INFO root fetch - processPackages [sbn]: executing diffoscope
+[2024-05-12 07:58:57] INFO root fetch - processPackages [sbn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbn-94.tar.gz tmp/sbn-95.tar.gz --markdown 20240512/s/sbn/94-95/README.md --exclude *.pyd
+[2024-05-12 07:58:58] INFO root fetch - processPackages [sbn]: Remove: archive file [/home/abi/fetcher/tmp/sbn-94.tar.gz]
+[2024-05-12 07:58:58] INFO root fetch - processPackages [sbn]: Remove: archive file [/home/abi/fetcher/tmp/sbn-95.tar.gz]
+[2024-05-12 07:58:58] INFO root fetch - main [MainThread]: End processing [sbn]: success
+[2024-05-12 07:58:58] INFO root fetch - main [MainThread]: Store serial: [23167362]
