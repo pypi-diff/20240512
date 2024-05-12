@@ -4613,3 +4613,39 @@
 [2024-05-12 06:58:18] INFO root fetch - processPackages [image-component-streamlit]: Remove: archive file [/home/abi/fetcher/tmp/image-component-streamlit-0.0.6.tar.gz]
 [2024-05-12 06:58:18] INFO root fetch - main [MainThread]: End processing [image-component-streamlit]: success
 [2024-05-12 06:58:18] INFO root fetch - main [MainThread]: Store serial: [23167102]
+[2024-05-12 07:00:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167102]
+[2024-05-12 07:00:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 07:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Bigsansar
+[2024-05-12 07:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: greatbrowser
+[2024-05-12 07:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anki-card-create
+[2024-05-12 07:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: genocide
+[2024-05-12 07:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oliguriaz
+[2024-05-12 07:00:26] WARNING root fetch - processPackages [greatbrowser]: Skipping, unable to determine old version
+[2024-05-12 07:00:26] INFO root fetch - main [MainThread]: End processing [greatbrowser] error
+[2024-05-12 07:00:26] INFO root fetch - processPackages [anki-card-create]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 07:00:26] INFO root fetch - processPackages [Bigsansar]: New version: [2.6.2] Old Version: [2.6.1]
+[2024-05-12 07:00:26] WARNING root fetch - processPackages [oliguriaz]: Skipping, unable to determine old version
+[2024-05-12 07:00:26] INFO root fetch - main [MainThread]: End processing [oliguriaz] error
+[2024-05-12 07:00:26] INFO root fetch - processPackages [genocide]: New version: [91] Old Version: [90]
+[2024-05-12 07:00:26] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/ba/ae/0e635c7599dc6787223270ef69acccaefd6ca7bf539f5ac425a73ad8ddc2/bigsansar-2.6.1.tar.gz
+[2024-05-12 07:00:26] INFO root fetch - processPackages [anki-card-create]: Downloading https://files.pythonhosted.org/packages/c8/f8/3a50e197477dc7efe447ee1720973e60f0c6d2315f6429dfc788e04dc1d4/anki_card_create-0.1.0.tar.gz
+[2024-05-12 07:00:27] INFO root fetch - processPackages [genocide]: Downloading https://files.pythonhosted.org/packages/2a/ca/2a8f5185e8595c21615f335b163fb52cc0092719a61f6f46bdf76aaba69c/genocide-90.tar.gz
+[2024-05-12 07:00:27] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/aa/7d/adeeb42b1bcbddc523d5e5a2d870775ac9965ef9ce88769c2c99db6edde0/bigsansar-2.6.2.tar.gz
+[2024-05-12 07:00:27] INFO root fetch - processPackages [anki-card-create]: Downloading https://files.pythonhosted.org/packages/70/a4/9162a31424ae242abf8e9a771e8bcf3dee116cacbf42899b58cdd7065e76/anki_card_create-0.1.1.tar.gz
+[2024-05-12 07:00:27] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2024-05-12 07:00:27] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigsansar-2.6.1.tar.gz tmp/bigsansar-2.6.2.tar.gz --markdown 20240512/B/Bigsansar/2.6.1-2.6.2/README.md --exclude *.pyd
+[2024-05-12 07:00:27] INFO root fetch - processPackages [anki-card-create]: executing diffoscope
+[2024-05-12 07:00:27] INFO root fetch - processPackages [anki-card-create]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anki_card_create-0.1.0.tar.gz tmp/anki_card_create-0.1.1.tar.gz --markdown 20240512/a/anki-card-create/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 07:00:27] INFO root fetch - processPackages [genocide]: Downloading https://files.pythonhosted.org/packages/71/6d/f0e393ca7d1bfa65c6ccf1bbb0a3297ad94d25c42b130526ca74d11ddcc4/genocide-91.tar.gz
+[2024-05-12 07:00:27] INFO root fetch - processPackages [anki-card-create]: Remove: archive file [/home/abi/fetcher/tmp/anki_card_create-0.1.0.tar.gz]
+[2024-05-12 07:00:27] INFO root fetch - processPackages [anki-card-create]: Remove: archive file [/home/abi/fetcher/tmp/anki_card_create-0.1.1.tar.gz]
+[2024-05-12 07:00:27] INFO root fetch - main [MainThread]: End processing [anki-card-create]: success
+[2024-05-12 07:00:28] INFO root fetch - processPackages [genocide]: executing diffoscope
+[2024-05-12 07:00:28] INFO root fetch - processPackages [genocide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genocide-90.tar.gz tmp/genocide-91.tar.gz --markdown 20240512/g/genocide/90-91/README.md --exclude *.pyd
+[2024-05-12 07:00:28] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.6.1.tar.gz]
+[2024-05-12 07:00:28] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.6.2.tar.gz]
+[2024-05-12 07:00:28] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2024-05-12 07:00:29] INFO root fetch - processPackages [genocide]: Remove: archive file [/home/abi/fetcher/tmp/genocide-90.tar.gz]
+[2024-05-12 07:00:29] INFO root fetch - processPackages [genocide]: Remove: archive file [/home/abi/fetcher/tmp/genocide-91.tar.gz]
+[2024-05-12 07:00:29] INFO root fetch - main [MainThread]: End processing [genocide]: success
+[2024-05-12 07:00:29] INFO root fetch - main [MainThread]: Store serial: [23167117]
