@@ -16025,3 +16025,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:07:29] INFO root fetch - processPackages [ediri-scaleway]: Remove: archive file [/home/abi/fetcher/tmp/ediri_scaleway-2.36.0.tar.gz]
 [2024-05-12 21:07:29] INFO root fetch - main [MainThread]: End processing [ediri-scaleway]: success
 [2024-05-12 21:07:29] INFO root fetch - main [MainThread]: Store serial: [23172925]
+[2024-05-12 21:09:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172925]
+[2024-05-12 21:09:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 21:09:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyCatFile
+[2024-05-12 21:09:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: otio-kdenlive-adapter
+[2024-05-12 21:09:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lib_version_group3
+[2024-05-12 21:09:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-search
+[2024-05-12 21:09:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sequentialdw
+[2024-05-12 21:09:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: untuneablyz
+[2024-05-12 21:09:38] INFO root fetch - processPackages [sequentialdw]: New version: [1] Old Version: [0.1]
+[2024-05-12 21:09:39] INFO root fetch - processPackages [lib_version_group3]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 21:09:39] WARNING root fetch - processPackages [otio-kdenlive-adapter]: Skipping, unable to determine old version
+[2024-05-12 21:09:39] INFO root fetch - main [MainThread]: End processing [otio-kdenlive-adapter] error
+[2024-05-12 21:09:39] WARNING root fetch - processPackages [untuneablyz]: Skipping, unable to determine old version
+[2024-05-12 21:09:39] INFO root fetch - main [MainThread]: End processing [untuneablyz] error
+[2024-05-12 21:09:39] INFO root fetch - processPackages [python-search]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-12 21:09:39] INFO root fetch - processPackages [PyCatFile]: New version: [0.9.8] Old Version: [0.9.6]
+[2024-05-12 21:09:39] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/45/a5/88599e2d4ffd803abb76f306bbe363af80536b5d458dee3e9494757d76c9/sequentialdw-0.1.tar.gz
+[2024-05-12 21:09:39] INFO root fetch - processPackages [lib_version_group3]: Downloading https://files.pythonhosted.org/packages/67/d3/29abce748163b9e7fc64d84ad108da765b8a681eba872831e1e211817361/lib_version_group3-0.1.0.tar.gz
+[2024-05-12 21:09:39] INFO root fetch - processPackages [PyCatFile]: Downloading https://files.pythonhosted.org/packages/08/96/4c154ca314dbb76c0bba84e70c73f3a53cd4528ee43f7ac17b54954c0b85/pycatfile-0.9.6.tar.gz
+[2024-05-12 21:09:39] INFO root fetch - processPackages [python-search]: Downloading https://files.pythonhosted.org/packages/db/4b/b4287e91d0259a2fc3e1748db1767aefef5986584287c828e612a3cf4041/python_search-0.9.8.tar.gz
+[2024-05-12 21:09:39] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/51/59/c8bcf021af5b04bc45e21262c07892446a347486a5b6fc18a129f5554605/sequentialdw-1.tar.gz
+[2024-05-12 21:09:39] INFO root fetch - processPackages [lib_version_group3]: Downloading https://files.pythonhosted.org/packages/e4/c1/e6eec09b65addd2d86535a0ac45099f80821120809b5ef9769e7127671ba/lib_version_group3-0.1.1.tar.gz
+[2024-05-12 21:09:39] INFO root fetch - processPackages [sequentialdw]: executing diffoscope
+[2024-05-12 21:09:39] INFO root fetch - processPackages [sequentialdw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sequentialdw-0.1.tar.gz tmp/sequentialdw-1.tar.gz --markdown 20240512/s/sequentialdw/0.1-1/README.md --exclude *.pyd
+[2024-05-12 21:09:39] INFO root fetch - processPackages [PyCatFile]: Downloading https://files.pythonhosted.org/packages/d8/c3/779688dd1beca850480edb18c8e26ce64dcf364b8ab9b110d2a55552ca93/pycatfile-0.9.8.tar.gz
+[2024-05-12 21:09:39] INFO root fetch - processPackages [python-search]: Downloading https://files.pythonhosted.org/packages/fa/fd/c4e39b116bed9289129bb33d93116ff452c1fe46ea696b4caa2d8ddb73a5/python_search-0.9.9.tar.gz
+[2024-05-12 21:09:39] INFO root fetch - processPackages [lib_version_group3]: executing diffoscope
+[2024-05-12 21:09:39] INFO root fetch - processPackages [lib_version_group3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib_version_group3-0.1.0.tar.gz tmp/lib_version_group3-0.1.1.tar.gz --markdown 20240512/l/lib_version_group3/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 21:09:39] INFO root fetch - processPackages [PyCatFile]: executing diffoscope
+[2024-05-12 21:09:39] INFO root fetch - processPackages [PyCatFile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycatfile-0.9.6.tar.gz tmp/pycatfile-0.9.8.tar.gz --markdown 20240512/P/PyCatFile/0.9.6-0.9.8/README.md --exclude *.pyd
+[2024-05-12 21:09:39] INFO root fetch - processPackages [python-search]: executing diffoscope
+[2024-05-12 21:09:39] INFO root fetch - processPackages [python-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_search-0.9.8.tar.gz tmp/python_search-0.9.9.tar.gz --markdown 20240512/p/python-search/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-12 21:09:40] INFO root fetch - processPackages [lib_version_group3]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_group3-0.1.0.tar.gz]
+[2024-05-12 21:09:40] INFO root fetch - processPackages [lib_version_group3]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_group3-0.1.1.tar.gz]
+[2024-05-12 21:09:40] INFO root fetch - main [MainThread]: End processing [lib_version_group3]: success
+[2024-05-12 21:09:40] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-0.1.tar.gz]
+[2024-05-12 21:09:40] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-1.tar.gz]
+[2024-05-12 21:09:40] INFO root fetch - main [MainThread]: End processing [sequentialdw]: success
+[2024-05-12 21:09:40] INFO root fetch - processPackages [PyCatFile]: Remove: archive file [/home/abi/fetcher/tmp/pycatfile-0.9.6.tar.gz]
+[2024-05-12 21:09:40] INFO root fetch - processPackages [PyCatFile]: Remove: archive file [/home/abi/fetcher/tmp/pycatfile-0.9.8.tar.gz]
+[2024-05-12 21:09:40] INFO root fetch - main [MainThread]: End processing [PyCatFile]: success
+[2024-05-12 21:09:40] INFO root fetch - processPackages [python-search]: Remove: archive file [/home/abi/fetcher/tmp/python_search-0.9.8.tar.gz]
+[2024-05-12 21:09:40] INFO root fetch - processPackages [python-search]: Remove: archive file [/home/abi/fetcher/tmp/python_search-0.9.9.tar.gz]
+[2024-05-12 21:09:40] INFO root fetch - main [MainThread]: End processing [python-search]: success
+[2024-05-12 21:09:40] INFO root fetch - main [MainThread]: Store serial: [23172945]
