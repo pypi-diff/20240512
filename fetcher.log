@@ -10476,3 +10476,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:54:06] INFO root fetch - processPackages [ofscraper]: Remove: archive file [/home/abi/fetcher/tmp/ofscraper-3.9.7.tar.gz]
 [2024-05-12 14:54:06] INFO root fetch - main [MainThread]: End processing [ofscraper]: success
 [2024-05-12 14:54:06] INFO root fetch - main [MainThread]: Store serial: [23169967]
+[2024-05-12 14:56:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169967]
+[2024-05-12 14:56:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 14:56:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: upp
+[2024-05-12 14:56:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bullbatz
+[2024-05-12 14:56:15] INFO root fetch - processPackages [upp]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-12 14:56:15] WARNING root fetch - processPackages [bullbatz]: Skipping, unable to determine old version
+[2024-05-12 14:56:15] INFO root fetch - main [MainThread]: End processing [bullbatz] error
+[2024-05-12 14:56:15] INFO root fetch - processPackages [upp]: Downloading https://files.pythonhosted.org/packages/6f/8a/cc70b2c32e90548e0b7bef04ccb7886778ef4739f3dd9a6c14c6924cdede/upp-0.2.1.tar.gz
+[2024-05-12 14:56:15] INFO root fetch - processPackages [upp]: Downloading https://files.pythonhosted.org/packages/c3/94/6917b64b4ba9efbb0ec80cfcb3b5c262416e852cc2ebe2bedddd6bdb65f7/upp-0.2.2.tar.gz
+[2024-05-12 14:56:15] INFO root fetch - processPackages [upp]: executing diffoscope
+[2024-05-12 14:56:15] INFO root fetch - processPackages [upp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upp-0.2.1.tar.gz tmp/upp-0.2.2.tar.gz --markdown 20240512/u/upp/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-12 14:56:16] INFO root fetch - processPackages [upp]: Remove: archive file [/home/abi/fetcher/tmp/upp-0.2.1.tar.gz]
+[2024-05-12 14:56:16] INFO root fetch - processPackages [upp]: Remove: archive file [/home/abi/fetcher/tmp/upp-0.2.2.tar.gz]
+[2024-05-12 14:56:16] INFO root fetch - main [MainThread]: End processing [upp]: success
+[2024-05-12 14:56:16] INFO root fetch - main [MainThread]: Store serial: [23169974]
