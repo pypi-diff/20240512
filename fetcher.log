@@ -16221,3 +16221,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:22:40] INFO root fetch - processPackages [ap0dl]: Remove: archive file [/home/abi/fetcher/tmp/ap0dl-1.6.0.tar.gz]
 [2024-05-12 21:22:40] INFO root fetch - main [MainThread]: End processing [ap0dl]: success
 [2024-05-12 21:22:40] INFO root fetch - main [MainThread]: Store serial: [23173016]
+[2024-05-12 21:24:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173016]
+[2024-05-12 21:24:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 21:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: local_tuya
+[2024-05-12 21:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SelfCalibratedConformal
+[2024-05-12 21:24:49] INFO root fetch - processPackages [SelfCalibratedConformal]: New version: [0.41] Old Version: [0.4]
+[2024-05-12 21:24:49] INFO root fetch - processPackages [local_tuya]: New version: [2.4.0] Old Version: [2.3.1]
+[2024-05-12 21:24:49] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/88/5c/2a90e5e18f5bf27beaba543725e5b71ee0c68d30d1a44a86b86d3a750f43/SelfCalibratedConformal-0.4.tar.gz
+[2024-05-12 21:24:49] INFO root fetch - processPackages [local_tuya]: Downloading https://files.pythonhosted.org/packages/10/8e/7157f9331f4197d328c7230fedabb22c962c20e3199f147931d72baef1f4/local_tuya-2.3.1.tar.gz
+[2024-05-12 21:24:49] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/05/8c/cb88bd84dd323c2597c8049e78cda7c88a9f3a85916c60d4c79d8bd6ac2e/SelfCalibratedConformal-0.41.tar.gz
+[2024-05-12 21:24:49] INFO root fetch - processPackages [SelfCalibratedConformal]: executing diffoscope
+[2024-05-12 21:24:49] INFO root fetch - processPackages [SelfCalibratedConformal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SelfCalibratedConformal-0.4.tar.gz tmp/SelfCalibratedConformal-0.41.tar.gz --markdown 20240512/S/SelfCalibratedConformal/0.4-0.41/README.md --exclude *.pyd
+[2024-05-12 21:24:49] INFO root fetch - processPackages [local_tuya]: Downloading https://files.pythonhosted.org/packages/44/89/cb76d493c34cbc69c438c8a73d9b3285db8d046a088eafe585fe6066cf8e/local_tuya-2.4.0.tar.gz
+[2024-05-12 21:24:50] INFO root fetch - processPackages [local_tuya]: executing diffoscope
+[2024-05-12 21:24:50] INFO root fetch - processPackages [local_tuya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local_tuya-2.3.1.tar.gz tmp/local_tuya-2.4.0.tar.gz --markdown 20240512/l/local_tuya/2.3.1-2.4.0/README.md --exclude *.pyd
+[2024-05-12 21:24:50] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.4.tar.gz]
+[2024-05-12 21:24:50] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.41.tar.gz]
+[2024-05-12 21:24:50] INFO root fetch - main [MainThread]: End processing [SelfCalibratedConformal]: success
+[2024-05-12 21:24:50] INFO root fetch - processPackages [local_tuya]: Remove: archive file [/home/abi/fetcher/tmp/local_tuya-2.3.1.tar.gz]
+[2024-05-12 21:24:50] INFO root fetch - processPackages [local_tuya]: Remove: archive file [/home/abi/fetcher/tmp/local_tuya-2.4.0.tar.gz]
+[2024-05-12 21:24:50] INFO root fetch - main [MainThread]: End processing [local_tuya]: success
+[2024-05-12 21:24:50] INFO root fetch - main [MainThread]: Store serial: [23173023]
