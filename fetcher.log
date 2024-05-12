@@ -3950,3 +3950,24 @@
 [2024-05-12 05:45:44] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.0.8-py3-none-any.whl.zip]
 [2024-05-12 05:45:44] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
 [2024-05-12 05:45:44] INFO root fetch - main [MainThread]: Store serial: [23166781]
+[2024-05-12 05:47:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166781]
+[2024-05-12 05:47:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 05:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: greatbrowser
+[2024-05-12 05:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Bigsansar
+[2024-05-12 05:47:52] INFO root fetch - processPackages [Bigsansar]: New version: [2.6.0] Old Version: [2.5.9]
+[2024-05-12 05:47:52] INFO root fetch - processPackages [greatbrowser]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-12 05:47:52] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/15/7c/be93bba2071610341c6d77ee21abd3d405ad47fd20d77d96e3fd7fe83f44/bigsansar-2.5.9.tar.gz
+[2024-05-12 05:47:52] INFO root fetch - processPackages [greatbrowser]: Downloading https://files.pythonhosted.org/packages/e2/4d/e64d51120b68fea8e723f129e42b77c14ff66cc59fbb4a8778cfa923794e/greatbrowser-0.0.7.tar.gz
+[2024-05-12 05:47:52] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/d1/4c/bc1da1edb60800eeff2980acdaf2eccbc04fa4aa7afbaaf8f447394ad787/bigsansar-2.6.0.tar.gz
+[2024-05-12 05:47:52] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2024-05-12 05:47:52] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigsansar-2.5.9.tar.gz tmp/bigsansar-2.6.0.tar.gz --markdown 20240512/B/Bigsansar/2.5.9-2.6.0/README.md --exclude *.pyd
+[2024-05-12 05:47:53] INFO root fetch - processPackages [greatbrowser]: Downloading https://files.pythonhosted.org/packages/7a/62/0df9cc14f42f9a63ddc38466751456ce258fa5ef579b58fef2eae1a5727f/greatbrowser-0.0.9.tar.gz
+[2024-05-12 05:47:53] INFO root fetch - processPackages [greatbrowser]: executing diffoscope
+[2024-05-12 05:47:53] INFO root fetch - processPackages [greatbrowser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/greatbrowser-0.0.7.tar.gz tmp/greatbrowser-0.0.9.tar.gz --markdown 20240512/g/greatbrowser/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-12 05:47:53] INFO root fetch - processPackages [greatbrowser]: Remove: archive file [/home/abi/fetcher/tmp/greatbrowser-0.0.7.tar.gz]
+[2024-05-12 05:47:53] INFO root fetch - processPackages [greatbrowser]: Remove: archive file [/home/abi/fetcher/tmp/greatbrowser-0.0.9.tar.gz]
+[2024-05-12 05:47:53] INFO root fetch - main [MainThread]: End processing [greatbrowser]: success
+[2024-05-12 05:47:53] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.5.9.tar.gz]
+[2024-05-12 05:47:53] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.6.0.tar.gz]
+[2024-05-12 05:47:53] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2024-05-12 05:47:53] INFO root fetch - main [MainThread]: Store serial: [23166805]
