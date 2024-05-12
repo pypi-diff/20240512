@@ -7253,3 +7253,27 @@
 [2024-05-12 10:49:44] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.4.9.tar.gz]
 [2024-05-12 10:49:44] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2024-05-12 10:49:44] INFO root fetch - main [MainThread]: Store serial: [23168332]
+[2024-05-12 10:51:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168332]
+[2024-05-12 10:51:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 10:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poetry-stale-dependencies
+[2024-05-12 10:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nouveauxz
+[2024-05-12 10:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: syntrac-opentelemetry-instrumentation-langchain
+[2024-05-12 10:51:52] WARNING root fetch - processPackages [nouveauxz]: Skipping, unable to determine old version
+[2024-05-12 10:51:52] INFO root fetch - main [MainThread]: End processing [nouveauxz] error
+[2024-05-12 10:51:52] INFO root fetch - processPackages [poetry-stale-dependencies]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-05-12 10:51:52] INFO root fetch - processPackages [syntrac-opentelemetry-instrumentation-langchain]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-12 10:51:53] INFO root fetch - processPackages [poetry-stale-dependencies]: Downloading https://files.pythonhosted.org/packages/f8/cf/10bd184f821112295d1687956495813144e47583790d7a2006b9f5a96b0b/poetry_stale_dependencies-0.1.2.tar.gz
+[2024-05-12 10:51:53] INFO root fetch - processPackages [syntrac-opentelemetry-instrumentation-langchain]: Downloading https://files.pythonhosted.org/packages/c3/58/739f234cf6ddf7da44f4313e01875e59fec0335da4a0721af8659d8a43eb/syntrac_opentelemetry_instrumentation_langchain-0.0.3.tar.gz
+[2024-05-12 10:51:54] INFO root fetch - processPackages [poetry-stale-dependencies]: Downloading https://files.pythonhosted.org/packages/b3/bf/07ea2e6bb1b9253de63ec86174f3c9452ef8d69d92d42ce464889092dc42/poetry_stale_dependencies-0.2.0.tar.gz
+[2024-05-12 10:51:54] INFO root fetch - processPackages [syntrac-opentelemetry-instrumentation-langchain]: Downloading https://files.pythonhosted.org/packages/54/a4/e9707967d446564a37125924c778b57867c5d5421e98cc2168ce2b631198/syntrac_opentelemetry_instrumentation_langchain-0.0.4.tar.gz
+[2024-05-12 10:51:54] INFO root fetch - processPackages [poetry-stale-dependencies]: executing diffoscope
+[2024-05-12 10:51:54] INFO root fetch - processPackages [poetry-stale-dependencies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_stale_dependencies-0.1.2.tar.gz tmp/poetry_stale_dependencies-0.2.0.tar.gz --markdown 20240512/p/poetry-stale-dependencies/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-05-12 10:51:54] INFO root fetch - processPackages [syntrac-opentelemetry-instrumentation-langchain]: executing diffoscope
+[2024-05-12 10:51:54] INFO root fetch - processPackages [syntrac-opentelemetry-instrumentation-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syntrac_opentelemetry_instrumentation_langchain-0.0.3.tar.gz tmp/syntrac_opentelemetry_instrumentation_langchain-0.0.4.tar.gz --markdown 20240512/s/syntrac-opentelemetry-instrumentation-langchain/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-12 10:51:55] INFO root fetch - processPackages [syntrac-opentelemetry-instrumentation-langchain]: Remove: archive file [/home/abi/fetcher/tmp/syntrac_opentelemetry_instrumentation_langchain-0.0.3.tar.gz]
+[2024-05-12 10:51:55] INFO root fetch - processPackages [syntrac-opentelemetry-instrumentation-langchain]: Remove: archive file [/home/abi/fetcher/tmp/syntrac_opentelemetry_instrumentation_langchain-0.0.4.tar.gz]
+[2024-05-12 10:51:55] INFO root fetch - main [MainThread]: End processing [syntrac-opentelemetry-instrumentation-langchain]: success
+[2024-05-12 10:51:55] INFO root fetch - processPackages [poetry-stale-dependencies]: Remove: archive file [/home/abi/fetcher/tmp/poetry_stale_dependencies-0.1.2.tar.gz]
+[2024-05-12 10:51:55] INFO root fetch - processPackages [poetry-stale-dependencies]: Remove: archive file [/home/abi/fetcher/tmp/poetry_stale_dependencies-0.2.0.tar.gz]
+[2024-05-12 10:51:55] INFO root fetch - main [MainThread]: End processing [poetry-stale-dependencies]: success
+[2024-05-12 10:51:55] INFO root fetch - main [MainThread]: Store serial: [23168342]
