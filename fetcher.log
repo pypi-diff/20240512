@@ -10701,3 +10701,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:16:37] INFO root fetch - processPackages [battleship-tui]: Remove: archive file [/home/abi/fetcher/tmp/battleship_tui-0.9.1.tar.gz]
 [2024-05-12 15:16:37] INFO root fetch - main [MainThread]: End processing [battleship-tui]: success
 [2024-05-12 15:16:37] INFO root fetch - main [MainThread]: Store serial: [23170072]
+[2024-05-12 15:18:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170072]
+[2024-05-12 15:18:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 15:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hkube-python-wrapper
+[2024-05-12 15:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exceeddata-sdk-vdata
+[2024-05-12 15:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mdpsolver
+[2024-05-12 15:18:46] WARNING root fetch - processPackages [exceeddata-sdk-vdata]: Skipping, unable to determine old version
+[2024-05-12 15:18:46] INFO root fetch - main [MainThread]: End processing [exceeddata-sdk-vdata] error
+[2024-05-12 15:18:46] INFO root fetch - processPackages [mdpsolver]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-12 15:18:46] INFO root fetch - processPackages [hkube-python-wrapper]: New version: [2.6.0.dev9] Old Version: [2.6.0.dev8]
+[2024-05-12 15:18:46] INFO root fetch - processPackages [hkube-python-wrapper]: Downloading https://files.pythonhosted.org/packages/9e/2a/38a90d83d86cabcef2e9d272b42eadd2b52efe9c007b8381a42916c05aa5/hkube_python_wrapper-2.6.0.dev8.tar.gz
+[2024-05-12 15:18:46] INFO root fetch - processPackages [mdpsolver]: Downloading https://files.pythonhosted.org/packages/c4/0e/3d2bd6c3e7cf275416ac917c9b86d8bc9ee8bb42e75b4109989dc95180f1/mdpsolver-0.9.4.tar.gz
+[2024-05-12 15:18:46] INFO root fetch - processPackages [mdpsolver]: Downloading https://files.pythonhosted.org/packages/a2/b1/58d69cc3bc1bff5bffd895202d7ff1fbc91adcc08a623e89287958130bdd/mdpsolver-0.9.5.tar.gz
+[2024-05-12 15:18:46] INFO root fetch - processPackages [hkube-python-wrapper]: Downloading https://files.pythonhosted.org/packages/ed/e9/b53819c3b451ad5f59dc0c70f2007d252adb35bf8cfe74d1fac1c1b05893/hkube_python_wrapper-2.6.0.dev9.tar.gz
+[2024-05-12 15:18:46] INFO root fetch - processPackages [hkube-python-wrapper]: executing diffoscope
+[2024-05-12 15:18:46] INFO root fetch - processPackages [hkube-python-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hkube_python_wrapper-2.6.0.dev8.tar.gz tmp/hkube_python_wrapper-2.6.0.dev9.tar.gz --markdown 20240512/h/hkube-python-wrapper/2.6.0.dev8-2.6.0.dev9/README.md --exclude *.pyd
+[2024-05-12 15:18:47] INFO root fetch - processPackages [mdpsolver]: executing diffoscope
+[2024-05-12 15:18:47] INFO root fetch - processPackages [mdpsolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdpsolver-0.9.4.tar.gz tmp/mdpsolver-0.9.5.tar.gz --markdown 20240512/m/mdpsolver/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-12 15:18:47] INFO root fetch - processPackages [hkube-python-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/hkube_python_wrapper-2.6.0.dev8.tar.gz]
+[2024-05-12 15:18:47] INFO root fetch - processPackages [hkube-python-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/hkube_python_wrapper-2.6.0.dev9.tar.gz]
+[2024-05-12 15:18:47] INFO root fetch - main [MainThread]: End processing [hkube-python-wrapper]: success
+[2024-05-12 15:18:49] INFO root fetch - processPackages [mdpsolver]: Remove: archive file [/home/abi/fetcher/tmp/mdpsolver-0.9.4.tar.gz]
+[2024-05-12 15:18:49] INFO root fetch - processPackages [mdpsolver]: Remove: archive file [/home/abi/fetcher/tmp/mdpsolver-0.9.5.tar.gz]
+[2024-05-12 15:18:49] INFO root fetch - main [MainThread]: End processing [mdpsolver]: success
+[2024-05-12 15:18:49] INFO root fetch - main [MainThread]: Store serial: [23170082]
