@@ -16956,3 +16956,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:02:05] INFO root fetch - processPackages [sage-conf]: Remove: archive file [/home/abi/fetcher/tmp/sage-conf-9.8rc0.tar.gz]
 [2024-05-12 22:02:05] INFO root fetch - main [MainThread]: End processing [sage-conf]: success
 [2024-05-12 22:02:05] INFO root fetch - main [MainThread]: Store serial: [23173348]
+[2024-05-12 22:04:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173348]
+[2024-05-12 22:04:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 22:04:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torch-model-manager
+[2024-05-12 22:04:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nanodl
+[2024-05-12 22:04:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: backtracez
+[2024-05-12 22:04:14] INFO root fetch - processPackages [torch-model-manager]: New version: [0.3.0.dev7] Old Version: [0.3.0.dev6]
+[2024-05-12 22:04:14] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/ae/ee/ae028d22d37571007a38c78e27be7e65dd25ef16edad58e1a3fdf0e801ea/torch_model_manager-0.3.0.dev6.tar.gz
+[2024-05-12 22:04:14] INFO root fetch - processPackages [nanodl]: New version: [1.2.4.dev1] Old Version: [1.2.2.dev1]
+[2024-05-12 22:04:14] WARNING root fetch - processPackages [backtracez]: Skipping, unable to determine old version
+[2024-05-12 22:04:14] INFO root fetch - main [MainThread]: End processing [backtracez] error
+[2024-05-12 22:04:15] INFO root fetch - processPackages [nanodl]: Downloading https://files.pythonhosted.org/packages/85/e3/ab955699d0e104c2d5ff2b61cd18d94fc21ffeb508d66a253aaff93a73b3/nanodl-1.2.2.dev1.tar.gz
+[2024-05-12 22:04:15] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/df/35/bd2818fa8a51f01bd5bef13e89697b59a4d9c25e9fee6dc77ed36f872371/torch_model_manager-0.3.0.dev7.tar.gz
+[2024-05-12 22:04:15] INFO root fetch - processPackages [torch-model-manager]: executing diffoscope
+[2024-05-12 22:04:15] INFO root fetch - processPackages [torch-model-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_manager-0.3.0.dev6.tar.gz tmp/torch_model_manager-0.3.0.dev7.tar.gz --markdown 20240512/t/torch-model-manager/0.3.0.dev6-0.3.0.dev7/README.md --exclude *.pyd
+[2024-05-12 22:04:15] INFO root fetch - processPackages [nanodl]: Downloading https://files.pythonhosted.org/packages/96/2d/3325abf90d1d44364287d8024c80538c8f70ac827ea45c9530ad7443c82c/nanodl-1.2.4.dev1.tar.gz
+[2024-05-12 22:04:15] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.3.0.dev6.tar.gz]
+[2024-05-12 22:04:15] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.3.0.dev7.tar.gz]
+[2024-05-12 22:04:15] INFO root fetch - main [MainThread]: End processing [torch-model-manager]: success
+[2024-05-12 22:04:15] INFO root fetch - processPackages [nanodl]: executing diffoscope
+[2024-05-12 22:04:15] INFO root fetch - processPackages [nanodl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanodl-1.2.2.dev1.tar.gz tmp/nanodl-1.2.4.dev1.tar.gz --markdown 20240512/n/nanodl/1.2.2.dev1-1.2.4.dev1/README.md --exclude *.pyd
+[2024-05-12 22:04:16] INFO root fetch - processPackages [nanodl]: Remove: archive file [/home/abi/fetcher/tmp/nanodl-1.2.2.dev1.tar.gz]
+[2024-05-12 22:04:16] INFO root fetch - processPackages [nanodl]: Remove: archive file [/home/abi/fetcher/tmp/nanodl-1.2.4.dev1.tar.gz]
+[2024-05-12 22:04:16] INFO root fetch - main [MainThread]: End processing [nanodl]: success
+[2024-05-12 22:04:16] INFO root fetch - main [MainThread]: Store serial: [23173358]
