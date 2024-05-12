@@ -17990,3 +17990,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:16:44] INFO root fetch - processPackages [juntagrico]: Remove: archive file [/home/abi/fetcher/tmp/juntagrico-1.6.0rc5.tar.gz]
 [2024-05-12 23:16:44] INFO root fetch - main [MainThread]: End processing [juntagrico]: success
 [2024-05-12 23:16:44] INFO root fetch - main [MainThread]: Store serial: [23173900]
+[2024-05-12 23:18:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173900]
+[2024-05-12 23:18:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 23:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrubbablez
+[2024-05-12 23:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fnschool
+[2024-05-12 23:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tree-viewer
+[2024-05-12 23:18:53] WARNING root fetch - processPackages [tree-viewer]: Skipping, unable to determine old version
+[2024-05-12 23:18:53] INFO root fetch - main [MainThread]: End processing [tree-viewer] error
+[2024-05-12 23:18:53] WARNING root fetch - processPackages [scrubbablez]: Skipping, unable to determine old version
+[2024-05-12 23:18:53] INFO root fetch - main [MainThread]: End processing [scrubbablez] error
+[2024-05-12 23:18:53] INFO root fetch - processPackages [fnschool]: New version: [20240513.518.24] Old Version: [20240412.2301.19]
+[2024-05-12 23:18:53] INFO root fetch - processPackages [fnschool]: Downloading https://files.pythonhosted.org/packages/ca/97/f1481c8301596ab4e9ad9006db725009fc67185232ec859f6fca2c58653d/fnschool-20240412.2301.19.tar.gz
+[2024-05-12 23:18:54] INFO root fetch - processPackages [fnschool]: Downloading https://files.pythonhosted.org/packages/fd/b4/5c91678cd471e95d6ae57250e3b6ce58216a4bd52116dfeff78764fc7205/fnschool-20240513.518.24.tar.gz
+[2024-05-12 23:18:54] INFO root fetch - processPackages [fnschool]: executing diffoscope
+[2024-05-12 23:18:54] INFO root fetch - processPackages [fnschool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fnschool-20240412.2301.19.tar.gz tmp/fnschool-20240513.518.24.tar.gz --markdown 20240512/f/fnschool/20240412.2301.19-20240513.518.24/README.md --exclude *.pyd
+[2024-05-12 23:18:54] INFO root fetch - processPackages [fnschool]: Remove: archive file [/home/abi/fetcher/tmp/fnschool-20240412.2301.19.tar.gz]
+[2024-05-12 23:18:54] INFO root fetch - processPackages [fnschool]: Remove: archive file [/home/abi/fetcher/tmp/fnschool-20240513.518.24.tar.gz]
+[2024-05-12 23:18:54] INFO root fetch - main [MainThread]: End processing [fnschool]: success
+[2024-05-12 23:18:54] INFO root fetch - main [MainThread]: Store serial: [23173908]
