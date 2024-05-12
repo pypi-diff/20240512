@@ -8346,3 +8346,36 @@
 [2024-05-12 12:18:47] INFO root fetch - processPackages [fastkml]: Remove: archive file [/home/abi/fetcher/tmp/fastkml-1.0a9.tar.gz]
 [2024-05-12 12:18:47] INFO root fetch - main [MainThread]: End processing [fastkml]: success
 [2024-05-12 12:18:47] INFO root fetch - main [MainThread]: Store serial: [23168954]
+[2024-05-12 12:20:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168954]
+[2024-05-12 12:20:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 12:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moto
+[2024-05-12 12:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyphetools
+[2024-05-12 12:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: directory-structure-generator
+[2024-05-12 12:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zenodo-client
+[2024-05-12 12:20:56] INFO root fetch - processPackages [moto]: New version: [5.0.7.dev9] Old Version: [5.0.7.dev8]
+[2024-05-12 12:20:56] INFO root fetch - processPackages [zenodo-client]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-12 12:20:56] WARNING root fetch - processPackages [directory-structure-generator]: Skipping, unable to determine old version
+[2024-05-12 12:20:56] INFO root fetch - main [MainThread]: End processing [directory-structure-generator] error
+[2024-05-12 12:20:56] INFO root fetch - processPackages [pyphetools]: New version: [0.9.9] Old Version: [0.9.85]
+[2024-05-12 12:20:56] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/91/d6/6faf251c731db13619210fd71fe41ad43985f2754d26108f1011d234680e/moto-5.0.7.dev8.tar.gz
+[2024-05-12 12:20:56] INFO root fetch - processPackages [pyphetools]: Downloading https://files.pythonhosted.org/packages/b9/b0/b7f42df57335ad464d08d5b03fe6e29074a0f730fd79c0fa50aa1a54075b/pyphetools-0.9.85.tar.gz
+[2024-05-12 12:20:56] INFO root fetch - processPackages [zenodo-client]: Downloading https://files.pythonhosted.org/packages/d7/52/627b8e937480492d394a52a9fd80b2e549f4490b5aacc803c5477001edd4/zenodo_client-0.3.3.tar.gz
+[2024-05-12 12:20:57] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/50/64/cafb1dd7f7151ece615191e8b7df798c093a4905ff18ffdcc0f5ec6c6e76/moto-5.0.7.dev9.tar.gz
+[2024-05-12 12:20:57] INFO root fetch - processPackages [zenodo-client]: Downloading https://files.pythonhosted.org/packages/4e/0e/f1d34c62712f3905e6bd1ad49fda93a31cb83d20532dbfc67c6561e48195/zenodo_client-0.3.4.tar.gz
+[2024-05-12 12:20:57] INFO root fetch - processPackages [pyphetools]: Downloading https://files.pythonhosted.org/packages/21/0f/082981f834d44e19354002ae37884bb9cf87bb330242ae69908f6f893dcf/pyphetools-0.9.9.tar.gz
+[2024-05-12 12:20:57] INFO root fetch - processPackages [zenodo-client]: executing diffoscope
+[2024-05-12 12:20:57] INFO root fetch - processPackages [zenodo-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenodo_client-0.3.3.tar.gz tmp/zenodo_client-0.3.4.tar.gz --markdown 20240512/z/zenodo-client/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-12 12:20:57] INFO root fetch - processPackages [pyphetools]: executing diffoscope
+[2024-05-12 12:20:57] INFO root fetch - processPackages [pyphetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyphetools-0.9.85.tar.gz tmp/pyphetools-0.9.9.tar.gz --markdown 20240512/p/pyphetools/0.9.85-0.9.9/README.md --exclude *.pyd
+[2024-05-12 12:20:57] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-05-12 12:20:57] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.7.dev8.tar.gz tmp/moto-5.0.7.dev9.tar.gz --markdown 20240512/m/moto/5.0.7.dev8-5.0.7.dev9/README.md --exclude *.pyd
+[2024-05-12 12:20:58] INFO root fetch - processPackages [zenodo-client]: Remove: archive file [/home/abi/fetcher/tmp/zenodo_client-0.3.3.tar.gz]
+[2024-05-12 12:20:58] INFO root fetch - processPackages [zenodo-client]: Remove: archive file [/home/abi/fetcher/tmp/zenodo_client-0.3.4.tar.gz]
+[2024-05-12 12:20:58] INFO root fetch - main [MainThread]: End processing [zenodo-client]: success
+[2024-05-12 12:20:58] INFO root fetch - processPackages [pyphetools]: Remove: archive file [/home/abi/fetcher/tmp/pyphetools-0.9.85.tar.gz]
+[2024-05-12 12:20:58] INFO root fetch - processPackages [pyphetools]: Remove: archive file [/home/abi/fetcher/tmp/pyphetools-0.9.9.tar.gz]
+[2024-05-12 12:20:58] INFO root fetch - main [MainThread]: End processing [pyphetools]: success
+[2024-05-12 12:21:08] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.7.dev8.tar.gz]
+[2024-05-12 12:21:08] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.7.dev9.tar.gz]
+[2024-05-12 12:21:08] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-05-12 12:21:08] INFO root fetch - main [MainThread]: Store serial: [23168969]
