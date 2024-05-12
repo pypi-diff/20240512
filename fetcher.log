@@ -2446,3 +2446,27 @@
 [2024-05-12 03:40:44] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.17.0.tar.gz]
 [2024-05-12 03:40:44] INFO root fetch - main [MainThread]: End processing [pyanno4rt]: success
 [2024-05-12 03:40:44] INFO root fetch - main [MainThread]: Store serial: [23166103]
+[2024-05-12 03:42:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166103]
+[2024-05-12 03:42:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 03:42:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: catholicalnessz
+[2024-05-12 03:42:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SelfCalibratedConformal
+[2024-05-12 03:42:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plexhints
+[2024-05-12 03:42:53] INFO root fetch - processPackages [SelfCalibratedConformal]: New version: [0.2] Old Version: [0.11]
+[2024-05-12 03:42:53] WARNING root fetch - processPackages [catholicalnessz]: Skipping, unable to determine old version
+[2024-05-12 03:42:53] INFO root fetch - main [MainThread]: End processing [catholicalnessz] error
+[2024-05-12 03:42:53] INFO root fetch - processPackages [plexhints]: New version: [2024.512.13207] Old Version: [2024.409.30106]
+[2024-05-12 03:42:53] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/a4/74/b8c13c95c9e069e7f0b176c4611cca0c652d750b06f9926d6f56c392ea5e/SelfCalibratedConformal-0.11-py2-none-any.whl
+[2024-05-12 03:42:53] INFO root fetch - processPackages [plexhints]: Downloading https://files.pythonhosted.org/packages/8b/5a/983b6572cf4c7ae275e747456982f041f4592da655c56846c11e96f5be3c/plexhints-2024.409.30106.tar.gz
+[2024-05-12 03:42:54] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/1b/64/bced117813488e0d8131e7fe8c41f446b16c521082804a89a17c924f043f/SelfCalibratedConformal-0.2-py2-none-any.whl
+[2024-05-12 03:42:54] INFO root fetch - processPackages [SelfCalibratedConformal]: executing diffoscope
+[2024-05-12 03:42:54] INFO root fetch - processPackages [SelfCalibratedConformal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SelfCalibratedConformal-0.11-py2-none-any.whl.zip tmp/SelfCalibratedConformal-0.2-py2-none-any.whl.zip --markdown 20240512/S/SelfCalibratedConformal/0.11-0.2/README.md --exclude *.pyd
+[2024-05-12 03:42:54] INFO root fetch - processPackages [plexhints]: Downloading https://files.pythonhosted.org/packages/51/8f/ac07807860e52c2c82006d727191442b2e8fb5398ae47fdbaedab48952fb/plexhints-2024.512.13207.tar.gz
+[2024-05-12 03:42:54] INFO root fetch - processPackages [plexhints]: executing diffoscope
+[2024-05-12 03:42:54] INFO root fetch - processPackages [plexhints]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plexhints-2024.409.30106.tar.gz tmp/plexhints-2024.512.13207.tar.gz --markdown 20240512/p/plexhints/2024.409.30106-2024.512.13207/README.md --exclude *.pyd
+[2024-05-12 03:42:54] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.11-py2-none-any.whl.zip]
+[2024-05-12 03:42:54] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.2-py2-none-any.whl.zip]
+[2024-05-12 03:42:54] INFO root fetch - main [MainThread]: End processing [SelfCalibratedConformal]: success
+[2024-05-12 03:42:55] INFO root fetch - processPackages [plexhints]: Remove: archive file [/home/abi/fetcher/tmp/plexhints-2024.409.30106.tar.gz]
+[2024-05-12 03:42:55] INFO root fetch - processPackages [plexhints]: Remove: archive file [/home/abi/fetcher/tmp/plexhints-2024.512.13207.tar.gz]
+[2024-05-12 03:42:55] INFO root fetch - main [MainThread]: End processing [plexhints]: success
+[2024-05-12 03:42:55] INFO root fetch - main [MainThread]: Store serial: [23166114]
