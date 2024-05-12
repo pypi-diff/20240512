@@ -7525,3 +7525,27 @@
 [2024-05-12 11:20:03] INFO root fetch - processPackages [Glances]: Remove: archive file [/home/abi/fetcher/tmp/glances-4.0.0.tar.gz]
 [2024-05-12 11:20:03] INFO root fetch - main [MainThread]: End processing [Glances]: success
 [2024-05-12 11:20:03] INFO root fetch - main [MainThread]: Store serial: [23168429]
+[2024-05-12 11:22:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168429]
+[2024-05-12 11:22:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 11:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pilpulisticz
+[2024-05-12 11:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gravitino
+[2024-05-12 11:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: enconnect
+[2024-05-12 11:22:12] INFO root fetch - processPackages [gravitino]: New version: [0.5.0.dev8] Old Version: [0.5.0.dev7]
+[2024-05-12 11:22:12] INFO root fetch - processPackages [gravitino]: Downloading https://files.pythonhosted.org/packages/1a/50/03a9fca51446bb591a1f4a74eb57fac15fc59518f54e4914c1191ee0fef2/gravitino-0.5.0.dev7.tar.gz
+[2024-05-12 11:22:12] INFO root fetch - processPackages [enconnect]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-12 11:22:12] WARNING root fetch - processPackages [pilpulisticz]: Skipping, unable to determine old version
+[2024-05-12 11:22:12] INFO root fetch - main [MainThread]: End processing [pilpulisticz] error
+[2024-05-12 11:22:12] INFO root fetch - processPackages [enconnect]: Downloading https://files.pythonhosted.org/packages/41/1f/9f59c8922b335d17896b6f3e0672d43f72a79e18788801f0e55465f40d51/enconnect-0.4.0.tar.gz
+[2024-05-12 11:22:12] INFO root fetch - processPackages [gravitino]: Downloading https://files.pythonhosted.org/packages/3d/85/878578ad4d8b98119f69ca1e7deb2e76553f9e23fb835b841820cd5c3dd7/gravitino-0.5.0.dev8.tar.gz
+[2024-05-12 11:22:12] INFO root fetch - processPackages [gravitino]: executing diffoscope
+[2024-05-12 11:22:12] INFO root fetch - processPackages [gravitino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitino-0.5.0.dev7.tar.gz tmp/gravitino-0.5.0.dev8.tar.gz --markdown 20240512/g/gravitino/0.5.0.dev7-0.5.0.dev8/README.md --exclude *.pyd
+[2024-05-12 11:22:12] INFO root fetch - processPackages [enconnect]: Downloading https://files.pythonhosted.org/packages/be/a2/9bdef406e0aa2a62777e47bdf3882e4366fad946b9afcf21321db5f66ceb/enconnect-0.5.0.tar.gz
+[2024-05-12 11:22:13] INFO root fetch - processPackages [enconnect]: executing diffoscope
+[2024-05-12 11:22:13] INFO root fetch - processPackages [enconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enconnect-0.4.0.tar.gz tmp/enconnect-0.5.0.tar.gz --markdown 20240512/e/enconnect/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-12 11:22:13] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev7.tar.gz]
+[2024-05-12 11:22:13] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev8.tar.gz]
+[2024-05-12 11:22:13] INFO root fetch - main [MainThread]: End processing [gravitino]: success
+[2024-05-12 11:22:13] INFO root fetch - processPackages [enconnect]: Remove: archive file [/home/abi/fetcher/tmp/enconnect-0.4.0.tar.gz]
+[2024-05-12 11:22:13] INFO root fetch - processPackages [enconnect]: Remove: archive file [/home/abi/fetcher/tmp/enconnect-0.5.0.tar.gz]
+[2024-05-12 11:22:13] INFO root fetch - main [MainThread]: End processing [enconnect]: success
+[2024-05-12 11:22:13] INFO root fetch - main [MainThread]: Store serial: [23168450]
