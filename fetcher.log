@@ -15319,3 +15319,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:21:48] INFO root fetch - processPackages [mlops-ods]: Remove: archive file [/home/abi/fetcher/tmp/mlops_ods-0.1.202405121821.tar.gz]
 [2024-05-12 20:21:48] INFO root fetch - main [MainThread]: End processing [mlops-ods]: success
 [2024-05-12 20:21:48] INFO root fetch - main [MainThread]: Store serial: [23172591]
+[2024-05-12 20:23:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172591]
+[2024-05-12 20:23:57] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 20:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anabih-python-test
+[2024-05-12 20:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: approval-utilities
+[2024-05-12 20:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: approvaltests
+[2024-05-12 20:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tempit
+[2024-05-12 20:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gammarers.aws-secure-vpc-bucket
+[2024-05-12 20:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: approvaltests-minimal
+[2024-05-12 20:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: thallophyticz
+[2024-05-12 20:23:57] INFO root fetch - processPackages [anabih-python-test]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-05-12 20:23:57] INFO root fetch - processPackages [tempit]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 20:23:57] INFO root fetch - processPackages [approvaltests-minimal]: New version: [9.0.0] Old Version: [8.4.1]
+[2024-05-12 20:23:57] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/8f/0d/cb4164f3f11269487379fdf0c45ca126f81d3ab4355ce23e4cdf8dd2b4cd/anabih_python_test-8.0.0.tar.gz
+[2024-05-12 20:23:57] INFO root fetch - processPackages [approval-utilities]: New version: [9.0.0] Old Version: [8.4.1]
+[2024-05-12 20:23:57] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-05-12 20:23:57] WARNING root fetch - processPackages [thallophyticz]: Skipping, unable to determine old version
+[2024-05-12 20:23:57] INFO root fetch - main [MainThread]: End processing [thallophyticz] error
+[2024-05-12 20:23:57] INFO root fetch - processPackages [approvaltests]: New version: [9.0.0] Old Version: [8.4.1]
+[2024-05-12 20:23:57] INFO root fetch - processPackages [tempit]: Downloading https://files.pythonhosted.org/packages/71/a3/880b04d1d2d8e1687a81c88b7bae50b294b88a2f404e272743adab086269/tempit-0.1.1.tar.gz
+[2024-05-12 20:23:57] INFO root fetch - processPackages [approvaltests-minimal]: Downloading https://files.pythonhosted.org/packages/14/70/241044f5b14ebcaf44233af272bf6e42c1933a1b85978553f73f6badb118/approvaltests-minimal-8.4.1.tar.gz
+[2024-05-12 20:23:57] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/83/16/9305f1d0ffc310349acc9a6c48a942e3c816874b788e87e5252e12b1a42a/anabih_python_test-9.0.0.tar.gz
+[2024-05-12 20:23:57] INFO root fetch - processPackages [approval-utilities]: Downloading https://files.pythonhosted.org/packages/9d/64/ac2260b42192a603adf52fa6dbd711b3a6aac72986bdd1834562490efefa/approval_utilities-8.4.1.tar.gz
+[2024-05-12 20:23:57] INFO root fetch - processPackages [approvaltests]: Downloading https://files.pythonhosted.org/packages/b4/0c/8dc91af1bae9332c5dd142313c1e0c5df47b4f67826bb073f3bf96c9a990/approvaltests-8.4.1.tar.gz
+[2024-05-12 20:23:57] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Downloading https://files.pythonhosted.org/packages/7a/9d/851699cb1b0022976501d07b4e5504315adf89dd11512aa8c72892345340/gammarers.aws-secure-vpc-bucket-1.3.2.tar.gz
+[2024-05-12 20:23:57] INFO root fetch - processPackages [anabih-python-test]: executing diffoscope
+[2024-05-12 20:23:57] INFO root fetch - processPackages [anabih-python-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anabih_python_test-8.0.0.tar.gz tmp/anabih_python_test-9.0.0.tar.gz --markdown 20240512/a/anabih-python-test/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-05-12 20:23:57] INFO root fetch - processPackages [tempit]: Downloading https://files.pythonhosted.org/packages/e8/59/40fbd695928eb169629ecd5241a01508dd8e73d0ade7947ff5766001c138/tempit-0.1.2.tar.gz
+[2024-05-12 20:23:57] INFO root fetch - processPackages [approvaltests-minimal]: Downloading https://files.pythonhosted.org/packages/55/8b/f5284264bfb75597eb902a0c755438576993e9073b1ca847e897b135308e/approvaltests-minimal-9.0.0.tar.gz
+[2024-05-12 20:23:57] INFO root fetch - processPackages [approval-utilities]: Downloading https://files.pythonhosted.org/packages/9b/ec/10fbdcf0d41f41f025484f8d57319070bf446d08c83ac29c8c8503a42140/approval_utilities-9.0.0.tar.gz
+[2024-05-12 20:23:57] INFO root fetch - processPackages [tempit]: executing diffoscope
+[2024-05-12 20:23:57] INFO root fetch - processPackages [tempit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tempit-0.1.1.tar.gz tmp/tempit-0.1.2.tar.gz --markdown 20240512/t/tempit/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 20:23:58] INFO root fetch - processPackages [approvaltests]: Downloading https://files.pythonhosted.org/packages/f9/d6/6d5ad8040cc136cc00b96ffb59c749f85024eb4c70fa73d31381ddaf5cd1/approvaltests-9.0.0.tar.gz
+[2024-05-12 20:23:58] INFO root fetch - processPackages [approvaltests-minimal]: executing diffoscope
+[2024-05-12 20:23:58] INFO root fetch - processPackages [approvaltests-minimal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/approvaltests-minimal-8.4.1.tar.gz tmp/approvaltests-minimal-9.0.0.tar.gz --markdown 20240512/a/approvaltests-minimal/8.4.1-9.0.0/README.md --exclude *.pyd
+[2024-05-12 20:23:58] INFO root fetch - processPackages [approval-utilities]: executing diffoscope
+[2024-05-12 20:23:58] INFO root fetch - processPackages [approval-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/approval_utilities-8.4.1.tar.gz tmp/approval_utilities-9.0.0.tar.gz --markdown 20240512/a/approval-utilities/8.4.1-9.0.0/README.md --exclude *.pyd
+[2024-05-12 20:23:58] INFO root fetch - processPackages [approvaltests]: executing diffoscope
+[2024-05-12 20:23:58] INFO root fetch - processPackages [approvaltests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/approvaltests-8.4.1.tar.gz tmp/approvaltests-9.0.0.tar.gz --markdown 20240512/a/approvaltests/8.4.1-9.0.0/README.md --exclude *.pyd
+[2024-05-12 20:23:58] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Downloading https://files.pythonhosted.org/packages/ee/b2/2da9fa775b530087dbabf2d3a868a58915995e561e1cda3b700b927092c3/gammarers.aws-secure-vpc-bucket-1.3.3.tar.gz
+[2024-05-12 20:23:58] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-8.0.0.tar.gz]
+[2024-05-12 20:23:58] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-9.0.0.tar.gz]
+[2024-05-12 20:23:58] INFO root fetch - main [MainThread]: End processing [anabih-python-test]: success
+[2024-05-12 20:23:58] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: executing diffoscope
+[2024-05-12 20:23:58] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-vpc-bucket-1.3.2.tar.gz tmp/gammarers.aws-secure-vpc-bucket-1.3.3.tar.gz --markdown 20240512/g/gammarers.aws-secure-vpc-bucket/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-05-12 20:23:58] INFO root fetch - processPackages [tempit]: Remove: archive file [/home/abi/fetcher/tmp/tempit-0.1.1.tar.gz]
+[2024-05-12 20:23:58] INFO root fetch - processPackages [tempit]: Remove: archive file [/home/abi/fetcher/tmp/tempit-0.1.2.tar.gz]
+[2024-05-12 20:23:58] INFO root fetch - main [MainThread]: End processing [tempit]: success
+[2024-05-12 20:23:58] INFO root fetch - processPackages [approval-utilities]: Remove: archive file [/home/abi/fetcher/tmp/approval_utilities-8.4.1.tar.gz]
+[2024-05-12 20:23:58] INFO root fetch - processPackages [approval-utilities]: Remove: archive file [/home/abi/fetcher/tmp/approval_utilities-9.0.0.tar.gz]
+[2024-05-12 20:23:58] INFO root fetch - main [MainThread]: End processing [approval-utilities]: success
+[2024-05-12 20:23:58] INFO root fetch - processPackages [approvaltests-minimal]: Remove: archive file [/home/abi/fetcher/tmp/approvaltests-minimal-8.4.1.tar.gz]
+[2024-05-12 20:23:58] INFO root fetch - processPackages [approvaltests-minimal]: Remove: archive file [/home/abi/fetcher/tmp/approvaltests-minimal-9.0.0.tar.gz]
+[2024-05-12 20:23:58] INFO root fetch - main [MainThread]: End processing [approvaltests-minimal]: success
+[2024-05-12 20:23:58] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-vpc-bucket-1.3.2.tar.gz]
+[2024-05-12 20:23:58] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-vpc-bucket-1.3.3.tar.gz]
+[2024-05-12 20:23:58] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-vpc-bucket]: success
+[2024-05-12 20:23:58] INFO root fetch - processPackages [approvaltests]: Remove: archive file [/home/abi/fetcher/tmp/approvaltests-8.4.1.tar.gz]
+[2024-05-12 20:23:58] INFO root fetch - processPackages [approvaltests]: Remove: archive file [/home/abi/fetcher/tmp/approvaltests-9.0.0.tar.gz]
+[2024-05-12 20:23:58] INFO root fetch - main [MainThread]: End processing [approvaltests]: success
+[2024-05-12 20:23:58] INFO root fetch - main [MainThread]: Store serial: [23172613]
