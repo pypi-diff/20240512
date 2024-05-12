@@ -5997,3 +5997,24 @@
 [2024-05-12 09:00:09] INFO root fetch - processPackages [seacrowd]: Remove: archive file [/home/abi/fetcher/tmp/seacrowd-0.0.9.tar.gz]
 [2024-05-12 09:00:09] INFO root fetch - main [MainThread]: End processing [seacrowd]: success
 [2024-05-12 09:00:09] INFO root fetch - main [MainThread]: Store serial: [23167670]
+[2024-05-12 09:02:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167670]
+[2024-05-12 09:02:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 09:02:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulses
+[2024-05-12 09:02:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seqio-nightly
+[2024-05-12 09:02:18] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2024-05-12 09:02:18] INFO root fetch - processPackages [pulses]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-12 09:02:18] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/43/a0/f60ad514b6f8534fa5ba8cc5fcc2a8f2e32e7d06d2dbfd43b12c2cb29931/seqio-nightly-0.0.8.dev20220906.tar.gz
+[2024-05-12 09:02:18] INFO root fetch - processPackages [pulses]: Downloading https://files.pythonhosted.org/packages/fe/43/47863d855f031582306c71eba754af6ded68d2a5024dcb54aed144cbd9ff/pulses-1.0.0.tar.gz
+[2024-05-12 09:02:18] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/2a/76/25f4c7602cdd724deac948a914e454756abfad2119a525c06d9ce341b918/seqio-nightly-0.0.8.dev20220907.tar.gz
+[2024-05-12 09:02:19] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2024-05-12 09:02:19] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20240512/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/README.md --exclude *.pyd
+[2024-05-12 09:02:19] INFO root fetch - processPackages [pulses]: Downloading https://files.pythonhosted.org/packages/72/23/6f9b2bd5018a7e6c9fd088fb39ffd208e6b3928e2637de2c6ead333e2a8d/pulses-1.0.1.tar.gz
+[2024-05-12 09:02:19] INFO root fetch - processPackages [pulses]: executing diffoscope
+[2024-05-12 09:02:19] INFO root fetch - processPackages [pulses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulses-1.0.0.tar.gz tmp/pulses-1.0.1.tar.gz --markdown 20240512/p/pulses/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-12 09:02:19] INFO root fetch - processPackages [pulses]: Remove: archive file [/home/abi/fetcher/tmp/pulses-1.0.0.tar.gz]
+[2024-05-12 09:02:19] INFO root fetch - processPackages [pulses]: Remove: archive file [/home/abi/fetcher/tmp/pulses-1.0.1.tar.gz]
+[2024-05-12 09:02:19] INFO root fetch - main [MainThread]: End processing [pulses]: success
+[2024-05-12 09:02:19] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220906.tar.gz]
+[2024-05-12 09:02:19] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220907.tar.gz]
+[2024-05-12 09:02:19] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2024-05-12 09:02:19] INFO root fetch - main [MainThread]: Store serial: [23167689]
