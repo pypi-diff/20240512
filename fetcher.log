@@ -9426,3 +9426,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:38:28] INFO root fetch - processPackages [wxhelper]: Remove: archive file [/home/abi/fetcher/tmp/wxhelper-0.0.2.tar.gz]
 [2024-05-12 13:38:28] INFO root fetch - main [MainThread]: End processing [wxhelper]: success
 [2024-05-12 13:38:28] INFO root fetch - main [MainThread]: Store serial: [23169477]
+[2024-05-12 13:40:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169477]
+[2024-05-12 13:40:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 13:40:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: circumz
+[2024-05-12 13:40:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: inventing-machine
+[2024-05-12 13:40:36] WARNING root fetch - processPackages [circumz]: Skipping, unable to determine old version
+[2024-05-12 13:40:36] INFO root fetch - main [MainThread]: End processing [circumz] error
+[2024-05-12 13:40:36] WARNING root fetch - processPackages [inventing-machine]: Skipping, unable to determine old version
+[2024-05-12 13:40:36] INFO root fetch - main [MainThread]: End processing [inventing-machine] error
+[2024-05-12 13:40:36] INFO root fetch - main [MainThread]: Store serial: [23169487]
