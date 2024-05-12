@@ -9694,3 +9694,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:00:12] INFO root fetch - processPackages [domainlab]: Remove: archive file [/home/abi/fetcher/tmp/domainlab-0.6.4.tar.gz]
 [2024-05-12 14:00:12] INFO root fetch - main [MainThread]: End processing [domainlab]: success
 [2024-05-12 14:00:12] INFO root fetch - main [MainThread]: Store serial: [23169594]
+[2024-05-12 14:02:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169594]
+[2024-05-12 14:02:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 14:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polars-ta
+[2024-05-12 14:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wg-utilities
+[2024-05-12 14:02:22] INFO root fetch - processPackages [polars-ta]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-12 14:02:22] INFO root fetch - processPackages [wg-utilities]: New version: [5.9.0] Old Version: [5.8.4]
+[2024-05-12 14:02:22] INFO root fetch - processPackages [polars-ta]: Downloading https://files.pythonhosted.org/packages/8b/e4/51828e871dbcd30ebb6393761ec217807eefbb50998745e217d2602cb104/polars_ta-0.2.4.tar.gz
+[2024-05-12 14:02:22] INFO root fetch - processPackages [wg-utilities]: Downloading https://files.pythonhosted.org/packages/a2/7f/84a6f7a987704a196fb4a41e13f84850ea59dd73e5749d1f956e99a42c6f/wg_utilities-5.8.4.tar.gz
+[2024-05-12 14:02:22] INFO root fetch - processPackages [polars-ta]: Downloading https://files.pythonhosted.org/packages/e2/c7/ad5b37ba37e3a0a9f6546c91bb2a1a717e2162123840fc255e9d3600fe06/polars_ta-0.2.5.tar.gz
+[2024-05-12 14:02:22] INFO root fetch - processPackages [wg-utilities]: Downloading https://files.pythonhosted.org/packages/23/bc/396a6e7516320d7c839831333bc832b8f2e2fa8cefd2e0dfe566c8a17a44/wg_utilities-5.9.0.tar.gz
+[2024-05-12 14:02:22] INFO root fetch - processPackages [polars-ta]: executing diffoscope
+[2024-05-12 14:02:22] INFO root fetch - processPackages [polars-ta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_ta-0.2.4.tar.gz tmp/polars_ta-0.2.5.tar.gz --markdown 20240512/p/polars-ta/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-12 14:02:22] INFO root fetch - processPackages [wg-utilities]: executing diffoscope
+[2024-05-12 14:02:22] INFO root fetch - processPackages [wg-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wg_utilities-5.8.4.tar.gz tmp/wg_utilities-5.9.0.tar.gz --markdown 20240512/w/wg-utilities/5.8.4-5.9.0/README.md --exclude *.pyd
+[2024-05-12 14:02:23] INFO root fetch - processPackages [polars-ta]: Remove: archive file [/home/abi/fetcher/tmp/polars_ta-0.2.4.tar.gz]
+[2024-05-12 14:02:23] INFO root fetch - processPackages [polars-ta]: Remove: archive file [/home/abi/fetcher/tmp/polars_ta-0.2.5.tar.gz]
+[2024-05-12 14:02:23] INFO root fetch - main [MainThread]: End processing [polars-ta]: success
+[2024-05-12 14:02:23] INFO root fetch - processPackages [wg-utilities]: Remove: archive file [/home/abi/fetcher/tmp/wg_utilities-5.8.4.tar.gz]
+[2024-05-12 14:02:23] INFO root fetch - processPackages [wg-utilities]: Remove: archive file [/home/abi/fetcher/tmp/wg_utilities-5.9.0.tar.gz]
+[2024-05-12 14:02:23] INFO root fetch - main [MainThread]: End processing [wg-utilities]: success
+[2024-05-12 14:02:23] INFO root fetch - main [MainThread]: Store serial: [23169600]
