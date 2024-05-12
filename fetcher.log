@@ -10233,3 +10233,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:32:49] INFO root fetch - processPackages [optuna-distributed]: Remove: archive file [/home/abi/fetcher/tmp/optuna_distributed-0.6.2.tar.gz]
 [2024-05-12 14:32:49] INFO root fetch - main [MainThread]: End processing [optuna-distributed]: success
 [2024-05-12 14:32:49] INFO root fetch - main [MainThread]: Store serial: [23169862]
+[2024-05-12 14:34:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169862]
+[2024-05-12 14:34:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 14:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mkdocs-material
+[2024-05-12 14:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arbitragelab
+[2024-05-12 14:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ecuapassdocs
+[2024-05-12 14:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: statsnet-python-sdk
+[2024-05-12 14:34:58] INFO root fetch - processPackages [statsnet-python-sdk]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-12 14:34:58] INFO root fetch - processPackages [arbitragelab]: New version: [1.0.0] Old Version: [0.9.1]
+[2024-05-12 14:34:58] INFO root fetch - processPackages [ecuapassdocs]: New version: [0.76] Old Version: [0.75]
+[2024-05-12 14:34:58] INFO root fetch - processPackages [mkdocs-material]: New version: [9.5.9] Old Version: [9.5.8]
+[2024-05-12 14:34:58] INFO root fetch - processPackages [statsnet-python-sdk]: Downloading https://files.pythonhosted.org/packages/8c/4f/1646d72fb927b3ff52be3456d5a3e87d0442a5abab03761a09fcdc8c1d04/statsnet_python_sdk-1.0.0.tar.gz
+[2024-05-12 14:34:58] INFO root fetch - processPackages [arbitragelab]: Downloading https://files.pythonhosted.org/packages/e6/e9/69307e951d747b38c0aebdcffc581cf1d3ff31fddfe9f2c90efea573d3ee/arbitragelab-0.9.1-py3-none-any.whl
+[2024-05-12 14:34:58] INFO root fetch - processPackages [ecuapassdocs]: Downloading https://files.pythonhosted.org/packages/3d/ed/b4d47efc472e28826efda166e0586ff61b99f67c3a5559ea039da6a5c463/ecuapassdocs-0.75.tar.gz
+[2024-05-12 14:34:58] INFO root fetch - processPackages [mkdocs-material]: Downloading https://files.pythonhosted.org/packages/af/3b/2e05d9ad24b7f836a4dd8aa6221af8f7c7c9a48021c5300ea9de5f01465e/mkdocs_material-9.5.8.tar.gz
+[2024-05-12 14:34:58] INFO root fetch - processPackages [statsnet-python-sdk]: Downloading https://files.pythonhosted.org/packages/b3/00/d3004d065b959bd00a5edfe4eb52980bb27b44fa2fd2c213329f240bfada/statsnet_python_sdk-1.1.0.tar.gz
+[2024-05-12 14:34:58] INFO root fetch - processPackages [arbitragelab]: Downloading https://files.pythonhosted.org/packages/82/0d/92e34711230261177bf30e108d573b355cf609f83a149f5444c645a03ec3/arbitragelab-1.0.0.tar.gz
+[2024-05-12 14:34:59] INFO root fetch - processPackages [statsnet-python-sdk]: executing diffoscope
+[2024-05-12 14:34:59] INFO root fetch - processPackages [statsnet-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statsnet_python_sdk-1.0.0.tar.gz tmp/statsnet_python_sdk-1.1.0.tar.gz --markdown 20240512/s/statsnet-python-sdk/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-12 14:34:59] INFO root fetch - processPackages [arbitragelab]: executing diffoscope
+[2024-05-12 14:34:59] INFO root fetch - processPackages [arbitragelab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arbitragelab-0.9.1-py3-none-any.whl.zip tmp/arbitragelab-1.0.0.tar.gz --markdown 20240512/a/arbitragelab/0.9.1-1.0.0/README.md --exclude *.pyd
+[2024-05-12 14:34:59] INFO root fetch - processPackages [ecuapassdocs]: Downloading https://files.pythonhosted.org/packages/e9/19/0f796d2e6151c7b00d9ec9afd4bb8d0e27bef54048ea4cd4cb8eb421525c/ecuapassdocs-0.76.tar.gz
+[2024-05-12 14:34:59] INFO root fetch - processPackages [statsnet-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/statsnet_python_sdk-1.0.0.tar.gz]
+[2024-05-12 14:34:59] INFO root fetch - processPackages [statsnet-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/statsnet_python_sdk-1.1.0.tar.gz]
+[2024-05-12 14:34:59] INFO root fetch - main [MainThread]: End processing [statsnet-python-sdk]: success
+[2024-05-12 14:34:59] INFO root fetch - processPackages [ecuapassdocs]: executing diffoscope
+[2024-05-12 14:34:59] INFO root fetch - processPackages [ecuapassdocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecuapassdocs-0.75.tar.gz tmp/ecuapassdocs-0.76.tar.gz --markdown 20240512/e/ecuapassdocs/0.75-0.76/README.md --exclude *.pyd
+[2024-05-12 14:34:59] INFO root fetch - processPackages [arbitragelab]: Remove: archive file [/home/abi/fetcher/tmp/arbitragelab-0.9.1-py3-none-any.whl.zip]
+[2024-05-12 14:34:59] INFO root fetch - processPackages [arbitragelab]: Remove: archive file [/home/abi/fetcher/tmp/arbitragelab-1.0.0.tar.gz]
+[2024-05-12 14:34:59] INFO root fetch - main [MainThread]: End processing [arbitragelab]: success
+[2024-05-12 14:34:59] INFO root fetch - processPackages [mkdocs-material]: Downloading https://files.pythonhosted.org/packages/7f/87/b416888ac24bc9210f727d59afe528e00b7e037933f3497f6ad17ff5d370/mkdocs_material-9.5.9.tar.gz
+[2024-05-12 14:35:00] INFO root fetch - processPackages [ecuapassdocs]: Remove: archive file [/home/abi/fetcher/tmp/ecuapassdocs-0.75.tar.gz]
+[2024-05-12 14:35:00] INFO root fetch - processPackages [ecuapassdocs]: Remove: archive file [/home/abi/fetcher/tmp/ecuapassdocs-0.76.tar.gz]
+[2024-05-12 14:35:00] INFO root fetch - main [MainThread]: End processing [ecuapassdocs]: success
+[2024-05-12 14:35:00] INFO root fetch - processPackages [mkdocs-material]: executing diffoscope
+[2024-05-12 14:35:00] INFO root fetch - processPackages [mkdocs-material]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_material-9.5.8.tar.gz tmp/mkdocs_material-9.5.9.tar.gz --markdown 20240512/m/mkdocs-material/9.5.8-9.5.9/README.md --exclude *.pyd
+[2024-05-12 14:36:02] INFO root fetch - processPackages [mkdocs-material]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_material-9.5.8.tar.gz]
+[2024-05-12 14:36:02] INFO root fetch - processPackages [mkdocs-material]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_material-9.5.9.tar.gz]
+[2024-05-12 14:36:02] INFO root fetch - main [MainThread]: End processing [mkdocs-material]: success
+[2024-05-12 14:36:02] INFO root fetch - main [MainThread]: Store serial: [23169875]
