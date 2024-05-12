@@ -17814,3 +17814,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:01:24] INFO root fetch - processPackages [objectbox]: Remove: archive file [/home/abi/fetcher/tmp/objectbox-0.7.0a9-py3-none-any.whl.zip]
 [2024-05-12 23:01:24] INFO root fetch - main [MainThread]: End processing [objectbox]: success
 [2024-05-12 23:01:24] INFO root fetch - main [MainThread]: Store serial: [23173809]
+[2024-05-12 23:03:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173809]
+[2024-05-12 23:03:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 23:03:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Mongodb-JConnect
+[2024-05-12 23:03:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: congress-transaction-scraper
+[2024-05-12 23:03:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sasaniz
+[2024-05-12 23:03:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Elasticsearch-to-BigQuery-Connector
+[2024-05-12 23:03:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: emdbva
+[2024-05-12 23:03:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: anchitherioidz
+[2024-05-12 23:03:40] WARNING root fetch - processPackages [anchitherioidz]: Skipping, unable to determine old version
+[2024-05-12 23:03:40] INFO root fetch - main [MainThread]: End processing [anchitherioidz] error
+[2024-05-12 23:03:40] WARNING root fetch - processPackages [Elasticsearch-to-BigQuery-Connector]: Skipping, unable to determine old version
+[2024-05-12 23:03:40] INFO root fetch - main [MainThread]: End processing [Elasticsearch-to-BigQuery-Connector] error
+[2024-05-12 23:03:40] INFO root fetch - processPackages [emdbva]: New version: [0.1.2.dev1] Old Version: [0.0.1.dev8]
+[2024-05-12 23:03:40] WARNING root fetch - processPackages [sasaniz]: Skipping, unable to determine old version
+[2024-05-12 23:03:40] INFO root fetch - processPackages [congress-transaction-scraper]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-12 23:03:40] INFO root fetch - main [MainThread]: End processing [sasaniz] error
+[2024-05-12 23:03:40] WARNING root fetch - processPackages [Mongodb-JConnect]: Skipping, unable to determine old version
+[2024-05-12 23:03:40] INFO root fetch - main [MainThread]: End processing [Mongodb-JConnect] error
+[2024-05-12 23:03:40] INFO root fetch - processPackages [congress-transaction-scraper]: Downloading https://files.pythonhosted.org/packages/0d/4a/6e65eab195f0e427aa4d0dff5f1a1b07bef60dd8ceb4ad78833a6e216a4a/congress_transaction_scraper-0.0.7.tar.gz
+[2024-05-12 23:03:40] INFO root fetch - processPackages [emdbva]: Downloading https://files.pythonhosted.org/packages/0b/ed/819c08dea6ffadd882526d30413daac295d755fe2e50a8f10693c7467495/emdbva-0.0.1.dev8.tar.gz
+[2024-05-12 23:03:40] INFO root fetch - processPackages [congress-transaction-scraper]: Downloading https://files.pythonhosted.org/packages/f8/82/3327aee5d154fbfacdaa23fd2ce06d7d086daee78eb23943156eee8a5229/congress_transaction_scraper-0.0.8.tar.gz
+[2024-05-12 23:03:40] INFO root fetch - processPackages [congress-transaction-scraper]: executing diffoscope
+[2024-05-12 23:03:40] INFO root fetch - processPackages [congress-transaction-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/congress_transaction_scraper-0.0.7.tar.gz tmp/congress_transaction_scraper-0.0.8.tar.gz --markdown 20240512/c/congress-transaction-scraper/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-12 23:03:40] WARNING root fetch - processPackages [emdbva]: Skipping package: exceeds size limit 25862942>=10485760
+[2024-05-12 23:03:40] INFO root fetch - main [MainThread]: End processing [emdbva] error
+[2024-05-12 23:03:41] INFO root fetch - processPackages [congress-transaction-scraper]: Remove: archive file [/home/abi/fetcher/tmp/congress_transaction_scraper-0.0.7.tar.gz]
+[2024-05-12 23:03:41] INFO root fetch - processPackages [congress-transaction-scraper]: Remove: archive file [/home/abi/fetcher/tmp/congress_transaction_scraper-0.0.8.tar.gz]
+[2024-05-12 23:03:41] INFO root fetch - main [MainThread]: End processing [congress-transaction-scraper]: success
+[2024-05-12 23:03:41] INFO root fetch - main [MainThread]: Store serial: [23173833]
