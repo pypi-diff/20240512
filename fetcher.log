@@ -10491,3 +10491,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:56:16] INFO root fetch - processPackages [upp]: Remove: archive file [/home/abi/fetcher/tmp/upp-0.2.2.tar.gz]
 [2024-05-12 14:56:16] INFO root fetch - main [MainThread]: End processing [upp]: success
 [2024-05-12 14:56:16] INFO root fetch - main [MainThread]: Store serial: [23169974]
+[2024-05-12 14:58:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169974]
+[2024-05-12 14:58:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 14:58:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: exploitfarm
+[2024-05-12 14:58:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: a9x-webstatistics
+[2024-05-12 14:58:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: holiday-predictor
+[2024-05-12 14:58:25] INFO root fetch - processPackages [a9x-webstatistics]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-12 14:58:25] INFO root fetch - processPackages [a9x-webstatistics]: Downloading https://files.pythonhosted.org/packages/6b/1a/6d8eb7a0eb834e882b4a32671d8f55b7058e94c1705abb39591b7e14acb4/a9x_webstatistics-0.1.7.tar.gz
+[2024-05-12 14:58:25] WARNING root fetch - processPackages [exploitfarm]: Skipping, unable to determine old version
+[2024-05-12 14:58:25] INFO root fetch - main [MainThread]: End processing [exploitfarm] error
+[2024-05-12 14:58:25] WARNING root fetch - processPackages [holiday-predictor]: Skipping, unable to determine old version
+[2024-05-12 14:58:25] INFO root fetch - main [MainThread]: End processing [holiday-predictor] error
+[2024-05-12 14:58:25] INFO root fetch - processPackages [a9x-webstatistics]: Downloading https://files.pythonhosted.org/packages/34/1d/74a658d3b12d45754cb6a28db75b8a8f9c722cf135e6532226e90e8ed560/a9x_webstatistics-0.1.8.tar.gz
+[2024-05-12 14:58:25] INFO root fetch - processPackages [a9x-webstatistics]: executing diffoscope
+[2024-05-12 14:58:25] INFO root fetch - processPackages [a9x-webstatistics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a9x_webstatistics-0.1.7.tar.gz tmp/a9x_webstatistics-0.1.8.tar.gz --markdown 20240512/a/a9x-webstatistics/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-12 14:58:26] INFO root fetch - processPackages [a9x-webstatistics]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics-0.1.7.tar.gz]
+[2024-05-12 14:58:26] INFO root fetch - processPackages [a9x-webstatistics]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics-0.1.8.tar.gz]
+[2024-05-12 14:58:26] INFO root fetch - main [MainThread]: End processing [a9x-webstatistics]: success
+[2024-05-12 14:58:26] INFO root fetch - main [MainThread]: Store serial: [23169987]
