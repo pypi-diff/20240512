@@ -17270,3 +17270,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:23:48] INFO root fetch - processPackages [dash-auth-external]: Remove: archive file [/home/abi/fetcher/tmp/dash-auth-external-1.2.0.tar.gz]
 [2024-05-12 22:23:48] INFO root fetch - main [MainThread]: End processing [dash-auth-external]: success
 [2024-05-12 22:23:48] INFO root fetch - main [MainThread]: Store serial: [23173552]
+[2024-05-12 22:25:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173552]
+[2024-05-12 22:25:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 22:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psalteristz
+[2024-05-12 22:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dphelper
+[2024-05-12 22:25:57] INFO root fetch - processPackages [dphelper]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-12 22:25:57] INFO root fetch - processPackages [dphelper]: Downloading https://files.pythonhosted.org/packages/6d/53/b25ce41b93761feed6d1a71f1883ba2d625d03b6e5aff85a4cc51208d5b3/dphelper-0.0.7.tar.gz
+[2024-05-12 22:25:57] WARNING root fetch - processPackages [psalteristz]: Skipping, unable to determine old version
+[2024-05-12 22:25:57] INFO root fetch - main [MainThread]: End processing [psalteristz] error
+[2024-05-12 22:25:57] INFO root fetch - processPackages [dphelper]: Downloading https://files.pythonhosted.org/packages/fd/47/5c5dd7dc6b2d03713ea7045dac3fc3237031deb1b776f44fa8549790c855/dphelper-0.0.8.tar.gz
+[2024-05-12 22:25:57] INFO root fetch - processPackages [dphelper]: executing diffoscope
+[2024-05-12 22:25:57] INFO root fetch - processPackages [dphelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dphelper-0.0.7.tar.gz tmp/dphelper-0.0.8.tar.gz --markdown 20240512/d/dphelper/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-12 22:25:58] INFO root fetch - processPackages [dphelper]: Remove: archive file [/home/abi/fetcher/tmp/dphelper-0.0.7.tar.gz]
+[2024-05-12 22:25:58] INFO root fetch - processPackages [dphelper]: Remove: archive file [/home/abi/fetcher/tmp/dphelper-0.0.8.tar.gz]
+[2024-05-12 22:25:58] INFO root fetch - main [MainThread]: End processing [dphelper]: success
+[2024-05-12 22:25:58] INFO root fetch - main [MainThread]: Store serial: [23173556]
