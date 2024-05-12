@@ -7460,3 +7460,11 @@
 [2024-05-12 11:07:05] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.1.1b20240511.tar.gz]
 [2024-05-12 11:07:05] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
 [2024-05-12 11:07:05] INFO root fetch - main [MainThread]: Store serial: [23168406]
+[2024-05-12 11:09:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168406]
+[2024-05-12 11:09:13] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-12 11:11:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168406]
+[2024-05-12 11:11:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 11:11:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: revilersz
+[2024-05-12 11:11:20] WARNING root fetch - processPackages [revilersz]: Skipping, unable to determine old version
+[2024-05-12 11:11:20] INFO root fetch - main [MainThread]: End processing [revilersz] error
+[2024-05-12 11:11:20] INFO root fetch - main [MainThread]: Store serial: [23168410]
