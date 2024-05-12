@@ -10797,3 +10797,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:23:22] INFO root fetch - processPackages [django-static-jquery-ui]: Remove: archive file [/home/abi/fetcher/tmp/django-static-jquery-ui-1.13.3.1.tar.gz]
 [2024-05-12 15:23:22] INFO root fetch - main [MainThread]: End processing [django-static-jquery-ui]: success
 [2024-05-12 15:23:22] INFO root fetch - main [MainThread]: Store serial: [23170122]
+[2024-05-12 15:25:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170122]
+[2024-05-12 15:25:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 15:25:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kappamodules
+[2024-05-12 15:25:31] INFO root fetch - processPackages [kappamodules]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-12 15:25:31] INFO root fetch - processPackages [kappamodules]: Downloading https://files.pythonhosted.org/packages/3b/e2/1ae9387d8409532bc4bf07acb0b2668b501b1cde2d63e40733fb972b1f4c/kappamodules-0.1.7.tar.gz
+[2024-05-12 15:25:31] INFO root fetch - processPackages [kappamodules]: Downloading https://files.pythonhosted.org/packages/81/fc/bada4aae7de7149188e11f5ee6f6bb78d0725367f860197922b557fbd65b/kappamodules-0.1.8.tar.gz
+[2024-05-12 15:25:32] INFO root fetch - processPackages [kappamodules]: executing diffoscope
+[2024-05-12 15:25:32] INFO root fetch - processPackages [kappamodules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kappamodules-0.1.7.tar.gz tmp/kappamodules-0.1.8.tar.gz --markdown 20240512/k/kappamodules/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-12 15:25:32] INFO root fetch - processPackages [kappamodules]: Remove: archive file [/home/abi/fetcher/tmp/kappamodules-0.1.7.tar.gz]
+[2024-05-12 15:25:32] INFO root fetch - processPackages [kappamodules]: Remove: archive file [/home/abi/fetcher/tmp/kappamodules-0.1.8.tar.gz]
+[2024-05-12 15:25:32] INFO root fetch - main [MainThread]: End processing [kappamodules]: success
+[2024-05-12 15:25:32] INFO root fetch - main [MainThread]: Store serial: [23170126]
