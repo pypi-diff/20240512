@@ -18396,3 +18396,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:47:14] INFO root fetch - processPackages [scylla-cqlsh]: Remove: archive file [/home/abi/fetcher/tmp/scylla-cqlsh-6.0.9.tar.gz]
 [2024-05-12 23:47:14] INFO root fetch - main [MainThread]: End processing [scylla-cqlsh]: success
 [2024-05-12 23:47:14] INFO root fetch - main [MainThread]: Store serial: [23174146]
+[2024-05-12 23:49:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23174146]
+[2024-05-12 23:49:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 23:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: joeysz
+[2024-05-12 23:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: androgynyz
+[2024-05-12 23:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Elasticsearch-to-BigQuery-Connector
+[2024-05-12 23:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pouclients
+[2024-05-12 23:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: symcirc
+[2024-05-12 23:49:23] WARNING root fetch - processPackages [Elasticsearch-to-BigQuery-Connector]: Skipping, unable to determine old version
+[2024-05-12 23:49:23] INFO root fetch - main [MainThread]: End processing [Elasticsearch-to-BigQuery-Connector] error
+[2024-05-12 23:49:23] WARNING root fetch - processPackages [androgynyz]: Skipping, unable to determine old version
+[2024-05-12 23:49:23] INFO root fetch - main [MainThread]: End processing [androgynyz] error
+[2024-05-12 23:49:23] WARNING root fetch - processPackages [joeysz]: Skipping, unable to determine old version
+[2024-05-12 23:49:23] INFO root fetch - main [MainThread]: End processing [joeysz] error
+[2024-05-12 23:49:23] WARNING root fetch - processPackages [pouclients]: Skipping, unable to determine old version
+[2024-05-12 23:49:23] INFO root fetch - main [MainThread]: End processing [pouclients] error
+[2024-05-12 23:49:23] INFO root fetch - processPackages [symcirc]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 23:49:23] INFO root fetch - processPackages [symcirc]: Downloading https://files.pythonhosted.org/packages/dc/70/bab463afd52c526ad5b3884fcdb053ebb414699336ec14e74ede6cc2ecbe/symcirc-0.0.8-py3-none-any.whl
+[2024-05-12 23:49:24] INFO root fetch - processPackages [symcirc]: Downloading https://files.pythonhosted.org/packages/40/ad/654cde84ac6f072734e62f7371ac1aae23848c2c6c045acab86be7be6a4c/symcirc-0.0.9-py3-none-any.whl
+[2024-05-12 23:49:24] INFO root fetch - processPackages [symcirc]: executing diffoscope
+[2024-05-12 23:49:24] INFO root fetch - processPackages [symcirc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symcirc-0.0.8-py3-none-any.whl.zip tmp/symcirc-0.0.9-py3-none-any.whl.zip --markdown 20240512/s/symcirc/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 23:49:25] INFO root fetch - processPackages [symcirc]: Remove: archive file [/home/abi/fetcher/tmp/symcirc-0.0.8-py3-none-any.whl.zip]
+[2024-05-12 23:49:25] INFO root fetch - processPackages [symcirc]: Remove: archive file [/home/abi/fetcher/tmp/symcirc-0.0.9-py3-none-any.whl.zip]
+[2024-05-12 23:49:25] INFO root fetch - main [MainThread]: End processing [symcirc]: success
+[2024-05-12 23:49:25] INFO root fetch - main [MainThread]: Store serial: [23174174]
