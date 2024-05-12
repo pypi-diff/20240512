@@ -17644,3 +17644,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:47:44] INFO root fetch - processPackages [django-cast]: Remove: archive file [/home/abi/fetcher/tmp/django-cast-0.2.9.tar.gz]
 [2024-05-12 22:47:44] INFO root fetch - main [MainThread]: End processing [django-cast]: success
 [2024-05-12 22:47:44] INFO root fetch - main [MainThread]: Store serial: [23173749]
+[2024-05-12 22:49:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173749]
+[2024-05-12 22:49:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 22:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zaku
+[2024-05-12 22:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: google-nest-sdm
+[2024-05-12 22:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ediri-scaleway
+[2024-05-12 22:49:53] INFO root fetch - processPackages [ediri-scaleway]: New version: [2.38.3] Old Version: [2.37.0]
+[2024-05-12 22:49:53] INFO root fetch - processPackages [ediri-scaleway]: Downloading https://files.pythonhosted.org/packages/de/68/d31a61f00accbeae15f2c29b13163dbd397a112abdf8f87bbfd36fa925aa/ediri_scaleway-2.37.0.tar.gz
+[2024-05-12 22:49:53] INFO root fetch - processPackages [zaku]: New version: [0.0.8rc1] Old Version: [0.0.7]
+[2024-05-12 22:49:53] INFO root fetch - processPackages [google-nest-sdm]: New version: [3.0.5] Old Version: [3.0.4]
+[2024-05-12 22:49:53] INFO root fetch - processPackages [zaku]: Downloading https://files.pythonhosted.org/packages/de/4a/c3b8879f070cd9ab5defc49203ce7c5e4773840180e89864f732ca3784aa/zaku-0.0.7-py3-none-any.whl
+[2024-05-12 22:49:53] INFO root fetch - processPackages [google-nest-sdm]: Downloading https://files.pythonhosted.org/packages/b0/d2/38b4f796ae55da9696d4d5e85b7fbec5e9614dc7cf29ee645da4f3460596/google_nest_sdm-3.0.4.tar.gz
+[2024-05-12 22:49:53] INFO root fetch - processPackages [ediri-scaleway]: Downloading https://files.pythonhosted.org/packages/55/80/8a8c831992623a776499cb3872713a76066434c9814860093ccbe5ce56ba/ediri_scaleway-2.38.3.tar.gz
+[2024-05-12 22:49:53] INFO root fetch - processPackages [ediri-scaleway]: executing diffoscope
+[2024-05-12 22:49:53] INFO root fetch - processPackages [ediri-scaleway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ediri_scaleway-2.37.0.tar.gz tmp/ediri_scaleway-2.38.3.tar.gz --markdown 20240512/e/ediri-scaleway/2.37.0-2.38.3/README.md --exclude *.pyd
+[2024-05-12 22:49:53] INFO root fetch - processPackages [google-nest-sdm]: Downloading https://files.pythonhosted.org/packages/09/d8/3401d4656535bf2840b535945b8c95b2615c856f1e6737d6f656c1bcb1d9/google_nest_sdm-3.0.5.tar.gz
+[2024-05-12 22:49:53] INFO root fetch - processPackages [zaku]: Downloading https://files.pythonhosted.org/packages/36/63/843de81065e8c450c9dd14f7dd36425a40393dc131450c91bebeb4c5dd43/zaku-0.0.8rc1-py3-none-any.whl
+[2024-05-12 22:49:54] INFO root fetch - processPackages [google-nest-sdm]: executing diffoscope
+[2024-05-12 22:49:54] INFO root fetch - processPackages [google-nest-sdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google_nest_sdm-3.0.4.tar.gz tmp/google_nest_sdm-3.0.5.tar.gz --markdown 20240512/g/google-nest-sdm/3.0.4-3.0.5/README.md --exclude *.pyd
+[2024-05-12 22:49:54] INFO root fetch - processPackages [zaku]: executing diffoscope
+[2024-05-12 22:49:54] INFO root fetch - processPackages [zaku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zaku-0.0.7-py3-none-any.whl.zip tmp/zaku-0.0.8rc1-py3-none-any.whl.zip --markdown 20240512/z/zaku/0.0.7-0.0.8rc1/README.md --exclude *.pyd
+[2024-05-12 22:49:54] INFO root fetch - processPackages [zaku]: Remove: archive file [/home/abi/fetcher/tmp/zaku-0.0.7-py3-none-any.whl.zip]
+[2024-05-12 22:49:54] INFO root fetch - processPackages [zaku]: Remove: archive file [/home/abi/fetcher/tmp/zaku-0.0.8rc1-py3-none-any.whl.zip]
+[2024-05-12 22:49:54] INFO root fetch - main [MainThread]: End processing [zaku]: success
+[2024-05-12 22:49:54] INFO root fetch - processPackages [google-nest-sdm]: Remove: archive file [/home/abi/fetcher/tmp/google_nest_sdm-3.0.4.tar.gz]
+[2024-05-12 22:49:54] INFO root fetch - processPackages [google-nest-sdm]: Remove: archive file [/home/abi/fetcher/tmp/google_nest_sdm-3.0.5.tar.gz]
+[2024-05-12 22:49:54] INFO root fetch - main [MainThread]: End processing [google-nest-sdm]: success
+[2024-05-12 22:49:55] INFO root fetch - processPackages [ediri-scaleway]: Remove: archive file [/home/abi/fetcher/tmp/ediri_scaleway-2.37.0.tar.gz]
+[2024-05-12 22:49:55] INFO root fetch - processPackages [ediri-scaleway]: Remove: archive file [/home/abi/fetcher/tmp/ediri_scaleway-2.38.3.tar.gz]
+[2024-05-12 22:49:55] INFO root fetch - main [MainThread]: End processing [ediri-scaleway]: success
+[2024-05-12 22:49:55] INFO root fetch - main [MainThread]: Store serial: [23173756]
