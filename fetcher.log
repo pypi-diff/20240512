@@ -15196,3 +15196,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:10:56] INFO root fetch - processPackages [stackql-deploy]: Remove: archive file [/home/abi/fetcher/tmp/stackql_deploy-1.5.1.tar.gz]
 [2024-05-12 20:10:56] INFO root fetch - main [MainThread]: End processing [stackql-deploy]: success
 [2024-05-12 20:10:56] INFO root fetch - main [MainThread]: Store serial: [23172533]
+[2024-05-12 20:12:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172533]
+[2024-05-12 20:13:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 20:13:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bioat
+[2024-05-12 20:13:04] INFO root fetch - processPackages [bioat]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-12 20:13:05] INFO root fetch - processPackages [bioat]: Downloading https://files.pythonhosted.org/packages/04/87/27733a666503696419c4a4b25800eae50415192d02274519b748829963d0/bioat-0.9.0.tar.gz
+[2024-05-12 20:13:05] INFO root fetch - processPackages [bioat]: Downloading https://files.pythonhosted.org/packages/9b/66/f85222000d903dd3fc4dcf94a27d2dc8e169f2a275a156acaa6341e21d37/bioat-0.9.1.tar.gz
+[2024-05-12 20:13:05] INFO root fetch - processPackages [bioat]: executing diffoscope
+[2024-05-12 20:13:05] INFO root fetch - processPackages [bioat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioat-0.9.0.tar.gz tmp/bioat-0.9.1.tar.gz --markdown 20240512/b/bioat/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-12 20:13:06] INFO root fetch - processPackages [bioat]: Remove: archive file [/home/abi/fetcher/tmp/bioat-0.9.0.tar.gz]
+[2024-05-12 20:13:06] INFO root fetch - processPackages [bioat]: Remove: archive file [/home/abi/fetcher/tmp/bioat-0.9.1.tar.gz]
+[2024-05-12 20:13:06] INFO root fetch - main [MainThread]: End processing [bioat]: success
+[2024-05-12 20:13:06] INFO root fetch - main [MainThread]: Store serial: [23172536]
