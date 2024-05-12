@@ -14984,3 +14984,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:57:50] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.9.tar.gz]
 [2024-05-12 19:57:50] INFO root fetch - main [MainThread]: End processing [smart-parallelize]: success
 [2024-05-12 19:57:50] INFO root fetch - main [MainThread]: Store serial: [23172451]
+[2024-05-12 19:59:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172451]
+[2024-05-12 19:59:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 19:59:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: violottaz
+[2024-05-12 19:59:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: namer
+[2024-05-12 19:59:59] WARNING root fetch - processPackages [violottaz]: Skipping, unable to determine old version
+[2024-05-12 19:59:59] INFO root fetch - main [MainThread]: End processing [violottaz] error
+[2024-05-12 19:59:59] INFO root fetch - processPackages [namer]: New version: [1.9.8] Old Version: [1.9.7]
+[2024-05-12 19:59:59] INFO root fetch - processPackages [namer]: Downloading https://files.pythonhosted.org/packages/13/04/79d5b1d7c32bd69fa2f6b689030b844e992c35bb3a8907ea9f944a76e29d/namer-1.9.7.tar.gz
+[2024-05-12 20:00:00] INFO root fetch - processPackages [namer]: Downloading https://files.pythonhosted.org/packages/4c/f1/c49c428124090401e22593a3d7f5c99a317c54dbe00b5c67957b784e0dd0/namer-1.9.8.tar.gz
+[2024-05-12 20:00:00] INFO root fetch - processPackages [namer]: executing diffoscope
+[2024-05-12 20:00:00] INFO root fetch - processPackages [namer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/namer-1.9.7.tar.gz tmp/namer-1.9.8.tar.gz --markdown 20240512/n/namer/1.9.7-1.9.8/README.md --exclude *.pyd
+[2024-05-12 20:00:00] INFO root fetch - processPackages [namer]: Remove: archive file [/home/abi/fetcher/tmp/namer-1.9.7.tar.gz]
+[2024-05-12 20:00:00] INFO root fetch - processPackages [namer]: Remove: archive file [/home/abi/fetcher/tmp/namer-1.9.8.tar.gz]
+[2024-05-12 20:00:00] INFO root fetch - main [MainThread]: End processing [namer]: success
+[2024-05-12 20:00:00] INFO root fetch - main [MainThread]: Store serial: [23172458]
