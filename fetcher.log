@@ -16126,3 +16126,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:16:10] INFO root fetch - processPackages [missing-mga]: Remove: archive file [/home/abi/fetcher/tmp/missing_mga-1.0.0-py3-none-any.whl.zip]
 [2024-05-12 21:16:10] INFO root fetch - main [MainThread]: End processing [missing-mga]: success
 [2024-05-12 21:16:10] INFO root fetch - main [MainThread]: Store serial: [23172976]
+[2024-05-12 21:18:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172976]
+[2024-05-12 21:18:18] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 21:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cancer-simulation
+[2024-05-12 21:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cancer-simulation
+[2024-05-12 21:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cancer-simulation
+[2024-05-12 21:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cancer-simulation
+[2024-05-12 21:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cancer-simulation
+[2024-05-12 21:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cancer-simulation
+[2024-05-12 21:18:18] INFO root fetch - processPackages [cancer-simulation]: New version: [0.6] Old Version: [0.5]
+[2024-05-12 21:18:18] INFO root fetch - processPackages [cancer-simulation]: New version: [0.6] Old Version: [0.5]
+[2024-05-12 21:18:18] INFO root fetch - processPackages [cancer-simulation]: New version: [0.6] Old Version: [0.5]
+[2024-05-12 21:18:18] INFO root fetch - processPackages [cancer-simulation]: New version: [0.6] Old Version: [0.5]
+[2024-05-12 21:18:18] INFO root fetch - processPackages [cancer-simulation]: New version: [0.6] Old Version: [0.5]
+[2024-05-12 21:18:18] INFO root fetch - processPackages [cancer-simulation]: New version: [0.6] Old Version: [0.5]
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: Downloading https://files.pythonhosted.org/packages/d8/1a/49cf1afa456e12e6e7c96133d06aae3466b33824223d680d67947c12a7cc/cancer_simulation-0.5.tar.gz
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: Downloading https://files.pythonhosted.org/packages/d8/1a/49cf1afa456e12e6e7c96133d06aae3466b33824223d680d67947c12a7cc/cancer_simulation-0.5.tar.gz
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: Downloading https://files.pythonhosted.org/packages/d8/1a/49cf1afa456e12e6e7c96133d06aae3466b33824223d680d67947c12a7cc/cancer_simulation-0.5.tar.gz
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: Downloading https://files.pythonhosted.org/packages/d8/1a/49cf1afa456e12e6e7c96133d06aae3466b33824223d680d67947c12a7cc/cancer_simulation-0.5.tar.gz
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: Downloading https://files.pythonhosted.org/packages/d8/1a/49cf1afa456e12e6e7c96133d06aae3466b33824223d680d67947c12a7cc/cancer_simulation-0.5.tar.gz
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: Downloading https://files.pythonhosted.org/packages/d8/1a/49cf1afa456e12e6e7c96133d06aae3466b33824223d680d67947c12a7cc/cancer_simulation-0.5.tar.gz
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: Downloading https://files.pythonhosted.org/packages/a7/f2/0e404856cdbf51709cdb10623210f52ea9aeb9e77dd1c2c60b4ff0a3ad9a/cancer_simulation-0.6.tar.gz
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: Downloading https://files.pythonhosted.org/packages/a7/f2/0e404856cdbf51709cdb10623210f52ea9aeb9e77dd1c2c60b4ff0a3ad9a/cancer_simulation-0.6.tar.gz
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: Downloading https://files.pythonhosted.org/packages/a7/f2/0e404856cdbf51709cdb10623210f52ea9aeb9e77dd1c2c60b4ff0a3ad9a/cancer_simulation-0.6.tar.gz
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: Downloading https://files.pythonhosted.org/packages/a7/f2/0e404856cdbf51709cdb10623210f52ea9aeb9e77dd1c2c60b4ff0a3ad9a/cancer_simulation-0.6.tar.gz
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: Downloading https://files.pythonhosted.org/packages/a7/f2/0e404856cdbf51709cdb10623210f52ea9aeb9e77dd1c2c60b4ff0a3ad9a/cancer_simulation-0.6.tar.gz
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: Downloading https://files.pythonhosted.org/packages/a7/f2/0e404856cdbf51709cdb10623210f52ea9aeb9e77dd1c2c60b4ff0a3ad9a/cancer_simulation-0.6.tar.gz
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: executing diffoscope
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cancer_simulation-0.5.tar.gz tmp/cancer_simulation-0.6.tar.gz --markdown 20240512/c/cancer-simulation/0.5-0.6/README.md --exclude *.pyd
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: executing diffoscope
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cancer_simulation-0.5.tar.gz tmp/cancer_simulation-0.6.tar.gz --markdown 20240512/c/cancer-simulation/0.5-0.6/README.md --exclude *.pyd
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: executing diffoscope
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cancer_simulation-0.5.tar.gz tmp/cancer_simulation-0.6.tar.gz --markdown 20240512/c/cancer-simulation/0.5-0.6/README.md --exclude *.pyd
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: executing diffoscope
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cancer_simulation-0.5.tar.gz tmp/cancer_simulation-0.6.tar.gz --markdown 20240512/c/cancer-simulation/0.5-0.6/README.md --exclude *.pyd
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: executing diffoscope
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cancer_simulation-0.5.tar.gz tmp/cancer_simulation-0.6.tar.gz --markdown 20240512/c/cancer-simulation/0.5-0.6/README.md --exclude *.pyd
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: executing diffoscope
+[2024-05-12 21:18:19] INFO root fetch - processPackages [cancer-simulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cancer_simulation-0.5.tar.gz tmp/cancer_simulation-0.6.tar.gz --markdown 20240512/c/cancer-simulation/0.5-0.6/README.md --exclude *.pyd
+[2024-05-12 21:18:20] INFO root fetch - processPackages [cancer-simulation]: Remove: archive file [/home/abi/fetcher/tmp/cancer_simulation-0.5.tar.gz]
+[2024-05-12 21:18:20] INFO root fetch - processPackages [cancer-simulation]: Remove: archive file [/home/abi/fetcher/tmp/cancer_simulation-0.6.tar.gz]
+[2024-05-12 21:18:20] INFO root fetch - main [MainThread]: End processing [cancer-simulation]: success
+[2024-05-12 21:18:20] INFO root fetch - main [MainThread]: End processing [cancer-simulation]: success
+[2024-05-12 21:18:20] INFO root fetch - main [MainThread]: End processing [cancer-simulation]: success
+[2024-05-12 21:18:20] INFO root fetch - main [MainThread]: End processing [cancer-simulation]: success
+[2024-05-12 21:18:20] INFO root fetch - main [MainThread]: End processing [cancer-simulation]: success
+[2024-05-12 21:18:20] INFO root fetch - main [MainThread]: End processing [cancer-simulation]: success
+[2024-05-12 21:18:20] INFO root fetch - main [MainThread]: Store serial: [23172996]
