@@ -11307,3 +11307,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:04:41] INFO root fetch - processPackages [pytilpack]: Remove: archive file [/home/abi/fetcher/tmp/pytilpack-0.4.0.tar.gz]
 [2024-05-12 16:04:41] INFO root fetch - main [MainThread]: End processing [pytilpack]: success
 [2024-05-12 16:04:41] INFO root fetch - main [MainThread]: Store serial: [23170475]
+[2024-05-12 16:06:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170475]
+[2024-05-12 16:06:50] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 16:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PKDevTools
+[2024-05-12 16:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bookio-fetchfox
+[2024-05-12 16:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ocean-sparkconnect
+[2024-05-12 16:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyllmserver
+[2024-05-12 16:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiavatar
+[2024-05-12 16:06:50] INFO root fetch - processPackages [aiavatar]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-05-12 16:06:50] INFO root fetch - processPackages [PKDevTools]: New version: [0.13.20240512.114] Old Version: [0.13.20240510.113]
+[2024-05-12 16:06:50] WARNING root fetch - processPackages [pyllmserver]: Skipping, unable to determine old version
+[2024-05-12 16:06:50] INFO root fetch - main [MainThread]: End processing [pyllmserver] error
+[2024-05-12 16:06:50] WARNING root fetch - processPackages [ocean-sparkconnect]: Skipping, unable to determine old version
+[2024-05-12 16:06:50] INFO root fetch - main [MainThread]: End processing [ocean-sparkconnect] error
+[2024-05-12 16:06:50] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/4c/10/f8ecdfd77d15ca9a88dc000bcb4da3031beb18d7a1ad3638ed89470007f4/aiavatar-0.5.3-py3-none-any.whl
+[2024-05-12 16:06:50] INFO root fetch - processPackages [bookio-fetchfox]: New version: [2.6.0] Old Version: [2.5.1]
+[2024-05-12 16:06:50] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/e3/5e/5f80435aaf3f1479b126f2161009f77b682c30280cb8d023e7656d0fd204/PKDevTools-0.13.20240510.113.tar.gz
+[2024-05-12 16:06:50] INFO root fetch - processPackages [bookio-fetchfox]: Downloading https://files.pythonhosted.org/packages/7a/18/7f19ab920292b846199d9d4644308a9727549f0a9d06827248b6d992044f/bookio_fetchfox-2.5.1.tar.gz
+[2024-05-12 16:06:50] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/98/8d/af0dd6d07548ff05276819595976403483f78d60299203cbbdd71b9f2be2/PKDevTools-0.13.20240512.114.tar.gz
+[2024-05-12 16:06:50] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/8c/7e/b5dca589f7615368aaf15e72861192d9216d680cc189a9368b9196d11eee/aiavatar-0.5.4-py3-none-any.whl
+[2024-05-12 16:06:50] INFO root fetch - processPackages [PKDevTools]: executing diffoscope
+[2024-05-12 16:06:50] INFO root fetch - processPackages [PKDevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKDevTools-0.13.20240510.113.tar.gz tmp/PKDevTools-0.13.20240512.114.tar.gz --markdown 20240512/P/PKDevTools/0.13.20240510.113-0.13.20240512.114/README.md --exclude *.pyd
+[2024-05-12 16:06:51] INFO root fetch - processPackages [aiavatar]: executing diffoscope
+[2024-05-12 16:06:51] INFO root fetch - processPackages [aiavatar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiavatar-0.5.3-py3-none-any.whl.zip tmp/aiavatar-0.5.4-py3-none-any.whl.zip --markdown 20240512/a/aiavatar/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-05-12 16:06:51] INFO root fetch - processPackages [bookio-fetchfox]: Downloading https://files.pythonhosted.org/packages/0a/d0/d67b591adf6ee70951c95957fbe1b47c3ffb9d7365e1d8af831c5acf0186/bookio_fetchfox-2.6.0.tar.gz
+[2024-05-12 16:06:51] INFO root fetch - processPackages [bookio-fetchfox]: executing diffoscope
+[2024-05-12 16:06:51] INFO root fetch - processPackages [bookio-fetchfox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bookio_fetchfox-2.5.1.tar.gz tmp/bookio_fetchfox-2.6.0.tar.gz --markdown 20240512/b/bookio-fetchfox/2.5.1-2.6.0/README.md --exclude *.pyd
+[2024-05-12 16:06:51] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.5.3-py3-none-any.whl.zip]
+[2024-05-12 16:06:51] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.5.4-py3-none-any.whl.zip]
+[2024-05-12 16:06:51] INFO root fetch - main [MainThread]: End processing [aiavatar]: success
+[2024-05-12 16:06:51] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240510.113.tar.gz]
+[2024-05-12 16:06:51] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240512.114.tar.gz]
+[2024-05-12 16:06:51] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
+[2024-05-12 16:06:51] INFO root fetch - processPackages [bookio-fetchfox]: Remove: archive file [/home/abi/fetcher/tmp/bookio_fetchfox-2.5.1.tar.gz]
+[2024-05-12 16:06:51] INFO root fetch - processPackages [bookio-fetchfox]: Remove: archive file [/home/abi/fetcher/tmp/bookio_fetchfox-2.6.0.tar.gz]
+[2024-05-12 16:06:51] INFO root fetch - main [MainThread]: End processing [bookio-fetchfox]: success
+[2024-05-12 16:06:51] INFO root fetch - main [MainThread]: Store serial: [23170492]
