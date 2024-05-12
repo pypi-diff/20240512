@@ -16173,3 +16173,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:18:20] INFO root fetch - main [MainThread]: End processing [cancer-simulation]: success
 [2024-05-12 21:18:20] INFO root fetch - main [MainThread]: End processing [cancer-simulation]: success
 [2024-05-12 21:18:20] INFO root fetch - main [MainThread]: Store serial: [23172996]
+[2024-05-12 21:20:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172996]
+[2024-05-12 21:20:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 21:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pki-tools
+[2024-05-12 21:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unconfirmedz
+[2024-05-12 21:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bougainvillaeaz
+[2024-05-12 21:20:29] WARNING root fetch - processPackages [unconfirmedz]: Skipping, unable to determine old version
+[2024-05-12 21:20:29] INFO root fetch - main [MainThread]: End processing [unconfirmedz] error
+[2024-05-12 21:20:29] WARNING root fetch - processPackages [bougainvillaeaz]: Skipping, unable to determine old version
+[2024-05-12 21:20:29] INFO root fetch - main [MainThread]: End processing [bougainvillaeaz] error
+[2024-05-12 21:20:29] INFO root fetch - processPackages [pki-tools]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-12 21:20:29] INFO root fetch - processPackages [pki-tools]: Downloading https://files.pythonhosted.org/packages/08/e7/ab851832735d8b201a05dfbec7d4f2d4f967f437031bb3845f7715deb9e0/pki_tools-1.0.0.tar.gz
+[2024-05-12 21:20:29] INFO root fetch - processPackages [pki-tools]: Downloading https://files.pythonhosted.org/packages/1e/80/2a6fdeb904423916ba56ddedc6cac7976b4b1023b9460c669ef7c1488420/pki_tools-1.0.1.tar.gz
+[2024-05-12 21:20:29] INFO root fetch - processPackages [pki-tools]: executing diffoscope
+[2024-05-12 21:20:29] INFO root fetch - processPackages [pki-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pki_tools-1.0.0.tar.gz tmp/pki_tools-1.0.1.tar.gz --markdown 20240512/p/pki-tools/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-12 21:20:30] INFO root fetch - processPackages [pki-tools]: Remove: archive file [/home/abi/fetcher/tmp/pki_tools-1.0.0.tar.gz]
+[2024-05-12 21:20:30] INFO root fetch - processPackages [pki-tools]: Remove: archive file [/home/abi/fetcher/tmp/pki_tools-1.0.1.tar.gz]
+[2024-05-12 21:20:30] INFO root fetch - main [MainThread]: End processing [pki-tools]: success
+[2024-05-12 21:20:30] INFO root fetch - main [MainThread]: Store serial: [23173007]
