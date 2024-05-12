@@ -3242,3 +3242,48 @@
 [2024-05-12 04:40:06] INFO root fetch - processPackages [streamlit-screen-stats]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-screen-stats-0.0.9.tar.gz]
 [2024-05-12 04:40:06] INFO root fetch - main [MainThread]: End processing [streamlit-screen-stats]: success
 [2024-05-12 04:40:06] INFO root fetch - main [MainThread]: Store serial: [23166440]
+[2024-05-12 04:42:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166440]
+[2024-05-12 04:42:14] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 04:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lotterytickets
+[2024-05-12 04:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kickthespypet-api
+[2024-05-12 04:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: todoist-auto
+[2024-05-12 04:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wrapica
+[2024-05-12 04:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiogtrans
+[2024-05-12 04:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: baraboraz
+[2024-05-12 04:42:15] INFO root fetch - processPackages [wrapica]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-12 04:42:15] INFO root fetch - processPackages [kickthespypet-api]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-05-12 04:42:15] WARNING root fetch - processPackages [lotterytickets]: Skipping, unable to determine old version
+[2024-05-12 04:42:15] INFO root fetch - main [MainThread]: End processing [lotterytickets] error
+[2024-05-12 04:42:15] INFO root fetch - processPackages [aiogtrans]: New version: [1.1.7] Old Version: [1.1.6]
+[2024-05-12 04:42:15] INFO root fetch - processPackages [wrapica]: Downloading https://files.pythonhosted.org/packages/94/62/a644ad0588f7fda6f6b2d669c3a972ee650a06084bc4f80fce2dc9155fbd/wrapica-1.0.4.tar.gz
+[2024-05-12 04:42:15] INFO root fetch - processPackages [kickthespypet-api]: Downloading https://files.pythonhosted.org/packages/ae/07/4389b1e18b84503e86e587a186bc43d4d3958ba0b02a01a331fa48d4ea60/kickthespypet_api-0.0.2.tar.gz
+[2024-05-12 04:42:15] WARNING root fetch - processPackages [baraboraz]: Skipping, unable to determine old version
+[2024-05-12 04:42:15] INFO root fetch - main [MainThread]: End processing [baraboraz] error
+[2024-05-12 04:42:15] INFO root fetch - processPackages [todoist-auto]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-05-12 04:42:15] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/b1/78/baea81138dfb8700e7a2b795b192569b97f1b353b15e6374ef7c32ec9bd9/todoist_auto-8.0.0.tar.gz
+[2024-05-12 04:42:15] INFO root fetch - processPackages [aiogtrans]: Downloading https://files.pythonhosted.org/packages/3a/60/e054900c5f92a31d82d0da9abfaffda7348a291e0d9289d74ada4bdaf8c9/aiogtrans-1.1.6.tar.gz
+[2024-05-12 04:42:15] INFO root fetch - processPackages [kickthespypet-api]: Downloading https://files.pythonhosted.org/packages/56/09/2ca56896fc665fb66f9079b4ca0e96ee809ff482092968bdb89a89b96cc3/kickthespypet_api-0.0.4.tar.gz
+[2024-05-12 04:42:15] INFO root fetch - processPackages [wrapica]: Downloading https://files.pythonhosted.org/packages/04/2d/7e0fc58254ac950e9e08008d23dbe37d9723ec0aeb9ae852d7b3f9adcc7d/wrapica-1.0.5.tar.gz
+[2024-05-12 04:42:15] INFO root fetch - processPackages [kickthespypet-api]: executing diffoscope
+[2024-05-12 04:42:15] INFO root fetch - processPackages [kickthespypet-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kickthespypet_api-0.0.2.tar.gz tmp/kickthespypet_api-0.0.4.tar.gz --markdown 20240512/k/kickthespypet-api/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-05-12 04:42:15] INFO root fetch - processPackages [wrapica]: executing diffoscope
+[2024-05-12 04:42:15] INFO root fetch - processPackages [wrapica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wrapica-1.0.4.tar.gz tmp/wrapica-1.0.5.tar.gz --markdown 20240512/w/wrapica/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-12 04:42:15] INFO root fetch - processPackages [aiogtrans]: Downloading https://files.pythonhosted.org/packages/be/89/ef104bc3cc27c886098ec7f90307d1cd33a5d1decb3d5cede9a9eebcdfe7/aiogtrans-1.1.7.tar.gz
+[2024-05-12 04:42:15] INFO root fetch - processPackages [aiogtrans]: executing diffoscope
+[2024-05-12 04:42:15] INFO root fetch - processPackages [aiogtrans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogtrans-1.1.6.tar.gz tmp/aiogtrans-1.1.7.tar.gz --markdown 20240512/a/aiogtrans/1.1.6-1.1.7/README.md --exclude *.pyd
+[2024-05-12 04:42:16] INFO root fetch - processPackages [kickthespypet-api]: Remove: archive file [/home/abi/fetcher/tmp/kickthespypet_api-0.0.2.tar.gz]
+[2024-05-12 04:42:16] INFO root fetch - processPackages [kickthespypet-api]: Remove: archive file [/home/abi/fetcher/tmp/kickthespypet_api-0.0.4.tar.gz]
+[2024-05-12 04:42:16] INFO root fetch - main [MainThread]: End processing [kickthespypet-api]: success
+[2024-05-12 04:42:16] INFO root fetch - processPackages [wrapica]: Remove: archive file [/home/abi/fetcher/tmp/wrapica-1.0.4.tar.gz]
+[2024-05-12 04:42:16] INFO root fetch - processPackages [wrapica]: Remove: archive file [/home/abi/fetcher/tmp/wrapica-1.0.5.tar.gz]
+[2024-05-12 04:42:16] INFO root fetch - main [MainThread]: End processing [wrapica]: success
+[2024-05-12 04:42:16] INFO root fetch - processPackages [aiogtrans]: Remove: archive file [/home/abi/fetcher/tmp/aiogtrans-1.1.6.tar.gz]
+[2024-05-12 04:42:16] INFO root fetch - processPackages [aiogtrans]: Remove: archive file [/home/abi/fetcher/tmp/aiogtrans-1.1.7.tar.gz]
+[2024-05-12 04:42:16] INFO root fetch - main [MainThread]: End processing [aiogtrans]: success
+[2024-05-12 04:42:16] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/ad/42/49bc0ab11074d45b08e24c5a91b302992d6e5855e521f2a779d82a91eed5/todoist_auto-9.0.0.tar.gz
+[2024-05-12 04:42:16] INFO root fetch - processPackages [todoist-auto]: executing diffoscope
+[2024-05-12 04:42:16] INFO root fetch - processPackages [todoist-auto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/todoist_auto-8.0.0.tar.gz tmp/todoist_auto-9.0.0.tar.gz --markdown 20240512/t/todoist-auto/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-05-12 04:42:17] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-8.0.0.tar.gz]
+[2024-05-12 04:42:17] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-9.0.0.tar.gz]
+[2024-05-12 04:42:17] INFO root fetch - main [MainThread]: End processing [todoist-auto]: success
+[2024-05-12 04:42:17] INFO root fetch - main [MainThread]: Store serial: [23166460]
