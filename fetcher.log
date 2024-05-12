@@ -7585,3 +7585,51 @@
 [2024-05-12 11:26:32] WARNING root fetch - processPackages [relacquerz]: Skipping, unable to determine old version
 [2024-05-12 11:26:32] INFO root fetch - main [MainThread]: End processing [relacquerz] error
 [2024-05-12 11:26:32] INFO root fetch - main [MainThread]: Store serial: [23168463]
+[2024-05-12 11:28:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168463]
+[2024-05-12 11:28:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 11:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hstream
+[2024-05-12 11:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CouchDB3
+[2024-05-12 11:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-components
+[2024-05-12 11:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-flex-report
+[2024-05-12 11:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sts-libs
+[2024-05-12 11:28:41] INFO root fetch - processPackages [hstream]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-12 11:28:41] INFO root fetch - processPackages [django-flex-report]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-05-12 11:28:41] INFO root fetch - processPackages [hstream]: Downloading https://files.pythonhosted.org/packages/64/2b/8e1cabe5268b7c5baacbd6005d0102635183d9a470be5ac6e0b7852a07c6/hstream-0.1.2.tar.gz
+[2024-05-12 11:28:41] INFO root fetch - processPackages [CouchDB3]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-12 11:28:41] INFO root fetch - processPackages [sts-libs]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-12 11:28:41] INFO root fetch - processPackages [django-components]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-12 11:28:42] INFO root fetch - processPackages [django-flex-report]: Downloading https://files.pythonhosted.org/packages/71/ff/adfe688e42a6a08e7abfb828297e605bebdc72f49021d5c066a27275959d/django-flex-report-0.8.1.tar.gz
+[2024-05-12 11:28:42] INFO root fetch - processPackages [CouchDB3]: Downloading https://files.pythonhosted.org/packages/80/83/dad87d6ea9c00234a05726aef74b95bf5e900538bb09f3a53445215f2b9d/CouchDB3-1.2.1.tar.gz
+[2024-05-12 11:28:42] INFO root fetch - processPackages [django-components]: Downloading https://files.pythonhosted.org/packages/d9/a9/0e17dfb6bc2c9ffafac974b36a0078d0df2730d82373e45392b15ca26fe1/django_components-0.9.1.tar.gz
+[2024-05-12 11:28:42] INFO root fetch - processPackages [sts-libs]: Downloading https://files.pythonhosted.org/packages/ab/dc/86c71b1aa45e9b67db3fc56b82519a6d8090e2f5e858152442f19eb69beb/sts_libs-0.1.9.tar.gz
+[2024-05-12 11:28:42] INFO root fetch - processPackages [hstream]: Downloading https://files.pythonhosted.org/packages/f2/75/e9fa8dd7887ac19315391f61fa77492c743dcc04d22ed712cf2ba2b1b19c/hstream-0.1.3.tar.gz
+[2024-05-12 11:28:42] INFO root fetch - processPackages [hstream]: executing diffoscope
+[2024-05-12 11:28:42] INFO root fetch - processPackages [hstream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hstream-0.1.2.tar.gz tmp/hstream-0.1.3.tar.gz --markdown 20240512/h/hstream/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-12 11:28:42] INFO root fetch - processPackages [CouchDB3]: Downloading https://files.pythonhosted.org/packages/03/a7/10fac058ce5d5742ed68fb7c1b62b22c23b77439dddac9f2a1a64e6415eb/couchdb3-1.2.2.tar.gz
+[2024-05-12 11:28:42] INFO root fetch - processPackages [django-flex-report]: Downloading https://files.pythonhosted.org/packages/4e/a6/a7c7c1f708efa62c6248d07d8a543468ba4438e3e38fefe860db89377f5b/django-flex-report-0.8.2.tar.gz
+[2024-05-12 11:28:42] INFO root fetch - processPackages [django-components]: Downloading https://files.pythonhosted.org/packages/01/b6/7465ad9480fe781bc5c56d355a7b96cc21758c50d747830e87dcac29a4db/django_components-0.9.2.tar.gz
+[2024-05-12 11:28:42] INFO root fetch - processPackages [sts-libs]: Downloading https://files.pythonhosted.org/packages/1d/e7/b5506855c5ad9b08b2069f9c3c63176b5ce75ffd2dee7c77e86b118ba230/sts_libs-0.2.0.tar.gz
+[2024-05-12 11:28:42] INFO root fetch - processPackages [CouchDB3]: executing diffoscope
+[2024-05-12 11:28:42] INFO root fetch - processPackages [CouchDB3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CouchDB3-1.2.1.tar.gz tmp/couchdb3-1.2.2.tar.gz --markdown 20240512/C/CouchDB3/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-12 11:28:42] INFO root fetch - processPackages [django-flex-report]: executing diffoscope
+[2024-05-12 11:28:42] INFO root fetch - processPackages [django-flex-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-flex-report-0.8.1.tar.gz tmp/django-flex-report-0.8.2.tar.gz --markdown 20240512/d/django-flex-report/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-05-12 11:28:42] INFO root fetch - processPackages [sts-libs]: executing diffoscope
+[2024-05-12 11:28:42] INFO root fetch - processPackages [sts-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sts_libs-0.1.9.tar.gz tmp/sts_libs-0.2.0.tar.gz --markdown 20240512/s/sts-libs/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-12 11:28:42] INFO root fetch - processPackages [django-components]: executing diffoscope
+[2024-05-12 11:28:42] INFO root fetch - processPackages [django-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_components-0.9.1.tar.gz tmp/django_components-0.9.2.tar.gz --markdown 20240512/d/django-components/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-05-12 11:28:43] INFO root fetch - processPackages [hstream]: Remove: archive file [/home/abi/fetcher/tmp/hstream-0.1.2.tar.gz]
+[2024-05-12 11:28:43] INFO root fetch - processPackages [hstream]: Remove: archive file [/home/abi/fetcher/tmp/hstream-0.1.3.tar.gz]
+[2024-05-12 11:28:43] INFO root fetch - main [MainThread]: End processing [hstream]: success
+[2024-05-12 11:28:43] INFO root fetch - processPackages [CouchDB3]: Remove: archive file [/home/abi/fetcher/tmp/CouchDB3-1.2.1.tar.gz]
+[2024-05-12 11:28:43] INFO root fetch - processPackages [CouchDB3]: Remove: archive file [/home/abi/fetcher/tmp/couchdb3-1.2.2.tar.gz]
+[2024-05-12 11:28:43] INFO root fetch - main [MainThread]: End processing [CouchDB3]: success
+[2024-05-12 11:28:43] INFO root fetch - processPackages [django-flex-report]: Remove: archive file [/home/abi/fetcher/tmp/django-flex-report-0.8.1.tar.gz]
+[2024-05-12 11:28:43] INFO root fetch - processPackages [django-flex-report]: Remove: archive file [/home/abi/fetcher/tmp/django-flex-report-0.8.2.tar.gz]
+[2024-05-12 11:28:43] INFO root fetch - main [MainThread]: End processing [django-flex-report]: success
+[2024-05-12 11:28:43] INFO root fetch - processPackages [django-components]: Remove: archive file [/home/abi/fetcher/tmp/django_components-0.9.1.tar.gz]
+[2024-05-12 11:28:43] INFO root fetch - processPackages [django-components]: Remove: archive file [/home/abi/fetcher/tmp/django_components-0.9.2.tar.gz]
+[2024-05-12 11:28:43] INFO root fetch - main [MainThread]: End processing [django-components]: success
+[2024-05-12 11:28:43] INFO root fetch - processPackages [sts-libs]: Remove: archive file [/home/abi/fetcher/tmp/sts_libs-0.1.9.tar.gz]
+[2024-05-12 11:28:43] INFO root fetch - processPackages [sts-libs]: Remove: archive file [/home/abi/fetcher/tmp/sts_libs-0.2.0.tar.gz]
+[2024-05-12 11:28:43] INFO root fetch - main [MainThread]: End processing [sts-libs]: success
+[2024-05-12 11:28:43] INFO root fetch - main [MainThread]: Store serial: [23168478]
