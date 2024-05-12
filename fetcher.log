@@ -13117,3 +13117,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:56:04] INFO root fetch - processPackages [d42]: Remove: archive file [/home/abi/fetcher/tmp/d42-1.7.1.tar.gz]
 [2024-05-12 17:56:04] INFO root fetch - main [MainThread]: End processing [d42]: success
 [2024-05-12 17:56:04] INFO root fetch - main [MainThread]: Store serial: [23171459]
+[2024-05-12 17:58:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171459]
+[2024-05-12 17:58:13] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 17:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anemone-daisy-maker
+[2024-05-12 17:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openalex-analysis
+[2024-05-12 17:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: database-common-tools
+[2024-05-12 17:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llm-jupyter
+[2024-05-12 17:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jupyter-cpp-kernel
+[2024-05-12 17:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: devgoldyutils
+[2024-05-12 17:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scrutinydebugger
+[2024-05-12 17:58:13] INFO root fetch - processPackages [anemone-daisy-maker]: New version: [1.55.3] Old Version: [1.55.2]
+[2024-05-12 17:58:13] INFO root fetch - processPackages [scrutinydebugger]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-12 17:58:13] INFO root fetch - processPackages [anemone-daisy-maker]: Downloading https://files.pythonhosted.org/packages/2d/92/172d3077eb797c00267faf080c146f37795a563298df31933354f077400e/anemone_daisy_maker-1.55.2.tar.gz
+[2024-05-12 17:58:13] INFO root fetch - processPackages [database-common-tools]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-12 17:58:13] INFO root fetch - processPackages [devgoldyutils]: New version: [3.0.0b1] Old Version: [3.0.0]
+[2024-05-12 17:58:13] INFO root fetch - processPackages [scrutinydebugger]: Downloading https://files.pythonhosted.org/packages/6a/7e/f34dc7314fa59b9db76cdf2bdd488c89af18da5d2a09ac8840eedcff2039/scrutinydebugger-0.2.0.tar.gz
+[2024-05-12 17:58:13] WARNING root fetch - processPackages [llm-jupyter]: Skipping, unable to determine old version
+[2024-05-12 17:58:13] INFO root fetch - main [MainThread]: End processing [llm-jupyter] error
+[2024-05-12 17:58:13] INFO root fetch - processPackages [openalex-analysis]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-12 17:58:13] INFO root fetch - processPackages [jupyter-cpp-kernel]: New version: [1.0.0a7] Old Version: [1.0.0a6]
+[2024-05-12 17:58:13] INFO root fetch - processPackages [database-common-tools]: Downloading https://files.pythonhosted.org/packages/ca/3c/6b8cd59d336e1c605691395b32685c8a043c3effb94cb81dc1d7cec6a6d8/database-common-tools-1.1.8.tar.gz
+[2024-05-12 17:58:13] INFO root fetch - processPackages [devgoldyutils]: Downloading https://files.pythonhosted.org/packages/31/9d/fea73ce632543b91785776a5a1858c17af738f4f57b64f55ba21ec1256ea/devgoldyutils-3.0.0.tar.gz
+[2024-05-12 17:58:13] INFO root fetch - processPackages [openalex-analysis]: Downloading https://files.pythonhosted.org/packages/e1/6e/74f92a35daed4c255a81fd4e0374da06d45c4473783055603fa73ed4f725/openalex-analysis-0.8.2.tar.gz
+[2024-05-12 17:58:13] INFO root fetch - processPackages [scrutinydebugger]: Downloading https://files.pythonhosted.org/packages/e7/46/7c33b609d759d88674c696cbc207f79a4e730518193a1cb217d9c9d04feb/scrutinydebugger-0.2.1.tar.gz
+[2024-05-12 17:58:13] INFO root fetch - processPackages [anemone-daisy-maker]: Downloading https://files.pythonhosted.org/packages/98/ec/1ef72f5e4e635cf41dc6e14f1310b35dff830ea32f6dec3d993d4202689e/anemone_daisy_maker-1.55.3.tar.gz
+[2024-05-12 17:58:13] INFO root fetch - processPackages [jupyter-cpp-kernel]: Downloading https://files.pythonhosted.org/packages/6d/84/3e75851ed6c37cfd327dd711c2b551bf03cc4457089d32cdabeb8def14ae/jupyter-cpp-kernel-1.0.0a6.tar.gz
+[2024-05-12 17:58:13] INFO root fetch - processPackages [scrutinydebugger]: executing diffoscope
+[2024-05-12 17:58:13] INFO root fetch - processPackages [scrutinydebugger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrutinydebugger-0.2.0.tar.gz tmp/scrutinydebugger-0.2.1.tar.gz --markdown 20240512/s/scrutinydebugger/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-12 17:58:13] INFO root fetch - processPackages [anemone-daisy-maker]: executing diffoscope
+[2024-05-12 17:58:13] INFO root fetch - processPackages [anemone-daisy-maker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anemone_daisy_maker-1.55.2.tar.gz tmp/anemone_daisy_maker-1.55.3.tar.gz --markdown 20240512/a/anemone-daisy-maker/1.55.2-1.55.3/README.md --exclude *.pyd
+[2024-05-12 17:58:13] INFO root fetch - processPackages [database-common-tools]: Downloading https://files.pythonhosted.org/packages/55/1d/f84bdab15e57cb34658d4f445048d8bfeaf6b8cd2d0da82250fefbaa75f0/database-common-tools-1.1.9.tar.gz
+[2024-05-12 17:58:14] INFO root fetch - processPackages [database-common-tools]: executing diffoscope
+[2024-05-12 17:58:14] INFO root fetch - processPackages [database-common-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database-common-tools-1.1.8.tar.gz tmp/database-common-tools-1.1.9.tar.gz --markdown 20240512/d/database-common-tools/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-12 17:58:14] INFO root fetch - processPackages [devgoldyutils]: Downloading https://files.pythonhosted.org/packages/15/39/eb87c3526374990e7eda3f6c5bd072756d44fd85c112d8bc486a221a7c58/devgoldyutils-3.0.0b1.tar.gz
+[2024-05-12 17:58:14] INFO root fetch - processPackages [jupyter-cpp-kernel]: Downloading https://files.pythonhosted.org/packages/c1/33/f72d4a788fbf317f238d5aabc7eb27c0b615a396122f8c3ccee69d8b39a1/jupyter-cpp-kernel-1.0.0a7.tar.gz
+[2024-05-12 17:58:14] INFO root fetch - processPackages [jupyter-cpp-kernel]: executing diffoscope
+[2024-05-12 17:58:14] INFO root fetch - processPackages [jupyter-cpp-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter-cpp-kernel-1.0.0a6.tar.gz tmp/jupyter-cpp-kernel-1.0.0a7.tar.gz --markdown 20240512/j/jupyter-cpp-kernel/1.0.0a6-1.0.0a7/README.md --exclude *.pyd
+[2024-05-12 17:58:14] INFO root fetch - processPackages [devgoldyutils]: executing diffoscope
+[2024-05-12 17:58:14] INFO root fetch - processPackages [devgoldyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devgoldyutils-3.0.0.tar.gz tmp/devgoldyutils-3.0.0b1.tar.gz --markdown 20240512/d/devgoldyutils/3.0.0-3.0.0b1/README.md --exclude *.pyd
+[2024-05-12 17:58:14] INFO root fetch - processPackages [anemone-daisy-maker]: Remove: archive file [/home/abi/fetcher/tmp/anemone_daisy_maker-1.55.2.tar.gz]
+[2024-05-12 17:58:14] INFO root fetch - processPackages [anemone-daisy-maker]: Remove: archive file [/home/abi/fetcher/tmp/anemone_daisy_maker-1.55.3.tar.gz]
+[2024-05-12 17:58:14] INFO root fetch - main [MainThread]: End processing [anemone-daisy-maker]: success
+[2024-05-12 17:58:14] INFO root fetch - processPackages [database-common-tools]: Remove: archive file [/home/abi/fetcher/tmp/database-common-tools-1.1.8.tar.gz]
+[2024-05-12 17:58:14] INFO root fetch - processPackages [database-common-tools]: Remove: archive file [/home/abi/fetcher/tmp/database-common-tools-1.1.9.tar.gz]
+[2024-05-12 17:58:14] INFO root fetch - main [MainThread]: End processing [database-common-tools]: success
+[2024-05-12 17:58:14] INFO root fetch - processPackages [openalex-analysis]: Downloading https://files.pythonhosted.org/packages/a7/78/61ce9bcef0b413e9cc7b928053d44ee4f95e0fcd7bcdd4f1a53effb5fe57/openalex-analysis-0.9.0.tar.gz
+[2024-05-12 17:58:14] INFO root fetch - processPackages [scrutinydebugger]: Remove: archive file [/home/abi/fetcher/tmp/scrutinydebugger-0.2.0.tar.gz]
+[2024-05-12 17:58:14] INFO root fetch - processPackages [scrutinydebugger]: Remove: archive file [/home/abi/fetcher/tmp/scrutinydebugger-0.2.1.tar.gz]
+[2024-05-12 17:58:14] INFO root fetch - main [MainThread]: End processing [scrutinydebugger]: success
+[2024-05-12 17:58:14] INFO root fetch - processPackages [jupyter-cpp-kernel]: Remove: archive file [/home/abi/fetcher/tmp/jupyter-cpp-kernel-1.0.0a6.tar.gz]
+[2024-05-12 17:58:14] INFO root fetch - processPackages [jupyter-cpp-kernel]: Remove: archive file [/home/abi/fetcher/tmp/jupyter-cpp-kernel-1.0.0a7.tar.gz]
+[2024-05-12 17:58:14] INFO root fetch - main [MainThread]: End processing [jupyter-cpp-kernel]: success
+[2024-05-12 17:58:15] INFO root fetch - processPackages [devgoldyutils]: Remove: archive file [/home/abi/fetcher/tmp/devgoldyutils-3.0.0.tar.gz]
+[2024-05-12 17:58:15] INFO root fetch - processPackages [devgoldyutils]: Remove: archive file [/home/abi/fetcher/tmp/devgoldyutils-3.0.0b1.tar.gz]
+[2024-05-12 17:58:15] INFO root fetch - main [MainThread]: End processing [devgoldyutils]: success
+[2024-05-12 17:58:16] INFO root fetch - processPackages [openalex-analysis]: executing diffoscope
+[2024-05-12 17:58:16] INFO root fetch - processPackages [openalex-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openalex-analysis-0.8.2.tar.gz tmp/openalex-analysis-0.9.0.tar.gz --markdown 20240512/o/openalex-analysis/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-12 17:58:17] INFO root fetch - processPackages [openalex-analysis]: Remove: archive file [/home/abi/fetcher/tmp/openalex-analysis-0.8.2.tar.gz]
+[2024-05-12 17:58:17] INFO root fetch - processPackages [openalex-analysis]: Remove: archive file [/home/abi/fetcher/tmp/openalex-analysis-0.9.0.tar.gz]
+[2024-05-12 17:58:17] INFO root fetch - main [MainThread]: End processing [openalex-analysis]: success
+[2024-05-12 17:58:17] INFO root fetch - main [MainThread]: Store serial: [23171479]
