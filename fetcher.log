@@ -17390,3 +17390,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:34:38] INFO root fetch - processPackages [ediri-scaleway]: Remove: archive file [/home/abi/fetcher/tmp/ediri_scaleway-2.37.0.tar.gz]
 [2024-05-12 22:34:38] INFO root fetch - main [MainThread]: End processing [ediri-scaleway]: success
 [2024-05-12 22:34:38] INFO root fetch - main [MainThread]: Store serial: [23173615]
+[2024-05-12 22:36:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173615]
+[2024-05-12 22:36:48] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 22:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anonymity-api
+[2024-05-12 22:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: promptulate
+[2024-05-12 22:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-12 22:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: image-input-handler
+[2024-05-12 22:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyawsopstoolkit.validators
+[2024-05-12 22:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: popoll-backend
+[2024-05-12 22:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lunulatez
+[2024-05-12 22:36:48] INFO root fetch - processPackages [popoll-backend]: New version: [0.0.48] Old Version: [0.0.47]
+[2024-05-12 22:36:48] WARNING root fetch - processPackages [image-input-handler]: Skipping, unable to determine old version
+[2024-05-12 22:36:48] INFO root fetch - main [MainThread]: End processing [image-input-handler] error
+[2024-05-12 22:36:48] INFO root fetch - processPackages [mimllearning]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-12 22:36:48] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/fa/01/c362b35a04b95bd712f370436185b7e67a42ad779814b8dbc325ed5084f0/popoll_backend-0.0.47.tar.gz
+[2024-05-12 22:36:48] WARNING root fetch - processPackages [anonymity-api]: Skipping, unable to determine old version
+[2024-05-12 22:36:48] INFO root fetch - main [MainThread]: End processing [anonymity-api] error
+[2024-05-12 22:36:48] WARNING root fetch - processPackages [lunulatez]: Skipping, unable to determine old version
+[2024-05-12 22:36:48] INFO root fetch - main [MainThread]: End processing [lunulatez] error
+[2024-05-12 22:36:48] WARNING root fetch - processPackages [pyawsopstoolkit.validators]: Skipping, unable to determine old version
+[2024-05-12 22:36:48] INFO root fetch - main [MainThread]: End processing [pyawsopstoolkit.validators] error
+[2024-05-12 22:36:48] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/64/1c/c1eee93e7eb9b19a04a8a5ff4bdbf7678b76e7194d8f41cc98bdf63fbbfa/mimllearning-0.4.0.tar.gz
+[2024-05-12 22:36:48] INFO root fetch - processPackages [promptulate]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-05-12 22:36:48] INFO root fetch - processPackages [promptulate]: Downloading https://files.pythonhosted.org/packages/79/c8/f923c24d433b393cefb02de1adab5e235b34375a5246ccfea81321c71342/promptulate-1.9.0.tar.gz
+[2024-05-12 22:36:48] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/57/f7/a196b425ba7b03df3d2ddc75b0157bf894732ff6e14590b74acb2c4bb984/popoll_backend-0.0.48.tar.gz
+[2024-05-12 22:36:48] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/3a/be/65ae172fb843e24990669f7614713b648b0c6f9171e4ba1b7fa2ce4e759d/mimllearning-0.4.1.tar.gz
+[2024-05-12 22:36:48] INFO root fetch - processPackages [popoll-backend]: executing diffoscope
+[2024-05-12 22:36:48] INFO root fetch - processPackages [popoll-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popoll_backend-0.0.47.tar.gz tmp/popoll_backend-0.0.48.tar.gz --markdown 20240512/p/popoll-backend/0.0.47-0.0.48/README.md --exclude *.pyd
+[2024-05-12 22:36:48] INFO root fetch - processPackages [promptulate]: Downloading https://files.pythonhosted.org/packages/42/5e/24a2ff6654285a7e63449f1c4c60597a1c617a0bb121d4f95cde1b406f59/promptulate-1.9.1.tar.gz
+[2024-05-12 22:36:49] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-12 22:36:49] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.4.0.tar.gz tmp/mimllearning-0.4.1.tar.gz --markdown 20240512/m/mimllearning/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-12 22:36:49] INFO root fetch - processPackages [promptulate]: executing diffoscope
+[2024-05-12 22:36:49] INFO root fetch - processPackages [promptulate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptulate-1.9.0.tar.gz tmp/promptulate-1.9.1.tar.gz --markdown 20240512/p/promptulate/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-05-12 22:36:49] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.47.tar.gz]
+[2024-05-12 22:36:49] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.48.tar.gz]
+[2024-05-12 22:36:49] INFO root fetch - main [MainThread]: End processing [popoll-backend]: success
+[2024-05-12 22:36:49] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.0.tar.gz]
+[2024-05-12 22:36:49] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.1.tar.gz]
+[2024-05-12 22:36:49] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-12 22:36:49] INFO root fetch - processPackages [promptulate]: Remove: archive file [/home/abi/fetcher/tmp/promptulate-1.9.0.tar.gz]
+[2024-05-12 22:36:49] INFO root fetch - processPackages [promptulate]: Remove: archive file [/home/abi/fetcher/tmp/promptulate-1.9.1.tar.gz]
+[2024-05-12 22:36:49] INFO root fetch - main [MainThread]: End processing [promptulate]: success
+[2024-05-12 22:36:49] INFO root fetch - main [MainThread]: Store serial: [23173640]
