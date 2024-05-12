@@ -1237,3 +1237,24 @@
 [2024-05-12 01:58:50] INFO root fetch - processPackages [finagg]: Remove: archive file [/home/abi/fetcher/tmp/finagg-1.0.1.tar.gz]
 [2024-05-12 01:58:50] INFO root fetch - main [MainThread]: End processing [finagg]: success
 [2024-05-12 01:58:50] INFO root fetch - main [MainThread]: Store serial: [23165446]
+[2024-05-12 02:00:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165446]
+[2024-05-12 02:00:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 02:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moji2
+[2024-05-12 02:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tradedangerous
+[2024-05-12 02:00:59] INFO root fetch - processPackages [moji2]: New version: [0.2.7] Old Version: [0.2.5]
+[2024-05-12 02:00:59] INFO root fetch - processPackages [moji2]: Downloading https://files.pythonhosted.org/packages/81/08/1affadeef7183eeb940c712ef9b91e51b86558adb2d3680487e3f3097ce5/moji2-0.2.5.tar.gz
+[2024-05-12 02:00:59] INFO root fetch - processPackages [tradedangerous]: New version: [11.4.0] Old Version: [11.3.0]
+[2024-05-12 02:00:59] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/35/d1/ecf5bbefc871d8dec513e2b466d5ae046aeeaa59dec375a8e7c8199cdc56/tradedangerous-11.3.0.tar.gz
+[2024-05-12 02:00:59] INFO root fetch - processPackages [moji2]: Downloading https://files.pythonhosted.org/packages/a1/61/97bdd4909f10a3589dac92a11c86465af5bfd383fffd54cf0856bb6ba5fc/moji2-0.2.7.tar.gz
+[2024-05-12 02:00:59] INFO root fetch - processPackages [moji2]: executing diffoscope
+[2024-05-12 02:00:59] INFO root fetch - processPackages [moji2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moji2-0.2.5.tar.gz tmp/moji2-0.2.7.tar.gz --markdown 20240512/m/moji2/0.2.5-0.2.7/README.md --exclude *.pyd
+[2024-05-12 02:00:59] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/9f/4d/defc1aaf08983952b9face10ec42c924400dae1febe3953d5b002f2c1f0c/tradedangerous-11.4.0.tar.gz
+[2024-05-12 02:00:59] INFO root fetch - processPackages [tradedangerous]: executing diffoscope
+[2024-05-12 02:00:59] INFO root fetch - processPackages [tradedangerous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradedangerous-11.3.0.tar.gz tmp/tradedangerous-11.4.0.tar.gz --markdown 20240512/t/tradedangerous/11.3.0-11.4.0/README.md --exclude *.pyd
+[2024-05-12 02:01:00] INFO root fetch - processPackages [moji2]: Remove: archive file [/home/abi/fetcher/tmp/moji2-0.2.5.tar.gz]
+[2024-05-12 02:01:00] INFO root fetch - processPackages [moji2]: Remove: archive file [/home/abi/fetcher/tmp/moji2-0.2.7.tar.gz]
+[2024-05-12 02:01:00] INFO root fetch - main [MainThread]: End processing [moji2]: success
+[2024-05-12 02:01:00] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-11.3.0.tar.gz]
+[2024-05-12 02:01:00] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-11.4.0.tar.gz]
+[2024-05-12 02:01:00] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
+[2024-05-12 02:01:00] INFO root fetch - main [MainThread]: Store serial: [23165453]
