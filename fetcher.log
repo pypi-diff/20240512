@@ -2838,3 +2838,45 @@
 [2024-05-12 04:13:43] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Remove: archive file [/home/abi/fetcher/tmp/sherlock_testabcyuegughriuhgu-0.14.6.tar.gz]
 [2024-05-12 04:13:43] INFO root fetch - main [MainThread]: End processing [Sherlock-testABCYUEGUGHRIUHGU]: success
 [2024-05-12 04:13:43] INFO root fetch - main [MainThread]: Store serial: [23166259]
+[2024-05-12 04:15:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166259]
+[2024-05-12 04:15:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 04:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crsq-heap
+[2024-05-12 04:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: algobase
+[2024-05-12 04:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: goodpy
+[2024-05-12 04:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-library-objects
+[2024-05-12 04:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ikvpy
+[2024-05-12 04:15:51] INFO root fetch - processPackages [ikvpy]: New version: [0.0.33] Old Version: [0.0.32]
+[2024-05-12 04:15:51] INFO root fetch - processPackages [goodpy]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-12 04:15:52] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2024-05-12 04:15:52] WARNING root fetch - processPackages [crsq-heap]: Skipping, unable to determine old version
+[2024-05-12 04:15:52] INFO root fetch - main [MainThread]: End processing [crsq-heap] error
+[2024-05-12 04:15:52] INFO root fetch - processPackages [algobase]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-12 04:15:52] INFO root fetch - processPackages [goodpy]: Downloading https://files.pythonhosted.org/packages/9e/f8/053a4abaa15621a03bc4613594f0b26211e90bdb705d48bdc276308c4d5d/goodpy-0.0.2-py2.py3-none-any.whl
+[2024-05-12 04:15:52] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/5f/d1/6458907b30e6853bd1370b303ea18de9f855d85a775021468d4ff4cf27c4/ikvpy-0.0.32.tar.gz
+[2024-05-12 04:15:52] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/3b/8f/5bc5b1bf1cbb2bd23cd2883844aade1e32b222ebf1f95ad4be614a5a5fab/sweetrpg-library-objects-0.0.85.tar.gz
+[2024-05-12 04:15:52] INFO root fetch - processPackages [goodpy]: Downloading https://files.pythonhosted.org/packages/7d/5c/126603f6e8822633ccdedca328650ae6f0f0456af4fba36d70dd785eb4d4/goodpy-0.0.3-py2.py3-none-any.whl
+[2024-05-12 04:15:52] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/5e/9f/6f76023a2ce599dcc8f9336e4ca97d11bf333da43274c8193887a32463aa/sweetrpg-library-objects-0.0.86.tar.gz
+[2024-05-12 04:15:52] INFO root fetch - processPackages [algobase]: Downloading https://files.pythonhosted.org/packages/a3/81/171766b7eebf826bdcb8676643d9f8019e5750abd7d4b54fa22e8a8bc3b6/algobase-0.9.2.tar.gz
+[2024-05-12 04:15:52] INFO root fetch - processPackages [goodpy]: executing diffoscope
+[2024-05-12 04:15:52] INFO root fetch - processPackages [goodpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goodpy-0.0.2-py2.py3-none-any.whl.zip tmp/goodpy-0.0.3-py2.py3-none-any.whl.zip --markdown 20240512/g/goodpy/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-12 04:15:52] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2024-05-12 04:15:52] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20240512/s/sweetrpg-library-objects/0.0.85-0.0.86/README.md --exclude *.pyd
+[2024-05-12 04:15:52] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/66/03/ffbebe3dd063b64e2eb65071f5c65c58bc9a2310810f9365c4234e98214a/ikvpy-0.0.33.tar.gz
+[2024-05-12 04:15:52] INFO root fetch - processPackages [ikvpy]: executing diffoscope
+[2024-05-12 04:15:52] INFO root fetch - processPackages [ikvpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ikvpy-0.0.32.tar.gz tmp/ikvpy-0.0.33.tar.gz --markdown 20240512/i/ikvpy/0.0.32-0.0.33/README.md --exclude *.pyd
+[2024-05-12 04:15:52] INFO root fetch - processPackages [algobase]: Downloading https://files.pythonhosted.org/packages/ca/61/6e4a82a46d32f9fb700eaafc856444132f910b02f54d5f37f36710bc5718/algobase-0.9.3.tar.gz
+[2024-05-12 04:15:52] INFO root fetch - processPackages [algobase]: executing diffoscope
+[2024-05-12 04:15:52] INFO root fetch - processPackages [algobase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algobase-0.9.2.tar.gz tmp/algobase-0.9.3.tar.gz --markdown 20240512/a/algobase/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-12 04:15:53] INFO root fetch - processPackages [goodpy]: Remove: archive file [/home/abi/fetcher/tmp/goodpy-0.0.2-py2.py3-none-any.whl.zip]
+[2024-05-12 04:15:53] INFO root fetch - processPackages [goodpy]: Remove: archive file [/home/abi/fetcher/tmp/goodpy-0.0.3-py2.py3-none-any.whl.zip]
+[2024-05-12 04:15:53] INFO root fetch - main [MainThread]: End processing [goodpy]: success
+[2024-05-12 04:15:53] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.85.tar.gz]
+[2024-05-12 04:15:53] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.86.tar.gz]
+[2024-05-12 04:15:53] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2024-05-12 04:15:53] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.32.tar.gz]
+[2024-05-12 04:15:53] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.33.tar.gz]
+[2024-05-12 04:15:53] INFO root fetch - main [MainThread]: End processing [ikvpy]: success
+[2024-05-12 04:15:53] INFO root fetch - processPackages [algobase]: Remove: archive file [/home/abi/fetcher/tmp/algobase-0.9.2.tar.gz]
+[2024-05-12 04:15:53] INFO root fetch - processPackages [algobase]: Remove: archive file [/home/abi/fetcher/tmp/algobase-0.9.3.tar.gz]
+[2024-05-12 04:15:53] INFO root fetch - main [MainThread]: End processing [algobase]: success
+[2024-05-12 04:15:53] INFO root fetch - main [MainThread]: Store serial: [23166272]
