@@ -15208,3 +15208,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:13:06] INFO root fetch - processPackages [bioat]: Remove: archive file [/home/abi/fetcher/tmp/bioat-0.9.1.tar.gz]
 [2024-05-12 20:13:06] INFO root fetch - main [MainThread]: End processing [bioat]: success
 [2024-05-12 20:13:06] INFO root fetch - main [MainThread]: Store serial: [23172536]
+[2024-05-12 20:15:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172536]
+[2024-05-12 20:15:14] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 20:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smart-parallelize
+[2024-05-12 20:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: teutonsz
+[2024-05-12 20:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SelfCalibratedConformal
+[2024-05-12 20:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unuxoriouslyz
+[2024-05-12 20:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tqdme
+[2024-05-12 20:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: otf-addons-aws
+[2024-05-12 20:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cs2solutions
+[2024-05-12 20:15:14] INFO root fetch - processPackages [smart-parallelize]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-12 20:15:14] INFO root fetch - processPackages [SelfCalibratedConformal]: New version: [0.36] Old Version: [0.355]
+[2024-05-12 20:15:14] INFO root fetch - processPackages [cs2solutions]: New version: [0.8.0] Old Version: [0.7.5]
+[2024-05-12 20:15:14] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/b0/e3/20e96e76b5c9fcf8ab39b16f3c28cf05052ee3374e45d1d825b2902e1630/SelfCalibratedConformal-0.355.tar.gz
+[2024-05-12 20:15:14] INFO root fetch - processPackages [otf-addons-aws]: New version: [24.9.1] Old Version: [24.9.0]
+[2024-05-12 20:15:14] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/6a/fe/8ebbcab94845b3b9dc55872bfdc4aca22762d128d40bbf63a34bd61fac01/smart_parallelize-2.0.8.tar.gz
+[2024-05-12 20:15:14] WARNING root fetch - processPackages [tqdme]: Skipping, unable to determine old version
+[2024-05-12 20:15:14] INFO root fetch - main [MainThread]: End processing [tqdme] error
+[2024-05-12 20:15:14] WARNING root fetch - processPackages [teutonsz]: Skipping, unable to determine old version
+[2024-05-12 20:15:14] INFO root fetch - main [MainThread]: End processing [teutonsz] error
+[2024-05-12 20:15:14] WARNING root fetch - processPackages [unuxoriouslyz]: Skipping, unable to determine old version
+[2024-05-12 20:15:14] INFO root fetch - main [MainThread]: End processing [unuxoriouslyz] error
+[2024-05-12 20:15:15] INFO root fetch - processPackages [cs2solutions]: Downloading https://files.pythonhosted.org/packages/82/8e/359fe90dd06fd71fcd52a1f0ca85435b4be0e4c784bcf46649b314aa61a6/cs2solutions-0.7.5.tar.gz
+[2024-05-12 20:15:15] INFO root fetch - processPackages [otf-addons-aws]: Downloading https://files.pythonhosted.org/packages/48/3a/91ab4aa922807c70070f16b72e096623bdeca0e6af1bb2dac3e032001cac/otf-addons-aws-24.9.0.tar.gz
+[2024-05-12 20:15:15] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/0f/6f/48731f1909b1b681d6a4a859ba23d0b9133c578aaf5ca409036f55dbe11e/smart_parallelize-2.0.9.tar.gz
+[2024-05-12 20:15:15] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/bb/d5/a0bf9e70adca65d5c8f2d6feffd52b08aa84e5aad9c70f81b6b3c0652eec/SelfCalibratedConformal-0.36.tar.gz
+[2024-05-12 20:15:15] INFO root fetch - processPackages [smart-parallelize]: executing diffoscope
+[2024-05-12 20:15:15] INFO root fetch - processPackages [smart-parallelize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smart_parallelize-2.0.8.tar.gz tmp/smart_parallelize-2.0.9.tar.gz --markdown 20240512/s/smart-parallelize/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-12 20:15:15] INFO root fetch - processPackages [cs2solutions]: Downloading https://files.pythonhosted.org/packages/8f/47/83214f1516d9d37a61fe9e82537dc407ff4802ccb9cbfc2c2c2e81de5a8c/cs2solutions-0.8.0.tar.gz
+[2024-05-12 20:15:15] INFO root fetch - processPackages [SelfCalibratedConformal]: executing diffoscope
+[2024-05-12 20:15:15] INFO root fetch - processPackages [SelfCalibratedConformal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SelfCalibratedConformal-0.355.tar.gz tmp/SelfCalibratedConformal-0.36.tar.gz --markdown 20240512/S/SelfCalibratedConformal/0.355-0.36/README.md --exclude *.pyd
+[2024-05-12 20:15:15] INFO root fetch - processPackages [cs2solutions]: executing diffoscope
+[2024-05-12 20:15:15] INFO root fetch - processPackages [cs2solutions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs2solutions-0.7.5.tar.gz tmp/cs2solutions-0.8.0.tar.gz --markdown 20240512/c/cs2solutions/0.7.5-0.8.0/README.md --exclude *.pyd
+[2024-05-12 20:15:15] INFO root fetch - processPackages [otf-addons-aws]: Downloading https://files.pythonhosted.org/packages/d4/6e/ba37bf409e1ae96be4575d031aa3764b18d8396bba18a3a84c1ed56ef85f/otf-addons-aws-24.9.1.tar.gz
+[2024-05-12 20:15:15] INFO root fetch - processPackages [otf-addons-aws]: executing diffoscope
+[2024-05-12 20:15:15] INFO root fetch - processPackages [otf-addons-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otf-addons-aws-24.9.0.tar.gz tmp/otf-addons-aws-24.9.1.tar.gz --markdown 20240512/o/otf-addons-aws/24.9.0-24.9.1/README.md --exclude *.pyd
+[2024-05-12 20:15:15] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.8.tar.gz]
+[2024-05-12 20:15:15] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.9.tar.gz]
+[2024-05-12 20:15:15] INFO root fetch - main [MainThread]: End processing [smart-parallelize]: success
+[2024-05-12 20:15:15] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.355.tar.gz]
+[2024-05-12 20:15:15] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.36.tar.gz]
+[2024-05-12 20:15:15] INFO root fetch - main [MainThread]: End processing [SelfCalibratedConformal]: success
+[2024-05-12 20:15:16] INFO root fetch - processPackages [cs2solutions]: Remove: archive file [/home/abi/fetcher/tmp/cs2solutions-0.7.5.tar.gz]
+[2024-05-12 20:15:16] INFO root fetch - processPackages [cs2solutions]: Remove: archive file [/home/abi/fetcher/tmp/cs2solutions-0.8.0.tar.gz]
+[2024-05-12 20:15:16] INFO root fetch - main [MainThread]: End processing [cs2solutions]: success
+[2024-05-12 20:15:16] INFO root fetch - processPackages [otf-addons-aws]: Remove: archive file [/home/abi/fetcher/tmp/otf-addons-aws-24.9.0.tar.gz]
+[2024-05-12 20:15:16] INFO root fetch - processPackages [otf-addons-aws]: Remove: archive file [/home/abi/fetcher/tmp/otf-addons-aws-24.9.1.tar.gz]
+[2024-05-12 20:15:16] INFO root fetch - main [MainThread]: End processing [otf-addons-aws]: success
+[2024-05-12 20:15:16] INFO root fetch - main [MainThread]: Store serial: [23172560]
