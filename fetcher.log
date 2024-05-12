@@ -2769,3 +2769,45 @@
 [2024-05-12 04:09:22] INFO root fetch - processPackages [elevenlabs]: Remove: archive file [/home/abi/fetcher/tmp/elevenlabs-1.2.2.tar.gz]
 [2024-05-12 04:09:22] INFO root fetch - main [MainThread]: End processing [elevenlabs]: success
 [2024-05-12 04:09:22] INFO root fetch - main [MainThread]: Store serial: [23166230]
+[2024-05-12 04:11:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166230]
+[2024-05-12 04:11:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 04:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: database-mysql-local
+[2024-05-12 04:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ikvpy
+[2024-05-12 04:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wp-math3d
+[2024-05-12 04:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-RanFurryPic
+[2024-05-12 04:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: daftlyz
+[2024-05-12 04:11:30] INFO root fetch - processPackages [ikvpy]: New version: [0.0.31] Old Version: [0.0.30]
+[2024-05-12 04:11:30] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-05-12 04:11:30] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.292] Old Version: [0.0.291]
+[2024-05-12 04:11:31] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/e1/80/56a2487507100193d4ab3824e6c8895d8ccf34f64aa6defc8913b2fb10f3/ikvpy-0.0.30.tar.gz
+[2024-05-12 04:11:31] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/13/d0/c59c5a3bbde740cb77062ad33535d9b8dc063233a0c0eb767c8e14557bc2/nonebot_plugin_ranfurrypic-1.1.3.tar.gz
+[2024-05-12 04:11:31] INFO root fetch - processPackages [wp-math3d]: New version: [0.6.9] Old Version: [0.6.7]
+[2024-05-12 04:11:31] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/e4/3b/126b1fbf22136b1339dbaf155579d6330bd5322addf82167846d93d342af/database_mysql_local-0.0.291.tar.gz
+[2024-05-12 04:11:31] WARNING root fetch - processPackages [daftlyz]: Skipping, unable to determine old version
+[2024-05-12 04:11:31] INFO root fetch - main [MainThread]: End processing [daftlyz] error
+[2024-05-12 04:11:31] INFO root fetch - processPackages [wp-math3d]: Downloading https://files.pythonhosted.org/packages/19/b3/96c222946cb279c8ea6daae85bf6300e90277a0d44cb3b62fe1ba246c43a/wp-math3d-0.6.7.tar.gz
+[2024-05-12 04:11:31] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/7e/50/c7a758a1e371a0a0294ca0d7d15eed3ff31645f8e0584f9ccea641ead256/nonebot_plugin_ranfurrypic-1.1.4.tar.gz
+[2024-05-12 04:11:31] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/5a/f4/474db53f3b3bf2bfaff1b2529ddb12251f97a30f81c22d72626d2240d1e9/ikvpy-0.0.31.tar.gz
+[2024-05-12 04:11:31] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/cf/89/581583c30035ff372cb3ed55b1561fca14d80924456b8e1ce509516a38cf/database_mysql_local-0.0.292-py3-none-any.whl
+[2024-05-12 04:11:31] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: executing diffoscope
+[2024-05-12 04:11:31] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ranfurrypic-1.1.3.tar.gz tmp/nonebot_plugin_ranfurrypic-1.1.4.tar.gz --markdown 20240512/n/nonebot-plugin-RanFurryPic/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-05-12 04:11:31] INFO root fetch - processPackages [ikvpy]: executing diffoscope
+[2024-05-12 04:11:31] INFO root fetch - processPackages [ikvpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ikvpy-0.0.30.tar.gz tmp/ikvpy-0.0.31.tar.gz --markdown 20240512/i/ikvpy/0.0.30-0.0.31/README.md --exclude *.pyd
+[2024-05-12 04:11:31] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-12 04:11:31] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.291.tar.gz tmp/database_mysql_local-0.0.292-py3-none-any.whl.zip --markdown 20240512/d/database-mysql-local/0.0.291-0.0.292/README.md --exclude *.pyd
+[2024-05-12 04:11:31] INFO root fetch - processPackages [wp-math3d]: Downloading https://files.pythonhosted.org/packages/5a/19/db42aeeb9ec8cfeff9f7599f9889c8ef8a049e803cbd51ec1443a80ee60e/wp-math3d-0.6.9.tar.gz
+[2024-05-12 04:11:31] INFO root fetch - processPackages [wp-math3d]: executing diffoscope
+[2024-05-12 04:11:31] INFO root fetch - processPackages [wp-math3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wp-math3d-0.6.7.tar.gz tmp/wp-math3d-0.6.9.tar.gz --markdown 20240512/w/wp-math3d/0.6.7-0.6.9/README.md --exclude *.pyd
+[2024-05-12 04:11:32] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.1.3.tar.gz]
+[2024-05-12 04:11:32] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.1.4.tar.gz]
+[2024-05-12 04:11:32] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-RanFurryPic]: success
+[2024-05-12 04:11:32] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.30.tar.gz]
+[2024-05-12 04:11:32] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.31.tar.gz]
+[2024-05-12 04:11:32] INFO root fetch - main [MainThread]: End processing [ikvpy]: success
+[2024-05-12 04:11:32] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.291.tar.gz]
+[2024-05-12 04:11:32] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.292-py3-none-any.whl.zip]
+[2024-05-12 04:11:32] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-12 04:11:32] INFO root fetch - processPackages [wp-math3d]: Remove: archive file [/home/abi/fetcher/tmp/wp-math3d-0.6.7.tar.gz]
+[2024-05-12 04:11:32] INFO root fetch - processPackages [wp-math3d]: Remove: archive file [/home/abi/fetcher/tmp/wp-math3d-0.6.9.tar.gz]
+[2024-05-12 04:11:32] INFO root fetch - main [MainThread]: End processing [wp-math3d]: success
+[2024-05-12 04:11:32] INFO root fetch - main [MainThread]: Store serial: [23166246]
