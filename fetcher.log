@@ -6908,3 +6908,33 @@
 [2024-05-12 10:25:51] INFO root fetch - processPackages [ast-grep-py]: Remove: archive file [/home/abi/fetcher/tmp/ast_grep_py-0.22.1.tar.gz]
 [2024-05-12 10:25:51] INFO root fetch - main [MainThread]: End processing [ast-grep-py]: success
 [2024-05-12 10:25:51] INFO root fetch - main [MainThread]: Store serial: [23168127]
+[2024-05-12 10:27:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168127]
+[2024-05-12 10:27:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 10:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: allianceauth-discordbot
+[2024-05-12 10:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ZAmino.fix
+[2024-05-12 10:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ast-grep-cli
+[2024-05-12 10:28:00] INFO root fetch - processPackages [ZAmino.fix]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-05-12 10:28:00] INFO root fetch - processPackages [allianceauth-discordbot]: New version: [3.7.3] Old Version: [3.7.2]
+[2024-05-12 10:28:00] INFO root fetch - processPackages [ast-grep-cli]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-12 10:28:00] INFO root fetch - processPackages [ZAmino.fix]: Downloading https://files.pythonhosted.org/packages/bd/af/5028a746b2e28fb06bfe436d4948b380af899cf1727166bed5b6d2814dfc/ZAmino.fix-1.1.3.tar.gz
+[2024-05-12 10:28:00] INFO root fetch - processPackages [allianceauth-discordbot]: Downloading https://files.pythonhosted.org/packages/2f/2c/43d600680c5e8ccb0528e8acb35c611d3eb0606015d6f5c537ebcc8b8279/allianceauth_discordbot-3.7.2.tar.gz
+[2024-05-12 10:28:00] INFO root fetch - processPackages [ast-grep-cli]: Downloading https://files.pythonhosted.org/packages/f7/c2/09d75b706485bc51e9971fffe138396e852d914b4ea1ced1dcbbf9c8890e/ast_grep_cli-0.9.2.tar.gz
+[2024-05-12 10:28:00] INFO root fetch - processPackages [ZAmino.fix]: Downloading https://files.pythonhosted.org/packages/c2/28/0612b47d95229e765246c39ba6f1a3bb77bf9c1e36a4181db5adfc991257/zamino_fix-1.1.4.tar.gz
+[2024-05-12 10:28:00] INFO root fetch - processPackages [allianceauth-discordbot]: Downloading https://files.pythonhosted.org/packages/98/ef/82156696093baacb4532718ce1846ecce32ccd012c1648d7935858ea05ef/allianceauth_discordbot-3.7.3.tar.gz
+[2024-05-12 10:28:00] INFO root fetch - processPackages [ast-grep-cli]: Downloading https://files.pythonhosted.org/packages/bb/5c/1c5ee896b0968132154badd72079015a1958ff352d47c5f9e74e8ce6d54e/ast_grep_cli-0.9.3.tar.gz
+[2024-05-12 10:28:00] INFO root fetch - processPackages [ZAmino.fix]: executing diffoscope
+[2024-05-12 10:28:00] INFO root fetch - processPackages [ZAmino.fix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ZAmino.fix-1.1.3.tar.gz tmp/zamino_fix-1.1.4.tar.gz --markdown 20240512/Z/ZAmino.fix/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-05-12 10:28:00] INFO root fetch - processPackages [allianceauth-discordbot]: executing diffoscope
+[2024-05-12 10:28:00] INFO root fetch - processPackages [allianceauth-discordbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/allianceauth_discordbot-3.7.2.tar.gz tmp/allianceauth_discordbot-3.7.3.tar.gz --markdown 20240512/a/allianceauth-discordbot/3.7.2-3.7.3/README.md --exclude *.pyd
+[2024-05-12 10:28:00] INFO root fetch - processPackages [ast-grep-cli]: executing diffoscope
+[2024-05-12 10:28:00] INFO root fetch - processPackages [ast-grep-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ast_grep_cli-0.9.2.tar.gz tmp/ast_grep_cli-0.9.3.tar.gz --markdown 20240512/a/ast-grep-cli/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-12 10:28:01] INFO root fetch - processPackages [ZAmino.fix]: Remove: archive file [/home/abi/fetcher/tmp/ZAmino.fix-1.1.3.tar.gz]
+[2024-05-12 10:28:01] INFO root fetch - processPackages [ZAmino.fix]: Remove: archive file [/home/abi/fetcher/tmp/zamino_fix-1.1.4.tar.gz]
+[2024-05-12 10:28:01] INFO root fetch - main [MainThread]: End processing [ZAmino.fix]: success
+[2024-05-12 10:28:01] INFO root fetch - processPackages [allianceauth-discordbot]: Remove: archive file [/home/abi/fetcher/tmp/allianceauth_discordbot-3.7.2.tar.gz]
+[2024-05-12 10:28:01] INFO root fetch - processPackages [allianceauth-discordbot]: Remove: archive file [/home/abi/fetcher/tmp/allianceauth_discordbot-3.7.3.tar.gz]
+[2024-05-12 10:28:01] INFO root fetch - main [MainThread]: End processing [allianceauth-discordbot]: success
+[2024-05-12 10:28:01] INFO root fetch - processPackages [ast-grep-cli]: Remove: archive file [/home/abi/fetcher/tmp/ast_grep_cli-0.9.2.tar.gz]
+[2024-05-12 10:28:01] INFO root fetch - processPackages [ast-grep-cli]: Remove: archive file [/home/abi/fetcher/tmp/ast_grep_cli-0.9.3.tar.gz]
+[2024-05-12 10:28:01] INFO root fetch - main [MainThread]: End processing [ast-grep-cli]: success
+[2024-05-12 10:28:01] INFO root fetch - main [MainThread]: Store serial: [23168142]
