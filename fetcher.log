@@ -4763,3 +4763,36 @@
 [2024-05-12 07:15:44] INFO root fetch - processPackages [RocketSim]: Remove: archive file [/home/abi/fetcher/tmp/RocketSim-2.1.0a6.tar.gz]
 [2024-05-12 07:15:44] INFO root fetch - main [MainThread]: End processing [RocketSim]: success
 [2024-05-12 07:15:44] INFO root fetch - main [MainThread]: Store serial: [23167190]
+[2024-05-12 07:17:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167190]
+[2024-05-12 07:17:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 07:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langtest
+[2024-05-12 07:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: infinitybots-kittycat
+[2024-05-12 07:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rapidpe-rift-pipe
+[2024-05-12 07:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: infinitybots-kittycat
+[2024-05-12 07:17:52] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.6.9.dev20240319] Old Version: [0.6.9.dev20240318]
+[2024-05-12 07:17:53] INFO root fetch - processPackages [infinitybots-kittycat]: New version: [1.1] Old Version: [1.0]
+[2024-05-12 07:17:53] INFO root fetch - processPackages [infinitybots-kittycat]: New version: [1.1] Old Version: [1.0]
+[2024-05-12 07:17:53] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/e0/d8/d7b88a4aebe9c66f5be7749976ca4a5d90c4c1f76b8309b2528f7d696fc2/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz
+[2024-05-12 07:17:53] INFO root fetch - processPackages [langtest]: New version: [2.2.0rc1] Old Version: [2.1.0rc2]
+[2024-05-12 07:17:53] INFO root fetch - processPackages [infinitybots-kittycat]: Downloading https://files.pythonhosted.org/packages/83/22/769e16678f20275a89f39d163df0249dfead277665051e298d10b280648a/infinitybots_kittycat-1.0-py3-none-any.whl
+[2024-05-12 07:17:53] INFO root fetch - processPackages [infinitybots-kittycat]: Downloading https://files.pythonhosted.org/packages/83/22/769e16678f20275a89f39d163df0249dfead277665051e298d10b280648a/infinitybots_kittycat-1.0-py3-none-any.whl
+[2024-05-12 07:17:53] INFO root fetch - processPackages [langtest]: Downloading https://files.pythonhosted.org/packages/6d/f6/b78d60061152e3b13bdbe85c8d2ac7c9e6704dfb3762e6415b2dd5517218/langtest-2.1.0rc2.tar.gz
+[2024-05-12 07:17:53] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/57/73/f8f8961db2f4ad6df9b52d6fc88b6fc134a86d378de28ab14ee4105baea4/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz
+[2024-05-12 07:17:53] WARNING root fetch - processPackages [langtest]: Skipping package: exceeds size limit 19414765>=10485760
+[2024-05-12 07:17:53] INFO root fetch - main [MainThread]: End processing [langtest] error
+[2024-05-12 07:17:53] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2024-05-12 07:17:53] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz --markdown 20240512/r/rapidpe-rift-pipe/0.6.9.dev20240318-0.6.9.dev20240319/README.md --exclude *.pyd
+[2024-05-12 07:17:53] INFO root fetch - processPackages [infinitybots-kittycat]: Downloading https://files.pythonhosted.org/packages/b2/2c/4a65c4d2fd28d5c83c8886bbd9c6128199788d2d530da6d0e28585526197/infinitybots_kittycat-1.1.tar.gz
+[2024-05-12 07:17:53] INFO root fetch - processPackages [infinitybots-kittycat]: Downloading https://files.pythonhosted.org/packages/b2/2c/4a65c4d2fd28d5c83c8886bbd9c6128199788d2d530da6d0e28585526197/infinitybots_kittycat-1.1.tar.gz
+[2024-05-12 07:17:53] INFO root fetch - processPackages [infinitybots-kittycat]: executing diffoscope
+[2024-05-12 07:17:53] INFO root fetch - processPackages [infinitybots-kittycat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infinitybots_kittycat-1.0-py3-none-any.whl.zip tmp/infinitybots_kittycat-1.1.tar.gz --markdown 20240512/i/infinitybots-kittycat/1.0-1.1/README.md --exclude *.pyd
+[2024-05-12 07:17:53] INFO root fetch - processPackages [infinitybots-kittycat]: executing diffoscope
+[2024-05-12 07:17:53] INFO root fetch - processPackages [infinitybots-kittycat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infinitybots_kittycat-1.0-py3-none-any.whl.zip tmp/infinitybots_kittycat-1.1.tar.gz --markdown 20240512/i/infinitybots-kittycat/1.0-1.1/README.md --exclude *.pyd
+[2024-05-12 07:17:54] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz]
+[2024-05-12 07:17:54] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz]
+[2024-05-12 07:17:54] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
+[2024-05-12 07:17:54] INFO root fetch - processPackages [infinitybots-kittycat]: Remove: archive file [/home/abi/fetcher/tmp/infinitybots_kittycat-1.0-py3-none-any.whl.zip]
+[2024-05-12 07:17:54] INFO root fetch - processPackages [infinitybots-kittycat]: Remove: archive file [/home/abi/fetcher/tmp/infinitybots_kittycat-1.1.tar.gz]
+[2024-05-12 07:17:54] INFO root fetch - main [MainThread]: End processing [infinitybots-kittycat]: success
+[2024-05-12 07:17:54] INFO root fetch - main [MainThread]: End processing [infinitybots-kittycat]: success
+[2024-05-12 07:17:54] INFO root fetch - main [MainThread]: Store serial: [23167206]
