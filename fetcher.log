@@ -4821,3 +4821,33 @@
 [2024-05-12 07:28:30] WARNING root fetch - processPackages [odoo14-addon-partner-country-lang]: Skipping, unable to determine old version
 [2024-05-12 07:28:30] INFO root fetch - main [MainThread]: End processing [odoo14-addon-partner-country-lang] error
 [2024-05-12 07:28:30] INFO root fetch - main [MainThread]: Store serial: [23167239]
+[2024-05-12 07:30:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167239]
+[2024-05-12 07:30:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 07:30:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addons-oca-partner-contact
+[2024-05-12 07:30:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crazy-thursday
+[2024-05-12 07:30:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrnnoise
+[2024-05-12 07:30:39] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.5.9.1] Old Version: [2024.5.9.0]
+[2024-05-12 07:30:39] INFO root fetch - processPackages [odoo14-addons-oca-partner-contact]: New version: [14.0.20240511.0] Old Version: [14.0.20240425.0]
+[2024-05-12 07:30:39] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/3f/0a/108e3af749c5757158be48151418c2bbea49bff2269af8811bade316080a/crazy_thursday-2024.5.9.0.tar.gz
+[2024-05-12 07:30:39] INFO root fetch - processPackages [pyrnnoise]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-12 07:30:39] INFO root fetch - processPackages [odoo14-addons-oca-partner-contact]: Downloading https://files.pythonhosted.org/packages/7e/d5/6ed8722613f0550b4dee0237312e8d1df6f281ab3a8a06bb4da381292a73/odoo14_addons_oca_partner_contact-14.0.20240425.0-py3-none-any.whl
+[2024-05-12 07:30:39] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/20/70/a719fb059f910b10790f6a51b1c5c3ff943f1349c91c46142f1911323575/crazy_thursday-2024.5.9.1.tar.gz
+[2024-05-12 07:30:39] INFO root fetch - processPackages [pyrnnoise]: Downloading https://files.pythonhosted.org/packages/53/d3/f6a6154975feb501e3257ff81c39b468ff8301dc8da3229e8736cbb1ec82/pyrnnoise-0.1.5-py3-none-manylinux1_x86_64.whl
+[2024-05-12 07:30:39] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-05-12 07:30:39] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.5.9.0.tar.gz tmp/crazy_thursday-2024.5.9.1.tar.gz --markdown 20240512/c/crazy-thursday/2024.5.9.0-2024.5.9.1/README.md --exclude *.pyd
+[2024-05-12 07:30:40] INFO root fetch - processPackages [odoo14-addons-oca-partner-contact]: Downloading https://files.pythonhosted.org/packages/80/66/5a78e984bb7a171ab59b2d700301e3924aaedfd15b2989227c35b5aa7432/odoo14_addons_oca_partner_contact-14.0.20240511.0-py3-none-any.whl
+[2024-05-12 07:30:40] INFO root fetch - processPackages [odoo14-addons-oca-partner-contact]: executing diffoscope
+[2024-05-12 07:30:40] INFO root fetch - processPackages [odoo14-addons-oca-partner-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_partner_contact-14.0.20240425.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_partner_contact-14.0.20240511.0-py3-none-any.whl.zip --markdown 20240512/o/odoo14-addons-oca-partner-contact/14.0.20240425.0-14.0.20240511.0/README.md --exclude *.pyd
+[2024-05-12 07:30:40] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.0.tar.gz]
+[2024-05-12 07:30:40] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.1.tar.gz]
+[2024-05-12 07:30:40] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-05-12 07:30:40] INFO root fetch - processPackages [odoo14-addons-oca-partner-contact]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_partner_contact-14.0.20240425.0-py3-none-any.whl.zip]
+[2024-05-12 07:30:40] INFO root fetch - processPackages [odoo14-addons-oca-partner-contact]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_partner_contact-14.0.20240511.0-py3-none-any.whl.zip]
+[2024-05-12 07:30:40] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-partner-contact]: success
+[2024-05-12 07:30:40] INFO root fetch - processPackages [pyrnnoise]: Downloading https://files.pythonhosted.org/packages/f8/0a/0367761d6b4ad91a14dc83c8c8788be39f9e867eaf4fb2d73322a6a62eb3/pyrnnoise-0.1.6-py3-none-manylinux1_x86_64.whl
+[2024-05-12 07:30:41] INFO root fetch - processPackages [pyrnnoise]: executing diffoscope
+[2024-05-12 07:30:41] INFO root fetch - processPackages [pyrnnoise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrnnoise-0.1.5-py3-none-manylinux1_x86_64.whl.zip tmp/pyrnnoise-0.1.6-py3-none-manylinux1_x86_64.whl.zip --markdown 20240512/p/pyrnnoise/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-12 07:30:42] INFO root fetch - processPackages [pyrnnoise]: Remove: archive file [/home/abi/fetcher/tmp/pyrnnoise-0.1.5-py3-none-manylinux1_x86_64.whl.zip]
+[2024-05-12 07:30:42] INFO root fetch - processPackages [pyrnnoise]: Remove: archive file [/home/abi/fetcher/tmp/pyrnnoise-0.1.6-py3-none-manylinux1_x86_64.whl.zip]
+[2024-05-12 07:30:42] INFO root fetch - main [MainThread]: End processing [pyrnnoise]: success
+[2024-05-12 07:30:42] INFO root fetch - main [MainThread]: Store serial: [23167248]
