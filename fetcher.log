@@ -2228,3 +2228,27 @@
 [2024-05-12 03:17:58] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev7.tar.gz]
 [2024-05-12 03:17:58] INFO root fetch - main [MainThread]: End processing [gravitino]: success
 [2024-05-12 03:17:58] INFO root fetch - main [MainThread]: Store serial: [23165962]
+[2024-05-12 03:20:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165962]
+[2024-05-12 03:20:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 03:20:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: greatbrowser
+[2024-05-12 03:20:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-screen-stats
+[2024-05-12 03:20:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anabih-python-test
+[2024-05-12 03:20:07] INFO root fetch - processPackages [anabih-python-test]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-05-12 03:20:07] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/8f/0d/cb4164f3f11269487379fdf0c45ca126f81d3ab4355ce23e4cdf8dd2b4cd/anabih_python_test-8.0.0.tar.gz
+[2024-05-12 03:20:07] INFO root fetch - processPackages [streamlit-screen-stats]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 03:20:07] WARNING root fetch - processPackages [greatbrowser]: Skipping, unable to determine old version
+[2024-05-12 03:20:07] INFO root fetch - main [MainThread]: End processing [greatbrowser] error
+[2024-05-12 03:20:07] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/83/16/9305f1d0ffc310349acc9a6c48a942e3c816874b788e87e5252e12b1a42a/anabih_python_test-9.0.0.tar.gz
+[2024-05-12 03:20:07] INFO root fetch - processPackages [streamlit-screen-stats]: Downloading https://files.pythonhosted.org/packages/b5/f3/ffa1db6a0713ba6b2fc4ac5b1e057f98d7180131b56db9b54f5e09b8ea3d/streamlit-screen-stats-0.0.8.tar.gz
+[2024-05-12 03:20:08] INFO root fetch - processPackages [anabih-python-test]: executing diffoscope
+[2024-05-12 03:20:08] INFO root fetch - processPackages [anabih-python-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anabih_python_test-8.0.0.tar.gz tmp/anabih_python_test-9.0.0.tar.gz --markdown 20240512/a/anabih-python-test/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-05-12 03:20:08] INFO root fetch - processPackages [streamlit-screen-stats]: Downloading https://files.pythonhosted.org/packages/47/c1/551994788e8d7fbca93c51782419b6f14c5db12208b833677955f6412aab/streamlit-screen-stats-0.0.9.tar.gz
+[2024-05-12 03:20:08] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-8.0.0.tar.gz]
+[2024-05-12 03:20:08] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-9.0.0.tar.gz]
+[2024-05-12 03:20:08] INFO root fetch - main [MainThread]: End processing [anabih-python-test]: success
+[2024-05-12 03:20:08] INFO root fetch - processPackages [streamlit-screen-stats]: executing diffoscope
+[2024-05-12 03:20:08] INFO root fetch - processPackages [streamlit-screen-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-screen-stats-0.0.8.tar.gz tmp/streamlit-screen-stats-0.0.9.tar.gz --markdown 20240512/s/streamlit-screen-stats/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 03:20:21] INFO root fetch - processPackages [streamlit-screen-stats]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-screen-stats-0.0.8.tar.gz]
+[2024-05-12 03:20:21] INFO root fetch - processPackages [streamlit-screen-stats]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-screen-stats-0.0.9.tar.gz]
+[2024-05-12 03:20:21] INFO root fetch - main [MainThread]: End processing [streamlit-screen-stats]: success
+[2024-05-12 03:20:21] INFO root fetch - main [MainThread]: Store serial: [23165971]
