@@ -5546,3 +5546,24 @@
 [2024-05-12 08:33:34] INFO root fetch - processPackages [gologin]: Remove: archive file [/home/abi/fetcher/tmp/gologin-2024.5.12063328.tar.gz]
 [2024-05-12 08:33:34] INFO root fetch - main [MainThread]: End processing [gologin]: success
 [2024-05-12 08:33:34] INFO root fetch - main [MainThread]: Store serial: [23167490]
+[2024-05-12 08:35:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167490]
+[2024-05-12 08:35:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 08:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gologin
+[2024-05-12 08:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-spreadsheet-oca
+[2024-05-12 08:35:43] INFO root fetch - processPackages [gologin]: New version: [2024.5.12063328] Old Version: [2024.4.4122950]
+[2024-05-12 08:35:43] INFO root fetch - processPackages [odoo-addon-spreadsheet-oca]: New version: [16.0.1.2.3.3] Old Version: [16.0.1.2.3]
+[2024-05-12 08:35:43] INFO root fetch - processPackages [gologin]: Downloading https://files.pythonhosted.org/packages/18/29/63d73c1d8345e18644629915b8c1aa163ddea3f62fde6e0af58a0c35de48/gologin-2024.4.4122950.tar.gz
+[2024-05-12 08:35:43] INFO root fetch - processPackages [odoo-addon-spreadsheet-oca]: Downloading https://files.pythonhosted.org/packages/a0/b8/ef501db39867464a3f339765ca2859e4c0b1ff584179dabf0e275e5950e4/odoo_addon_spreadsheet_oca-16.0.1.2.3-py3-none-any.whl
+[2024-05-12 08:35:43] INFO root fetch - processPackages [gologin]: Downloading https://files.pythonhosted.org/packages/13/19/999c32725ac983a1e1ef0d8d3495486e7affdc7e1db58b33e7b87ed78657/gologin-2024.5.12063328.tar.gz
+[2024-05-12 08:35:43] INFO root fetch - processPackages [gologin]: executing diffoscope
+[2024-05-12 08:35:43] INFO root fetch - processPackages [gologin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gologin-2024.4.4122950.tar.gz tmp/gologin-2024.5.12063328.tar.gz --markdown 20240512/g/gologin/2024.4.4122950-2024.5.12063328/README.md --exclude *.pyd
+[2024-05-12 08:35:43] INFO root fetch - processPackages [odoo-addon-spreadsheet-oca]: Downloading https://files.pythonhosted.org/packages/a2/bf/3d4fed658e25b46d0ae711a6927947b926125c5e276a1ae8d2da23a0d157/odoo_addon_spreadsheet_oca-16.0.1.2.3.3-py3-none-any.whl
+[2024-05-12 08:35:44] INFO root fetch - processPackages [gologin]: Remove: archive file [/home/abi/fetcher/tmp/gologin-2024.4.4122950.tar.gz]
+[2024-05-12 08:35:44] INFO root fetch - processPackages [gologin]: Remove: archive file [/home/abi/fetcher/tmp/gologin-2024.5.12063328.tar.gz]
+[2024-05-12 08:35:44] INFO root fetch - main [MainThread]: End processing [gologin]: success
+[2024-05-12 08:35:44] INFO root fetch - processPackages [odoo-addon-spreadsheet-oca]: executing diffoscope
+[2024-05-12 08:35:44] INFO root fetch - processPackages [odoo-addon-spreadsheet-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_spreadsheet_oca-16.0.1.2.3-py3-none-any.whl.zip tmp/odoo_addon_spreadsheet_oca-16.0.1.2.3.3-py3-none-any.whl.zip --markdown 20240512/o/odoo-addon-spreadsheet-oca/16.0.1.2.3-16.0.1.2.3.3/README.md --exclude *.pyd
+[2024-05-12 08:35:44] INFO root fetch - processPackages [odoo-addon-spreadsheet-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_spreadsheet_oca-16.0.1.2.3-py3-none-any.whl.zip]
+[2024-05-12 08:35:44] INFO root fetch - processPackages [odoo-addon-spreadsheet-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_spreadsheet_oca-16.0.1.2.3.3-py3-none-any.whl.zip]
+[2024-05-12 08:35:44] INFO root fetch - main [MainThread]: End processing [odoo-addon-spreadsheet-oca]: success
+[2024-05-12 08:35:44] INFO root fetch - main [MainThread]: Store serial: [23167495]
