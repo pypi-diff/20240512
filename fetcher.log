@@ -3863,3 +3863,18 @@
 [2024-05-12 05:34:43] INFO root fetch - processPackages [dekcli]: Remove: archive file [/home/abi/fetcher/tmp/dekcli-0.1.9.tar.gz]
 [2024-05-12 05:34:43] INFO root fetch - main [MainThread]: End processing [dekcli]: success
 [2024-05-12 05:34:43] INFO root fetch - main [MainThread]: Store serial: [23166699]
+[2024-05-12 05:36:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166699]
+[2024-05-12 05:36:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 05:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-anime-downloader
+[2024-05-12 05:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: usherai-002
+[2024-05-12 05:36:51] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-12 05:36:51] WARNING root fetch - processPackages [usherai-002]: Skipping, unable to determine old version
+[2024-05-12 05:36:51] INFO root fetch - main [MainThread]: End processing [usherai-002] error
+[2024-05-12 05:36:51] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: Downloading https://files.pythonhosted.org/packages/c7/df/49fb25fadcd7b5f751809ddf0380759b82a738b50845bd91fa4a9f903050/nonebot_plugin_anime_downloader-0.2.0.tar.gz
+[2024-05-12 05:36:52] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: Downloading https://files.pythonhosted.org/packages/af/53/72f4c193b7a7c6b7ebd99a7055573af797ff03a6155167fc5d1a2705f298/nonebot_plugin_anime_downloader-0.2.1.tar.gz
+[2024-05-12 05:36:52] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: executing diffoscope
+[2024-05-12 05:36:52] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_anime_downloader-0.2.0.tar.gz tmp/nonebot_plugin_anime_downloader-0.2.1.tar.gz --markdown 20240512/n/nonebot-plugin-anime-downloader/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-12 05:36:52] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_anime_downloader-0.2.0.tar.gz]
+[2024-05-12 05:36:52] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_anime_downloader-0.2.1.tar.gz]
+[2024-05-12 05:36:52] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-anime-downloader]: success
+[2024-05-12 05:36:52] INFO root fetch - main [MainThread]: Store serial: [23166739]
