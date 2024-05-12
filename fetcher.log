@@ -11796,3 +11796,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:37:16] INFO root fetch - processPackages [llama-cpp-python]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_python-0.2.9.tar.gz]
 [2024-05-12 16:37:16] INFO root fetch - main [MainThread]: End processing [llama-cpp-python]: success
 [2024-05-12 16:37:16] INFO root fetch - main [MainThread]: Store serial: [23170754]
+[2024-05-12 16:39:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170754]
+[2024-05-12 16:39:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 16:39:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beetrootyz
+[2024-05-12 16:39:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: glutinousnessz
+[2024-05-12 16:39:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastmrz
+[2024-05-12 16:39:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: remla2024-team9-lib-ml
+[2024-05-12 16:39:25] WARNING root fetch - processPackages [remla2024-team9-lib-ml]: Skipping, unable to determine old version
+[2024-05-12 16:39:25] INFO root fetch - main [MainThread]: End processing [remla2024-team9-lib-ml] error
+[2024-05-12 16:39:25] INFO root fetch - processPackages [fastmrz]: New version: [1.1] Old Version: [1.0]
+[2024-05-12 16:39:25] WARNING root fetch - processPackages [glutinousnessz]: Skipping, unable to determine old version
+[2024-05-12 16:39:25] WARNING root fetch - processPackages [beetrootyz]: Skipping, unable to determine old version
+[2024-05-12 16:39:25] INFO root fetch - main [MainThread]: End processing [glutinousnessz] error
+[2024-05-12 16:39:25] INFO root fetch - main [MainThread]: End processing [beetrootyz] error
+[2024-05-12 16:39:25] INFO root fetch - processPackages [fastmrz]: Downloading https://files.pythonhosted.org/packages/f2/a6/16439c62143b08a94e8f0fe4a9ca06c019fe2dee66ce6f1ace59a64968a0/fastmrz-1.0.tar.gz
+[2024-05-12 16:39:26] INFO root fetch - processPackages [fastmrz]: Downloading https://files.pythonhosted.org/packages/6c/ca/732070087f2a67a4fe2353dd5f9019cf220c8caf4cb5639e13cd0de35632/fastmrz-1.1.tar.gz
+[2024-05-12 16:39:27] INFO root fetch - processPackages [fastmrz]: executing diffoscope
+[2024-05-12 16:39:27] INFO root fetch - processPackages [fastmrz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastmrz-1.0.tar.gz tmp/fastmrz-1.1.tar.gz --markdown 20240512/f/fastmrz/1.0-1.1/README.md --exclude *.pyd
+[2024-05-12 16:39:27] INFO root fetch - processPackages [fastmrz]: Remove: archive file [/home/abi/fetcher/tmp/fastmrz-1.0.tar.gz]
+[2024-05-12 16:39:27] INFO root fetch - processPackages [fastmrz]: Remove: archive file [/home/abi/fetcher/tmp/fastmrz-1.1.tar.gz]
+[2024-05-12 16:39:27] INFO root fetch - main [MainThread]: End processing [fastmrz]: success
+[2024-05-12 16:39:27] INFO root fetch - main [MainThread]: Store serial: [23170775]
