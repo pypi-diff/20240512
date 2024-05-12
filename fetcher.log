@@ -14888,3 +14888,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:49:11] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240512.5.tar.gz]
 [2024-05-12 19:49:11] INFO root fetch - main [MainThread]: End processing [medicafe]: success
 [2024-05-12 19:49:11] INFO root fetch - main [MainThread]: Store serial: [23172411]
+[2024-05-12 19:51:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172411]
+[2024-05-12 19:51:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 19:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyberonix
+[2024-05-12 19:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-l10n-us-form-1099
+[2024-05-12 19:51:20] INFO root fetch - processPackages [cyberonix]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-05-12 19:51:20] INFO root fetch - processPackages [cyberonix]: Downloading https://files.pythonhosted.org/packages/2b/bb/0c67b2fb331ee3a4f497d22d768656f5af5c5b963def48fb873a5baff409/cyberonix-3.0.0.tar.gz
+[2024-05-12 19:51:20] INFO root fetch - processPackages [odoo-addon-l10n-us-form-1099]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.0.0.4]
+[2024-05-12 19:51:20] INFO root fetch - processPackages [odoo-addon-l10n-us-form-1099]: Downloading https://files.pythonhosted.org/packages/1a/ab/d4680e7881dbec767c3d6311fb42b1bba49143dd123057d4e8d1f7f75939/odoo_addon_l10n_us_form_1099-16.0.1.0.0.4-py3-none-any.whl
+[2024-05-12 19:51:20] INFO root fetch - processPackages [cyberonix]: Downloading https://files.pythonhosted.org/packages/7d/8e/c8ec27603eb3eaced68b7bb4523e1e81693364fb3321ad7aadca27c38acf/cyberonix-3.0.1.tar.gz
+[2024-05-12 19:51:20] INFO root fetch - processPackages [cyberonix]: executing diffoscope
+[2024-05-12 19:51:20] INFO root fetch - processPackages [cyberonix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberonix-3.0.0.tar.gz tmp/cyberonix-3.0.1.tar.gz --markdown 20240512/c/cyberonix/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-05-12 19:51:20] INFO root fetch - processPackages [odoo-addon-l10n-us-form-1099]: Downloading https://files.pythonhosted.org/packages/07/3a/277948541c26134e7866601286cae9ab8de7f016353fd048d9b715f55170/odoo_addon_l10n_us_form_1099-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-12 19:51:20] INFO root fetch - processPackages [odoo-addon-l10n-us-form-1099]: executing diffoscope
+[2024-05-12 19:51:20] INFO root fetch - processPackages [odoo-addon-l10n-us-form-1099]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_us_form_1099-16.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_l10n_us_form_1099-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240512/o/odoo-addon-l10n-us-form-1099/16.0.1.0.0.4-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-05-12 19:51:21] INFO root fetch - processPackages [cyberonix]: Remove: archive file [/home/abi/fetcher/tmp/cyberonix-3.0.0.tar.gz]
+[2024-05-12 19:51:21] INFO root fetch - processPackages [cyberonix]: Remove: archive file [/home/abi/fetcher/tmp/cyberonix-3.0.1.tar.gz]
+[2024-05-12 19:51:21] INFO root fetch - main [MainThread]: End processing [cyberonix]: success
+[2024-05-12 19:51:21] INFO root fetch - processPackages [odoo-addon-l10n-us-form-1099]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_us_form_1099-16.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-05-12 19:51:21] INFO root fetch - processPackages [odoo-addon-l10n-us-form-1099]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_us_form_1099-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-12 19:51:21] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-us-form-1099]: success
+[2024-05-12 19:51:21] INFO root fetch - main [MainThread]: Store serial: [23172416]
