@@ -6863,3 +6863,15 @@
 [2024-05-12 10:21:31] WARNING root fetch - processPackages [thalassicalz]: Skipping, unable to determine old version
 [2024-05-12 10:21:31] INFO root fetch - main [MainThread]: End processing [thalassicalz] error
 [2024-05-12 10:21:31] INFO root fetch - main [MainThread]: Store serial: [23168079]
+[2024-05-12 10:23:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168079]
+[2024-05-12 10:23:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 10:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: peaqevcore
+[2024-05-12 10:23:40] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2024-05-12 10:23:40] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/d3/3a/d595706eb589ecf59a8cba9b6d5b0456fc65fe7e1d2c1e2aec7feee838b8/peaqevcore-9.2.2.tar.gz
+[2024-05-12 10:23:40] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/7d/ed/173dd45b11e856f6a0a37a2fe90750405b19807684a9c94bd5e9388c29a2/peaqevcore-9.2.3.tar.gz
+[2024-05-12 10:23:40] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2024-05-12 10:23:40] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20240512/p/peaqevcore/9.2.2-9.2.3/README.md --exclude *.pyd
+[2024-05-12 10:23:41] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.2.tar.gz]
+[2024-05-12 10:23:41] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.3.tar.gz]
+[2024-05-12 10:23:41] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2024-05-12 10:23:41] INFO root fetch - main [MainThread]: Store serial: [23168082]
