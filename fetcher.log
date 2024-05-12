@@ -6584,3 +6584,24 @@
 [2024-05-12 09:56:14] WARNING root fetch - processPackages [oversweetz]: Skipping, unable to determine old version
 [2024-05-12 09:56:14] INFO root fetch - main [MainThread]: End processing [oversweetz] error
 [2024-05-12 09:56:14] INFO root fetch - main [MainThread]: Store serial: [23167936]
+[2024-05-12 09:58:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167936]
+[2024-05-12 09:58:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 09:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly
+[2024-05-12 09:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flowchart-explorer
+[2024-05-12 09:58:22] INFO root fetch - processPackages [flowchart-explorer]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 09:58:22] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240512] Old Version: [2.17.0.dev20240511]
+[2024-05-12 09:58:23] INFO root fetch - processPackages [flowchart-explorer]: Downloading https://files.pythonhosted.org/packages/59/c1/dce6ba240880dfa5760f255e20268e96cfea75e5155dbd2ab893e986ebb2/flowchart_explorer-0.1.1.tar.gz
+[2024-05-12 09:58:23] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/7d/0d/97fbcfbe6ad20a6ba85a2cc4102aed44a25b45161a20098f47553609cecc/tf_nightly-2.17.0.dev20240511-cp39-cp39-win_amd64.whl
+[2024-05-12 09:58:23] INFO root fetch - processPackages [flowchart-explorer]: Downloading https://files.pythonhosted.org/packages/00/0c/ef854366600efd32c3285efac6fbbf54b38a12eb6d39001e75876e808de9/flowchart_explorer-0.1.2.tar.gz
+[2024-05-12 09:58:23] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/3b/e3/1cba93960e5f0acbab96f7b078b14acd73048202a436584db36a2031d329/tf_nightly-2.17.0.dev20240512-cp39-cp39-win_amd64.whl
+[2024-05-12 09:58:23] INFO root fetch - processPackages [flowchart-explorer]: executing diffoscope
+[2024-05-12 09:58:23] INFO root fetch - processPackages [flowchart-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowchart_explorer-0.1.1.tar.gz tmp/flowchart_explorer-0.1.2.tar.gz --markdown 20240512/f/flowchart-explorer/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 09:58:23] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2024-05-12 09:58:23] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.17.0.dev20240511-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.17.0.dev20240512-cp39-cp39-win_amd64.whl.zip --markdown 20240512/t/tf-nightly/2.17.0.dev20240511-2.17.0.dev20240512/README.md --exclude *.pyd
+[2024-05-12 09:58:24] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240511-cp39-cp39-win_amd64.whl.zip]
+[2024-05-12 09:58:24] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240512-cp39-cp39-win_amd64.whl.zip]
+[2024-05-12 09:58:24] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2024-05-12 09:58:24] INFO root fetch - processPackages [flowchart-explorer]: Remove: archive file [/home/abi/fetcher/tmp/flowchart_explorer-0.1.1.tar.gz]
+[2024-05-12 09:58:24] INFO root fetch - processPackages [flowchart-explorer]: Remove: archive file [/home/abi/fetcher/tmp/flowchart_explorer-0.1.2.tar.gz]
+[2024-05-12 09:58:24] INFO root fetch - main [MainThread]: End processing [flowchart-explorer]: success
+[2024-05-12 09:58:24] INFO root fetch - main [MainThread]: Store serial: [23167944]
