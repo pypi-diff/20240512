@@ -1932,3 +1932,15 @@
 [2024-05-12 02:45:13] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405110044.tar.gz]
 [2024-05-12 02:45:13] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2024-05-12 02:45:13] INFO root fetch - main [MainThread]: Store serial: [23165832]
+[2024-05-12 02:47:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165832]
+[2024-05-12 02:47:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 02:47:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hj-proj-module
+[2024-05-12 02:47:22] INFO root fetch - processPackages [hj-proj-module]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-05-12 02:47:22] INFO root fetch - processPackages [hj-proj-module]: Downloading https://files.pythonhosted.org/packages/db/12/7bb0e640457f3bbbbc0b77439e6b03839642728f5b9676f3a6cdbf41672e/hj_proj_module-0.1.7.tar.gz
+[2024-05-12 02:47:22] INFO root fetch - processPackages [hj-proj-module]: Downloading https://files.pythonhosted.org/packages/94/49/69693d7a64f73d84255649b427048581401581af1b2733dd7b132cd4a620/hj_proj_module-0.1.9.tar.gz
+[2024-05-12 02:47:22] INFO root fetch - processPackages [hj-proj-module]: executing diffoscope
+[2024-05-12 02:47:22] INFO root fetch - processPackages [hj-proj-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hj_proj_module-0.1.7.tar.gz tmp/hj_proj_module-0.1.9.tar.gz --markdown 20240512/h/hj-proj-module/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-05-12 02:47:23] INFO root fetch - processPackages [hj-proj-module]: Remove: archive file [/home/abi/fetcher/tmp/hj_proj_module-0.1.7.tar.gz]
+[2024-05-12 02:47:23] INFO root fetch - processPackages [hj-proj-module]: Remove: archive file [/home/abi/fetcher/tmp/hj_proj_module-0.1.9.tar.gz]
+[2024-05-12 02:47:23] INFO root fetch - main [MainThread]: End processing [hj-proj-module]: success
+[2024-05-12 02:47:23] INFO root fetch - main [MainThread]: Store serial: [23165835]
