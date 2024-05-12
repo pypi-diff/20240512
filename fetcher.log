@@ -11968,3 +11968,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:48:08] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip]
 [2024-05-12 16:48:08] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
 [2024-05-12 16:48:08] INFO root fetch - main [MainThread]: Store serial: [23170857]
+[2024-05-12 16:50:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170857]
+[2024-05-12 16:50:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 16:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrutinydebugger
+[2024-05-12 16:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: interrelatedz
+[2024-05-12 16:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mannishz
+[2024-05-12 16:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lib-version-remla24-team02
+[2024-05-12 16:50:17] WARNING root fetch - processPackages [lib-version-remla24-team02]: Skipping, unable to determine old version
+[2024-05-12 16:50:17] INFO root fetch - main [MainThread]: End processing [lib-version-remla24-team02] error
+[2024-05-12 16:50:17] WARNING root fetch - processPackages [interrelatedz]: Skipping, unable to determine old version
+[2024-05-12 16:50:17] INFO root fetch - main [MainThread]: End processing [interrelatedz] error
+[2024-05-12 16:50:17] WARNING root fetch - processPackages [mannishz]: Skipping, unable to determine old version
+[2024-05-12 16:50:17] INFO root fetch - main [MainThread]: End processing [mannishz] error
+[2024-05-12 16:50:17] INFO root fetch - processPackages [scrutinydebugger]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-12 16:50:17] INFO root fetch - processPackages [scrutinydebugger]: Downloading https://files.pythonhosted.org/packages/6a/7e/f34dc7314fa59b9db76cdf2bdd488c89af18da5d2a09ac8840eedcff2039/scrutinydebugger-0.2.0.tar.gz
+[2024-05-12 16:50:17] INFO root fetch - processPackages [scrutinydebugger]: Downloading https://files.pythonhosted.org/packages/e7/46/7c33b609d759d88674c696cbc207f79a4e730518193a1cb217d9c9d04feb/scrutinydebugger-0.2.1.tar.gz
+[2024-05-12 16:50:18] INFO root fetch - processPackages [scrutinydebugger]: executing diffoscope
+[2024-05-12 16:50:18] INFO root fetch - processPackages [scrutinydebugger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrutinydebugger-0.2.0.tar.gz tmp/scrutinydebugger-0.2.1.tar.gz --markdown 20240512/s/scrutinydebugger/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-12 16:50:18] INFO root fetch - processPackages [scrutinydebugger]: Remove: archive file [/home/abi/fetcher/tmp/scrutinydebugger-0.2.0.tar.gz]
+[2024-05-12 16:50:18] INFO root fetch - processPackages [scrutinydebugger]: Remove: archive file [/home/abi/fetcher/tmp/scrutinydebugger-0.2.1.tar.gz]
+[2024-05-12 16:50:18] INFO root fetch - main [MainThread]: End processing [scrutinydebugger]: success
+[2024-05-12 16:50:18] INFO root fetch - main [MainThread]: Store serial: [23170873]
