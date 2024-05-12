@@ -1420,3 +1420,42 @@
 [2024-05-12 02:09:45] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
 [2024-05-12 02:09:45] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
 [2024-05-12 02:09:45] INFO root fetch - main [MainThread]: Store serial: [23165507]
+[2024-05-12 02:11:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165507]
+[2024-05-12 02:11:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 02:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shipper-shippy
+[2024-05-12 02:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sklearn-viz
+[2024-05-12 02:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openbb-nightly
+[2024-05-12 02:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: schem
+[2024-05-12 02:11:53] INFO root fetch - processPackages [shipper-shippy]: New version: [2.37.0] Old Version: [2.36.8]
+[2024-05-12 02:11:53] INFO root fetch - processPackages [openbb-nightly]: New version: [4.1.7.dev202405110010] Old Version: [4.1.7.dev202405100010]
+[2024-05-12 02:11:53] INFO root fetch - processPackages [shipper-shippy]: Downloading https://files.pythonhosted.org/packages/c8/0d/05f5c85154679556646f2859bb214924f424d1eaa976882df7ecc9610cc7/shipper_shippy-2.36.8.tar.gz
+[2024-05-12 02:11:53] INFO root fetch - processPackages [schem]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-05-12 02:11:53] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/7b/10/9ed4aeb9462296537c9afc27a28305eb3fc25645c2601131b44dc9205c70/openbb_nightly-4.1.7.dev202405100010.tar.gz
+[2024-05-12 02:11:53] INFO root fetch - processPackages [sklearn-viz]: New version: [0.6.5] Old Version: [0.6.4]
+[2024-05-12 02:11:53] INFO root fetch - processPackages [sklearn-viz]: Downloading https://files.pythonhosted.org/packages/3f/43/384a39b5c9fb7f06ad4f99c3f85d6b2bfbd2c60d177682ccaea42946f475/sklearn_viz-0.6.4.tar.gz
+[2024-05-12 02:11:53] INFO root fetch - processPackages [shipper-shippy]: Downloading https://files.pythonhosted.org/packages/3a/72/9da74c6d563ffcf5bbd25ad94b02226e715bbf7be2c1df1c64b84bbdd312/shipper_shippy-2.37.0.tar.gz
+[2024-05-12 02:11:53] INFO root fetch - processPackages [shipper-shippy]: executing diffoscope
+[2024-05-12 02:11:53] INFO root fetch - processPackages [shipper-shippy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shipper_shippy-2.36.8.tar.gz tmp/shipper_shippy-2.37.0.tar.gz --markdown 20240512/s/shipper-shippy/2.36.8-2.37.0/README.md --exclude *.pyd
+[2024-05-12 02:11:54] INFO root fetch - processPackages [sklearn-viz]: Downloading https://files.pythonhosted.org/packages/90/d3/cc778770af3efe021575078d8c06c0a5e9ff5d967891e374d3b7c4e92c91/sklearn_viz-0.6.5.tar.gz
+[2024-05-12 02:11:54] INFO root fetch - processPackages [schem]: Downloading https://files.pythonhosted.org/packages/42/66/1f4d8683198245612ee7a5e2a5765967f8071b00874015ec0001a1923ae1/schem-0.9.6.tar.gz
+[2024-05-12 02:11:54] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/91/40/22de755ead164aac9939b21ca5d52a6ac8429c1b00b03af566944a2ccb2b/openbb_nightly-4.1.7.dev202405110010.tar.gz
+[2024-05-12 02:11:54] INFO root fetch - processPackages [sklearn-viz]: executing diffoscope
+[2024-05-12 02:11:54] INFO root fetch - processPackages [sklearn-viz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sklearn_viz-0.6.4.tar.gz tmp/sklearn_viz-0.6.5.tar.gz --markdown 20240512/s/sklearn-viz/0.6.4-0.6.5/README.md --exclude *.pyd
+[2024-05-12 02:11:54] INFO root fetch - processPackages [shipper-shippy]: Remove: archive file [/home/abi/fetcher/tmp/shipper_shippy-2.36.8.tar.gz]
+[2024-05-12 02:11:54] INFO root fetch - processPackages [shipper-shippy]: Remove: archive file [/home/abi/fetcher/tmp/shipper_shippy-2.37.0.tar.gz]
+[2024-05-12 02:11:54] INFO root fetch - main [MainThread]: End processing [shipper-shippy]: success
+[2024-05-12 02:11:54] INFO root fetch - processPackages [schem]: Downloading https://files.pythonhosted.org/packages/f9/61/b544fd79215110646193a4202e32076a3acdc4c3eb43e51932fc774a93a5/schem-0.9.7.tar.gz
+[2024-05-12 02:11:54] INFO root fetch - processPackages [sklearn-viz]: Remove: archive file [/home/abi/fetcher/tmp/sklearn_viz-0.6.4.tar.gz]
+[2024-05-12 02:11:54] INFO root fetch - processPackages [sklearn-viz]: Remove: archive file [/home/abi/fetcher/tmp/sklearn_viz-0.6.5.tar.gz]
+[2024-05-12 02:11:54] INFO root fetch - main [MainThread]: End processing [sklearn-viz]: success
+[2024-05-12 02:11:54] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2024-05-12 02:11:54] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-4.1.7.dev202405100010.tar.gz tmp/openbb_nightly-4.1.7.dev202405110010.tar.gz --markdown 20240512/o/openbb-nightly/4.1.7.dev202405100010-4.1.7.dev202405110010/README.md --exclude *.pyd
+[2024-05-12 02:11:54] INFO root fetch - processPackages [schem]: executing diffoscope
+[2024-05-12 02:11:54] INFO root fetch - processPackages [schem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schem-0.9.6.tar.gz tmp/schem-0.9.7.tar.gz --markdown 20240512/s/schem/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-05-12 02:11:55] INFO root fetch - processPackages [schem]: Remove: archive file [/home/abi/fetcher/tmp/schem-0.9.6.tar.gz]
+[2024-05-12 02:11:55] INFO root fetch - processPackages [schem]: Remove: archive file [/home/abi/fetcher/tmp/schem-0.9.7.tar.gz]
+[2024-05-12 02:11:55] INFO root fetch - main [MainThread]: End processing [schem]: success
+[2024-05-12 02:11:57] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.7.dev202405100010.tar.gz]
+[2024-05-12 02:11:57] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.7.dev202405110010.tar.gz]
+[2024-05-12 02:11:57] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2024-05-12 02:11:57] INFO root fetch - main [MainThread]: Store serial: [23165519]
