@@ -9358,3 +9358,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:34:07] INFO root fetch - processPackages [yacv-server]: Remove: archive file [/home/abi/fetcher/tmp/yacv_server-0.8.9.tar.gz]
 [2024-05-12 13:34:07] INFO root fetch - main [MainThread]: End processing [yacv-server]: success
 [2024-05-12 13:34:07] INFO root fetch - main [MainThread]: Store serial: [23169443]
+[2024-05-12 13:36:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169443]
+[2024-05-12 13:36:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 13:36:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dtlpymetrics
+[2024-05-12 13:36:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sinupalliatez
+[2024-05-12 13:36:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: portfolio-tracker
+[2024-05-12 13:36:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchserve-nightly
+[2024-05-12 13:36:16] INFO root fetch - processPackages [torchserve-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-12 13:36:16] INFO root fetch - processPackages [portfolio-tracker]: New version: [0.1.2.2] Old Version: [0.1.2.1]
+[2024-05-12 13:36:16] INFO root fetch - processPackages [dtlpymetrics]: New version: [1.0.99] Old Version: [1.0.98]
+[2024-05-12 13:36:16] WARNING root fetch - processPackages [sinupalliatez]: Skipping, unable to determine old version
+[2024-05-12 13:36:16] INFO root fetch - main [MainThread]: End processing [sinupalliatez] error
+[2024-05-12 13:36:16] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/8c/43/921f1201a16b139e5df27112c5f8b7328ee4289bfc10ce1f76883a5ba87d/torchserve_nightly-2024.5.8-py3-none-any.whl
+[2024-05-12 13:36:16] INFO root fetch - processPackages [portfolio-tracker]: Downloading https://files.pythonhosted.org/packages/e3/8a/f01b535862586c07cb25fce1d86251119bdd115f3c02220d7fb54e4d34ae/portfolio_tracker-0.1.2.1.tar.gz
+[2024-05-12 13:36:16] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 24333047>=10485760
+[2024-05-12 13:36:16] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2024-05-12 13:36:17] INFO root fetch - processPackages [dtlpymetrics]: Downloading https://files.pythonhosted.org/packages/4b/d5/50d5f33df8151e24a2267cade546c53f07df9aa07697ef6df960fbb6cf81/dtlpymetrics-1.0.98-py3-none-any.whl
+[2024-05-12 13:36:17] INFO root fetch - processPackages [portfolio-tracker]: Downloading https://files.pythonhosted.org/packages/41/7e/fa5814ab031935031f77d4180a1e2d6b4a6af6302508a706b97fdcf2be06/portfolio_tracker-0.1.2.2.tar.gz
+[2024-05-12 13:36:17] INFO root fetch - processPackages [portfolio-tracker]: executing diffoscope
+[2024-05-12 13:36:17] INFO root fetch - processPackages [portfolio-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portfolio_tracker-0.1.2.1.tar.gz tmp/portfolio_tracker-0.1.2.2.tar.gz --markdown 20240512/p/portfolio-tracker/0.1.2.1-0.1.2.2/README.md --exclude *.pyd
+[2024-05-12 13:36:17] INFO root fetch - processPackages [dtlpymetrics]: Downloading https://files.pythonhosted.org/packages/ee/98/d9a90cfa98962263d54498aad3fe68cfe86e7fb4718de227e36d4af1636e/dtlpymetrics-1.0.99-py3-none-any.whl
+[2024-05-12 13:36:17] INFO root fetch - processPackages [dtlpymetrics]: executing diffoscope
+[2024-05-12 13:36:17] INFO root fetch - processPackages [dtlpymetrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtlpymetrics-1.0.98-py3-none-any.whl.zip tmp/dtlpymetrics-1.0.99-py3-none-any.whl.zip --markdown 20240512/d/dtlpymetrics/1.0.98-1.0.99/README.md --exclude *.pyd
+[2024-05-12 13:36:17] INFO root fetch - processPackages [portfolio-tracker]: Remove: archive file [/home/abi/fetcher/tmp/portfolio_tracker-0.1.2.1.tar.gz]
+[2024-05-12 13:36:17] INFO root fetch - processPackages [portfolio-tracker]: Remove: archive file [/home/abi/fetcher/tmp/portfolio_tracker-0.1.2.2.tar.gz]
+[2024-05-12 13:36:17] INFO root fetch - main [MainThread]: End processing [portfolio-tracker]: success
+[2024-05-12 13:36:18] INFO root fetch - processPackages [dtlpymetrics]: Remove: archive file [/home/abi/fetcher/tmp/dtlpymetrics-1.0.98-py3-none-any.whl.zip]
+[2024-05-12 13:36:18] INFO root fetch - processPackages [dtlpymetrics]: Remove: archive file [/home/abi/fetcher/tmp/dtlpymetrics-1.0.99-py3-none-any.whl.zip]
+[2024-05-12 13:36:18] INFO root fetch - main [MainThread]: End processing [dtlpymetrics]: success
+[2024-05-12 13:36:18] INFO root fetch - main [MainThread]: Store serial: [23169468]
