@@ -4979,3 +4979,36 @@
 [2024-05-12 07:45:55] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
 [2024-05-12 07:45:55] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
 [2024-05-12 07:45:55] INFO root fetch - main [MainThread]: Store serial: [23167296]
+[2024-05-12 07:47:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167296]
+[2024-05-12 07:48:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 07:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bruhanimate
+[2024-05-12 07:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: overlabourz
+[2024-05-12 07:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrnnoise
+[2024-05-12 07:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: monopyly
+[2024-05-12 07:48:03] INFO root fetch - processPackages [pyrnnoise]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-12 07:48:03] INFO root fetch - processPackages [pyrnnoise]: Downloading https://files.pythonhosted.org/packages/53/d3/f6a6154975feb501e3257ff81c39b468ff8301dc8da3229e8736cbb1ec82/pyrnnoise-0.1.5-py3-none-manylinux1_x86_64.whl
+[2024-05-12 07:48:03] WARNING root fetch - processPackages [overlabourz]: Skipping, unable to determine old version
+[2024-05-12 07:48:03] INFO root fetch - main [MainThread]: End processing [overlabourz] error
+[2024-05-12 07:48:03] INFO root fetch - processPackages [bruhanimate]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-12 07:48:03] INFO root fetch - processPackages [monopyly]: New version: [1.4.7] Old Version: [1.4.6]
+[2024-05-12 07:48:04] INFO root fetch - processPackages [bruhanimate]: Downloading https://files.pythonhosted.org/packages/c6/57/095c701edc2b245ce61b81a58bbcffca96482e88b8959cf0f29bfff462f4/bruhanimate-0.2.8.tar.gz
+[2024-05-12 07:48:04] INFO root fetch - processPackages [monopyly]: Downloading https://files.pythonhosted.org/packages/1d/1b/3c4fc54299a9484ea0ea8405069d2c6a54414d3356d7bb00e83b4f7ef0ad/monopyly-1.4.6.tar.gz
+[2024-05-12 07:48:04] INFO root fetch - processPackages [pyrnnoise]: Downloading https://files.pythonhosted.org/packages/f8/0a/0367761d6b4ad91a14dc83c8c8788be39f9e867eaf4fb2d73322a6a62eb3/pyrnnoise-0.1.6-py3-none-manylinux1_x86_64.whl
+[2024-05-12 07:48:04] INFO root fetch - processPackages [bruhanimate]: Downloading https://files.pythonhosted.org/packages/2b/4a/71ab6f8b8a90ae4cbb391898ac5550ba56895062c0a9520b306d10c23329/bruhanimate-0.2.9.tar.gz
+[2024-05-12 07:48:04] INFO root fetch - processPackages [bruhanimate]: executing diffoscope
+[2024-05-12 07:48:04] INFO root fetch - processPackages [bruhanimate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bruhanimate-0.2.8.tar.gz tmp/bruhanimate-0.2.9.tar.gz --markdown 20240512/b/bruhanimate/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-12 07:48:04] INFO root fetch - processPackages [pyrnnoise]: executing diffoscope
+[2024-05-12 07:48:04] INFO root fetch - processPackages [pyrnnoise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrnnoise-0.1.5-py3-none-manylinux1_x86_64.whl.zip tmp/pyrnnoise-0.1.6-py3-none-manylinux1_x86_64.whl.zip --markdown 20240512/p/pyrnnoise/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-12 07:48:05] INFO root fetch - processPackages [monopyly]: Downloading https://files.pythonhosted.org/packages/8c/c5/71d8b2983eece210314490bd1bedb769ffc689714e6d3a4661d4d76b7aeb/monopyly-1.4.7.tar.gz
+[2024-05-12 07:48:05] INFO root fetch - processPackages [bruhanimate]: Remove: archive file [/home/abi/fetcher/tmp/bruhanimate-0.2.8.tar.gz]
+[2024-05-12 07:48:05] INFO root fetch - processPackages [bruhanimate]: Remove: archive file [/home/abi/fetcher/tmp/bruhanimate-0.2.9.tar.gz]
+[2024-05-12 07:48:05] INFO root fetch - main [MainThread]: End processing [bruhanimate]: success
+[2024-05-12 07:48:05] INFO root fetch - processPackages [monopyly]: executing diffoscope
+[2024-05-12 07:48:05] INFO root fetch - processPackages [monopyly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monopyly-1.4.6.tar.gz tmp/monopyly-1.4.7.tar.gz --markdown 20240512/m/monopyly/1.4.6-1.4.7/README.md --exclude *.pyd
+[2024-05-12 07:48:05] INFO root fetch - processPackages [pyrnnoise]: Remove: archive file [/home/abi/fetcher/tmp/pyrnnoise-0.1.5-py3-none-manylinux1_x86_64.whl.zip]
+[2024-05-12 07:48:05] INFO root fetch - processPackages [pyrnnoise]: Remove: archive file [/home/abi/fetcher/tmp/pyrnnoise-0.1.6-py3-none-manylinux1_x86_64.whl.zip]
+[2024-05-12 07:48:05] INFO root fetch - main [MainThread]: End processing [pyrnnoise]: success
+[2024-05-12 07:48:06] INFO root fetch - processPackages [monopyly]: Remove: archive file [/home/abi/fetcher/tmp/monopyly-1.4.6.tar.gz]
+[2024-05-12 07:48:06] INFO root fetch - processPackages [monopyly]: Remove: archive file [/home/abi/fetcher/tmp/monopyly-1.4.7.tar.gz]
+[2024-05-12 07:48:06] INFO root fetch - main [MainThread]: End processing [monopyly]: success
+[2024-05-12 07:48:06] INFO root fetch - main [MainThread]: Store serial: [23167308]
