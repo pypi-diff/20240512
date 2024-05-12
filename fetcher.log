@@ -12199,3 +12199,69 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:03:19] INFO root fetch - processPackages [port-ocean]: Remove: archive file [/home/abi/fetcher/tmp/port_ocean-0.5.9.tar.gz]
 [2024-05-12 17:03:19] INFO root fetch - main [MainThread]: End processing [port-ocean]: success
 [2024-05-12 17:03:19] INFO root fetch - main [MainThread]: Store serial: [23170979]
+[2024-05-12 17:05:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170979]
+[2024-05-12 17:05:28] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-12 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jinja2-embedded
+[2024-05-12 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webflask
+[2024-05-12 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fulminuricz
+[2024-05-12 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: missing-mga
+[2024-05-12 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nentaz
+[2024-05-12 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ezside
+[2024-05-12 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigcode
+[2024-05-12 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: leafmap
+[2024-05-12 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: llm-bench
+[2024-05-12 17:05:28] WARNING root fetch - processPackages [webflask]: Skipping, unable to determine old version
+[2024-05-12 17:05:28] INFO root fetch - main [MainThread]: End processing [webflask] error
+[2024-05-12 17:05:28] INFO root fetch - processPackages [bigcode]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-12 17:05:28] INFO root fetch - processPackages [llm-bench]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-12 17:05:28] INFO root fetch - processPackages [missing-mga]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-12 17:05:28] INFO root fetch - processPackages [jinja2-embedded]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 17:05:28] INFO root fetch - processPackages [ezside]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 17:05:28] INFO root fetch - processPackages [leafmap]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-05-12 17:05:28] WARNING root fetch - processPackages [nentaz]: Skipping, unable to determine old version
+[2024-05-12 17:05:28] INFO root fetch - main [MainThread]: End processing [nentaz] error
+[2024-05-12 17:05:28] INFO root fetch - processPackages [bigcode]: Downloading https://files.pythonhosted.org/packages/39/37/1ca67b58cb06c29aeb1c1940aee901930deb931f6ccb6c93e56549c0456f/bigcode-1.0.3.tar.gz
+[2024-05-12 17:05:28] WARNING root fetch - processPackages [fulminuricz]: Skipping, unable to determine old version
+[2024-05-12 17:05:28] INFO root fetch - main [MainThread]: End processing [fulminuricz] error
+[2024-05-12 17:05:28] INFO root fetch - processPackages [missing-mga]: Downloading https://files.pythonhosted.org/packages/a2/8d/528ac1c9a3d13dc14379bd82d184de6a55ffa91668fecf73a21aa246134c/missing_mga-0.3.0-py3-none-any.whl
+[2024-05-12 17:05:28] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/e4/1e/96e8e21a12cce6b75d40ef58ee187c01da8c44ea854f32fe4678648dcb90/llm_bench-0.4.8.tar.gz
+[2024-05-12 17:05:28] INFO root fetch - processPackages [jinja2-embedded]: Downloading https://files.pythonhosted.org/packages/ee/74/0090fb9a85eb6380e0a08ced515aa44d36a160166f4d7c4ed941c4e6fe9b/jinja2_embedded-0.1.1.tar.gz
+[2024-05-12 17:05:28] INFO root fetch - processPackages [ezside]: Downloading https://files.pythonhosted.org/packages/5a/d4/1810386c07f848c78c2e8b15144f22482295b4040d1283a67e6675563952/ezside-0.1.8.tar.gz
+[2024-05-12 17:05:28] INFO root fetch - processPackages [leafmap]: Downloading https://files.pythonhosted.org/packages/c7/06/719b97b642d663f4528bd69b8bd0c22e66eb9d8cab0e459bbabc20094b8d/leafmap-0.9.5.tar.gz
+[2024-05-12 17:05:29] INFO root fetch - processPackages [ezside]: Downloading https://files.pythonhosted.org/packages/f1/e0/2cae952d702515bb0e82f0bacbe379367f4a416b2a3928f33850e21ae823/ezside-0.1.9.tar.gz
+[2024-05-12 17:05:29] INFO root fetch - processPackages [bigcode]: Downloading https://files.pythonhosted.org/packages/0f/4c/c91d442f03213495ba70f7090b92671cbbfc9a2554aa18564a8158610e90/bigcode-1.0.4.tar.gz
+[2024-05-12 17:05:29] INFO root fetch - processPackages [leafmap]: Downloading https://files.pythonhosted.org/packages/74/59/375f8e1ca2eb029e521f2e04761219f715186963c29a089229743730a6cd/leafmap-0.9.6.tar.gz
+[2024-05-12 17:05:29] INFO root fetch - processPackages [missing-mga]: Downloading https://files.pythonhosted.org/packages/88/c2/aa34285ee3720edf97c7cb9acc09e75887393ff3f2a54c080c0b23d6ef4d/missing_mga-0.4.0-py3-none-any.whl
+[2024-05-12 17:05:29] INFO root fetch - processPackages [jinja2-embedded]: Downloading https://files.pythonhosted.org/packages/a6/f9/e6bf8616b6927178fbd843d014db10a75caa97c70b5ea9e115f750d0ccb0/jinja2_embedded-0.1.2.tar.gz
+[2024-05-12 17:05:29] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/e4/75/2d98ade554705da63eb2766a12984f3f6fc8b6925b37f796ffa48846b3ef/llm_bench-0.4.9.tar.gz
+[2024-05-12 17:05:29] INFO root fetch - processPackages [ezside]: executing diffoscope
+[2024-05-12 17:05:29] INFO root fetch - processPackages [ezside]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezside-0.1.8.tar.gz tmp/ezside-0.1.9.tar.gz --markdown 20240512/e/ezside/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 17:05:29] INFO root fetch - processPackages [bigcode]: executing diffoscope
+[2024-05-12 17:05:29] INFO root fetch - processPackages [bigcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigcode-1.0.3.tar.gz tmp/bigcode-1.0.4.tar.gz --markdown 20240512/b/bigcode/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-12 17:05:29] INFO root fetch - processPackages [missing-mga]: executing diffoscope
+[2024-05-12 17:05:29] INFO root fetch - processPackages [missing-mga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/missing_mga-0.3.0-py3-none-any.whl.zip tmp/missing_mga-0.4.0-py3-none-any.whl.zip --markdown 20240512/m/missing-mga/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-12 17:05:29] INFO root fetch - processPackages [leafmap]: executing diffoscope
+[2024-05-12 17:05:29] INFO root fetch - processPackages [leafmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leafmap-0.9.5.tar.gz tmp/leafmap-0.9.6.tar.gz --markdown 20240512/l/leafmap/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-05-12 17:05:29] INFO root fetch - processPackages [jinja2-embedded]: executing diffoscope
+[2024-05-12 17:05:29] INFO root fetch - processPackages [jinja2-embedded]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jinja2_embedded-0.1.1.tar.gz tmp/jinja2_embedded-0.1.2.tar.gz --markdown 20240512/j/jinja2-embedded/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 17:05:29] INFO root fetch - processPackages [llm-bench]: executing diffoscope
+[2024-05-12 17:05:29] INFO root fetch - processPackages [llm-bench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_bench-0.4.8.tar.gz tmp/llm_bench-0.4.9.tar.gz --markdown 20240512/l/llm-bench/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-12 17:05:29] INFO root fetch - processPackages [bigcode]: Remove: archive file [/home/abi/fetcher/tmp/bigcode-1.0.3.tar.gz]
+[2024-05-12 17:05:29] INFO root fetch - processPackages [bigcode]: Remove: archive file [/home/abi/fetcher/tmp/bigcode-1.0.4.tar.gz]
+[2024-05-12 17:05:29] INFO root fetch - main [MainThread]: End processing [bigcode]: success
+[2024-05-12 17:05:29] INFO root fetch - processPackages [missing-mga]: Remove: archive file [/home/abi/fetcher/tmp/missing_mga-0.3.0-py3-none-any.whl.zip]
+[2024-05-12 17:05:29] INFO root fetch - processPackages [missing-mga]: Remove: archive file [/home/abi/fetcher/tmp/missing_mga-0.4.0-py3-none-any.whl.zip]
+[2024-05-12 17:05:29] INFO root fetch - main [MainThread]: End processing [missing-mga]: success
+[2024-05-12 17:05:29] INFO root fetch - processPackages [jinja2-embedded]: Remove: archive file [/home/abi/fetcher/tmp/jinja2_embedded-0.1.1.tar.gz]
+[2024-05-12 17:05:29] INFO root fetch - processPackages [jinja2-embedded]: Remove: archive file [/home/abi/fetcher/tmp/jinja2_embedded-0.1.2.tar.gz]
+[2024-05-12 17:05:29] INFO root fetch - main [MainThread]: End processing [jinja2-embedded]: success
+[2024-05-12 17:05:30] INFO root fetch - processPackages [ezside]: Remove: archive file [/home/abi/fetcher/tmp/ezside-0.1.8.tar.gz]
+[2024-05-12 17:05:30] INFO root fetch - processPackages [ezside]: Remove: archive file [/home/abi/fetcher/tmp/ezside-0.1.9.tar.gz]
+[2024-05-12 17:05:30] INFO root fetch - main [MainThread]: End processing [ezside]: success
+[2024-05-12 17:05:30] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.8.tar.gz]
+[2024-05-12 17:05:30] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.9.tar.gz]
+[2024-05-12 17:05:30] INFO root fetch - main [MainThread]: End processing [llm-bench]: success
+[2024-05-12 17:05:30] INFO root fetch - processPackages [leafmap]: Remove: archive file [/home/abi/fetcher/tmp/leafmap-0.9.5.tar.gz]
+[2024-05-12 17:05:30] INFO root fetch - processPackages [leafmap]: Remove: archive file [/home/abi/fetcher/tmp/leafmap-0.9.6.tar.gz]
+[2024-05-12 17:05:30] INFO root fetch - main [MainThread]: End processing [leafmap]: success
+[2024-05-12 17:05:30] INFO root fetch - main [MainThread]: Store serial: [23171007]
