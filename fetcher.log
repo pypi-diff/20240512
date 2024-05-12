@@ -12597,3 +12597,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:23:24] INFO root fetch - processPackages [recs-searcher]: Remove: archive file [/home/abi/fetcher/tmp/recs-searcher-0.1.1.tar.gz]
 [2024-05-12 17:23:24] INFO root fetch - main [MainThread]: End processing [recs-searcher]: success
 [2024-05-12 17:23:24] INFO root fetch - main [MainThread]: Store serial: [23171201]
+[2024-05-12 17:25:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171201]
+[2024-05-12 17:25:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 17:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AccuRating
+[2024-05-12 17:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vernalisedz
+[2024-05-12 17:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: borneo-python-client
+[2024-05-12 17:25:33] INFO root fetch - processPackages [AccuRating]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-12 17:25:33] WARNING root fetch - processPackages [vernalisedz]: Skipping, unable to determine old version
+[2024-05-12 17:25:33] INFO root fetch - main [MainThread]: End processing [vernalisedz] error
+[2024-05-12 17:25:33] INFO root fetch - processPackages [borneo-python-client]: New version: [3.10.2] Old Version: [3.10.1]
+[2024-05-12 17:25:33] INFO root fetch - processPackages [AccuRating]: Downloading https://files.pythonhosted.org/packages/6c/c2/c520c694a9fe2f293746b828be59adf322685fdf9555d536eeb6825273aa/accurating-0.5.0.tar.gz
+[2024-05-12 17:25:33] INFO root fetch - processPackages [borneo-python-client]: Downloading https://files.pythonhosted.org/packages/09/34/b0c4f13f101ab885fd4fdc411dc275547db1dbf0b8183a35ec3f45951578/borneo_python_client-3.10.1.tar.gz
+[2024-05-12 17:25:33] INFO root fetch - processPackages [AccuRating]: Downloading https://files.pythonhosted.org/packages/dd/54/574f332e45c310f10c78905d69f49e3ebbfa6c56797b5f0175f0e048d84f/accurating-0.6.0.tar.gz
+[2024-05-12 17:25:33] INFO root fetch - processPackages [borneo-python-client]: Downloading https://files.pythonhosted.org/packages/e3/08/c9ed9b6017be0a47a0e8c75eee23c475adb0097436d084fbb78ce3377990/borneo_python_client-3.10.2.tar.gz
+[2024-05-12 17:25:33] INFO root fetch - processPackages [AccuRating]: executing diffoscope
+[2024-05-12 17:25:33] INFO root fetch - processPackages [AccuRating]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/accurating-0.5.0.tar.gz tmp/accurating-0.6.0.tar.gz --markdown 20240512/A/AccuRating/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-12 17:25:33] INFO root fetch - processPackages [borneo-python-client]: executing diffoscope
+[2024-05-12 17:25:33] INFO root fetch - processPackages [borneo-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/borneo_python_client-3.10.1.tar.gz tmp/borneo_python_client-3.10.2.tar.gz --markdown 20240512/b/borneo-python-client/3.10.1-3.10.2/README.md --exclude *.pyd
+[2024-05-12 17:25:34] INFO root fetch - processPackages [AccuRating]: Remove: archive file [/home/abi/fetcher/tmp/accurating-0.5.0.tar.gz]
+[2024-05-12 17:25:34] INFO root fetch - processPackages [AccuRating]: Remove: archive file [/home/abi/fetcher/tmp/accurating-0.6.0.tar.gz]
+[2024-05-12 17:25:34] INFO root fetch - main [MainThread]: End processing [AccuRating]: success
+[2024-05-12 17:25:34] INFO root fetch - processPackages [borneo-python-client]: Remove: archive file [/home/abi/fetcher/tmp/borneo_python_client-3.10.1.tar.gz]
+[2024-05-12 17:25:34] INFO root fetch - processPackages [borneo-python-client]: Remove: archive file [/home/abi/fetcher/tmp/borneo_python_client-3.10.2.tar.gz]
+[2024-05-12 17:25:34] INFO root fetch - main [MainThread]: End processing [borneo-python-client]: success
+[2024-05-12 17:25:34] INFO root fetch - main [MainThread]: Store serial: [23171222]
