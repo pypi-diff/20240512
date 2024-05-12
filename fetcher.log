@@ -9560,3 +9560,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:49:18] INFO root fetch - processPackages [wireviz]: Remove: archive file [/home/abi/fetcher/tmp/wireviz-0.4.tar.gz]
 [2024-05-12 13:49:18] INFO root fetch - main [MainThread]: End processing [wireviz]: success
 [2024-05-12 13:49:18] INFO root fetch - main [MainThread]: Store serial: [23169538]
+[2024-05-12 13:51:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169538]
+[2024-05-12 13:51:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 13:51:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: proboscideanz
+[2024-05-12 13:51:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: polars-ta
+[2024-05-12 13:51:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: QtHarmony
+[2024-05-12 13:51:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: acmecse-test
+[2024-05-12 13:51:28] INFO root fetch - processPackages [QtHarmony]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 13:51:28] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/71/86/0843d8069bf4f5dfa4af8c5fe4faa7de41b7394826dcd55d91251bfc2c54/qtharmony-0.1.8.tar.gz
+[2024-05-12 13:51:28] WARNING root fetch - processPackages [proboscideanz]: Skipping, unable to determine old version
+[2024-05-12 13:51:28] INFO root fetch - main [MainThread]: End processing [proboscideanz] error
+[2024-05-12 13:51:28] INFO root fetch - processPackages [polars-ta]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-12 13:51:28] INFO root fetch - processPackages [acmecse-test]: New version: [2024.5] Old Version: [2024.4.9]
+[2024-05-12 13:51:28] INFO root fetch - processPackages [polars-ta]: Downloading https://files.pythonhosted.org/packages/8b/e4/51828e871dbcd30ebb6393761ec217807eefbb50998745e217d2602cb104/polars_ta-0.2.4.tar.gz
+[2024-05-12 13:51:28] INFO root fetch - processPackages [acmecse-test]: Downloading https://files.pythonhosted.org/packages/98/16/773da797873f8244cf7d50979913aea9c6125ce94e470fa94154f776bbc5/acmecse_test-2024.4.9-py3-none-any.whl
+[2024-05-12 13:51:28] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/33/61/19f1b4b00a827b32e6045f0926ca755f3b945f774ecb8c6f0e9a4bdfe262/qtharmony-0.1.9.tar.gz
+[2024-05-12 13:51:28] INFO root fetch - processPackages [QtHarmony]: executing diffoscope
+[2024-05-12 13:51:28] INFO root fetch - processPackages [QtHarmony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtharmony-0.1.8.tar.gz tmp/qtharmony-0.1.9.tar.gz --markdown 20240512/Q/QtHarmony/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 13:51:28] INFO root fetch - processPackages [polars-ta]: Downloading https://files.pythonhosted.org/packages/e2/c7/ad5b37ba37e3a0a9f6546c91bb2a1a717e2162123840fc255e9d3600fe06/polars_ta-0.2.5.tar.gz
+[2024-05-12 13:51:28] INFO root fetch - processPackages [acmecse-test]: Downloading https://files.pythonhosted.org/packages/55/e4/3b80de5cc7efcb2c95835932b79b8802810e0104d3b814a59e3e4ff4fb6b/acmecse_test-2024.5-py3-none-any.whl
+[2024-05-12 13:51:28] INFO root fetch - processPackages [polars-ta]: executing diffoscope
+[2024-05-12 13:51:28] INFO root fetch - processPackages [polars-ta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_ta-0.2.4.tar.gz tmp/polars_ta-0.2.5.tar.gz --markdown 20240512/p/polars-ta/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-12 13:51:29] INFO root fetch - processPackages [acmecse-test]: executing diffoscope
+[2024-05-12 13:51:29] INFO root fetch - processPackages [acmecse-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acmecse_test-2024.4.9-py3-none-any.whl.zip tmp/acmecse_test-2024.5-py3-none-any.whl.zip --markdown 20240512/a/acmecse-test/2024.4.9-2024.5/README.md --exclude *.pyd
+[2024-05-12 13:51:29] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.1.8.tar.gz]
+[2024-05-12 13:51:29] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.1.9.tar.gz]
+[2024-05-12 13:51:29] INFO root fetch - main [MainThread]: End processing [QtHarmony]: success
+[2024-05-12 13:51:29] INFO root fetch - processPackages [polars-ta]: Remove: archive file [/home/abi/fetcher/tmp/polars_ta-0.2.4.tar.gz]
+[2024-05-12 13:51:29] INFO root fetch - processPackages [polars-ta]: Remove: archive file [/home/abi/fetcher/tmp/polars_ta-0.2.5.tar.gz]
+[2024-05-12 13:51:29] INFO root fetch - main [MainThread]: End processing [polars-ta]: success
+[2024-05-12 13:51:29] INFO root fetch - processPackages [acmecse-test]: Remove: archive file [/home/abi/fetcher/tmp/acmecse_test-2024.4.9-py3-none-any.whl.zip]
+[2024-05-12 13:51:29] INFO root fetch - processPackages [acmecse-test]: Remove: archive file [/home/abi/fetcher/tmp/acmecse_test-2024.5-py3-none-any.whl.zip]
+[2024-05-12 13:51:29] INFO root fetch - main [MainThread]: End processing [acmecse-test]: success
+[2024-05-12 13:51:29] INFO root fetch - main [MainThread]: Store serial: [23169550]
