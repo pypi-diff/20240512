@@ -13999,3 +13999,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:54:44] INFO root fetch - processPackages [phylo2vec]: Remove: archive file [/home/abi/fetcher/tmp/phylo2vec-0.1.3.tar.gz]
 [2024-05-12 18:54:44] INFO root fetch - main [MainThread]: End processing [phylo2vec]: success
 [2024-05-12 18:54:44] INFO root fetch - main [MainThread]: Store serial: [23171951]
+[2024-05-12 18:56:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171951]
+[2024-05-12 18:56:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 18:56:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rootdir
+[2024-05-12 18:56:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: topologicpy
+[2024-05-12 18:56:52] INFO root fetch - processPackages [rootdir]: New version: [0.1.2.post1] Old Version: [0.1.0]
+[2024-05-12 18:56:52] INFO root fetch - processPackages [rootdir]: Downloading https://files.pythonhosted.org/packages/8a/ed/3b22580d79de32999fe8e3f9785d253eb2c227292f8f1ab0771255eb1fdd/rootdir-0.1.0.tar.gz
+[2024-05-12 18:56:53] INFO root fetch - processPackages [topologicpy]: New version: [6.0.0] Old Version: [0.6.1]
+[2024-05-12 18:56:53] INFO root fetch - processPackages [rootdir]: Downloading https://files.pythonhosted.org/packages/33/63/f6114290ac25cb5a9172d6c64f28dce9537434294ef5986d31a7fdd41c9a/rootdir-0.1.2.post1.tar.gz
+[2024-05-12 18:56:53] INFO root fetch - processPackages [topologicpy]: Downloading https://files.pythonhosted.org/packages/6c/b7/f26179de56970fcdae5be0e74a5fabdc61bff0d90bb2f547fb78fe49c0f0/topologicpy-0.6.1-py3-none-any.whl
+[2024-05-12 18:56:53] INFO root fetch - processPackages [rootdir]: executing diffoscope
+[2024-05-12 18:56:53] INFO root fetch - processPackages [rootdir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rootdir-0.1.0.tar.gz tmp/rootdir-0.1.2.post1.tar.gz --markdown 20240512/r/rootdir/0.1.0-0.1.2.post1/README.md --exclude *.pyd
+[2024-05-12 18:56:53] INFO root fetch - processPackages [topologicpy]: Downloading https://files.pythonhosted.org/packages/65/d7/de982dd19dedb2387a9d3c48ff9384633b27b874064c9d3614a3c6dc530b/topologicpy-6.0.0-py3-none-any.whl
+[2024-05-12 18:56:53] INFO root fetch - processPackages [rootdir]: Remove: archive file [/home/abi/fetcher/tmp/rootdir-0.1.0.tar.gz]
+[2024-05-12 18:56:53] INFO root fetch - processPackages [rootdir]: Remove: archive file [/home/abi/fetcher/tmp/rootdir-0.1.2.post1.tar.gz]
+[2024-05-12 18:56:53] INFO root fetch - main [MainThread]: End processing [rootdir]: success
+[2024-05-12 18:56:53] INFO root fetch - processPackages [topologicpy]: executing diffoscope
+[2024-05-12 18:56:53] INFO root fetch - processPackages [topologicpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/topologicpy-0.6.1-py3-none-any.whl.zip tmp/topologicpy-6.0.0-py3-none-any.whl.zip --markdown 20240512/t/topologicpy/0.6.1-6.0.0/README.md --exclude *.pyd
+[2024-05-12 18:56:54] INFO root fetch - processPackages [topologicpy]: Remove: archive file [/home/abi/fetcher/tmp/topologicpy-0.6.1-py3-none-any.whl.zip]
+[2024-05-12 18:56:54] INFO root fetch - processPackages [topologicpy]: Remove: archive file [/home/abi/fetcher/tmp/topologicpy-6.0.0-py3-none-any.whl.zip]
+[2024-05-12 18:56:54] INFO root fetch - main [MainThread]: End processing [topologicpy]: success
+[2024-05-12 18:56:54] INFO root fetch - main [MainThread]: Store serial: [23171957]
