@@ -10596,3 +10596,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:07:10] WARNING root fetch - processPackages [bactericidesz]: Skipping, unable to determine old version
 [2024-05-12 15:07:10] INFO root fetch - main [MainThread]: End processing [bactericidesz] error
 [2024-05-12 15:07:10] INFO root fetch - main [MainThread]: Store serial: [23170032]
+[2024-05-12 15:09:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170032]
+[2024-05-12 15:09:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 15:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flameEngine
+[2024-05-12 15:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gravitino
+[2024-05-12 15:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: verysimpletree
+[2024-05-12 15:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qstd-core
+[2024-05-12 15:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ReverseBox
+[2024-05-12 15:09:18] INFO root fetch - processPackages [ReverseBox]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-05-12 15:09:18] INFO root fetch - processPackages [gravitino]: New version: [0.5.0.dev9] Old Version: [0.5.0.dev8]
+[2024-05-12 15:09:18] INFO root fetch - processPackages [qstd-core]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-05-12 15:09:18] INFO root fetch - processPackages [flameEngine]: New version: [0.0.4.37] Old Version: [0.0.4.36]
+[2024-05-12 15:09:18] WARNING root fetch - processPackages [verysimpletree]: Skipping, unable to determine old version
+[2024-05-12 15:09:18] INFO root fetch - main [MainThread]: End processing [verysimpletree] error
+[2024-05-12 15:09:18] INFO root fetch - processPackages [gravitino]: Downloading https://files.pythonhosted.org/packages/3d/85/878578ad4d8b98119f69ca1e7deb2e76553f9e23fb835b841820cd5c3dd7/gravitino-0.5.0.dev8.tar.gz
+[2024-05-12 15:09:18] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/e8/5d/3eb4ebf94c7153ef18d5051c5e03d408240d031992950d763e41bfa41ab2/ReverseBox-0.9.6.tar.gz
+[2024-05-12 15:09:18] INFO root fetch - processPackages [flameEngine]: Downloading https://files.pythonhosted.org/packages/da/bd/06efb54500ad83a59869510b15196a6349ddb4162ce8a67356db3b5dace1/flameengine-0.0.4.36.tar.gz
+[2024-05-12 15:09:18] INFO root fetch - processPackages [qstd-core]: Downloading https://files.pythonhosted.org/packages/72/84/c973cbe617b8821f81cb07d628b53a5f5fa3fb4c79a3cef1db6423de9432/qstd_core-0.5.1.tar.gz
+[2024-05-12 15:09:18] INFO root fetch - processPackages [gravitino]: Downloading https://files.pythonhosted.org/packages/6a/e3/899a6ec3ed516c98e40aff8a8cfc16b384a0364ddda7c956c5bca1101b6d/gravitino-0.5.0.dev9.tar.gz
+[2024-05-12 15:09:19] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/80/3d/3662db128377bd6c548cfb2737946884e3879d79644ff9e3f7eac0ac31f9/ReverseBox-0.9.7.tar.gz
+[2024-05-12 15:09:19] INFO root fetch - processPackages [gravitino]: executing diffoscope
+[2024-05-12 15:09:19] INFO root fetch - processPackages [gravitino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitino-0.5.0.dev8.tar.gz tmp/gravitino-0.5.0.dev9.tar.gz --markdown 20240512/g/gravitino/0.5.0.dev8-0.5.0.dev9/README.md --exclude *.pyd
+[2024-05-12 15:09:19] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2024-05-12 15:09:19] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.9.6.tar.gz tmp/ReverseBox-0.9.7.tar.gz --markdown 20240512/R/ReverseBox/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-05-12 15:09:19] INFO root fetch - processPackages [flameEngine]: Downloading https://files.pythonhosted.org/packages/c5/d7/732115c2b87e10e7e6afc986eadc80deb4f04ef9fadd7e80c94d250e6982/flameengine-0.0.4.37.tar.gz
+[2024-05-12 15:09:19] INFO root fetch - processPackages [qstd-core]: Downloading https://files.pythonhosted.org/packages/33/ac/ade79305911aa7b64d50ed19e51ad1f955f9ff8656b505422b524f64442c/qstd_core-0.5.2.tar.gz
+[2024-05-12 15:09:19] INFO root fetch - processPackages [flameEngine]: executing diffoscope
+[2024-05-12 15:09:19] INFO root fetch - processPackages [flameEngine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flameengine-0.0.4.36.tar.gz tmp/flameengine-0.0.4.37.tar.gz --markdown 20240512/f/flameEngine/0.0.4.36-0.0.4.37/README.md --exclude *.pyd
+[2024-05-12 15:09:19] INFO root fetch - processPackages [qstd-core]: executing diffoscope
+[2024-05-12 15:09:19] INFO root fetch - processPackages [qstd-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qstd_core-0.5.1.tar.gz tmp/qstd_core-0.5.2.tar.gz --markdown 20240512/q/qstd-core/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-05-12 15:09:19] INFO root fetch - processPackages [flameEngine]: Remove: archive file [/home/abi/fetcher/tmp/flameengine-0.0.4.36.tar.gz]
+[2024-05-12 15:09:19] INFO root fetch - processPackages [flameEngine]: Remove: archive file [/home/abi/fetcher/tmp/flameengine-0.0.4.37.tar.gz]
+[2024-05-12 15:09:19] INFO root fetch - main [MainThread]: End processing [flameEngine]: success
+[2024-05-12 15:09:19] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.9.6.tar.gz]
+[2024-05-12 15:09:19] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.9.7.tar.gz]
+[2024-05-12 15:09:19] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2024-05-12 15:09:19] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev8.tar.gz]
+[2024-05-12 15:09:19] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev9.tar.gz]
+[2024-05-12 15:09:19] INFO root fetch - main [MainThread]: End processing [gravitino]: success
+[2024-05-12 15:09:20] INFO root fetch - processPackages [qstd-core]: Remove: archive file [/home/abi/fetcher/tmp/qstd_core-0.5.1.tar.gz]
+[2024-05-12 15:09:20] INFO root fetch - processPackages [qstd-core]: Remove: archive file [/home/abi/fetcher/tmp/qstd_core-0.5.2.tar.gz]
+[2024-05-12 15:09:20] INFO root fetch - main [MainThread]: End processing [qstd-core]: success
+[2024-05-12 15:09:20] INFO root fetch - main [MainThread]: Store serial: [23170045]
