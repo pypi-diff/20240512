@@ -10809,3 +10809,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:25:32] INFO root fetch - processPackages [kappamodules]: Remove: archive file [/home/abi/fetcher/tmp/kappamodules-0.1.8.tar.gz]
 [2024-05-12 15:25:32] INFO root fetch - main [MainThread]: End processing [kappamodules]: success
 [2024-05-12 15:25:32] INFO root fetch - main [MainThread]: Store serial: [23170126]
+[2024-05-12 15:27:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170126]
+[2024-05-12 15:27:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 15:27:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: helvellalesz
+[2024-05-12 15:27:41] WARNING root fetch - processPackages [helvellalesz]: Skipping, unable to determine old version
+[2024-05-12 15:27:41] INFO root fetch - main [MainThread]: End processing [helvellalesz] error
+[2024-05-12 15:27:41] INFO root fetch - main [MainThread]: Store serial: [23170130]
