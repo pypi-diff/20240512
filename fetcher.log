@@ -8597,3 +8597,38 @@
 [2024-05-12 12:38:40] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240511.tar.gz]
 [2024-05-12 12:38:40] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
 [2024-05-12 12:38:40] INFO root fetch - main [MainThread]: Store serial: [23169058]
+[2024-05-12 12:40:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169058]
+[2024-05-12 12:40:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 12:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymemgpt-nightly
+[2024-05-12 12:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymobiledevice3
+[2024-05-12 12:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chess-pairings
+[2024-05-12 12:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chess-utils
+[2024-05-12 12:40:50] INFO root fetch - processPackages [chess-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 12:40:50] INFO root fetch - processPackages [chess-pairings]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-05-12 12:40:50] INFO root fetch - processPackages [chess-utils]: Downloading https://files.pythonhosted.org/packages/a3/dc/1afe218e54667934bab5660e347ffb7cefed78c6dfddc717fb5f962ae659/chess_utils-0.1.8.tar.gz
+[2024-05-12 12:40:50] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.9.dev20240412103904] Old Version: [0.3.9.dev20240411103902]
+[2024-05-12 12:40:50] INFO root fetch - processPackages [pymobiledevice3]: New version: [4.5.3] Old Version: [4.5.2]
+[2024-05-12 12:40:50] INFO root fetch - processPackages [chess-pairings]: Downloading https://files.pythonhosted.org/packages/b8/08/19a7b733ed84ed480cffdc1c189ff2f1f436e3b8ed70a521bfab2597d3ec/chess_pairings-0.1.0.tar.gz
+[2024-05-12 12:40:50] INFO root fetch - processPackages [chess-utils]: Downloading https://files.pythonhosted.org/packages/91/10/67dd0bbf7400db91ed6e38e5428df297885a142cb6307e0a05c302654e5e/chess_utils-0.1.9.tar.gz
+[2024-05-12 12:40:50] INFO root fetch - processPackages [pymobiledevice3]: Downloading https://files.pythonhosted.org/packages/63/f7/3e5e272cb1fe61c7eb88322f3fd3ee48152248ac52a201cf7e10fc92d4ce/pymobiledevice3-4.5.2.tar.gz
+[2024-05-12 12:40:50] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/28/e7/e8c0c970c21e3670e810627cef085bbbbac1f9e994540354838d7781a0ac/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz
+[2024-05-12 12:40:50] WARNING root fetch - processPackages [pymobiledevice3]: Skipping package: exceeds size limit 31546427>=10485760
+[2024-05-12 12:40:50] INFO root fetch - main [MainThread]: End processing [pymobiledevice3] error
+[2024-05-12 12:40:50] INFO root fetch - processPackages [chess-utils]: executing diffoscope
+[2024-05-12 12:40:50] INFO root fetch - processPackages [chess-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chess_utils-0.1.8.tar.gz tmp/chess_utils-0.1.9.tar.gz --markdown 20240512/c/chess-utils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 12:40:50] INFO root fetch - processPackages [chess-pairings]: Downloading https://files.pythonhosted.org/packages/e3/8c/c638427ff379c0fb61172994996143c34d01916b683e1658f88f0ed2028a/chess_pairings-0.1.2.tar.gz
+[2024-05-12 12:40:50] INFO root fetch - processPackages [chess-pairings]: executing diffoscope
+[2024-05-12 12:40:50] INFO root fetch - processPackages [chess-pairings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chess_pairings-0.1.0.tar.gz tmp/chess_pairings-0.1.2.tar.gz --markdown 20240512/c/chess-pairings/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-05-12 12:40:50] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/50/4a/4c9c1fb70a7ee971f3c8697cc6dedb251e3b10cafdd23be4d035ece0f2ec/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz
+[2024-05-12 12:40:51] INFO root fetch - processPackages [chess-utils]: Remove: archive file [/home/abi/fetcher/tmp/chess_utils-0.1.8.tar.gz]
+[2024-05-12 12:40:51] INFO root fetch - processPackages [chess-utils]: Remove: archive file [/home/abi/fetcher/tmp/chess_utils-0.1.9.tar.gz]
+[2024-05-12 12:40:51] INFO root fetch - main [MainThread]: End processing [chess-utils]: success
+[2024-05-12 12:40:51] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-05-12 12:40:51] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz --markdown 20240512/p/pymemgpt-nightly/0.3.9.dev20240411103902-0.3.9.dev20240412103904/README.md --exclude *.pyd
+[2024-05-12 12:40:51] INFO root fetch - processPackages [chess-pairings]: Remove: archive file [/home/abi/fetcher/tmp/chess_pairings-0.1.0.tar.gz]
+[2024-05-12 12:40:51] INFO root fetch - processPackages [chess-pairings]: Remove: archive file [/home/abi/fetcher/tmp/chess_pairings-0.1.2.tar.gz]
+[2024-05-12 12:40:51] INFO root fetch - main [MainThread]: End processing [chess-pairings]: success
+[2024-05-12 12:40:52] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz]
+[2024-05-12 12:40:52] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
+[2024-05-12 12:40:52] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-05-12 12:40:52] INFO root fetch - main [MainThread]: Store serial: [23169070]
