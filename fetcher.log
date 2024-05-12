@@ -9155,3 +9155,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:22:19] INFO root fetch - processPackages [bundle-cpp]: Remove: archive file [/home/abi/fetcher/tmp/bundle_cpp-0.1.2.tar.gz]
 [2024-05-12 13:22:19] INFO root fetch - main [MainThread]: End processing [bundle-cpp]: success
 [2024-05-12 13:22:19] INFO root fetch - main [MainThread]: Store serial: [23169340]
+[2024-05-12 13:24:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169340]
+[2024-05-12 13:24:29] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 13:24:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mabel
+[2024-05-12 13:24:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-core-xe-21
+[2024-05-12 13:24:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mass-composition
+[2024-05-12 13:24:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycfutils
+[2024-05-12 13:24:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: portfolio-tracker
+[2024-05-12 13:24:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: luxez
+[2024-05-12 13:24:29] INFO root fetch - processPackages [mass-composition]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-05-12 13:24:29] INFO root fetch - processPackages [portfolio-tracker]: New version: [0.1.2] Old Version: [0.1.1.3]
+[2024-05-12 13:24:29] INFO root fetch - processPackages [mass-composition]: Downloading https://files.pythonhosted.org/packages/82/a9/2770057bea8ea129d95170465b097ac9effdcd9f58c63f725cea603a7e65/mass_composition-0.4.6.tar.gz
+[2024-05-12 13:24:29] INFO root fetch - processPackages [mabel]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-05-12 13:24:29] WARNING root fetch - processPackages [luxez]: Skipping, unable to determine old version
+[2024-05-12 13:24:29] INFO root fetch - main [MainThread]: End processing [luxez] error
+[2024-05-12 13:24:29] INFO root fetch - processPackages [bigdl-core-xe-21]: New version: [2.5.0b20240512] Old Version: [2.5.0b20240511]
+[2024-05-12 13:24:29] INFO root fetch - processPackages [pycfutils]: New version: [2024.5.12.post1] Old Version: [2024.5.12]
+[2024-05-12 13:24:29] INFO root fetch - processPackages [portfolio-tracker]: Downloading https://files.pythonhosted.org/packages/8b/50/7b2722a4a27d2e2db1eb708f6e61404792ea36c00ff6f0cddae7130fac7e/portfolio_tracker-0.1.1.3.tar.gz
+[2024-05-12 13:24:29] INFO root fetch - processPackages [mabel]: Downloading https://files.pythonhosted.org/packages/4a/79/35fb3b283cb0729273d3bd0d760bcd73c7079230a9323cf8e3ab751681e6/mabel-0.6.8.tar.gz
+[2024-05-12 13:24:29] INFO root fetch - processPackages [bigdl-core-xe-21]: Downloading https://files.pythonhosted.org/packages/ea/9f/aaf4d15ab4c1c3826c79d5940603ce150ee6e4bd9abb5adacddc7c0aae39/bigdl_core_xe_21-2.5.0b20240511-cp39-cp39-win_amd64.whl
+[2024-05-12 13:24:29] INFO root fetch - processPackages [pycfutils]: Downloading https://files.pythonhosted.org/packages/43/10/ea52d25b98a14c28a70380e62eae1815be44840bd3760cd24efde19f0b5f/pycfutils-2024.5.12.tar.gz
+[2024-05-12 13:24:30] WARNING root fetch - processPackages [bigdl-core-xe-21]: Skipping package: exceeds size limit 29781879>=10485760
+[2024-05-12 13:24:30] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-21] error
+[2024-05-12 13:24:30] INFO root fetch - processPackages [mass-composition]: Downloading https://files.pythonhosted.org/packages/81/68/21ee3062ec191a5bc2cd20d2de04574a263b4c664e74cc24db0a3bd43bb1/mass_composition-0.4.7.tar.gz
+[2024-05-12 13:24:30] INFO root fetch - processPackages [portfolio-tracker]: Downloading https://files.pythonhosted.org/packages/99/1c/ee7d4e1db136eb90a70f1398ade3bc01fcf8c5e6488f9ff6533e3725f50f/portfolio_tracker-0.1.2.tar.gz
+[2024-05-12 13:24:30] INFO root fetch - processPackages [mass-composition]: executing diffoscope
+[2024-05-12 13:24:30] INFO root fetch - processPackages [mass-composition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mass_composition-0.4.6.tar.gz tmp/mass_composition-0.4.7.tar.gz --markdown 20240512/m/mass-composition/0.4.6-0.4.7/README.md --exclude *.pyd
+[2024-05-12 13:24:30] INFO root fetch - processPackages [pycfutils]: Downloading https://files.pythonhosted.org/packages/f2/3c/2038725e72568236242007a1feca540168fb466b5b9fa92a09d7353cd17e/pycfutils-2024.5.12.post1.tar.gz
+[2024-05-12 13:24:30] INFO root fetch - processPackages [portfolio-tracker]: executing diffoscope
+[2024-05-12 13:24:30] INFO root fetch - processPackages [portfolio-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portfolio_tracker-0.1.1.3.tar.gz tmp/portfolio_tracker-0.1.2.tar.gz --markdown 20240512/p/portfolio-tracker/0.1.1.3-0.1.2/README.md --exclude *.pyd
+[2024-05-12 13:24:30] INFO root fetch - processPackages [pycfutils]: executing diffoscope
+[2024-05-12 13:24:30] INFO root fetch - processPackages [pycfutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycfutils-2024.5.12.tar.gz tmp/pycfutils-2024.5.12.post1.tar.gz --markdown 20240512/p/pycfutils/2024.5.12-2024.5.12.post1/README.md --exclude *.pyd
+[2024-05-12 13:24:30] INFO root fetch - processPackages [mabel]: Downloading https://files.pythonhosted.org/packages/26/51/ddd150a5c52368b5b19e51c9393b6ca80ae6b47840ec2eb86973222103c1/mabel-0.6.9.tar.gz
+[2024-05-12 13:24:30] INFO root fetch - processPackages [portfolio-tracker]: Remove: archive file [/home/abi/fetcher/tmp/portfolio_tracker-0.1.1.3.tar.gz]
+[2024-05-12 13:24:30] INFO root fetch - processPackages [portfolio-tracker]: Remove: archive file [/home/abi/fetcher/tmp/portfolio_tracker-0.1.2.tar.gz]
+[2024-05-12 13:24:30] INFO root fetch - main [MainThread]: End processing [portfolio-tracker]: success
+[2024-05-12 13:24:31] INFO root fetch - processPackages [pycfutils]: Remove: archive file [/home/abi/fetcher/tmp/pycfutils-2024.5.12.tar.gz]
+[2024-05-12 13:24:31] INFO root fetch - processPackages [pycfutils]: Remove: archive file [/home/abi/fetcher/tmp/pycfutils-2024.5.12.post1.tar.gz]
+[2024-05-12 13:24:31] INFO root fetch - main [MainThread]: End processing [pycfutils]: success
+[2024-05-12 13:24:31] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.4.6.tar.gz]
+[2024-05-12 13:24:31] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.4.7.tar.gz]
+[2024-05-12 13:24:31] INFO root fetch - main [MainThread]: End processing [mass-composition]: success
+[2024-05-12 13:24:31] INFO root fetch - processPackages [mabel]: executing diffoscope
+[2024-05-12 13:24:31] INFO root fetch - processPackages [mabel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mabel-0.6.8.tar.gz tmp/mabel-0.6.9.tar.gz --markdown 20240512/m/mabel/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-05-12 13:24:32] INFO root fetch - processPackages [mabel]: Remove: archive file [/home/abi/fetcher/tmp/mabel-0.6.8.tar.gz]
+[2024-05-12 13:24:32] INFO root fetch - processPackages [mabel]: Remove: archive file [/home/abi/fetcher/tmp/mabel-0.6.9.tar.gz]
+[2024-05-12 13:24:32] INFO root fetch - main [MainThread]: End processing [mabel]: success
+[2024-05-12 13:24:32] INFO root fetch - main [MainThread]: Store serial: [23169362]
