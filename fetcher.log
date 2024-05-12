@@ -9867,3 +9867,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:11:03] INFO root fetch - processPackages [pygama]: Remove: archive file [/home/abi/fetcher/tmp/pygama-2.0.0a1.tar.gz]
 [2024-05-12 14:11:03] INFO root fetch - main [MainThread]: End processing [pygama]: success
 [2024-05-12 14:11:03] INFO root fetch - main [MainThread]: Store serial: [23169709]
+[2024-05-12 14:13:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169709]
+[2024-05-12 14:13:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 14:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlpr
+[2024-05-12 14:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coospace-automation
+[2024-05-12 14:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: extrautilities
+[2024-05-12 14:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: abses
+[2024-05-12 14:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: czsc
+[2024-05-12 14:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pi-log
+[2024-05-12 14:13:13] INFO root fetch - processPackages [abses]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-12 14:13:13] INFO root fetch - processPackages [mlpr]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 14:13:13] INFO root fetch - processPackages [pi-log]: New version: [0.5.8] Old Version: [0.5.7.3]
+[2024-05-12 14:13:13] INFO root fetch - processPackages [abses]: Downloading https://files.pythonhosted.org/packages/4b/2e/ea43560091340d00ac15babd0d3e0fec2d9a57dfe828243c3745d4c94ff0/abses-0.6.1.tar.gz
+[2024-05-12 14:13:13] WARNING root fetch - processPackages [extrautilities]: Skipping, unable to determine old version
+[2024-05-12 14:13:13] INFO root fetch - main [MainThread]: End processing [extrautilities] error
+[2024-05-12 14:13:13] WARNING root fetch - processPackages [coospace-automation]: Skipping, unable to determine old version
+[2024-05-12 14:13:13] INFO root fetch - main [MainThread]: End processing [coospace-automation] error
+[2024-05-12 14:13:13] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/73/3a/39153727c1ce2f4aa9d8d804e48fc7942f19f53dac796571b94f0121a129/mlpr-0.1.8.tar.gz
+[2024-05-12 14:13:13] INFO root fetch - processPackages [czsc]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-12 14:13:13] INFO root fetch - processPackages [pi-log]: Downloading https://files.pythonhosted.org/packages/d1/f4/f6b09eec564e89bfe241be3ff50783bd8d190ce3d5be4c7f3158dd0c1531/pi_log-0.5.7.3.tar.gz
+[2024-05-12 14:13:13] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/fc/c0/71f4eab477564c23412fe136584c09b6f94ce4a147fcdc8ac880eef388a2/mlpr-0.1.9.tar.gz
+[2024-05-12 14:13:13] INFO root fetch - processPackages [czsc]: Downloading https://files.pythonhosted.org/packages/ff/64/49e6809b474049632717e96f3a51bcdab728d63517d8ec0eb228e09ad52d/czsc-0.9.8.tar.gz
+[2024-05-12 14:13:13] INFO root fetch - processPackages [mlpr]: executing diffoscope
+[2024-05-12 14:13:13] INFO root fetch - processPackages [mlpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpr-0.1.8.tar.gz tmp/mlpr-0.1.9.tar.gz --markdown 20240512/m/mlpr/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 14:13:13] INFO root fetch - processPackages [abses]: Downloading https://files.pythonhosted.org/packages/2e/ef/d19e734abe7cda21af26c84b8cf7a8d47ebaaf9dce58f4300c1c292de74d/abses-0.6.2.tar.gz
+[2024-05-12 14:13:14] INFO root fetch - processPackages [pi-log]: Downloading https://files.pythonhosted.org/packages/7f/28/4c830e7af29222580db60338f4f0056125bdd01e6632a1f4956e729591c5/pi_log-0.5.8.tar.gz
+[2024-05-12 14:13:14] INFO root fetch - processPackages [czsc]: Downloading https://files.pythonhosted.org/packages/65/2a/c6b0017939d88546e65732fc499326433b075adecda347c5aca412e4fe77/czsc-0.9.9.tar.gz
+[2024-05-12 14:13:14] INFO root fetch - processPackages [abses]: executing diffoscope
+[2024-05-12 14:13:14] INFO root fetch - processPackages [abses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abses-0.6.1.tar.gz tmp/abses-0.6.2.tar.gz --markdown 20240512/a/abses/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-12 14:13:14] INFO root fetch - processPackages [pi-log]: executing diffoscope
+[2024-05-12 14:13:14] INFO root fetch - processPackages [pi-log]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_log-0.5.7.3.tar.gz tmp/pi_log-0.5.8.tar.gz --markdown 20240512/p/pi-log/0.5.7.3-0.5.8/README.md --exclude *.pyd
+[2024-05-12 14:13:14] INFO root fetch - processPackages [czsc]: executing diffoscope
+[2024-05-12 14:13:14] INFO root fetch - processPackages [czsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czsc-0.9.8.tar.gz tmp/czsc-0.9.9.tar.gz --markdown 20240512/c/czsc/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-12 14:13:14] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.8.tar.gz]
+[2024-05-12 14:13:14] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.9.tar.gz]
+[2024-05-12 14:13:14] INFO root fetch - main [MainThread]: End processing [mlpr]: success
+[2024-05-12 14:13:14] INFO root fetch - processPackages [pi-log]: Remove: archive file [/home/abi/fetcher/tmp/pi_log-0.5.7.3.tar.gz]
+[2024-05-12 14:13:14] INFO root fetch - processPackages [pi-log]: Remove: archive file [/home/abi/fetcher/tmp/pi_log-0.5.8.tar.gz]
+[2024-05-12 14:13:14] INFO root fetch - main [MainThread]: End processing [pi-log]: success
+[2024-05-12 14:13:15] INFO root fetch - processPackages [czsc]: Remove: archive file [/home/abi/fetcher/tmp/czsc-0.9.8.tar.gz]
+[2024-05-12 14:13:15] INFO root fetch - processPackages [czsc]: Remove: archive file [/home/abi/fetcher/tmp/czsc-0.9.9.tar.gz]
+[2024-05-12 14:13:15] INFO root fetch - main [MainThread]: End processing [czsc]: success
+[2024-05-12 14:13:15] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.6.1.tar.gz]
+[2024-05-12 14:13:15] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.6.2.tar.gz]
+[2024-05-12 14:13:15] INFO root fetch - main [MainThread]: End processing [abses]: success
+[2024-05-12 14:13:15] INFO root fetch - main [MainThread]: Store serial: [23169732]
