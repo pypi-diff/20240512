@@ -12780,3 +12780,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:34:18] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
 [2024-05-12 17:34:18] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
 [2024-05-12 17:34:18] INFO root fetch - main [MainThread]: Store serial: [23171293]
+[2024-05-12 17:36:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171293]
+[2024-05-12 17:36:27] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 17:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tradeo
+[2024-05-12 17:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrimidine
+[2024-05-12 17:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tm_parser
+[2024-05-12 17:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: redominatedz
+[2024-05-12 17:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: req-compile
+[2024-05-12 17:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: blues-lib
+[2024-05-12 17:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: DNSBruter
+[2024-05-12 17:36:27] INFO root fetch - processPackages [tm_parser]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-12 17:36:27] INFO root fetch - processPackages [blues-lib]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-12 17:36:27] INFO root fetch - processPackages [req-compile]: New version: [1.0.0rc9] Old Version: [1.0.0rc8]
+[2024-05-12 17:36:27] INFO root fetch - processPackages [pyrimidine]: New version: [1.6] Old Version: [1.5.6]
+[2024-05-12 17:36:27] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/cb/46/ba205d0155ab1c880efb1afc3c149008969af6c1e87d0d390a1c3eb6f312/tm_parser-0.9.2.tar.gz
+[2024-05-12 17:36:27] INFO root fetch - processPackages [blues-lib]: Downloading https://files.pythonhosted.org/packages/68/00/c720963e6ca9087c1db9d4d4e41e6a79f3d0265826d602d99d433f2fa699/blues_lib-1.1.0.tar.gz
+[2024-05-12 17:36:27] INFO root fetch - processPackages [tradeo]: New version: [0.17.1] Old Version: [0.17.0]
+[2024-05-12 17:36:27] INFO root fetch - processPackages [DNSBruter]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-12 17:36:27] INFO root fetch - processPackages [req-compile]: Downloading https://files.pythonhosted.org/packages/96/9b/d5e46a5c84a6cf0477d84a18587a02cef26b51708a41c9dcc16b6f6ec748/req-compile-1.0.0rc8.tar.gz
+[2024-05-12 17:36:27] WARNING root fetch - processPackages [redominatedz]: Skipping, unable to determine old version
+[2024-05-12 17:36:27] INFO root fetch - main [MainThread]: End processing [redominatedz] error
+[2024-05-12 17:36:28] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/f5/6e/e6251a34da8fa8b1bc139bde5510333b475f839726791e8cb4ab721ee41a/tm_parser-0.9.3.tar.gz
+[2024-05-12 17:36:28] INFO root fetch - processPackages [pyrimidine]: Downloading https://files.pythonhosted.org/packages/e5/7b/4604bebc32ae832480299907b5c374ead186bcfe9aaca5a1c9edd74137ce/pyrimidine-1.5.6.tar.gz
+[2024-05-12 17:36:28] INFO root fetch - processPackages [blues-lib]: Downloading https://files.pythonhosted.org/packages/0c/0e/cb0a04a657c5d2d75ca8be11158903c2464f23f2bbe070b831e79cd07c1f/blues_lib-1.1.1.tar.gz
+[2024-05-12 17:36:28] INFO root fetch - processPackages [req-compile]: Downloading https://files.pythonhosted.org/packages/fc/cb/0a81d71ea9afc0f413877a3fa62c1fb73698e1166c5e241802b8739c7fcd/req-compile-1.0.0rc9.tar.gz
+[2024-05-12 17:36:28] INFO root fetch - processPackages [tradeo]: Downloading https://files.pythonhosted.org/packages/00/60/34f59b78aad0b7a21aa592cb3274f23fa5c903e5516762617513ae7a5f20/tradeo-0.17.0.tar.gz
+[2024-05-12 17:36:28] INFO root fetch - processPackages [DNSBruter]: Downloading https://files.pythonhosted.org/packages/c4/29/b311038f87a769f488566abf657c55a3c17bd6108cbbdd7bcc19837d22e7/DNSBruter-1.0.3.tar.gz
+[2024-05-12 17:36:28] INFO root fetch - processPackages [tm_parser]: executing diffoscope
+[2024-05-12 17:36:28] INFO root fetch - processPackages [tm_parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tm_parser-0.9.2.tar.gz tmp/tm_parser-0.9.3.tar.gz --markdown 20240512/t/tm_parser/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-12 17:36:28] INFO root fetch - processPackages [blues-lib]: executing diffoscope
+[2024-05-12 17:36:28] INFO root fetch - processPackages [blues-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blues_lib-1.1.0.tar.gz tmp/blues_lib-1.1.1.tar.gz --markdown 20240512/b/blues-lib/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-12 17:36:28] INFO root fetch - processPackages [req-compile]: executing diffoscope
+[2024-05-12 17:36:28] INFO root fetch - processPackages [req-compile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/req-compile-1.0.0rc8.tar.gz tmp/req-compile-1.0.0rc9.tar.gz --markdown 20240512/r/req-compile/1.0.0rc8-1.0.0rc9/README.md --exclude *.pyd
+[2024-05-12 17:36:28] INFO root fetch - processPackages [DNSBruter]: Downloading https://files.pythonhosted.org/packages/54/55/ecb4ca7310bd4c86176de169fa25f5286eff6046c353c73fb51b7f33ddb1/DNSBruter-1.0.4.tar.gz
+[2024-05-12 17:36:28] INFO root fetch - processPackages [tradeo]: Downloading https://files.pythonhosted.org/packages/d5/d9/36a2e47e43c876420f4ca86120d63aa7edb7a897bf7c188323051f44dd86/tradeo-0.17.1.tar.gz
+[2024-05-12 17:36:28] INFO root fetch - processPackages [DNSBruter]: executing diffoscope
+[2024-05-12 17:36:28] INFO root fetch - processPackages [DNSBruter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DNSBruter-1.0.3.tar.gz tmp/DNSBruter-1.0.4.tar.gz --markdown 20240512/D/DNSBruter/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-12 17:36:28] INFO root fetch - processPackages [tradeo]: executing diffoscope
+[2024-05-12 17:36:28] INFO root fetch - processPackages [tradeo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradeo-0.17.0.tar.gz tmp/tradeo-0.17.1.tar.gz --markdown 20240512/t/tradeo/0.17.0-0.17.1/README.md --exclude *.pyd
+[2024-05-12 17:36:28] INFO root fetch - processPackages [pyrimidine]: Downloading https://files.pythonhosted.org/packages/8c/14/1cd4a6dd4f44f4d2e0501432121c820cbf7b0c431f0eaa76e13b28a2be04/pyrimidine-1.6.tar.gz
+[2024-05-12 17:36:29] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.2.tar.gz]
+[2024-05-12 17:36:29] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.3.tar.gz]
+[2024-05-12 17:36:29] INFO root fetch - main [MainThread]: End processing [tm_parser]: success
+[2024-05-12 17:36:29] INFO root fetch - processPackages [blues-lib]: Remove: archive file [/home/abi/fetcher/tmp/blues_lib-1.1.0.tar.gz]
+[2024-05-12 17:36:29] INFO root fetch - processPackages [blues-lib]: Remove: archive file [/home/abi/fetcher/tmp/blues_lib-1.1.1.tar.gz]
+[2024-05-12 17:36:29] INFO root fetch - main [MainThread]: End processing [blues-lib]: success
+[2024-05-12 17:36:29] INFO root fetch - processPackages [pyrimidine]: executing diffoscope
+[2024-05-12 17:36:29] INFO root fetch - processPackages [pyrimidine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrimidine-1.5.6.tar.gz tmp/pyrimidine-1.6.tar.gz --markdown 20240512/p/pyrimidine/1.5.6-1.6/README.md --exclude *.pyd
+[2024-05-12 17:36:29] INFO root fetch - processPackages [req-compile]: Remove: archive file [/home/abi/fetcher/tmp/req-compile-1.0.0rc8.tar.gz]
+[2024-05-12 17:36:29] INFO root fetch - processPackages [req-compile]: Remove: archive file [/home/abi/fetcher/tmp/req-compile-1.0.0rc9.tar.gz]
+[2024-05-12 17:36:29] INFO root fetch - main [MainThread]: End processing [req-compile]: success
+[2024-05-12 17:36:29] INFO root fetch - processPackages [DNSBruter]: Remove: archive file [/home/abi/fetcher/tmp/DNSBruter-1.0.3.tar.gz]
+[2024-05-12 17:36:29] INFO root fetch - processPackages [DNSBruter]: Remove: archive file [/home/abi/fetcher/tmp/DNSBruter-1.0.4.tar.gz]
+[2024-05-12 17:36:29] INFO root fetch - main [MainThread]: End processing [DNSBruter]: success
+[2024-05-12 17:36:29] INFO root fetch - processPackages [tradeo]: Remove: archive file [/home/abi/fetcher/tmp/tradeo-0.17.0.tar.gz]
+[2024-05-12 17:36:29] INFO root fetch - processPackages [tradeo]: Remove: archive file [/home/abi/fetcher/tmp/tradeo-0.17.1.tar.gz]
+[2024-05-12 17:36:29] INFO root fetch - main [MainThread]: End processing [tradeo]: success
+[2024-05-12 17:36:30] INFO root fetch - processPackages [pyrimidine]: Remove: archive file [/home/abi/fetcher/tmp/pyrimidine-1.5.6.tar.gz]
+[2024-05-12 17:36:30] INFO root fetch - processPackages [pyrimidine]: Remove: archive file [/home/abi/fetcher/tmp/pyrimidine-1.6.tar.gz]
+[2024-05-12 17:36:30] INFO root fetch - main [MainThread]: End processing [pyrimidine]: success
+[2024-05-12 17:36:30] INFO root fetch - main [MainThread]: Store serial: [23171315]
