@@ -3878,3 +3878,21 @@
 [2024-05-12 05:36:52] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_anime_downloader-0.2.1.tar.gz]
 [2024-05-12 05:36:52] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-anime-downloader]: success
 [2024-05-12 05:36:52] INFO root fetch - main [MainThread]: Store serial: [23166739]
+[2024-05-12 05:38:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166739]
+[2024-05-12 05:39:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 05:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hawkshawz
+[2024-05-12 05:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydantic-2-mermaid
+[2024-05-12 05:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyFairylandFuture
+[2024-05-12 05:39:01] WARNING root fetch - processPackages [PyFairylandFuture]: Skipping, unable to determine old version
+[2024-05-12 05:39:01] INFO root fetch - main [MainThread]: End processing [PyFairylandFuture] error
+[2024-05-12 05:39:01] INFO root fetch - processPackages [pydantic-2-mermaid]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-05-12 05:39:01] WARNING root fetch - processPackages [hawkshawz]: Skipping, unable to determine old version
+[2024-05-12 05:39:01] INFO root fetch - main [MainThread]: End processing [hawkshawz] error
+[2024-05-12 05:39:01] INFO root fetch - processPackages [pydantic-2-mermaid]: Downloading https://files.pythonhosted.org/packages/0d/c5/26a95cdc2e34d21bfe16bda7cdeb2cc55e9c8dc5056ebcfa0115ea96d3e2/pydantic_2_mermaid-0.7.2.tar.gz
+[2024-05-12 05:39:02] INFO root fetch - processPackages [pydantic-2-mermaid]: Downloading https://files.pythonhosted.org/packages/f4/ea/a63fada15ea962122972c2ff86e042418562b852a6967c7ce43b46a5ed9a/pydantic_2_mermaid-0.7.3.tar.gz
+[2024-05-12 05:39:02] INFO root fetch - processPackages [pydantic-2-mermaid]: executing diffoscope
+[2024-05-12 05:39:02] INFO root fetch - processPackages [pydantic-2-mermaid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_2_mermaid-0.7.2.tar.gz tmp/pydantic_2_mermaid-0.7.3.tar.gz --markdown 20240512/p/pydantic-2-mermaid/0.7.2-0.7.3/README.md --exclude *.pyd
+[2024-05-12 05:39:02] INFO root fetch - processPackages [pydantic-2-mermaid]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_2_mermaid-0.7.2.tar.gz]
+[2024-05-12 05:39:02] INFO root fetch - processPackages [pydantic-2-mermaid]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_2_mermaid-0.7.3.tar.gz]
+[2024-05-12 05:39:02] INFO root fetch - main [MainThread]: End processing [pydantic-2-mermaid]: success
+[2024-05-12 05:39:02] INFO root fetch - main [MainThread]: Store serial: [23166749]
