@@ -11920,3 +11920,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:43:48] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.4.5.tar.gz]
 [2024-05-12 16:43:48] INFO root fetch - main [MainThread]: End processing [phidata]: success
 [2024-05-12 16:43:48] INFO root fetch - main [MainThread]: Store serial: [23170826]
+[2024-05-12 16:45:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170826]
+[2024-05-12 16:45:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 16:45:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: contrabandz
+[2024-05-12 16:45:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: popoll-backend
+[2024-05-12 16:45:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlpr
+[2024-05-12 16:45:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyOpenGLAlwaysWorking
+[2024-05-12 16:45:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lilush_llm_backend
+[2024-05-12 16:45:57] INFO root fetch - processPackages [mlpr]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 16:45:57] INFO root fetch - processPackages [popoll-backend]: New version: [0.0.46] Old Version: [0.0.45]
+[2024-05-12 16:45:57] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/73/3a/39153727c1ce2f4aa9d8d804e48fc7942f19f53dac796571b94f0121a129/mlpr-0.1.8.tar.gz
+[2024-05-12 16:45:57] WARNING root fetch - processPackages [PyOpenGLAlwaysWorking]: Skipping, unable to determine old version
+[2024-05-12 16:45:57] INFO root fetch - main [MainThread]: End processing [PyOpenGLAlwaysWorking] error
+[2024-05-12 16:45:57] WARNING root fetch - processPackages [contrabandz]: Skipping, unable to determine old version
+[2024-05-12 16:45:57] INFO root fetch - main [MainThread]: End processing [contrabandz] error
+[2024-05-12 16:45:57] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/77/09/ad1950980f976cdd16b0501afa4ea52cb57e31f939a06288185c9ceb7c4d/popoll_backend-0.0.45.tar.gz
+[2024-05-12 16:45:57] WARNING root fetch - processPackages [lilush_llm_backend]: Skipping, unable to determine old version
+[2024-05-12 16:45:57] INFO root fetch - main [MainThread]: End processing [lilush_llm_backend] error
+[2024-05-12 16:45:57] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/fc/c0/71f4eab477564c23412fe136584c09b6f94ce4a147fcdc8ac880eef388a2/mlpr-0.1.9.tar.gz
+[2024-05-12 16:45:57] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/69/f3/072ac2cd525bc70d791eb4e6dbbce26cefc8799aad58181b5767be06ee5f/popoll_backend-0.0.46.tar.gz
+[2024-05-12 16:45:57] INFO root fetch - processPackages [mlpr]: executing diffoscope
+[2024-05-12 16:45:57] INFO root fetch - processPackages [mlpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpr-0.1.8.tar.gz tmp/mlpr-0.1.9.tar.gz --markdown 20240512/m/mlpr/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 16:45:57] INFO root fetch - processPackages [popoll-backend]: executing diffoscope
+[2024-05-12 16:45:57] INFO root fetch - processPackages [popoll-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popoll_backend-0.0.45.tar.gz tmp/popoll_backend-0.0.46.tar.gz --markdown 20240512/p/popoll-backend/0.0.45-0.0.46/README.md --exclude *.pyd
+[2024-05-12 16:45:58] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.8.tar.gz]
+[2024-05-12 16:45:58] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.9.tar.gz]
+[2024-05-12 16:45:58] INFO root fetch - main [MainThread]: End processing [mlpr]: success
+[2024-05-12 16:45:58] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.45.tar.gz]
+[2024-05-12 16:45:58] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.46.tar.gz]
+[2024-05-12 16:45:58] INFO root fetch - main [MainThread]: End processing [popoll-backend]: success
+[2024-05-12 16:45:58] INFO root fetch - main [MainThread]: Store serial: [23170847]
