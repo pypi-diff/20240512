@@ -18096,3 +18096,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:23:18] INFO root fetch - processPackages [pyrainbird]: Remove: archive file [/home/abi/fetcher/tmp/pyrainbird-6.0.2.tar.gz]
 [2024-05-12 23:23:18] INFO root fetch - main [MainThread]: End processing [pyrainbird]: success
 [2024-05-12 23:23:18] INFO root fetch - main [MainThread]: Store serial: [23173949]
+[2024-05-12 23:25:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173949]
+[2024-05-12 23:25:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 23:25:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lyriks
+[2024-05-12 23:25:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dilectionz
+[2024-05-12 23:25:27] WARNING root fetch - processPackages [lyriks]: Skipping, unable to determine old version
+[2024-05-12 23:25:27] INFO root fetch - main [MainThread]: End processing [lyriks] error
+[2024-05-12 23:25:27] WARNING root fetch - processPackages [dilectionz]: Skipping, unable to determine old version
+[2024-05-12 23:25:27] INFO root fetch - main [MainThread]: End processing [dilectionz] error
+[2024-05-12 23:25:27] INFO root fetch - main [MainThread]: Store serial: [23173958]
