@@ -11685,3 +11685,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:30:43] INFO root fetch - processPackages [johnsnowlabs-for-databricks]: Remove: archive file [/home/abi/fetcher/tmp/johnsnowlabs_for_databricks-5.3.5.tar.gz]
 [2024-05-12 16:30:43] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-for-databricks]: success
 [2024-05-12 16:30:43] INFO root fetch - main [MainThread]: Store serial: [23170694]
+[2024-05-12 16:32:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170694]
+[2024-05-12 16:32:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 16:32:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: appmode
+[2024-05-12 16:32:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyAcoustiX
+[2024-05-12 16:32:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrtz2
+[2024-05-12 16:32:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: few-shot-learning-nlp
+[2024-05-12 16:32:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-mysql-replication
+[2024-05-12 16:32:52] INFO root fetch - processPackages [pyrtz2]: New version: [1.1.24] Old Version: [1.1.23]
+[2024-05-12 16:32:52] INFO root fetch - processPackages [pyrtz2]: Downloading https://files.pythonhosted.org/packages/94/f3/8c10ef3e962c3b07d3b7ec81d9d1a593fbc8e349f0a550fb343157eada55/pyrtz2-1.1.23.tar.gz
+[2024-05-12 16:32:52] WARNING root fetch - processPackages [django-mysql-replication]: Skipping, unable to determine old version
+[2024-05-12 16:32:52] INFO root fetch - main [MainThread]: End processing [django-mysql-replication] error
+[2024-05-12 16:32:52] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-12 16:32:52] INFO root fetch - processPackages [PyAcoustiX]: New version: [0.9.9] Old Version: [0.9.11]
+[2024-05-12 16:32:52] INFO root fetch - processPackages [appmode]: New version: [1.0.0] Old Version: [0.9.0]
+[2024-05-12 16:32:52] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/a6/79/b3668feedfda2562967026cb87b66da4a70de26a58b44be828a4afcdd3b4/few_shot_learning_nlp-1.0.1.tar.gz
+[2024-05-12 16:32:52] INFO root fetch - processPackages [appmode]: Downloading https://files.pythonhosted.org/packages/b1/b1/1e64f519e762510ba2d294134c884a7b99dd998e930b9be7a5bbeea31f30/appmode-0.9.0.tar.gz
+[2024-05-12 16:32:53] INFO root fetch - processPackages [PyAcoustiX]: Downloading https://files.pythonhosted.org/packages/b6/69/0b202d051fbf488a871e3003ec491bf12ef1576dc61ce2c299a51e2c362e/PyAcoustiX-0.9.11.tar.gz
+[2024-05-12 16:32:53] INFO root fetch - processPackages [pyrtz2]: Downloading https://files.pythonhosted.org/packages/22/e3/bf770cb71aab270e13125a64caa21149ab67b4c5cc990a713ed035340070/pyrtz2-1.1.24.tar.gz
+[2024-05-12 16:32:53] INFO root fetch - processPackages [appmode]: Downloading https://files.pythonhosted.org/packages/c6/4a/29e1bcb41f26a9bf648591b6cecd422b6b18f8cd8909c1dfd0c6ca5be897/appmode-1.0.0.tar.gz
+[2024-05-12 16:32:53] INFO root fetch - processPackages [PyAcoustiX]: Downloading https://files.pythonhosted.org/packages/ea/be/0118a9663965ed08cd50455d22984953df1b92d7ace78dc9a8eb912c4f09/PyAcoustiX-0.9.9.tar.gz
+[2024-05-12 16:32:53] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/cf/db/ca088bc53bdf4f1eea0ce85e77ec2adf9a9f6153e2c37903a13956a272fb/few_shot_learning_nlp-1.0.2-py3-none-any.whl
+[2024-05-12 16:32:53] INFO root fetch - processPackages [appmode]: executing diffoscope
+[2024-05-12 16:32:53] INFO root fetch - processPackages [appmode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appmode-0.9.0.tar.gz tmp/appmode-1.0.0.tar.gz --markdown 20240512/a/appmode/0.9.0-1.0.0/README.md --exclude *.pyd
+[2024-05-12 16:32:53] INFO root fetch - processPackages [PyAcoustiX]: executing diffoscope
+[2024-05-12 16:32:53] INFO root fetch - processPackages [PyAcoustiX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAcoustiX-0.9.11.tar.gz tmp/PyAcoustiX-0.9.9.tar.gz --markdown 20240512/P/PyAcoustiX/0.9.11-0.9.9/README.md --exclude *.pyd
+[2024-05-12 16:32:53] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-05-12 16:32:53] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-1.0.1.tar.gz tmp/few_shot_learning_nlp-1.0.2-py3-none-any.whl.zip --markdown 20240512/f/few-shot-learning-nlp/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-12 16:32:53] INFO root fetch - processPackages [pyrtz2]: executing diffoscope
+[2024-05-12 16:32:53] INFO root fetch - processPackages [pyrtz2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrtz2-1.1.23.tar.gz tmp/pyrtz2-1.1.24.tar.gz --markdown 20240512/p/pyrtz2/1.1.23-1.1.24/README.md --exclude *.pyd
+[2024-05-12 16:32:54] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-1.0.1.tar.gz]
+[2024-05-12 16:32:54] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-1.0.2-py3-none-any.whl.zip]
+[2024-05-12 16:32:54] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-05-12 16:32:54] INFO root fetch - processPackages [PyAcoustiX]: Remove: archive file [/home/abi/fetcher/tmp/PyAcoustiX-0.9.11.tar.gz]
+[2024-05-12 16:32:54] INFO root fetch - processPackages [PyAcoustiX]: Remove: archive file [/home/abi/fetcher/tmp/PyAcoustiX-0.9.9.tar.gz]
+[2024-05-12 16:32:54] INFO root fetch - main [MainThread]: End processing [PyAcoustiX]: success
+[2024-05-12 16:32:54] INFO root fetch - processPackages [appmode]: Remove: archive file [/home/abi/fetcher/tmp/appmode-0.9.0.tar.gz]
+[2024-05-12 16:32:54] INFO root fetch - processPackages [appmode]: Remove: archive file [/home/abi/fetcher/tmp/appmode-1.0.0.tar.gz]
+[2024-05-12 16:32:54] INFO root fetch - main [MainThread]: End processing [appmode]: success
+[2024-05-12 16:32:54] INFO root fetch - processPackages [pyrtz2]: Remove: archive file [/home/abi/fetcher/tmp/pyrtz2-1.1.23.tar.gz]
+[2024-05-12 16:32:54] INFO root fetch - processPackages [pyrtz2]: Remove: archive file [/home/abi/fetcher/tmp/pyrtz2-1.1.24.tar.gz]
+[2024-05-12 16:32:54] INFO root fetch - main [MainThread]: End processing [pyrtz2]: success
+[2024-05-12 16:32:54] INFO root fetch - main [MainThread]: Store serial: [23170711]
