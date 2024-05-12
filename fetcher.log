@@ -15625,3 +15625,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:41:17] INFO root fetch - processPackages [schubmult]: Remove: archive file [/home/abi/fetcher/tmp/schubmult-1.3.7.tar.gz]
 [2024-05-12 20:41:17] INFO root fetch - main [MainThread]: End processing [schubmult]: success
 [2024-05-12 20:41:17] INFO root fetch - main [MainThread]: Store serial: [23172755]
+[2024-05-12 20:43:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172755]
+[2024-05-12 20:43:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 20:43:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swarmtube
+[2024-05-12 20:43:26] INFO root fetch - processPackages [swarmtube]: New version: [0.1.37] Old Version: [0.1.36]
+[2024-05-12 20:43:26] INFO root fetch - processPackages [swarmtube]: Downloading https://files.pythonhosted.org/packages/a5/fe/a92d150e049707b9c6dbae66b78d27689d9e5c5c805960c9ed51926d46ef/swarmtube-0.1.36-py2.py3-none-any.whl
+[2024-05-12 20:43:26] INFO root fetch - processPackages [swarmtube]: Downloading https://files.pythonhosted.org/packages/f6/bf/10dd08451058cdce18744a82f1451a9f447bd670e2b7019f0ef5c9bda929/swarmtube-0.1.37-py2.py3-none-any.whl
+[2024-05-12 20:43:26] INFO root fetch - processPackages [swarmtube]: executing diffoscope
+[2024-05-12 20:43:26] INFO root fetch - processPackages [swarmtube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swarmtube-0.1.36-py2.py3-none-any.whl.zip tmp/swarmtube-0.1.37-py2.py3-none-any.whl.zip --markdown 20240512/s/swarmtube/0.1.36-0.1.37/README.md --exclude *.pyd
+[2024-05-12 20:43:27] INFO root fetch - processPackages [swarmtube]: Remove: archive file [/home/abi/fetcher/tmp/swarmtube-0.1.36-py2.py3-none-any.whl.zip]
+[2024-05-12 20:43:27] INFO root fetch - processPackages [swarmtube]: Remove: archive file [/home/abi/fetcher/tmp/swarmtube-0.1.37-py2.py3-none-any.whl.zip]
+[2024-05-12 20:43:27] INFO root fetch - main [MainThread]: End processing [swarmtube]: success
+[2024-05-12 20:43:27] INFO root fetch - main [MainThread]: Store serial: [23172757]
