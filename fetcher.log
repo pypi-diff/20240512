@@ -6776,3 +6776,27 @@
 [2024-05-12 10:10:41] INFO root fetch - processPackages [seacrowd]: Remove: archive file [/home/abi/fetcher/tmp/seacrowd-0.0.9.tar.gz]
 [2024-05-12 10:10:41] INFO root fetch - main [MainThread]: End processing [seacrowd]: success
 [2024-05-12 10:10:41] INFO root fetch - main [MainThread]: Store serial: [23168036]
+[2024-05-12 10:12:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168036]
+[2024-05-12 10:12:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 10:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-amazon-sp-api
+[2024-05-12 10:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: greatbrowser
+[2024-05-12 10:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autoboot-data
+[2024-05-12 10:12:50] INFO root fetch - processPackages [autoboot-data]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-12 10:12:50] WARNING root fetch - processPackages [greatbrowser]: Skipping, unable to determine old version
+[2024-05-12 10:12:50] INFO root fetch - main [MainThread]: End processing [greatbrowser] error
+[2024-05-12 10:12:50] INFO root fetch - processPackages [python-amazon-sp-api]: New version: [1.5.2] Old Version: [1.5.1]
+[2024-05-12 10:12:50] INFO root fetch - processPackages [autoboot-data]: Downloading https://files.pythonhosted.org/packages/f0/83/824ab44bfe61ea2df2b442f1fe19f479f8d7ecd522aca262f0b82da268af/autoboot_data-0.3.0.tar.gz
+[2024-05-12 10:12:50] INFO root fetch - processPackages [python-amazon-sp-api]: Downloading https://files.pythonhosted.org/packages/5c/38/d50bfdaaf1c3d17b3d5f6275cace0ffcb7508cd0b3924583cd6b1e05f23f/python-amazon-sp-api-1.5.1.tar.gz
+[2024-05-12 10:12:51] INFO root fetch - processPackages [autoboot-data]: Downloading https://files.pythonhosted.org/packages/66/34/3427bc001c7b74b706dee6a0c19dc1f263a52c599bd574992a5356d57ed4/autoboot_data-0.4.0.tar.gz
+[2024-05-12 10:12:51] INFO root fetch - processPackages [python-amazon-sp-api]: Downloading https://files.pythonhosted.org/packages/14/7d/09f6d813084b987ff815443df58751e5edc3880c8a14d70a0e84ff32c790/python-amazon-sp-api-1.5.2.tar.gz
+[2024-05-12 10:12:51] INFO root fetch - processPackages [autoboot-data]: executing diffoscope
+[2024-05-12 10:12:51] INFO root fetch - processPackages [autoboot-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoboot_data-0.3.0.tar.gz tmp/autoboot_data-0.4.0.tar.gz --markdown 20240512/a/autoboot-data/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-12 10:12:51] INFO root fetch - processPackages [python-amazon-sp-api]: executing diffoscope
+[2024-05-12 10:12:51] INFO root fetch - processPackages [python-amazon-sp-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-amazon-sp-api-1.5.1.tar.gz tmp/python-amazon-sp-api-1.5.2.tar.gz --markdown 20240512/p/python-amazon-sp-api/1.5.1-1.5.2/README.md --exclude *.pyd
+[2024-05-12 10:12:51] INFO root fetch - processPackages [autoboot-data]: Remove: archive file [/home/abi/fetcher/tmp/autoboot_data-0.3.0.tar.gz]
+[2024-05-12 10:12:51] INFO root fetch - processPackages [autoboot-data]: Remove: archive file [/home/abi/fetcher/tmp/autoboot_data-0.4.0.tar.gz]
+[2024-05-12 10:12:51] INFO root fetch - main [MainThread]: End processing [autoboot-data]: success
+[2024-05-12 10:12:52] INFO root fetch - processPackages [python-amazon-sp-api]: Remove: archive file [/home/abi/fetcher/tmp/python-amazon-sp-api-1.5.1.tar.gz]
+[2024-05-12 10:12:52] INFO root fetch - processPackages [python-amazon-sp-api]: Remove: archive file [/home/abi/fetcher/tmp/python-amazon-sp-api-1.5.2.tar.gz]
+[2024-05-12 10:12:52] INFO root fetch - main [MainThread]: End processing [python-amazon-sp-api]: success
+[2024-05-12 10:12:52] INFO root fetch - main [MainThread]: Store serial: [23168044]
