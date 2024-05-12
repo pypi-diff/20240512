@@ -16777,3 +16777,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:57:36] INFO root fetch - processPackages [exponentation]: Remove: archive file [/home/abi/fetcher/tmp/exponentation-0.0.4.tar.gz]
 [2024-05-12 21:57:36] INFO root fetch - main [MainThread]: End processing [exponentation]: success
 [2024-05-12 21:57:36] INFO root fetch - main [MainThread]: Store serial: [23173289]
+[2024-05-12 21:59:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173289]
+[2024-05-12 21:59:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 21:59:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: intercommunicationalz
+[2024-05-12 21:59:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torch-model-manager
+[2024-05-12 21:59:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sage-setup
+[2024-05-12 21:59:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sage-sws2rst
+[2024-05-12 21:59:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sagemath-environment
+[2024-05-12 21:59:44] INFO root fetch - processPackages [torch-model-manager]: New version: [0.3.0.dev6] Old Version: [0.3.0.dev5]
+[2024-05-12 21:59:44] WARNING root fetch - processPackages [intercommunicationalz]: Skipping, unable to determine old version
+[2024-05-12 21:59:44] INFO root fetch - main [MainThread]: End processing [intercommunicationalz] error
+[2024-05-12 21:59:44] INFO root fetch - processPackages [sage-setup]: New version: [9.8rc0] Old Version: [9.8b7]
+[2024-05-12 21:59:44] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/f7/3e/18b71aafb405a1b85ca5a31f2b73ef8e3541bad1dd6e52bfb1fe78dde2b2/torch_model_manager-0.3.0.dev5.tar.gz
+[2024-05-12 21:59:44] INFO root fetch - processPackages [sagemath-environment]: New version: [9.8rc0] Old Version: [9.8b7]
+[2024-05-12 21:59:44] INFO root fetch - processPackages [sage-sws2rst]: New version: [9.8rc0] Old Version: [9.8b7]
+[2024-05-12 21:59:45] INFO root fetch - processPackages [sage-setup]: Downloading https://files.pythonhosted.org/packages/bb/16/bd3221dd969ef83cdb78698299f6e3cfa8be59d749daa81b4dc97f6d24ed/sage-setup-9.8b7.tar.gz
+[2024-05-12 21:59:45] INFO root fetch - processPackages [sage-sws2rst]: Downloading https://files.pythonhosted.org/packages/c7/9a/24d44916ef366f957e246ba99527efc0b4893673067aa991646a73886e88/sage-sws2rst-9.8b7.tar.gz
+[2024-05-12 21:59:45] INFO root fetch - processPackages [sagemath-environment]: Downloading https://files.pythonhosted.org/packages/63/7d/1a322711621a03371daf041779f473d569145e98561ddd9039e79a30255e/sagemath-environment-9.8b7.tar.gz
+[2024-05-12 21:59:45] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/ae/ee/ae028d22d37571007a38c78e27be7e65dd25ef16edad58e1a3fdf0e801ea/torch_model_manager-0.3.0.dev6.tar.gz
+[2024-05-12 21:59:45] INFO root fetch - processPackages [torch-model-manager]: executing diffoscope
+[2024-05-12 21:59:45] INFO root fetch - processPackages [torch-model-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_manager-0.3.0.dev5.tar.gz tmp/torch_model_manager-0.3.0.dev6.tar.gz --markdown 20240512/t/torch-model-manager/0.3.0.dev5-0.3.0.dev6/README.md --exclude *.pyd
+[2024-05-12 21:59:45] INFO root fetch - processPackages [sage-setup]: Downloading https://files.pythonhosted.org/packages/aa/ea/ed314950f3374f03b1417e552a4f31d8618f2811e6eacf3fe3332268f07c/sage-setup-9.8rc0.tar.gz
+[2024-05-12 21:59:45] INFO root fetch - processPackages [sage-sws2rst]: Downloading https://files.pythonhosted.org/packages/e2/13/be8c4c1c6ddab4fd81239014b8596bd4a65576cb4ec8fd36b8295e719cd8/sage-sws2rst-9.8rc0.tar.gz
+[2024-05-12 21:59:45] INFO root fetch - processPackages [sage-setup]: executing diffoscope
+[2024-05-12 21:59:45] INFO root fetch - processPackages [sage-setup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-setup-9.8b7.tar.gz tmp/sage-setup-9.8rc0.tar.gz --markdown 20240512/s/sage-setup/9.8b7-9.8rc0/README.md --exclude *.pyd
+[2024-05-12 21:59:45] INFO root fetch - processPackages [sagemath-environment]: Downloading https://files.pythonhosted.org/packages/25/81/ca7c2bcc4784c3075bcbf1849d48cee85027d56bdb107f8a0bf943b919ad/sagemath-environment-9.8rc0.tar.gz
+[2024-05-12 21:59:45] INFO root fetch - processPackages [sage-sws2rst]: executing diffoscope
+[2024-05-12 21:59:45] INFO root fetch - processPackages [sage-sws2rst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-sws2rst-9.8b7.tar.gz tmp/sage-sws2rst-9.8rc0.tar.gz --markdown 20240512/s/sage-sws2rst/9.8b7-9.8rc0/README.md --exclude *.pyd
+[2024-05-12 21:59:45] INFO root fetch - processPackages [sagemath-environment]: executing diffoscope
+[2024-05-12 21:59:45] INFO root fetch - processPackages [sagemath-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-environment-9.8b7.tar.gz tmp/sagemath-environment-9.8rc0.tar.gz --markdown 20240512/s/sagemath-environment/9.8b7-9.8rc0/README.md --exclude *.pyd
+[2024-05-12 21:59:46] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.3.0.dev5.tar.gz]
+[2024-05-12 21:59:46] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.3.0.dev6.tar.gz]
+[2024-05-12 21:59:46] INFO root fetch - main [MainThread]: End processing [torch-model-manager]: success
+[2024-05-12 21:59:46] INFO root fetch - processPackages [sage-setup]: Remove: archive file [/home/abi/fetcher/tmp/sage-setup-9.8b7.tar.gz]
+[2024-05-12 21:59:46] INFO root fetch - processPackages [sage-setup]: Remove: archive file [/home/abi/fetcher/tmp/sage-setup-9.8rc0.tar.gz]
+[2024-05-12 21:59:46] INFO root fetch - main [MainThread]: End processing [sage-setup]: success
+[2024-05-12 21:59:46] INFO root fetch - processPackages [sage-sws2rst]: Remove: archive file [/home/abi/fetcher/tmp/sage-sws2rst-9.8b7.tar.gz]
+[2024-05-12 21:59:46] INFO root fetch - processPackages [sage-sws2rst]: Remove: archive file [/home/abi/fetcher/tmp/sage-sws2rst-9.8rc0.tar.gz]
+[2024-05-12 21:59:46] INFO root fetch - main [MainThread]: End processing [sage-sws2rst]: success
+[2024-05-12 21:59:46] INFO root fetch - processPackages [sagemath-environment]: Remove: archive file [/home/abi/fetcher/tmp/sagemath-environment-9.8b7.tar.gz]
+[2024-05-12 21:59:46] INFO root fetch - processPackages [sagemath-environment]: Remove: archive file [/home/abi/fetcher/tmp/sagemath-environment-9.8rc0.tar.gz]
+[2024-05-12 21:59:46] INFO root fetch - main [MainThread]: End processing [sagemath-environment]: success
+[2024-05-12 21:59:46] INFO root fetch - main [MainThread]: Store serial: [23173302]
