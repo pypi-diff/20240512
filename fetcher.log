@@ -4601,3 +4601,15 @@
 [2024-05-12 06:55:56] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.31.tar.gz]
 [2024-05-12 06:55:56] INFO root fetch - main [MainThread]: End processing [SelfCalibratedConformal]: success
 [2024-05-12 06:55:56] INFO root fetch - main [MainThread]: Store serial: [23167099]
+[2024-05-12 06:57:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167099]
+[2024-05-12 06:58:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 06:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: image-component-streamlit
+[2024-05-12 06:58:05] INFO root fetch - processPackages [image-component-streamlit]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-12 06:58:05] INFO root fetch - processPackages [image-component-streamlit]: Downloading https://files.pythonhosted.org/packages/4f/d4/43ef034eda27263d2dc7ad2d075cd8c801fde4de39c7c46078e12bf7ee0c/image-component-streamlit-0.0.5.tar.gz
+[2024-05-12 06:58:05] INFO root fetch - processPackages [image-component-streamlit]: Downloading https://files.pythonhosted.org/packages/75/8a/8e8228df579ed7b71200166ecfed49a99bf0a4e19e53923f8f0fa37b27dd/image-component-streamlit-0.0.6.tar.gz
+[2024-05-12 06:58:05] INFO root fetch - processPackages [image-component-streamlit]: executing diffoscope
+[2024-05-12 06:58:05] INFO root fetch - processPackages [image-component-streamlit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-component-streamlit-0.0.5.tar.gz tmp/image-component-streamlit-0.0.6.tar.gz --markdown 20240512/i/image-component-streamlit/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-12 06:58:18] INFO root fetch - processPackages [image-component-streamlit]: Remove: archive file [/home/abi/fetcher/tmp/image-component-streamlit-0.0.5.tar.gz]
+[2024-05-12 06:58:18] INFO root fetch - processPackages [image-component-streamlit]: Remove: archive file [/home/abi/fetcher/tmp/image-component-streamlit-0.0.6.tar.gz]
+[2024-05-12 06:58:18] INFO root fetch - main [MainThread]: End processing [image-component-streamlit]: success
+[2024-05-12 06:58:18] INFO root fetch - main [MainThread]: Store serial: [23167102]
