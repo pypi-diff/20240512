@@ -7873,3 +7873,51 @@
 [2024-05-12 11:46:06] INFO root fetch - processPackages [detrain]: Remove: archive file [/home/abi/fetcher/tmp/detrain-0.2.6.tar.gz]
 [2024-05-12 11:46:06] INFO root fetch - main [MainThread]: End processing [detrain]: success
 [2024-05-12 11:46:06] INFO root fetch - main [MainThread]: Store serial: [23168579]
+[2024-05-12 11:48:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168579]
+[2024-05-12 11:48:15] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 11:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-prep-toolkit-kfp
+[2024-05-12 11:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zoom-pyutils
+[2024-05-12 11:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: p2t2
+[2024-05-12 11:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: shyamz
+[2024-05-12 11:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-settings-env
+[2024-05-12 11:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: swarmauri
+[2024-05-12 11:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: glpic
+[2024-05-12 11:48:15] INFO root fetch - processPackages [data-prep-toolkit-kfp]: New version: [0.0.1.dev6] Old Version: [0.0.1.dev5]
+[2024-05-12 11:48:15] INFO root fetch - processPackages [glpic]: New version: [99.0.202405112340] Old Version: [99.0.202405111405]
+[2024-05-12 11:48:15] INFO root fetch - processPackages [django-settings-env]: New version: [4.7.3] Old Version: [4.7.1]
+[2024-05-12 11:48:15] WARNING root fetch - processPackages [shyamz]: Skipping, unable to determine old version
+[2024-05-12 11:48:15] INFO root fetch - main [MainThread]: End processing [shyamz] error
+[2024-05-12 11:48:15] WARNING root fetch - processPackages [zoom-pyutils]: Skipping, unable to determine old version
+[2024-05-12 11:48:15] INFO root fetch - main [MainThread]: End processing [zoom-pyutils] error
+[2024-05-12 11:48:15] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/ee/fd/188b71c7ee91f2648abaf54279efc929888a483f8fc816d2226f0d0e0afd/data_prep_toolkit_kfp-0.0.1.dev5.tar.gz
+[2024-05-12 11:48:15] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/ae/1d/9bdb8bc543c20c377a848a4d68d5fd79521112ea7b04bdf65b00582f2a0a/glpic-99.0.202405111405.tar.gz
+[2024-05-12 11:48:15] INFO root fetch - processPackages [swarmauri]: New version: [0.1.98] Old Version: [0.1.97]
+[2024-05-12 11:48:15] INFO root fetch - processPackages [django-settings-env]: Downloading https://files.pythonhosted.org/packages/a2/b2/b2021790da502101235317ef2d2cd5366212e680a7851edc2fd7cbfbe36b/django_settings_env-4.7.1.tar.gz
+[2024-05-12 11:48:15] INFO root fetch - processPackages [swarmauri]: Downloading https://files.pythonhosted.org/packages/03/28/110f5472a92acc538dbc8ee367824d900c87620c5ade8a06de94f77073a9/swarmauri-0.1.97.tar.gz
+[2024-05-12 11:48:15] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/ac/ba/826f25a06bcf95d2263dcc272e309b853a4f97b5b99c65675fe980f18799/data_prep_toolkit_kfp-0.0.1.dev6.tar.gz
+[2024-05-12 11:48:15] INFO root fetch - processPackages [django-settings-env]: Downloading https://files.pythonhosted.org/packages/e0/c3/d4b0011dbb55144befae8743438210429fc876b35dce8e852c4ee9fd7ec4/django_settings_env-4.7.3.tar.gz
+[2024-05-12 11:48:16] INFO root fetch - processPackages [data-prep-toolkit-kfp]: executing diffoscope
+[2024-05-12 11:48:16] INFO root fetch - processPackages [data-prep-toolkit-kfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_toolkit_kfp-0.0.1.dev5.tar.gz tmp/data_prep_toolkit_kfp-0.0.1.dev6.tar.gz --markdown 20240512/d/data-prep-toolkit-kfp/0.0.1.dev5-0.0.1.dev6/README.md --exclude *.pyd
+[2024-05-12 11:48:16] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/8f/8f/f23418e4399752c8901566ba5374fdc32342ee4d40dafd0fbc3c83200922/glpic-99.0.202405112340.tar.gz
+[2024-05-12 11:48:16] INFO root fetch - processPackages [django-settings-env]: executing diffoscope
+[2024-05-12 11:48:16] INFO root fetch - processPackages [django-settings-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_settings_env-4.7.1.tar.gz tmp/django_settings_env-4.7.3.tar.gz --markdown 20240512/d/django-settings-env/4.7.1-4.7.3/README.md --exclude *.pyd
+[2024-05-12 11:48:16] INFO root fetch - processPackages [glpic]: executing diffoscope
+[2024-05-12 11:48:16] INFO root fetch - processPackages [glpic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glpic-99.0.202405111405.tar.gz tmp/glpic-99.0.202405112340.tar.gz --markdown 20240512/g/glpic/99.0.202405111405-99.0.202405112340/README.md --exclude *.pyd
+[2024-05-12 11:48:16] INFO root fetch - processPackages [swarmauri]: Downloading https://files.pythonhosted.org/packages/42/ed/8993e08954a79efe0b18d91d01140d33cb74a16fe9e5ee223d03a0c251a4/swarmauri-0.1.98.tar.gz
+[2024-05-12 11:48:16] INFO root fetch - processPackages [swarmauri]: executing diffoscope
+[2024-05-12 11:48:16] INFO root fetch - processPackages [swarmauri]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swarmauri-0.1.97.tar.gz tmp/swarmauri-0.1.98.tar.gz --markdown 20240512/s/swarmauri/0.1.97-0.1.98/README.md --exclude *.pyd
+[2024-05-12 11:48:16] WARNING root fetch - processPackages [p2t2]: Skipping, unable to determine old version
+[2024-05-12 11:48:16] INFO root fetch - main [MainThread]: End processing [p2t2] error
+[2024-05-12 11:48:16] INFO root fetch - processPackages [django-settings-env]: Remove: archive file [/home/abi/fetcher/tmp/django_settings_env-4.7.1.tar.gz]
+[2024-05-12 11:48:16] INFO root fetch - processPackages [django-settings-env]: Remove: archive file [/home/abi/fetcher/tmp/django_settings_env-4.7.3.tar.gz]
+[2024-05-12 11:48:16] INFO root fetch - main [MainThread]: End processing [django-settings-env]: success
+[2024-05-12 11:48:16] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405111405.tar.gz]
+[2024-05-12 11:48:16] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405112340.tar.gz]
+[2024-05-12 11:48:16] INFO root fetch - main [MainThread]: End processing [glpic]: success
+[2024-05-12 11:48:16] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev5.tar.gz]
+[2024-05-12 11:48:16] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev6.tar.gz]
+[2024-05-12 11:48:16] INFO root fetch - main [MainThread]: End processing [data-prep-toolkit-kfp]: success
+[2024-05-12 11:48:17] INFO root fetch - processPackages [swarmauri]: Remove: archive file [/home/abi/fetcher/tmp/swarmauri-0.1.97.tar.gz]
+[2024-05-12 11:48:17] INFO root fetch - processPackages [swarmauri]: Remove: archive file [/home/abi/fetcher/tmp/swarmauri-0.1.98.tar.gz]
+[2024-05-12 11:48:17] INFO root fetch - main [MainThread]: End processing [swarmauri]: success
+[2024-05-12 11:48:17] INFO root fetch - main [MainThread]: Store serial: [23168624]
