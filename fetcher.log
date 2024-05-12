@@ -11009,3 +11009,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:42:46] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.9.tar.gz]
 [2024-05-12 15:42:46] INFO root fetch - main [MainThread]: End processing [pyprland]: success
 [2024-05-12 15:42:46] INFO root fetch - main [MainThread]: Store serial: [23170219]
+[2024-05-12 15:44:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170219]
+[2024-05-12 15:44:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 15:44:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdo-sdk-python
+[2024-05-12 15:44:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrtz2
+[2024-05-12 15:44:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: narwhals
+[2024-05-12 15:44:55] INFO root fetch - processPackages [narwhals]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-12 15:44:55] INFO root fetch - processPackages [narwhals]: Downloading https://files.pythonhosted.org/packages/99/36/0f3088813b6d212058ea6dd92fc930c913ec6d5c01f08a24de71755552f5/narwhals-0.8.8.tar.gz
+[2024-05-12 15:44:55] INFO root fetch - processPackages [pyrtz2]: New version: [1.1.24] Old Version: [1.1.23]
+[2024-05-12 15:44:55] INFO root fetch - processPackages [cdo-sdk-python]: New version: [1.0.99] Old Version: [1.0.98]
+[2024-05-12 15:44:55] INFO root fetch - processPackages [cdo-sdk-python]: Downloading https://files.pythonhosted.org/packages/aa/54/d9c631d5702693a0921bbc1c50cad785f8fa75671cabdd662546a416a6b9/cdo-sdk-python-1.0.98.tar.gz
+[2024-05-12 15:44:55] INFO root fetch - processPackages [pyrtz2]: Downloading https://files.pythonhosted.org/packages/94/f3/8c10ef3e962c3b07d3b7ec81d9d1a593fbc8e349f0a550fb343157eada55/pyrtz2-1.1.23.tar.gz
+[2024-05-12 15:44:55] INFO root fetch - processPackages [narwhals]: Downloading https://files.pythonhosted.org/packages/46/f0/986c81bda5e2f1c1e4caf23f199c81fe58077e01a7d513474c90bc191876/narwhals-0.8.9.tar.gz
+[2024-05-12 15:44:56] INFO root fetch - processPackages [narwhals]: executing diffoscope
+[2024-05-12 15:44:56] INFO root fetch - processPackages [narwhals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/narwhals-0.8.8.tar.gz tmp/narwhals-0.8.9.tar.gz --markdown 20240512/n/narwhals/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-12 15:44:56] INFO root fetch - processPackages [cdo-sdk-python]: Downloading https://files.pythonhosted.org/packages/9b/76/7267c3f3ac308bacc9e809ed54663a42556e896ff4e2d73a469a15d3556a/cdo-sdk-python-1.0.99.tar.gz
+[2024-05-12 15:44:56] INFO root fetch - processPackages [cdo-sdk-python]: executing diffoscope
+[2024-05-12 15:44:56] INFO root fetch - processPackages [cdo-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdo-sdk-python-1.0.98.tar.gz tmp/cdo-sdk-python-1.0.99.tar.gz --markdown 20240512/c/cdo-sdk-python/1.0.98-1.0.99/README.md --exclude *.pyd
+[2024-05-12 15:44:56] INFO root fetch - processPackages [pyrtz2]: Downloading https://files.pythonhosted.org/packages/22/e3/bf770cb71aab270e13125a64caa21149ab67b4c5cc990a713ed035340070/pyrtz2-1.1.24.tar.gz
+[2024-05-12 15:44:56] INFO root fetch - processPackages [pyrtz2]: executing diffoscope
+[2024-05-12 15:44:56] INFO root fetch - processPackages [pyrtz2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrtz2-1.1.23.tar.gz tmp/pyrtz2-1.1.24.tar.gz --markdown 20240512/p/pyrtz2/1.1.23-1.1.24/README.md --exclude *.pyd
+[2024-05-12 15:44:56] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.8.8.tar.gz]
+[2024-05-12 15:44:56] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.8.9.tar.gz]
+[2024-05-12 15:44:56] INFO root fetch - main [MainThread]: End processing [narwhals]: success
+[2024-05-12 15:44:57] INFO root fetch - processPackages [cdo-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/cdo-sdk-python-1.0.98.tar.gz]
+[2024-05-12 15:44:57] INFO root fetch - processPackages [cdo-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/cdo-sdk-python-1.0.99.tar.gz]
+[2024-05-12 15:44:57] INFO root fetch - main [MainThread]: End processing [cdo-sdk-python]: success
+[2024-05-12 15:44:57] INFO root fetch - processPackages [pyrtz2]: Remove: archive file [/home/abi/fetcher/tmp/pyrtz2-1.1.23.tar.gz]
+[2024-05-12 15:44:57] INFO root fetch - processPackages [pyrtz2]: Remove: archive file [/home/abi/fetcher/tmp/pyrtz2-1.1.24.tar.gz]
+[2024-05-12 15:44:57] INFO root fetch - main [MainThread]: End processing [pyrtz2]: success
+[2024-05-12 15:44:57] INFO root fetch - main [MainThread]: Store serial: [23170229]
