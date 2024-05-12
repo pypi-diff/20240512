@@ -17004,3 +17004,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:06:27] INFO root fetch - processPackages [profitpulse]: Remove: archive file [/home/abi/fetcher/tmp/profitpulse-2.2.0.tar.gz]
 [2024-05-12 22:06:27] INFO root fetch - main [MainThread]: End processing [profitpulse]: success
 [2024-05-12 22:06:27] INFO root fetch - main [MainThread]: Store serial: [23173368]
+[2024-05-12 22:08:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173368]
+[2024-05-12 22:08:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 22:08:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aim-ui
+[2024-05-12 22:08:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beets-ytimport
+[2024-05-12 22:08:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aim
+[2024-05-12 22:08:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: progress-api
+[2024-05-12 22:08:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sequentialdw
+[2024-05-12 22:08:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ruffledz
+[2024-05-12 22:08:35] INFO root fetch - processPackages [progress-api]: New version: [0.1.0a7] Old Version: [0.1.0a6]
+[2024-05-12 22:08:35] INFO root fetch - processPackages [beets-ytimport]: New version: [1.8.0] Old Version: [1.7.2]
+[2024-05-12 22:08:35] INFO root fetch - processPackages [sequentialdw]: New version: [2.6] Old Version: [2.3]
+[2024-05-12 22:08:35] INFO root fetch - processPackages [aim-ui]: New version: [4.1.0.dev20230930] Old Version: [4.1.0.dev20230929]
+[2024-05-12 22:08:35] INFO root fetch - processPackages [progress-api]: Downloading https://files.pythonhosted.org/packages/0f/11/5e9ff8846d103d4b06ccc28ea65a25dae8fa1dab1c069d0fdc8586148dea/progress_api-0.1.0a6.tar.gz
+[2024-05-12 22:08:35] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/e3/fb/a6b65dc7fc3f555fa4f4646d03eb6aba0e60a4ded225978ab7844ac8ca3f/sequentialdw-2.3.tar.gz
+[2024-05-12 22:08:35] INFO root fetch - processPackages [beets-ytimport]: Downloading https://files.pythonhosted.org/packages/c6/cf/36ce4160c4c6cb2140d56b8694b4b1ccd93e5fccd77083807e91b23aab24/beets_ytimport-1.7.2-py3-none-any.whl
+[2024-05-12 22:08:35] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/2a/05/f8c2e155a815903b692d80c9a1647ba25d4a1f119791eaeb671026bcfa33/aim-ui-4.1.0.dev20230929.tar.gz
+[2024-05-12 22:08:35] WARNING root fetch - processPackages [ruffledz]: Skipping, unable to determine old version
+[2024-05-12 22:08:35] INFO root fetch - main [MainThread]: End processing [ruffledz] error
+[2024-05-12 22:08:35] INFO root fetch - processPackages [aim]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-05-12 22:08:35] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
+[2024-05-12 22:08:35] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2024-05-12 22:08:35] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/4a/00/f7e303a3bd0a6d75c08ccd60562a0c5f00fa9f4c16c945fbffa86d96ab7d/aim-4.0.2.tar.gz
+[2024-05-12 22:08:35] INFO root fetch - processPackages [progress-api]: Downloading https://files.pythonhosted.org/packages/01/46/251e49532cdfc01f489a089a0a2ba998de0405abc41536826f894ac5be3c/progress_api-0.1.0a7.tar.gz
+[2024-05-12 22:08:36] INFO root fetch - processPackages [beets-ytimport]: Downloading https://files.pythonhosted.org/packages/4c/40/6c1b028767bdab8cc2d1febb424781b8e4aaa5d4fc2344a942070ff27b13/beets_ytimport-1.8.0-py3-none-any.whl
+[2024-05-12 22:08:36] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/84/58/fde0b856046c1729b6b128f1a8cbdd8d1695ee03ccf4d607b35d5b3c0793/sequentialdw-2.6.tar.gz
+[2024-05-12 22:08:36] INFO root fetch - processPackages [progress-api]: executing diffoscope
+[2024-05-12 22:08:36] INFO root fetch - processPackages [progress-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/progress_api-0.1.0a6.tar.gz tmp/progress_api-0.1.0a7.tar.gz --markdown 20240512/p/progress-api/0.1.0a6-0.1.0a7/README.md --exclude *.pyd
+[2024-05-12 22:08:36] INFO root fetch - processPackages [beets-ytimport]: executing diffoscope
+[2024-05-12 22:08:36] INFO root fetch - processPackages [beets-ytimport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets_ytimport-1.7.2-py3-none-any.whl.zip tmp/beets_ytimport-1.8.0-py3-none-any.whl.zip --markdown 20240512/b/beets-ytimport/1.7.2-1.8.0/README.md --exclude *.pyd
+[2024-05-12 22:08:36] INFO root fetch - processPackages [sequentialdw]: executing diffoscope
+[2024-05-12 22:08:36] INFO root fetch - processPackages [sequentialdw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sequentialdw-2.3.tar.gz tmp/sequentialdw-2.6.tar.gz --markdown 20240512/s/sequentialdw/2.3-2.6/README.md --exclude *.pyd
+[2024-05-12 22:08:36] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/50/12/a5a7bf25fd6105558d11afbd3f7500aa63283494e429296746c821354590/aim-4.0.3.tar.gz
+[2024-05-12 22:08:36] INFO root fetch - processPackages [aim]: executing diffoscope
+[2024-05-12 22:08:36] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.2.tar.gz tmp/aim-4.0.3.tar.gz --markdown 20240512/a/aim/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-05-12 22:08:36] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-2.3.tar.gz]
+[2024-05-12 22:08:36] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-2.6.tar.gz]
+[2024-05-12 22:08:36] INFO root fetch - main [MainThread]: End processing [sequentialdw]: success
+[2024-05-12 22:08:36] INFO root fetch - processPackages [beets-ytimport]: Remove: archive file [/home/abi/fetcher/tmp/beets_ytimport-1.7.2-py3-none-any.whl.zip]
+[2024-05-12 22:08:36] INFO root fetch - processPackages [beets-ytimport]: Remove: archive file [/home/abi/fetcher/tmp/beets_ytimport-1.8.0-py3-none-any.whl.zip]
+[2024-05-12 22:08:36] INFO root fetch - main [MainThread]: End processing [beets-ytimport]: success
+[2024-05-12 22:08:36] INFO root fetch - processPackages [progress-api]: Remove: archive file [/home/abi/fetcher/tmp/progress_api-0.1.0a6.tar.gz]
+[2024-05-12 22:08:36] INFO root fetch - processPackages [progress-api]: Remove: archive file [/home/abi/fetcher/tmp/progress_api-0.1.0a7.tar.gz]
+[2024-05-12 22:08:36] INFO root fetch - main [MainThread]: End processing [progress-api]: success
+[2024-05-12 22:08:41] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.2.tar.gz]
+[2024-05-12 22:08:41] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
+[2024-05-12 22:08:41] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2024-05-12 22:08:41] INFO root fetch - main [MainThread]: Store serial: [23173385]
