@@ -4460,3 +4460,30 @@
 [2024-05-12 06:38:40] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.6.1.tar.gz]
 [2024-05-12 06:38:40] INFO root fetch - main [MainThread]: End processing [OZI]: success
 [2024-05-12 06:38:40] INFO root fetch - main [MainThread]: Store serial: [23167026]
+[2024-05-12 06:40:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167026]
+[2024-05-12 06:40:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 06:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: greatbrowser
+[2024-05-12 06:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graphometryz
+[2024-05-12 06:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: g2opy
+[2024-05-12 06:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bisos.facter
+[2024-05-12 06:40:48] INFO root fetch - processPackages [g2opy]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-12 06:40:48] INFO root fetch - processPackages [bisos.facter]: New version: [0.7] Old Version: [0.6]
+[2024-05-12 06:40:48] INFO root fetch - processPackages [g2opy]: Downloading https://files.pythonhosted.org/packages/4e/4a/ea9082b3957cd5fbaee61a4cfa027050552aa12d26bb984665510730c916/g2opy-0.0.7.tar.gz
+[2024-05-12 06:40:48] INFO root fetch - processPackages [bisos.facter]: Downloading https://files.pythonhosted.org/packages/44/1e/e949b75b8d4affc54b6574603a26df2268ddd5074d921b8d9ae7ece8d5ab/bisos.facter-0.6.tar.gz
+[2024-05-12 06:40:48] WARNING root fetch - processPackages [graphometryz]: Skipping, unable to determine old version
+[2024-05-12 06:40:48] WARNING root fetch - processPackages [greatbrowser]: Skipping, unable to determine old version
+[2024-05-12 06:40:48] INFO root fetch - main [MainThread]: End processing [graphometryz] error
+[2024-05-12 06:40:48] INFO root fetch - main [MainThread]: End processing [greatbrowser] error
+[2024-05-12 06:40:49] INFO root fetch - processPackages [bisos.facter]: Downloading https://files.pythonhosted.org/packages/a7/86/02562f995d5cf86c2c5f627fab706a9e94288f766dc25a5eb862915751b3/bisos.facter-0.7.tar.gz
+[2024-05-12 06:40:49] INFO root fetch - processPackages [g2opy]: Downloading https://files.pythonhosted.org/packages/79/e6/ad07b153577c4371bd22edcddcb70be06d89d975630d8954c5c8a6c4fcfb/g2opy-0.0.8.tar.gz
+[2024-05-12 06:40:49] INFO root fetch - processPackages [bisos.facter]: executing diffoscope
+[2024-05-12 06:40:49] INFO root fetch - processPackages [bisos.facter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bisos.facter-0.6.tar.gz tmp/bisos.facter-0.7.tar.gz --markdown 20240512/b/bisos.facter/0.6-0.7/README.md --exclude *.pyd
+[2024-05-12 06:40:49] INFO root fetch - processPackages [g2opy]: executing diffoscope
+[2024-05-12 06:40:49] INFO root fetch - processPackages [g2opy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g2opy-0.0.7.tar.gz tmp/g2opy-0.0.8.tar.gz --markdown 20240512/g/g2opy/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-12 06:40:49] INFO root fetch - processPackages [bisos.facter]: Remove: archive file [/home/abi/fetcher/tmp/bisos.facter-0.6.tar.gz]
+[2024-05-12 06:40:49] INFO root fetch - processPackages [bisos.facter]: Remove: archive file [/home/abi/fetcher/tmp/bisos.facter-0.7.tar.gz]
+[2024-05-12 06:40:49] INFO root fetch - main [MainThread]: End processing [bisos.facter]: success
+[2024-05-12 06:40:50] INFO root fetch - processPackages [g2opy]: Remove: archive file [/home/abi/fetcher/tmp/g2opy-0.0.7.tar.gz]
+[2024-05-12 06:40:50] INFO root fetch - processPackages [g2opy]: Remove: archive file [/home/abi/fetcher/tmp/g2opy-0.0.8.tar.gz]
+[2024-05-12 06:40:50] INFO root fetch - main [MainThread]: End processing [g2opy]: success
+[2024-05-12 06:40:50] INFO root fetch - main [MainThread]: Store serial: [23167039]
