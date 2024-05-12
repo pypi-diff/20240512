@@ -1961,3 +1961,21 @@
 [2024-05-12 02:49:32] INFO root fetch - processPackages [moji2]: Remove: archive file [/home/abi/fetcher/tmp/moji2-0.4.5.tar.gz]
 [2024-05-12 02:49:32] INFO root fetch - main [MainThread]: End processing [moji2]: success
 [2024-05-12 02:49:32] INFO root fetch - main [MainThread]: Store serial: [23165843]
+[2024-05-12 02:51:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165843]
+[2024-05-12 02:51:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 02:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: counterpunchz
+[2024-05-12 02:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-databrew-cicd
+[2024-05-12 02:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AFRIT-NAME
+[2024-05-12 02:51:41] WARNING root fetch - processPackages [AFRIT-NAME]: Skipping, unable to determine old version
+[2024-05-12 02:51:41] INFO root fetch - main [MainThread]: End processing [AFRIT-NAME] error
+[2024-05-12 02:51:41] WARNING root fetch - processPackages [counterpunchz]: Skipping, unable to determine old version
+[2024-05-12 02:51:41] INFO root fetch - main [MainThread]: End processing [counterpunchz] error
+[2024-05-12 02:51:41] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-12 02:51:41] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/9c/18/acad9d22fe20a13d93a1aee49739981e3ab739a2edcb478344aa0fc5b783/cdk_databrew_cicd-2.0.98.tar.gz
+[2024-05-12 02:51:42] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/66/41/4c5089b171b28b627753bb3de1b4b696fdaeb4f78ef49dcb72a79fcb6e9d/cdk_databrew_cicd-2.0.99.tar.gz
+[2024-05-12 02:51:42] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2024-05-12 02:51:42] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20240512/c/cdk-databrew-cicd/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-12 02:51:43] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.98.tar.gz]
+[2024-05-12 02:51:43] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.99.tar.gz]
+[2024-05-12 02:51:43] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2024-05-12 02:51:43] INFO root fetch - main [MainThread]: Store serial: [23165854]
