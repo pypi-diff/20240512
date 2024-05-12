@@ -14999,3 +14999,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:00:00] INFO root fetch - processPackages [namer]: Remove: archive file [/home/abi/fetcher/tmp/namer-1.9.8.tar.gz]
 [2024-05-12 20:00:00] INFO root fetch - main [MainThread]: End processing [namer]: success
 [2024-05-12 20:00:00] INFO root fetch - main [MainThread]: Store serial: [23172458]
+[2024-05-12 20:02:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172458]
+[2024-05-12 20:02:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 20:02:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spandrel
+[2024-05-12 20:02:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: funprogram
+[2024-05-12 20:02:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: markdowntodocx
+[2024-05-12 20:02:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: medicafe
+[2024-05-12 20:02:09] INFO root fetch - processPackages [medicafe]: New version: [0.240512.6] Old Version: [0.240512.5]
+[2024-05-12 20:02:09] INFO root fetch - processPackages [funprogram]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-12 20:02:09] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/7f/20/23c77f564aa8dfe5e6d252600137f557d020ddbd8368d383274a790b0397/medicafe-0.240512.5.tar.gz
+[2024-05-12 20:02:09] INFO root fetch - processPackages [spandrel]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-12 20:02:09] INFO root fetch - processPackages [markdowntodocx]: New version: [0.1.5.0] Old Version: [0.1.4.1]
+[2024-05-12 20:02:09] INFO root fetch - processPackages [funprogram]: Downloading https://files.pythonhosted.org/packages/50/62/e3dc31c19f0a2bd6f32228c386976b4556f82cad204b0e0888bb12a43c36/funprogram-0.9.0.tar.gz
+[2024-05-12 20:02:09] INFO root fetch - processPackages [spandrel]: Downloading https://files.pythonhosted.org/packages/35/9e/817eb55553b8e91deb4fec297c7347359b32c22da6e8593edbdf40e68286/spandrel-0.3.2-py3-none-any.whl
+[2024-05-12 20:02:09] INFO root fetch - processPackages [markdowntodocx]: Downloading https://files.pythonhosted.org/packages/3b/f8/28f0ce327f74e0162cc89df8eb4e2cd2a12dce55016603dcf4cc85a412f2/markdowntodocx-0.1.4.1.tar.gz
+[2024-05-12 20:02:10] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/49/de/53e23fe1baf9e4d0356932a865816f6895f8def4c60e1e1b9b53ff7e387a/medicafe-0.240512.6.tar.gz
+[2024-05-12 20:02:10] INFO root fetch - processPackages [funprogram]: Downloading https://files.pythonhosted.org/packages/59/91/596455ca3e812e0836cc06b9edc9ce096548a3734e343ab359c6d7d6d62c/funprogram-0.9.1.tar.gz
+[2024-05-12 20:02:10] INFO root fetch - processPackages [funprogram]: executing diffoscope
+[2024-05-12 20:02:10] INFO root fetch - processPackages [funprogram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funprogram-0.9.0.tar.gz tmp/funprogram-0.9.1.tar.gz --markdown 20240512/f/funprogram/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-12 20:02:10] INFO root fetch - processPackages [medicafe]: executing diffoscope
+[2024-05-12 20:02:10] INFO root fetch - processPackages [medicafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medicafe-0.240512.5.tar.gz tmp/medicafe-0.240512.6.tar.gz --markdown 20240512/m/medicafe/0.240512.5-0.240512.6/README.md --exclude *.pyd
+[2024-05-12 20:02:10] INFO root fetch - processPackages [spandrel]: Downloading https://files.pythonhosted.org/packages/2c/95/97d4a91ec9477ae5fe73dcd50ac1d809a12706995c23cbfe017c41095b04/spandrel-0.3.3-py3-none-any.whl
+[2024-05-12 20:02:10] INFO root fetch - processPackages [markdowntodocx]: Downloading https://files.pythonhosted.org/packages/04/3b/85e07f8fccd1b8e5275b703dd9c024d987866ed6b1bf3a751a65a868b421/markdowntodocx-0.1.5.0.tar.gz
+[2024-05-12 20:02:10] INFO root fetch - processPackages [markdowntodocx]: executing diffoscope
+[2024-05-12 20:02:10] INFO root fetch - processPackages [markdowntodocx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markdowntodocx-0.1.4.1.tar.gz tmp/markdowntodocx-0.1.5.0.tar.gz --markdown 20240512/m/markdowntodocx/0.1.4.1-0.1.5.0/README.md --exclude *.pyd
+[2024-05-12 20:02:10] INFO root fetch - processPackages [spandrel]: executing diffoscope
+[2024-05-12 20:02:10] INFO root fetch - processPackages [spandrel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spandrel-0.3.2-py3-none-any.whl.zip tmp/spandrel-0.3.3-py3-none-any.whl.zip --markdown 20240512/s/spandrel/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-12 20:02:10] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240512.5.tar.gz]
+[2024-05-12 20:02:10] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240512.6.tar.gz]
+[2024-05-12 20:02:10] INFO root fetch - main [MainThread]: End processing [medicafe]: success
+[2024-05-12 20:02:10] INFO root fetch - processPackages [funprogram]: Remove: archive file [/home/abi/fetcher/tmp/funprogram-0.9.0.tar.gz]
+[2024-05-12 20:02:10] INFO root fetch - processPackages [funprogram]: Remove: archive file [/home/abi/fetcher/tmp/funprogram-0.9.1.tar.gz]
+[2024-05-12 20:02:10] INFO root fetch - main [MainThread]: End processing [funprogram]: success
+[2024-05-12 20:02:10] INFO root fetch - processPackages [markdowntodocx]: Remove: archive file [/home/abi/fetcher/tmp/markdowntodocx-0.1.4.1.tar.gz]
+[2024-05-12 20:02:10] INFO root fetch - processPackages [markdowntodocx]: Remove: archive file [/home/abi/fetcher/tmp/markdowntodocx-0.1.5.0.tar.gz]
+[2024-05-12 20:02:10] INFO root fetch - main [MainThread]: End processing [markdowntodocx]: success
+[2024-05-12 20:02:11] INFO root fetch - processPackages [spandrel]: Remove: archive file [/home/abi/fetcher/tmp/spandrel-0.3.2-py3-none-any.whl.zip]
+[2024-05-12 20:02:11] INFO root fetch - processPackages [spandrel]: Remove: archive file [/home/abi/fetcher/tmp/spandrel-0.3.3-py3-none-any.whl.zip]
+[2024-05-12 20:02:11] INFO root fetch - main [MainThread]: End processing [spandrel]: success
+[2024-05-12 20:02:11] INFO root fetch - main [MainThread]: Store serial: [23172469]
