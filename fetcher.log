@@ -11517,3 +11517,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:19:52] INFO root fetch - processPackages [dartrs]: Remove: archive file [/home/abi/fetcher/tmp/dartrs-0.1.5.tar.gz]
 [2024-05-12 16:19:52] INFO root fetch - main [MainThread]: End processing [dartrs]: success
 [2024-05-12 16:19:52] INFO root fetch - main [MainThread]: Store serial: [23170615]
+[2024-05-12 16:21:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170615]
+[2024-05-12 16:22:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 16:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-bench
+[2024-05-12 16:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drf-api-action
+[2024-05-12 16:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prompters
+[2024-05-12 16:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wrapworks
+[2024-05-12 16:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bookio-fetchfox
+[2024-05-12 16:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bbot
+[2024-05-12 16:22:00] INFO root fetch - processPackages [llm-bench]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-05-12 16:22:00] INFO root fetch - processPackages [drf-api-action]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-12 16:22:00] INFO root fetch - processPackages [bookio-fetchfox]: New version: [2.6.0] Old Version: [2.5.1]
+[2024-05-12 16:22:00] INFO root fetch - processPackages [bbot]: New version: [1.1.7.7rc0] Old Version: [1.1.7.6rc0]
+[2024-05-12 16:22:00] WARNING root fetch - processPackages [prompters]: Skipping, unable to determine old version
+[2024-05-12 16:22:00] INFO root fetch - main [MainThread]: End processing [prompters] error
+[2024-05-12 16:22:00] WARNING root fetch - processPackages [wrapworks]: Skipping, unable to determine old version
+[2024-05-12 16:22:00] INFO root fetch - main [MainThread]: End processing [wrapworks] error
+[2024-05-12 16:22:00] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/b0/37/6fde4336fef4348f67644c3425bd3c6bcaf99282026daa63da40995af549/llm_bench-0.4.3.tar.gz
+[2024-05-12 16:22:00] INFO root fetch - processPackages [drf-api-action]: Downloading https://files.pythonhosted.org/packages/aa/8b/f4e80b435e930444f9b3f0d38088538ff155cc39b3f44f60ebaad668a0a5/drf_api_action-1.2.0.tar.gz
+[2024-05-12 16:22:00] INFO root fetch - processPackages [bookio-fetchfox]: Downloading https://files.pythonhosted.org/packages/7a/18/7f19ab920292b846199d9d4644308a9727549f0a9d06827248b6d992044f/bookio_fetchfox-2.5.1.tar.gz
+[2024-05-12 16:22:00] INFO root fetch - processPackages [bbot]: Downloading https://files.pythonhosted.org/packages/0e/89/05677f40d2885a5aa8306d6e691a9c8e8bde59b2659d8c45e30c01a31b74/bbot-1.1.7.6rc0.tar.gz
+[2024-05-12 16:22:00] INFO root fetch - processPackages [drf-api-action]: Downloading https://files.pythonhosted.org/packages/20/10/65eb572fa01a7afe406adaf48cf3ad34d4753bf836897bcd17a50fc7ab9a/drf_api_action-1.2.1.tar.gz
+[2024-05-12 16:22:00] INFO root fetch - processPackages [bookio-fetchfox]: Downloading https://files.pythonhosted.org/packages/0a/d0/d67b591adf6ee70951c95957fbe1b47c3ffb9d7365e1d8af831c5acf0186/bookio_fetchfox-2.6.0.tar.gz
+[2024-05-12 16:22:01] INFO root fetch - processPackages [drf-api-action]: executing diffoscope
+[2024-05-12 16:22:01] INFO root fetch - processPackages [drf-api-action]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_api_action-1.2.0.tar.gz tmp/drf_api_action-1.2.1.tar.gz --markdown 20240512/d/drf-api-action/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-12 16:22:01] INFO root fetch - processPackages [bbot]: Downloading https://files.pythonhosted.org/packages/84/41/8580d0cea5bf01417fb7b7db4ce6c0bc6617c939c9859c98790d2121b508/bbot-1.1.7.7rc0.tar.gz
+[2024-05-12 16:22:01] INFO root fetch - processPackages [bookio-fetchfox]: executing diffoscope
+[2024-05-12 16:22:01] INFO root fetch - processPackages [bookio-fetchfox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bookio_fetchfox-2.5.1.tar.gz tmp/bookio_fetchfox-2.6.0.tar.gz --markdown 20240512/b/bookio-fetchfox/2.5.1-2.6.0/README.md --exclude *.pyd
+[2024-05-12 16:22:01] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/54/8b/02f4eb36f9a34beec79d420f9bb82f07d84d54fb67bd28a5458f74544956/llm_bench-0.4.4.tar.gz
+[2024-05-12 16:22:01] INFO root fetch - processPackages [llm-bench]: executing diffoscope
+[2024-05-12 16:22:01] INFO root fetch - processPackages [llm-bench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_bench-0.4.3.tar.gz tmp/llm_bench-0.4.4.tar.gz --markdown 20240512/l/llm-bench/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-05-12 16:22:01] INFO root fetch - processPackages [bbot]: executing diffoscope
+[2024-05-12 16:22:01] INFO root fetch - processPackages [bbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bbot-1.1.7.6rc0.tar.gz tmp/bbot-1.1.7.7rc0.tar.gz --markdown 20240512/b/bbot/1.1.7.6rc0-1.1.7.7rc0/README.md --exclude *.pyd
+[2024-05-12 16:22:01] INFO root fetch - processPackages [drf-api-action]: Remove: archive file [/home/abi/fetcher/tmp/drf_api_action-1.2.0.tar.gz]
+[2024-05-12 16:22:01] INFO root fetch - processPackages [drf-api-action]: Remove: archive file [/home/abi/fetcher/tmp/drf_api_action-1.2.1.tar.gz]
+[2024-05-12 16:22:01] INFO root fetch - main [MainThread]: End processing [drf-api-action]: success
+[2024-05-12 16:22:01] INFO root fetch - processPackages [bookio-fetchfox]: Remove: archive file [/home/abi/fetcher/tmp/bookio_fetchfox-2.5.1.tar.gz]
+[2024-05-12 16:22:01] INFO root fetch - processPackages [bookio-fetchfox]: Remove: archive file [/home/abi/fetcher/tmp/bookio_fetchfox-2.6.0.tar.gz]
+[2024-05-12 16:22:01] INFO root fetch - main [MainThread]: End processing [bookio-fetchfox]: success
+[2024-05-12 16:22:01] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.3.tar.gz]
+[2024-05-12 16:22:01] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.4.tar.gz]
+[2024-05-12 16:22:01] INFO root fetch - main [MainThread]: End processing [llm-bench]: success
+[2024-05-12 16:22:02] INFO root fetch - processPackages [bbot]: Remove: archive file [/home/abi/fetcher/tmp/bbot-1.1.7.6rc0.tar.gz]
+[2024-05-12 16:22:02] INFO root fetch - processPackages [bbot]: Remove: archive file [/home/abi/fetcher/tmp/bbot-1.1.7.7rc0.tar.gz]
+[2024-05-12 16:22:02] INFO root fetch - main [MainThread]: End processing [bbot]: success
+[2024-05-12 16:22:02] INFO root fetch - main [MainThread]: Store serial: [23170638]
