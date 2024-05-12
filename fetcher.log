@@ -7810,3 +7810,15 @@
 [2024-05-12 11:39:37] INFO root fetch - processPackages [metainfoyaml2py]: Remove: archive file [/home/abi/fetcher/tmp/metainfoyaml2py-0.0.9.tar.gz]
 [2024-05-12 11:39:37] INFO root fetch - main [MainThread]: End processing [metainfoyaml2py]: success
 [2024-05-12 11:39:37] INFO root fetch - main [MainThread]: Store serial: [23168552]
+[2024-05-12 11:41:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168552]
+[2024-05-12 11:41:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 11:41:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yefpy-uwine
+[2024-05-12 11:41:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Directory-Structure-Generator
+[2024-05-12 11:41:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phantasmicallyz
+[2024-05-12 11:41:46] WARNING root fetch - processPackages [yefpy-uwine]: Skipping, unable to determine old version
+[2024-05-12 11:41:46] INFO root fetch - main [MainThread]: End processing [yefpy-uwine] error
+[2024-05-12 11:41:46] WARNING root fetch - processPackages [phantasmicallyz]: Skipping, unable to determine old version
+[2024-05-12 11:41:46] INFO root fetch - main [MainThread]: End processing [phantasmicallyz] error
+[2024-05-12 11:41:46] WARNING root fetch - processPackages [Directory-Structure-Generator]: Skipping, unable to determine old version
+[2024-05-12 11:41:46] INFO root fetch - main [MainThread]: End processing [Directory-Structure-Generator] error
+[2024-05-12 11:41:46] INFO root fetch - main [MainThread]: Store serial: [23168563]
