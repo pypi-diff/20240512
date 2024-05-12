@@ -1979,3 +1979,18 @@
 [2024-05-12 02:51:43] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.99.tar.gz]
 [2024-05-12 02:51:43] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
 [2024-05-12 02:51:43] INFO root fetch - main [MainThread]: Store serial: [23165854]
+[2024-05-12 02:53:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165854]
+[2024-05-12 02:53:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 02:53:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aipkgs-firebase
+[2024-05-12 02:53:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: greatbrowser
+[2024-05-12 02:53:51] INFO root fetch - processPackages [aipkgs-firebase]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-12 02:53:51] WARNING root fetch - processPackages [greatbrowser]: Skipping, unable to determine old version
+[2024-05-12 02:53:51] INFO root fetch - main [MainThread]: End processing [greatbrowser] error
+[2024-05-12 02:53:51] INFO root fetch - processPackages [aipkgs-firebase]: Downloading https://files.pythonhosted.org/packages/1a/d4/6c4f3e872c2147eb80fd6b4de119d764bb171be47edb4deea6ef436b7cd2/aipkgs_firebase-1.0.8.tar.gz
+[2024-05-12 02:53:51] INFO root fetch - processPackages [aipkgs-firebase]: Downloading https://files.pythonhosted.org/packages/0b/8f/79aa4f49b126e07ecfc5de22c65081be588bc57ad24a2cebb390785e81e5/aipkgs_firebase-1.0.9.tar.gz
+[2024-05-12 02:53:51] INFO root fetch - processPackages [aipkgs-firebase]: executing diffoscope
+[2024-05-12 02:53:51] INFO root fetch - processPackages [aipkgs-firebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aipkgs_firebase-1.0.8.tar.gz tmp/aipkgs_firebase-1.0.9.tar.gz --markdown 20240512/a/aipkgs-firebase/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-12 02:53:52] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-1.0.8.tar.gz]
+[2024-05-12 02:53:52] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-1.0.9.tar.gz]
+[2024-05-12 02:53:52] INFO root fetch - main [MainThread]: End processing [aipkgs-firebase]: success
+[2024-05-12 02:53:52] INFO root fetch - main [MainThread]: Store serial: [23165862]
