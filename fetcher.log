@@ -12963,3 +12963,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:47:22] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
 [2024-05-12 17:47:22] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
 [2024-05-12 17:47:22] INFO root fetch - main [MainThread]: Store serial: [23171380]
+[2024-05-12 17:49:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171380]
+[2024-05-12 17:49:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 17:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sequestraz
+[2024-05-12 17:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: i18nice
+[2024-05-12 17:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpris-api
+[2024-05-12 17:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anemone-daisy-maker
+[2024-05-12 17:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: few-shot-priming
+[2024-05-12 17:49:31] INFO root fetch - processPackages [mpris-api]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-12 17:49:31] INFO root fetch - processPackages [anemone-daisy-maker]: New version: [1.55.2] Old Version: [1.55.1]
+[2024-05-12 17:49:31] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-05-12 17:49:31] INFO root fetch - processPackages [mpris-api]: Downloading https://files.pythonhosted.org/packages/90/fd/0b0a8fb147a17d664e0f066ff39d0ddb2cce323d5ce036ce5ea2f61ea991/mpris-api-1.0.1.tar.gz
+[2024-05-12 17:49:31] WARNING root fetch - processPackages [sequestraz]: Skipping, unable to determine old version
+[2024-05-12 17:49:31] INFO root fetch - main [MainThread]: End processing [sequestraz] error
+[2024-05-12 17:49:31] INFO root fetch - processPackages [i18nice]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-12 17:49:31] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-05-12 17:49:31] INFO root fetch - processPackages [anemone-daisy-maker]: Downloading https://files.pythonhosted.org/packages/3e/2b/b2e19098a40dc8ed14ba485dfb083a66c01ac4ff2314106ea9a5e5e27d29/anemone_daisy_maker-1.55.1.tar.gz
+[2024-05-12 17:49:31] INFO root fetch - processPackages [i18nice]: Downloading https://files.pythonhosted.org/packages/72/30/8ac9dd93101ad6c35138f312d618a7bff5d5e807d324ce8bf90e59f750ea/i18nice-0.9.0.tar.gz
+[2024-05-12 17:49:31] INFO root fetch - processPackages [mpris-api]: Downloading https://files.pythonhosted.org/packages/fe/d5/04047dd243cb5d0edf0e457d719c539fe1b10f8003cb78c5c3a29317ddc8/mpris-api-1.0.2.tar.gz
+[2024-05-12 17:49:31] INFO root fetch - processPackages [mpris-api]: executing diffoscope
+[2024-05-12 17:49:31] INFO root fetch - processPackages [mpris-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpris-api-1.0.1.tar.gz tmp/mpris-api-1.0.2.tar.gz --markdown 20240512/m/mpris-api/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-12 17:49:31] INFO root fetch - processPackages [anemone-daisy-maker]: Downloading https://files.pythonhosted.org/packages/2d/92/172d3077eb797c00267faf080c146f37795a563298df31933354f077400e/anemone_daisy_maker-1.55.2.tar.gz
+[2024-05-12 17:49:32] INFO root fetch - processPackages [i18nice]: Downloading https://files.pythonhosted.org/packages/68/c5/dcb5bd7276acea371082b954fc1eda7db083c48caee940fb73b784c62397/i18nice-0.9.1.tar.gz
+[2024-05-12 17:49:32] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-05-12 17:49:32] INFO root fetch - processPackages [anemone-daisy-maker]: executing diffoscope
+[2024-05-12 17:49:32] INFO root fetch - processPackages [anemone-daisy-maker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anemone_daisy_maker-1.55.1.tar.gz tmp/anemone_daisy_maker-1.55.2.tar.gz --markdown 20240512/a/anemone-daisy-maker/1.55.1-1.55.2/README.md --exclude *.pyd
+[2024-05-12 17:49:32] INFO root fetch - processPackages [i18nice]: executing diffoscope
+[2024-05-12 17:49:32] INFO root fetch - processPackages [i18nice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i18nice-0.9.0.tar.gz tmp/i18nice-0.9.1.tar.gz --markdown 20240512/i/i18nice/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-12 17:49:32] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-05-12 17:49:32] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240512/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-05-12 17:49:32] INFO root fetch - processPackages [mpris-api]: Remove: archive file [/home/abi/fetcher/tmp/mpris-api-1.0.1.tar.gz]
+[2024-05-12 17:49:32] INFO root fetch - processPackages [mpris-api]: Remove: archive file [/home/abi/fetcher/tmp/mpris-api-1.0.2.tar.gz]
+[2024-05-12 17:49:32] INFO root fetch - main [MainThread]: End processing [mpris-api]: success
+[2024-05-12 17:49:32] INFO root fetch - processPackages [anemone-daisy-maker]: Remove: archive file [/home/abi/fetcher/tmp/anemone_daisy_maker-1.55.1.tar.gz]
+[2024-05-12 17:49:32] INFO root fetch - processPackages [anemone-daisy-maker]: Remove: archive file [/home/abi/fetcher/tmp/anemone_daisy_maker-1.55.2.tar.gz]
+[2024-05-12 17:49:32] INFO root fetch - main [MainThread]: End processing [anemone-daisy-maker]: success
+[2024-05-12 17:49:32] INFO root fetch - processPackages [i18nice]: Remove: archive file [/home/abi/fetcher/tmp/i18nice-0.9.0.tar.gz]
+[2024-05-12 17:49:32] INFO root fetch - processPackages [i18nice]: Remove: archive file [/home/abi/fetcher/tmp/i18nice-0.9.1.tar.gz]
+[2024-05-12 17:49:32] INFO root fetch - main [MainThread]: End processing [i18nice]: success
+[2024-05-12 17:49:33] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-05-12 17:49:33] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-05-12 17:49:33] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-05-12 17:49:33] INFO root fetch - main [MainThread]: Store serial: [23171391]
