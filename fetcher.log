@@ -10452,3 +10452,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:51:55] INFO root fetch - processPackages [CTG-Utils]: Remove: archive file [/home/abi/fetcher/tmp/CTG_Utils-1.1.1.tar.gz]
 [2024-05-12 14:51:55] INFO root fetch - main [MainThread]: End processing [CTG-Utils]: success
 [2024-05-12 14:51:55] INFO root fetch - main [MainThread]: Store serial: [23169956]
+[2024-05-12 14:53:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169956]
+[2024-05-12 14:54:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 14:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ofscraper
+[2024-05-12 14:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigcode
+[2024-05-12 14:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: optimistix
+[2024-05-12 14:54:04] INFO root fetch - processPackages [optimistix]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-12 14:54:04] WARNING root fetch - processPackages [bigcode]: Skipping, unable to determine old version
+[2024-05-12 14:54:04] INFO root fetch - main [MainThread]: End processing [bigcode] error
+[2024-05-12 14:54:04] INFO root fetch - processPackages [ofscraper]: New version: [3.9.7] Old Version: [3.9.6]
+[2024-05-12 14:54:04] INFO root fetch - processPackages [ofscraper]: Downloading https://files.pythonhosted.org/packages/b4/e2/ef35708fdb4524132d28ea99264a6d6f6e591712d453d75e28f659a162c5/ofscraper-3.9.6.tar.gz
+[2024-05-12 14:54:04] INFO root fetch - processPackages [optimistix]: Downloading https://files.pythonhosted.org/packages/d1/7f/4cfa5e3b207e68a75ba4ca91d02bca0d1412c13089bf558be80ee9b9d045/optimistix-0.0.6.tar.gz
+[2024-05-12 14:54:05] INFO root fetch - processPackages [ofscraper]: Downloading https://files.pythonhosted.org/packages/b4/d3/4eb23c7e5506667ed2162ea817fb7dd974fde0ec0da1cb0544567176c380/ofscraper-3.9.7.tar.gz
+[2024-05-12 14:54:05] INFO root fetch - processPackages [optimistix]: Downloading https://files.pythonhosted.org/packages/b1/28/a090023b9cf0be1359c7a14d41ba19a9b299783dc83ed1441eb812649f0f/optimistix-0.0.7.tar.gz
+[2024-05-12 14:54:05] INFO root fetch - processPackages [ofscraper]: executing diffoscope
+[2024-05-12 14:54:05] INFO root fetch - processPackages [ofscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofscraper-3.9.6.tar.gz tmp/ofscraper-3.9.7.tar.gz --markdown 20240512/o/ofscraper/3.9.6-3.9.7/README.md --exclude *.pyd
+[2024-05-12 14:54:05] INFO root fetch - processPackages [optimistix]: executing diffoscope
+[2024-05-12 14:54:05] INFO root fetch - processPackages [optimistix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimistix-0.0.6.tar.gz tmp/optimistix-0.0.7.tar.gz --markdown 20240512/o/optimistix/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-12 14:54:06] INFO root fetch - processPackages [optimistix]: Remove: archive file [/home/abi/fetcher/tmp/optimistix-0.0.6.tar.gz]
+[2024-05-12 14:54:06] INFO root fetch - processPackages [optimistix]: Remove: archive file [/home/abi/fetcher/tmp/optimistix-0.0.7.tar.gz]
+[2024-05-12 14:54:06] INFO root fetch - main [MainThread]: End processing [optimistix]: success
+[2024-05-12 14:54:06] INFO root fetch - processPackages [ofscraper]: Remove: archive file [/home/abi/fetcher/tmp/ofscraper-3.9.6.tar.gz]
+[2024-05-12 14:54:06] INFO root fetch - processPackages [ofscraper]: Remove: archive file [/home/abi/fetcher/tmp/ofscraper-3.9.7.tar.gz]
+[2024-05-12 14:54:06] INFO root fetch - main [MainThread]: End processing [ofscraper]: success
+[2024-05-12 14:54:06] INFO root fetch - main [MainThread]: Store serial: [23169967]
