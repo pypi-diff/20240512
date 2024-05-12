@@ -3212,3 +3212,33 @@
 [2024-05-12 04:37:44] INFO root fetch - processPackages [wmill-pg]: Remove: archive file [/home/abi/fetcher/tmp/wmill_pg-1.99.0.tar.gz]
 [2024-05-12 04:37:44] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
 [2024-05-12 04:37:44] INFO root fetch - main [MainThread]: Store serial: [23166426]
+[2024-05-12 04:39:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166426]
+[2024-05-12 04:39:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 04:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-screen-stats
+[2024-05-12 04:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: g2opy
+[2024-05-12 04:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: g2opy
+[2024-05-12 04:39:52] INFO root fetch - processPackages [g2opy]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-12 04:39:52] INFO root fetch - processPackages [g2opy]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-12 04:39:52] INFO root fetch - processPackages [streamlit-screen-stats]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 04:39:52] INFO root fetch - processPackages [g2opy]: Downloading https://files.pythonhosted.org/packages/34/34/4e36c0d851f74d3693a4dd40d63b7fca73f852fd0c2173a906d286538840/g2opy-0.0.2.tar.gz
+[2024-05-12 04:39:52] INFO root fetch - processPackages [streamlit-screen-stats]: Downloading https://files.pythonhosted.org/packages/b5/f3/ffa1db6a0713ba6b2fc4ac5b1e057f98d7180131b56db9b54f5e09b8ea3d/streamlit-screen-stats-0.0.8.tar.gz
+[2024-05-12 04:39:52] INFO root fetch - processPackages [g2opy]: Downloading https://files.pythonhosted.org/packages/34/34/4e36c0d851f74d3693a4dd40d63b7fca73f852fd0c2173a906d286538840/g2opy-0.0.2.tar.gz
+[2024-05-12 04:39:53] INFO root fetch - processPackages [streamlit-screen-stats]: Downloading https://files.pythonhosted.org/packages/47/c1/551994788e8d7fbca93c51782419b6f14c5db12208b833677955f6412aab/streamlit-screen-stats-0.0.9.tar.gz
+[2024-05-12 04:39:53] INFO root fetch - processPackages [streamlit-screen-stats]: executing diffoscope
+[2024-05-12 04:39:53] INFO root fetch - processPackages [streamlit-screen-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-screen-stats-0.0.8.tar.gz tmp/streamlit-screen-stats-0.0.9.tar.gz --markdown 20240512/s/streamlit-screen-stats/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 04:39:53] INFO root fetch - processPackages [g2opy]: Downloading https://files.pythonhosted.org/packages/ed/45/706f28fbe621d001ef2a876962e9e1a761ce2e4c6275ceb1513daa44c081/g2opy-0.0.3.tar.gz
+[2024-05-12 04:39:53] INFO root fetch - processPackages [g2opy]: Downloading https://files.pythonhosted.org/packages/ed/45/706f28fbe621d001ef2a876962e9e1a761ce2e4c6275ceb1513daa44c081/g2opy-0.0.3.tar.gz
+[2024-05-12 04:39:53] INFO root fetch - processPackages [g2opy]: executing diffoscope
+[2024-05-12 04:39:53] INFO root fetch - processPackages [g2opy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g2opy-0.0.2.tar.gz tmp/g2opy-0.0.3.tar.gz --markdown 20240512/g/g2opy/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-12 04:39:53] INFO root fetch - processPackages [g2opy]: executing diffoscope
+[2024-05-12 04:39:53] INFO root fetch - processPackages [g2opy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g2opy-0.0.2.tar.gz tmp/g2opy-0.0.3.tar.gz --markdown 20240512/g/g2opy/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-12 04:39:54] INFO root fetch - processPackages [g2opy]: Remove: archive file [/home/abi/fetcher/tmp/g2opy-0.0.2.tar.gz]
+[2024-05-12 04:39:54] INFO root fetch - processPackages [g2opy]: Remove: archive file [/home/abi/fetcher/tmp/g2opy-0.0.2.tar.gz]
+[2024-05-12 04:39:54] WARNING root fetch - processPackages [g2opy]: Unable to remove archive file: [[Errno 2] No such file or directory: '/home/abi/fetcher/tmp/g2opy-0.0.2.tar.gz']
+[2024-05-12 04:39:54] INFO root fetch - processPackages [g2opy]: Remove: archive file [/home/abi/fetcher/tmp/g2opy-0.0.3.tar.gz]
+[2024-05-12 04:39:54] INFO root fetch - main [MainThread]: End processing [g2opy]: success
+[2024-05-12 04:39:54] INFO root fetch - main [MainThread]: End processing [g2opy]: success
+[2024-05-12 04:40:06] INFO root fetch - processPackages [streamlit-screen-stats]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-screen-stats-0.0.8.tar.gz]
+[2024-05-12 04:40:06] INFO root fetch - processPackages [streamlit-screen-stats]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-screen-stats-0.0.9.tar.gz]
+[2024-05-12 04:40:06] INFO root fetch - main [MainThread]: End processing [streamlit-screen-stats]: success
+[2024-05-12 04:40:06] INFO root fetch - main [MainThread]: Store serial: [23166440]
