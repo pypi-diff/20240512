@@ -8331,3 +8331,18 @@
 [2024-05-12 12:16:37] INFO root fetch - processPackages [qwak-sdk]: Remove: archive file [/home/abi/fetcher/tmp/qwak_sdk-0.5.9.tar.gz]
 [2024-05-12 12:16:37] INFO root fetch - main [MainThread]: End processing [qwak-sdk]: success
 [2024-05-12 12:16:37] INFO root fetch - main [MainThread]: Store serial: [23168944]
+[2024-05-12 12:18:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168944]
+[2024-05-12 12:18:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 12:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: doughz
+[2024-05-12 12:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastkml
+[2024-05-12 12:18:46] WARNING root fetch - processPackages [doughz]: Skipping, unable to determine old version
+[2024-05-12 12:18:46] INFO root fetch - main [MainThread]: End processing [doughz] error
+[2024-05-12 12:18:46] INFO root fetch - processPackages [fastkml]: New version: [1.0a9] Old Version: [1.0a8]
+[2024-05-12 12:18:46] INFO root fetch - processPackages [fastkml]: Downloading https://files.pythonhosted.org/packages/c6/f0/60b51817f559d90545ff403cc98ddc62a71d034701680850988eea826ec0/fastkml-1.0a8.tar.gz
+[2024-05-12 12:18:46] INFO root fetch - processPackages [fastkml]: Downloading https://files.pythonhosted.org/packages/1f/f8/6204137984777fd2853d5feb89f617b9ff2b8866dd0c475c9d6cedcff044/fastkml-1.0a9.tar.gz
+[2024-05-12 12:18:46] INFO root fetch - processPackages [fastkml]: executing diffoscope
+[2024-05-12 12:18:46] INFO root fetch - processPackages [fastkml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastkml-1.0a8.tar.gz tmp/fastkml-1.0a9.tar.gz --markdown 20240512/f/fastkml/1.0a8-1.0a9/README.md --exclude *.pyd
+[2024-05-12 12:18:47] INFO root fetch - processPackages [fastkml]: Remove: archive file [/home/abi/fetcher/tmp/fastkml-1.0a8.tar.gz]
+[2024-05-12 12:18:47] INFO root fetch - processPackages [fastkml]: Remove: archive file [/home/abi/fetcher/tmp/fastkml-1.0a9.tar.gz]
+[2024-05-12 12:18:47] INFO root fetch - main [MainThread]: End processing [fastkml]: success
+[2024-05-12 12:18:47] INFO root fetch - main [MainThread]: Store serial: [23168954]
