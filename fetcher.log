@@ -15637,3 +15637,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:43:27] INFO root fetch - processPackages [swarmtube]: Remove: archive file [/home/abi/fetcher/tmp/swarmtube-0.1.37-py2.py3-none-any.whl.zip]
 [2024-05-12 20:43:27] INFO root fetch - main [MainThread]: End processing [swarmtube]: success
 [2024-05-12 20:43:27] INFO root fetch - main [MainThread]: Store serial: [23172757]
+[2024-05-12 20:45:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172757]
+[2024-05-12 20:45:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 20:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poetry-aws-lambda-plugin
+[2024-05-12 20:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: congratulatingz
+[2024-05-12 20:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kmport
+[2024-05-12 20:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mysql-to-sqlite3
+[2024-05-12 20:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anemone-daisy-maker
+[2024-05-12 20:45:36] WARNING root fetch - processPackages [poetry-aws-lambda-plugin]: Skipping, unable to determine old version
+[2024-05-12 20:45:36] INFO root fetch - main [MainThread]: End processing [poetry-aws-lambda-plugin] error
+[2024-05-12 20:45:36] INFO root fetch - processPackages [anemone-daisy-maker]: New version: [1.55.5] Old Version: [1.55.4]
+[2024-05-12 20:45:36] INFO root fetch - processPackages [anemone-daisy-maker]: Downloading https://files.pythonhosted.org/packages/95/c1/b71c21c84807e31efcb62960871771c4617cb31b52e4b3c59a4ed45c4a21/anemone_daisy_maker-1.55.4.tar.gz
+[2024-05-12 20:45:36] WARNING root fetch - processPackages [congratulatingz]: Skipping, unable to determine old version
+[2024-05-12 20:45:36] INFO root fetch - main [MainThread]: End processing [congratulatingz] error
+[2024-05-12 20:45:36] INFO root fetch - processPackages [mysql-to-sqlite3]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-05-12 20:45:36] INFO root fetch - processPackages [kmport]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-05-12 20:45:36] INFO root fetch - processPackages [kmport]: Downloading https://files.pythonhosted.org/packages/07/5f/fdd706ea07c1da0d10178206ddb7c55847c3b9301a2b783deb2e1ed75771/kmport-2.1.8.tar.gz
+[2024-05-12 20:45:36] INFO root fetch - processPackages [mysql-to-sqlite3]: Downloading https://files.pythonhosted.org/packages/bf/ab/fb0dc41904599aa5c8c4652b35d9ddf9ce9a0ee46bea245a21dd87261856/mysql_to_sqlite3-2.1.8.tar.gz
+[2024-05-12 20:45:36] INFO root fetch - processPackages [anemone-daisy-maker]: Downloading https://files.pythonhosted.org/packages/eb/7a/f44017cc2dd0851f5dbcaf4f8e186af88d74f30e8ec79805515c644e39f5/anemone_daisy_maker-1.55.5.tar.gz
+[2024-05-12 20:45:36] INFO root fetch - processPackages [anemone-daisy-maker]: executing diffoscope
+[2024-05-12 20:45:36] INFO root fetch - processPackages [anemone-daisy-maker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anemone_daisy_maker-1.55.4.tar.gz tmp/anemone_daisy_maker-1.55.5.tar.gz --markdown 20240512/a/anemone-daisy-maker/1.55.4-1.55.5/README.md --exclude *.pyd
+[2024-05-12 20:45:36] INFO root fetch - processPackages [kmport]: Downloading https://files.pythonhosted.org/packages/cf/a6/a45040db97aabb2edc05bde1a372786067c777c4dd2decbccb1a7869e501/kmport-2.1.9.tar.gz
+[2024-05-12 20:45:37] INFO root fetch - processPackages [mysql-to-sqlite3]: Downloading https://files.pythonhosted.org/packages/3d/6b/836e3844c74c14d605adc39d456d0aa903dab1c81e8163e298a695ff784b/mysql_to_sqlite3-2.1.9.tar.gz
+[2024-05-12 20:45:37] INFO root fetch - processPackages [kmport]: executing diffoscope
+[2024-05-12 20:45:37] INFO root fetch - processPackages [kmport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kmport-2.1.8.tar.gz tmp/kmport-2.1.9.tar.gz --markdown 20240512/k/kmport/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-05-12 20:45:37] INFO root fetch - processPackages [mysql-to-sqlite3]: executing diffoscope
+[2024-05-12 20:45:37] INFO root fetch - processPackages [mysql-to-sqlite3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mysql_to_sqlite3-2.1.8.tar.gz tmp/mysql_to_sqlite3-2.1.9.tar.gz --markdown 20240512/m/mysql-to-sqlite3/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-05-12 20:45:37] INFO root fetch - processPackages [anemone-daisy-maker]: Remove: archive file [/home/abi/fetcher/tmp/anemone_daisy_maker-1.55.4.tar.gz]
+[2024-05-12 20:45:37] INFO root fetch - processPackages [anemone-daisy-maker]: Remove: archive file [/home/abi/fetcher/tmp/anemone_daisy_maker-1.55.5.tar.gz]
+[2024-05-12 20:45:37] INFO root fetch - main [MainThread]: End processing [anemone-daisy-maker]: success
+[2024-05-12 20:45:37] INFO root fetch - processPackages [mysql-to-sqlite3]: Remove: archive file [/home/abi/fetcher/tmp/mysql_to_sqlite3-2.1.8.tar.gz]
+[2024-05-12 20:45:37] INFO root fetch - processPackages [mysql-to-sqlite3]: Remove: archive file [/home/abi/fetcher/tmp/mysql_to_sqlite3-2.1.9.tar.gz]
+[2024-05-12 20:45:37] INFO root fetch - main [MainThread]: End processing [mysql-to-sqlite3]: success
+[2024-05-12 20:45:37] INFO root fetch - processPackages [kmport]: Remove: archive file [/home/abi/fetcher/tmp/kmport-2.1.8.tar.gz]
+[2024-05-12 20:45:37] INFO root fetch - processPackages [kmport]: Remove: archive file [/home/abi/fetcher/tmp/kmport-2.1.9.tar.gz]
+[2024-05-12 20:45:37] INFO root fetch - main [MainThread]: End processing [kmport]: success
+[2024-05-12 20:45:37] INFO root fetch - main [MainThread]: Store serial: [23172772]
