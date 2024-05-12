@@ -18441,3 +18441,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:51:34] INFO root fetch - processPackages [lyriks]: Remove: archive file [/home/abi/fetcher/tmp/lyriks-0.1.1.tar.gz]
 [2024-05-12 23:51:34] INFO root fetch - main [MainThread]: End processing [lyriks]: success
 [2024-05-12 23:51:34] INFO root fetch - main [MainThread]: Store serial: [23174186]
+[2024-05-12 23:53:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23174186]
+[2024-05-12 23:53:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 23:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ediri-scaleway
+[2024-05-12 23:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Elasticsearch-to-GCS-Connector
+[2024-05-12 23:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nchuchain
+[2024-05-12 23:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pensivez
+[2024-05-12 23:53:43] INFO root fetch - processPackages [ediri-scaleway]: New version: [2.39.0] Old Version: [2.38.3]
+[2024-05-12 23:53:43] INFO root fetch - processPackages [ediri-scaleway]: Downloading https://files.pythonhosted.org/packages/55/80/8a8c831992623a776499cb3872713a76066434c9814860093ccbe5ce56ba/ediri_scaleway-2.38.3.tar.gz
+[2024-05-12 23:53:43] INFO root fetch - processPackages [nchuchain]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-12 23:53:43] WARNING root fetch - processPackages [pensivez]: Skipping, unable to determine old version
+[2024-05-12 23:53:43] INFO root fetch - main [MainThread]: End processing [pensivez] error
+[2024-05-12 23:53:43] WARNING root fetch - processPackages [Elasticsearch-to-GCS-Connector]: Skipping, unable to determine old version
+[2024-05-12 23:53:43] INFO root fetch - main [MainThread]: End processing [Elasticsearch-to-GCS-Connector] error
+[2024-05-12 23:53:43] INFO root fetch - processPackages [nchuchain]: Downloading https://files.pythonhosted.org/packages/d4/42/58b114fb2a7dadb8d01c2b78ae6221674de2f9085146b8f0576e40de6117/nchuchain-1.0.1.tar.gz
+[2024-05-12 23:53:43] INFO root fetch - processPackages [ediri-scaleway]: Downloading https://files.pythonhosted.org/packages/4b/3c/f13de8921b16f3082543a33348b16b9abfa5c5f68283f3907ec1814427bf/ediri_scaleway-2.39.0.tar.gz
+[2024-05-12 23:53:43] INFO root fetch - processPackages [nchuchain]: Downloading https://files.pythonhosted.org/packages/88/aa/ce2d6ab5801f7bdbc5537c0e5d6721df851f3ebb5a53e6e54ce84dd5f101/nchuchain-1.0.2.tar.gz
+[2024-05-12 23:53:43] INFO root fetch - processPackages [ediri-scaleway]: executing diffoscope
+[2024-05-12 23:53:43] INFO root fetch - processPackages [ediri-scaleway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ediri_scaleway-2.38.3.tar.gz tmp/ediri_scaleway-2.39.0.tar.gz --markdown 20240512/e/ediri-scaleway/2.38.3-2.39.0/README.md --exclude *.pyd
+[2024-05-12 23:53:43] INFO root fetch - processPackages [nchuchain]: executing diffoscope
+[2024-05-12 23:53:43] INFO root fetch - processPackages [nchuchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nchuchain-1.0.1.tar.gz tmp/nchuchain-1.0.2.tar.gz --markdown 20240512/n/nchuchain/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-12 23:53:44] INFO root fetch - processPackages [nchuchain]: Remove: archive file [/home/abi/fetcher/tmp/nchuchain-1.0.1.tar.gz]
+[2024-05-12 23:53:44] INFO root fetch - processPackages [nchuchain]: Remove: archive file [/home/abi/fetcher/tmp/nchuchain-1.0.2.tar.gz]
+[2024-05-12 23:53:44] INFO root fetch - main [MainThread]: End processing [nchuchain]: success
+[2024-05-12 23:53:46] INFO root fetch - processPackages [ediri-scaleway]: Remove: archive file [/home/abi/fetcher/tmp/ediri_scaleway-2.38.3.tar.gz]
+[2024-05-12 23:53:46] INFO root fetch - processPackages [ediri-scaleway]: Remove: archive file [/home/abi/fetcher/tmp/ediri_scaleway-2.39.0.tar.gz]
+[2024-05-12 23:53:46] INFO root fetch - main [MainThread]: End processing [ediri-scaleway]: success
+[2024-05-12 23:53:46] INFO root fetch - main [MainThread]: Store serial: [23174235]
