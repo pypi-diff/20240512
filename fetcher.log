@@ -8024,3 +8024,30 @@
 [2024-05-12 11:56:54] INFO root fetch - processPackages [gucken]: Remove: archive file [/home/abi/fetcher/tmp/gucken-0.0.1.tar.gz]
 [2024-05-12 11:56:54] INFO root fetch - main [MainThread]: End processing [gucken]: success
 [2024-05-12 11:56:54] INFO root fetch - main [MainThread]: Store serial: [23168759]
+[2024-05-12 11:58:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168759]
+[2024-05-12 11:59:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 11:59:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pantologicz
+[2024-05-12 11:59:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aipkgs-core
+[2024-05-12 11:59:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: database-mysql-local
+[2024-05-12 11:59:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: portfolio-tracker
+[2024-05-12 11:59:03] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.295] Old Version: [0.0.294]
+[2024-05-12 11:59:03] WARNING root fetch - processPackages [pantologicz]: Skipping, unable to determine old version
+[2024-05-12 11:59:03] INFO root fetch - main [MainThread]: End processing [pantologicz] error
+[2024-05-12 11:59:03] INFO root fetch - processPackages [aipkgs-core]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-12 11:59:03] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/dd/1a/43be4e7fe62e0133936de738e7262495d2554bc037fd9ecc5f49eaf3ed32/database_mysql_local-0.0.294.tar.gz
+[2024-05-12 11:59:03] WARNING root fetch - processPackages [portfolio-tracker]: Skipping, unable to determine old version
+[2024-05-12 11:59:03] INFO root fetch - main [MainThread]: End processing [portfolio-tracker] error
+[2024-05-12 11:59:03] INFO root fetch - processPackages [aipkgs-core]: Downloading https://files.pythonhosted.org/packages/bf/19/359300ffe7918592b53a17a80d63383f52df957160f3f5c04d0522f590c3/aipkgs_core-0.4.2-py3-none-any.whl
+[2024-05-12 11:59:03] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/f7/e8/c0cbae429689bfe8306655a4ca3fabbc1db83fc2d0d615f236eea89962a8/database_mysql_local-0.0.295.tar.gz
+[2024-05-12 11:59:03] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-12 11:59:03] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.294.tar.gz tmp/database_mysql_local-0.0.295.tar.gz --markdown 20240512/d/database-mysql-local/0.0.294-0.0.295/README.md --exclude *.pyd
+[2024-05-12 11:59:03] INFO root fetch - processPackages [aipkgs-core]: Downloading https://files.pythonhosted.org/packages/e9/6e/5d7f5bf9ecafc15d8bf21e050e013e23792833bc190f17611b231c321d58/aipkgs_core-0.4.3.tar.gz
+[2024-05-12 11:59:03] INFO root fetch - processPackages [aipkgs-core]: executing diffoscope
+[2024-05-12 11:59:03] INFO root fetch - processPackages [aipkgs-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aipkgs_core-0.4.2-py3-none-any.whl.zip tmp/aipkgs_core-0.4.3.tar.gz --markdown 20240512/a/aipkgs-core/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-12 11:59:04] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.294.tar.gz]
+[2024-05-12 11:59:04] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.295.tar.gz]
+[2024-05-12 11:59:04] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-12 11:59:04] INFO root fetch - processPackages [aipkgs-core]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_core-0.4.2-py3-none-any.whl.zip]
+[2024-05-12 11:59:04] INFO root fetch - processPackages [aipkgs-core]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_core-0.4.3.tar.gz]
+[2024-05-12 11:59:04] INFO root fetch - main [MainThread]: End processing [aipkgs-core]: success
+[2024-05-12 11:59:04] INFO root fetch - main [MainThread]: Store serial: [23168769]
