@@ -14655,3 +14655,77 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:36:09] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.9.tar.gz]
 [2024-05-12 19:36:09] INFO root fetch - main [MainThread]: End processing [genomeshader]: success
 [2024-05-12 19:36:09] INFO root fetch - main [MainThread]: Store serial: [23172314]
+[2024-05-12 19:38:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172314]
+[2024-05-12 19:38:18] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-12 19:38:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dphelper
+[2024-05-12 19:38:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oc-ds-converter
+[2024-05-12 19:38:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dymoprint
+[2024-05-12 19:38:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llama-index-readers-google
+[2024-05-12 19:38:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: phytonomistz
+[2024-05-12 19:38:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ownerrezapi
+[2024-05-12 19:38:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ownerrezapi
+[2024-05-12 19:38:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ownerrezapi
+[2024-05-12 19:38:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ownerrezapi
+[2024-05-12 19:38:18] INFO root fetch - processPackages [dphelper]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-12 19:38:18] INFO root fetch - processPackages [ownerrezapi]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-05-12 19:38:18] INFO root fetch - processPackages [ownerrezapi]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-05-12 19:38:18] INFO root fetch - processPackages [ownerrezapi]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-05-12 19:38:18] INFO root fetch - processPackages [ownerrezapi]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-05-12 19:38:18] INFO root fetch - processPackages [oc-ds-converter]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-12 19:38:18] WARNING root fetch - processPackages [phytonomistz]: Skipping, unable to determine old version
+[2024-05-12 19:38:18] INFO root fetch - main [MainThread]: End processing [phytonomistz] error
+[2024-05-12 19:38:18] INFO root fetch - processPackages [dymoprint]: New version: [2.5.0] Old Version: [2.4.0]
+[2024-05-12 19:38:18] INFO root fetch - processPackages [llama-index-readers-google]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-12 19:38:18] INFO root fetch - processPackages [dphelper]: Downloading https://files.pythonhosted.org/packages/6d/53/b25ce41b93761feed6d1a71f1883ba2d625d03b6e5aff85a4cc51208d5b3/dphelper-0.0.7.tar.gz
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: Downloading https://files.pythonhosted.org/packages/c6/01/d181a5d41d634c8a7e278b1afc1640a3e52fb50a5551e51cf17c1a2aed48/ownerrezapi-0.0.2.tar.gz
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: Downloading https://files.pythonhosted.org/packages/c6/01/d181a5d41d634c8a7e278b1afc1640a3e52fb50a5551e51cf17c1a2aed48/ownerrezapi-0.0.2.tar.gz
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: Downloading https://files.pythonhosted.org/packages/c6/01/d181a5d41d634c8a7e278b1afc1640a3e52fb50a5551e51cf17c1a2aed48/ownerrezapi-0.0.2.tar.gz
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: Downloading https://files.pythonhosted.org/packages/c6/01/d181a5d41d634c8a7e278b1afc1640a3e52fb50a5551e51cf17c1a2aed48/ownerrezapi-0.0.2.tar.gz
+[2024-05-12 19:38:19] INFO root fetch - processPackages [oc-ds-converter]: Downloading https://files.pythonhosted.org/packages/9b/9b/0deb8e744552a44d054f7cec0db6c84f9dd5bca9424f6a3a7f4888c8578c/oc_ds_converter-1.0.2.tar.gz
+[2024-05-12 19:38:19] INFO root fetch - processPackages [llama-index-readers-google]: Downloading https://files.pythonhosted.org/packages/be/66/aebb12b9d05fa742e54c22dfa1cbe71fa429162a44ba8f0b6a638b0b29f8/llama_index_readers_google-0.2.4.tar.gz
+[2024-05-12 19:38:19] INFO root fetch - processPackages [dymoprint]: Downloading https://files.pythonhosted.org/packages/9d/0d/b41bddd92ca8de3acd53de7fcec9fe33b993c128370515fee876032275c4/dymoprint-2.4.0.tar.gz
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: Downloading https://files.pythonhosted.org/packages/ba/d2/1f016845d3422a32dabae91dcae5efcb13a8805a8578b0d65dc99d044a6c/ownerrezapi-0.0.4.tar.gz
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: Downloading https://files.pythonhosted.org/packages/ba/d2/1f016845d3422a32dabae91dcae5efcb13a8805a8578b0d65dc99d044a6c/ownerrezapi-0.0.4.tar.gz
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: Downloading https://files.pythonhosted.org/packages/ba/d2/1f016845d3422a32dabae91dcae5efcb13a8805a8578b0d65dc99d044a6c/ownerrezapi-0.0.4.tar.gz
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: Downloading https://files.pythonhosted.org/packages/ba/d2/1f016845d3422a32dabae91dcae5efcb13a8805a8578b0d65dc99d044a6c/ownerrezapi-0.0.4.tar.gz
+[2024-05-12 19:38:19] INFO root fetch - processPackages [dphelper]: Downloading https://files.pythonhosted.org/packages/fd/47/5c5dd7dc6b2d03713ea7045dac3fc3237031deb1b776f44fa8549790c855/dphelper-0.0.8.tar.gz
+[2024-05-12 19:38:19] INFO root fetch - processPackages [llama-index-readers-google]: Downloading https://files.pythonhosted.org/packages/ec/46/a96a3b647c75353e211830ac6e29147bf4ee882a497c908d79c5f1594265/llama_index_readers_google-0.2.5.tar.gz
+[2024-05-12 19:38:19] INFO root fetch - processPackages [oc-ds-converter]: Downloading https://files.pythonhosted.org/packages/93/34/8def63819e6e86857c23e9fe4d4e34e683db35747a449f3cb6f89ef52ce7/oc_ds_converter-1.0.3.tar.gz
+[2024-05-12 19:38:19] INFO root fetch - processPackages [dphelper]: executing diffoscope
+[2024-05-12 19:38:19] INFO root fetch - processPackages [dphelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dphelper-0.0.7.tar.gz tmp/dphelper-0.0.8.tar.gz --markdown 20240512/d/dphelper/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: executing diffoscope
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ownerrezapi-0.0.2.tar.gz tmp/ownerrezapi-0.0.4.tar.gz --markdown 20240512/o/ownerrezapi/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: executing diffoscope
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ownerrezapi-0.0.2.tar.gz tmp/ownerrezapi-0.0.4.tar.gz --markdown 20240512/o/ownerrezapi/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: executing diffoscope
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ownerrezapi-0.0.2.tar.gz tmp/ownerrezapi-0.0.4.tar.gz --markdown 20240512/o/ownerrezapi/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: executing diffoscope
+[2024-05-12 19:38:19] INFO root fetch - processPackages [ownerrezapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ownerrezapi-0.0.2.tar.gz tmp/ownerrezapi-0.0.4.tar.gz --markdown 20240512/o/ownerrezapi/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-05-12 19:38:19] INFO root fetch - processPackages [llama-index-readers-google]: executing diffoscope
+[2024-05-12 19:38:19] INFO root fetch - processPackages [llama-index-readers-google]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_readers_google-0.2.4.tar.gz tmp/llama_index_readers_google-0.2.5.tar.gz --markdown 20240512/l/llama-index-readers-google/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-12 19:38:19] INFO root fetch - processPackages [oc-ds-converter]: executing diffoscope
+[2024-05-12 19:38:19] INFO root fetch - processPackages [oc-ds-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oc_ds_converter-1.0.2.tar.gz tmp/oc_ds_converter-1.0.3.tar.gz --markdown 20240512/o/oc-ds-converter/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-12 19:38:19] INFO root fetch - processPackages [dymoprint]: Downloading https://files.pythonhosted.org/packages/5f/c0/7e8604b77d19425edc7353d80762fc1a543c58422a51522881fe3bd44666/dymoprint-2.5.0.tar.gz
+[2024-05-12 19:38:20] INFO root fetch - processPackages [dymoprint]: executing diffoscope
+[2024-05-12 19:38:20] INFO root fetch - processPackages [dymoprint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dymoprint-2.4.0.tar.gz tmp/dymoprint-2.5.0.tar.gz --markdown 20240512/d/dymoprint/2.4.0-2.5.0/README.md --exclude *.pyd
+[2024-05-12 19:38:20] INFO root fetch - processPackages [ownerrezapi]: Remove: archive file [/home/abi/fetcher/tmp/ownerrezapi-0.0.2.tar.gz]
+[2024-05-12 19:38:20] INFO root fetch - processPackages [ownerrezapi]: Remove: archive file [/home/abi/fetcher/tmp/ownerrezapi-0.0.2.tar.gz]
+[2024-05-12 19:38:20] WARNING root fetch - processPackages [ownerrezapi]: Unable to remove archive file: [[Errno 2] No such file or directory: '/home/abi/fetcher/tmp/ownerrezapi-0.0.2.tar.gz']
+[2024-05-12 19:38:20] INFO root fetch - processPackages [ownerrezapi]: Remove: archive file [/home/abi/fetcher/tmp/ownerrezapi-0.0.4.tar.gz]
+[2024-05-12 19:38:20] INFO root fetch - main [MainThread]: End processing [ownerrezapi]: success
+[2024-05-12 19:38:20] INFO root fetch - main [MainThread]: End processing [ownerrezapi]: success
+[2024-05-12 19:38:20] INFO root fetch - main [MainThread]: End processing [ownerrezapi]: success
+[2024-05-12 19:38:20] INFO root fetch - processPackages [dphelper]: Remove: archive file [/home/abi/fetcher/tmp/dphelper-0.0.7.tar.gz]
+[2024-05-12 19:38:20] INFO root fetch - processPackages [dphelper]: Remove: archive file [/home/abi/fetcher/tmp/dphelper-0.0.8.tar.gz]
+[2024-05-12 19:38:20] INFO root fetch - main [MainThread]: End processing [dphelper]: success
+[2024-05-12 19:38:20] INFO root fetch - processPackages [llama-index-readers-google]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_readers_google-0.2.4.tar.gz]
+[2024-05-12 19:38:20] INFO root fetch - processPackages [llama-index-readers-google]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_readers_google-0.2.5.tar.gz]
+[2024-05-12 19:38:20] INFO root fetch - main [MainThread]: End processing [llama-index-readers-google]: success
+[2024-05-12 19:38:20] INFO root fetch - main [MainThread]: End processing [ownerrezapi]: success
+[2024-05-12 19:38:20] INFO root fetch - processPackages [oc-ds-converter]: Remove: archive file [/home/abi/fetcher/tmp/oc_ds_converter-1.0.2.tar.gz]
+[2024-05-12 19:38:20] INFO root fetch - processPackages [oc-ds-converter]: Remove: archive file [/home/abi/fetcher/tmp/oc_ds_converter-1.0.3.tar.gz]
+[2024-05-12 19:38:20] INFO root fetch - main [MainThread]: End processing [oc-ds-converter]: success
+[2024-05-12 19:38:21] INFO root fetch - processPackages [dymoprint]: Remove: archive file [/home/abi/fetcher/tmp/dymoprint-2.4.0.tar.gz]
+[2024-05-12 19:38:21] INFO root fetch - processPackages [dymoprint]: Remove: archive file [/home/abi/fetcher/tmp/dymoprint-2.5.0.tar.gz]
+[2024-05-12 19:38:21] INFO root fetch - main [MainThread]: End processing [dymoprint]: success
+[2024-05-12 19:38:21] INFO root fetch - main [MainThread]: Store serial: [23172344]
