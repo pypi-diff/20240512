@@ -18008,3 +18008,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:18:54] INFO root fetch - processPackages [fnschool]: Remove: archive file [/home/abi/fetcher/tmp/fnschool-20240513.518.24.tar.gz]
 [2024-05-12 23:18:54] INFO root fetch - main [MainThread]: End processing [fnschool]: success
 [2024-05-12 23:18:54] INFO root fetch - main [MainThread]: Store serial: [23173908]
+[2024-05-12 23:20:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173908]
+[2024-05-12 23:21:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 23:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tree-viewer
+[2024-05-12 23:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tcrutils
+[2024-05-12 23:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: presubstitutez
+[2024-05-12 23:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tcrutils
+[2024-05-12 23:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xaivision
+[2024-05-12 23:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nef-pipelines
+[2024-05-12 23:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: greatbrowser
+[2024-05-12 23:21:03] INFO root fetch - processPackages [tree-viewer]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 23:21:03] INFO root fetch - processPackages [tcrutils]: New version: [12.0.156] Old Version: [12.0.154]
+[2024-05-12 23:21:03] INFO root fetch - processPackages [tcrutils]: New version: [12.0.156] Old Version: [12.0.154]
+[2024-05-12 23:21:03] ERROR root fetch - processPackages [greatbrowser]: Unable to get metadata: No such project 'greatbrowser'
+[2024-05-12 23:21:03] INFO root fetch - main [MainThread]: End processing [greatbrowser] error
+[2024-05-12 23:21:03] WARNING root fetch - processPackages [presubstitutez]: Skipping, unable to determine old version
+[2024-05-12 23:21:03] INFO root fetch - main [MainThread]: End processing [presubstitutez] error
+[2024-05-12 23:21:03] INFO root fetch - processPackages [xaivision]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-12 23:21:03] INFO root fetch - processPackages [nef-pipelines]: New version: [0.1.66] Old Version: [0.1.65]
+[2024-05-12 23:21:03] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/73/48/e8a68c51cdbda23acca03cfe5dfa452f12aaaeb1cda173617be1b10ac586/tcrutils-12.0.154.tar.gz
+[2024-05-12 23:21:03] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/73/48/e8a68c51cdbda23acca03cfe5dfa452f12aaaeb1cda173617be1b10ac586/tcrutils-12.0.154.tar.gz
+[2024-05-12 23:21:03] INFO root fetch - processPackages [tree-viewer]: Downloading https://files.pythonhosted.org/packages/1a/9c/1b460aec32bc985189053c031b3acaadb9b3bdc5189ff45bbebce0868182/tree_viewer-0.1.0.tar.gz
+[2024-05-12 23:21:03] INFO root fetch - processPackages [xaivision]: Downloading https://files.pythonhosted.org/packages/3c/f9/b245bb9d22af04b7112ff9223490aae9000d93054c2a26464e8d25231332/xaivision-0.5.0.tar.gz
+[2024-05-12 23:21:03] INFO root fetch - processPackages [nef-pipelines]: Downloading https://files.pythonhosted.org/packages/a0/82/38495e9a9b2480bd8d93f4345841cf7ed7a1743d073f9f0817fd0954c45c/nef_pipelines-0.1.65.tar.gz
+[2024-05-12 23:21:03] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/3e/0e/6c70806652428e28f168d55a7bdb5c58b398545182425fcdbaaf1863c497/tcrutils-12.0.156.tar.gz
+[2024-05-12 23:21:03] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/3e/0e/6c70806652428e28f168d55a7bdb5c58b398545182425fcdbaaf1863c497/tcrutils-12.0.156.tar.gz
+[2024-05-12 23:21:04] INFO root fetch - processPackages [tree-viewer]: Downloading https://files.pythonhosted.org/packages/60/ac/780150763fd1d236212d6f2773d945173e8ea8b2a50d5a4cfc92c240ebdb/tree_viewer-0.1.1.tar.gz
+[2024-05-12 23:21:04] INFO root fetch - processPackages [tcrutils]: executing diffoscope
+[2024-05-12 23:21:04] INFO root fetch - processPackages [tcrutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcrutils-12.0.154.tar.gz tmp/tcrutils-12.0.156.tar.gz --markdown 20240512/t/tcrutils/12.0.154-12.0.156/README.md --exclude *.pyd
+[2024-05-12 23:21:04] INFO root fetch - processPackages [tcrutils]: executing diffoscope
+[2024-05-12 23:21:04] INFO root fetch - processPackages [tcrutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcrutils-12.0.154.tar.gz tmp/tcrutils-12.0.156.tar.gz --markdown 20240512/t/tcrutils/12.0.154-12.0.156/README.md --exclude *.pyd
+[2024-05-12 23:21:04] INFO root fetch - processPackages [tree-viewer]: executing diffoscope
+[2024-05-12 23:21:04] INFO root fetch - processPackages [tree-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tree_viewer-0.1.0.tar.gz tmp/tree_viewer-0.1.1.tar.gz --markdown 20240512/t/tree-viewer/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 23:21:04] INFO root fetch - processPackages [xaivision]: Downloading https://files.pythonhosted.org/packages/fc/f6/1eb82258835602e15bde17cd264b7398e635fb646306da74ceb4fac8b7bc/xaivision-0.5.1.tar.gz
+[2024-05-12 23:21:04] INFO root fetch - processPackages [xaivision]: executing diffoscope
+[2024-05-12 23:21:04] INFO root fetch - processPackages [xaivision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xaivision-0.5.0.tar.gz tmp/xaivision-0.5.1.tar.gz --markdown 20240512/x/xaivision/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-12 23:21:04] INFO root fetch - processPackages [tree-viewer]: Remove: archive file [/home/abi/fetcher/tmp/tree_viewer-0.1.0.tar.gz]
+[2024-05-12 23:21:04] INFO root fetch - processPackages [tree-viewer]: Remove: archive file [/home/abi/fetcher/tmp/tree_viewer-0.1.1.tar.gz]
+[2024-05-12 23:21:04] INFO root fetch - main [MainThread]: End processing [tree-viewer]: success
+[2024-05-12 23:21:04] INFO root fetch - processPackages [nef-pipelines]: Downloading https://files.pythonhosted.org/packages/3b/b8/f7ff5568d4051276db5e61f54169804108815bf8a45ddca9cf6dc62cbfa3/nef_pipelines-0.1.66.tar.gz
+[2024-05-12 23:21:04] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.154.tar.gz]
+[2024-05-12 23:21:04] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.156.tar.gz]
+[2024-05-12 23:21:04] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
+[2024-05-12 23:21:04] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
+[2024-05-12 23:21:05] INFO root fetch - processPackages [xaivision]: Remove: archive file [/home/abi/fetcher/tmp/xaivision-0.5.0.tar.gz]
+[2024-05-12 23:21:05] INFO root fetch - processPackages [xaivision]: Remove: archive file [/home/abi/fetcher/tmp/xaivision-0.5.1.tar.gz]
+[2024-05-12 23:21:05] INFO root fetch - main [MainThread]: End processing [xaivision]: success
+[2024-05-12 23:21:05] INFO root fetch - processPackages [nef-pipelines]: executing diffoscope
+[2024-05-12 23:21:05] INFO root fetch - processPackages [nef-pipelines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nef_pipelines-0.1.65.tar.gz tmp/nef_pipelines-0.1.66.tar.gz --markdown 20240512/n/nef-pipelines/0.1.65-0.1.66/README.md --exclude *.pyd
+[2024-05-12 23:21:07] INFO root fetch - processPackages [nef-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/nef_pipelines-0.1.65.tar.gz]
+[2024-05-12 23:21:07] INFO root fetch - processPackages [nef-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/nef_pipelines-0.1.66.tar.gz]
+[2024-05-12 23:21:07] INFO root fetch - main [MainThread]: End processing [nef-pipelines]: success
+[2024-05-12 23:21:07] INFO root fetch - main [MainThread]: Store serial: [23173931]
