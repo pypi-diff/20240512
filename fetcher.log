@@ -2024,3 +2024,24 @@
 [2024-05-12 02:56:20] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
 [2024-05-12 02:56:20] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2024-05-12 02:56:20] INFO root fetch - main [MainThread]: Store serial: [23165876]
+[2024-05-12 02:58:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165876]
+[2024-05-12 02:58:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 02:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mtok
+[2024-05-12 02:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tossnturn
+[2024-05-12 02:58:29] INFO root fetch - processPackages [mtok]: New version: [5.0.0] Old Version: [4.3.0]
+[2024-05-12 02:58:29] INFO root fetch - processPackages [tossnturn]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 02:58:29] INFO root fetch - processPackages [tossnturn]: Downloading https://files.pythonhosted.org/packages/31/19/fab1e8e6359e0ae35f3409433cfb481e7f8c43e80344539e2f612e908636/tossnturn-0.1.1.tar.gz
+[2024-05-12 02:58:29] INFO root fetch - processPackages [mtok]: Downloading https://files.pythonhosted.org/packages/12/45/3af6e67b9d1537c0779c8aa721f0ec32fddc80d15a907e07402e79ccc618/mtok-4.3.0.tar.gz
+[2024-05-12 02:58:29] INFO root fetch - processPackages [tossnturn]: Downloading https://files.pythonhosted.org/packages/f6/e6/7ab445dbb4357c61750825f7550baedc667664224132ebe64b27b7ba2df8/tossnturn-0.1.2.tar.gz
+[2024-05-12 02:58:29] INFO root fetch - processPackages [mtok]: Downloading https://files.pythonhosted.org/packages/a9/a2/4fbe5b9d522e917cdac052c3e0ea2d4f9c244722b80c3c40b2b5912ddca7/mtok-5.0.0.tar.gz
+[2024-05-12 02:58:30] INFO root fetch - processPackages [mtok]: executing diffoscope
+[2024-05-12 02:58:30] INFO root fetch - processPackages [mtok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtok-4.3.0.tar.gz tmp/mtok-5.0.0.tar.gz --markdown 20240512/m/mtok/4.3.0-5.0.0/README.md --exclude *.pyd
+[2024-05-12 02:58:30] INFO root fetch - processPackages [tossnturn]: executing diffoscope
+[2024-05-12 02:58:30] INFO root fetch - processPackages [tossnturn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tossnturn-0.1.1.tar.gz tmp/tossnturn-0.1.2.tar.gz --markdown 20240512/t/tossnturn/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 02:58:30] INFO root fetch - processPackages [mtok]: Remove: archive file [/home/abi/fetcher/tmp/mtok-4.3.0.tar.gz]
+[2024-05-12 02:58:30] INFO root fetch - processPackages [mtok]: Remove: archive file [/home/abi/fetcher/tmp/mtok-5.0.0.tar.gz]
+[2024-05-12 02:58:30] INFO root fetch - main [MainThread]: End processing [mtok]: success
+[2024-05-12 02:58:30] INFO root fetch - processPackages [tossnturn]: Remove: archive file [/home/abi/fetcher/tmp/tossnturn-0.1.1.tar.gz]
+[2024-05-12 02:58:30] INFO root fetch - processPackages [tossnturn]: Remove: archive file [/home/abi/fetcher/tmp/tossnturn-0.1.2.tar.gz]
+[2024-05-12 02:58:30] INFO root fetch - main [MainThread]: End processing [tossnturn]: success
+[2024-05-12 02:58:30] INFO root fetch - main [MainThread]: Store serial: [23165885]
