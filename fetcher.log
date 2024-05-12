@@ -6818,3 +6818,30 @@
 [2024-05-12 10:15:01] INFO root fetch - processPackages [fgo-api-types]: Remove: archive file [/home/abi/fetcher/tmp/fgo_api_types-2024.5.2.2.18.47.tar.gz]
 [2024-05-12 10:15:01] INFO root fetch - main [MainThread]: End processing [fgo-api-types]: success
 [2024-05-12 10:15:01] INFO root fetch - main [MainThread]: Store serial: [23168055]
+[2024-05-12 10:17:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168055]
+[2024-05-12 10:17:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 10:17:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: location-local
+[2024-05-12 10:17:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yefpy-uwine
+[2024-05-12 10:17:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-admin-daterange-listfilter
+[2024-05-12 10:17:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jeedomdaemon
+[2024-05-12 10:17:10] INFO root fetch - processPackages [location-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-12 10:17:10] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/9c/f2/fcc760989d48c5e33cbe7c435b39b0a9e8eba895ccbf5832a8b83178d5ab/location_local-0.0.98.tar.gz
+[2024-05-12 10:17:10] INFO root fetch - processPackages [jeedomdaemon]: New version: [0.8.6] Old Version: [0.8.5]
+[2024-05-12 10:17:10] WARNING root fetch - processPackages [yefpy-uwine]: Skipping, unable to determine old version
+[2024-05-12 10:17:10] INFO root fetch - main [MainThread]: End processing [yefpy-uwine] error
+[2024-05-12 10:17:10] WARNING root fetch - processPackages [django-admin-daterange-listfilter]: Skipping, unable to determine old version
+[2024-05-12 10:17:10] INFO root fetch - main [MainThread]: End processing [django-admin-daterange-listfilter] error
+[2024-05-12 10:17:10] INFO root fetch - processPackages [jeedomdaemon]: Downloading https://files.pythonhosted.org/packages/4e/df/f5fb78d62f054b15444ec9500369da8484c93ec310071f76dc8734515757/jeedomdaemon-0.8.5.tar.gz
+[2024-05-12 10:17:10] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/2e/1e/2a1e6264292214bc558e1230d4660d51bbe681d2921a250cb4f94052fc9e/location_local-0.0.99.tar.gz
+[2024-05-12 10:17:10] INFO root fetch - processPackages [location-local]: executing diffoscope
+[2024-05-12 10:17:10] INFO root fetch - processPackages [location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/location_local-0.0.98.tar.gz tmp/location_local-0.0.99.tar.gz --markdown 20240512/l/location-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-12 10:17:10] INFO root fetch - processPackages [jeedomdaemon]: Downloading https://files.pythonhosted.org/packages/7e/f4/dd6fee3df96cfba2612d62f706af9171d45cf45f43101bc5345dae59c4dd/jeedomdaemon-0.8.6.tar.gz
+[2024-05-12 10:17:10] INFO root fetch - processPackages [jeedomdaemon]: executing diffoscope
+[2024-05-12 10:17:10] INFO root fetch - processPackages [jeedomdaemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jeedomdaemon-0.8.5.tar.gz tmp/jeedomdaemon-0.8.6.tar.gz --markdown 20240512/j/jeedomdaemon/0.8.5-0.8.6/README.md --exclude *.pyd
+[2024-05-12 10:17:11] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.98.tar.gz]
+[2024-05-12 10:17:11] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.99.tar.gz]
+[2024-05-12 10:17:11] INFO root fetch - main [MainThread]: End processing [location-local]: success
+[2024-05-12 10:17:11] INFO root fetch - processPackages [jeedomdaemon]: Remove: archive file [/home/abi/fetcher/tmp/jeedomdaemon-0.8.5.tar.gz]
+[2024-05-12 10:17:11] INFO root fetch - processPackages [jeedomdaemon]: Remove: archive file [/home/abi/fetcher/tmp/jeedomdaemon-0.8.6.tar.gz]
+[2024-05-12 10:17:11] INFO root fetch - main [MainThread]: End processing [jeedomdaemon]: success
+[2024-05-12 10:17:11] INFO root fetch - main [MainThread]: Store serial: [23168072]
