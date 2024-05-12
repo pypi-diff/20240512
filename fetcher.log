@@ -3685,3 +3685,27 @@
 [2024-05-12 05:17:12] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
 [2024-05-12 05:17:12] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
 [2024-05-12 05:17:12] INFO root fetch - main [MainThread]: Store serial: [23166610]
+[2024-05-12 05:19:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166610]
+[2024-05-12 05:19:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 05:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autoanki
+[2024-05-12 05:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aeolididaez
+[2024-05-12 05:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tileget
+[2024-05-12 05:19:21] INFO root fetch - processPackages [tileget]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-05-12 05:19:21] WARNING root fetch - processPackages [aeolididaez]: Skipping, unable to determine old version
+[2024-05-12 05:19:21] INFO root fetch - main [MainThread]: End processing [aeolididaez] error
+[2024-05-12 05:19:21] INFO root fetch - processPackages [autoanki]: New version: [1.1.91] Old Version: [1.1.9]
+[2024-05-12 05:19:21] INFO root fetch - processPackages [tileget]: Downloading https://files.pythonhosted.org/packages/db/3c/4807581c2b46cbe2d861c91dae6c9f22c98867689c1ab7458562dadcd258/tileget-0.3.1.tar.gz
+[2024-05-12 05:19:21] INFO root fetch - processPackages [autoanki]: Downloading https://files.pythonhosted.org/packages/df/3d/1fc62d69aa710156222cc572201e3f224dd580c98c0fef9bf3163b12acb5/autoanki-1.1.9.tar.gz
+[2024-05-12 05:19:21] INFO root fetch - processPackages [tileget]: Downloading https://files.pythonhosted.org/packages/1f/ef/00c8e4206c0d28094f27b65e188614ec2042a1eb26b745dcd6d74df72099/tileget-0.4.0.tar.gz
+[2024-05-12 05:19:21] INFO root fetch - processPackages [tileget]: executing diffoscope
+[2024-05-12 05:19:21] INFO root fetch - processPackages [tileget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tileget-0.3.1.tar.gz tmp/tileget-0.4.0.tar.gz --markdown 20240512/t/tileget/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-05-12 05:19:21] INFO root fetch - processPackages [autoanki]: Downloading https://files.pythonhosted.org/packages/86/ec/d876de5d7ae1bd374db110c9b9d9a8f35df060be9419b0168e83816bff9d/autoanki-1.1.91.tar.gz
+[2024-05-12 05:19:22] INFO root fetch - processPackages [autoanki]: executing diffoscope
+[2024-05-12 05:19:22] INFO root fetch - processPackages [autoanki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoanki-1.1.9.tar.gz tmp/autoanki-1.1.91.tar.gz --markdown 20240512/a/autoanki/1.1.9-1.1.91/README.md --exclude *.pyd
+[2024-05-12 05:19:22] INFO root fetch - processPackages [tileget]: Remove: archive file [/home/abi/fetcher/tmp/tileget-0.3.1.tar.gz]
+[2024-05-12 05:19:22] INFO root fetch - processPackages [tileget]: Remove: archive file [/home/abi/fetcher/tmp/tileget-0.4.0.tar.gz]
+[2024-05-12 05:19:22] INFO root fetch - main [MainThread]: End processing [tileget]: success
+[2024-05-12 05:19:23] INFO root fetch - processPackages [autoanki]: Remove: archive file [/home/abi/fetcher/tmp/autoanki-1.1.9.tar.gz]
+[2024-05-12 05:19:23] INFO root fetch - processPackages [autoanki]: Remove: archive file [/home/abi/fetcher/tmp/autoanki-1.1.91.tar.gz]
+[2024-05-12 05:19:23] INFO root fetch - main [MainThread]: End processing [autoanki]: success
+[2024-05-12 05:19:23] INFO root fetch - main [MainThread]: Store serial: [23166626]
