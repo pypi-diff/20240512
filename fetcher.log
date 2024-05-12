@@ -10380,3 +10380,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:45:25] INFO root fetch - processPackages [django-static-ionicons]: Remove: archive file [/home/abi/fetcher/tmp/django-static-ionicons-2.0.1.5.tar.gz]
 [2024-05-12 14:45:25] INFO root fetch - main [MainThread]: End processing [django-static-ionicons]: success
 [2024-05-12 14:45:25] INFO root fetch - main [MainThread]: Store serial: [23169921]
+[2024-05-12 14:47:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169921]
+[2024-05-12 14:47:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 14:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kifsz
+[2024-05-12 14:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rococo
+[2024-05-12 14:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: portfolio-tracker
+[2024-05-12 14:47:33] INFO root fetch - processPackages [portfolio-tracker]: New version: [0.1.2.3] Old Version: [0.1.2.2]
+[2024-05-12 14:47:33] INFO root fetch - processPackages [portfolio-tracker]: Downloading https://files.pythonhosted.org/packages/41/7e/fa5814ab031935031f77d4180a1e2d6b4a6af6302508a706b97fdcf2be06/portfolio_tracker-0.1.2.2.tar.gz
+[2024-05-12 14:47:33] WARNING root fetch - processPackages [kifsz]: Skipping, unable to determine old version
+[2024-05-12 14:47:33] INFO root fetch - main [MainThread]: End processing [kifsz] error
+[2024-05-12 14:47:33] INFO root fetch - processPackages [rococo]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-12 14:47:34] INFO root fetch - processPackages [rococo]: Downloading https://files.pythonhosted.org/packages/94/76/11b3b064f1fbeb81c9bd2837214abd8f6f61cd7c1c8937c31db41c06062d/rococo-1.0.8.tar.gz
+[2024-05-12 14:47:34] INFO root fetch - processPackages [portfolio-tracker]: Downloading https://files.pythonhosted.org/packages/67/a2/9a51a6c2f86b3e176695444be188a52fffc80367527462b75e74f53535e0/portfolio_tracker-0.1.2.3.tar.gz
+[2024-05-12 14:47:34] INFO root fetch - processPackages [portfolio-tracker]: executing diffoscope
+[2024-05-12 14:47:34] INFO root fetch - processPackages [portfolio-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portfolio_tracker-0.1.2.2.tar.gz tmp/portfolio_tracker-0.1.2.3.tar.gz --markdown 20240512/p/portfolio-tracker/0.1.2.2-0.1.2.3/README.md --exclude *.pyd
+[2024-05-12 14:47:34] INFO root fetch - processPackages [rococo]: Downloading https://files.pythonhosted.org/packages/ba/71/997ca9a3bfd8c8a2c95ec6995b786e36a8b3c882060cfe5fd0f0bf7bb874/rococo-1.0.9.tar.gz
+[2024-05-12 14:47:34] INFO root fetch - processPackages [rococo]: executing diffoscope
+[2024-05-12 14:47:34] INFO root fetch - processPackages [rococo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rococo-1.0.8.tar.gz tmp/rococo-1.0.9.tar.gz --markdown 20240512/r/rococo/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-12 14:47:34] INFO root fetch - processPackages [portfolio-tracker]: Remove: archive file [/home/abi/fetcher/tmp/portfolio_tracker-0.1.2.2.tar.gz]
+[2024-05-12 14:47:34] INFO root fetch - processPackages [portfolio-tracker]: Remove: archive file [/home/abi/fetcher/tmp/portfolio_tracker-0.1.2.3.tar.gz]
+[2024-05-12 14:47:34] INFO root fetch - main [MainThread]: End processing [portfolio-tracker]: success
+[2024-05-12 14:47:35] INFO root fetch - processPackages [rococo]: Remove: archive file [/home/abi/fetcher/tmp/rococo-1.0.8.tar.gz]
+[2024-05-12 14:47:35] INFO root fetch - processPackages [rococo]: Remove: archive file [/home/abi/fetcher/tmp/rococo-1.0.9.tar.gz]
+[2024-05-12 14:47:35] INFO root fetch - main [MainThread]: End processing [rococo]: success
+[2024-05-12 14:47:35] INFO root fetch - main [MainThread]: Store serial: [23169932]
