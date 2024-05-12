@@ -4815,3 +4815,9 @@
 [2024-05-12 07:26:22] WARNING root fetch - processPackages [saprolegniaceaez]: Skipping, unable to determine old version
 [2024-05-12 07:26:22] INFO root fetch - main [MainThread]: End processing [saprolegniaceaez] error
 [2024-05-12 07:26:22] INFO root fetch - main [MainThread]: Store serial: [23167237]
+[2024-05-12 07:28:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167237]
+[2024-05-12 07:28:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 07:28:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-partner-country-lang
+[2024-05-12 07:28:30] WARNING root fetch - processPackages [odoo14-addon-partner-country-lang]: Skipping, unable to determine old version
+[2024-05-12 07:28:30] INFO root fetch - main [MainThread]: End processing [odoo14-addon-partner-country-lang] error
+[2024-05-12 07:28:30] INFO root fetch - main [MainThread]: Store serial: [23167239]
