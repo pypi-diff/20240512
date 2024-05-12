@@ -7705,3 +7705,42 @@
 [2024-05-12 11:33:04] INFO root fetch - processPackages [geney]: Remove: archive file [/home/abi/fetcher/tmp/geney-1.0.9-py2.py3-none-any.whl.zip]
 [2024-05-12 11:33:04] INFO root fetch - main [MainThread]: End processing [geney]: success
 [2024-05-12 11:33:04] INFO root fetch - main [MainThread]: Store serial: [23168502]
+[2024-05-12 11:35:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168502]
+[2024-05-12 11:35:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 11:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xuance
+[2024-05-12 11:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: contact-location-local
+[2024-05-12 11:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PySingBoxConverter
+[2024-05-12 11:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wlkata-mirobot-Virtual
+[2024-05-12 11:35:12] INFO root fetch - processPackages [wlkata-mirobot-Virtual]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-05-12 11:35:12] INFO root fetch - processPackages [contact-location-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 11:35:12] INFO root fetch - processPackages [xuance]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-12 11:35:12] INFO root fetch - processPackages [PySingBoxConverter]: New version: [0.5.0.dev0] Old Version: [0.4.4.dev0]
+[2024-05-12 11:35:12] INFO root fetch - processPackages [wlkata-mirobot-Virtual]: Downloading https://files.pythonhosted.org/packages/4c/98/a5492612fab72cfe7af8a2e3ee43b2f903e5fe6e29af3129709a4790cc38/wlkata_mirobot_Virtual-1.0.1.tar.gz
+[2024-05-12 11:35:13] INFO root fetch - processPackages [contact-location-local]: Downloading https://files.pythonhosted.org/packages/2f/0c/a80370d5a9bb7d4535cdfd68c9e49af2fc39ef7974e7a123bd9fcc9ad854/contact-location-local-0.0.8.tar.gz
+[2024-05-12 11:35:13] INFO root fetch - processPackages [xuance]: Downloading https://files.pythonhosted.org/packages/6a/63/c20e9bf4903e5430eb254bc3ac5b1d4c4da4dd28a964ab33dba2bacbd895/xuance-1.1.0.tar.gz
+[2024-05-12 11:35:13] INFO root fetch - processPackages [PySingBoxConverter]: Downloading https://files.pythonhosted.org/packages/50/24/e5adbe6a3570d0a1157745b0681bc2030d253d2563489be5e3d23605c3cb/PySingBoxConverter-0.4.4.dev0.tar.gz
+[2024-05-12 11:35:13] INFO root fetch - processPackages [wlkata-mirobot-Virtual]: Downloading https://files.pythonhosted.org/packages/cd/f4/b8652bc0b9c06eb2771d23fdfd14030eab532416f827de149ea5b78c0b0a/wlkata_mirobot_Virtual-1.1.0.tar.gz
+[2024-05-12 11:35:13] INFO root fetch - processPackages [contact-location-local]: Downloading https://files.pythonhosted.org/packages/17/5e/49b98779429d62238b93acafaaf4d268506159b2d1d0246a13b4e42b474d/contact-location-local-0.0.9.tar.gz
+[2024-05-12 11:35:13] INFO root fetch - processPackages [wlkata-mirobot-Virtual]: executing diffoscope
+[2024-05-12 11:35:13] INFO root fetch - processPackages [wlkata-mirobot-Virtual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wlkata_mirobot_Virtual-1.0.1.tar.gz tmp/wlkata_mirobot_Virtual-1.1.0.tar.gz --markdown 20240512/w/wlkata-mirobot-Virtual/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-05-12 11:35:13] INFO root fetch - processPackages [PySingBoxConverter]: Downloading https://files.pythonhosted.org/packages/79/80/8f4780e1a065d94d94b4cb333215031f78a85ac3a20cce9991de045a2b2e/pysingboxconverter-0.5.0.dev0.tar.gz
+[2024-05-12 11:35:13] INFO root fetch - processPackages [contact-location-local]: executing diffoscope
+[2024-05-12 11:35:13] INFO root fetch - processPackages [contact-location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-location-local-0.0.8.tar.gz tmp/contact-location-local-0.0.9.tar.gz --markdown 20240512/c/contact-location-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 11:35:13] INFO root fetch - processPackages [xuance]: Downloading https://files.pythonhosted.org/packages/5d/96/62c6f94a784fa57326a7eabc4d4420c4d2ed529b372bf7d2b3d60f55b34c/xuance-1.1.1.tar.gz
+[2024-05-12 11:35:13] INFO root fetch - processPackages [PySingBoxConverter]: executing diffoscope
+[2024-05-12 11:35:13] INFO root fetch - processPackages [PySingBoxConverter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySingBoxConverter-0.4.4.dev0.tar.gz tmp/pysingboxconverter-0.5.0.dev0.tar.gz --markdown 20240512/P/PySingBoxConverter/0.4.4.dev0-0.5.0.dev0/README.md --exclude *.pyd
+[2024-05-12 11:35:13] INFO root fetch - processPackages [xuance]: executing diffoscope
+[2024-05-12 11:35:13] INFO root fetch - processPackages [xuance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xuance-1.1.0.tar.gz tmp/xuance-1.1.1.tar.gz --markdown 20240512/x/xuance/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-12 11:35:13] INFO root fetch - processPackages [wlkata-mirobot-Virtual]: Remove: archive file [/home/abi/fetcher/tmp/wlkata_mirobot_Virtual-1.0.1.tar.gz]
+[2024-05-12 11:35:13] INFO root fetch - processPackages [wlkata-mirobot-Virtual]: Remove: archive file [/home/abi/fetcher/tmp/wlkata_mirobot_Virtual-1.1.0.tar.gz]
+[2024-05-12 11:35:13] INFO root fetch - main [MainThread]: End processing [wlkata-mirobot-Virtual]: success
+[2024-05-12 11:35:14] INFO root fetch - processPackages [contact-location-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-location-local-0.0.8.tar.gz]
+[2024-05-12 11:35:14] INFO root fetch - processPackages [contact-location-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-location-local-0.0.9.tar.gz]
+[2024-05-12 11:35:14] INFO root fetch - main [MainThread]: End processing [contact-location-local]: success
+[2024-05-12 11:35:14] INFO root fetch - processPackages [PySingBoxConverter]: Remove: archive file [/home/abi/fetcher/tmp/PySingBoxConverter-0.4.4.dev0.tar.gz]
+[2024-05-12 11:35:14] INFO root fetch - processPackages [PySingBoxConverter]: Remove: archive file [/home/abi/fetcher/tmp/pysingboxconverter-0.5.0.dev0.tar.gz]
+[2024-05-12 11:35:14] INFO root fetch - main [MainThread]: End processing [PySingBoxConverter]: success
+[2024-05-12 11:35:17] INFO root fetch - processPackages [xuance]: Remove: archive file [/home/abi/fetcher/tmp/xuance-1.1.0.tar.gz]
+[2024-05-12 11:35:17] INFO root fetch - processPackages [xuance]: Remove: archive file [/home/abi/fetcher/tmp/xuance-1.1.1.tar.gz]
+[2024-05-12 11:35:17] INFO root fetch - main [MainThread]: End processing [xuance]: success
+[2024-05-12 11:35:17] INFO root fetch - main [MainThread]: Store serial: [23168513]
