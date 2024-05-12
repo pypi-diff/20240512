@@ -9435,3 +9435,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:40:36] WARNING root fetch - processPackages [inventing-machine]: Skipping, unable to determine old version
 [2024-05-12 13:40:36] INFO root fetch - main [MainThread]: End processing [inventing-machine] error
 [2024-05-12 13:40:36] INFO root fetch - main [MainThread]: Store serial: [23169487]
+[2024-05-12 13:42:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169487]
+[2024-05-12 13:42:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 13:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HueBLE
+[2024-05-12 13:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wxhook
+[2024-05-12 13:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kurumii
+[2024-05-12 13:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gravitino
+[2024-05-12 13:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jwt-tui
+[2024-05-12 13:42:45] INFO root fetch - processPackages [gravitino]: New version: [0.5.0.dev9] Old Version: [0.5.0.dev8]
+[2024-05-12 13:42:45] INFO root fetch - processPackages [kurumii]: New version: [1.4.8.3] Old Version: [1.4.8.2]
+[2024-05-12 13:42:45] INFO root fetch - processPackages [kurumii]: Downloading https://files.pythonhosted.org/packages/9d/a9/4f7c25aa806e7a0b0e1ab2bf985ac646a454a11627ef3be23e109cfa0431/kurumii-1.4.8.2.tar.gz
+[2024-05-12 13:42:45] INFO root fetch - processPackages [gravitino]: Downloading https://files.pythonhosted.org/packages/3d/85/878578ad4d8b98119f69ca1e7deb2e76553f9e23fb835b841820cd5c3dd7/gravitino-0.5.0.dev8.tar.gz
+[2024-05-12 13:42:45] WARNING root fetch - processPackages [jwt-tui]: Skipping, unable to determine old version
+[2024-05-12 13:42:45] INFO root fetch - main [MainThread]: End processing [jwt-tui] error
+[2024-05-12 13:42:45] INFO root fetch - processPackages [HueBLE]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-12 13:42:45] INFO root fetch - processPackages [wxhook]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 13:42:46] INFO root fetch - processPackages [wxhook]: Downloading https://files.pythonhosted.org/packages/7b/65/d9ef70a36c382c4265e3a93c13f4ed5de76034e979e089b8ef19e016a87d/wxhook-0.0.8.tar.gz
+[2024-05-12 13:42:46] INFO root fetch - processPackages [HueBLE]: Downloading https://files.pythonhosted.org/packages/15/b9/ba2119658d6dcf0069204e394b2e6de38e930f5bef8b2e53dc7fac300f4f/hueble-1.0.1.tar.gz
+[2024-05-12 13:42:46] INFO root fetch - processPackages [kurumii]: Downloading https://files.pythonhosted.org/packages/40/b0/b19176bc615bdedbc193290f4ec8a992085af7cbd47d99bdafda7c8a54bd/kurumii-1.4.8.3.tar.gz
+[2024-05-12 13:42:46] INFO root fetch - processPackages [gravitino]: Downloading https://files.pythonhosted.org/packages/6a/e3/899a6ec3ed516c98e40aff8a8cfc16b384a0364ddda7c956c5bca1101b6d/gravitino-0.5.0.dev9.tar.gz
+[2024-05-12 13:42:46] INFO root fetch - processPackages [kurumii]: executing diffoscope
+[2024-05-12 13:42:46] INFO root fetch - processPackages [kurumii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kurumii-1.4.8.2.tar.gz tmp/kurumii-1.4.8.3.tar.gz --markdown 20240512/k/kurumii/1.4.8.2-1.4.8.3/README.md --exclude *.pyd
+[2024-05-12 13:42:46] INFO root fetch - processPackages [gravitino]: executing diffoscope
+[2024-05-12 13:42:46] INFO root fetch - processPackages [gravitino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitino-0.5.0.dev8.tar.gz tmp/gravitino-0.5.0.dev9.tar.gz --markdown 20240512/g/gravitino/0.5.0.dev8-0.5.0.dev9/README.md --exclude *.pyd
+[2024-05-12 13:42:46] INFO root fetch - processPackages [HueBLE]: Downloading https://files.pythonhosted.org/packages/72/97/6bb3beda68b09632a666f566d27695a87ab71cdcc47524ad0d3a5f00b2bb/hueble-1.0.2.tar.gz
+[2024-05-12 13:42:46] INFO root fetch - processPackages [wxhook]: Downloading https://files.pythonhosted.org/packages/17/5c/a9ff0e80c475e54b6a76923e20f58e555ebbb84b2c3f9f3a048237484fc5/wxhook-0.0.9.tar.gz
+[2024-05-12 13:42:46] INFO root fetch - processPackages [HueBLE]: executing diffoscope
+[2024-05-12 13:42:46] INFO root fetch - processPackages [HueBLE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hueble-1.0.1.tar.gz tmp/hueble-1.0.2.tar.gz --markdown 20240512/H/HueBLE/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-12 13:42:46] INFO root fetch - processPackages [wxhook]: executing diffoscope
+[2024-05-12 13:42:46] INFO root fetch - processPackages [wxhook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wxhook-0.0.8.tar.gz tmp/wxhook-0.0.9.tar.gz --markdown 20240512/w/wxhook/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 13:42:46] INFO root fetch - processPackages [kurumii]: Remove: archive file [/home/abi/fetcher/tmp/kurumii-1.4.8.2.tar.gz]
+[2024-05-12 13:42:46] INFO root fetch - processPackages [kurumii]: Remove: archive file [/home/abi/fetcher/tmp/kurumii-1.4.8.3.tar.gz]
+[2024-05-12 13:42:46] INFO root fetch - main [MainThread]: End processing [kurumii]: success
+[2024-05-12 13:42:46] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev8.tar.gz]
+[2024-05-12 13:42:46] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev9.tar.gz]
+[2024-05-12 13:42:46] INFO root fetch - main [MainThread]: End processing [gravitino]: success
+[2024-05-12 13:42:47] INFO root fetch - processPackages [HueBLE]: Remove: archive file [/home/abi/fetcher/tmp/hueble-1.0.1.tar.gz]
+[2024-05-12 13:42:47] INFO root fetch - processPackages [HueBLE]: Remove: archive file [/home/abi/fetcher/tmp/hueble-1.0.2.tar.gz]
+[2024-05-12 13:42:47] INFO root fetch - main [MainThread]: End processing [HueBLE]: success
+[2024-05-12 13:42:47] INFO root fetch - processPackages [wxhook]: Remove: archive file [/home/abi/fetcher/tmp/wxhook-0.0.8.tar.gz]
+[2024-05-12 13:42:47] INFO root fetch - processPackages [wxhook]: Remove: archive file [/home/abi/fetcher/tmp/wxhook-0.0.9.tar.gz]
+[2024-05-12 13:42:47] INFO root fetch - main [MainThread]: End processing [wxhook]: success
+[2024-05-12 13:42:47] INFO root fetch - main [MainThread]: Store serial: [23169502]
