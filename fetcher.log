@@ -8790,3 +8790,15 @@
 [2024-05-12 12:56:10] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.7.dev9.tar.gz]
 [2024-05-12 12:56:10] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-05-12 12:56:10] INFO root fetch - main [MainThread]: Store serial: [23169208]
+[2024-05-12 12:58:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169208]
+[2024-05-12 12:58:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 12:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kozmo-core
+[2024-05-12 12:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenaura
+[2024-05-12 12:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cryptoanalyticz
+[2024-05-12 12:58:19] WARNING root fetch - processPackages [zenaura]: Skipping, unable to determine old version
+[2024-05-12 12:58:19] INFO root fetch - main [MainThread]: End processing [zenaura] error
+[2024-05-12 12:58:19] WARNING root fetch - processPackages [kozmo-core]: Skipping, unable to determine old version
+[2024-05-12 12:58:19] INFO root fetch - main [MainThread]: End processing [kozmo-core] error
+[2024-05-12 12:58:19] WARNING root fetch - processPackages [cryptoanalyticz]: Skipping, unable to determine old version
+[2024-05-12 12:58:19] INFO root fetch - main [MainThread]: End processing [cryptoanalyticz] error
+[2024-05-12 12:58:19] INFO root fetch - main [MainThread]: Store serial: [23169219]
