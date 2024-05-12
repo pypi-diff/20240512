@@ -6360,3 +6360,57 @@
 [2024-05-12 09:30:28] INFO root fetch - processPackages [gpt-researcher]: Remove: archive file [/home/abi/fetcher/tmp/gpt-researcher-0.4.3.tar.gz]
 [2024-05-12 09:30:28] INFO root fetch - main [MainThread]: End processing [gpt-researcher]: success
 [2024-05-12 09:30:28] INFO root fetch - main [MainThread]: Store serial: [23167828]
+[2024-05-12 09:32:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167828]
+[2024-05-12 09:32:36] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 09:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: database-mysql-local
+[2024-05-12 09:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unitradeapi
+[2024-05-12 09:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CGenr
+[2024-05-12 09:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Shellper
+[2024-05-12 09:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rolabesti
+[2024-05-12 09:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: logzio-python-handler
+[2024-05-12 09:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: glitter-sdk
+[2024-05-12 09:32:37] WARNING root fetch - processPackages [CGenr]: Skipping, unable to determine old version
+[2024-05-12 09:32:37] INFO root fetch - main [MainThread]: End processing [CGenr] error
+[2024-05-12 09:32:37] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.294] Old Version: [0.0.293]
+[2024-05-12 09:32:37] WARNING root fetch - processPackages [Shellper]: Skipping, unable to determine old version
+[2024-05-12 09:32:37] INFO root fetch - main [MainThread]: End processing [Shellper] error
+[2024-05-12 09:32:37] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/ea/4d/10e782f88ad8a634a9e591abf43cad5c8e0ee9666ce232312cdb5e88525b/database_mysql_local-0.0.293.tar.gz
+[2024-05-12 09:32:37] INFO root fetch - processPackages [rolabesti]: New version: [0.6.0] Old Version: [0.5.3]
+[2024-05-12 09:32:37] INFO root fetch - processPackages [logzio-python-handler]: New version: [4.1.3] Old Version: [4.1.2]
+[2024-05-12 09:32:37] INFO root fetch - processPackages [unitradeapi]: New version: [0.124] Old Version: [0.123]
+[2024-05-12 09:32:37] INFO root fetch - processPackages [glitter-sdk]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-12 09:32:37] INFO root fetch - processPackages [logzio-python-handler]: Downloading https://files.pythonhosted.org/packages/6f/2f/468d1af89c599eef920e0c36f8f51c4b252ccb005222cb753522af7de786/logzio-python-handler-4.1.2.tar.gz
+[2024-05-12 09:32:37] INFO root fetch - processPackages [unitradeapi]: Downloading https://files.pythonhosted.org/packages/14/d4/eff9a0103ea86d259e7dfbcbca9e1cdc29e8864d3b08b877d100e0b10412/unitradeapi-0.123.tar.gz
+[2024-05-12 09:32:37] INFO root fetch - processPackages [rolabesti]: Downloading https://files.pythonhosted.org/packages/b9/d5/9f2943daa28f3fd180dd9a2a39b0b31354e69ec3d6ba114cd64f106e86ef/rolabesti-0.5.3.tar.gz
+[2024-05-12 09:32:37] INFO root fetch - processPackages [glitter-sdk]: Downloading https://files.pythonhosted.org/packages/b7/87/0d55e78452f1c974b4b25f159725cb1a14e62afbe17d7ce511414f6acd52/glitter_sdk-1.0.5.tar.gz
+[2024-05-12 09:32:37] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/dd/1a/43be4e7fe62e0133936de738e7262495d2554bc037fd9ecc5f49eaf3ed32/database_mysql_local-0.0.294.tar.gz
+[2024-05-12 09:32:37] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-12 09:32:37] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.293.tar.gz tmp/database_mysql_local-0.0.294.tar.gz --markdown 20240512/d/database-mysql-local/0.0.293-0.0.294/README.md --exclude *.pyd
+[2024-05-12 09:32:37] INFO root fetch - processPackages [logzio-python-handler]: Downloading https://files.pythonhosted.org/packages/c5/ad/c8e5c34a17a9f60788957487604b350c2da260cd70c2579253b6909fa551/logzio_python_handler-4.1.3.tar.gz
+[2024-05-12 09:32:37] INFO root fetch - processPackages [unitradeapi]: Downloading https://files.pythonhosted.org/packages/de/c1/79a4c1ea0b27f85b91d1c0f6a547c159929e1bee401aa7dcdde662800602/unitradeapi-0.124.tar.gz
+[2024-05-12 09:32:37] INFO root fetch - processPackages [rolabesti]: Downloading https://files.pythonhosted.org/packages/a7/80/b21892503ce3b98c192c03cb0805aa0ce0082b6044ae4bd7a1b73e25d07c/rolabesti-0.6.0.tar.gz
+[2024-05-12 09:32:37] INFO root fetch - processPackages [logzio-python-handler]: executing diffoscope
+[2024-05-12 09:32:37] INFO root fetch - processPackages [logzio-python-handler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logzio-python-handler-4.1.2.tar.gz tmp/logzio_python_handler-4.1.3.tar.gz --markdown 20240512/l/logzio-python-handler/4.1.2-4.1.3/README.md --exclude *.pyd
+[2024-05-12 09:32:37] INFO root fetch - processPackages [unitradeapi]: executing diffoscope
+[2024-05-12 09:32:37] INFO root fetch - processPackages [unitradeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unitradeapi-0.123.tar.gz tmp/unitradeapi-0.124.tar.gz --markdown 20240512/u/unitradeapi/0.123-0.124/README.md --exclude *.pyd
+[2024-05-12 09:32:37] INFO root fetch - processPackages [glitter-sdk]: Downloading https://files.pythonhosted.org/packages/ba/a2/5a24edb45c25e62f5b31645f5dc58430d5744d08e3b00802f94293e3e0c0/glitter_sdk-1.0.6.tar.gz
+[2024-05-12 09:32:37] INFO root fetch - processPackages [rolabesti]: executing diffoscope
+[2024-05-12 09:32:37] INFO root fetch - processPackages [rolabesti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rolabesti-0.5.3.tar.gz tmp/rolabesti-0.6.0.tar.gz --markdown 20240512/r/rolabesti/0.5.3-0.6.0/README.md --exclude *.pyd
+[2024-05-12 09:32:38] INFO root fetch - processPackages [glitter-sdk]: executing diffoscope
+[2024-05-12 09:32:38] INFO root fetch - processPackages [glitter-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glitter_sdk-1.0.5.tar.gz tmp/glitter_sdk-1.0.6.tar.gz --markdown 20240512/g/glitter-sdk/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-12 09:32:38] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.293.tar.gz]
+[2024-05-12 09:32:38] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.294.tar.gz]
+[2024-05-12 09:32:38] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-12 09:32:38] INFO root fetch - processPackages [unitradeapi]: Remove: archive file [/home/abi/fetcher/tmp/unitradeapi-0.123.tar.gz]
+[2024-05-12 09:32:38] INFO root fetch - processPackages [unitradeapi]: Remove: archive file [/home/abi/fetcher/tmp/unitradeapi-0.124.tar.gz]
+[2024-05-12 09:32:38] INFO root fetch - main [MainThread]: End processing [unitradeapi]: success
+[2024-05-12 09:32:38] INFO root fetch - processPackages [rolabesti]: Remove: archive file [/home/abi/fetcher/tmp/rolabesti-0.5.3.tar.gz]
+[2024-05-12 09:32:38] INFO root fetch - processPackages [rolabesti]: Remove: archive file [/home/abi/fetcher/tmp/rolabesti-0.6.0.tar.gz]
+[2024-05-12 09:32:38] INFO root fetch - main [MainThread]: End processing [rolabesti]: success
+[2024-05-12 09:32:38] INFO root fetch - processPackages [logzio-python-handler]: Remove: archive file [/home/abi/fetcher/tmp/logzio-python-handler-4.1.2.tar.gz]
+[2024-05-12 09:32:38] INFO root fetch - processPackages [logzio-python-handler]: Remove: archive file [/home/abi/fetcher/tmp/logzio_python_handler-4.1.3.tar.gz]
+[2024-05-12 09:32:38] INFO root fetch - main [MainThread]: End processing [logzio-python-handler]: success
+[2024-05-12 09:32:38] INFO root fetch - processPackages [glitter-sdk]: Remove: archive file [/home/abi/fetcher/tmp/glitter_sdk-1.0.5.tar.gz]
+[2024-05-12 09:32:38] INFO root fetch - processPackages [glitter-sdk]: Remove: archive file [/home/abi/fetcher/tmp/glitter_sdk-1.0.6.tar.gz]
+[2024-05-12 09:32:38] INFO root fetch - main [MainThread]: End processing [glitter-sdk]: success
+[2024-05-12 09:32:38] INFO root fetch - main [MainThread]: Store serial: [23167848]
