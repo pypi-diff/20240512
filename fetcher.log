@@ -12621,3 +12621,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:25:34] INFO root fetch - processPackages [borneo-python-client]: Remove: archive file [/home/abi/fetcher/tmp/borneo_python_client-3.10.2.tar.gz]
 [2024-05-12 17:25:34] INFO root fetch - main [MainThread]: End processing [borneo-python-client]: success
 [2024-05-12 17:25:34] INFO root fetch - main [MainThread]: Store serial: [23171222]
+[2024-05-12 17:27:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171222]
+[2024-05-12 17:27:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 17:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-bench
+[2024-05-12 17:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zibuyu-LLM
+[2024-05-12 17:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tschernosemz
+[2024-05-12 17:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sapiopycommons
+[2024-05-12 17:27:43] INFO root fetch - processPackages [llm-bench]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-12 17:27:43] INFO root fetch - processPackages [zibuyu-LLM]: New version: [0.1.9] Old Version: [0.1.13]
+[2024-05-12 17:27:44] WARNING root fetch - processPackages [tschernosemz]: Skipping, unable to determine old version
+[2024-05-12 17:27:44] INFO root fetch - main [MainThread]: End processing [tschernosemz] error
+[2024-05-12 17:27:44] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/e4/1e/96e8e21a12cce6b75d40ef58ee187c01da8c44ea854f32fe4678648dcb90/llm_bench-0.4.8.tar.gz
+[2024-05-12 17:27:44] INFO root fetch - processPackages [sapiopycommons]: New version: [31.3.0.23.12.3] Old Version: [31.2.0.23.12.3]
+[2024-05-12 17:27:44] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/aa/f5/ea38e39d68879de406e1a22b53867f04cfe12ff44924327c919ee3f01a0a/zibuyu_LLM-0.1.13-py3-none-any.whl
+[2024-05-12 17:27:44] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/e4/75/2d98ade554705da63eb2766a12984f3f6fc8b6925b37f796ffa48846b3ef/llm_bench-0.4.9.tar.gz
+[2024-05-12 17:27:44] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/bb/8e/ffbfcdcdcdef085f3c02a0c0361d5f2b5c73f377a58d5055485920fd480d/sapiopycommons-31.2.0.23.12.3.tar.gz
+[2024-05-12 17:27:44] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/8b/1d/73751ba8bfaf5b2eb71d0251541264c73d9b0da5c2d08f0111dbee0978db/zibuyu_LLM-0.1.9-py3-none-any.whl
+[2024-05-12 17:27:44] INFO root fetch - processPackages [llm-bench]: executing diffoscope
+[2024-05-12 17:27:44] INFO root fetch - processPackages [llm-bench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_bench-0.4.8.tar.gz tmp/llm_bench-0.4.9.tar.gz --markdown 20240512/l/llm-bench/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-12 17:27:44] INFO root fetch - processPackages [zibuyu-LLM]: executing diffoscope
+[2024-05-12 17:27:44] INFO root fetch - processPackages [zibuyu-LLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibuyu_LLM-0.1.13-py3-none-any.whl.zip tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip --markdown 20240512/z/zibuyu-LLM/0.1.13-0.1.9/README.md --exclude *.pyd
+[2024-05-12 17:27:44] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/65/85/c26462638385d6921c9e6e2dd91d7bb1d0ce38c3a35ccf5becf78fea900d/sapiopycommons-31.3.0.23.12.3.tar.gz
+[2024-05-12 17:27:44] INFO root fetch - processPackages [sapiopycommons]: executing diffoscope
+[2024-05-12 17:27:44] INFO root fetch - processPackages [sapiopycommons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapiopycommons-31.2.0.23.12.3.tar.gz tmp/sapiopycommons-31.3.0.23.12.3.tar.gz --markdown 20240512/s/sapiopycommons/31.2.0.23.12.3-31.3.0.23.12.3/README.md --exclude *.pyd
+[2024-05-12 17:27:45] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.8.tar.gz]
+[2024-05-12 17:27:45] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.9.tar.gz]
+[2024-05-12 17:27:45] INFO root fetch - main [MainThread]: End processing [llm-bench]: success
+[2024-05-12 17:27:45] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.1.13-py3-none-any.whl.zip]
+[2024-05-12 17:27:45] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip]
+[2024-05-12 17:27:45] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
+[2024-05-12 17:27:45] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-31.2.0.23.12.3.tar.gz]
+[2024-05-12 17:27:45] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-31.3.0.23.12.3.tar.gz]
+[2024-05-12 17:27:45] INFO root fetch - main [MainThread]: End processing [sapiopycommons]: success
+[2024-05-12 17:27:45] INFO root fetch - main [MainThread]: Store serial: [23171240]
