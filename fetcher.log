@@ -14586,3 +14586,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:31:49] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
 [2024-05-12 19:31:49] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-12 19:31:49] INFO root fetch - main [MainThread]: Store serial: [23172284]
+[2024-05-12 19:33:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172284]
+[2024-05-12 19:33:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 19:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: execsql
+[2024-05-12 19:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: connectlife
+[2024-05-12 19:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plexiformz
+[2024-05-12 19:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyutilkit
+[2024-05-12 19:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: smart-parallelize
+[2024-05-12 19:33:57] INFO root fetch - processPackages [smart-parallelize]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-12 19:33:57] WARNING root fetch - processPackages [pyutilkit]: Skipping, unable to determine old version
+[2024-05-12 19:33:57] INFO root fetch - main [MainThread]: End processing [pyutilkit] error
+[2024-05-12 19:33:57] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/6a/fe/8ebbcab94845b3b9dc55872bfdc4aca22762d128d40bbf63a34bd61fac01/smart_parallelize-2.0.8.tar.gz
+[2024-05-12 19:33:57] WARNING root fetch - processPackages [plexiformz]: Skipping, unable to determine old version
+[2024-05-12 19:33:57] INFO root fetch - main [MainThread]: End processing [plexiformz] error
+[2024-05-12 19:33:57] INFO root fetch - processPackages [connectlife]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-12 19:33:57] INFO root fetch - processPackages [execsql]: New version: [1.98.0] Old Version: [1.97.0]
+[2024-05-12 19:33:58] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/0f/6f/48731f1909b1b681d6a4a859ba23d0b9133c578aaf5ca409036f55dbe11e/smart_parallelize-2.0.9.tar.gz
+[2024-05-12 19:33:58] INFO root fetch - processPackages [connectlife]: Downloading https://files.pythonhosted.org/packages/b3/cb/62e8af542dd0e90f679c8e39a1c268fd81da8ec0498523e1df62c0c6c597/connectlife-0.0.2.tar.gz
+[2024-05-12 19:33:58] INFO root fetch - processPackages [execsql]: Downloading https://files.pythonhosted.org/packages/91/8e/51da00d0618e95a78d658b8ba5ca02e29543fb296784ecffc9c3e13a9aff/execsql-1.97.0.tar.gz
+[2024-05-12 19:33:58] INFO root fetch - processPackages [smart-parallelize]: executing diffoscope
+[2024-05-12 19:33:58] INFO root fetch - processPackages [smart-parallelize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smart_parallelize-2.0.8.tar.gz tmp/smart_parallelize-2.0.9.tar.gz --markdown 20240512/s/smart-parallelize/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-12 19:33:58] INFO root fetch - processPackages [connectlife]: Downloading https://files.pythonhosted.org/packages/15/10/cb2cb50fa79d531bf86dfb4c803adb915f7597d3b4d1c984a1fd9244d091/connectlife-0.0.3.tar.gz
+[2024-05-12 19:33:58] INFO root fetch - processPackages [connectlife]: executing diffoscope
+[2024-05-12 19:33:58] INFO root fetch - processPackages [connectlife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connectlife-0.0.2.tar.gz tmp/connectlife-0.0.3.tar.gz --markdown 20240512/c/connectlife/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-12 19:33:58] INFO root fetch - processPackages [execsql]: Downloading https://files.pythonhosted.org/packages/af/c4/14198e9e025b1207415fad1d39bc1e6ebcc8fb846e1ba1b4e22742316993/execsql-1.98.0.tar.gz
+[2024-05-12 19:33:58] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.8.tar.gz]
+[2024-05-12 19:33:58] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.9.tar.gz]
+[2024-05-12 19:33:58] INFO root fetch - main [MainThread]: End processing [smart-parallelize]: success
+[2024-05-12 19:33:58] INFO root fetch - processPackages [execsql]: executing diffoscope
+[2024-05-12 19:33:58] INFO root fetch - processPackages [execsql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/execsql-1.97.0.tar.gz tmp/execsql-1.98.0.tar.gz --markdown 20240512/e/execsql/1.97.0-1.98.0/README.md --exclude *.pyd
+[2024-05-12 19:33:59] INFO root fetch - processPackages [connectlife]: Remove: archive file [/home/abi/fetcher/tmp/connectlife-0.0.2.tar.gz]
+[2024-05-12 19:33:59] INFO root fetch - processPackages [connectlife]: Remove: archive file [/home/abi/fetcher/tmp/connectlife-0.0.3.tar.gz]
+[2024-05-12 19:33:59] INFO root fetch - main [MainThread]: End processing [connectlife]: success
+[2024-05-12 19:33:59] INFO root fetch - processPackages [execsql]: Remove: archive file [/home/abi/fetcher/tmp/execsql-1.97.0.tar.gz]
+[2024-05-12 19:33:59] INFO root fetch - processPackages [execsql]: Remove: archive file [/home/abi/fetcher/tmp/execsql-1.98.0.tar.gz]
+[2024-05-12 19:33:59] INFO root fetch - main [MainThread]: End processing [execsql]: success
+[2024-05-12 19:33:59] INFO root fetch - main [MainThread]: Store serial: [23172299]
