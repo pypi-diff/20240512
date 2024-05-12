@@ -10671,3 +10671,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:11:30] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.6.3.tar.gz]
 [2024-05-12 15:11:30] INFO root fetch - main [MainThread]: End processing [abses]: success
 [2024-05-12 15:11:30] INFO root fetch - main [MainThread]: Store serial: [23170057]
+[2024-05-12 15:13:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170057]
+[2024-05-12 15:13:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 15:13:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fbgemm-gpu-nightly-cpu
+[2024-05-12 15:13:39] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2024.5.9] Old Version: [2024.5.12]
+[2024-05-12 15:13:39] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/9f/bf/14c6e047ee61ba8aef03a6be3d50e593126697fde57be66dd60b40bde7dd/fbgemm_gpu_nightly_cpu-2024.5.12-cp310-cp310-manylinux2014_x86_64.whl
+[2024-05-12 15:13:40] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/34/33/65604f909cf0830076814afa9f0dceaa2c308165d02d78b5b11cc85f8d10/fbgemm_gpu_nightly_cpu-2024.5.9-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-12 15:13:41] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2024-05-12 15:13:41] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2024.5.12-cp310-cp310-manylinux2014_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2024.5.9-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240512/f/fbgemm-gpu-nightly-cpu/2024.5.12-2024.5.9/README.md --exclude *.pyd
+[2024-05-12 15:14:20] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.12-cp310-cp310-manylinux2014_x86_64.whl.zip]
+[2024-05-12 15:14:20] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.9-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-12 15:14:20] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2024-05-12 15:14:20] INFO root fetch - main [MainThread]: Store serial: [23170059]
