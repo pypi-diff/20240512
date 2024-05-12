@@ -13375,3 +13375,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:09:11] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.8.9.tar.gz]
 [2024-05-12 18:09:11] INFO root fetch - main [MainThread]: End processing [xklb]: success
 [2024-05-12 18:09:11] INFO root fetch - main [MainThread]: Store serial: [23171625]
+[2024-05-12 18:11:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171625]
+[2024-05-12 18:11:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 18:11:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulahanismz
+[2024-05-12 18:11:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrapegraphai
+[2024-05-12 18:11:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: noncohesivelyz
+[2024-05-12 18:11:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: netbox-config-diff
+[2024-05-12 18:11:19] INFO root fetch - processPackages [scrapegraphai]: New version: [0.9.0b8] Old Version: [0.9.0b7]
+[2024-05-12 18:11:19] WARNING root fetch - processPackages [pulahanismz]: Skipping, unable to determine old version
+[2024-05-12 18:11:19] INFO root fetch - main [MainThread]: End processing [pulahanismz] error
+[2024-05-12 18:11:19] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/63/5c/30d12a2ba836f5972d1146557ac75b13200683a0808baa631508b12da6d1/scrapegraphai-0.9.0b7.tar.gz
+[2024-05-12 18:11:19] WARNING root fetch - processPackages [noncohesivelyz]: Skipping, unable to determine old version
+[2024-05-12 18:11:19] INFO root fetch - main [MainThread]: End processing [noncohesivelyz] error
+[2024-05-12 18:11:19] INFO root fetch - processPackages [netbox-config-diff]: New version: [2.4.0] Old Version: [2.3.0]
+[2024-05-12 18:11:19] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/e8/f4/c60696cf15fae6617f4351065cbc78d635ceedaf932079ea2bfdcd1822ec/scrapegraphai-0.9.0b8.tar.gz
+[2024-05-12 18:11:19] INFO root fetch - processPackages [netbox-config-diff]: Downloading https://files.pythonhosted.org/packages/96/bb/1e92f47156f84a361a2aaac6965788fa55d334ee99e3b530ba1f59c072e1/netbox-config-diff-2.3.0.tar.gz
+[2024-05-12 18:11:19] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-12 18:11:19] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-0.9.0b7.tar.gz tmp/scrapegraphai-0.9.0b8.tar.gz --markdown 20240512/s/scrapegraphai/0.9.0b7-0.9.0b8/README.md --exclude *.pyd
+[2024-05-12 18:11:20] INFO root fetch - processPackages [netbox-config-diff]: Downloading https://files.pythonhosted.org/packages/82/2f/efa062cd49e09b3491db414137832843a97cc4ffec3acbf62cb95240eff8/netbox_config_diff-2.4.0.tar.gz
+[2024-05-12 18:11:20] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.9.0b7.tar.gz]
+[2024-05-12 18:11:20] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.9.0b8.tar.gz]
+[2024-05-12 18:11:20] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-12 18:11:20] INFO root fetch - processPackages [netbox-config-diff]: executing diffoscope
+[2024-05-12 18:11:20] INFO root fetch - processPackages [netbox-config-diff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox-config-diff-2.3.0.tar.gz tmp/netbox_config_diff-2.4.0.tar.gz --markdown 20240512/n/netbox-config-diff/2.3.0-2.4.0/README.md --exclude *.pyd
+[2024-05-12 18:11:21] INFO root fetch - processPackages [netbox-config-diff]: Remove: archive file [/home/abi/fetcher/tmp/netbox-config-diff-2.3.0.tar.gz]
+[2024-05-12 18:11:21] INFO root fetch - processPackages [netbox-config-diff]: Remove: archive file [/home/abi/fetcher/tmp/netbox_config_diff-2.4.0.tar.gz]
+[2024-05-12 18:11:21] INFO root fetch - main [MainThread]: End processing [netbox-config-diff]: success
+[2024-05-12 18:11:21] INFO root fetch - main [MainThread]: Store serial: [23171639]
