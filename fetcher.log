@@ -16580,3 +16580,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:44:29] INFO root fetch - processPackages [python-localvenv-kernel]: Remove: archive file [/home/abi/fetcher/tmp/python-localvenv-kernel-0.1.7.tar.gz]
 [2024-05-12 21:44:29] INFO root fetch - main [MainThread]: End processing [python-localvenv-kernel]: success
 [2024-05-12 21:44:29] INFO root fetch - main [MainThread]: Store serial: [23173171]
+[2024-05-12 21:46:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173171]
+[2024-05-12 21:46:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 21:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beets-ytimport
+[2024-05-12 21:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hypostheniaz
+[2024-05-12 21:46:37] INFO root fetch - processPackages [beets-ytimport]: New version: [1.7.2] Old Version: [1.7.1]
+[2024-05-12 21:46:37] INFO root fetch - processPackages [beets-ytimport]: Downloading https://files.pythonhosted.org/packages/da/6c/1fe9d4d6a12e7f2a27c24bbdfc0eb188150d9cb8fd81e85a4594fbf04dfd/beets_ytimport-1.7.1-py3-none-any.whl
+[2024-05-12 21:46:37] WARNING root fetch - processPackages [hypostheniaz]: Skipping, unable to determine old version
+[2024-05-12 21:46:37] INFO root fetch - main [MainThread]: End processing [hypostheniaz] error
+[2024-05-12 21:46:38] INFO root fetch - processPackages [beets-ytimport]: Downloading https://files.pythonhosted.org/packages/c6/cf/36ce4160c4c6cb2140d56b8694b4b1ccd93e5fccd77083807e91b23aab24/beets_ytimport-1.7.2-py3-none-any.whl
+[2024-05-12 21:46:38] INFO root fetch - processPackages [beets-ytimport]: executing diffoscope
+[2024-05-12 21:46:38] INFO root fetch - processPackages [beets-ytimport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets_ytimport-1.7.1-py3-none-any.whl.zip tmp/beets_ytimport-1.7.2-py3-none-any.whl.zip --markdown 20240512/b/beets-ytimport/1.7.1-1.7.2/README.md --exclude *.pyd
+[2024-05-12 21:46:38] INFO root fetch - processPackages [beets-ytimport]: Remove: archive file [/home/abi/fetcher/tmp/beets_ytimport-1.7.1-py3-none-any.whl.zip]
+[2024-05-12 21:46:38] INFO root fetch - processPackages [beets-ytimport]: Remove: archive file [/home/abi/fetcher/tmp/beets_ytimport-1.7.2-py3-none-any.whl.zip]
+[2024-05-12 21:46:38] INFO root fetch - main [MainThread]: End processing [beets-ytimport]: success
+[2024-05-12 21:46:38] INFO root fetch - main [MainThread]: Store serial: [23173177]
