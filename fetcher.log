@@ -16296,3 +16296,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:27:03] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.99.0.tar.gz]
 [2024-05-12 21:27:03] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2024-05-12 21:27:03] INFO root fetch - main [MainThread]: Store serial: [23173047]
+[2024-05-12 21:29:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173047]
+[2024-05-12 21:29:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 21:29:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: greatbrowser
+[2024-05-12 21:29:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nadeo-api
+[2024-05-12 21:29:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: naan
+[2024-05-12 21:29:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lsvtest
+[2024-05-12 21:29:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: greatbrowser
+[2024-05-12 21:29:12] WARNING root fetch - processPackages [greatbrowser]: Skipping, unable to determine old version
+[2024-05-12 21:29:12] INFO root fetch - main [MainThread]: End processing [greatbrowser] error
+[2024-05-12 21:29:12] WARNING root fetch - processPackages [greatbrowser]: Skipping, unable to determine old version
+[2024-05-12 21:29:12] INFO root fetch - main [MainThread]: End processing [greatbrowser] error
+[2024-05-12 21:29:12] INFO root fetch - processPackages [lsvtest]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-12 21:29:12] INFO root fetch - processPackages [naan]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 21:29:12] INFO root fetch - processPackages [nadeo-api]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 21:29:12] INFO root fetch - processPackages [naan]: Downloading https://files.pythonhosted.org/packages/83/03/eb3530217e04a00e5089cec45264261d00a43a1ad3049fdf7ae1ce2cdfbd/naan-0.0.1.tar.gz
+[2024-05-12 21:29:12] INFO root fetch - processPackages [nadeo-api]: Downloading https://files.pythonhosted.org/packages/26/1b/b3e69ce118b9e15ebd36172b5dec99824cb87ac30c61dc64aae844b0d62c/nadeo_api-0.0.1.tar.gz
+[2024-05-12 21:29:12] INFO root fetch - processPackages [lsvtest]: Downloading https://files.pythonhosted.org/packages/55/fe/665e9a60edd00cdbff174d1cf3808f45f7b3265bdc0859331c09a890eb7f/lsvtest-0.0.2.tar.gz
+[2024-05-12 21:29:13] WARNING root fetch - processPackages [lsvtest]: Skipping package: exceeds size limit 17294124>=10485760
+[2024-05-12 21:29:13] INFO root fetch - main [MainThread]: End processing [lsvtest] error
+[2024-05-12 21:29:13] INFO root fetch - processPackages [nadeo-api]: Downloading https://files.pythonhosted.org/packages/1f/36/29adc0d9cc38758579351adea33b2af5e9dd1807591a480c95d0eebc82ab/nadeo_api-0.0.2.tar.gz
+[2024-05-12 21:29:13] INFO root fetch - processPackages [naan]: Downloading https://files.pythonhosted.org/packages/b9/18/ac8acb94243e16ad6416710d0476b6081fb708376ed17b5e28b8d0e44f74/naan-0.0.2-py3-none-any.whl
+[2024-05-12 21:29:13] INFO root fetch - processPackages [nadeo-api]: executing diffoscope
+[2024-05-12 21:29:13] INFO root fetch - processPackages [nadeo-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nadeo_api-0.0.1.tar.gz tmp/nadeo_api-0.0.2.tar.gz --markdown 20240512/n/nadeo-api/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-12 21:29:13] INFO root fetch - processPackages [naan]: executing diffoscope
+[2024-05-12 21:29:13] INFO root fetch - processPackages [naan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naan-0.0.1.tar.gz tmp/naan-0.0.2-py3-none-any.whl.zip --markdown 20240512/n/naan/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-12 21:29:13] INFO root fetch - processPackages [naan]: Remove: archive file [/home/abi/fetcher/tmp/naan-0.0.1.tar.gz]
+[2024-05-12 21:29:13] INFO root fetch - processPackages [naan]: Remove: archive file [/home/abi/fetcher/tmp/naan-0.0.2-py3-none-any.whl.zip]
+[2024-05-12 21:29:13] INFO root fetch - main [MainThread]: End processing [naan]: success
+[2024-05-12 21:29:13] INFO root fetch - processPackages [nadeo-api]: Remove: archive file [/home/abi/fetcher/tmp/nadeo_api-0.0.1.tar.gz]
+[2024-05-12 21:29:13] INFO root fetch - processPackages [nadeo-api]: Remove: archive file [/home/abi/fetcher/tmp/nadeo_api-0.0.2.tar.gz]
+[2024-05-12 21:29:13] INFO root fetch - main [MainThread]: End processing [nadeo-api]: success
+[2024-05-12 21:29:13] INFO root fetch - main [MainThread]: Store serial: [23173062]
