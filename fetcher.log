@@ -17099,3 +17099,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:13:01] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-3.0.tar.gz]
 [2024-05-12 22:13:01] INFO root fetch - main [MainThread]: End processing [sequentialdw]: success
 [2024-05-12 22:13:01] INFO root fetch - main [MainThread]: Store serial: [23173411]
+[2024-05-12 22:15:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173411]
+[2024-05-12 22:15:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 22:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sequentialdw
+[2024-05-12 22:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-05-12 22:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scmrepo
+[2024-05-12 22:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: entophytez
+[2024-05-12 22:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wolkenbruch
+[2024-05-12 22:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2024-05-12 22:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tdewolff-minify
+[2024-05-12 22:15:10] INFO root fetch - processPackages [sequentialdw]: New version: [3.1] Old Version: [3.0]
+[2024-05-12 22:15:10] INFO root fetch - processPackages [scmrepo]: New version: [3.3.3] Old Version: [3.3.2]
+[2024-05-12 22:15:10] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/b5/7b/e678ba6e92c9ae8bb4e079d4f45480974eced86c8682ad86084668d5d561/sequentialdw-3.0.tar.gz
+[2024-05-12 22:15:10] INFO root fetch - processPackages [wolkenbruch]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-05-12 22:15:10] WARNING root fetch - processPackages [entophytez]: Skipping, unable to determine old version
+[2024-05-12 22:15:10] INFO root fetch - main [MainThread]: End processing [entophytez] error
+[2024-05-12 22:15:10] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-12 22:15:10] INFO root fetch - processPackages [scmrepo]: Downloading https://files.pythonhosted.org/packages/ca/ef/3eca3d34aad6369059cb1745f1783e06b6dece2a7584ef45c54f59b55477/scmrepo-3.3.2.tar.gz
+[2024-05-12 22:15:10] INFO root fetch - processPackages [tdewolff-minify]: New version: [2.20.9] Old Version: [2.20.8]
+[2024-05-12 22:15:10] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-12 22:15:10] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/b8/1b/ae6555ef9be29333da5f1902a3a6e991c59ead40e94924908a7c0f5450a9/sequentialdw-3.1.tar.gz
+[2024-05-12 22:15:10] INFO root fetch - processPackages [wolkenbruch]: Downloading https://files.pythonhosted.org/packages/b3/19/d9560c0871a6d87572434b10b64c3c4cdce89df8001721d73b2c236007bf/wolkenbruch-0.7.2.tar.gz
+[2024-05-12 22:15:11] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-12 22:15:11] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-12 22:15:11] INFO root fetch - processPackages [sequentialdw]: executing diffoscope
+[2024-05-12 22:15:11] INFO root fetch - processPackages [sequentialdw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sequentialdw-3.0.tar.gz tmp/sequentialdw-3.1.tar.gz --markdown 20240512/s/sequentialdw/3.0-3.1/README.md --exclude *.pyd
+[2024-05-12 22:15:11] INFO root fetch - processPackages [tdewolff-minify]: Downloading https://files.pythonhosted.org/packages/e4/1b/0a65b34a8c7a9726ea7deedcb0ad0fd582d8696ba036fef7b57f6cd8713b/tdewolff-minify-2.20.8.tar.gz
+[2024-05-12 22:15:11] INFO root fetch - processPackages [scmrepo]: Downloading https://files.pythonhosted.org/packages/7d/ad/d422fee6fd96b142bf6848cfad6a3c095162df59cbfa06cc122b4131bd17/scmrepo-3.3.3.tar.gz
+[2024-05-12 22:15:11] INFO root fetch - processPackages [wolkenbruch]: Downloading https://files.pythonhosted.org/packages/2c/c5/091a7ade6c987c7329d42b106e63d4e875116a4688c1cbba892a22858ee8/wolkenbruch-0.7.3.tar.gz
+[2024-05-12 22:15:11] INFO root fetch - processPackages [scmrepo]: executing diffoscope
+[2024-05-12 22:15:11] INFO root fetch - processPackages [scmrepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scmrepo-3.3.2.tar.gz tmp/scmrepo-3.3.3.tar.gz --markdown 20240512/s/scmrepo/3.3.2-3.3.3/README.md --exclude *.pyd
+[2024-05-12 22:15:11] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-12 22:15:11] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-12 22:15:11] INFO root fetch - processPackages [wolkenbruch]: executing diffoscope
+[2024-05-12 22:15:11] INFO root fetch - processPackages [wolkenbruch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wolkenbruch-0.7.2.tar.gz tmp/wolkenbruch-0.7.3.tar.gz --markdown 20240512/w/wolkenbruch/0.7.2-0.7.3/README.md --exclude *.pyd
+[2024-05-12 22:15:11] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-12 22:15:11] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240512/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-12 22:15:11] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-12 22:15:11] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240512/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-12 22:15:11] INFO root fetch - processPackages [tdewolff-minify]: Downloading https://files.pythonhosted.org/packages/79/11/e1027616b69b204ce1002f4d469e36223f120c33c60bba0ce6f53def6623/tdewolff-minify-2.20.9.tar.gz
+[2024-05-12 22:15:11] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-3.0.tar.gz]
+[2024-05-12 22:15:11] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-3.1.tar.gz]
+[2024-05-12 22:15:11] INFO root fetch - main [MainThread]: End processing [sequentialdw]: success
+[2024-05-12 22:15:11] INFO root fetch - processPackages [tdewolff-minify]: executing diffoscope
+[2024-05-12 22:15:11] INFO root fetch - processPackages [tdewolff-minify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdewolff-minify-2.20.8.tar.gz tmp/tdewolff-minify-2.20.9.tar.gz --markdown 20240512/t/tdewolff-minify/2.20.8-2.20.9/README.md --exclude *.pyd
+[2024-05-12 22:15:12] INFO root fetch - processPackages [wolkenbruch]: Remove: archive file [/home/abi/fetcher/tmp/wolkenbruch-0.7.2.tar.gz]
+[2024-05-12 22:15:12] INFO root fetch - processPackages [wolkenbruch]: Remove: archive file [/home/abi/fetcher/tmp/wolkenbruch-0.7.3.tar.gz]
+[2024-05-12 22:15:12] INFO root fetch - main [MainThread]: End processing [wolkenbruch]: success
+[2024-05-12 22:15:12] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-12 22:15:12] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-12 22:15:12] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-12 22:15:12] INFO root fetch - processPackages [scmrepo]: Remove: archive file [/home/abi/fetcher/tmp/scmrepo-3.3.2.tar.gz]
+[2024-05-12 22:15:12] INFO root fetch - processPackages [scmrepo]: Remove: archive file [/home/abi/fetcher/tmp/scmrepo-3.3.3.tar.gz]
+[2024-05-12 22:15:12] INFO root fetch - main [MainThread]: End processing [scmrepo]: success
+[2024-05-12 22:15:12] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-12 22:15:12] INFO root fetch - processPackages [tdewolff-minify]: Remove: archive file [/home/abi/fetcher/tmp/tdewolff-minify-2.20.8.tar.gz]
+[2024-05-12 22:15:12] INFO root fetch - processPackages [tdewolff-minify]: Remove: archive file [/home/abi/fetcher/tmp/tdewolff-minify-2.20.9.tar.gz]
+[2024-05-12 22:15:12] INFO root fetch - main [MainThread]: End processing [tdewolff-minify]: success
+[2024-05-12 22:15:12] INFO root fetch - main [MainThread]: Store serial: [23173434]
