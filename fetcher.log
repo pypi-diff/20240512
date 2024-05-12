@@ -13840,3 +13840,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:41:47] INFO root fetch - processPackages [mwxlib]: Remove: archive file [/home/abi/fetcher/tmp/mwxlib-0.95.0-py3-none-any.whl.zip]
 [2024-05-12 18:41:47] INFO root fetch - main [MainThread]: End processing [mwxlib]: success
 [2024-05-12 18:41:47] INFO root fetch - main [MainThread]: Store serial: [23171857]
+[2024-05-12 18:43:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171857]
+[2024-05-12 18:43:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 18:43:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: siumz
+[2024-05-12 18:43:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mock-call-where
+[2024-05-12 18:43:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cyberdrop-dl
+[2024-05-12 18:43:56] WARNING root fetch - processPackages [mock-call-where]: Skipping, unable to determine old version
+[2024-05-12 18:43:56] INFO root fetch - main [MainThread]: End processing [mock-call-where] error
+[2024-05-12 18:43:56] INFO root fetch - processPackages [cyberdrop-dl]: New version: [5.3.8] Old Version: [5.3.7]
+[2024-05-12 18:43:56] WARNING root fetch - processPackages [siumz]: Skipping, unable to determine old version
+[2024-05-12 18:43:56] INFO root fetch - main [MainThread]: End processing [siumz] error
+[2024-05-12 18:43:56] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/62/cd/50c40c52f5fc73b5d44b96d23289bebbafc0c5a92bc188902a0f4f6e3894/cyberdrop_dl-5.3.7.tar.gz
+[2024-05-12 18:43:56] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/9d/0d/5f6820ed8061d9c3ff5d6ac484bb19d78089d028e21d06652c84bd57af6a/cyberdrop_dl-5.3.8.tar.gz
+[2024-05-12 18:43:56] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2024-05-12 18:43:56] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop_dl-5.3.7.tar.gz tmp/cyberdrop_dl-5.3.8.tar.gz --markdown 20240512/c/cyberdrop-dl/5.3.7-5.3.8/README.md --exclude *.pyd
+[2024-05-12 18:43:57] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.7.tar.gz]
+[2024-05-12 18:43:57] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.8.tar.gz]
+[2024-05-12 18:43:57] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2024-05-12 18:43:57] INFO root fetch - main [MainThread]: Store serial: [23171867]
