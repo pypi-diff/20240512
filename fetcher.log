@@ -14245,3 +14245,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:12:12] INFO root fetch - processPackages [experiment-helpers]: Remove: archive file [/home/abi/fetcher/tmp/experiment_helpers-0.0.9.tar.gz]
 [2024-05-12 19:12:12] INFO root fetch - main [MainThread]: End processing [experiment-helpers]: success
 [2024-05-12 19:12:12] INFO root fetch - main [MainThread]: Store serial: [23172039]
+[2024-05-12 19:14:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172039]
+[2024-05-12 19:14:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 19:14:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: experiment-helpers
+[2024-05-12 19:14:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: distrustinglyz
+[2024-05-12 19:14:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-05-12 19:14:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlrun
+[2024-05-12 19:14:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gammarers.aws-secure-bucket
+[2024-05-12 19:14:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gaudeamusz
+[2024-05-12 19:14:21] INFO root fetch - processPackages [experiment-helpers]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 19:14:21] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-12 19:14:21] WARNING root fetch - processPackages [gaudeamusz]: Skipping, unable to determine old version
+[2024-05-12 19:14:21] WARNING root fetch - processPackages [distrustinglyz]: Skipping, unable to determine old version
+[2024-05-12 19:14:21] INFO root fetch - main [MainThread]: End processing [gaudeamusz] error
+[2024-05-12 19:14:21] INFO root fetch - main [MainThread]: End processing [distrustinglyz] error
+[2024-05-12 19:14:21] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: New version: [1.3.5] Old Version: [1.3.4]
+[2024-05-12 19:14:21] INFO root fetch - processPackages [experiment-helpers]: Downloading https://files.pythonhosted.org/packages/d8/b8/4d2059d553d489beb944d46490e92a1c756a53a2151fe5a13ac31f8c7e2d/experiment_helpers-0.0.8.tar.gz
+[2024-05-12 19:14:21] INFO root fetch - processPackages [mlrun]: New version: [1.7.0rc9] Old Version: [1.7.0rc8]
+[2024-05-12 19:14:21] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-12 19:14:21] INFO root fetch - processPackages [experiment-helpers]: Downloading https://files.pythonhosted.org/packages/91/85/d55140197c7fbdcf545e299dfef55310447c595a8fc02678c5384bed232b/experiment_helpers-0.0.9.tar.gz
+[2024-05-12 19:14:21] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Downloading https://files.pythonhosted.org/packages/5f/ea/c9879d66f18a7207d7b996556d4fd2d00e95d9c96b4a713c2c318dd5443f/gammarers.aws-secure-bucket-1.3.4.tar.gz
+[2024-05-12 19:14:21] INFO root fetch - processPackages [mlrun]: Downloading https://files.pythonhosted.org/packages/3e/de/bbc90293e3757cb8179dc320aa3df99845445ecfbc16972510c5e80415c3/mlrun-1.7.0rc8-py3-none-any.whl
+[2024-05-12 19:14:21] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-12 19:14:21] INFO root fetch - processPackages [experiment-helpers]: executing diffoscope
+[2024-05-12 19:14:21] INFO root fetch - processPackages [experiment-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/experiment_helpers-0.0.8.tar.gz tmp/experiment_helpers-0.0.9.tar.gz --markdown 20240512/e/experiment-helpers/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 19:14:21] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-12 19:14:21] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240512/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-12 19:14:22] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Downloading https://files.pythonhosted.org/packages/8b/51/6d02726bf1ce68eeacdd518f1f8a3b03d2872dd3222079179d47e74ba99f/gammarers.aws-secure-bucket-1.3.5.tar.gz
+[2024-05-12 19:14:22] INFO root fetch - processPackages [mlrun]: Downloading https://files.pythonhosted.org/packages/05/f2/d80ba0edb70be9434bf5fb1badcfad0aef24823e8363d78fc935429023ad/mlrun-1.7.0rc9-py3-none-any.whl
+[2024-05-12 19:14:22] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: executing diffoscope
+[2024-05-12 19:14:22] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-bucket-1.3.4.tar.gz tmp/gammarers.aws-secure-bucket-1.3.5.tar.gz --markdown 20240512/g/gammarers.aws-secure-bucket/1.3.4-1.3.5/README.md --exclude *.pyd
+[2024-05-12 19:14:22] INFO root fetch - processPackages [experiment-helpers]: Remove: archive file [/home/abi/fetcher/tmp/experiment_helpers-0.0.8.tar.gz]
+[2024-05-12 19:14:22] INFO root fetch - processPackages [experiment-helpers]: Remove: archive file [/home/abi/fetcher/tmp/experiment_helpers-0.0.9.tar.gz]
+[2024-05-12 19:14:22] INFO root fetch - main [MainThread]: End processing [experiment-helpers]: success
+[2024-05-12 19:14:22] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-12 19:14:22] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-12 19:14:22] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-12 19:14:22] INFO root fetch - processPackages [mlrun]: executing diffoscope
+[2024-05-12 19:14:22] INFO root fetch - processPackages [mlrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlrun-1.7.0rc8-py3-none-any.whl.zip tmp/mlrun-1.7.0rc9-py3-none-any.whl.zip --markdown 20240512/m/mlrun/1.7.0rc8-1.7.0rc9/README.md --exclude *.pyd
+[2024-05-12 19:14:22] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-bucket-1.3.4.tar.gz]
+[2024-05-12 19:14:22] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-bucket-1.3.5.tar.gz]
+[2024-05-12 19:14:22] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-bucket]: success
+[2024-05-12 19:14:24] INFO root fetch - processPackages [mlrun]: Remove: archive file [/home/abi/fetcher/tmp/mlrun-1.7.0rc8-py3-none-any.whl.zip]
+[2024-05-12 19:14:24] INFO root fetch - processPackages [mlrun]: Remove: archive file [/home/abi/fetcher/tmp/mlrun-1.7.0rc9-py3-none-any.whl.zip]
+[2024-05-12 19:14:24] INFO root fetch - main [MainThread]: End processing [mlrun]: success
+[2024-05-12 19:14:24] INFO root fetch - main [MainThread]: Store serial: [23172060]
