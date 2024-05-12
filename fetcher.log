@@ -12915,3 +12915,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:43:00] INFO root fetch - processPackages [griffe]: Remove: archive file [/home/abi/fetcher/tmp/griffe-0.9.0.tar.gz]
 [2024-05-12 17:43:00] INFO root fetch - main [MainThread]: End processing [griffe]: success
 [2024-05-12 17:43:00] INFO root fetch - main [MainThread]: Store serial: [23171356]
+[2024-05-12 17:45:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171356]
+[2024-05-12 17:45:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 17:45:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deepdoctection
+[2024-05-12 17:45:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cell-imaging-utils
+[2024-05-12 17:45:09] INFO root fetch - processPackages [cell-imaging-utils]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-05-12 17:45:09] INFO root fetch - processPackages [deepdoctection]: New version: [0.32] Old Version: [0.31]
+[2024-05-12 17:45:09] INFO root fetch - processPackages [cell-imaging-utils]: Downloading https://files.pythonhosted.org/packages/59/ab/441ddb0261a8901eadfcf8d6618a03be98bcbd53ebd09553be87837ba5af/cell_imaging_utils-1.5.8.tar.gz
+[2024-05-12 17:45:09] INFO root fetch - processPackages [cell-imaging-utils]: Downloading https://files.pythonhosted.org/packages/11/4f/b80f8c7bc358cd880a2dd1a719aa79f2bf70c6284e3d321560df103a67a0/cell_imaging_utils-1.5.9.tar.gz
+[2024-05-12 17:45:09] INFO root fetch - processPackages [deepdoctection]: Downloading https://files.pythonhosted.org/packages/49/ed/fd71be96504491f23a675ba581ec8ab87dbafa1bc6a0f83abdc08341cb1b/deepdoctection-0.31.tar.gz
+[2024-05-12 17:45:09] INFO root fetch - processPackages [cell-imaging-utils]: executing diffoscope
+[2024-05-12 17:45:09] INFO root fetch - processPackages [cell-imaging-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cell_imaging_utils-1.5.8.tar.gz tmp/cell_imaging_utils-1.5.9.tar.gz --markdown 20240512/c/cell-imaging-utils/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-05-12 17:45:10] INFO root fetch - processPackages [deepdoctection]: Downloading https://files.pythonhosted.org/packages/4a/c5/2c0743e7abf146b5a1f330c60a0b99213d07494285a267102b56db649d09/deepdoctection-0.32.tar.gz
+[2024-05-12 17:45:10] INFO root fetch - processPackages [cell-imaging-utils]: Remove: archive file [/home/abi/fetcher/tmp/cell_imaging_utils-1.5.8.tar.gz]
+[2024-05-12 17:45:10] INFO root fetch - processPackages [cell-imaging-utils]: Remove: archive file [/home/abi/fetcher/tmp/cell_imaging_utils-1.5.9.tar.gz]
+[2024-05-12 17:45:10] INFO root fetch - main [MainThread]: End processing [cell-imaging-utils]: success
+[2024-05-12 17:45:10] INFO root fetch - processPackages [deepdoctection]: executing diffoscope
+[2024-05-12 17:45:10] INFO root fetch - processPackages [deepdoctection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdoctection-0.31.tar.gz tmp/deepdoctection-0.32.tar.gz --markdown 20240512/d/deepdoctection/0.31-0.32/README.md --exclude *.pyd
+[2024-05-12 17:45:12] INFO root fetch - processPackages [deepdoctection]: Remove: archive file [/home/abi/fetcher/tmp/deepdoctection-0.31.tar.gz]
+[2024-05-12 17:45:12] INFO root fetch - processPackages [deepdoctection]: Remove: archive file [/home/abi/fetcher/tmp/deepdoctection-0.32.tar.gz]
+[2024-05-12 17:45:12] INFO root fetch - main [MainThread]: End processing [deepdoctection]: success
+[2024-05-12 17:45:12] INFO root fetch - main [MainThread]: Store serial: [23171363]
