@@ -8007,3 +8007,20 @@
 [2024-05-12 11:54:44] INFO root fetch - processPackages [resvg-py]: Remove: archive file [/home/abi/fetcher/tmp/resvg_py-0.1.5.tar.gz]
 [2024-05-12 11:54:44] INFO root fetch - main [MainThread]: End processing [resvg-py]: success
 [2024-05-12 11:54:44] INFO root fetch - main [MainThread]: Store serial: [23168753]
+[2024-05-12 11:56:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168753]
+[2024-05-12 11:56:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 11:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gucken
+[2024-05-12 11:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sliceitoff
+[2024-05-12 11:56:53] INFO root fetch - processPackages [gucken]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-05-12 11:56:53] INFO root fetch - processPackages [sliceitoff]: New version: [0.4b2] Old Version: [0.4b1]
+[2024-05-12 11:56:53] INFO root fetch - processPackages [gucken]: Downloading https://files.pythonhosted.org/packages/ef/16/1964514bf0292d68319fa820bd155153df445238226a3d54ca901414ffcf/gucken-0.0.0.tar.gz
+[2024-05-12 11:56:53] INFO root fetch - processPackages [sliceitoff]: Downloading https://files.pythonhosted.org/packages/81/b4/86f93b7f5582f5b68939377e9dccccc92e252af5c34513dcee305c90a882/sliceitoff-0.4b1.tar.gz
+[2024-05-12 11:56:54] INFO root fetch - processPackages [gucken]: Downloading https://files.pythonhosted.org/packages/2d/92/3e34dad79c1f25aa93c293b846de15cf7805e14ea7f91fce7ffdd726935c/gucken-0.0.1.tar.gz
+[2024-05-12 11:56:54] WARNING root fetch - processPackages [sliceitoff]: Skipping package: exceeds size limit 10927123>=10485760
+[2024-05-12 11:56:54] INFO root fetch - main [MainThread]: End processing [sliceitoff] error
+[2024-05-12 11:56:54] INFO root fetch - processPackages [gucken]: executing diffoscope
+[2024-05-12 11:56:54] INFO root fetch - processPackages [gucken]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gucken-0.0.0.tar.gz tmp/gucken-0.0.1.tar.gz --markdown 20240512/g/gucken/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-05-12 11:56:54] INFO root fetch - processPackages [gucken]: Remove: archive file [/home/abi/fetcher/tmp/gucken-0.0.0.tar.gz]
+[2024-05-12 11:56:54] INFO root fetch - processPackages [gucken]: Remove: archive file [/home/abi/fetcher/tmp/gucken-0.0.1.tar.gz]
+[2024-05-12 11:56:54] INFO root fetch - main [MainThread]: End processing [gucken]: success
+[2024-05-12 11:56:54] INFO root fetch - main [MainThread]: Store serial: [23168759]
