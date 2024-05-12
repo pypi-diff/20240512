@@ -4220,3 +4220,12 @@
 [2024-05-12 06:14:29] WARNING root fetch - processPackages [hayez]: Skipping, unable to determine old version
 [2024-05-12 06:14:29] INFO root fetch - main [MainThread]: End processing [hayez] error
 [2024-05-12 06:14:29] INFO root fetch - main [MainThread]: Store serial: [23166922]
+[2024-05-12 06:16:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166922]
+[2024-05-12 06:16:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 06:16:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: usherai-005
+[2024-05-12 06:16:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: notion-duplicates
+[2024-05-12 06:16:37] WARNING root fetch - processPackages [notion-duplicates]: Skipping, unable to determine old version
+[2024-05-12 06:16:37] INFO root fetch - main [MainThread]: End processing [notion-duplicates] error
+[2024-05-12 06:16:37] WARNING root fetch - processPackages [usherai-005]: Skipping, unable to determine old version
+[2024-05-12 06:16:37] INFO root fetch - main [MainThread]: End processing [usherai-005] error
+[2024-05-12 06:16:37] INFO root fetch - main [MainThread]: Store serial: [23166930]
