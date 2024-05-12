@@ -14490,3 +14490,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:25:18] INFO root fetch - processPackages [ATH]: Remove: archive file [/home/abi/fetcher/tmp/ATH-0.5.9.tar.gz]
 [2024-05-12 19:25:18] INFO root fetch - main [MainThread]: End processing [ATH]: success
 [2024-05-12 19:25:18] INFO root fetch - main [MainThread]: Store serial: [23172201]
+[2024-05-12 19:27:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172201]
+[2024-05-12 19:27:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 19:27:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Text-sentiment-ai-sdk
+[2024-05-12 19:27:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DebugInfo
+[2024-05-12 19:27:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crazy-thursday
+[2024-05-12 19:27:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pybump
+[2024-05-12 19:27:27] WARNING root fetch - processPackages [Text-sentiment-ai-sdk]: Skipping, unable to determine old version
+[2024-05-12 19:27:27] INFO root fetch - main [MainThread]: End processing [Text-sentiment-ai-sdk] error
+[2024-05-12 19:27:27] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.5.9.1] Old Version: [2024.5.9.0]
+[2024-05-12 19:27:27] INFO root fetch - processPackages [DebugInfo]: New version: [9.1.0] Old Version: [9.0.0]
+[2024-05-12 19:27:27] INFO root fetch - processPackages [pybump]: New version: [1.9.3] Old Version: [1.8.1]
+[2024-05-12 19:27:27] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/3f/0a/108e3af749c5757158be48151418c2bbea49bff2269af8811bade316080a/crazy_thursday-2024.5.9.0.tar.gz
+[2024-05-12 19:27:27] INFO root fetch - processPackages [DebugInfo]: Downloading https://files.pythonhosted.org/packages/06/dc/6f041269ad379c07e91b1bbf9bbcea47f424f3d9b04bf58b8af95b10bd3a/DebugInfo-9.0.0.tar.gz
+[2024-05-12 19:27:27] INFO root fetch - processPackages [pybump]: Downloading https://files.pythonhosted.org/packages/a2/89/d3ae80255ac7be98ae2e6263570528b478a7978129a137e44484a9e0ed8e/pybump-1.8.1-py3-none-any.whl
+[2024-05-12 19:27:27] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/20/70/a719fb059f910b10790f6a51b1c5c3ff943f1349c91c46142f1911323575/crazy_thursday-2024.5.9.1.tar.gz
+[2024-05-12 19:27:27] INFO root fetch - processPackages [DebugInfo]: Downloading https://files.pythonhosted.org/packages/3a/f6/279accf5d57aa0fb1b9308ac3c3f52eb99a26d6af32968ec7ea6a2d3e079/DebugInfo-9.1.0.tar.gz
+[2024-05-12 19:27:27] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-05-12 19:27:27] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.5.9.0.tar.gz tmp/crazy_thursday-2024.5.9.1.tar.gz --markdown 20240512/c/crazy-thursday/2024.5.9.0-2024.5.9.1/README.md --exclude *.pyd
+[2024-05-12 19:27:27] INFO root fetch - processPackages [DebugInfo]: executing diffoscope
+[2024-05-12 19:27:27] INFO root fetch - processPackages [DebugInfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DebugInfo-9.0.0.tar.gz tmp/DebugInfo-9.1.0.tar.gz --markdown 20240512/D/DebugInfo/9.0.0-9.1.0/README.md --exclude *.pyd
+[2024-05-12 19:27:28] INFO root fetch - processPackages [pybump]: Downloading https://files.pythonhosted.org/packages/ad/76/657c0dfd509ed1a0aa04623bb00829f989b6978b06f2a5673670968b80a6/pybump-1.9.3-py3-none-any.whl
+[2024-05-12 19:27:28] INFO root fetch - processPackages [pybump]: executing diffoscope
+[2024-05-12 19:27:28] INFO root fetch - processPackages [pybump]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybump-1.8.1-py3-none-any.whl.zip tmp/pybump-1.9.3-py3-none-any.whl.zip --markdown 20240512/p/pybump/1.8.1-1.9.3/README.md --exclude *.pyd
+[2024-05-12 19:27:28] INFO root fetch - processPackages [DebugInfo]: Remove: archive file [/home/abi/fetcher/tmp/DebugInfo-9.0.0.tar.gz]
+[2024-05-12 19:27:28] INFO root fetch - processPackages [DebugInfo]: Remove: archive file [/home/abi/fetcher/tmp/DebugInfo-9.1.0.tar.gz]
+[2024-05-12 19:27:28] INFO root fetch - main [MainThread]: End processing [DebugInfo]: success
+[2024-05-12 19:27:28] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.0.tar.gz]
+[2024-05-12 19:27:28] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.1.tar.gz]
+[2024-05-12 19:27:28] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-05-12 19:27:28] INFO root fetch - processPackages [pybump]: Remove: archive file [/home/abi/fetcher/tmp/pybump-1.8.1-py3-none-any.whl.zip]
+[2024-05-12 19:27:28] INFO root fetch - processPackages [pybump]: Remove: archive file [/home/abi/fetcher/tmp/pybump-1.9.3-py3-none-any.whl.zip]
+[2024-05-12 19:27:28] INFO root fetch - main [MainThread]: End processing [pybump]: success
+[2024-05-12 19:27:28] INFO root fetch - main [MainThread]: Store serial: [23172213]
