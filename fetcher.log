@@ -18105,3 +18105,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:25:27] WARNING root fetch - processPackages [dilectionz]: Skipping, unable to determine old version
 [2024-05-12 23:25:27] INFO root fetch - main [MainThread]: End processing [dilectionz] error
 [2024-05-12 23:25:27] INFO root fetch - main [MainThread]: Store serial: [23173958]
+[2024-05-12 23:27:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173958]
+[2024-05-12 23:27:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 23:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: csa-ai-foundation-model-api-clients
+[2024-05-12 23:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: compas-model
+[2024-05-12 23:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: selkie
+[2024-05-12 23:27:35] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 23:27:35] WARNING root fetch - processPackages [compas-model]: Skipping, unable to determine old version
+[2024-05-12 23:27:35] INFO root fetch - main [MainThread]: End processing [compas-model] error
+[2024-05-12 23:27:36] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: Downloading https://files.pythonhosted.org/packages/cb/d7/1a73dd54cac11298fd6e09c5691889acc83428c0b87ea7e55b728ae65e62/csa_ai_foundation_model_api_clients-0.1.0.tar.gz
+[2024-05-12 23:27:36] INFO root fetch - processPackages [selkie]: New version: [0.25] Old Version: [0.24.dev3]
+[2024-05-12 23:27:36] INFO root fetch - processPackages [selkie]: Downloading https://files.pythonhosted.org/packages/45/4a/fc5b94eb2361517e84d91815f4e369ceab00391af48acb37f828c6538afc/selkie-0.24.dev3.tar.gz
+[2024-05-12 23:27:36] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: Downloading https://files.pythonhosted.org/packages/78/dd/49c447ffc3e9e4ec575e7a31de9aae5161faeb240818617decac86cc6edf/csa_ai_foundation_model_api_clients-0.1.1.tar.gz
+[2024-05-12 23:27:36] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: executing diffoscope
+[2024-05-12 23:27:36] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csa_ai_foundation_model_api_clients-0.1.0.tar.gz tmp/csa_ai_foundation_model_api_clients-0.1.1.tar.gz --markdown 20240512/c/csa-ai-foundation-model-api-clients/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 23:27:36] INFO root fetch - processPackages [selkie]: Downloading https://files.pythonhosted.org/packages/32/37/39eef1961cee7262646871520d89a04c40557de94f61c8b3d07dbd77c113/selkie-0.25.tar.gz
+[2024-05-12 23:27:37] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: Remove: archive file [/home/abi/fetcher/tmp/csa_ai_foundation_model_api_clients-0.1.0.tar.gz]
+[2024-05-12 23:27:37] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: Remove: archive file [/home/abi/fetcher/tmp/csa_ai_foundation_model_api_clients-0.1.1.tar.gz]
+[2024-05-12 23:27:37] INFO root fetch - main [MainThread]: End processing [csa-ai-foundation-model-api-clients]: success
+[2024-05-12 23:27:39] INFO root fetch - processPackages [selkie]: executing diffoscope
+[2024-05-12 23:27:39] INFO root fetch - processPackages [selkie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selkie-0.24.dev3.tar.gz tmp/selkie-0.25.tar.gz --markdown 20240512/s/selkie/0.24.dev3-0.25/README.md --exclude *.pyd
+[2024-05-12 23:27:40] INFO root fetch - processPackages [selkie]: Remove: archive file [/home/abi/fetcher/tmp/selkie-0.24.dev3.tar.gz]
+[2024-05-12 23:27:40] INFO root fetch - processPackages [selkie]: Remove: archive file [/home/abi/fetcher/tmp/selkie-0.25.tar.gz]
+[2024-05-12 23:27:40] INFO root fetch - main [MainThread]: End processing [selkie]: success
+[2024-05-12 23:27:40] INFO root fetch - main [MainThread]: Store serial: [23173967]
