@@ -11989,3 +11989,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:50:18] INFO root fetch - processPackages [scrutinydebugger]: Remove: archive file [/home/abi/fetcher/tmp/scrutinydebugger-0.2.1.tar.gz]
 [2024-05-12 16:50:18] INFO root fetch - main [MainThread]: End processing [scrutinydebugger]: success
 [2024-05-12 16:50:18] INFO root fetch - main [MainThread]: Store serial: [23170873]
+[2024-05-12 16:52:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170873]
+[2024-05-12 16:52:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 16:52:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: few-shot-learning-nlp
+[2024-05-12 16:52:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zibuyu-LLM
+[2024-05-12 16:52:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jinja2-embedded
+[2024-05-12 16:52:28] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-12 16:52:28] INFO root fetch - processPackages [zibuyu-LLM]: New version: [0.1.9] Old Version: [0.1.12]
+[2024-05-12 16:52:28] WARNING root fetch - processPackages [jinja2-embedded]: Skipping, unable to determine old version
+[2024-05-12 16:52:28] INFO root fetch - main [MainThread]: End processing [jinja2-embedded] error
+[2024-05-12 16:52:28] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/cf/db/ca088bc53bdf4f1eea0ce85e77ec2adf9a9f6153e2c37903a13956a272fb/few_shot_learning_nlp-1.0.2-py3-none-any.whl
+[2024-05-12 16:52:29] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/bc/56/0294d354ec02ff01ceffd434985e65e90704405d0fe2595ad27ec1566f8b/zibuyu_LLM-0.1.12-py3-none-any.whl
+[2024-05-12 16:52:29] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/8b/1d/73751ba8bfaf5b2eb71d0251541264c73d9b0da5c2d08f0111dbee0978db/zibuyu_LLM-0.1.9-py3-none-any.whl
+[2024-05-12 16:52:29] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ad/92/3e5643021d2cb7d1445a436f2bb90eb089b3666cc759d287512ed02dd19c/few_shot_learning_nlp-1.0.3-py3-none-any.whl
+[2024-05-12 16:52:29] INFO root fetch - processPackages [zibuyu-LLM]: executing diffoscope
+[2024-05-12 16:52:29] INFO root fetch - processPackages [zibuyu-LLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibuyu_LLM-0.1.12-py3-none-any.whl.zip tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip --markdown 20240512/z/zibuyu-LLM/0.1.12-0.1.9/README.md --exclude *.pyd
+[2024-05-12 16:52:29] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-05-12 16:52:29] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-1.0.2-py3-none-any.whl.zip tmp/few_shot_learning_nlp-1.0.3-py3-none-any.whl.zip --markdown 20240512/f/few-shot-learning-nlp/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-12 16:52:30] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-1.0.2-py3-none-any.whl.zip]
+[2024-05-12 16:52:30] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-1.0.3-py3-none-any.whl.zip]
+[2024-05-12 16:52:30] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-05-12 16:52:30] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.1.12-py3-none-any.whl.zip]
+[2024-05-12 16:52:30] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip]
+[2024-05-12 16:52:30] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
+[2024-05-12 16:52:30] INFO root fetch - main [MainThread]: Store serial: [23170880]
