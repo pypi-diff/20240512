@@ -14377,3 +14377,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:18:48] INFO root fetch - processPackages [Red-Web-Dashboard]: Remove: archive file [/home/abi/fetcher/tmp/red_web_dashboard-1.6.0.tar.gz]
 [2024-05-12 19:18:48] INFO root fetch - main [MainThread]: End processing [Red-Web-Dashboard]: success
 [2024-05-12 19:18:48] INFO root fetch - main [MainThread]: Store serial: [23172157]
+[2024-05-12 19:20:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172157]
+[2024-05-12 19:20:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 19:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rotatorz
+[2024-05-12 19:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-hx-yinying
+[2024-05-12 19:20:56] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: New version: [1.2.11] Old Version: [1.2.0]
+[2024-05-12 19:20:57] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/f3/90/e07e761417f82bfaad0aac86aa342ace938bfbcb610b57e1c6628c9d04a2/nonebot-plugin-hx-yinying-1.2.0.tar.gz
+[2024-05-12 19:20:57] WARNING root fetch - processPackages [rotatorz]: Skipping, unable to determine old version
+[2024-05-12 19:20:57] INFO root fetch - main [MainThread]: End processing [rotatorz] error
+[2024-05-12 19:20:57] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/ca/28/f775029ca834e3f508797e6423613546fa6b3f677d0446cb79f4f627a43b/nonebot-plugin-hx-yinying-1.2.11.tar.gz
+[2024-05-12 19:20:57] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: executing diffoscope
+[2024-05-12 19:20:57] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-hx-yinying-1.2.0.tar.gz tmp/nonebot-plugin-hx-yinying-1.2.11.tar.gz --markdown 20240512/n/nonebot-plugin-hx-yinying/1.2.0-1.2.11/README.md --exclude *.pyd
+[2024-05-12 19:20:57] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-1.2.0.tar.gz]
+[2024-05-12 19:20:57] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-1.2.11.tar.gz]
+[2024-05-12 19:20:57] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hx-yinying]: success
+[2024-05-12 19:20:57] INFO root fetch - main [MainThread]: Store serial: [23172164]
