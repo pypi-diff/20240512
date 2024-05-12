@@ -12289,3 +12289,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:07:40] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
 [2024-05-12 17:07:40] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-12 17:07:40] INFO root fetch - main [MainThread]: Store serial: [23171017]
+[2024-05-12 17:09:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171017]
+[2024-05-12 17:09:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 17:09:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vasprocar
+[2024-05-12 17:09:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipex-llm
+[2024-05-12 17:09:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: model-resolver
+[2024-05-12 17:09:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tokenismz
+[2024-05-12 17:09:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hailersz
+[2024-05-12 17:09:48] WARNING root fetch - processPackages [vasprocar]: Skipping, unable to determine old version
+[2024-05-12 17:09:48] INFO root fetch - main [MainThread]: End processing [vasprocar] error
+[2024-05-12 17:09:48] INFO root fetch - processPackages [ipex-llm]: New version: [2.1.0b20240511] Old Version: [2.1.0b20240510]
+[2024-05-12 17:09:48] WARNING root fetch - processPackages [hailersz]: Skipping, unable to determine old version
+[2024-05-12 17:09:48] INFO root fetch - main [MainThread]: End processing [hailersz] error
+[2024-05-12 17:09:48] WARNING root fetch - processPackages [tokenismz]: Skipping, unable to determine old version
+[2024-05-12 17:09:48] INFO root fetch - main [MainThread]: End processing [tokenismz] error
+[2024-05-12 17:09:48] INFO root fetch - processPackages [model-resolver]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-12 17:09:48] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/d1/59/0136616a9b0fb4ab9cb64f50a6f53b5075b581a722bcf3f6837bff63acf3/ipex_llm-2.1.0b20240510-py3-none-win_amd64.whl
+[2024-05-12 17:09:49] INFO root fetch - processPackages [model-resolver]: Downloading https://files.pythonhosted.org/packages/96/a8/431130c8581d05d2950e89bc5499c72f0001e301732b12179defd405acdd/model_resolver-0.1.0.tar.gz
+[2024-05-12 17:09:49] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/11/77/522177dca232776977669bc2e606f0639fa2d8c0bf83f481fb6f0d0fde6a/ipex_llm-2.1.0b20240511-py3-none-win_amd64.whl
+[2024-05-12 17:09:49] INFO root fetch - processPackages [model-resolver]: Downloading https://files.pythonhosted.org/packages/77/cd/ac7d08f3d98a2ddf7f4cb6b140ac00596c0a1cd2ba40c77e5b177a18ee3d/model_resolver-0.2.0.tar.gz
+[2024-05-12 17:09:49] INFO root fetch - processPackages [model-resolver]: executing diffoscope
+[2024-05-12 17:09:49] INFO root fetch - processPackages [model-resolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_resolver-0.1.0.tar.gz tmp/model_resolver-0.2.0.tar.gz --markdown 20240512/m/model-resolver/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-12 17:09:49] INFO root fetch - processPackages [ipex-llm]: executing diffoscope
+[2024-05-12 17:09:49] INFO root fetch - processPackages [ipex-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipex_llm-2.1.0b20240510-py3-none-win_amd64.whl.zip tmp/ipex_llm-2.1.0b20240511-py3-none-win_amd64.whl.zip --markdown 20240512/i/ipex-llm/2.1.0b20240510-2.1.0b20240511/README.md --exclude *.pyd
+[2024-05-12 17:09:50] INFO root fetch - processPackages [model-resolver]: Remove: archive file [/home/abi/fetcher/tmp/model_resolver-0.1.0.tar.gz]
+[2024-05-12 17:09:50] INFO root fetch - processPackages [model-resolver]: Remove: archive file [/home/abi/fetcher/tmp/model_resolver-0.2.0.tar.gz]
+[2024-05-12 17:09:50] INFO root fetch - main [MainThread]: End processing [model-resolver]: success
+[2024-05-12 17:10:17] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240510-py3-none-win_amd64.whl.zip]
+[2024-05-12 17:10:17] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240511-py3-none-win_amd64.whl.zip]
+[2024-05-12 17:10:17] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
+[2024-05-12 17:10:17] INFO root fetch - main [MainThread]: Store serial: [23171034]
