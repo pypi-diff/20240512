@@ -13729,3 +13729,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:33:01] INFO root fetch - processPackages [peopleprinter]: Remove: archive file [/home/abi/fetcher/tmp/peopleprinter-0.0.7.tar.gz]
 [2024-05-12 18:33:01] INFO root fetch - main [MainThread]: End processing [peopleprinter]: success
 [2024-05-12 18:33:01] INFO root fetch - main [MainThread]: Store serial: [23171804]
+[2024-05-12 18:35:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171804]
+[2024-05-12 18:35:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 18:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xtn-tools-pro
+[2024-05-12 18:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aksharamukha
+[2024-05-12 18:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: comwatt
+[2024-05-12 18:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: st-forna-component
+[2024-05-12 18:35:10] WARNING root fetch - processPackages [st-forna-component]: Skipping, unable to determine old version
+[2024-05-12 18:35:10] INFO root fetch - main [MainThread]: End processing [st-forna-component] error
+[2024-05-12 18:35:10] INFO root fetch - processPackages [xtn-tools-pro]: New version: [1.0.0.0.5] Old Version: [1.0.0.0.4]
+[2024-05-12 18:35:10] INFO root fetch - processPackages [xtn-tools-pro]: Downloading https://files.pythonhosted.org/packages/31/ae/be7c89e7b11cccbf218eaf3387e0a98ab7a803ca8c2e4ea7b4e6c1e6f305/xtn-tools-pro-1.0.0.0.4.tar.gz
+[2024-05-12 18:35:10] INFO root fetch - processPackages [comwatt]: New version: [0.9.0] Old Version: [0.10.0]
+[2024-05-12 18:35:10] INFO root fetch - processPackages [aksharamukha]: New version: [2.2.2] Old Version: [2.2.1]
+[2024-05-12 18:35:10] INFO root fetch - processPackages [comwatt]: Downloading https://files.pythonhosted.org/packages/ec/2c/4da0b5b9cbe68a154ba36c7ee2c67bae794801172294dabc340238709579/comwatt-0.10.0.tar.gz
+[2024-05-12 18:35:10] INFO root fetch - processPackages [aksharamukha]: Downloading https://files.pythonhosted.org/packages/d3/40/326c7a4130f87cade90c9c4af6eb11d5a2bfce2c8cd9e1edf0f6bbe2595c/aksharamukha-2.2.1.tar.gz
+[2024-05-12 18:35:10] INFO root fetch - processPackages [xtn-tools-pro]: Downloading https://files.pythonhosted.org/packages/1d/54/0f9434dbbf02c7c3d801cae8d88b322898596825848a3cc4d712d02a2cdf/xtn-tools-pro-1.0.0.0.5.tar.gz
+[2024-05-12 18:35:10] INFO root fetch - processPackages [xtn-tools-pro]: executing diffoscope
+[2024-05-12 18:35:10] INFO root fetch - processPackages [xtn-tools-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtn-tools-pro-1.0.0.0.4.tar.gz tmp/xtn-tools-pro-1.0.0.0.5.tar.gz --markdown 20240512/x/xtn-tools-pro/1.0.0.0.4-1.0.0.0.5/README.md --exclude *.pyd
+[2024-05-12 18:35:10] INFO root fetch - processPackages [comwatt]: Downloading https://files.pythonhosted.org/packages/92/9f/f29bde36484b1744803a4a6aee413c3d397955820af3d3cb709ccf70740b/comwatt-0.9.0.tar.gz
+[2024-05-12 18:35:10] INFO root fetch - processPackages [aksharamukha]: Downloading https://files.pythonhosted.org/packages/b1/05/eca2bfcf26953e5b4e5a66e5ff39f85294ee9fd98435b572c0fb7bc42180/aksharamukha-2.2.2.tar.gz
+[2024-05-12 18:35:10] INFO root fetch - processPackages [comwatt]: executing diffoscope
+[2024-05-12 18:35:10] INFO root fetch - processPackages [comwatt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comwatt-0.10.0.tar.gz tmp/comwatt-0.9.0.tar.gz --markdown 20240512/c/comwatt/0.10.0-0.9.0/README.md --exclude *.pyd
+[2024-05-12 18:35:11] INFO root fetch - processPackages [xtn-tools-pro]: Remove: archive file [/home/abi/fetcher/tmp/xtn-tools-pro-1.0.0.0.4.tar.gz]
+[2024-05-12 18:35:11] INFO root fetch - processPackages [xtn-tools-pro]: Remove: archive file [/home/abi/fetcher/tmp/xtn-tools-pro-1.0.0.0.5.tar.gz]
+[2024-05-12 18:35:11] INFO root fetch - main [MainThread]: End processing [xtn-tools-pro]: success
+[2024-05-12 18:35:11] INFO root fetch - processPackages [aksharamukha]: executing diffoscope
+[2024-05-12 18:35:11] INFO root fetch - processPackages [aksharamukha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aksharamukha-2.2.1.tar.gz tmp/aksharamukha-2.2.2.tar.gz --markdown 20240512/a/aksharamukha/2.2.1-2.2.2/README.md --exclude *.pyd
+[2024-05-12 18:35:11] INFO root fetch - processPackages [comwatt]: Remove: archive file [/home/abi/fetcher/tmp/comwatt-0.10.0.tar.gz]
+[2024-05-12 18:35:11] INFO root fetch - processPackages [comwatt]: Remove: archive file [/home/abi/fetcher/tmp/comwatt-0.9.0.tar.gz]
+[2024-05-12 18:35:11] INFO root fetch - main [MainThread]: End processing [comwatt]: success
+[2024-05-12 18:35:12] INFO root fetch - processPackages [aksharamukha]: Remove: archive file [/home/abi/fetcher/tmp/aksharamukha-2.2.1.tar.gz]
+[2024-05-12 18:35:12] INFO root fetch - processPackages [aksharamukha]: Remove: archive file [/home/abi/fetcher/tmp/aksharamukha-2.2.2.tar.gz]
+[2024-05-12 18:35:12] INFO root fetch - main [MainThread]: End processing [aksharamukha]: success
+[2024-05-12 18:35:12] INFO root fetch - main [MainThread]: Store serial: [23171816]
