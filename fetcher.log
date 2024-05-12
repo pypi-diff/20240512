@@ -9387,3 +9387,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:36:18] INFO root fetch - processPackages [dtlpymetrics]: Remove: archive file [/home/abi/fetcher/tmp/dtlpymetrics-1.0.99-py3-none-any.whl.zip]
 [2024-05-12 13:36:18] INFO root fetch - main [MainThread]: End processing [dtlpymetrics]: success
 [2024-05-12 13:36:18] INFO root fetch - main [MainThread]: Store serial: [23169468]
+[2024-05-12 13:38:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169468]
+[2024-05-12 13:38:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 13:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torch-model-archiver-nightly
+[2024-05-12 13:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torch-workflow-archiver-nightly
+[2024-05-12 13:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: subdivision-hole-filler
+[2024-05-12 13:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wxhelper
+[2024-05-12 13:38:26] INFO root fetch - processPackages [wxhelper]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 13:38:26] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-12 13:38:26] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-12 13:38:26] INFO root fetch - processPackages [subdivision-hole-filler]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-12 13:38:26] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/39/78/71d3bda9b58dfb022af392de084f78f15d848683db00d19d604fd076ecff/torch_workflow_archiver_nightly-2024.5.8-py3-none-any.whl
+[2024-05-12 13:38:26] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/38/34/a73ff276b5dc5c3f2e6e02c0282c2f5aedce8951e022f3add74d284d17a6/torch_model_archiver_nightly-2024.5.8-py3-none-any.whl
+[2024-05-12 13:38:26] INFO root fetch - processPackages [wxhelper]: Downloading https://files.pythonhosted.org/packages/e2/83/d51d6df4afa20b79fc3ec6abe1639a2ac6a108f97393a5923022da69807b/wxhelper-0.0.1.tar.gz
+[2024-05-12 13:38:26] INFO root fetch - processPackages [subdivision-hole-filler]: Downloading https://files.pythonhosted.org/packages/90/a7/311530148c66b7f79c465da0c18f2490554d7ea161a2ca19f370b6786510/subdivision_hole_filler-1.0.1.tar.gz
+[2024-05-12 13:38:27] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/55/73/d6cac6137d8889445aa6a2fbae4644d9528d66859fb2e8149098c685de95/torch_workflow_archiver_nightly-2024.5.9-py3-none-any.whl
+[2024-05-12 13:38:27] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/5c/3d/7e9f420b3d052022aab0ce6e49d396d1d147acccfc51748d2cfa54ae3390/torch_model_archiver_nightly-2024.5.9-py3-none-any.whl
+[2024-05-12 13:38:27] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2024-05-12 13:38:27] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2024.5.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2024.5.9-py3-none-any.whl.zip --markdown 20240512/t/torch-workflow-archiver-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-12 13:38:27] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2024-05-12 13:38:27] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2024.5.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2024.5.9-py3-none-any.whl.zip --markdown 20240512/t/torch-model-archiver-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-12 13:38:27] INFO root fetch - processPackages [wxhelper]: Downloading https://files.pythonhosted.org/packages/39/fb/703d4614cf91bc1496a88038a74a911814d67f77537f5323b556c213a123/wxhelper-0.0.2.tar.gz
+[2024-05-12 13:38:27] INFO root fetch - processPackages [subdivision-hole-filler]: Downloading https://files.pythonhosted.org/packages/05/9a/9439de9d9448ffa6f56dc3e15027c2fa78e9ae2f3c9d1d1f186a039c4cdc/subdivision_hole_filler-1.0.2.tar.gz
+[2024-05-12 13:38:27] INFO root fetch - processPackages [wxhelper]: executing diffoscope
+[2024-05-12 13:38:27] INFO root fetch - processPackages [wxhelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wxhelper-0.0.1.tar.gz tmp/wxhelper-0.0.2.tar.gz --markdown 20240512/w/wxhelper/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-12 13:38:27] INFO root fetch - processPackages [subdivision-hole-filler]: executing diffoscope
+[2024-05-12 13:38:27] INFO root fetch - processPackages [subdivision-hole-filler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subdivision_hole_filler-1.0.1.tar.gz tmp/subdivision_hole_filler-1.0.2.tar.gz --markdown 20240512/s/subdivision-hole-filler/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-12 13:38:27] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.5.8-py3-none-any.whl.zip]
+[2024-05-12 13:38:27] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-05-12 13:38:27] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2024-05-12 13:38:27] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.5.8-py3-none-any.whl.zip]
+[2024-05-12 13:38:27] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-05-12 13:38:27] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2024-05-12 13:38:28] INFO root fetch - processPackages [subdivision-hole-filler]: Remove: archive file [/home/abi/fetcher/tmp/subdivision_hole_filler-1.0.1.tar.gz]
+[2024-05-12 13:38:28] INFO root fetch - processPackages [subdivision-hole-filler]: Remove: archive file [/home/abi/fetcher/tmp/subdivision_hole_filler-1.0.2.tar.gz]
+[2024-05-12 13:38:28] INFO root fetch - main [MainThread]: End processing [subdivision-hole-filler]: success
+[2024-05-12 13:38:28] INFO root fetch - processPackages [wxhelper]: Remove: archive file [/home/abi/fetcher/tmp/wxhelper-0.0.1.tar.gz]
+[2024-05-12 13:38:28] INFO root fetch - processPackages [wxhelper]: Remove: archive file [/home/abi/fetcher/tmp/wxhelper-0.0.2.tar.gz]
+[2024-05-12 13:38:28] INFO root fetch - main [MainThread]: End processing [wxhelper]: success
+[2024-05-12 13:38:28] INFO root fetch - main [MainThread]: Store serial: [23169477]
