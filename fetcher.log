@@ -9250,3 +9250,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:26:44] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
 [2024-05-12 13:26:44] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
 [2024-05-12 13:26:44] INFO root fetch - main [MainThread]: Store serial: [23169378]
+[2024-05-12 13:28:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169378]
+[2024-05-12 13:28:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 13:28:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bot-station
+[2024-05-12 13:28:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: KFSconfig
+[2024-05-12 13:28:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mapeathor
+[2024-05-12 13:28:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: statsnet-python-sdk
+[2024-05-12 13:28:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: monisha
+[2024-05-12 13:28:53] WARNING root fetch - processPackages [statsnet-python-sdk]: Skipping, unable to determine old version
+[2024-05-12 13:28:53] INFO root fetch - main [MainThread]: End processing [statsnet-python-sdk] error
+[2024-05-12 13:28:53] INFO root fetch - processPackages [KFSconfig]: New version: [2.1.5] Old Version: [2.1.4]
+[2024-05-12 13:28:54] INFO root fetch - processPackages [KFSconfig]: Downloading https://files.pythonhosted.org/packages/88/2c/20f4001c494a03f3801bcf4630ba8f3c2ee98f664ced85266f23c30fc8a8/kfsconfig-2.1.4.tar.gz
+[2024-05-12 13:28:54] INFO root fetch - processPackages [monisha]: New version: [0.0.68] Old Version: [0.0.66]
+[2024-05-12 13:28:54] INFO root fetch - processPackages [bot-station]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-12 13:28:54] INFO root fetch - processPackages [mapeathor]: New version: [1.7.5] Old Version: [1.7.4]
+[2024-05-12 13:28:54] INFO root fetch - processPackages [bot-station]: Downloading https://files.pythonhosted.org/packages/28/13/165731416f14e96284fb2b1b7aa2659aec40bf62b2b90db8a613f791a0f1/bot_station-0.5.0.tar.gz
+[2024-05-12 13:28:54] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/16/96/ec7c55bef404ca43e269b0b621726609f6147d604c7f11034cf6860bc945/monisha-0.0.66.tar.gz
+[2024-05-12 13:28:54] INFO root fetch - processPackages [KFSconfig]: Downloading https://files.pythonhosted.org/packages/05/a0/f55162bbc8d210f4c15329de566949afc697fd7f63d23c658a3dbdb2bcd0/kfsconfig-2.1.5.tar.gz
+[2024-05-12 13:28:54] INFO root fetch - processPackages [KFSconfig]: executing diffoscope
+[2024-05-12 13:28:54] INFO root fetch - processPackages [KFSconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsconfig-2.1.4.tar.gz tmp/kfsconfig-2.1.5.tar.gz --markdown 20240512/K/KFSconfig/2.1.4-2.1.5/README.md --exclude *.pyd
+[2024-05-12 13:28:54] INFO root fetch - processPackages [mapeathor]: Downloading https://files.pythonhosted.org/packages/d3/90/15503cb9cf9f4a6eb8c9a812c0c4ba9958260f2b5920253018f038cfa7a6/mapeathor-1.7.4.tar.gz
+[2024-05-12 13:28:54] INFO root fetch - processPackages [bot-station]: Downloading https://files.pythonhosted.org/packages/70/6c/2a63ee53dbd286c2fcf5b66fad3f9bd2e81d04c655ba0665d5d8dd1b4eba/bot_station-0.5.1.tar.gz
+[2024-05-12 13:28:54] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/54/0e/a73a78274695b7e7be5e01387d65281cb2b06302633aebf3e29ded22ff0a/monisha-0.0.68.tar.gz
+[2024-05-12 13:28:54] INFO root fetch - processPackages [bot-station]: executing diffoscope
+[2024-05-12 13:28:54] INFO root fetch - processPackages [bot-station]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot_station-0.5.0.tar.gz tmp/bot_station-0.5.1.tar.gz --markdown 20240512/b/bot-station/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-12 13:28:54] INFO root fetch - processPackages [monisha]: executing diffoscope
+[2024-05-12 13:28:54] INFO root fetch - processPackages [monisha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monisha-0.0.66.tar.gz tmp/monisha-0.0.68.tar.gz --markdown 20240512/m/monisha/0.0.66-0.0.68/README.md --exclude *.pyd
+[2024-05-12 13:28:54] INFO root fetch - processPackages [mapeathor]: Downloading https://files.pythonhosted.org/packages/d5/02/07d9fae7b36b04078cda2022555d74c5761152ba64238eb757747d0c0d02/mapeathor-1.7.5.tar.gz
+[2024-05-12 13:28:54] INFO root fetch - processPackages [mapeathor]: executing diffoscope
+[2024-05-12 13:28:54] INFO root fetch - processPackages [mapeathor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapeathor-1.7.4.tar.gz tmp/mapeathor-1.7.5.tar.gz --markdown 20240512/m/mapeathor/1.7.4-1.7.5/README.md --exclude *.pyd
+[2024-05-12 13:28:55] INFO root fetch - processPackages [KFSconfig]: Remove: archive file [/home/abi/fetcher/tmp/kfsconfig-2.1.4.tar.gz]
+[2024-05-12 13:28:55] INFO root fetch - processPackages [KFSconfig]: Remove: archive file [/home/abi/fetcher/tmp/kfsconfig-2.1.5.tar.gz]
+[2024-05-12 13:28:55] INFO root fetch - main [MainThread]: End processing [KFSconfig]: success
+[2024-05-12 13:28:55] INFO root fetch - processPackages [bot-station]: Remove: archive file [/home/abi/fetcher/tmp/bot_station-0.5.0.tar.gz]
+[2024-05-12 13:28:55] INFO root fetch - processPackages [bot-station]: Remove: archive file [/home/abi/fetcher/tmp/bot_station-0.5.1.tar.gz]
+[2024-05-12 13:28:55] INFO root fetch - main [MainThread]: End processing [bot-station]: success
+[2024-05-12 13:28:55] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.66.tar.gz]
+[2024-05-12 13:28:55] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.68.tar.gz]
+[2024-05-12 13:28:55] INFO root fetch - main [MainThread]: End processing [monisha]: success
+[2024-05-12 13:28:55] INFO root fetch - processPackages [mapeathor]: Remove: archive file [/home/abi/fetcher/tmp/mapeathor-1.7.4.tar.gz]
+[2024-05-12 13:28:55] INFO root fetch - processPackages [mapeathor]: Remove: archive file [/home/abi/fetcher/tmp/mapeathor-1.7.5.tar.gz]
+[2024-05-12 13:28:55] INFO root fetch - main [MainThread]: End processing [mapeathor]: success
+[2024-05-12 13:28:55] INFO root fetch - main [MainThread]: Store serial: [23169398]
