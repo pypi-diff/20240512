@@ -17240,3 +17240,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:21:38] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240512.1715545134.tar.gz]
 [2024-05-12 22:21:38] INFO root fetch - main [MainThread]: End processing [gink]: success
 [2024-05-12 22:21:38] INFO root fetch - main [MainThread]: Store serial: [23173543]
+[2024-05-12 22:23:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173543]
+[2024-05-12 22:23:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 22:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-auth-external
+[2024-05-12 22:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ode-style
+[2024-05-12 22:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: contact-notes-local
+[2024-05-12 22:23:47] INFO root fetch - processPackages [dash-auth-external]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-05-12 22:23:47] INFO root fetch - processPackages [ode-style]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 22:23:47] INFO root fetch - processPackages [contact-notes-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 22:23:47] INFO root fetch - processPackages [dash-auth-external]: Downloading https://files.pythonhosted.org/packages/50/f4/ae625ac0fa86be5e8b5e18417e7a310f2d52ccb38fbb0f7049f372d9334e/dash-auth-external-1.1.0.tar.gz
+[2024-05-12 22:23:47] INFO root fetch - processPackages [ode-style]: Downloading https://files.pythonhosted.org/packages/86/66/677ae64350b09ddffd8045ec6571e360ae80987f24538824fcc321183498/ode_style-0.0.8.tar.gz
+[2024-05-12 22:23:47] INFO root fetch - processPackages [contact-notes-local]: Downloading https://files.pythonhosted.org/packages/94/02/401f72b4bc3a22137e39e519a300db91b6d7f6f995ff3fdd5266dd81540c/contact-notes-local-0.0.8.tar.gz
+[2024-05-12 22:23:47] INFO root fetch - processPackages [dash-auth-external]: Downloading https://files.pythonhosted.org/packages/28/fb/2cfd4c53886c7d8ff89d2b18ace1a0e91f51185f6e6c2955163df4d0fd5a/dash-auth-external-1.2.0.tar.gz
+[2024-05-12 22:23:47] INFO root fetch - processPackages [ode-style]: Downloading https://files.pythonhosted.org/packages/15/26/8e160956a4db21efea9e4a94175a01d961e965f1771cfd34e2e8a2d535e3/ode_style-0.0.9.tar.gz
+[2024-05-12 22:23:47] INFO root fetch - processPackages [dash-auth-external]: executing diffoscope
+[2024-05-12 22:23:47] INFO root fetch - processPackages [dash-auth-external]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash-auth-external-1.1.0.tar.gz tmp/dash-auth-external-1.2.0.tar.gz --markdown 20240512/d/dash-auth-external/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-05-12 22:23:47] INFO root fetch - processPackages [contact-notes-local]: Downloading https://files.pythonhosted.org/packages/7d/da/15635ad28159f22874e3fbe243ec786d3658da7812c3243f5feb8d5f8385/contact-notes-local-0.0.9.tar.gz
+[2024-05-12 22:23:48] INFO root fetch - processPackages [ode-style]: executing diffoscope
+[2024-05-12 22:23:48] INFO root fetch - processPackages [ode-style]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ode_style-0.0.8.tar.gz tmp/ode_style-0.0.9.tar.gz --markdown 20240512/o/ode-style/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 22:23:48] INFO root fetch - processPackages [contact-notes-local]: executing diffoscope
+[2024-05-12 22:23:48] INFO root fetch - processPackages [contact-notes-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-notes-local-0.0.8.tar.gz tmp/contact-notes-local-0.0.9.tar.gz --markdown 20240512/c/contact-notes-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 22:23:48] INFO root fetch - processPackages [contact-notes-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-notes-local-0.0.8.tar.gz]
+[2024-05-12 22:23:48] INFO root fetch - processPackages [contact-notes-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-notes-local-0.0.9.tar.gz]
+[2024-05-12 22:23:48] INFO root fetch - main [MainThread]: End processing [contact-notes-local]: success
+[2024-05-12 22:23:48] INFO root fetch - processPackages [ode-style]: Remove: archive file [/home/abi/fetcher/tmp/ode_style-0.0.8.tar.gz]
+[2024-05-12 22:23:48] INFO root fetch - processPackages [ode-style]: Remove: archive file [/home/abi/fetcher/tmp/ode_style-0.0.9.tar.gz]
+[2024-05-12 22:23:48] INFO root fetch - main [MainThread]: End processing [ode-style]: success
+[2024-05-12 22:23:48] INFO root fetch - processPackages [dash-auth-external]: Remove: archive file [/home/abi/fetcher/tmp/dash-auth-external-1.1.0.tar.gz]
+[2024-05-12 22:23:48] INFO root fetch - processPackages [dash-auth-external]: Remove: archive file [/home/abi/fetcher/tmp/dash-auth-external-1.2.0.tar.gz]
+[2024-05-12 22:23:48] INFO root fetch - main [MainThread]: End processing [dash-auth-external]: success
+[2024-05-12 22:23:48] INFO root fetch - main [MainThread]: Store serial: [23173552]
