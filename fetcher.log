@@ -11856,3 +11856,67 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:41:38] INFO root fetch - processPackages [voluptuous-openapi]: Remove: archive file [/home/abi/fetcher/tmp/voluptuous_openapi-0.0.3.tar.gz]
 [2024-05-12 16:41:38] INFO root fetch - main [MainThread]: End processing [voluptuous-openapi]: success
 [2024-05-12 16:41:38] INFO root fetch - main [MainThread]: Store serial: [23170798]
+[2024-05-12 16:43:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170798]
+[2024-05-12 16:43:46] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-12 16:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-mysql-replication
+[2024-05-12 16:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: phidata
+[2024-05-12 16:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pkscreener
+[2024-05-12 16:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cell-imaging-utils
+[2024-05-12 16:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigcode
+[2024-05-12 16:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: redustz
+[2024-05-12 16:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: agenta
+[2024-05-12 16:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: epconversions
+[2024-05-12 16:43:46] INFO root fetch - processPackages [django-mysql-replication]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 16:43:46] INFO root fetch - processPackages [bigcode]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-12 16:43:46] INFO root fetch - processPackages [phidata]: New version: [2.4.5] Old Version: [2.4.4]
+[2024-05-12 16:43:46] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240512.361] Old Version: [0.44.20240511.360]
+[2024-05-12 16:43:46] WARNING root fetch - processPackages [redustz]: Skipping, unable to determine old version
+[2024-05-12 16:43:46] INFO root fetch - main [MainThread]: End processing [redustz] error
+[2024-05-12 16:43:46] INFO root fetch - processPackages [cell-imaging-utils]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-05-12 16:43:46] INFO root fetch - processPackages [phidata]: Downloading https://files.pythonhosted.org/packages/75/91/e2811d3b89055a2bc7eba7ab867636781f80cd175402f6b4c28b3e6cf118/phidata-2.4.4.tar.gz
+[2024-05-12 16:43:46] ERROR root fetch - processPackages [django-mysql-replication]: Unable to fetch info: No such project/version 'django-mysql-replication' 0.1.0
+[2024-05-12 16:43:46] INFO root fetch - main [MainThread]: End processing [django-mysql-replication] error
+[2024-05-12 16:43:46] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/93/8b/af1410af946e93d71322cab97c08064fc29f2ae72892011eac2173a509ed/pkscreener-0.44.20240511.360.tar.gz
+[2024-05-12 16:43:46] INFO root fetch - processPackages [agenta]: New version: [0.9.0] Old Version: [0.8.4]
+[2024-05-12 16:43:46] INFO root fetch - processPackages [epconversions]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-12 16:43:46] INFO root fetch - processPackages [bigcode]: Downloading https://files.pythonhosted.org/packages/90/db/d0377ebdd6f914040d60281a875f807f089b54dff8e255083ceb57c1d14a/bigcode-1.0.1.tar.gz
+[2024-05-12 16:43:46] INFO root fetch - processPackages [cell-imaging-utils]: Downloading https://files.pythonhosted.org/packages/59/ab/441ddb0261a8901eadfcf8d6618a03be98bcbd53ebd09553be87837ba5af/cell_imaging_utils-1.5.8.tar.gz
+[2024-05-12 16:43:47] INFO root fetch - processPackages [epconversions]: Downloading https://files.pythonhosted.org/packages/b0/9a/421261ae4c7532c1c5394ec15803734c58e69a575dcb7690cb37e94b5544/epconversions-0.2.1.tar.gz
+[2024-05-12 16:43:47] INFO root fetch - processPackages [agenta]: Downloading https://files.pythonhosted.org/packages/e1/b3/694bb4fe67f0b63ef67836f5924bdc436dfb590d7e7da0824cbbc4b71853/agenta-0.8.4.tar.gz
+[2024-05-12 16:43:47] INFO root fetch - processPackages [phidata]: Downloading https://files.pythonhosted.org/packages/94/59/085a2709bff0de5b946092dd063669b55669a429dd789966a977b3ad14f7/phidata-2.4.5.tar.gz
+[2024-05-12 16:43:47] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/93/58/9edc0985122afad658d91529f29115a32c12e194fce03dc5f974cb3caf9e/pkscreener-0.44.20240512.361.tar.gz
+[2024-05-12 16:43:47] INFO root fetch - processPackages [bigcode]: Downloading https://files.pythonhosted.org/packages/a5/62/5033e363cf6dde6601e474b52b181972b43fae0c4d97287a06bc3c97aab0/bigcode-1.0.2.tar.gz
+[2024-05-12 16:43:47] INFO root fetch - processPackages [phidata]: executing diffoscope
+[2024-05-12 16:43:47] INFO root fetch - processPackages [phidata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phidata-2.4.4.tar.gz tmp/phidata-2.4.5.tar.gz --markdown 20240512/p/phidata/2.4.4-2.4.5/README.md --exclude *.pyd
+[2024-05-12 16:43:47] INFO root fetch - processPackages [cell-imaging-utils]: Downloading https://files.pythonhosted.org/packages/11/4f/b80f8c7bc358cd880a2dd1a719aa79f2bf70c6284e3d321560df103a67a0/cell_imaging_utils-1.5.9.tar.gz
+[2024-05-12 16:43:47] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-12 16:43:47] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240511.360.tar.gz tmp/pkscreener-0.44.20240512.361.tar.gz --markdown 20240512/p/pkscreener/0.44.20240511.360-0.44.20240512.361/README.md --exclude *.pyd
+[2024-05-12 16:43:47] INFO root fetch - processPackages [bigcode]: executing diffoscope
+[2024-05-12 16:43:47] INFO root fetch - processPackages [bigcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigcode-1.0.1.tar.gz tmp/bigcode-1.0.2.tar.gz --markdown 20240512/b/bigcode/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-12 16:43:47] INFO root fetch - processPackages [epconversions]: Downloading https://files.pythonhosted.org/packages/89/33/0390c20ef692a62d6240d6c5e106e9b9b7b5393181036ba12d3b051a7270/epconversions-0.2.2.tar.gz
+[2024-05-12 16:43:47] INFO root fetch - processPackages [cell-imaging-utils]: executing diffoscope
+[2024-05-12 16:43:47] INFO root fetch - processPackages [cell-imaging-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cell_imaging_utils-1.5.8.tar.gz tmp/cell_imaging_utils-1.5.9.tar.gz --markdown 20240512/c/cell-imaging-utils/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-05-12 16:43:47] INFO root fetch - processPackages [agenta]: Downloading https://files.pythonhosted.org/packages/f7/a1/73689fd1faf7fbbd3985f8ed9673e4784bae27b1789d6fe5f7e4f001ed89/agenta-0.9.0.tar.gz
+[2024-05-12 16:43:47] INFO root fetch - processPackages [agenta]: executing diffoscope
+[2024-05-12 16:43:47] INFO root fetch - processPackages [agenta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agenta-0.8.4.tar.gz tmp/agenta-0.9.0.tar.gz --markdown 20240512/a/agenta/0.8.4-0.9.0/README.md --exclude *.pyd
+[2024-05-12 16:43:47] INFO root fetch - processPackages [epconversions]: executing diffoscope
+[2024-05-12 16:43:47] INFO root fetch - processPackages [epconversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epconversions-0.2.1.tar.gz tmp/epconversions-0.2.2.tar.gz --markdown 20240512/e/epconversions/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-12 16:43:47] INFO root fetch - processPackages [cell-imaging-utils]: Remove: archive file [/home/abi/fetcher/tmp/cell_imaging_utils-1.5.8.tar.gz]
+[2024-05-12 16:43:47] INFO root fetch - processPackages [cell-imaging-utils]: Remove: archive file [/home/abi/fetcher/tmp/cell_imaging_utils-1.5.9.tar.gz]
+[2024-05-12 16:43:47] INFO root fetch - main [MainThread]: End processing [cell-imaging-utils]: success
+[2024-05-12 16:43:48] INFO root fetch - processPackages [bigcode]: Remove: archive file [/home/abi/fetcher/tmp/bigcode-1.0.1.tar.gz]
+[2024-05-12 16:43:48] INFO root fetch - processPackages [bigcode]: Remove: archive file [/home/abi/fetcher/tmp/bigcode-1.0.2.tar.gz]
+[2024-05-12 16:43:48] INFO root fetch - main [MainThread]: End processing [bigcode]: success
+[2024-05-12 16:43:48] INFO root fetch - processPackages [epconversions]: Remove: archive file [/home/abi/fetcher/tmp/epconversions-0.2.1.tar.gz]
+[2024-05-12 16:43:48] INFO root fetch - processPackages [epconversions]: Remove: archive file [/home/abi/fetcher/tmp/epconversions-0.2.2.tar.gz]
+[2024-05-12 16:43:48] INFO root fetch - main [MainThread]: End processing [epconversions]: success
+[2024-05-12 16:43:48] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240511.360.tar.gz]
+[2024-05-12 16:43:48] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240512.361.tar.gz]
+[2024-05-12 16:43:48] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-12 16:43:48] INFO root fetch - processPackages [agenta]: Remove: archive file [/home/abi/fetcher/tmp/agenta-0.8.4.tar.gz]
+[2024-05-12 16:43:48] INFO root fetch - processPackages [agenta]: Remove: archive file [/home/abi/fetcher/tmp/agenta-0.9.0.tar.gz]
+[2024-05-12 16:43:48] INFO root fetch - main [MainThread]: End processing [agenta]: success
+[2024-05-12 16:43:48] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.4.4.tar.gz]
+[2024-05-12 16:43:48] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.4.5.tar.gz]
+[2024-05-12 16:43:48] INFO root fetch - main [MainThread]: End processing [phidata]: success
+[2024-05-12 16:43:48] INFO root fetch - main [MainThread]: Store serial: [23170826]
