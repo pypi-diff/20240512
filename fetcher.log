@@ -5375,3 +5375,27 @@
 [2024-05-12 08:16:19] INFO root fetch - processPackages [django-easy-schedule]: Remove: archive file [/home/abi/fetcher/tmp/django-easy-schedule-0.1.5.tar.gz]
 [2024-05-12 08:16:19] INFO root fetch - main [MainThread]: End processing [django-easy-schedule]: success
 [2024-05-12 08:16:19] INFO root fetch - main [MainThread]: Store serial: [23167431]
+[2024-05-12 08:18:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167431]
+[2024-05-12 08:18:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 08:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prodemocracyz
+[2024-05-12 08:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: poetry-moment
+[2024-05-12 08:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zibuyu-LLM
+[2024-05-12 08:18:27] INFO root fetch - processPackages [zibuyu-LLM]: New version: [0.1.9] Old Version: [0.0.9]
+[2024-05-12 08:18:27] INFO root fetch - processPackages [poetry-moment]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-12 08:18:28] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/3f/36/67bce9b1dc7e6b9fff5c12765a59d466dae952b222e37e4664db470969bf/zibuyu_LLM-0.0.9-py3-none-any.whl
+[2024-05-12 08:18:28] INFO root fetch - processPackages [poetry-moment]: Downloading https://files.pythonhosted.org/packages/2f/29/9bce5e369e84adbc389762acc3ceaafcf103928f700bacb42f7a24289f3b/poetry_moment-0.0.4.tar.gz
+[2024-05-12 08:18:28] WARNING root fetch - processPackages [prodemocracyz]: Skipping, unable to determine old version
+[2024-05-12 08:18:28] INFO root fetch - main [MainThread]: End processing [prodemocracyz] error
+[2024-05-12 08:18:28] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/8b/1d/73751ba8bfaf5b2eb71d0251541264c73d9b0da5c2d08f0111dbee0978db/zibuyu_LLM-0.1.9-py3-none-any.whl
+[2024-05-12 08:18:28] INFO root fetch - processPackages [poetry-moment]: Downloading https://files.pythonhosted.org/packages/49/a5/0d771a32ab91703ecae3aa9e91c1b5f6b46dedb133cbfea4f2a38833e1d1/poetry_moment-0.0.5.tar.gz
+[2024-05-12 08:18:28] INFO root fetch - processPackages [zibuyu-LLM]: executing diffoscope
+[2024-05-12 08:18:28] INFO root fetch - processPackages [zibuyu-LLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibuyu_LLM-0.0.9-py3-none-any.whl.zip tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip --markdown 20240512/z/zibuyu-LLM/0.0.9-0.1.9/README.md --exclude *.pyd
+[2024-05-12 08:18:28] INFO root fetch - processPackages [poetry-moment]: executing diffoscope
+[2024-05-12 08:18:28] INFO root fetch - processPackages [poetry-moment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_moment-0.0.4.tar.gz tmp/poetry_moment-0.0.5.tar.gz --markdown 20240512/p/poetry-moment/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-12 08:18:29] INFO root fetch - processPackages [poetry-moment]: Remove: archive file [/home/abi/fetcher/tmp/poetry_moment-0.0.4.tar.gz]
+[2024-05-12 08:18:29] INFO root fetch - processPackages [poetry-moment]: Remove: archive file [/home/abi/fetcher/tmp/poetry_moment-0.0.5.tar.gz]
+[2024-05-12 08:18:29] INFO root fetch - main [MainThread]: End processing [poetry-moment]: success
+[2024-05-12 08:18:29] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.0.9-py3-none-any.whl.zip]
+[2024-05-12 08:18:29] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip]
+[2024-05-12 08:18:29] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
+[2024-05-12 08:18:29] INFO root fetch - main [MainThread]: Store serial: [23167440]
