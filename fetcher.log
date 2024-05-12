@@ -14786,3 +14786,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:42:41] INFO root fetch - processPackages [cyberonix]: Remove: archive file [/home/abi/fetcher/tmp/cyberonix-2.0.9.tar.gz]
 [2024-05-12 19:42:41] INFO root fetch - main [MainThread]: End processing [cyberonix]: success
 [2024-05-12 19:42:41] INFO root fetch - main [MainThread]: Store serial: [23172365]
+[2024-05-12 19:44:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172365]
+[2024-05-12 19:44:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 19:44:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyhdl-if
+[2024-05-12 19:44:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: greesz
+[2024-05-12 19:44:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beets-ytimport
+[2024-05-12 19:44:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: data-prep-toolkit-kfp
+[2024-05-12 19:44:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cyberonix
+[2024-05-12 19:44:50] INFO root fetch - processPackages [cyberonix]: New version: [3.0.0] Old Version: [2.0.9]
+[2024-05-12 19:44:50] INFO root fetch - processPackages [data-prep-toolkit-kfp]: New version: [0.0.1.dev9] Old Version: [0.0.1.dev8]
+[2024-05-12 19:44:50] INFO root fetch - processPackages [pyhdl-if]: New version: [0.0.1.9052753601] Old Version: [0.0.1.9052343530]
+[2024-05-12 19:44:50] INFO root fetch - processPackages [cyberonix]: Downloading https://files.pythonhosted.org/packages/cc/34/7b235fd9c8ec906c3aa5033ce74e3bd46e86cee680519bcbfcb69587c539/cyberonix-2.0.9.tar.gz
+[2024-05-12 19:44:50] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/77/32/e1870ff2cf3cfa8aa67341ed691e5828aa67e0420b4dad5cc2db29038c25/data_prep_toolkit_kfp-0.0.1.dev8.tar.gz
+[2024-05-12 19:44:50] INFO root fetch - processPackages [pyhdl-if]: Downloading https://files.pythonhosted.org/packages/07/f7/f325de4d2d05949b03c4c4d2252ab7f03c0b4742c807d201725e5a56294b/pyhdl_if-0.0.1.9052343530-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-12 19:44:50] WARNING root fetch - processPackages [greesz]: Skipping, unable to determine old version
+[2024-05-12 19:44:50] INFO root fetch - main [MainThread]: End processing [greesz] error
+[2024-05-12 19:44:50] INFO root fetch - processPackages [beets-ytimport]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-05-12 19:44:50] INFO root fetch - processPackages [beets-ytimport]: Downloading https://files.pythonhosted.org/packages/7d/ec/801cbe78084b01c770ea782dfb5bc4951b689bc60af4eb7d33fca4e81319/beets_ytimport-1.7.0-py3-none-any.whl
+[2024-05-12 19:44:50] INFO root fetch - processPackages [pyhdl-if]: Downloading https://files.pythonhosted.org/packages/15/ec/3db52430dd149df7a206b23c24de42083e3bdaab36ae50a6b269f6f86cdf/pyhdl_if-0.0.1.9052753601-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-12 19:44:50] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/ba/bf/e95575aad408e2aa50198d2c293f708992db973fc14a205c8aaefd64e700/data_prep_toolkit_kfp-0.0.1.dev9.tar.gz
+[2024-05-12 19:44:50] INFO root fetch - processPackages [cyberonix]: Downloading https://files.pythonhosted.org/packages/2b/bb/0c67b2fb331ee3a4f497d22d768656f5af5c5b963def48fb873a5baff409/cyberonix-3.0.0.tar.gz
+[2024-05-12 19:44:50] INFO root fetch - processPackages [pyhdl-if]: executing diffoscope
+[2024-05-12 19:44:50] INFO root fetch - processPackages [pyhdl-if]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhdl_if-0.0.1.9052343530-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pyhdl_if-0.0.1.9052753601-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240512/p/pyhdl-if/0.0.1.9052343530-0.0.1.9052753601/README.md --exclude *.pyd
+[2024-05-12 19:44:50] INFO root fetch - processPackages [data-prep-toolkit-kfp]: executing diffoscope
+[2024-05-12 19:44:50] INFO root fetch - processPackages [data-prep-toolkit-kfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_toolkit_kfp-0.0.1.dev8.tar.gz tmp/data_prep_toolkit_kfp-0.0.1.dev9.tar.gz --markdown 20240512/d/data-prep-toolkit-kfp/0.0.1.dev8-0.0.1.dev9/README.md --exclude *.pyd
+[2024-05-12 19:44:50] INFO root fetch - processPackages [beets-ytimport]: Downloading https://files.pythonhosted.org/packages/da/6c/1fe9d4d6a12e7f2a27c24bbdfc0eb188150d9cb8fd81e85a4594fbf04dfd/beets_ytimport-1.7.1-py3-none-any.whl
+[2024-05-12 19:44:50] INFO root fetch - processPackages [cyberonix]: executing diffoscope
+[2024-05-12 19:44:50] INFO root fetch - processPackages [cyberonix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberonix-2.0.9.tar.gz tmp/cyberonix-3.0.0.tar.gz --markdown 20240512/c/cyberonix/2.0.9-3.0.0/README.md --exclude *.pyd
+[2024-05-12 19:44:50] INFO root fetch - processPackages [beets-ytimport]: executing diffoscope
+[2024-05-12 19:44:50] INFO root fetch - processPackages [beets-ytimport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets_ytimport-1.7.0-py3-none-any.whl.zip tmp/beets_ytimport-1.7.1-py3-none-any.whl.zip --markdown 20240512/b/beets-ytimport/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-05-12 19:44:51] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev8.tar.gz]
+[2024-05-12 19:44:51] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev9.tar.gz]
+[2024-05-12 19:44:51] INFO root fetch - main [MainThread]: End processing [data-prep-toolkit-kfp]: success
+[2024-05-12 19:44:51] INFO root fetch - processPackages [cyberonix]: Remove: archive file [/home/abi/fetcher/tmp/cyberonix-2.0.9.tar.gz]
+[2024-05-12 19:44:51] INFO root fetch - processPackages [cyberonix]: Remove: archive file [/home/abi/fetcher/tmp/cyberonix-3.0.0.tar.gz]
+[2024-05-12 19:44:51] INFO root fetch - main [MainThread]: End processing [cyberonix]: success
+[2024-05-12 19:44:51] INFO root fetch - processPackages [beets-ytimport]: Remove: archive file [/home/abi/fetcher/tmp/beets_ytimport-1.7.0-py3-none-any.whl.zip]
+[2024-05-12 19:44:51] INFO root fetch - processPackages [beets-ytimport]: Remove: archive file [/home/abi/fetcher/tmp/beets_ytimport-1.7.1-py3-none-any.whl.zip]
+[2024-05-12 19:44:51] INFO root fetch - main [MainThread]: End processing [beets-ytimport]: success
+[2024-05-12 19:44:51] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.9052343530-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-12 19:44:51] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.9052753601-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-12 19:44:51] INFO root fetch - main [MainThread]: End processing [pyhdl-if]: success
+[2024-05-12 19:44:51] INFO root fetch - main [MainThread]: Store serial: [23172383]
