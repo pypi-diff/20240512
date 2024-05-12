@@ -15527,3 +15527,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:36:56] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.37.tar.gz]
 [2024-05-12 20:36:56] INFO root fetch - main [MainThread]: End processing [SelfCalibratedConformal]: success
 [2024-05-12 20:36:56] INFO root fetch - main [MainThread]: Store serial: [23172700]
+[2024-05-12 20:39:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172700]
+[2024-05-12 20:39:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 20:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyboiler-anonoei
+[2024-05-12 20:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bioat
+[2024-05-12 20:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: email-address-local
+[2024-05-12 20:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SelfCalibratedConformal
+[2024-05-12 20:39:05] INFO root fetch - processPackages [SelfCalibratedConformal]: New version: [0.4] Old Version: [0.37]
+[2024-05-12 20:39:05] INFO root fetch - processPackages [pyboiler-anonoei]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-12 20:39:05] INFO root fetch - processPackages [bioat]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-12 20:39:05] INFO root fetch - processPackages [email-address-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 20:39:05] INFO root fetch - processPackages [pyboiler-anonoei]: Downloading https://files.pythonhosted.org/packages/2d/28/363e502d0d058f9e39c81cfe57fc6848e68c0b8e8cb5df0aaa31bb8b2b4f/pyboiler_anonoei-0.0.2.tar.gz
+[2024-05-12 20:39:05] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/62/28/a6bbefffdc521a85ef9fa7a122acf527f63b5c4dc72e4fbd2443789798c4/SelfCalibratedConformal-0.37.tar.gz
+[2024-05-12 20:39:05] INFO root fetch - processPackages [bioat]: Downloading https://files.pythonhosted.org/packages/04/87/27733a666503696419c4a4b25800eae50415192d02274519b748829963d0/bioat-0.9.0.tar.gz
+[2024-05-12 20:39:05] INFO root fetch - processPackages [email-address-local]: Downloading https://files.pythonhosted.org/packages/a8/f2/75317f90ccacb6655c8fefd773dce9c2359b86e434bf4e98c3aa377dd835/email-address-local-0.0.8.tar.gz
+[2024-05-12 20:39:06] INFO root fetch - processPackages [bioat]: Downloading https://files.pythonhosted.org/packages/9b/66/f85222000d903dd3fc4dcf94a27d2dc8e169f2a275a156acaa6341e21d37/bioat-0.9.1.tar.gz
+[2024-05-12 20:39:06] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/88/5c/2a90e5e18f5bf27beaba543725e5b71ee0c68d30d1a44a86b86d3a750f43/SelfCalibratedConformal-0.4.tar.gz
+[2024-05-12 20:39:06] INFO root fetch - processPackages [pyboiler-anonoei]: Downloading https://files.pythonhosted.org/packages/cb/ea/216d363dc7c108adc8a8ddcfb2dd626ddbc7d655254ed94cc1c2769526dc/pyboiler_anonoei-0.0.3.tar.gz
+[2024-05-12 20:39:06] INFO root fetch - processPackages [bioat]: executing diffoscope
+[2024-05-12 20:39:06] INFO root fetch - processPackages [bioat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioat-0.9.0.tar.gz tmp/bioat-0.9.1.tar.gz --markdown 20240512/b/bioat/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-12 20:39:06] INFO root fetch - processPackages [pyboiler-anonoei]: executing diffoscope
+[2024-05-12 20:39:06] INFO root fetch - processPackages [pyboiler-anonoei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboiler_anonoei-0.0.2.tar.gz tmp/pyboiler_anonoei-0.0.3.tar.gz --markdown 20240512/p/pyboiler-anonoei/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-12 20:39:06] INFO root fetch - processPackages [email-address-local]: Downloading https://files.pythonhosted.org/packages/33/0b/4f49c0e576b54988a9115fa0e8fd17a049b0cfaffdd95e2b721055a03b07/email-address-local-0.0.9.tar.gz
+[2024-05-12 20:39:06] INFO root fetch - processPackages [SelfCalibratedConformal]: executing diffoscope
+[2024-05-12 20:39:06] INFO root fetch - processPackages [SelfCalibratedConformal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SelfCalibratedConformal-0.37.tar.gz tmp/SelfCalibratedConformal-0.4.tar.gz --markdown 20240512/S/SelfCalibratedConformal/0.37-0.4/README.md --exclude *.pyd
+[2024-05-12 20:39:06] INFO root fetch - processPackages [email-address-local]: executing diffoscope
+[2024-05-12 20:39:06] INFO root fetch - processPackages [email-address-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/email-address-local-0.0.8.tar.gz tmp/email-address-local-0.0.9.tar.gz --markdown 20240512/e/email-address-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 20:39:06] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.37.tar.gz]
+[2024-05-12 20:39:06] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.4.tar.gz]
+[2024-05-12 20:39:06] INFO root fetch - main [MainThread]: End processing [SelfCalibratedConformal]: success
+[2024-05-12 20:39:06] INFO root fetch - processPackages [pyboiler-anonoei]: Remove: archive file [/home/abi/fetcher/tmp/pyboiler_anonoei-0.0.2.tar.gz]
+[2024-05-12 20:39:06] INFO root fetch - processPackages [pyboiler-anonoei]: Remove: archive file [/home/abi/fetcher/tmp/pyboiler_anonoei-0.0.3.tar.gz]
+[2024-05-12 20:39:06] INFO root fetch - main [MainThread]: End processing [pyboiler-anonoei]: success
+[2024-05-12 20:39:06] INFO root fetch - processPackages [email-address-local]: Remove: archive file [/home/abi/fetcher/tmp/email-address-local-0.0.8.tar.gz]
+[2024-05-12 20:39:06] INFO root fetch - processPackages [email-address-local]: Remove: archive file [/home/abi/fetcher/tmp/email-address-local-0.0.9.tar.gz]
+[2024-05-12 20:39:06] INFO root fetch - processPackages [bioat]: Remove: archive file [/home/abi/fetcher/tmp/bioat-0.9.0.tar.gz]
+[2024-05-12 20:39:06] INFO root fetch - processPackages [bioat]: Remove: archive file [/home/abi/fetcher/tmp/bioat-0.9.1.tar.gz]
+[2024-05-12 20:39:06] INFO root fetch - main [MainThread]: End processing [email-address-local]: success
+[2024-05-12 20:39:06] INFO root fetch - main [MainThread]: End processing [bioat]: success
+[2024-05-12 20:39:06] INFO root fetch - main [MainThread]: Store serial: [23172712]
