@@ -2105,3 +2105,30 @@
 [2024-05-12 03:09:18] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev7.tar.gz]
 [2024-05-12 03:09:18] INFO root fetch - main [MainThread]: End processing [gravitino]: success
 [2024-05-12 03:09:18] INFO root fetch - main [MainThread]: Store serial: [23165912]
+[2024-05-12 03:11:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165912]
+[2024-05-12 03:11:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 03:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seismicio
+[2024-05-12 03:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: enhancementz
+[2024-05-12 03:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: g2opy
+[2024-05-12 03:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xnlpy
+[2024-05-12 03:11:27] INFO root fetch - processPackages [seismicio]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 03:11:27] WARNING root fetch - processPackages [g2opy]: Skipping, unable to determine old version
+[2024-05-12 03:11:27] INFO root fetch - main [MainThread]: End processing [g2opy] error
+[2024-05-12 03:11:27] INFO root fetch - processPackages [xnlpy]: New version: [0.0.2.3] Old Version: [0.0.1]
+[2024-05-12 03:11:27] WARNING root fetch - processPackages [enhancementz]: Skipping, unable to determine old version
+[2024-05-12 03:11:27] INFO root fetch - main [MainThread]: End processing [enhancementz] error
+[2024-05-12 03:11:27] INFO root fetch - processPackages [seismicio]: Downloading https://files.pythonhosted.org/packages/5c/7c/8b56d3bc622b3163fa7a69f6b29f697ffe3a2eaaf0a817576088168658e2/seismicio-0.0.8.tar.gz
+[2024-05-12 03:11:27] INFO root fetch - processPackages [xnlpy]: Downloading https://files.pythonhosted.org/packages/e2/c5/cda16ab8bbedd58dc035645da4db99f4250e2f99fae89c1f36c7bb5305a5/xnlpy-0.0.1.tar.gz
+[2024-05-12 03:11:27] INFO root fetch - processPackages [xnlpy]: Downloading https://files.pythonhosted.org/packages/51/be/c1d755354bb5fc3c8d3613d79ae92f78d7f93fdb0da1696b110ad5c520df/xnlpy-0.0.2.3-py3-none-any.whl
+[2024-05-12 03:11:27] INFO root fetch - processPackages [seismicio]: Downloading https://files.pythonhosted.org/packages/a7/dd/49d71bb14e326c405600335e97546f871cf0a5b68cb9f83f5da6deeabf97/seismicio-0.0.9.tar.gz
+[2024-05-12 03:11:27] INFO root fetch - processPackages [xnlpy]: executing diffoscope
+[2024-05-12 03:11:27] INFO root fetch - processPackages [xnlpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xnlpy-0.0.1.tar.gz tmp/xnlpy-0.0.2.3-py3-none-any.whl.zip --markdown 20240512/x/xnlpy/0.0.1-0.0.2.3/README.md --exclude *.pyd
+[2024-05-12 03:11:28] INFO root fetch - processPackages [seismicio]: executing diffoscope
+[2024-05-12 03:11:28] INFO root fetch - processPackages [seismicio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seismicio-0.0.8.tar.gz tmp/seismicio-0.0.9.tar.gz --markdown 20240512/s/seismicio/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 03:11:28] INFO root fetch - processPackages [xnlpy]: Remove: archive file [/home/abi/fetcher/tmp/xnlpy-0.0.1.tar.gz]
+[2024-05-12 03:11:28] INFO root fetch - processPackages [xnlpy]: Remove: archive file [/home/abi/fetcher/tmp/xnlpy-0.0.2.3-py3-none-any.whl.zip]
+[2024-05-12 03:11:28] INFO root fetch - main [MainThread]: End processing [xnlpy]: success
+[2024-05-12 03:11:28] INFO root fetch - processPackages [seismicio]: Remove: archive file [/home/abi/fetcher/tmp/seismicio-0.0.8.tar.gz]
+[2024-05-12 03:11:28] INFO root fetch - processPackages [seismicio]: Remove: archive file [/home/abi/fetcher/tmp/seismicio-0.0.9.tar.gz]
+[2024-05-12 03:11:28] INFO root fetch - main [MainThread]: End processing [seismicio]: success
+[2024-05-12 03:11:28] INFO root fetch - main [MainThread]: Store serial: [23165927]
