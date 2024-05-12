@@ -12936,3 +12936,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:45:12] INFO root fetch - processPackages [deepdoctection]: Remove: archive file [/home/abi/fetcher/tmp/deepdoctection-0.32.tar.gz]
 [2024-05-12 17:45:12] INFO root fetch - main [MainThread]: End processing [deepdoctection]: success
 [2024-05-12 17:45:12] INFO root fetch - main [MainThread]: Store serial: [23171363]
+[2024-05-12 17:47:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171363]
+[2024-05-12 17:47:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 17:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: essenicz
+[2024-05-12 17:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llm-bench
+[2024-05-12 17:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: few-shot-priming
+[2024-05-12 17:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wconsole-extractor
+[2024-05-12 17:47:20] INFO root fetch - processPackages [llm-bench]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-12 17:47:21] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-05-12 17:47:21] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/e4/1e/96e8e21a12cce6b75d40ef58ee187c01da8c44ea854f32fe4678648dcb90/llm_bench-0.4.8.tar.gz
+[2024-05-12 17:47:21] WARNING root fetch - processPackages [essenicz]: Skipping, unable to determine old version
+[2024-05-12 17:47:21] INFO root fetch - main [MainThread]: End processing [essenicz] error
+[2024-05-12 17:47:21] WARNING root fetch - processPackages [wconsole-extractor]: Skipping, unable to determine old version
+[2024-05-12 17:47:21] INFO root fetch - main [MainThread]: End processing [wconsole-extractor] error
+[2024-05-12 17:47:21] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-05-12 17:47:21] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/e4/75/2d98ade554705da63eb2766a12984f3f6fc8b6925b37f796ffa48846b3ef/llm_bench-0.4.9.tar.gz
+[2024-05-12 17:47:21] INFO root fetch - processPackages [llm-bench]: executing diffoscope
+[2024-05-12 17:47:21] INFO root fetch - processPackages [llm-bench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_bench-0.4.8.tar.gz tmp/llm_bench-0.4.9.tar.gz --markdown 20240512/l/llm-bench/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-12 17:47:21] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-05-12 17:47:21] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-05-12 17:47:21] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240512/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-05-12 17:47:21] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.8.tar.gz]
+[2024-05-12 17:47:21] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.9.tar.gz]
+[2024-05-12 17:47:21] INFO root fetch - main [MainThread]: End processing [llm-bench]: success
+[2024-05-12 17:47:22] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-05-12 17:47:22] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-05-12 17:47:22] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-05-12 17:47:22] INFO root fetch - main [MainThread]: Store serial: [23171380]
