@@ -18249,3 +18249,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:36:22] INFO root fetch - processPackages [STO-OSCR]: Remove: archive file [/home/abi/fetcher/tmp/sto_oscr-2024.5b120.tar.gz]
 [2024-05-12 23:36:22] INFO root fetch - main [MainThread]: End processing [STO-OSCR]: success
 [2024-05-12 23:36:22] INFO root fetch - main [MainThread]: Store serial: [23174021]
+[2024-05-12 23:38:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23174021]
+[2024-05-12 23:38:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 23:38:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jwodder-ps1
+[2024-05-12 23:38:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sanitizesz
+[2024-05-12 23:38:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: progress-api
+[2024-05-12 23:38:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: manylog
+[2024-05-12 23:38:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: incelebrityz
+[2024-05-12 23:38:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyrepka
+[2024-05-12 23:38:31] INFO root fetch - processPackages [manylog]: New version: [0.1.0a4] Old Version: [0.1.0a3]
+[2024-05-12 23:38:31] INFO root fetch - processPackages [progress-api]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2024-05-12 23:38:31] WARNING root fetch - processPackages [incelebrityz]: Skipping, unable to determine old version
+[2024-05-12 23:38:31] INFO root fetch - main [MainThread]: End processing [incelebrityz] error
+[2024-05-12 23:38:31] WARNING root fetch - processPackages [jwodder-ps1]: Skipping, unable to determine old version
+[2024-05-12 23:38:31] INFO root fetch - main [MainThread]: End processing [jwodder-ps1] error
+[2024-05-12 23:38:31] WARNING root fetch - processPackages [sanitizesz]: Skipping, unable to determine old version
+[2024-05-12 23:38:31] INFO root fetch - main [MainThread]: End processing [sanitizesz] error
+[2024-05-12 23:38:31] INFO root fetch - processPackages [progress-api]: Downloading https://files.pythonhosted.org/packages/01/46/251e49532cdfc01f489a089a0a2ba998de0405abc41536826f894ac5be3c/progress_api-0.1.0a7.tar.gz
+[2024-05-12 23:38:31] WARNING root fetch - processPackages [pyrepka]: Skipping, unable to determine old version
+[2024-05-12 23:38:31] INFO root fetch - main [MainThread]: End processing [pyrepka] error
+[2024-05-12 23:38:31] INFO root fetch - processPackages [manylog]: Downloading https://files.pythonhosted.org/packages/f4/d5/3851756fc6f86be5c4c844241b6bda8f82981f87ef2e1aa6054d8a5f3656/manylog-0.1.0a3.tar.gz
+[2024-05-12 23:38:31] INFO root fetch - processPackages [progress-api]: Downloading https://files.pythonhosted.org/packages/b3/b1/ea5416c42c133f2f194f9bd2868ff922b0f28005a297ebbe1d81c66237d1/progress_api-0.1.0a8.tar.gz
+[2024-05-12 23:38:31] INFO root fetch - processPackages [manylog]: Downloading https://files.pythonhosted.org/packages/c7/ac/ce0d51cc3b4716a717af1050954e13c7a48f7be604cb8a0e8141e2a93720/manylog-0.1.0a4.tar.gz
+[2024-05-12 23:38:31] INFO root fetch - processPackages [progress-api]: executing diffoscope
+[2024-05-12 23:38:31] INFO root fetch - processPackages [progress-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/progress_api-0.1.0a7.tar.gz tmp/progress_api-0.1.0a8.tar.gz --markdown 20240512/p/progress-api/0.1.0a7-0.1.0a8/README.md --exclude *.pyd
+[2024-05-12 23:38:32] INFO root fetch - processPackages [manylog]: executing diffoscope
+[2024-05-12 23:38:32] INFO root fetch - processPackages [manylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manylog-0.1.0a3.tar.gz tmp/manylog-0.1.0a4.tar.gz --markdown 20240512/m/manylog/0.1.0a3-0.1.0a4/README.md --exclude *.pyd
+[2024-05-12 23:38:32] INFO root fetch - processPackages [progress-api]: Remove: archive file [/home/abi/fetcher/tmp/progress_api-0.1.0a7.tar.gz]
+[2024-05-12 23:38:32] INFO root fetch - processPackages [progress-api]: Remove: archive file [/home/abi/fetcher/tmp/progress_api-0.1.0a8.tar.gz]
+[2024-05-12 23:38:32] INFO root fetch - main [MainThread]: End processing [progress-api]: success
+[2024-05-12 23:38:32] INFO root fetch - processPackages [manylog]: Remove: archive file [/home/abi/fetcher/tmp/manylog-0.1.0a3.tar.gz]
+[2024-05-12 23:38:32] INFO root fetch - processPackages [manylog]: Remove: archive file [/home/abi/fetcher/tmp/manylog-0.1.0a4.tar.gz]
+[2024-05-12 23:38:32] INFO root fetch - main [MainThread]: End processing [manylog]: success
+[2024-05-12 23:38:32] INFO root fetch - main [MainThread]: Store serial: [23174043]
