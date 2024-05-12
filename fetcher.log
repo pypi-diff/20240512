@@ -14425,3 +14425,68 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:23:08] INFO root fetch - processPackages [mmWrt]: Remove: archive file [/home/abi/fetcher/tmp/mmWrt-0.0.6rc1-py3-none-any.whl.zip]
 [2024-05-12 19:23:08] INFO root fetch - main [MainThread]: End processing [mmWrt]: success
 [2024-05-12 19:23:08] INFO root fetch - main [MainThread]: Store serial: [23172176]
+[2024-05-12 19:25:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172176]
+[2024-05-12 19:25:16] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-12 19:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkrcomponents
+[2024-05-12 19:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smart-parallelize
+[2024-05-12 19:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SelfCalibratedConformal
+[2024-05-12 19:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dreilingz
+[2024-05-12 19:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: espy-pdfier
+[2024-05-12 19:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: symetrics
+[2024-05-12 19:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ATH
+[2024-05-12 19:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: media-parser
+[2024-05-12 19:25:16] INFO root fetch - processPackages [pkrcomponents]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-12 19:25:16] INFO root fetch - processPackages [SelfCalibratedConformal]: New version: [0.33] Old Version: [0.32]
+[2024-05-12 19:25:16] INFO root fetch - processPackages [media-parser]: New version: [2.1.0] Old Version: [2.0.4]
+[2024-05-12 19:25:17] INFO root fetch - processPackages [smart-parallelize]: New version: [2.0.8] Old Version: [2.0.7]
+[2024-05-12 19:25:17] INFO root fetch - processPackages [symetrics]: New version: [9.1.0] Old Version: [9.0.0]
+[2024-05-12 19:25:17] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/8c/f1/d2332e4ffeeeae9136ff205914322918ebd9f5655e92b79b8123600c8875/SelfCalibratedConformal-0.32.tar.gz
+[2024-05-12 19:25:17] INFO root fetch - processPackages [espy-pdfier]: New version: [0.5] Old Version: [0.4]
+[2024-05-12 19:25:17] WARNING root fetch - processPackages [dreilingz]: Skipping, unable to determine old version
+[2024-05-12 19:25:17] INFO root fetch - main [MainThread]: End processing [dreilingz] error
+[2024-05-12 19:25:17] INFO root fetch - processPackages [ATH]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-12 19:25:17] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/36/72/40eaa3b9596db034647c3a0db610ac8cf658426656bdc4dd83c480119f68/smart_parallelize-2.0.7.tar.gz
+[2024-05-12 19:25:17] INFO root fetch - processPackages [symetrics]: Downloading https://files.pythonhosted.org/packages/5f/97/0d0de56df529478afbeb5c857d6bd592ea4a9cba4e2dbbdc3039c2b841e9/symetrics-9.0.0.tar.gz
+[2024-05-12 19:25:17] INFO root fetch - processPackages [pkrcomponents]: Downloading https://files.pythonhosted.org/packages/9a/a4/49bb3d8d27bba9db13184096dbfe50b501cfff5c5b8750bc600c8fd9303f/pkrcomponents-1.2.1.tar.gz
+[2024-05-12 19:25:17] INFO root fetch - processPackages [media-parser]: Downloading https://files.pythonhosted.org/packages/cd/92/f13d30a0a1053e300e2b0f89900e4bba7160bb9596078dc1da2a0fa30ece/media_parser-2.0.4.tar.gz
+[2024-05-12 19:25:17] WARNING root fetch - processPackages [pkrcomponents]: Skipping package: exceeds size limit 29788694>=10485760
+[2024-05-12 19:25:17] INFO root fetch - main [MainThread]: End processing [pkrcomponents] error
+[2024-05-12 19:25:17] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/6a/fe/8ebbcab94845b3b9dc55872bfdc4aca22762d128d40bbf63a34bd61fac01/smart_parallelize-2.0.8.tar.gz
+[2024-05-12 19:25:17] INFO root fetch - processPackages [symetrics]: Downloading https://files.pythonhosted.org/packages/c4/79/456d704d0244b9a357090dab4beec8b9e55abc760bbeed7a775fe289fa11/symetrics-9.1.0.tar.gz
+[2024-05-12 19:25:17] INFO root fetch - processPackages [espy-pdfier]: Downloading https://files.pythonhosted.org/packages/6d/3c/5dcb48149a0272ce0ca665665c0e7ad8cd61c7208170346655ef0f1b2af5/espy_pdfier-0.4.tar.gz
+[2024-05-12 19:25:17] INFO root fetch - processPackages [ATH]: Downloading https://files.pythonhosted.org/packages/21/7d/a432937517a9b98413e0e5dec9778a360dad4afcf2ea4c6c52d372f7c12c/ATH-0.5.8.tar.gz
+[2024-05-12 19:25:17] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/1a/5d/8c3f6ea299e33443cdf48679845263c65f053b289f7dc8df816a59b555ae/SelfCalibratedConformal-0.33.tar.gz
+[2024-05-12 19:25:17] INFO root fetch - processPackages [smart-parallelize]: executing diffoscope
+[2024-05-12 19:25:17] INFO root fetch - processPackages [smart-parallelize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smart_parallelize-2.0.7.tar.gz tmp/smart_parallelize-2.0.8.tar.gz --markdown 20240512/s/smart-parallelize/2.0.7-2.0.8/README.md --exclude *.pyd
+[2024-05-12 19:25:17] INFO root fetch - processPackages [media-parser]: Downloading https://files.pythonhosted.org/packages/2c/0b/e99f2dd4b701940bfece5d66b8fb9f8b2872b7f3bb8ef294fc408996af6b/media_parser-2.1.0.tar.gz
+[2024-05-12 19:25:17] INFO root fetch - processPackages [symetrics]: executing diffoscope
+[2024-05-12 19:25:17] INFO root fetch - processPackages [symetrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symetrics-9.0.0.tar.gz tmp/symetrics-9.1.0.tar.gz --markdown 20240512/s/symetrics/9.0.0-9.1.0/README.md --exclude *.pyd
+[2024-05-12 19:25:17] INFO root fetch - processPackages [SelfCalibratedConformal]: executing diffoscope
+[2024-05-12 19:25:17] INFO root fetch - processPackages [SelfCalibratedConformal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SelfCalibratedConformal-0.32.tar.gz tmp/SelfCalibratedConformal-0.33.tar.gz --markdown 20240512/S/SelfCalibratedConformal/0.32-0.33/README.md --exclude *.pyd
+[2024-05-12 19:25:17] INFO root fetch - processPackages [media-parser]: executing diffoscope
+[2024-05-12 19:25:17] INFO root fetch - processPackages [media-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_parser-2.0.4.tar.gz tmp/media_parser-2.1.0.tar.gz --markdown 20240512/m/media-parser/2.0.4-2.1.0/README.md --exclude *.pyd
+[2024-05-12 19:25:17] INFO root fetch - processPackages [espy-pdfier]: Downloading https://files.pythonhosted.org/packages/f1/6a/e96f56cc7a6cca6163f69dc824de958c4b1b272ef0c7afb57dc35076f665/espy_pdfier-0.5.tar.gz
+[2024-05-12 19:25:17] INFO root fetch - processPackages [ATH]: Downloading https://files.pythonhosted.org/packages/43/21/5434b7248a9a94911697cb3b5cd2f8ca622409e6faa0c013feb90bf5d392/ATH-0.5.9.tar.gz
+[2024-05-12 19:25:17] INFO root fetch - processPackages [ATH]: executing diffoscope
+[2024-05-12 19:25:17] INFO root fetch - processPackages [ATH]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ATH-0.5.8.tar.gz tmp/ATH-0.5.9.tar.gz --markdown 20240512/A/ATH/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-12 19:25:17] INFO root fetch - processPackages [espy-pdfier]: executing diffoscope
+[2024-05-12 19:25:17] INFO root fetch - processPackages [espy-pdfier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_pdfier-0.4.tar.gz tmp/espy_pdfier-0.5.tar.gz --markdown 20240512/e/espy-pdfier/0.4-0.5/README.md --exclude *.pyd
+[2024-05-12 19:25:18] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.32.tar.gz]
+[2024-05-12 19:25:18] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.33.tar.gz]
+[2024-05-12 19:25:18] INFO root fetch - main [MainThread]: End processing [SelfCalibratedConformal]: success
+[2024-05-12 19:25:18] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.7.tar.gz]
+[2024-05-12 19:25:18] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.8.tar.gz]
+[2024-05-12 19:25:18] INFO root fetch - main [MainThread]: End processing [smart-parallelize]: success
+[2024-05-12 19:25:18] INFO root fetch - processPackages [media-parser]: Remove: archive file [/home/abi/fetcher/tmp/media_parser-2.0.4.tar.gz]
+[2024-05-12 19:25:18] INFO root fetch - processPackages [media-parser]: Remove: archive file [/home/abi/fetcher/tmp/media_parser-2.1.0.tar.gz]
+[2024-05-12 19:25:18] INFO root fetch - main [MainThread]: End processing [media-parser]: success
+[2024-05-12 19:25:18] INFO root fetch - processPackages [symetrics]: Remove: archive file [/home/abi/fetcher/tmp/symetrics-9.0.0.tar.gz]
+[2024-05-12 19:25:18] INFO root fetch - processPackages [symetrics]: Remove: archive file [/home/abi/fetcher/tmp/symetrics-9.1.0.tar.gz]
+[2024-05-12 19:25:18] INFO root fetch - main [MainThread]: End processing [symetrics]: success
+[2024-05-12 19:25:18] INFO root fetch - processPackages [espy-pdfier]: Remove: archive file [/home/abi/fetcher/tmp/espy_pdfier-0.4.tar.gz]
+[2024-05-12 19:25:18] INFO root fetch - processPackages [espy-pdfier]: Remove: archive file [/home/abi/fetcher/tmp/espy_pdfier-0.5.tar.gz]
+[2024-05-12 19:25:18] INFO root fetch - main [MainThread]: End processing [espy-pdfier]: success
+[2024-05-12 19:25:18] INFO root fetch - processPackages [ATH]: Remove: archive file [/home/abi/fetcher/tmp/ATH-0.5.8.tar.gz]
+[2024-05-12 19:25:18] INFO root fetch - processPackages [ATH]: Remove: archive file [/home/abi/fetcher/tmp/ATH-0.5.9.tar.gz]
+[2024-05-12 19:25:18] INFO root fetch - main [MainThread]: End processing [ATH]: success
+[2024-05-12 19:25:18] INFO root fetch - main [MainThread]: Store serial: [23172201]
