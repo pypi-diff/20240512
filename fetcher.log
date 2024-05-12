@@ -13911,3 +13911,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:46:08] INFO root fetch - processPackages [streamlit-searchbox]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-searchbox-0.1.9.tar.gz]
 [2024-05-12 18:46:08] INFO root fetch - main [MainThread]: End processing [streamlit-searchbox]: success
 [2024-05-12 18:46:08] INFO root fetch - main [MainThread]: Store serial: [23171883]
+[2024-05-12 18:48:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171883]
+[2024-05-12 18:48:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 18:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: warplikez
+[2024-05-12 18:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: analysingz
+[2024-05-12 18:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DebugInfo
+[2024-05-12 18:48:16] WARNING root fetch - processPackages [warplikez]: Skipping, unable to determine old version
+[2024-05-12 18:48:16] INFO root fetch - main [MainThread]: End processing [warplikez] error
+[2024-05-12 18:48:16] WARNING root fetch - processPackages [analysingz]: Skipping, unable to determine old version
+[2024-05-12 18:48:16] INFO root fetch - main [MainThread]: End processing [analysingz] error
+[2024-05-12 18:48:16] INFO root fetch - processPackages [DebugInfo]: New version: [9.1.0] Old Version: [9.0.0]
+[2024-05-12 18:48:17] INFO root fetch - processPackages [DebugInfo]: Downloading https://files.pythonhosted.org/packages/06/dc/6f041269ad379c07e91b1bbf9bbcea47f424f3d9b04bf58b8af95b10bd3a/DebugInfo-9.0.0.tar.gz
+[2024-05-12 18:48:17] INFO root fetch - processPackages [DebugInfo]: Downloading https://files.pythonhosted.org/packages/3a/f6/279accf5d57aa0fb1b9308ac3c3f52eb99a26d6af32968ec7ea6a2d3e079/DebugInfo-9.1.0.tar.gz
+[2024-05-12 18:48:17] INFO root fetch - processPackages [DebugInfo]: executing diffoscope
+[2024-05-12 18:48:17] INFO root fetch - processPackages [DebugInfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DebugInfo-9.0.0.tar.gz tmp/DebugInfo-9.1.0.tar.gz --markdown 20240512/D/DebugInfo/9.0.0-9.1.0/README.md --exclude *.pyd
+[2024-05-12 18:48:18] INFO root fetch - processPackages [DebugInfo]: Remove: archive file [/home/abi/fetcher/tmp/DebugInfo-9.0.0.tar.gz]
+[2024-05-12 18:48:18] INFO root fetch - processPackages [DebugInfo]: Remove: archive file [/home/abi/fetcher/tmp/DebugInfo-9.1.0.tar.gz]
+[2024-05-12 18:48:18] INFO root fetch - main [MainThread]: End processing [DebugInfo]: success
+[2024-05-12 18:48:18] INFO root fetch - main [MainThread]: Store serial: [23171894]
