@@ -9608,3 +9608,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:53:41] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev9.tar.gz]
 [2024-05-12 13:53:41] INFO root fetch - main [MainThread]: End processing [gravitino]: success
 [2024-05-12 13:53:41] INFO root fetch - main [MainThread]: Store serial: [23169557]
+[2024-05-12 13:55:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169557]
+[2024-05-12 13:55:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 13:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lexwolf
+[2024-05-12 13:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: logging-extension
+[2024-05-12 13:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fc-quantization
+[2024-05-12 13:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-kurogames
+[2024-05-12 13:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: boleitez
+[2024-05-12 13:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: volstreet
+[2024-05-12 13:55:49] WARNING root fetch - processPackages [fc-quantization]: Skipping, unable to determine old version
+[2024-05-12 13:55:49] INFO root fetch - processPackages [logging-extension]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 13:55:49] INFO root fetch - main [MainThread]: End processing [fc-quantization] error
+[2024-05-12 13:55:49] INFO root fetch - processPackages [nonebot-plugin-kurogames]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-12 13:55:49] INFO root fetch - processPackages [lexwolf]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-05-12 13:55:49] WARNING root fetch - processPackages [boleitez]: Skipping, unable to determine old version
+[2024-05-12 13:55:49] INFO root fetch - main [MainThread]: End processing [boleitez] error
+[2024-05-12 13:55:49] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Downloading https://files.pythonhosted.org/packages/d7/ef/8b2c56e3efeecd1644b4d99fcd688f31919784cca8805bfee21964943f2e/nonebot_plugin_kurogames-0.1.5.tar.gz
+[2024-05-12 13:55:49] INFO root fetch - processPackages [volstreet]: New version: [8.2.1] Old Version: [8.2.0]
+[2024-05-12 13:55:49] INFO root fetch - processPackages [logging-extension]: Downloading https://files.pythonhosted.org/packages/4f/6b/550eeae89ead42a189ce1694922653e4e61d3758f8e783951a2107b36156/logging_extension-0.1.0.tar.gz
+[2024-05-12 13:55:50] INFO root fetch - processPackages [lexwolf]: Downloading https://files.pythonhosted.org/packages/cd/f0/79a892cce5d15203c27a577cca1ba2f5aa2ded56b964b4ac3f3a0c8bc260/lexwolf-0.1.4.tar.gz
+[2024-05-12 13:55:50] INFO root fetch - processPackages [volstreet]: Downloading https://files.pythonhosted.org/packages/6f/2a/9cd48a8270e14fd8c7712e8bb4e0847e1c0721622e12fde5a2563189de21/volstreet-8.2.0.tar.gz
+[2024-05-12 13:55:50] INFO root fetch - processPackages [logging-extension]: Downloading https://files.pythonhosted.org/packages/53/3c/129f06f318419e8d4b816a32cc09c379a34e7ae968cfd596fa27ce443334/logging_extension-0.1.1.tar.gz
+[2024-05-12 13:55:50] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Downloading https://files.pythonhosted.org/packages/2d/08/cd193daceb7934a9b0d8ece90db7bb06bbd3fe4db197a805ab3c23125011/nonebot_plugin_kurogames-0.1.6.tar.gz
+[2024-05-12 13:55:50] INFO root fetch - processPackages [logging-extension]: executing diffoscope
+[2024-05-12 13:55:50] INFO root fetch - processPackages [logging-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logging_extension-0.1.0.tar.gz tmp/logging_extension-0.1.1.tar.gz --markdown 20240512/l/logging-extension/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 13:55:50] INFO root fetch - processPackages [lexwolf]: Downloading https://files.pythonhosted.org/packages/e9/3b/ec1d5c2d8dc1e2a4142bfd5bb64aac882829f9ec5b5cd66d62d10039dad6/lexwolf-0.2.0.tar.gz
+[2024-05-12 13:55:50] INFO root fetch - processPackages [volstreet]: Downloading https://files.pythonhosted.org/packages/94/63/849ce411f22510bfe64f14078bfd90356b7786f8b686d448d3b0e7561f0a/volstreet-8.2.1.tar.gz
+[2024-05-12 13:55:50] INFO root fetch - processPackages [lexwolf]: executing diffoscope
+[2024-05-12 13:55:50] INFO root fetch - processPackages [lexwolf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lexwolf-0.1.4.tar.gz tmp/lexwolf-0.2.0.tar.gz --markdown 20240512/l/lexwolf/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-05-12 13:55:50] INFO root fetch - processPackages [volstreet]: executing diffoscope
+[2024-05-12 13:55:50] INFO root fetch - processPackages [volstreet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volstreet-8.2.0.tar.gz tmp/volstreet-8.2.1.tar.gz --markdown 20240512/v/volstreet/8.2.0-8.2.1/README.md --exclude *.pyd
+[2024-05-12 13:55:50] INFO root fetch - processPackages [nonebot-plugin-kurogames]: executing diffoscope
+[2024-05-12 13:55:50] INFO root fetch - processPackages [nonebot-plugin-kurogames]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_kurogames-0.1.5.tar.gz tmp/nonebot_plugin_kurogames-0.1.6.tar.gz --markdown 20240512/n/nonebot-plugin-kurogames/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-12 13:55:50] INFO root fetch - processPackages [logging-extension]: Remove: archive file [/home/abi/fetcher/tmp/logging_extension-0.1.0.tar.gz]
+[2024-05-12 13:55:50] INFO root fetch - processPackages [logging-extension]: Remove: archive file [/home/abi/fetcher/tmp/logging_extension-0.1.1.tar.gz]
+[2024-05-12 13:55:50] INFO root fetch - main [MainThread]: End processing [logging-extension]: success
+[2024-05-12 13:55:51] INFO root fetch - processPackages [lexwolf]: Remove: archive file [/home/abi/fetcher/tmp/lexwolf-0.1.4.tar.gz]
+[2024-05-12 13:55:51] INFO root fetch - processPackages [lexwolf]: Remove: archive file [/home/abi/fetcher/tmp/lexwolf-0.2.0.tar.gz]
+[2024-05-12 13:55:51] INFO root fetch - main [MainThread]: End processing [lexwolf]: success
+[2024-05-12 13:55:51] INFO root fetch - processPackages [volstreet]: Remove: archive file [/home/abi/fetcher/tmp/volstreet-8.2.0.tar.gz]
+[2024-05-12 13:55:51] INFO root fetch - processPackages [volstreet]: Remove: archive file [/home/abi/fetcher/tmp/volstreet-8.2.1.tar.gz]
+[2024-05-12 13:55:51] INFO root fetch - main [MainThread]: End processing [volstreet]: success
+[2024-05-12 13:55:51] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kurogames-0.1.5.tar.gz]
+[2024-05-12 13:55:51] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kurogames-0.1.6.tar.gz]
+[2024-05-12 13:55:51] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-kurogames]: success
+[2024-05-12 13:55:51] INFO root fetch - main [MainThread]: Store serial: [23169575]
