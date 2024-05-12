@@ -13858,3 +13858,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:43:57] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.8.tar.gz]
 [2024-05-12 18:43:57] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
 [2024-05-12 18:43:57] INFO root fetch - main [MainThread]: Store serial: [23171867]
+[2024-05-12 18:46:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171867]
+[2024-05-12 18:46:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 18:46:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NeuroUtils
+[2024-05-12 18:46:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygramcore
+[2024-05-12 18:46:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymle-diffusion
+[2024-05-12 18:46:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streamlit-searchbox
+[2024-05-12 18:46:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pkrcomponents
+[2024-05-12 18:46:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: medicafe
+[2024-05-12 18:46:06] INFO root fetch - processPackages [medicafe]: New version: [0.240512.2] Old Version: [0.240512.1]
+[2024-05-12 18:46:06] INFO root fetch - processPackages [NeuroUtils]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-12 18:46:06] INFO root fetch - processPackages [pkrcomponents]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-12 18:46:06] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/63/0b/83f317cc4c6aa437ef9e8b31823a9d862e37056efd1394b33533969eb954/medicafe-0.240512.1.tar.gz
+[2024-05-12 18:46:06] INFO root fetch - processPackages [streamlit-searchbox]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 18:46:06] INFO root fetch - processPackages [NeuroUtils]: Downloading https://files.pythonhosted.org/packages/c7/82/9ea463c8af432ef36fd753bbab2f8617a34fbffefda605b016fa8769f693/NeuroUtils-0.1.3-py3-none-any.whl
+[2024-05-12 18:46:06] INFO root fetch - processPackages [pymle-diffusion]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 18:46:06] INFO root fetch - processPackages [pygramcore]: New version: [1.1.0] Old Version: [1.0.4]
+[2024-05-12 18:46:06] INFO root fetch - processPackages [pkrcomponents]: Downloading https://files.pythonhosted.org/packages/cc/a3/f7d1d4710d9ea8bbdef4302645d485af19af6911c6c8088217a1f0c813fb/pkrcomponents-1.2.0.tar.gz
+[2024-05-12 18:46:06] WARNING root fetch - processPackages [pkrcomponents]: Skipping package: exceeds size limit 29787330>=10485760
+[2024-05-12 18:46:06] INFO root fetch - main [MainThread]: End processing [pkrcomponents] error
+[2024-05-12 18:46:06] INFO root fetch - processPackages [streamlit-searchbox]: Downloading https://files.pythonhosted.org/packages/03/05/d3b2298bad20f380da271265171fdd373da7cf0016ef0177ffe99f322864/streamlit-searchbox-0.1.8.tar.gz
+[2024-05-12 18:46:06] INFO root fetch - processPackages [pygramcore]: Downloading https://files.pythonhosted.org/packages/fc/be/68fb3095fed7f33838b7a0bdcaf8766581c2babbd6af36f164b6dbf69fa5/pygramcore-1.0.4.tar.gz
+[2024-05-12 18:46:06] INFO root fetch - processPackages [pymle-diffusion]: Downloading https://files.pythonhosted.org/packages/cb/b7/76a353e19272d9cd8624aef1ca87894e0198747012d8cf6208f13294b7fd/pymle-diffusion-0.0.8.tar.gz
+[2024-05-12 18:46:06] INFO root fetch - processPackages [NeuroUtils]: Downloading https://files.pythonhosted.org/packages/b5/8a/562d49fbe3f5f3800b94365fe090bf1a0d72c0fb7c71c2674c6abdcc57f3/NeuroUtils-0.1.4-py3-none-any.whl
+[2024-05-12 18:46:06] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/80/a5/ed88e45f6903a992b2192f93df8fa49075af24f5a19d58604fbd6e107add/medicafe-0.240512.2.tar.gz
+[2024-05-12 18:46:06] INFO root fetch - processPackages [NeuroUtils]: executing diffoscope
+[2024-05-12 18:46:06] INFO root fetch - processPackages [NeuroUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NeuroUtils-0.1.3-py3-none-any.whl.zip tmp/NeuroUtils-0.1.4-py3-none-any.whl.zip --markdown 20240512/N/NeuroUtils/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-12 18:46:07] INFO root fetch - processPackages [medicafe]: executing diffoscope
+[2024-05-12 18:46:07] INFO root fetch - processPackages [medicafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medicafe-0.240512.1.tar.gz tmp/medicafe-0.240512.2.tar.gz --markdown 20240512/m/medicafe/0.240512.1-0.240512.2/README.md --exclude *.pyd
+[2024-05-12 18:46:07] INFO root fetch - processPackages [pygramcore]: Downloading https://files.pythonhosted.org/packages/3a/b9/d6640d07f35d68018c72989044c8835f0d241e2fe16d63bd4a86a4b8c1c9/pygramcore-1.1.0.tar.gz
+[2024-05-12 18:46:07] INFO root fetch - processPackages [pymle-diffusion]: Downloading https://files.pythonhosted.org/packages/00/20/2c704898be0893b1e49fcd1ce42e2c7b60adc631ab28fb823f7a3bd99fe3/pymle-diffusion-0.0.9.tar.gz
+[2024-05-12 18:46:07] INFO root fetch - processPackages [streamlit-searchbox]: Downloading https://files.pythonhosted.org/packages/d9/79/b7dc3794a3eed8a6353683d4234ea1df36db473b37ccb009e9508d7e8f84/streamlit-searchbox-0.1.9.tar.gz
+[2024-05-12 18:46:07] INFO root fetch - processPackages [pygramcore]: executing diffoscope
+[2024-05-12 18:46:07] INFO root fetch - processPackages [pygramcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygramcore-1.0.4.tar.gz tmp/pygramcore-1.1.0.tar.gz --markdown 20240512/p/pygramcore/1.0.4-1.1.0/README.md --exclude *.pyd
+[2024-05-12 18:46:07] INFO root fetch - processPackages [pymle-diffusion]: executing diffoscope
+[2024-05-12 18:46:07] INFO root fetch - processPackages [pymle-diffusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymle-diffusion-0.0.8.tar.gz tmp/pymle-diffusion-0.0.9.tar.gz --markdown 20240512/p/pymle-diffusion/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 18:46:07] INFO root fetch - processPackages [streamlit-searchbox]: executing diffoscope
+[2024-05-12 18:46:07] INFO root fetch - processPackages [streamlit-searchbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-searchbox-0.1.8.tar.gz tmp/streamlit-searchbox-0.1.9.tar.gz --markdown 20240512/s/streamlit-searchbox/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 18:46:07] INFO root fetch - processPackages [NeuroUtils]: Remove: archive file [/home/abi/fetcher/tmp/NeuroUtils-0.1.3-py3-none-any.whl.zip]
+[2024-05-12 18:46:07] INFO root fetch - processPackages [NeuroUtils]: Remove: archive file [/home/abi/fetcher/tmp/NeuroUtils-0.1.4-py3-none-any.whl.zip]
+[2024-05-12 18:46:07] INFO root fetch - main [MainThread]: End processing [NeuroUtils]: success
+[2024-05-12 18:46:07] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240512.1.tar.gz]
+[2024-05-12 18:46:07] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240512.2.tar.gz]
+[2024-05-12 18:46:07] INFO root fetch - main [MainThread]: End processing [medicafe]: success
+[2024-05-12 18:46:07] INFO root fetch - processPackages [pygramcore]: Remove: archive file [/home/abi/fetcher/tmp/pygramcore-1.0.4.tar.gz]
+[2024-05-12 18:46:07] INFO root fetch - processPackages [pygramcore]: Remove: archive file [/home/abi/fetcher/tmp/pygramcore-1.1.0.tar.gz]
+[2024-05-12 18:46:07] INFO root fetch - main [MainThread]: End processing [pygramcore]: success
+[2024-05-12 18:46:08] INFO root fetch - processPackages [pymle-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/pymle-diffusion-0.0.8.tar.gz]
+[2024-05-12 18:46:08] INFO root fetch - processPackages [pymle-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/pymle-diffusion-0.0.9.tar.gz]
+[2024-05-12 18:46:08] INFO root fetch - main [MainThread]: End processing [pymle-diffusion]: success
+[2024-05-12 18:46:08] INFO root fetch - processPackages [streamlit-searchbox]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-searchbox-0.1.8.tar.gz]
+[2024-05-12 18:46:08] INFO root fetch - processPackages [streamlit-searchbox]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-searchbox-0.1.9.tar.gz]
+[2024-05-12 18:46:08] INFO root fetch - main [MainThread]: End processing [streamlit-searchbox]: success
+[2024-05-12 18:46:08] INFO root fetch - main [MainThread]: Store serial: [23171883]
