@@ -15740,3 +15740,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:54:17] INFO root fetch - processPackages [kBmc]: Remove: archive file [/home/abi/fetcher/tmp/kBmc-2.3.9.tar.gz]
 [2024-05-12 20:54:17] INFO root fetch - main [MainThread]: End processing [kBmc]: success
 [2024-05-12 20:54:17] INFO root fetch - main [MainThread]: Store serial: [23172811]
+[2024-05-12 20:56:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172811]
+[2024-05-12 20:56:25] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dipalaz
+[2024-05-12 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anabih-python-test
+[2024-05-12 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: soma-integ
+[2024-05-12 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lib-version-URLPhishing
+[2024-05-12 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sqlite3-to-mysql
+[2024-05-12 20:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: opplx
+[2024-05-12 20:56:26] INFO root fetch - processPackages [anabih-python-test]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-05-12 20:56:26] INFO root fetch - processPackages [soma-integ]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 20:56:26] WARNING root fetch - processPackages [dipalaz]: Skipping, unable to determine old version
+[2024-05-12 20:56:26] INFO root fetch - main [MainThread]: End processing [dipalaz] error
+[2024-05-12 20:56:26] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/8f/0d/cb4164f3f11269487379fdf0c45ca126f81d3ab4355ce23e4cdf8dd2b4cd/anabih_python_test-8.0.0.tar.gz
+[2024-05-12 20:56:26] INFO root fetch - processPackages [soma-integ]: Downloading https://files.pythonhosted.org/packages/d7/5a/38c3fc95238d4ce01137c3beec00d9f03ec2e1eee64a03ef4c98104ae42a/soma_integ-0.1.0.tar.gz
+[2024-05-12 20:56:26] ERROR root fetch - processPackages [lib-version-URLPhishing]: Unable to get metadata: No such project 'lib-version-URLPhishing'
+[2024-05-12 20:56:26] INFO root fetch - main [MainThread]: End processing [lib-version-URLPhishing] error
+[2024-05-12 20:56:26] INFO root fetch - processPackages [opplx]: New version: [0.12] Old Version: [0.11]
+[2024-05-12 20:56:26] INFO root fetch - processPackages [sqlite3-to-mysql]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-05-12 20:56:26] INFO root fetch - processPackages [opplx]: Downloading https://files.pythonhosted.org/packages/fa/d8/aac0266f59a1659aa1181f36497ed3ad0c2714e37f3e29997486c1e042f3/opplx-0.11.tar.gz
+[2024-05-12 20:56:26] INFO root fetch - processPackages [sqlite3-to-mysql]: Downloading https://files.pythonhosted.org/packages/92/db/acc811fcb2e03f67b4065ea3b271d75c4e6410182078044024efaaaacce0/sqlite3_to_mysql-2.1.8.tar.gz
+[2024-05-12 20:56:26] INFO root fetch - processPackages [soma-integ]: Downloading https://files.pythonhosted.org/packages/c8/37/f55f2a199b51a1a81260e9912ed61526b85e61b41572966387ceea081eed/soma_integ-0.1.1.tar.gz
+[2024-05-12 20:56:26] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/83/16/9305f1d0ffc310349acc9a6c48a942e3c816874b788e87e5252e12b1a42a/anabih_python_test-9.0.0.tar.gz
+[2024-05-12 20:56:26] INFO root fetch - processPackages [soma-integ]: executing diffoscope
+[2024-05-12 20:56:26] INFO root fetch - processPackages [soma-integ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soma_integ-0.1.0.tar.gz tmp/soma_integ-0.1.1.tar.gz --markdown 20240512/s/soma-integ/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 20:56:26] INFO root fetch - processPackages [anabih-python-test]: executing diffoscope
+[2024-05-12 20:56:26] INFO root fetch - processPackages [anabih-python-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anabih_python_test-8.0.0.tar.gz tmp/anabih_python_test-9.0.0.tar.gz --markdown 20240512/a/anabih-python-test/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-05-12 20:56:26] INFO root fetch - processPackages [opplx]: Downloading https://files.pythonhosted.org/packages/14/2b/736a6f81255a8a8bf54ba86767f4d34862c06ae63ece3b0852e518ba0a0c/opplx-0.12.tar.gz
+[2024-05-12 20:56:26] INFO root fetch - processPackages [sqlite3-to-mysql]: Downloading https://files.pythonhosted.org/packages/68/20/85fd19f442cbd816aa3819f8fe489286f02b723a641532a19be49ab018d7/sqlite3_to_mysql-2.1.9.tar.gz
+[2024-05-12 20:56:26] INFO root fetch - processPackages [opplx]: executing diffoscope
+[2024-05-12 20:56:26] INFO root fetch - processPackages [opplx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opplx-0.11.tar.gz tmp/opplx-0.12.tar.gz --markdown 20240512/o/opplx/0.11-0.12/README.md --exclude *.pyd
+[2024-05-12 20:56:26] INFO root fetch - processPackages [sqlite3-to-mysql]: executing diffoscope
+[2024-05-12 20:56:26] INFO root fetch - processPackages [sqlite3-to-mysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite3_to_mysql-2.1.8.tar.gz tmp/sqlite3_to_mysql-2.1.9.tar.gz --markdown 20240512/s/sqlite3-to-mysql/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-05-12 20:56:27] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-8.0.0.tar.gz]
+[2024-05-12 20:56:27] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-9.0.0.tar.gz]
+[2024-05-12 20:56:27] INFO root fetch - main [MainThread]: End processing [anabih-python-test]: success
+[2024-05-12 20:56:27] INFO root fetch - processPackages [soma-integ]: Remove: archive file [/home/abi/fetcher/tmp/soma_integ-0.1.0.tar.gz]
+[2024-05-12 20:56:27] INFO root fetch - processPackages [soma-integ]: Remove: archive file [/home/abi/fetcher/tmp/soma_integ-0.1.1.tar.gz]
+[2024-05-12 20:56:27] INFO root fetch - main [MainThread]: End processing [soma-integ]: success
+[2024-05-12 20:56:27] INFO root fetch - processPackages [opplx]: Remove: archive file [/home/abi/fetcher/tmp/opplx-0.11.tar.gz]
+[2024-05-12 20:56:27] INFO root fetch - processPackages [opplx]: Remove: archive file [/home/abi/fetcher/tmp/opplx-0.12.tar.gz]
+[2024-05-12 20:56:27] INFO root fetch - main [MainThread]: End processing [opplx]: success
+[2024-05-12 20:56:27] INFO root fetch - processPackages [sqlite3-to-mysql]: Remove: archive file [/home/abi/fetcher/tmp/sqlite3_to_mysql-2.1.8.tar.gz]
+[2024-05-12 20:56:27] INFO root fetch - processPackages [sqlite3-to-mysql]: Remove: archive file [/home/abi/fetcher/tmp/sqlite3_to_mysql-2.1.9.tar.gz]
+[2024-05-12 20:56:27] INFO root fetch - main [MainThread]: End processing [sqlite3-to-mysql]: success
+[2024-05-12 20:56:27] INFO root fetch - main [MainThread]: Store serial: [23172833]
