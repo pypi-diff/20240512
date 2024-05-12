@@ -12732,3 +12732,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:32:07] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
 [2024-05-12 17:32:07] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2024-05-12 17:32:07] INFO root fetch - main [MainThread]: Store serial: [23171271]
+[2024-05-12 17:34:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171271]
+[2024-05-12 17:34:16] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 17:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anemone-daisy-maker
+[2024-05-12 17:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zibuyu-LLM
+[2024-05-12 17:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dictparser
+[2024-05-12 17:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: few-shot-priming
+[2024-05-12 17:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jixian
+[2024-05-12 17:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xqjtvvpncdrbfkro
+[2024-05-12 17:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: reflex-wrapper
+[2024-05-12 17:34:16] INFO root fetch - processPackages [zibuyu-LLM]: New version: [0.1.9] Old Version: [0.1.14]
+[2024-05-12 17:34:16] WARNING root fetch - processPackages [anemone-daisy-maker]: Skipping, unable to determine old version
+[2024-05-12 17:34:16] INFO root fetch - main [MainThread]: End processing [anemone-daisy-maker] error
+[2024-05-12 17:34:16] INFO root fetch - processPackages [dictparser]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 17:34:16] WARNING root fetch - processPackages [xqjtvvpncdrbfkro]: Skipping, unable to determine old version
+[2024-05-12 17:34:16] INFO root fetch - main [MainThread]: End processing [xqjtvvpncdrbfkro] error
+[2024-05-12 17:34:16] WARNING root fetch - processPackages [jixian]: Skipping, unable to determine old version
+[2024-05-12 17:34:16] INFO root fetch - main [MainThread]: End processing [jixian] error
+[2024-05-12 17:34:16] INFO root fetch - processPackages [reflex-wrapper]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-12 17:34:16] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-05-12 17:34:16] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/c3/b7/fb5295b5da6072effe595c48fefef099c3b518f83188d95b6b211a5df493/zibuyu_LLM-0.1.14-py3-none-any.whl
+[2024-05-12 17:34:16] INFO root fetch - processPackages [dictparser]: Downloading https://files.pythonhosted.org/packages/52/95/a9d770758c28e185cfbd368c1e58801c79584c442508f1dd38a25ab4af7e/dictparser-0.1.1-py3-none-any.whl
+[2024-05-12 17:34:16] INFO root fetch - processPackages [reflex-wrapper]: Downloading https://files.pythonhosted.org/packages/d0/c1/c0b1e8647821f0b34c607a47f2d1f219f52a95c1a1478aa1a6acc812cb4a/reflex_wrapper-0.0.3.tar.gz
+[2024-05-12 17:34:17] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-05-12 17:34:17] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/8b/1d/73751ba8bfaf5b2eb71d0251541264c73d9b0da5c2d08f0111dbee0978db/zibuyu_LLM-0.1.9-py3-none-any.whl
+[2024-05-12 17:34:17] INFO root fetch - processPackages [zibuyu-LLM]: executing diffoscope
+[2024-05-12 17:34:17] INFO root fetch - processPackages [zibuyu-LLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibuyu_LLM-0.1.14-py3-none-any.whl.zip tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip --markdown 20240512/z/zibuyu-LLM/0.1.14-0.1.9/README.md --exclude *.pyd
+[2024-05-12 17:34:17] INFO root fetch - processPackages [dictparser]: Downloading https://files.pythonhosted.org/packages/53/1a/99db182b519aa0c6f8034e7eecc7e217328ae21afbaf98de0823c4aff90a/dictparser-0.1.2-py3-none-any.whl
+[2024-05-12 17:34:17] INFO root fetch - processPackages [reflex-wrapper]: Downloading https://files.pythonhosted.org/packages/75/ce/8d6784b4c39531192f10870fa3d563835765a63f39672a567321e225c287/reflex_wrapper-0.0.4.tar.gz
+[2024-05-12 17:34:17] INFO root fetch - processPackages [dictparser]: executing diffoscope
+[2024-05-12 17:34:17] INFO root fetch - processPackages [dictparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dictparser-0.1.1-py3-none-any.whl.zip tmp/dictparser-0.1.2-py3-none-any.whl.zip --markdown 20240512/d/dictparser/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 17:34:17] INFO root fetch - processPackages [reflex-wrapper]: executing diffoscope
+[2024-05-12 17:34:17] INFO root fetch - processPackages [reflex-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reflex_wrapper-0.0.3.tar.gz tmp/reflex_wrapper-0.0.4.tar.gz --markdown 20240512/r/reflex-wrapper/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-12 17:34:17] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-05-12 17:34:17] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.1.14-py3-none-any.whl.zip]
+[2024-05-12 17:34:17] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip]
+[2024-05-12 17:34:17] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
+[2024-05-12 17:34:17] INFO root fetch - processPackages [dictparser]: Remove: archive file [/home/abi/fetcher/tmp/dictparser-0.1.1-py3-none-any.whl.zip]
+[2024-05-12 17:34:17] INFO root fetch - processPackages [dictparser]: Remove: archive file [/home/abi/fetcher/tmp/dictparser-0.1.2-py3-none-any.whl.zip]
+[2024-05-12 17:34:17] INFO root fetch - main [MainThread]: End processing [dictparser]: success
+[2024-05-12 17:34:17] INFO root fetch - processPackages [reflex-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/reflex_wrapper-0.0.3.tar.gz]
+[2024-05-12 17:34:17] INFO root fetch - processPackages [reflex-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/reflex_wrapper-0.0.4.tar.gz]
+[2024-05-12 17:34:17] INFO root fetch - main [MainThread]: End processing [reflex-wrapper]: success
+[2024-05-12 17:34:18] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-05-12 17:34:18] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240512/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-05-12 17:34:18] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-05-12 17:34:18] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-05-12 17:34:18] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-05-12 17:34:18] INFO root fetch - main [MainThread]: Store serial: [23171293]
