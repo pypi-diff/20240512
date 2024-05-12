@@ -6956,3 +6956,17 @@
 [2024-05-12 10:30:11] INFO root fetch - processPackages [agent-dingo]: Remove: archive file [/home/abi/fetcher/tmp/agent_dingo-1.0.0.tar.gz]
 [2024-05-12 10:30:11] INFO root fetch - main [MainThread]: End processing [agent-dingo]: success
 [2024-05-12 10:30:11] INFO root fetch - main [MainThread]: Store serial: [23168152]
+[2024-05-12 10:32:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168152]
+[2024-05-12 10:32:20] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-12 10:34:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168152]
+[2024-05-12 10:34:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 10:34:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: LVPocket
+[2024-05-12 10:34:25] INFO root fetch - processPackages [LVPocket]: New version: [0.1.9] Old Version: [0.0.3]
+[2024-05-12 10:34:25] INFO root fetch - processPackages [LVPocket]: Downloading https://files.pythonhosted.org/packages/66/71/0d177f04b1451a57688b200b6c085bfa16e010ca0f4e876bca3d6b15851f/LVPocket-0.0.3.tar.gz
+[2024-05-12 10:34:25] INFO root fetch - processPackages [LVPocket]: Downloading https://files.pythonhosted.org/packages/95/a5/8fdd08bd40a4e52f071269a00db8273daa30fbbfb3c939c19592e304da2f/LVPocket-0.1.9.tar.gz
+[2024-05-12 10:34:26] INFO root fetch - processPackages [LVPocket]: executing diffoscope
+[2024-05-12 10:34:26] INFO root fetch - processPackages [LVPocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LVPocket-0.0.3.tar.gz tmp/LVPocket-0.1.9.tar.gz --markdown 20240512/L/LVPocket/0.0.3-0.1.9/README.md --exclude *.pyd
+[2024-05-12 10:34:26] INFO root fetch - processPackages [LVPocket]: Remove: archive file [/home/abi/fetcher/tmp/LVPocket-0.0.3.tar.gz]
+[2024-05-12 10:34:26] INFO root fetch - processPackages [LVPocket]: Remove: archive file [/home/abi/fetcher/tmp/LVPocket-0.1.9.tar.gz]
+[2024-05-12 10:34:26] INFO root fetch - main [MainThread]: End processing [LVPocket]: success
+[2024-05-12 10:34:26] INFO root fetch - main [MainThread]: Store serial: [23168155]
