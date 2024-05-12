@@ -10156,3 +10156,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:28:29] INFO root fetch - processPackages [temod-flask]: Remove: archive file [/home/abi/fetcher/tmp/temod_flask-2.0.7.tar.gz]
 [2024-05-12 14:28:29] INFO root fetch - main [MainThread]: End processing [temod-flask]: success
 [2024-05-12 14:28:29] INFO root fetch - main [MainThread]: Store serial: [23169832]
+[2024-05-12 14:30:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169832]
+[2024-05-12 14:30:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 14:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ogre-python
+[2024-05-12 14:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kitab
+[2024-05-12 14:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytest-ranking
+[2024-05-12 14:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rhizopogonz
+[2024-05-12 14:30:37] INFO root fetch - processPackages [kitab]: New version: [0.0.27] Old Version: [0.0.26]
+[2024-05-12 14:30:37] INFO root fetch - processPackages [kitab]: Downloading https://files.pythonhosted.org/packages/95/b8/81e83c84b8decbb08849972673e0ec0d2b13b45be858122b42392c3a2355/kitab-0.0.26.tar.gz
+[2024-05-12 14:30:37] WARNING root fetch - processPackages [rhizopogonz]: Skipping, unable to determine old version
+[2024-05-12 14:30:37] INFO root fetch - main [MainThread]: End processing [rhizopogonz] error
+[2024-05-12 14:30:37] INFO root fetch - processPackages [pytest-ranking]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-05-12 14:30:37] INFO root fetch - processPackages [ogre-python]: New version: [14.2.5] Old Version: [14.2.4]
+[2024-05-12 14:30:38] INFO root fetch - processPackages [ogre-python]: Downloading https://files.pythonhosted.org/packages/77/8f/501d51b27bd1db99a99363ef003a103b0efb7f7fe1a9abc6cdd95cb3eeb4/ogre_python-14.2.4-cp312-cp312-win_amd64.whl
+[2024-05-12 14:30:38] INFO root fetch - processPackages [pytest-ranking]: Downloading https://files.pythonhosted.org/packages/b3/16/62a33c543cb170573d0363aeb657b0ab83bb5b236f8929508937fa2bd808/pytest_ranking-0.2.9.tar.gz
+[2024-05-12 14:30:38] INFO root fetch - processPackages [kitab]: Downloading https://files.pythonhosted.org/packages/c4/a5/cc077e3893120f737039ad76c156f904388093a57a8fcd56414b6da48d9a/kitab-0.0.27.tar.gz
+[2024-05-12 14:30:38] INFO root fetch - processPackages [kitab]: executing diffoscope
+[2024-05-12 14:30:38] INFO root fetch - processPackages [kitab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kitab-0.0.26.tar.gz tmp/kitab-0.0.27.tar.gz --markdown 20240512/k/kitab/0.0.26-0.0.27/README.md --exclude *.pyd
+[2024-05-12 14:30:38] INFO root fetch - processPackages [pytest-ranking]: Downloading https://files.pythonhosted.org/packages/47/76/87be960ad6ca81c8d2780f77c0d4f2dc690c3e32d3d20971fdd2c1cdadd5/pytest_ranking-0.3.0.tar.gz
+[2024-05-12 14:30:38] INFO root fetch - processPackages [pytest-ranking]: executing diffoscope
+[2024-05-12 14:30:38] INFO root fetch - processPackages [pytest-ranking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_ranking-0.2.9.tar.gz tmp/pytest_ranking-0.3.0.tar.gz --markdown 20240512/p/pytest-ranking/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-05-12 14:30:38] WARNING root fetch - processPackages [ogre-python]: Skipping package: exceeds size limit 12368177>=10485760
+[2024-05-12 14:30:38] INFO root fetch - main [MainThread]: End processing [ogre-python] error
+[2024-05-12 14:30:38] INFO root fetch - processPackages [kitab]: Remove: archive file [/home/abi/fetcher/tmp/kitab-0.0.26.tar.gz]
+[2024-05-12 14:30:38] INFO root fetch - processPackages [kitab]: Remove: archive file [/home/abi/fetcher/tmp/kitab-0.0.27.tar.gz]
+[2024-05-12 14:30:38] INFO root fetch - main [MainThread]: End processing [kitab]: success
+[2024-05-12 14:30:39] INFO root fetch - processPackages [pytest-ranking]: Remove: archive file [/home/abi/fetcher/tmp/pytest_ranking-0.2.9.tar.gz]
+[2024-05-12 14:30:39] INFO root fetch - processPackages [pytest-ranking]: Remove: archive file [/home/abi/fetcher/tmp/pytest_ranking-0.3.0.tar.gz]
+[2024-05-12 14:30:39] INFO root fetch - main [MainThread]: End processing [pytest-ranking]: success
+[2024-05-12 14:30:39] INFO root fetch - main [MainThread]: Store serial: [23169845]
