@@ -4172,3 +4172,36 @@
 [2024-05-12 06:07:59] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Remove: archive file [/home/abi/fetcher/tmp/karellen_llvm_toolchain_tools-18.1.5.0.post20-py3-none-manylinux2014_x86_64.whl.zip]
 [2024-05-12 06:07:59] INFO root fetch - main [MainThread]: End processing [karellen-llvm-toolchain-tools]: success
 [2024-05-12 06:07:59] INFO root fetch - main [MainThread]: Store serial: [23166897]
+[2024-05-12 06:10:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166897]
+[2024-05-12 06:10:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 06:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: promptdown
+[2024-05-12 06:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: subterraqueousz
+[2024-05-12 06:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-hr
+[2024-05-12 06:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-geoacumen
+[2024-05-12 06:10:09] WARNING root fetch - processPackages [subterraqueousz]: Skipping, unable to determine old version
+[2024-05-12 06:10:09] INFO root fetch - main [MainThread]: End processing [subterraqueousz] error
+[2024-05-12 06:10:09] INFO root fetch - processPackages [promptdown]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-12 06:10:09] INFO root fetch - processPackages [odoo-addons-oca-hr]: New version: [16.0.20240510.0] Old Version: [16.0.20240305.0]
+[2024-05-12 06:10:09] INFO root fetch - processPackages [python-geoacumen]: New version: [2024.5.5] Old Version: [2024.5.12]
+[2024-05-12 06:10:09] INFO root fetch - processPackages [promptdown]: Downloading https://files.pythonhosted.org/packages/62/b9/a60fb63bc3726f6b1a19ca841385cfc0ac839faa0232e80e62c3400136d5/promptdown-0.5.0.tar.gz
+[2024-05-12 06:10:09] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/17/fb/0ef52df269b66201d51a46de6d5699f7f18963c0a0f0c043fd15cffe1e50/python-geoacumen-2024.5.12.tar.gz
+[2024-05-12 06:10:09] INFO root fetch - processPackages [odoo-addons-oca-hr]: Downloading https://files.pythonhosted.org/packages/87/b8/4f3711ab47377d4f989fd5e1dff184e68b85c6fbc06b525f78678da0cacf/odoo_addons_oca_hr-16.0.20240305.0-py3-none-any.whl
+[2024-05-12 06:10:09] INFO root fetch - processPackages [promptdown]: Downloading https://files.pythonhosted.org/packages/9c/58/797ed5f9e22af89310c41e9d4f834cf5909efe966041f4cdbb58e426742f/promptdown-0.6.0.tar.gz
+[2024-05-12 06:10:09] INFO root fetch - processPackages [promptdown]: executing diffoscope
+[2024-05-12 06:10:09] INFO root fetch - processPackages [promptdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptdown-0.5.0.tar.gz tmp/promptdown-0.6.0.tar.gz --markdown 20240512/p/promptdown/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-12 06:10:09] INFO root fetch - processPackages [odoo-addons-oca-hr]: Downloading https://files.pythonhosted.org/packages/56/f3/0ea465e8a5e389a3aeb1eb8c478537005da7a22146904b3767997dd86627/odoo_addons_oca_hr-16.0.20240510.0-py3-none-any.whl
+[2024-05-12 06:10:09] INFO root fetch - processPackages [odoo-addons-oca-hr]: executing diffoscope
+[2024-05-12 06:10:09] INFO root fetch - processPackages [odoo-addons-oca-hr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_hr-16.0.20240305.0-py3-none-any.whl.zip tmp/odoo_addons_oca_hr-16.0.20240510.0-py3-none-any.whl.zip --markdown 20240512/o/odoo-addons-oca-hr/16.0.20240305.0-16.0.20240510.0/README.md --exclude *.pyd
+[2024-05-12 06:10:10] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/90/c0/07d5db0508938cc316c7a276f6f70aa320c1da593c6ecb7a45cd1be82880/python-geoacumen-2024.5.5.tar.gz
+[2024-05-12 06:10:10] INFO root fetch - processPackages [promptdown]: Remove: archive file [/home/abi/fetcher/tmp/promptdown-0.5.0.tar.gz]
+[2024-05-12 06:10:10] INFO root fetch - processPackages [promptdown]: Remove: archive file [/home/abi/fetcher/tmp/promptdown-0.6.0.tar.gz]
+[2024-05-12 06:10:10] INFO root fetch - main [MainThread]: End processing [promptdown]: success
+[2024-05-12 06:10:10] INFO root fetch - processPackages [odoo-addons-oca-hr]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_hr-16.0.20240305.0-py3-none-any.whl.zip]
+[2024-05-12 06:10:10] INFO root fetch - processPackages [odoo-addons-oca-hr]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_hr-16.0.20240510.0-py3-none-any.whl.zip]
+[2024-05-12 06:10:10] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-hr]: success
+[2024-05-12 06:10:10] INFO root fetch - processPackages [python-geoacumen]: executing diffoscope
+[2024-05-12 06:10:10] INFO root fetch - processPackages [python-geoacumen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-geoacumen-2024.5.12.tar.gz tmp/python-geoacumen-2024.5.5.tar.gz --markdown 20240512/p/python-geoacumen/2024.5.12-2024.5.5/README.md --exclude *.pyd
+[2024-05-12 06:10:11] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.5.12.tar.gz]
+[2024-05-12 06:10:11] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.5.5.tar.gz]
+[2024-05-12 06:10:11] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
+[2024-05-12 06:10:11] INFO root fetch - main [MainThread]: Store serial: [23166911]
