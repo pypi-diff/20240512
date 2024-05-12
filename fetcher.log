@@ -10758,3 +10758,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:21:00] INFO root fetch - processPackages [mm-sdk]: Remove: archive file [/home/abi/fetcher/tmp/mm_sdk-0.1.377.tar.gz]
 [2024-05-12 15:21:00] INFO root fetch - main [MainThread]: End processing [mm-sdk]: success
 [2024-05-12 15:21:00] INFO root fetch - main [MainThread]: Store serial: [23170094]
+[2024-05-12 15:23:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170094]
+[2024-05-12 15:23:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 15:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: missing-mga
+[2024-05-12 15:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unvouchsafedz
+[2024-05-12 15:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: popoll-backend
+[2024-05-12 15:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chomper
+[2024-05-12 15:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-moss
+[2024-05-12 15:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-static-jquery-ui
+[2024-05-12 15:23:08] INFO root fetch - processPackages [chomper]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-12 15:23:08] INFO root fetch - processPackages [popoll-backend]: New version: [0.0.44] Old Version: [0.0.43]
+[2024-05-12 15:23:09] ERROR root fetch - processPackages [python-moss]: Unable to get metadata: No such project 'python-moss'
+[2024-05-12 15:23:09] INFO root fetch - main [MainThread]: End processing [python-moss] error
+[2024-05-12 15:23:09] INFO root fetch - processPackages [django-static-jquery-ui]: New version: [1.13.3.1] Old Version: [1.13.2.1]
+[2024-05-12 15:23:09] WARNING root fetch - processPackages [missing-mga]: Skipping, unable to determine old version
+[2024-05-12 15:23:09] INFO root fetch - main [MainThread]: End processing [missing-mga] error
+[2024-05-12 15:23:09] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/0b/44/782f2c1c98ebb5226ce4d365ca0f6990077e5623be40e05fb00736649ea1/popoll_backend-0.0.43.tar.gz
+[2024-05-12 15:23:09] WARNING root fetch - processPackages [unvouchsafedz]: Skipping, unable to determine old version
+[2024-05-12 15:23:09] INFO root fetch - main [MainThread]: End processing [unvouchsafedz] error
+[2024-05-12 15:23:09] INFO root fetch - processPackages [chomper]: Downloading https://files.pythonhosted.org/packages/bc/9e/9015f6c5437c0bbad0cde2cb0240d3d31085a64291229c0a5f39f0571d4d/chomper-0.2.0.tar.gz
+[2024-05-12 15:23:09] INFO root fetch - processPackages [django-static-jquery-ui]: Downloading https://files.pythonhosted.org/packages/f9/1d/6224cbe4136c0778fa8d72d1a9151f1b89df744a5b9e95fa5f09fb8ba4bc/django-static-jquery-ui-1.13.2.1.tar.gz
+[2024-05-12 15:23:09] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/ac/5b/c70cb1d1e6fc7c25e39a5a1d23194863b7b5166a08468912b067b38adf7e/popoll_backend-0.0.44.tar.gz
+[2024-05-12 15:23:09] INFO root fetch - processPackages [popoll-backend]: executing diffoscope
+[2024-05-12 15:23:09] INFO root fetch - processPackages [popoll-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popoll_backend-0.0.43.tar.gz tmp/popoll_backend-0.0.44.tar.gz --markdown 20240512/p/popoll-backend/0.0.43-0.0.44/README.md --exclude *.pyd
+[2024-05-12 15:23:09] INFO root fetch - processPackages [chomper]: Downloading https://files.pythonhosted.org/packages/9c/2a/32657df28a861b407ab14c020b6eafb9a627001bca9dd662577cf63133ea/chomper-0.3.0.tar.gz
+[2024-05-12 15:23:09] INFO root fetch - processPackages [chomper]: executing diffoscope
+[2024-05-12 15:23:09] INFO root fetch - processPackages [chomper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chomper-0.2.0.tar.gz tmp/chomper-0.3.0.tar.gz --markdown 20240512/c/chomper/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-12 15:23:10] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.43.tar.gz]
+[2024-05-12 15:23:10] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.44.tar.gz]
+[2024-05-12 15:23:10] INFO root fetch - main [MainThread]: End processing [popoll-backend]: success
+[2024-05-12 15:23:10] INFO root fetch - processPackages [django-static-jquery-ui]: Downloading https://files.pythonhosted.org/packages/87/51/045015a87bf97d24ce9a1f34e664f75a8a2ea01c04ee965c632ca9843aef/django-static-jquery-ui-1.13.3.1.tar.gz
+[2024-05-12 15:23:10] INFO root fetch - processPackages [chomper]: Remove: archive file [/home/abi/fetcher/tmp/chomper-0.2.0.tar.gz]
+[2024-05-12 15:23:10] INFO root fetch - processPackages [chomper]: Remove: archive file [/home/abi/fetcher/tmp/chomper-0.3.0.tar.gz]
+[2024-05-12 15:23:10] INFO root fetch - main [MainThread]: End processing [chomper]: success
+[2024-05-12 15:23:10] INFO root fetch - processPackages [django-static-jquery-ui]: executing diffoscope
+[2024-05-12 15:23:10] INFO root fetch - processPackages [django-static-jquery-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-static-jquery-ui-1.13.2.1.tar.gz tmp/django-static-jquery-ui-1.13.3.1.tar.gz --markdown 20240512/d/django-static-jquery-ui/1.13.2.1-1.13.3.1/README.md --exclude *.pyd
+[2024-05-12 15:23:22] INFO root fetch - processPackages [django-static-jquery-ui]: Remove: archive file [/home/abi/fetcher/tmp/django-static-jquery-ui-1.13.2.1.tar.gz]
+[2024-05-12 15:23:22] INFO root fetch - processPackages [django-static-jquery-ui]: Remove: archive file [/home/abi/fetcher/tmp/django-static-jquery-ui-1.13.3.1.tar.gz]
+[2024-05-12 15:23:22] INFO root fetch - main [MainThread]: End processing [django-static-jquery-ui]: success
+[2024-05-12 15:23:22] INFO root fetch - main [MainThread]: Store serial: [23170122]
