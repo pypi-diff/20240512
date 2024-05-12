@@ -3661,3 +3661,27 @@
 [2024-05-12 05:15:01] INFO root fetch - processPackages [pure-utils]: Remove: archive file [/home/abi/fetcher/tmp/pure_utils-0.9.0.tar.gz]
 [2024-05-12 05:15:01] INFO root fetch - main [MainThread]: End processing [pure-utils]: success
 [2024-05-12 05:15:01] INFO root fetch - main [MainThread]: Store serial: [23166602]
+[2024-05-12 05:17:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166602]
+[2024-05-12 05:17:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 05:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seductive
+[2024-05-12 05:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llmail
+[2024-05-12 05:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keras-cv-nightly
+[2024-05-12 05:17:10] WARNING root fetch - processPackages [seductive]: Skipping, unable to determine old version
+[2024-05-12 05:17:10] INFO root fetch - main [MainThread]: End processing [seductive] error
+[2024-05-12 05:17:10] INFO root fetch - processPackages [llmail]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 05:17:10] INFO root fetch - processPackages [keras-cv-nightly]: New version: [0.9.0.dev2024043000] Old Version: [0.9.0.dev2024042919]
+[2024-05-12 05:17:10] INFO root fetch - processPackages [llmail]: Downloading https://files.pythonhosted.org/packages/98/f0/b9f864d2f17dba32c66b1154c14ae4bf87ca7204b8905e50e99b8e33f601/llmail-0.1.0.tar.gz
+[2024-05-12 05:17:10] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/bd/17/3faa9e969f58abadca2ff3a4053bed558afb777bae344f994feeeaf1cfd3/keras_cv_nightly-0.9.0.dev2024042919.tar.gz
+[2024-05-12 05:17:10] INFO root fetch - processPackages [llmail]: Downloading https://files.pythonhosted.org/packages/e0/56/6b44d7ca815e4beaa10d99f0af3ba736ebd2dd4942ec7cc84044a78a4ce1/llmail-0.1.1.tar.gz
+[2024-05-12 05:17:10] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/81/e8/990891e08c4d6686000132786b783a9e72d0cf684f6f44245f2949fd0e57/keras_cv_nightly-0.9.0.dev2024043000.tar.gz
+[2024-05-12 05:17:10] INFO root fetch - processPackages [llmail]: executing diffoscope
+[2024-05-12 05:17:10] INFO root fetch - processPackages [llmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmail-0.1.0.tar.gz tmp/llmail-0.1.1.tar.gz --markdown 20240512/l/llmail/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 05:17:10] INFO root fetch - processPackages [keras-cv-nightly]: executing diffoscope
+[2024-05-12 05:17:10] INFO root fetch - processPackages [keras-cv-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz --markdown 20240512/k/keras-cv-nightly/0.9.0.dev2024042919-0.9.0.dev2024043000/README.md --exclude *.pyd
+[2024-05-12 05:17:11] INFO root fetch - processPackages [llmail]: Remove: archive file [/home/abi/fetcher/tmp/llmail-0.1.0.tar.gz]
+[2024-05-12 05:17:11] INFO root fetch - processPackages [llmail]: Remove: archive file [/home/abi/fetcher/tmp/llmail-0.1.1.tar.gz]
+[2024-05-12 05:17:11] INFO root fetch - main [MainThread]: End processing [llmail]: success
+[2024-05-12 05:17:12] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz]
+[2024-05-12 05:17:12] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
+[2024-05-12 05:17:12] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
+[2024-05-12 05:17:12] INFO root fetch - main [MainThread]: Store serial: [23166610]
