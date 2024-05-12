@@ -17730,3 +17730,87 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:58:31] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: Remove: archive file [/home/abi/fetcher/tmp/csa_ai_foundation_model_api_clients-0.1.0.tar.gz]
 [2024-05-12 22:58:31] INFO root fetch - main [MainThread]: End processing [csa-ai-foundation-model-api-clients]: success
 [2024-05-12 22:58:31] INFO root fetch - main [MainThread]: Store serial: [23173785]
+[2024-05-12 23:00:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173785]
+[2024-05-12 23:00:39] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-12 23:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iudex
+[2024-05-12 23:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dekcli
+[2024-05-12 23:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: syncmodels
+[2024-05-12 23:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: agptools
+[2024-05-12 23:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: swarmtube
+[2024-05-12 23:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: compas-notebook
+[2024-05-12 23:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cloudsnorkel.cdk-github-runners
+[2024-05-12 23:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: py-alpaca-api
+[2024-05-12 23:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: objectbox
+[2024-05-12 23:00:39] INFO root fetch - processPackages [compas-notebook]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-12 23:00:39] INFO root fetch - processPackages [syncmodels]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 23:00:39] INFO root fetch - processPackages [dekcli]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 23:00:39] INFO root fetch - processPackages [py-alpaca-api]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-12 23:00:39] INFO root fetch - processPackages [agptools]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 23:00:39] INFO root fetch - processPackages [objectbox]: New version: [0.7.0a9] Old Version: [0.7.0a8]
+[2024-05-12 23:00:39] INFO root fetch - processPackages [swarmtube]: New version: [0.1.37] Old Version: [0.1.36]
+[2024-05-12 23:00:40] INFO root fetch - processPackages [iudex]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-12 23:00:40] INFO root fetch - processPackages [dekcli]: Downloading https://files.pythonhosted.org/packages/09/4e/2ebd360e65f48d9ab15db2ffd09972cbcbef5cf930aabdb83ecf7103b49b/dekcli-0.1.8.tar.gz
+[2024-05-12 23:00:40] INFO root fetch - processPackages [syncmodels]: Downloading https://files.pythonhosted.org/packages/09/13/db4988a642af43523190154e2a5fc392ebeed8a8fa626973e593b7c6b635/syncmodels-0.1.8-py2.py3-none-any.whl
+[2024-05-12 23:00:40] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-05-12 23:00:40] INFO root fetch - processPackages [objectbox]: Downloading https://files.pythonhosted.org/packages/cc/ba/44e8ce980ec0a88c80e70492fdf005fe438e7ad5d861fa6a1b4a6875fd8a/objectbox-0.7.0a8-py3-none-any.whl
+[2024-05-12 23:00:40] INFO root fetch - processPackages [swarmtube]: Downloading https://files.pythonhosted.org/packages/a5/fe/a92d150e049707b9c6dbae66b78d27689d9e5c5c805960c9ed51926d46ef/swarmtube-0.1.36-py2.py3-none-any.whl
+[2024-05-12 23:00:40] INFO root fetch - processPackages [agptools]: Downloading https://files.pythonhosted.org/packages/ef/90/08317ea7b8434657a0c64c671a0ce91127781d19896203a19175d974fc12/agptools-0.1.8-py2.py3-none-any.whl
+[2024-05-12 23:00:40] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/2e/2e/6daba2d04dc1240533aa4585f1f2413a8d50f2833ff6a54d56b1c933115e/py_alpaca_api-0.2.5.tar.gz
+[2024-05-12 23:00:40] INFO root fetch - processPackages [compas-notebook]: Downloading https://files.pythonhosted.org/packages/a2/a2/472e908e18303bf0bcab4434575084258e500a6adbd1dd2d9a37c9b52db8/compas_notebook-0.5.0.tar.gz
+[2024-05-12 23:00:40] INFO root fetch - processPackages [iudex]: Downloading https://files.pythonhosted.org/packages/c7/dc/0c1cc9b788d2664c7feeaf5811b4a8baba114d5b386c3d86c798549f0d47/iudex-0.4.8.tar.gz
+[2024-05-12 23:00:40] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: Downloading https://files.pythonhosted.org/packages/c9/a7/d5d332a50c08e84cd53ee3b2bb6af229b8769177551ded5e1852873e2628/cloudsnorkel.cdk-github-runners-0.9.7.tar.gz
+[2024-05-12 23:00:40] INFO root fetch - processPackages [syncmodels]: Downloading https://files.pythonhosted.org/packages/fa/f6/eeeb0b12fc045f5917cfc3967317eddb0f896b12df99ee9cb26dd42b0529/syncmodels-0.1.9-py2.py3-none-any.whl
+[2024-05-12 23:00:40] INFO root fetch - processPackages [swarmtube]: Downloading https://files.pythonhosted.org/packages/f6/bf/10dd08451058cdce18744a82f1451a9f447bd670e2b7019f0ef5c9bda929/swarmtube-0.1.37-py2.py3-none-any.whl
+[2024-05-12 23:00:40] INFO root fetch - processPackages [dekcli]: Downloading https://files.pythonhosted.org/packages/aa/36/a5a8c53d49947c787ab14c8152d34f84d711503916ed239b0fdf3b77efc3/dekcli-0.1.9.tar.gz
+[2024-05-12 23:00:40] INFO root fetch - processPackages [agptools]: Downloading https://files.pythonhosted.org/packages/b4/96/a1fa0a1e147cbeb8acd6a36e118eb3b3ecfbf93d5b5de31b99b5d8bef5f4/agptools-0.1.9-py2.py3-none-any.whl
+[2024-05-12 23:00:40] INFO root fetch - processPackages [compas-notebook]: Downloading https://files.pythonhosted.org/packages/58/1d/6e669a0461dd2159d1ce139a945ba3e673d9465db9aef45eec624eea9322/compas_notebook-0.6.0.tar.gz
+[2024-05-12 23:00:40] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/87/01/28c9e0438d53f244523a81b58013338e6a8bd7fd5074ac76db90b73f1a3a/py_alpaca_api-0.2.6.tar.gz
+[2024-05-12 23:00:40] INFO root fetch - processPackages [syncmodels]: executing diffoscope
+[2024-05-12 23:00:40] INFO root fetch - processPackages [syncmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncmodels-0.1.8-py2.py3-none-any.whl.zip tmp/syncmodels-0.1.9-py2.py3-none-any.whl.zip --markdown 20240512/s/syncmodels/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 23:00:40] INFO root fetch - processPackages [swarmtube]: executing diffoscope
+[2024-05-12 23:00:40] INFO root fetch - processPackages [swarmtube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swarmtube-0.1.36-py2.py3-none-any.whl.zip tmp/swarmtube-0.1.37-py2.py3-none-any.whl.zip --markdown 20240512/s/swarmtube/0.1.36-0.1.37/README.md --exclude *.pyd
+[2024-05-12 23:00:40] INFO root fetch - processPackages [dekcli]: executing diffoscope
+[2024-05-12 23:00:40] INFO root fetch - processPackages [dekcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekcli-0.1.8.tar.gz tmp/dekcli-0.1.9.tar.gz --markdown 20240512/d/dekcli/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 23:00:40] INFO root fetch - processPackages [compas-notebook]: executing diffoscope
+[2024-05-12 23:00:40] INFO root fetch - processPackages [compas-notebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compas_notebook-0.5.0.tar.gz tmp/compas_notebook-0.6.0.tar.gz --markdown 20240512/c/compas-notebook/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-12 23:00:40] INFO root fetch - processPackages [py-alpaca-api]: executing diffoscope
+[2024-05-12 23:00:40] INFO root fetch - processPackages [py-alpaca-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_alpaca_api-0.2.5.tar.gz tmp/py_alpaca_api-0.2.6.tar.gz --markdown 20240512/p/py-alpaca-api/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-12 23:00:40] INFO root fetch - processPackages [agptools]: executing diffoscope
+[2024-05-12 23:00:40] INFO root fetch - processPackages [agptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agptools-0.1.8-py2.py3-none-any.whl.zip tmp/agptools-0.1.9-py2.py3-none-any.whl.zip --markdown 20240512/a/agptools/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 23:00:40] INFO root fetch - processPackages [objectbox]: Downloading https://files.pythonhosted.org/packages/c3/61/0aa9d0116287743c7d3ed3dcd0cecddd576b2c27bc58cd72ac9e9513a8be/objectbox-0.7.0a9-py3-none-any.whl
+[2024-05-12 23:00:40] INFO root fetch - processPackages [iudex]: Downloading https://files.pythonhosted.org/packages/9e/4d/d22711011e5e63aff9b40852a57e8a3f9ff8e3843a15a2d0761be494fec3/iudex-0.4.9.tar.gz
+[2024-05-12 23:00:40] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: Downloading https://files.pythonhosted.org/packages/66/2b/f64323e7bec084fa1ddeddda4bfd6760f662cfc653b73e70a04f8ff6b51d/cloudsnorkel.cdk-github-runners-0.9.8.tar.gz
+[2024-05-12 23:00:40] INFO root fetch - processPackages [iudex]: executing diffoscope
+[2024-05-12 23:00:40] INFO root fetch - processPackages [iudex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iudex-0.4.8.tar.gz tmp/iudex-0.4.9.tar.gz --markdown 20240512/i/iudex/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-12 23:00:41] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: executing diffoscope
+[2024-05-12 23:00:41] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudsnorkel.cdk-github-runners-0.9.7.tar.gz tmp/cloudsnorkel.cdk-github-runners-0.9.8.tar.gz --markdown 20240512/c/cloudsnorkel.cdk-github-runners/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-05-12 23:00:41] INFO root fetch - processPackages [dekcli]: Remove: archive file [/home/abi/fetcher/tmp/dekcli-0.1.8.tar.gz]
+[2024-05-12 23:00:41] INFO root fetch - processPackages [dekcli]: Remove: archive file [/home/abi/fetcher/tmp/dekcli-0.1.9.tar.gz]
+[2024-05-12 23:00:41] INFO root fetch - main [MainThread]: End processing [dekcli]: success
+[2024-05-12 23:00:41] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.2.5.tar.gz]
+[2024-05-12 23:00:41] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.2.6.tar.gz]
+[2024-05-12 23:00:41] INFO root fetch - main [MainThread]: End processing [py-alpaca-api]: success
+[2024-05-12 23:00:41] INFO root fetch - processPackages [swarmtube]: Remove: archive file [/home/abi/fetcher/tmp/swarmtube-0.1.36-py2.py3-none-any.whl.zip]
+[2024-05-12 23:00:41] INFO root fetch - processPackages [swarmtube]: Remove: archive file [/home/abi/fetcher/tmp/swarmtube-0.1.37-py2.py3-none-any.whl.zip]
+[2024-05-12 23:00:41] INFO root fetch - main [MainThread]: End processing [swarmtube]: success
+[2024-05-12 23:00:41] INFO root fetch - processPackages [syncmodels]: Remove: archive file [/home/abi/fetcher/tmp/syncmodels-0.1.8-py2.py3-none-any.whl.zip]
+[2024-05-12 23:00:41] INFO root fetch - processPackages [syncmodels]: Remove: archive file [/home/abi/fetcher/tmp/syncmodels-0.1.9-py2.py3-none-any.whl.zip]
+[2024-05-12 23:00:41] INFO root fetch - main [MainThread]: End processing [syncmodels]: success
+[2024-05-12 23:00:41] INFO root fetch - processPackages [agptools]: Remove: archive file [/home/abi/fetcher/tmp/agptools-0.1.8-py2.py3-none-any.whl.zip]
+[2024-05-12 23:00:41] INFO root fetch - processPackages [agptools]: Remove: archive file [/home/abi/fetcher/tmp/agptools-0.1.9-py2.py3-none-any.whl.zip]
+[2024-05-12 23:00:41] INFO root fetch - main [MainThread]: End processing [agptools]: success
+[2024-05-12 23:00:41] INFO root fetch - processPackages [compas-notebook]: Remove: archive file [/home/abi/fetcher/tmp/compas_notebook-0.5.0.tar.gz]
+[2024-05-12 23:00:41] INFO root fetch - processPackages [compas-notebook]: Remove: archive file [/home/abi/fetcher/tmp/compas_notebook-0.6.0.tar.gz]
+[2024-05-12 23:00:41] INFO root fetch - main [MainThread]: End processing [compas-notebook]: success
+[2024-05-12 23:00:41] INFO root fetch - processPackages [objectbox]: executing diffoscope
+[2024-05-12 23:00:41] INFO root fetch - processPackages [objectbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/objectbox-0.7.0a8-py3-none-any.whl.zip tmp/objectbox-0.7.0a9-py3-none-any.whl.zip --markdown 20240512/o/objectbox/0.7.0a8-0.7.0a9/README.md --exclude *.pyd
+[2024-05-12 23:00:41] INFO root fetch - processPackages [iudex]: Remove: archive file [/home/abi/fetcher/tmp/iudex-0.4.8.tar.gz]
+[2024-05-12 23:00:41] INFO root fetch - processPackages [iudex]: Remove: archive file [/home/abi/fetcher/tmp/iudex-0.4.9.tar.gz]
+[2024-05-12 23:00:41] INFO root fetch - main [MainThread]: End processing [iudex]: success
+[2024-05-12 23:00:42] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: Remove: archive file [/home/abi/fetcher/tmp/cloudsnorkel.cdk-github-runners-0.9.7.tar.gz]
+[2024-05-12 23:00:42] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: Remove: archive file [/home/abi/fetcher/tmp/cloudsnorkel.cdk-github-runners-0.9.8.tar.gz]
+[2024-05-12 23:00:42] INFO root fetch - main [MainThread]: End processing [cloudsnorkel.cdk-github-runners]: success
+[2024-05-12 23:01:24] INFO root fetch - processPackages [objectbox]: Remove: archive file [/home/abi/fetcher/tmp/objectbox-0.7.0a8-py3-none-any.whl.zip]
+[2024-05-12 23:01:24] INFO root fetch - processPackages [objectbox]: Remove: archive file [/home/abi/fetcher/tmp/objectbox-0.7.0a9-py3-none-any.whl.zip]
+[2024-05-12 23:01:24] INFO root fetch - main [MainThread]: End processing [objectbox]: success
+[2024-05-12 23:01:24] INFO root fetch - main [MainThread]: Store serial: [23173809]
