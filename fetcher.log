@@ -12879,3 +12879,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:40:50] INFO root fetch - processPackages [opentaskpy]: Remove: archive file [/home/abi/fetcher/tmp/opentaskpy-24.9.0.tar.gz]
 [2024-05-12 17:40:50] INFO root fetch - main [MainThread]: End processing [opentaskpy]: success
 [2024-05-12 17:40:50] INFO root fetch - main [MainThread]: Store serial: [23171338]
+[2024-05-12 17:42:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171338]
+[2024-05-12 17:42:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 17:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: geocif
+[2024-05-12 17:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: griffe
+[2024-05-12 17:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aplustools
+[2024-05-12 17:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pinyinlize
+[2024-05-12 17:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lineamentz
+[2024-05-12 17:42:59] INFO root fetch - processPackages [geocif]: New version: [0.1.25] Old Version: [0.1.24]
+[2024-05-12 17:42:59] INFO root fetch - processPackages [geocif]: Downloading https://files.pythonhosted.org/packages/2b/90/f09b02235aeccfb8e955a28eb8e783a4dedad3a6c52c9eed99ff1d5f42d6/geocif-0.1.24.tar.gz
+[2024-05-12 17:42:59] WARNING root fetch - processPackages [pinyinlize]: Skipping, unable to determine old version
+[2024-05-12 17:42:59] INFO root fetch - main [MainThread]: End processing [pinyinlize] error
+[2024-05-12 17:42:59] INFO root fetch - processPackages [aplustools]: New version: [1.4.8.5] Old Version: [1.4.8.4]
+[2024-05-12 17:42:59] WARNING root fetch - processPackages [lineamentz]: Skipping, unable to determine old version
+[2024-05-12 17:42:59] INFO root fetch - main [MainThread]: End processing [lineamentz] error
+[2024-05-12 17:42:59] INFO root fetch - processPackages [griffe]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-12 17:42:59] INFO root fetch - processPackages [aplustools]: Downloading https://files.pythonhosted.org/packages/36/a7/7cecf284d22e9eee316d1fd7f185b70b7f4b0c59ea2978898e85708f8074/aplustools-1.4.8.4.tar.gz
+[2024-05-12 17:42:59] INFO root fetch - processPackages [griffe]: Downloading https://files.pythonhosted.org/packages/32/dd/bc07e7e6b53772e9c44c34a18ca7e4ceb99b58bfb2c2f72f7913e3f0d303/griffe-0.8.0.tar.gz
+[2024-05-12 17:42:59] INFO root fetch - processPackages [geocif]: Downloading https://files.pythonhosted.org/packages/80/1e/5856eb83c3a96ae69b9b84b75def62fbc2d3ccabf0c60f91e73c8fbac3af/geocif-0.1.25.tar.gz
+[2024-05-12 17:42:59] INFO root fetch - processPackages [geocif]: executing diffoscope
+[2024-05-12 17:42:59] INFO root fetch - processPackages [geocif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geocif-0.1.24.tar.gz tmp/geocif-0.1.25.tar.gz --markdown 20240512/g/geocif/0.1.24-0.1.25/README.md --exclude *.pyd
+[2024-05-12 17:42:59] INFO root fetch - processPackages [aplustools]: Downloading https://files.pythonhosted.org/packages/e1/f7/88582df93cfb29be0a81019b08e8503f28ce8607898f457502b9b7974e4e/aplustools-1.4.8.5.tar.gz
+[2024-05-12 17:42:59] INFO root fetch - processPackages [griffe]: Downloading https://files.pythonhosted.org/packages/97/67/6905162d0aeccc0a65143c6fda9d6510d04561725f6df7df71457a053c3d/griffe-0.9.0.tar.gz
+[2024-05-12 17:42:59] INFO root fetch - processPackages [aplustools]: executing diffoscope
+[2024-05-12 17:42:59] INFO root fetch - processPackages [aplustools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aplustools-1.4.8.4.tar.gz tmp/aplustools-1.4.8.5.tar.gz --markdown 20240512/a/aplustools/1.4.8.4-1.4.8.5/README.md --exclude *.pyd
+[2024-05-12 17:43:00] INFO root fetch - processPackages [griffe]: executing diffoscope
+[2024-05-12 17:43:00] INFO root fetch - processPackages [griffe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griffe-0.8.0.tar.gz tmp/griffe-0.9.0.tar.gz --markdown 20240512/g/griffe/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-12 17:43:00] INFO root fetch - processPackages [geocif]: Remove: archive file [/home/abi/fetcher/tmp/geocif-0.1.24.tar.gz]
+[2024-05-12 17:43:00] INFO root fetch - processPackages [geocif]: Remove: archive file [/home/abi/fetcher/tmp/geocif-0.1.25.tar.gz]
+[2024-05-12 17:43:00] INFO root fetch - main [MainThread]: End processing [geocif]: success
+[2024-05-12 17:43:00] INFO root fetch - processPackages [aplustools]: Remove: archive file [/home/abi/fetcher/tmp/aplustools-1.4.8.4.tar.gz]
+[2024-05-12 17:43:00] INFO root fetch - processPackages [aplustools]: Remove: archive file [/home/abi/fetcher/tmp/aplustools-1.4.8.5.tar.gz]
+[2024-05-12 17:43:00] INFO root fetch - main [MainThread]: End processing [aplustools]: success
+[2024-05-12 17:43:00] INFO root fetch - processPackages [griffe]: Remove: archive file [/home/abi/fetcher/tmp/griffe-0.8.0.tar.gz]
+[2024-05-12 17:43:00] INFO root fetch - processPackages [griffe]: Remove: archive file [/home/abi/fetcher/tmp/griffe-0.9.0.tar.gz]
+[2024-05-12 17:43:00] INFO root fetch - main [MainThread]: End processing [griffe]: success
+[2024-05-12 17:43:00] INFO root fetch - main [MainThread]: Store serial: [23171356]
