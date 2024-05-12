@@ -6938,3 +6938,21 @@
 [2024-05-12 10:28:01] INFO root fetch - processPackages [ast-grep-cli]: Remove: archive file [/home/abi/fetcher/tmp/ast_grep_cli-0.9.3.tar.gz]
 [2024-05-12 10:28:01] INFO root fetch - main [MainThread]: End processing [ast-grep-cli]: success
 [2024-05-12 10:28:01] INFO root fetch - main [MainThread]: Store serial: [23168142]
+[2024-05-12 10:30:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168142]
+[2024-05-12 10:30:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 10:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-admin-daterange-listfilter
+[2024-05-12 10:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agent-dingo
+[2024-05-12 10:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: basilissaz
+[2024-05-12 10:30:10] WARNING root fetch - processPackages [django-admin-daterange-listfilter]: Skipping, unable to determine old version
+[2024-05-12 10:30:10] INFO root fetch - main [MainThread]: End processing [django-admin-daterange-listfilter] error
+[2024-05-12 10:30:10] WARNING root fetch - processPackages [basilissaz]: Skipping, unable to determine old version
+[2024-05-12 10:30:10] INFO root fetch - main [MainThread]: End processing [basilissaz] error
+[2024-05-12 10:30:10] INFO root fetch - processPackages [agent-dingo]: New version: [1.0.0] Old Version: [0.1.0rc1]
+[2024-05-12 10:30:10] INFO root fetch - processPackages [agent-dingo]: Downloading https://files.pythonhosted.org/packages/1c/56/45161fe64d7fe97bc589c40fb754204213eb849a8adad7286a9f236aea78/agent_dingo-0.1.0rc1.tar.gz
+[2024-05-12 10:30:11] INFO root fetch - processPackages [agent-dingo]: Downloading https://files.pythonhosted.org/packages/0a/20/7b645befde4192ba474c2ac325a3bebf8e252d9f36b675cae7f968d3bbc2/agent_dingo-1.0.0.tar.gz
+[2024-05-12 10:30:11] INFO root fetch - processPackages [agent-dingo]: executing diffoscope
+[2024-05-12 10:30:11] INFO root fetch - processPackages [agent-dingo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agent_dingo-0.1.0rc1.tar.gz tmp/agent_dingo-1.0.0.tar.gz --markdown 20240512/a/agent-dingo/0.1.0rc1-1.0.0/README.md --exclude *.pyd
+[2024-05-12 10:30:11] INFO root fetch - processPackages [agent-dingo]: Remove: archive file [/home/abi/fetcher/tmp/agent_dingo-0.1.0rc1.tar.gz]
+[2024-05-12 10:30:11] INFO root fetch - processPackages [agent-dingo]: Remove: archive file [/home/abi/fetcher/tmp/agent_dingo-1.0.0.tar.gz]
+[2024-05-12 10:30:11] INFO root fetch - main [MainThread]: End processing [agent-dingo]: success
+[2024-05-12 10:30:11] INFO root fetch - main [MainThread]: Store serial: [23168152]
