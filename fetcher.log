@@ -10067,3 +10067,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:24:08] INFO root fetch - processPackages [MMLToolbox]: Remove: archive file [/home/abi/fetcher/tmp/MMLToolbox-1.2.0-py3-none-any.whl.zip]
 [2024-05-12 14:24:08] INFO root fetch - main [MainThread]: End processing [MMLToolbox]: success
 [2024-05-12 14:24:08] INFO root fetch - main [MainThread]: Store serial: [23169799]
+[2024-05-12 14:26:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169799]
+[2024-05-12 14:26:17] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 14:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kitab
+[2024-05-12 14:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bioat
+[2024-05-12 14:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: celery-streaming-result
+[2024-05-12 14:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: axletreesz
+[2024-05-12 14:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyircsdk
+[2024-05-12 14:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: var-print
+[2024-05-12 14:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: QtHarmony
+[2024-05-12 14:26:17] INFO root fetch - processPackages [kitab]: New version: [0.0.26] Old Version: [0.0.25]
+[2024-05-12 14:26:17] INFO root fetch - processPackages [pyircsdk]: New version: [1.5.0] Old Version: [1.4.0]
+[2024-05-12 14:26:17] INFO root fetch - processPackages [QtHarmony]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-12 14:26:17] WARNING root fetch - processPackages [axletreesz]: Skipping, unable to determine old version
+[2024-05-12 14:26:17] INFO root fetch - main [MainThread]: End processing [axletreesz] error
+[2024-05-12 14:26:17] INFO root fetch - processPackages [kitab]: Downloading https://files.pythonhosted.org/packages/10/a1/6d6b6670bb010e310939c8a49acbf2ac08b992492ea467a98fa6ce4eb8ae/kitab-0.0.25.tar.gz
+[2024-05-12 14:26:17] INFO root fetch - processPackages [var-print]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 14:26:17] INFO root fetch - processPackages [celery-streaming-result]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-12 14:26:17] INFO root fetch - processPackages [pyircsdk]: Downloading https://files.pythonhosted.org/packages/45/b8/ff881f1edc6a6079e9872ed153cd1542455e352732ca673ccc022aba8013/pyircsdk-1.4.0.tar.gz
+[2024-05-12 14:26:17] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/7c/83/bbf0f6fba9e4b7c2eadce19570f4c2b66bf3328cb24189bcce62b4269ba4/qtharmony-0.2.1.tar.gz
+[2024-05-12 14:26:17] INFO root fetch - processPackages [bioat]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-12 14:26:17] INFO root fetch - processPackages [celery-streaming-result]: Downloading https://files.pythonhosted.org/packages/2e/09/32116d864a282e90543db3ff974f1613de7902cd7cae516758e9424742a0/celery_streaming_result-0.1.2.tar.gz
+[2024-05-12 14:26:17] INFO root fetch - processPackages [bioat]: Downloading https://files.pythonhosted.org/packages/04/87/27733a666503696419c4a4b25800eae50415192d02274519b748829963d0/bioat-0.9.0.tar.gz
+[2024-05-12 14:26:17] INFO root fetch - processPackages [kitab]: Downloading https://files.pythonhosted.org/packages/95/b8/81e83c84b8decbb08849972673e0ec0d2b13b45be858122b42392c3a2355/kitab-0.0.26.tar.gz
+[2024-05-12 14:26:17] INFO root fetch - processPackages [var-print]: Downloading https://files.pythonhosted.org/packages/c4/62/8b6b23525ba98e9cca2f222fba21686c9d2ef4e5921cf772c01a3fb99d0f/var_print-0.0.8.tar.gz
+[2024-05-12 14:26:17] INFO root fetch - processPackages [pyircsdk]: Downloading https://files.pythonhosted.org/packages/2e/e8/ba5c1afc5de4541e5c6683e2c4b060926a37a3dafbea568c5d173c28e20d/pyircsdk-1.5.0.tar.gz
+[2024-05-12 14:26:18] INFO root fetch - processPackages [kitab]: executing diffoscope
+[2024-05-12 14:26:18] INFO root fetch - processPackages [kitab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kitab-0.0.25.tar.gz tmp/kitab-0.0.26.tar.gz --markdown 20240512/k/kitab/0.0.25-0.0.26/README.md --exclude *.pyd
+[2024-05-12 14:26:18] INFO root fetch - processPackages [pyircsdk]: executing diffoscope
+[2024-05-12 14:26:18] INFO root fetch - processPackages [pyircsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyircsdk-1.4.0.tar.gz tmp/pyircsdk-1.5.0.tar.gz --markdown 20240512/p/pyircsdk/1.4.0-1.5.0/README.md --exclude *.pyd
+[2024-05-12 14:26:18] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/9c/86/ce87267d9507252462d3c03428199094d902872e36c97c1a368ea37a8d77/qtharmony-0.2.2.tar.gz
+[2024-05-12 14:26:18] INFO root fetch - processPackages [celery-streaming-result]: Downloading https://files.pythonhosted.org/packages/ad/ef/37cc840f6a3ed0927d8fe2d18445d26993c076a27b9bdabca9e8484ddddb/celery_streaming_result-0.1.3.tar.gz
+[2024-05-12 14:26:18] INFO root fetch - processPackages [QtHarmony]: executing diffoscope
+[2024-05-12 14:26:18] INFO root fetch - processPackages [QtHarmony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtharmony-0.2.1.tar.gz tmp/qtharmony-0.2.2.tar.gz --markdown 20240512/Q/QtHarmony/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-12 14:26:18] INFO root fetch - processPackages [bioat]: Downloading https://files.pythonhosted.org/packages/9b/66/f85222000d903dd3fc4dcf94a27d2dc8e169f2a275a156acaa6341e21d37/bioat-0.9.1.tar.gz
+[2024-05-12 14:26:18] INFO root fetch - processPackages [celery-streaming-result]: executing diffoscope
+[2024-05-12 14:26:18] INFO root fetch - processPackages [celery-streaming-result]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/celery_streaming_result-0.1.2.tar.gz tmp/celery_streaming_result-0.1.3.tar.gz --markdown 20240512/c/celery-streaming-result/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-12 14:26:18] INFO root fetch - processPackages [var-print]: Downloading https://files.pythonhosted.org/packages/0b/12/00d35f1ef302deba67dc6685c31a549f33c451a6d26cf3dbecc333dc8ccf/var_print-0.0.9.tar.gz
+[2024-05-12 14:26:18] INFO root fetch - processPackages [bioat]: executing diffoscope
+[2024-05-12 14:26:18] INFO root fetch - processPackages [bioat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioat-0.9.0.tar.gz tmp/bioat-0.9.1.tar.gz --markdown 20240512/b/bioat/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-12 14:26:18] INFO root fetch - processPackages [var-print]: executing diffoscope
+[2024-05-12 14:26:18] INFO root fetch - processPackages [var-print]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/var_print-0.0.8.tar.gz tmp/var_print-0.0.9.tar.gz --markdown 20240512/v/var-print/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 14:26:18] INFO root fetch - processPackages [kitab]: Remove: archive file [/home/abi/fetcher/tmp/kitab-0.0.25.tar.gz]
+[2024-05-12 14:26:18] INFO root fetch - processPackages [kitab]: Remove: archive file [/home/abi/fetcher/tmp/kitab-0.0.26.tar.gz]
+[2024-05-12 14:26:18] INFO root fetch - main [MainThread]: End processing [kitab]: success
+[2024-05-12 14:26:18] INFO root fetch - processPackages [pyircsdk]: Remove: archive file [/home/abi/fetcher/tmp/pyircsdk-1.4.0.tar.gz]
+[2024-05-12 14:26:18] INFO root fetch - processPackages [pyircsdk]: Remove: archive file [/home/abi/fetcher/tmp/pyircsdk-1.5.0.tar.gz]
+[2024-05-12 14:26:18] INFO root fetch - main [MainThread]: End processing [pyircsdk]: success
+[2024-05-12 14:26:18] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.2.1.tar.gz]
+[2024-05-12 14:26:18] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.2.2.tar.gz]
+[2024-05-12 14:26:18] INFO root fetch - main [MainThread]: End processing [QtHarmony]: success
+[2024-05-12 14:26:18] INFO root fetch - processPackages [celery-streaming-result]: Remove: archive file [/home/abi/fetcher/tmp/celery_streaming_result-0.1.2.tar.gz]
+[2024-05-12 14:26:18] INFO root fetch - processPackages [celery-streaming-result]: Remove: archive file [/home/abi/fetcher/tmp/celery_streaming_result-0.1.3.tar.gz]
+[2024-05-12 14:26:18] INFO root fetch - main [MainThread]: End processing [celery-streaming-result]: success
+[2024-05-12 14:26:19] INFO root fetch - processPackages [var-print]: Remove: archive file [/home/abi/fetcher/tmp/var_print-0.0.8.tar.gz]
+[2024-05-12 14:26:19] INFO root fetch - processPackages [var-print]: Remove: archive file [/home/abi/fetcher/tmp/var_print-0.0.9.tar.gz]
+[2024-05-12 14:26:19] INFO root fetch - main [MainThread]: End processing [var-print]: success
+[2024-05-12 14:26:19] INFO root fetch - processPackages [bioat]: Remove: archive file [/home/abi/fetcher/tmp/bioat-0.9.0.tar.gz]
+[2024-05-12 14:26:19] INFO root fetch - processPackages [bioat]: Remove: archive file [/home/abi/fetcher/tmp/bioat-0.9.1.tar.gz]
+[2024-05-12 14:26:19] INFO root fetch - main [MainThread]: End processing [bioat]: success
+[2024-05-12 14:26:19] INFO root fetch - main [MainThread]: Store serial: [23169818]
