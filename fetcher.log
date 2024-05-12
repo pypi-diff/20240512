@@ -5896,3 +5896,45 @@
 [2024-05-12 08:55:19] INFO root fetch - processPackages [nuclio-jupyter]: Remove: archive file [/home/abi/fetcher/tmp/nuclio-jupyter-0.9.9.tar.gz]
 [2024-05-12 08:55:19] INFO root fetch - main [MainThread]: End processing [nuclio-jupyter]: success
 [2024-05-12 08:55:19] INFO root fetch - main [MainThread]: Store serial: [23167607]
+[2024-05-12 08:57:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167607]
+[2024-05-12 08:57:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 08:57:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-timesheet
+[2024-05-12 08:57:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sarathi
+[2024-05-12 08:57:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nostpy-cli
+[2024-05-12 08:57:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streamlit-nightly
+[2024-05-12 08:57:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Riskfolio-Lib
+[2024-05-12 08:57:28] INFO root fetch - processPackages [nostpy-cli]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-05-12 08:57:28] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: New version: [16.0.20240510.1] Old Version: [16.0.20240412.0]
+[2024-05-12 08:57:28] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.34.1.dev20240510] Old Version: [1.34.1.dev20240509]
+[2024-05-12 08:57:28] INFO root fetch - processPackages [nostpy-cli]: Downloading https://files.pythonhosted.org/packages/02/7b/d07f4430fee11e3a0f061cf3de8223e0ef6fdd780d191c16645662b6afe2/nostpy_cli-0.2.2.tar.gz
+[2024-05-12 08:57:28] WARNING root fetch - processPackages [sarathi]: Skipping, unable to determine old version
+[2024-05-12 08:57:28] INFO root fetch - main [MainThread]: End processing [sarathi] error
+[2024-05-12 08:57:28] INFO root fetch - processPackages [Riskfolio-Lib]: New version: [6.1.0] Old Version: [6.0.0]
+[2024-05-12 08:57:28] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/80/7f/7b76cf106fcb6810b0702d3671409653a5a1bb1a37ae9d658dce577de58d/streamlit_nightly-1.34.1.dev20240509.tar.gz
+[2024-05-12 08:57:28] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: Downloading https://files.pythonhosted.org/packages/85/fc/d6eb9ec3f3423d6658c5ed74e811694e6d5649d701a6ccdabb6247426a5e/odoo_addons_oca_timesheet-16.0.20240412.0-py3-none-any.whl
+[2024-05-12 08:57:28] INFO root fetch - processPackages [Riskfolio-Lib]: Downloading https://files.pythonhosted.org/packages/9d/b8/943add4d0692c44d0ee9d0f949f1484c6e19f53c6f02c24434653da17b11/Riskfolio-Lib-6.0.0.tar.gz
+[2024-05-12 08:57:28] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: Downloading https://files.pythonhosted.org/packages/0a/06/f4cfb7cc454e5a3cea802c60fe2197bb63da0ea9eaf9d01d6435e4122ca9/odoo_addons_oca_timesheet-16.0.20240510.1-py3-none-any.whl
+[2024-05-12 08:57:28] INFO root fetch - processPackages [nostpy-cli]: Downloading https://files.pythonhosted.org/packages/54/67/2a5b39ad689814c7240dbd10d1906d040472538f413987cb49774ed61cf3/nostpy_cli-0.3.0.tar.gz
+[2024-05-12 08:57:28] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: executing diffoscope
+[2024-05-12 08:57:28] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_timesheet-16.0.20240412.0-py3-none-any.whl.zip tmp/odoo_addons_oca_timesheet-16.0.20240510.1-py3-none-any.whl.zip --markdown 20240512/o/odoo-addons-oca-timesheet/16.0.20240412.0-16.0.20240510.1/README.md --exclude *.pyd
+[2024-05-12 08:57:28] INFO root fetch - processPackages [nostpy-cli]: executing diffoscope
+[2024-05-12 08:57:28] INFO root fetch - processPackages [nostpy-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nostpy_cli-0.2.2.tar.gz tmp/nostpy_cli-0.3.0.tar.gz --markdown 20240512/n/nostpy-cli/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-05-12 08:57:29] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/ba/28/66f0e12013e25001e1fdb92f423fe283ba2617d8f3ab7e95a00fba57dc23/streamlit_nightly-1.34.1.dev20240510.tar.gz
+[2024-05-12 08:57:29] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_timesheet-16.0.20240412.0-py3-none-any.whl.zip]
+[2024-05-12 08:57:29] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_timesheet-16.0.20240510.1-py3-none-any.whl.zip]
+[2024-05-12 08:57:29] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-timesheet]: success
+[2024-05-12 08:57:29] INFO root fetch - processPackages [nostpy-cli]: Remove: archive file [/home/abi/fetcher/tmp/nostpy_cli-0.2.2.tar.gz]
+[2024-05-12 08:57:29] INFO root fetch - processPackages [nostpy-cli]: Remove: archive file [/home/abi/fetcher/tmp/nostpy_cli-0.3.0.tar.gz]
+[2024-05-12 08:57:29] INFO root fetch - main [MainThread]: End processing [nostpy-cli]: success
+[2024-05-12 08:57:29] INFO root fetch - processPackages [Riskfolio-Lib]: Downloading https://files.pythonhosted.org/packages/f7/6b/ddbc2372fea70f044e2ddef843116b374c866fccf427fb502c8de00cd5a3/Riskfolio_Lib-6.1.0-cp39-cp39-macosx_10_9_universal2.whl
+[2024-05-12 08:57:30] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2024-05-12 08:57:30] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_nightly-1.34.1.dev20240509.tar.gz tmp/streamlit_nightly-1.34.1.dev20240510.tar.gz --markdown 20240512/s/streamlit-nightly/1.34.1.dev20240509-1.34.1.dev20240510/README.md --exclude *.pyd
+[2024-05-12 08:57:30] INFO root fetch - processPackages [Riskfolio-Lib]: executing diffoscope
+[2024-05-12 08:57:30] INFO root fetch - processPackages [Riskfolio-Lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Riskfolio-Lib-6.0.0.tar.gz tmp/Riskfolio_Lib-6.1.0-cp39-cp39-macosx_10_9_universal2.whl.zip --markdown 20240512/R/Riskfolio-Lib/6.0.0-6.1.0/README.md --exclude *.pyd
+[2024-05-12 08:57:31] INFO root fetch - processPackages [Riskfolio-Lib]: Remove: archive file [/home/abi/fetcher/tmp/Riskfolio-Lib-6.0.0.tar.gz]
+[2024-05-12 08:57:31] INFO root fetch - processPackages [Riskfolio-Lib]: Remove: archive file [/home/abi/fetcher/tmp/Riskfolio_Lib-6.1.0-cp39-cp39-macosx_10_9_universal2.whl.zip]
+[2024-05-12 08:57:31] INFO root fetch - main [MainThread]: End processing [Riskfolio-Lib]: success
+[2024-05-12 08:57:58] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.34.1.dev20240509.tar.gz]
+[2024-05-12 08:57:58] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.34.1.dev20240510.tar.gz]
+[2024-05-12 08:57:58] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2024-05-12 08:57:58] INFO root fetch - main [MainThread]: Store serial: [23167640]
