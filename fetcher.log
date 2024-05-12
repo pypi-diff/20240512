@@ -1994,3 +1994,33 @@
 [2024-05-12 02:53:52] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-1.0.9.tar.gz]
 [2024-05-12 02:53:52] INFO root fetch - main [MainThread]: End processing [aipkgs-firebase]: success
 [2024-05-12 02:53:52] INFO root fetch - main [MainThread]: Store serial: [23165862]
+[2024-05-12 02:55:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165862]
+[2024-05-12 02:56:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 02:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clean_ioc
+[2024-05-12 02:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bioversions
+[2024-05-12 02:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycde
+[2024-05-12 02:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foveolaz
+[2024-05-12 02:56:01] INFO root fetch - processPackages [clean_ioc]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-12 02:56:01] WARNING root fetch - processPackages [foveolaz]: Skipping, unable to determine old version
+[2024-05-12 02:56:01] INFO root fetch - main [MainThread]: End processing [foveolaz] error
+[2024-05-12 02:56:01] INFO root fetch - processPackages [pycde]: New version: [0.3.1.dev981] Old Version: [0.3.1.dev977]
+[2024-05-12 02:56:01] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-05-12 02:56:01] INFO root fetch - processPackages [clean_ioc]: Downloading https://files.pythonhosted.org/packages/6f/99/10b1cf62ece755fb15ae28bbf0f89227da0e4df825136a5e933ce5c53a5c/clean_ioc-1.0.0.tar.gz
+[2024-05-12 02:56:01] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/e6/34/7c40209c13edc9fe7c611a00fd4b0d6e59d501613427ed6713ad6398b655/bioversions-0.5.98.tar.gz
+[2024-05-12 02:56:01] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/fb/8b/76a5b56151ab81248da7a29cf6c6dcb044185b8479ac15d47eaceb4caa0f/pycde-0.3.1.dev977-cp39-cp39-win_amd64.whl
+[2024-05-12 02:56:01] INFO root fetch - processPackages [clean_ioc]: Downloading https://files.pythonhosted.org/packages/4f/c3/a337d99b23ae05f1155d26ea71cefb18ac27c3acafadb515bf27b8ddbf18/clean_ioc-1.1.0.tar.gz
+[2024-05-12 02:56:01] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/0d/f5/5956eccd9643084cc5f7aba6325ec9de1ed3a2bb3568a8ee7ab88d0eac77/bioversions-0.5.99.tar.gz
+[2024-05-12 02:56:01] INFO root fetch - processPackages [clean_ioc]: executing diffoscope
+[2024-05-12 02:56:01] INFO root fetch - processPackages [clean_ioc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clean_ioc-1.0.0.tar.gz tmp/clean_ioc-1.1.0.tar.gz --markdown 20240512/c/clean_ioc/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-12 02:56:01] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2024-05-12 02:56:01] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20240512/b/bioversions/0.5.98-0.5.99/README.md --exclude *.pyd
+[2024-05-12 02:56:02] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/72/41/4bdc4d443c95eac66bd1b8eb330e00ba14d3de88bc99464fe595a1687d69/pycde-0.3.1.dev981-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-12 02:56:02] WARNING root fetch - processPackages [pycde]: Skipping package: exceeds size limit 21616149>=10485760
+[2024-05-12 02:56:02] INFO root fetch - main [MainThread]: End processing [pycde] error
+[2024-05-12 02:56:02] INFO root fetch - processPackages [clean_ioc]: Remove: archive file [/home/abi/fetcher/tmp/clean_ioc-1.0.0.tar.gz]
+[2024-05-12 02:56:02] INFO root fetch - processPackages [clean_ioc]: Remove: archive file [/home/abi/fetcher/tmp/clean_ioc-1.1.0.tar.gz]
+[2024-05-12 02:56:02] INFO root fetch - main [MainThread]: End processing [clean_ioc]: success
+[2024-05-12 02:56:20] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.98.tar.gz]
+[2024-05-12 02:56:20] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
+[2024-05-12 02:56:20] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2024-05-12 02:56:20] INFO root fetch - main [MainThread]: Store serial: [23165876]
