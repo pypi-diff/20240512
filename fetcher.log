@@ -12478,3 +12478,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:19:03] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240512.362.tar.gz]
 [2024-05-12 17:19:03] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-12 17:19:03] INFO root fetch - main [MainThread]: Store serial: [23171153]
+[2024-05-12 17:21:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171153]
+[2024-05-12 17:21:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 17:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: user-external-local
+[2024-05-12 17:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hairgrassz
+[2024-05-12 17:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-master
+[2024-05-12 17:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: teargasz
+[2024-05-12 17:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lukasdata
+[2024-05-12 17:21:12] INFO root fetch - processPackages [lukasdata]: New version: [1.3.4] Old Version: [1.3.3]
+[2024-05-12 17:21:12] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240512.11.56.204571] Old Version: [20240512.10.5.14869]
+[2024-05-12 17:21:12] INFO root fetch - processPackages [lukasdata]: Downloading https://files.pythonhosted.org/packages/ca/b4/ed102e8e51dba554879d67592ac65ccf81a286a65e80f9ee915679db3f70/lukasdata-1.3.3.tar.gz
+[2024-05-12 17:21:12] INFO root fetch - processPackages [user-external-local]: New version: [0.0.43] Old Version: [0.0.42]
+[2024-05-12 17:21:12] WARNING root fetch - processPackages [teargasz]: Skipping, unable to determine old version
+[2024-05-12 17:21:12] INFO root fetch - main [MainThread]: End processing [teargasz] error
+[2024-05-12 17:21:12] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/2a/ba/9fe581018dabe29ed3b2244a630d7622f286a2c158c37eb4bc2bf9bdae18/certora-cli-alpha-master-20240512.10.5.14869.tar.gz
+[2024-05-12 17:21:12] WARNING root fetch - processPackages [hairgrassz]: Skipping, unable to determine old version
+[2024-05-12 17:21:12] INFO root fetch - main [MainThread]: End processing [hairgrassz] error
+[2024-05-12 17:21:12] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14511809>=10485760
+[2024-05-12 17:21:12] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-05-12 17:21:12] INFO root fetch - processPackages [user-external-local]: Downloading https://files.pythonhosted.org/packages/91/c3/8c81544d3c8daca897f24367cdb2d17a56f6cf02788a2a87f89674416160/user_external_local-0.0.42.tar.gz
+[2024-05-12 17:21:12] INFO root fetch - processPackages [lukasdata]: Downloading https://files.pythonhosted.org/packages/a6/27/8dd8fec78746817a8465eaed4d0aa34ca473941c3f498a630f54a71d5f6f/lukasdata-1.3.4.tar.gz
+[2024-05-12 17:21:12] INFO root fetch - processPackages [user-external-local]: Downloading https://files.pythonhosted.org/packages/64/4f/7cbb265c31ed130fdac9c030407f8e7b952417e8767dd35a74d31de17235/user_external_local-0.0.43.tar.gz
+[2024-05-12 17:21:12] INFO root fetch - processPackages [lukasdata]: executing diffoscope
+[2024-05-12 17:21:12] INFO root fetch - processPackages [lukasdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lukasdata-1.3.3.tar.gz tmp/lukasdata-1.3.4.tar.gz --markdown 20240512/l/lukasdata/1.3.3-1.3.4/README.md --exclude *.pyd
+[2024-05-12 17:21:13] INFO root fetch - processPackages [user-external-local]: executing diffoscope
+[2024-05-12 17:21:13] INFO root fetch - processPackages [user-external-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/user_external_local-0.0.42.tar.gz tmp/user_external_local-0.0.43.tar.gz --markdown 20240512/u/user-external-local/0.0.42-0.0.43/README.md --exclude *.pyd
+[2024-05-12 17:21:13] INFO root fetch - processPackages [lukasdata]: Remove: archive file [/home/abi/fetcher/tmp/lukasdata-1.3.3.tar.gz]
+[2024-05-12 17:21:13] INFO root fetch - processPackages [lukasdata]: Remove: archive file [/home/abi/fetcher/tmp/lukasdata-1.3.4.tar.gz]
+[2024-05-12 17:21:13] INFO root fetch - main [MainThread]: End processing [lukasdata]: success
+[2024-05-12 17:21:13] INFO root fetch - processPackages [user-external-local]: Remove: archive file [/home/abi/fetcher/tmp/user_external_local-0.0.42.tar.gz]
+[2024-05-12 17:21:13] INFO root fetch - processPackages [user-external-local]: Remove: archive file [/home/abi/fetcher/tmp/user_external_local-0.0.43.tar.gz]
+[2024-05-12 17:21:13] INFO root fetch - main [MainThread]: End processing [user-external-local]: success
+[2024-05-12 17:21:13] INFO root fetch - main [MainThread]: Store serial: [23171171]
