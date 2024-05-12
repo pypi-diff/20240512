@@ -18129,3 +18129,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:27:40] INFO root fetch - processPackages [selkie]: Remove: archive file [/home/abi/fetcher/tmp/selkie-0.25.tar.gz]
 [2024-05-12 23:27:40] INFO root fetch - main [MainThread]: End processing [selkie]: success
 [2024-05-12 23:27:40] INFO root fetch - main [MainThread]: Store serial: [23173967]
+[2024-05-12 23:29:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173967]
+[2024-05-12 23:29:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 23:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mymaridz
+[2024-05-12 23:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: csa-ai-foundation-model-api-clients
+[2024-05-12 23:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: database-mysql-local
+[2024-05-12 23:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sglang
+[2024-05-12 23:29:48] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 23:29:48] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.298] Old Version: [0.0.297]
+[2024-05-12 23:29:48] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: Downloading https://files.pythonhosted.org/packages/78/dd/49c447ffc3e9e4ec575e7a31de9aae5161faeb240818617decac86cc6edf/csa_ai_foundation_model_api_clients-0.1.1.tar.gz
+[2024-05-12 23:29:48] WARNING root fetch - processPackages [mymaridz]: Skipping, unable to determine old version
+[2024-05-12 23:29:48] INFO root fetch - main [MainThread]: End processing [mymaridz] error
+[2024-05-12 23:29:48] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/ff/6b/b0a2a52bc3f6c06d87c3bcf239357bb167208bb7f31aa325012240d01a9e/database_mysql_local-0.0.297.tar.gz
+[2024-05-12 23:29:48] INFO root fetch - processPackages [sglang]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-05-12 23:29:49] INFO root fetch - processPackages [sglang]: Downloading https://files.pythonhosted.org/packages/1e/ef/18d21637138f3cfadd8aa963e76114b17eaa2fd2efa40ed47e16c869134d/sglang-0.1.7.tar.gz
+[2024-05-12 23:29:49] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: Downloading https://files.pythonhosted.org/packages/23/29/297ecd915ff3436f292025db52e136c65e48e3e52dace5f4352d393c82aa/csa_ai_foundation_model_api_clients-0.1.2.tar.gz
+[2024-05-12 23:29:49] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/1f/36/4f2fd252cb26eb16d59203a8b870ce6d21b8bcb68a834fcb40dd328c85d2/database_mysql_local-0.0.298.tar.gz
+[2024-05-12 23:29:49] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: executing diffoscope
+[2024-05-12 23:29:49] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csa_ai_foundation_model_api_clients-0.1.1.tar.gz tmp/csa_ai_foundation_model_api_clients-0.1.2.tar.gz --markdown 20240512/c/csa-ai-foundation-model-api-clients/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 23:29:49] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-12 23:29:49] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.297.tar.gz tmp/database_mysql_local-0.0.298.tar.gz --markdown 20240512/d/database-mysql-local/0.0.297-0.0.298/README.md --exclude *.pyd
+[2024-05-12 23:29:49] INFO root fetch - processPackages [sglang]: Downloading https://files.pythonhosted.org/packages/c4/2a/c38651dd14340e5f8f0831889dd6b01cc066e66653dcdb918930fb811a57/sglang-0.1.9.tar.gz
+[2024-05-12 23:29:49] INFO root fetch - processPackages [sglang]: executing diffoscope
+[2024-05-12 23:29:49] INFO root fetch - processPackages [sglang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sglang-0.1.7.tar.gz tmp/sglang-0.1.9.tar.gz --markdown 20240512/s/sglang/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-05-12 23:29:50] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.297.tar.gz]
+[2024-05-12 23:29:50] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.298.tar.gz]
+[2024-05-12 23:29:50] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-12 23:29:50] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: Remove: archive file [/home/abi/fetcher/tmp/csa_ai_foundation_model_api_clients-0.1.1.tar.gz]
+[2024-05-12 23:29:50] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: Remove: archive file [/home/abi/fetcher/tmp/csa_ai_foundation_model_api_clients-0.1.2.tar.gz]
+[2024-05-12 23:29:50] INFO root fetch - main [MainThread]: End processing [csa-ai-foundation-model-api-clients]: success
+[2024-05-12 23:29:50] INFO root fetch - processPackages [sglang]: Remove: archive file [/home/abi/fetcher/tmp/sglang-0.1.7.tar.gz]
+[2024-05-12 23:29:50] INFO root fetch - processPackages [sglang]: Remove: archive file [/home/abi/fetcher/tmp/sglang-0.1.9.tar.gz]
+[2024-05-12 23:29:50] INFO root fetch - main [MainThread]: End processing [sglang]: success
+[2024-05-12 23:29:50] INFO root fetch - main [MainThread]: Store serial: [23173981]
