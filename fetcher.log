@@ -1818,3 +1818,27 @@
 [2024-05-12 02:34:01] INFO root fetch - processPackages [FashionTrendForecasting]: Remove: archive file [/home/abi/fetcher/tmp/fashiontrendforecasting-0.2.0.tar.gz]
 [2024-05-12 02:34:01] INFO root fetch - main [MainThread]: End processing [FashionTrendForecasting]: success
 [2024-05-12 02:34:01] INFO root fetch - main [MainThread]: Store serial: [23165779]
+[2024-05-12 02:36:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165779]
+[2024-05-12 02:36:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 02:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lyttaz
+[2024-05-12 02:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aeppl-nightly
+[2024-05-12 02:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypomes-db
+[2024-05-12 02:36:10] INFO root fetch - processPackages [pypomes-db]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-12 02:36:10] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/c5/38/a9735df20596da1e2dc30e8ec37bd1e5ba12da7d993dafa0a9dbb00d6661/pypomes_db-0.7.0.tar.gz
+[2024-05-12 02:36:10] WARNING root fetch - processPackages [lyttaz]: Skipping, unable to determine old version
+[2024-05-12 02:36:10] INFO root fetch - main [MainThread]: End processing [lyttaz] error
+[2024-05-12 02:36:10] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.5.dev20240512] Old Version: [0.1.5.dev20240511]
+[2024-05-12 02:36:10] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/52/46/64fec0d689d9b1ade5cc9634b8257d5e505ff2d77505ff843dce670de2bb/aeppl_nightly-0.1.5.dev20240511.tar.gz
+[2024-05-12 02:36:10] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/e7/40/59651deb7ed0403e241d47590732e24b06bc1d60cce62c8a4ee53cfe8475/pypomes_db-0.7.1.tar.gz
+[2024-05-12 02:36:10] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-12 02:36:10] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.7.0.tar.gz tmp/pypomes_db-0.7.1.tar.gz --markdown 20240512/p/pypomes-db/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-05-12 02:36:10] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/92/4d/1c0dd3477d83d1ac3cd3e6a4d9675ceec8a0ea167966438676aa1e46a7ce/aeppl_nightly-0.1.5.dev20240512.tar.gz
+[2024-05-12 02:36:10] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2024-05-12 02:36:10] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl_nightly-0.1.5.dev20240511.tar.gz tmp/aeppl_nightly-0.1.5.dev20240512.tar.gz --markdown 20240512/a/aeppl-nightly/0.1.5.dev20240511-0.1.5.dev20240512/README.md --exclude *.pyd
+[2024-05-12 02:36:11] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.7.0.tar.gz]
+[2024-05-12 02:36:11] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.7.1.tar.gz]
+[2024-05-12 02:36:11] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-12 02:36:11] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240511.tar.gz]
+[2024-05-12 02:36:11] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240512.tar.gz]
+[2024-05-12 02:36:11] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2024-05-12 02:36:11] INFO root fetch - main [MainThread]: Store serial: [23165789]
