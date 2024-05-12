@@ -15465,3 +15465,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:30:27] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.99.tar.gz]
 [2024-05-12 20:30:27] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
 [2024-05-12 20:30:27] INFO root fetch - main [MainThread]: Store serial: [23172656]
+[2024-05-12 20:32:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172656]
+[2024-05-12 20:32:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 20:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ezr
+[2024-05-12 20:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vasprocar
+[2024-05-12 20:32:36] WARNING root fetch - processPackages [vasprocar]: Skipping, unable to determine old version
+[2024-05-12 20:32:36] INFO root fetch - main [MainThread]: End processing [vasprocar] error
+[2024-05-12 20:32:36] WARNING root fetch - processPackages [ezr]: Skipping, unable to determine old version
+[2024-05-12 20:32:36] INFO root fetch - main [MainThread]: End processing [ezr] error
+[2024-05-12 20:32:36] INFO root fetch - main [MainThread]: Store serial: [23172662]
