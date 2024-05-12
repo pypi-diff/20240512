@@ -3287,3 +3287,24 @@
 [2024-05-12 04:42:17] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-9.0.0.tar.gz]
 [2024-05-12 04:42:17] INFO root fetch - main [MainThread]: End processing [todoist-auto]: success
 [2024-05-12 04:42:17] INFO root fetch - main [MainThread]: Store serial: [23166460]
+[2024-05-12 04:44:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166460]
+[2024-05-12 04:44:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 04:44:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quickstart-vdk
+[2024-05-12 04:44:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-kurogames
+[2024-05-12 04:44:25] INFO root fetch - processPackages [nonebot-plugin-kurogames]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-12 04:44:25] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-05-12 04:44:25] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Downloading https://files.pythonhosted.org/packages/82/a7/7d990c73271d86fc77fb03e3f0562188e04f27a6d5215f93e483ecce7ac6/nonebot_plugin_kurogames-0.1.3.tar.gz
+[2024-05-12 04:44:25] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-05-12 04:44:26] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-05-12 04:44:26] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-05-12 04:44:26] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240512/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-05-12 04:44:26] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Downloading https://files.pythonhosted.org/packages/db/7e/ae2c16b750490da6138ca24f1096bc02d22741dd4a63f618f674a09dd660/nonebot_plugin_kurogames-0.1.4.tar.gz
+[2024-05-12 04:44:26] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-05-12 04:44:26] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-05-12 04:44:26] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-05-12 04:44:26] INFO root fetch - processPackages [nonebot-plugin-kurogames]: executing diffoscope
+[2024-05-12 04:44:26] INFO root fetch - processPackages [nonebot-plugin-kurogames]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_kurogames-0.1.3.tar.gz tmp/nonebot_plugin_kurogames-0.1.4.tar.gz --markdown 20240512/n/nonebot-plugin-kurogames/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-12 04:44:27] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kurogames-0.1.3.tar.gz]
+[2024-05-12 04:44:27] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kurogames-0.1.4.tar.gz]
+[2024-05-12 04:44:27] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-kurogames]: success
+[2024-05-12 04:44:27] INFO root fetch - main [MainThread]: Store serial: [23166466]
