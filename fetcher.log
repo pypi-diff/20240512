@@ -14029,3 +14029,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:59:03] WARNING root fetch - processPackages [retailingz]: Skipping, unable to determine old version
 [2024-05-12 18:59:03] INFO root fetch - main [MainThread]: End processing [retailingz] error
 [2024-05-12 18:59:03] INFO root fetch - main [MainThread]: Store serial: [23171965]
+[2024-05-12 19:01:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171965]
+[2024-05-12 19:01:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 19:01:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MobileInventoryCLI
+[2024-05-12 19:01:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: compoundwidgets
+[2024-05-12 19:01:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: amqp-mock
+[2024-05-12 19:01:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: medicafe
+[2024-05-12 19:01:11] INFO root fetch - processPackages [medicafe]: New version: [0.240512.3] Old Version: [0.240512.2]
+[2024-05-12 19:01:11] INFO root fetch - processPackages [compoundwidgets]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-12 19:01:12] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/80/a5/ed88e45f6903a992b2192f93df8fa49075af24f5a19d58604fbd6e107add/medicafe-0.240512.2.tar.gz
+[2024-05-12 19:01:12] INFO root fetch - processPackages [amqp-mock]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-12 19:01:12] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-12 19:01:12] INFO root fetch - processPackages [compoundwidgets]: Downloading https://files.pythonhosted.org/packages/3c/61/689dc207c5c73777b2fcbdf99d711edd2c9eb0745f0aa928a844db118afd/compoundwidgets-0.4.1.tar.gz
+[2024-05-12 19:01:12] INFO root fetch - processPackages [amqp-mock]: Downloading https://files.pythonhosted.org/packages/5c/a8/417a121185b02cd695a2ed7dbff8c8a0f0ff1b0b38354f99aa7b819209c5/amqp-mock-0.6.1.tar.gz
+[2024-05-12 19:01:12] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-12 19:01:12] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/71/1e/df204f4f48aaa896cd3cbc3f34e7197babfdd8d2c1077706059df78e3327/medicafe-0.240512.3.tar.gz
+[2024-05-12 19:01:12] INFO root fetch - processPackages [medicafe]: executing diffoscope
+[2024-05-12 19:01:12] INFO root fetch - processPackages [medicafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medicafe-0.240512.2.tar.gz tmp/medicafe-0.240512.3.tar.gz --markdown 20240512/m/medicafe/0.240512.2-0.240512.3/README.md --exclude *.pyd
+[2024-05-12 19:01:12] INFO root fetch - processPackages [compoundwidgets]: Downloading https://files.pythonhosted.org/packages/78/7e/4dd4cd2a80e6d7539a2f7a94b7336e7776f2d5bf10e23eda6efbaa64b7b1/compoundwidgets-0.4.2.tar.gz
+[2024-05-12 19:01:12] INFO root fetch - processPackages [amqp-mock]: Downloading https://files.pythonhosted.org/packages/05/8e/8eef013c56efeab660c289eae69d65918f5dfe1282425bf554514ee0955e/amqp_mock-0.6.2.tar.gz
+[2024-05-12 19:01:12] INFO root fetch - processPackages [amqp-mock]: executing diffoscope
+[2024-05-12 19:01:12] INFO root fetch - processPackages [amqp-mock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amqp-mock-0.6.1.tar.gz tmp/amqp_mock-0.6.2.tar.gz --markdown 20240512/a/amqp-mock/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-12 19:01:12] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-12 19:01:12] INFO root fetch - processPackages [compoundwidgets]: executing diffoscope
+[2024-05-12 19:01:12] INFO root fetch - processPackages [compoundwidgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compoundwidgets-0.4.1.tar.gz tmp/compoundwidgets-0.4.2.tar.gz --markdown 20240512/c/compoundwidgets/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-12 19:01:12] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-12 19:01:12] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240512/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-12 19:01:13] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240512.2.tar.gz]
+[2024-05-12 19:01:13] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240512.3.tar.gz]
+[2024-05-12 19:01:13] INFO root fetch - main [MainThread]: End processing [medicafe]: success
+[2024-05-12 19:01:13] INFO root fetch - processPackages [amqp-mock]: Remove: archive file [/home/abi/fetcher/tmp/amqp-mock-0.6.1.tar.gz]
+[2024-05-12 19:01:13] INFO root fetch - processPackages [amqp-mock]: Remove: archive file [/home/abi/fetcher/tmp/amqp_mock-0.6.2.tar.gz]
+[2024-05-12 19:01:13] INFO root fetch - main [MainThread]: End processing [amqp-mock]: success
+[2024-05-12 19:01:13] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-12 19:01:13] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-12 19:01:13] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-12 19:01:14] INFO root fetch - processPackages [compoundwidgets]: Remove: archive file [/home/abi/fetcher/tmp/compoundwidgets-0.4.1.tar.gz]
+[2024-05-12 19:01:14] INFO root fetch - processPackages [compoundwidgets]: Remove: archive file [/home/abi/fetcher/tmp/compoundwidgets-0.4.2.tar.gz]
+[2024-05-12 19:01:14] INFO root fetch - main [MainThread]: End processing [compoundwidgets]: success
+[2024-05-12 19:01:14] INFO root fetch - main [MainThread]: Store serial: [23171975]
