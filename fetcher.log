@@ -3503,3 +3503,42 @@
 [2024-05-12 05:06:21] WARNING root fetch - processPackages [readyapi-cli]: Skipping, unable to determine old version
 [2024-05-12 05:06:21] INFO root fetch - main [MainThread]: End processing [readyapi-cli] error
 [2024-05-12 05:06:21] INFO root fetch - main [MainThread]: Store serial: [23166537]
+[2024-05-12 05:08:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166537]
+[2024-05-12 05:08:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 05:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: standard-distutils
+[2024-05-12 05:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: evilblade
+[2024-05-12 05:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zibuyu-LLM
+[2024-05-12 05:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: outrollz
+[2024-05-12 05:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: polars-ds
+[2024-05-12 05:08:29] INFO root fetch - processPackages [zibuyu-LLM]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-12 05:08:29] INFO root fetch - processPackages [standard-distutils]: New version: [3.8.19] Old Version: [3.7.17]
+[2024-05-12 05:08:29] WARNING root fetch - processPackages [outrollz]: Skipping, unable to determine old version
+[2024-05-12 05:08:29] INFO root fetch - main [MainThread]: End processing [outrollz] error
+[2024-05-12 05:08:29] INFO root fetch - processPackages [evilblade]: New version: [1.1.7.8] Old Version: [1.1.7.7]
+[2024-05-12 05:08:29] INFO root fetch - processPackages [standard-distutils]: Downloading https://files.pythonhosted.org/packages/d3/30/75e698ed084b9f0f5ad80c8c4a2a3a9a5c998340cbd16d8bc5c69bd4419e/standard_distutils-3.7.17.tar.gz
+[2024-05-12 05:08:29] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/9b/71/7baa72842bdf9b8f3f8639e8f7449b216928b1a2072be930986e2404fd1b/zibuyu_LLM-0.0.6-py3-none-any.whl
+[2024-05-12 05:08:29] INFO root fetch - processPackages [polars-ds]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-05-12 05:08:30] INFO root fetch - processPackages [evilblade]: Downloading https://files.pythonhosted.org/packages/80/c3/2c7439e2d60a60a972667c9bca004b96181073ce4419b6efa00d1e888357/evilblade-1.1.7.7.tar.gz
+[2024-05-12 05:08:30] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/58/71/c3fcc7af7953b2d55f73a40eac4f9446102e960f30430c9e6b369cc5f4d4/zibuyu_LLM-0.0.7-py3-none-any.whl
+[2024-05-12 05:08:30] INFO root fetch - processPackages [standard-distutils]: Downloading https://files.pythonhosted.org/packages/8a/78/133837029512e4090b270f0333f73589825a5ebe3c709d8ac90bb9b35418/standard_distutils-3.8.19.tar.gz
+[2024-05-12 05:08:30] INFO root fetch - processPackages [polars-ds]: Downloading https://files.pythonhosted.org/packages/c7/49/cfa2ac3bafbeb0d9527e17155190bda9c119a8838f36c43af0e6aaaf018b/polars_ds-0.4.3.tar.gz
+[2024-05-12 05:08:30] INFO root fetch - processPackages [zibuyu-LLM]: executing diffoscope
+[2024-05-12 05:08:30] INFO root fetch - processPackages [zibuyu-LLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibuyu_LLM-0.0.6-py3-none-any.whl.zip tmp/zibuyu_LLM-0.0.7-py3-none-any.whl.zip --markdown 20240512/z/zibuyu-LLM/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-12 05:08:30] INFO root fetch - processPackages [standard-distutils]: executing diffoscope
+[2024-05-12 05:08:30] INFO root fetch - processPackages [standard-distutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_distutils-3.7.17.tar.gz tmp/standard_distutils-3.8.19.tar.gz --markdown 20240512/s/standard-distutils/3.7.17-3.8.19/README.md --exclude *.pyd
+[2024-05-12 05:08:30] INFO root fetch - processPackages [evilblade]: Downloading https://files.pythonhosted.org/packages/51/e9/e32711668eeb9ee628ce3e19cfd08483fc4bf4d7169e874714dbb9c00d26/evilblade-1.1.7.8.tar.gz
+[2024-05-12 05:08:30] INFO root fetch - processPackages [evilblade]: executing diffoscope
+[2024-05-12 05:08:30] INFO root fetch - processPackages [evilblade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evilblade-1.1.7.7.tar.gz tmp/evilblade-1.1.7.8.tar.gz --markdown 20240512/e/evilblade/1.1.7.7-1.1.7.8/README.md --exclude *.pyd
+[2024-05-12 05:08:30] INFO root fetch - processPackages [polars-ds]: Downloading https://files.pythonhosted.org/packages/82/d9/2d2c0e08b8d4081780923db90f3a4902faf9808a56c9f3ea374f06f4cc0b/polars_ds-0.4.4-cp38-abi3-macosx_10_12_x86_64.whl
+[2024-05-12 05:08:30] WARNING root fetch - processPackages [polars-ds]: Skipping package: exceeds size limit 12696438>=10485760
+[2024-05-12 05:08:30] INFO root fetch - main [MainThread]: End processing [polars-ds] error
+[2024-05-12 05:08:30] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.0.6-py3-none-any.whl.zip]
+[2024-05-12 05:08:30] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.0.7-py3-none-any.whl.zip]
+[2024-05-12 05:08:30] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
+[2024-05-12 05:08:31] INFO root fetch - processPackages [evilblade]: Remove: archive file [/home/abi/fetcher/tmp/evilblade-1.1.7.7.tar.gz]
+[2024-05-12 05:08:31] INFO root fetch - processPackages [evilblade]: Remove: archive file [/home/abi/fetcher/tmp/evilblade-1.1.7.8.tar.gz]
+[2024-05-12 05:08:31] INFO root fetch - main [MainThread]: End processing [evilblade]: success
+[2024-05-12 05:08:31] INFO root fetch - processPackages [standard-distutils]: Remove: archive file [/home/abi/fetcher/tmp/standard_distutils-3.7.17.tar.gz]
+[2024-05-12 05:08:31] INFO root fetch - processPackages [standard-distutils]: Remove: archive file [/home/abi/fetcher/tmp/standard_distutils-3.8.19.tar.gz]
+[2024-05-12 05:08:31] INFO root fetch - main [MainThread]: End processing [standard-distutils]: success
+[2024-05-12 05:08:31] INFO root fetch - main [MainThread]: Store serial: [23166549]
