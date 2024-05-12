@@ -1803,3 +1803,18 @@
 [2024-05-12 02:31:51] INFO root fetch - processPackages [sqlormx]: Remove: archive file [/home/abi/fetcher/tmp/sqlormx-0.1.0.tar.gz]
 [2024-05-12 02:31:51] INFO root fetch - main [MainThread]: End processing [sqlormx]: success
 [2024-05-12 02:31:51] INFO root fetch - main [MainThread]: Store serial: [23165772]
+[2024-05-12 02:33:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165772]
+[2024-05-12 02:34:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 02:34:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FashionTrendForecasting
+[2024-05-12 02:34:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyWLGK
+[2024-05-12 02:34:00] INFO root fetch - processPackages [FashionTrendForecasting]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-12 02:34:00] WARNING root fetch - processPackages [PyWLGK]: Skipping, unable to determine old version
+[2024-05-12 02:34:00] INFO root fetch - main [MainThread]: End processing [PyWLGK] error
+[2024-05-12 02:34:00] INFO root fetch - processPackages [FashionTrendForecasting]: Downloading https://files.pythonhosted.org/packages/f6/f8/0428ed572d9aaa1f2863954e2ddac674b2a4a752bc3a49bc88d969d41919/FashionTrendForecasting-0.1.0.tar.gz
+[2024-05-12 02:34:00] INFO root fetch - processPackages [FashionTrendForecasting]: Downloading https://files.pythonhosted.org/packages/6c/3a/44a1fdd27d887e8d1c069f5a7a6a05e3cace44bc1ad986017eaa02f0f429/fashiontrendforecasting-0.2.0.tar.gz
+[2024-05-12 02:34:00] INFO root fetch - processPackages [FashionTrendForecasting]: executing diffoscope
+[2024-05-12 02:34:00] INFO root fetch - processPackages [FashionTrendForecasting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FashionTrendForecasting-0.1.0.tar.gz tmp/fashiontrendforecasting-0.2.0.tar.gz --markdown 20240512/F/FashionTrendForecasting/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-12 02:34:01] INFO root fetch - processPackages [FashionTrendForecasting]: Remove: archive file [/home/abi/fetcher/tmp/FashionTrendForecasting-0.1.0.tar.gz]
+[2024-05-12 02:34:01] INFO root fetch - processPackages [FashionTrendForecasting]: Remove: archive file [/home/abi/fetcher/tmp/fashiontrendforecasting-0.2.0.tar.gz]
+[2024-05-12 02:34:01] INFO root fetch - main [MainThread]: End processing [FashionTrendForecasting]: success
+[2024-05-12 02:34:01] INFO root fetch - main [MainThread]: Store serial: [23165779]
