@@ -17689,3 +17689,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:52:07] INFO root fetch - processPackages [gnordvpn-sprokkel78]: Remove: archive file [/home/abi/fetcher/tmp/gnordvpn_sprokkel78-1.3.2.tar.gz]
 [2024-05-12 22:52:07] INFO root fetch - main [MainThread]: End processing [gnordvpn-sprokkel78]: success
 [2024-05-12 22:52:07] INFO root fetch - main [MainThread]: Store serial: [23173760]
+[2024-05-12 22:54:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173760]
+[2024-05-12 22:54:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 22:54:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: intrepidityz
+[2024-05-12 22:54:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lengthwaysz
+[2024-05-12 22:54:15] WARNING root fetch - processPackages [intrepidityz]: Skipping, unable to determine old version
+[2024-05-12 22:54:15] INFO root fetch - main [MainThread]: End processing [intrepidityz] error
+[2024-05-12 22:54:15] WARNING root fetch - processPackages [lengthwaysz]: Skipping, unable to determine old version
+[2024-05-12 22:54:15] INFO root fetch - main [MainThread]: End processing [lengthwaysz] error
+[2024-05-12 22:54:15] INFO root fetch - main [MainThread]: Store serial: [23173768]
