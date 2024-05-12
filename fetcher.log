@@ -12319,3 +12319,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:10:17] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240511-py3-none-win_amd64.whl.zip]
 [2024-05-12 17:10:17] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
 [2024-05-12 17:10:17] INFO root fetch - main [MainThread]: Store serial: [23171034]
+[2024-05-12 17:12:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171034]
+[2024-05-12 17:12:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 17:12:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-bench
+[2024-05-12 17:12:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: funprogram
+[2024-05-12 17:12:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mrsegmentator
+[2024-05-12 17:12:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ivpm
+[2024-05-12 17:12:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sssm
+[2024-05-12 17:12:26] INFO root fetch - processPackages [mrsegmentator]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-12 17:12:26] INFO root fetch - processPackages [mrsegmentator]: Downloading https://files.pythonhosted.org/packages/6d/ca/036f3172c247ad2ae153ebdbe42348db0d705c31ca8470c9c0762d49ee17/mrsegmentator-1.0.1.tar.gz
+[2024-05-12 17:12:26] WARNING root fetch - processPackages [funprogram]: Skipping, unable to determine old version
+[2024-05-12 17:12:26] INFO root fetch - main [MainThread]: End processing [funprogram] error
+[2024-05-12 17:12:26] INFO root fetch - processPackages [llm-bench]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-12 17:12:26] INFO root fetch - processPackages [ivpm]: New version: [1.1.1.9052324018] Old Version: [1.1.1.8952360870]
+[2024-05-12 17:12:26] INFO root fetch - processPackages [sssm]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 17:12:26] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/e4/1e/96e8e21a12cce6b75d40ef58ee187c01da8c44ea854f32fe4678648dcb90/llm_bench-0.4.8.tar.gz
+[2024-05-12 17:12:26] INFO root fetch - processPackages [mrsegmentator]: Downloading https://files.pythonhosted.org/packages/ab/eb/65e6ad08fc577117fcfd3ee243e35bdd0b1f81409ce3cabf1e899f65040e/mrsegmentator-1.0.2.tar.gz
+[2024-05-12 17:12:26] INFO root fetch - processPackages [ivpm]: Downloading https://files.pythonhosted.org/packages/a3/1e/ecb168d1c7b0387e8a9460b79668d60815cb9b98aa5efed96ee33d0fce88/ivpm-1.1.1.8952360870-py2.py3-none-any.whl
+[2024-05-12 17:12:26] INFO root fetch - processPackages [sssm]: Downloading https://files.pythonhosted.org/packages/2b/e4/b347e41055ac361554f0137f816338fc93e205d61df1120fb1b442ebb0dd/sssm-0.0.1.tar.gz
+[2024-05-12 17:12:26] INFO root fetch - processPackages [mrsegmentator]: executing diffoscope
+[2024-05-12 17:12:26] INFO root fetch - processPackages [mrsegmentator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrsegmentator-1.0.1.tar.gz tmp/mrsegmentator-1.0.2.tar.gz --markdown 20240512/m/mrsegmentator/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-12 17:12:26] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/e4/75/2d98ade554705da63eb2766a12984f3f6fc8b6925b37f796ffa48846b3ef/llm_bench-0.4.9.tar.gz
+[2024-05-12 17:12:27] INFO root fetch - processPackages [sssm]: Downloading https://files.pythonhosted.org/packages/e5/ca/c9b82ed3712492a32f0e02a21c93518bc9bf5ad98174e46993809370d5c6/sssm-0.0.2.tar.gz
+[2024-05-12 17:12:27] INFO root fetch - processPackages [ivpm]: Downloading https://files.pythonhosted.org/packages/f2/92/4e0f9e848f80c04ef5660530919d272d8ccbcf730b669941acaa56576a34/ivpm-1.1.1.9052324018-py2.py3-none-any.whl
+[2024-05-12 17:12:27] INFO root fetch - processPackages [llm-bench]: executing diffoscope
+[2024-05-12 17:12:27] INFO root fetch - processPackages [llm-bench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_bench-0.4.8.tar.gz tmp/llm_bench-0.4.9.tar.gz --markdown 20240512/l/llm-bench/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-12 17:12:27] INFO root fetch - processPackages [ivpm]: executing diffoscope
+[2024-05-12 17:12:27] INFO root fetch - processPackages [ivpm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ivpm-1.1.1.8952360870-py2.py3-none-any.whl.zip tmp/ivpm-1.1.1.9052324018-py2.py3-none-any.whl.zip --markdown 20240512/i/ivpm/1.1.1.8952360870-1.1.1.9052324018/README.md --exclude *.pyd
+[2024-05-12 17:12:27] INFO root fetch - processPackages [sssm]: executing diffoscope
+[2024-05-12 17:12:27] INFO root fetch - processPackages [sssm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sssm-0.0.1.tar.gz tmp/sssm-0.0.2.tar.gz --markdown 20240512/s/sssm/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-12 17:12:27] INFO root fetch - processPackages [mrsegmentator]: Remove: archive file [/home/abi/fetcher/tmp/mrsegmentator-1.0.1.tar.gz]
+[2024-05-12 17:12:27] INFO root fetch - processPackages [mrsegmentator]: Remove: archive file [/home/abi/fetcher/tmp/mrsegmentator-1.0.2.tar.gz]
+[2024-05-12 17:12:27] INFO root fetch - main [MainThread]: End processing [mrsegmentator]: success
+[2024-05-12 17:12:27] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.8.tar.gz]
+[2024-05-12 17:12:27] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.9.tar.gz]
+[2024-05-12 17:12:27] INFO root fetch - main [MainThread]: End processing [llm-bench]: success
+[2024-05-12 17:12:27] INFO root fetch - processPackages [ivpm]: Remove: archive file [/home/abi/fetcher/tmp/ivpm-1.1.1.8952360870-py2.py3-none-any.whl.zip]
+[2024-05-12 17:12:27] INFO root fetch - processPackages [ivpm]: Remove: archive file [/home/abi/fetcher/tmp/ivpm-1.1.1.9052324018-py2.py3-none-any.whl.zip]
+[2024-05-12 17:12:27] INFO root fetch - main [MainThread]: End processing [ivpm]: success
+[2024-05-12 17:12:27] INFO root fetch - processPackages [sssm]: Remove: archive file [/home/abi/fetcher/tmp/sssm-0.0.1.tar.gz]
+[2024-05-12 17:12:27] INFO root fetch - processPackages [sssm]: Remove: archive file [/home/abi/fetcher/tmp/sssm-0.0.2.tar.gz]
+[2024-05-12 17:12:27] INFO root fetch - main [MainThread]: End processing [sssm]: success
+[2024-05-12 17:12:27] INFO root fetch - main [MainThread]: Store serial: [23171053]
