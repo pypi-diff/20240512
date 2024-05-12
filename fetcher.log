@@ -15038,3 +15038,62 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:02:11] INFO root fetch - processPackages [spandrel]: Remove: archive file [/home/abi/fetcher/tmp/spandrel-0.3.3-py3-none-any.whl.zip]
 [2024-05-12 20:02:11] INFO root fetch - main [MainThread]: End processing [spandrel]: success
 [2024-05-12 20:02:11] INFO root fetch - main [MainThread]: Store serial: [23172469]
+[2024-05-12 20:04:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172469]
+[2024-05-12 20:04:19] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-12 20:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: peaqevcore
+[2024-05-12 20:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gabelledz
+[2024-05-12 20:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: morast
+[2024-05-12 20:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: namer
+[2024-05-12 20:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: picketingz
+[2024-05-12 20:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: namer
+[2024-05-12 20:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aliot-py
+[2024-05-12 20:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: namer
+[2024-05-12 20:04:19] INFO root fetch - processPackages [namer]: New version: [1.9.8] Old Version: [1.9.7]
+[2024-05-12 20:04:19] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2024-05-12 20:04:20] INFO root fetch - processPackages [namer]: New version: [1.9.8] Old Version: [1.9.7]
+[2024-05-12 20:04:20] INFO root fetch - processPackages [namer]: New version: [1.9.8] Old Version: [1.9.7]
+[2024-05-12 20:04:20] WARNING root fetch - processPackages [picketingz]: Skipping, unable to determine old version
+[2024-05-12 20:04:20] INFO root fetch - main [MainThread]: End processing [picketingz] error
+[2024-05-12 20:04:20] INFO root fetch - processPackages [namer]: Downloading https://files.pythonhosted.org/packages/13/04/79d5b1d7c32bd69fa2f6b689030b844e992c35bb3a8907ea9f944a76e29d/namer-1.9.7.tar.gz
+[2024-05-12 20:04:20] INFO root fetch - processPackages [aliot-py]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-12 20:04:20] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/d3/3a/d595706eb589ecf59a8cba9b6d5b0456fc65fe7e1d2c1e2aec7feee838b8/peaqevcore-9.2.2.tar.gz
+[2024-05-12 20:04:20] INFO root fetch - processPackages [morast]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-12 20:04:20] WARNING root fetch - processPackages [gabelledz]: Skipping, unable to determine old version
+[2024-05-12 20:04:20] INFO root fetch - main [MainThread]: End processing [gabelledz] error
+[2024-05-12 20:04:20] INFO root fetch - processPackages [namer]: Downloading https://files.pythonhosted.org/packages/13/04/79d5b1d7c32bd69fa2f6b689030b844e992c35bb3a8907ea9f944a76e29d/namer-1.9.7.tar.gz
+[2024-05-12 20:04:20] INFO root fetch - processPackages [namer]: Downloading https://files.pythonhosted.org/packages/13/04/79d5b1d7c32bd69fa2f6b689030b844e992c35bb3a8907ea9f944a76e29d/namer-1.9.7.tar.gz
+[2024-05-12 20:04:20] INFO root fetch - processPackages [aliot-py]: Downloading https://files.pythonhosted.org/packages/cb/62/ad10baab8e672b6870ed033a74aaad4a182a5722cf347256fd58b2b526ec/aliot-py-1.0.3.tar.gz
+[2024-05-12 20:04:20] INFO root fetch - processPackages [morast]: Downloading https://files.pythonhosted.org/packages/d6/ae/fbd784a84c2e59ea3292dbfb7c4b2387add07ddf0ea8c3af921087c81f08/morast-0.3.3.tar.gz
+[2024-05-12 20:04:20] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/7d/ed/173dd45b11e856f6a0a37a2fe90750405b19807684a9c94bd5e9388c29a2/peaqevcore-9.2.3.tar.gz
+[2024-05-12 20:04:20] INFO root fetch - processPackages [namer]: Downloading https://files.pythonhosted.org/packages/4c/f1/c49c428124090401e22593a3d7f5c99a317c54dbe00b5c67957b784e0dd0/namer-1.9.8.tar.gz
+[2024-05-12 20:04:20] INFO root fetch - processPackages [namer]: Downloading https://files.pythonhosted.org/packages/4c/f1/c49c428124090401e22593a3d7f5c99a317c54dbe00b5c67957b784e0dd0/namer-1.9.8.tar.gz
+[2024-05-12 20:04:20] INFO root fetch - processPackages [namer]: Downloading https://files.pythonhosted.org/packages/4c/f1/c49c428124090401e22593a3d7f5c99a317c54dbe00b5c67957b784e0dd0/namer-1.9.8.tar.gz
+[2024-05-12 20:04:20] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2024-05-12 20:04:20] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20240512/p/peaqevcore/9.2.2-9.2.3/README.md --exclude *.pyd
+[2024-05-12 20:04:20] INFO root fetch - processPackages [namer]: executing diffoscope
+[2024-05-12 20:04:20] INFO root fetch - processPackages [namer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/namer-1.9.7.tar.gz tmp/namer-1.9.8.tar.gz --markdown 20240512/n/namer/1.9.7-1.9.8/README.md --exclude *.pyd
+[2024-05-12 20:04:20] INFO root fetch - processPackages [namer]: executing diffoscope
+[2024-05-12 20:04:20] INFO root fetch - processPackages [namer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/namer-1.9.7.tar.gz tmp/namer-1.9.8.tar.gz --markdown 20240512/n/namer/1.9.7-1.9.8/README.md --exclude *.pyd
+[2024-05-12 20:04:20] INFO root fetch - processPackages [aliot-py]: Downloading https://files.pythonhosted.org/packages/e3/2d/e2906001bdbc74f567b03e5faf028c89dc4fa10907cdb80fd866fd05faea/aliot-py-1.0.4.tar.gz
+[2024-05-12 20:04:20] INFO root fetch - processPackages [namer]: executing diffoscope
+[2024-05-12 20:04:20] INFO root fetch - processPackages [namer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/namer-1.9.7.tar.gz tmp/namer-1.9.8.tar.gz --markdown 20240512/n/namer/1.9.7-1.9.8/README.md --exclude *.pyd
+[2024-05-12 20:04:20] INFO root fetch - processPackages [morast]: Downloading https://files.pythonhosted.org/packages/05/3c/f50ddcbe869242e4fc93a5b8d6729bbaa3d97519d523e578687b7353b834/morast-0.3.4.tar.gz
+[2024-05-12 20:04:20] INFO root fetch - processPackages [aliot-py]: executing diffoscope
+[2024-05-12 20:04:20] INFO root fetch - processPackages [aliot-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliot-py-1.0.3.tar.gz tmp/aliot-py-1.0.4.tar.gz --markdown 20240512/a/aliot-py/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-12 20:04:20] INFO root fetch - processPackages [morast]: executing diffoscope
+[2024-05-12 20:04:20] INFO root fetch - processPackages [morast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morast-0.3.3.tar.gz tmp/morast-0.3.4.tar.gz --markdown 20240512/m/morast/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-12 20:04:21] INFO root fetch - processPackages [namer]: Remove: archive file [/home/abi/fetcher/tmp/namer-1.9.7.tar.gz]
+[2024-05-12 20:04:21] INFO root fetch - processPackages [namer]: Remove: archive file [/home/abi/fetcher/tmp/namer-1.9.8.tar.gz]
+[2024-05-12 20:04:21] INFO root fetch - main [MainThread]: End processing [namer]: success
+[2024-05-12 20:04:21] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.2.tar.gz]
+[2024-05-12 20:04:21] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.3.tar.gz]
+[2024-05-12 20:04:21] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2024-05-12 20:04:21] INFO root fetch - processPackages [morast]: Remove: archive file [/home/abi/fetcher/tmp/morast-0.3.3.tar.gz]
+[2024-05-12 20:04:21] INFO root fetch - processPackages [morast]: Remove: archive file [/home/abi/fetcher/tmp/morast-0.3.4.tar.gz]
+[2024-05-12 20:04:21] INFO root fetch - main [MainThread]: End processing [morast]: success
+[2024-05-12 20:04:21] INFO root fetch - main [MainThread]: End processing [namer]: success
+[2024-05-12 20:04:21] INFO root fetch - processPackages [aliot-py]: Remove: archive file [/home/abi/fetcher/tmp/aliot-py-1.0.3.tar.gz]
+[2024-05-12 20:04:21] INFO root fetch - processPackages [aliot-py]: Remove: archive file [/home/abi/fetcher/tmp/aliot-py-1.0.4.tar.gz]
+[2024-05-12 20:04:21] INFO root fetch - main [MainThread]: End processing [aliot-py]: success
+[2024-05-12 20:04:21] INFO root fetch - main [MainThread]: End processing [namer]: success
+[2024-05-12 20:04:21] INFO root fetch - main [MainThread]: Store serial: [23172495]
