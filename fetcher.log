@@ -4262,3 +4262,33 @@
 [2024-05-12 06:20:57] INFO root fetch - processPackages [cibuildwheel]: Remove: archive file [/home/abi/fetcher/tmp/cibuildwheel-2.9.0.tar.gz]
 [2024-05-12 06:20:57] INFO root fetch - main [MainThread]: End processing [cibuildwheel]: success
 [2024-05-12 06:20:57] INFO root fetch - main [MainThread]: Store serial: [23166950]
+[2024-05-12 06:23:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166950]
+[2024-05-12 06:23:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 06:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypomes-core
+[2024-05-12 06:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: g2opy
+[2024-05-12 06:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamlit-screen-stats
+[2024-05-12 06:23:06] INFO root fetch - processPackages [g2opy]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-12 06:23:06] INFO root fetch - processPackages [streamlit-screen-stats]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 06:23:06] INFO root fetch - processPackages [g2opy]: Downloading https://files.pythonhosted.org/packages/e9/71/ba5a296042e17f3f469520b9342453d28eb1dc2ceb3c2bcdb84b4aec99d9/g2opy-0.0.6.tar.gz
+[2024-05-12 06:23:06] INFO root fetch - processPackages [pypomes-core]: New version: [1.0.0] Old Version: [0.9.9]
+[2024-05-12 06:23:06] INFO root fetch - processPackages [streamlit-screen-stats]: Downloading https://files.pythonhosted.org/packages/b5/f3/ffa1db6a0713ba6b2fc4ac5b1e057f98d7180131b56db9b54f5e09b8ea3d/streamlit-screen-stats-0.0.8.tar.gz
+[2024-05-12 06:23:06] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/88/ac/4eeae4e4f106b306a9193ea0a999c691c5fbe54f00f7b8c4acb8ae784d8f/pypomes_core-0.9.9.tar.gz
+[2024-05-12 06:23:06] INFO root fetch - processPackages [streamlit-screen-stats]: Downloading https://files.pythonhosted.org/packages/47/c1/551994788e8d7fbca93c51782419b6f14c5db12208b833677955f6412aab/streamlit-screen-stats-0.0.9.tar.gz
+[2024-05-12 06:23:07] INFO root fetch - processPackages [streamlit-screen-stats]: executing diffoscope
+[2024-05-12 06:23:07] INFO root fetch - processPackages [streamlit-screen-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-screen-stats-0.0.8.tar.gz tmp/streamlit-screen-stats-0.0.9.tar.gz --markdown 20240512/s/streamlit-screen-stats/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 06:23:07] INFO root fetch - processPackages [g2opy]: Downloading https://files.pythonhosted.org/packages/4e/4a/ea9082b3957cd5fbaee61a4cfa027050552aa12d26bb984665510730c916/g2opy-0.0.7.tar.gz
+[2024-05-12 06:23:07] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/cf/24/1169b0f27f90ef823cc7f70bfd2a6f08825749dcb14cc2fcb1120ea14f96/pypomes_core-1.0.0.tar.gz
+[2024-05-12 06:23:07] INFO root fetch - processPackages [g2opy]: executing diffoscope
+[2024-05-12 06:23:07] INFO root fetch - processPackages [g2opy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g2opy-0.0.6.tar.gz tmp/g2opy-0.0.7.tar.gz --markdown 20240512/g/g2opy/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-12 06:23:07] INFO root fetch - processPackages [pypomes-core]: executing diffoscope
+[2024-05-12 06:23:07] INFO root fetch - processPackages [pypomes-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_core-0.9.9.tar.gz tmp/pypomes_core-1.0.0.tar.gz --markdown 20240512/p/pypomes-core/0.9.9-1.0.0/README.md --exclude *.pyd
+[2024-05-12 06:23:08] INFO root fetch - processPackages [g2opy]: Remove: archive file [/home/abi/fetcher/tmp/g2opy-0.0.6.tar.gz]
+[2024-05-12 06:23:08] INFO root fetch - processPackages [g2opy]: Remove: archive file [/home/abi/fetcher/tmp/g2opy-0.0.7.tar.gz]
+[2024-05-12 06:23:08] INFO root fetch - main [MainThread]: End processing [g2opy]: success
+[2024-05-12 06:23:08] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.9.9.tar.gz]
+[2024-05-12 06:23:08] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-1.0.0.tar.gz]
+[2024-05-12 06:23:08] INFO root fetch - main [MainThread]: End processing [pypomes-core]: success
+[2024-05-12 06:23:20] INFO root fetch - processPackages [streamlit-screen-stats]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-screen-stats-0.0.8.tar.gz]
+[2024-05-12 06:23:20] INFO root fetch - processPackages [streamlit-screen-stats]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-screen-stats-0.0.9.tar.gz]
+[2024-05-12 06:23:20] INFO root fetch - main [MainThread]: End processing [streamlit-screen-stats]: success
+[2024-05-12 06:23:20] INFO root fetch - main [MainThread]: Store serial: [23166961]
