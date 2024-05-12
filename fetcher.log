@@ -4103,3 +4103,18 @@
 [2024-05-12 05:58:54] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.6.1.tar.gz]
 [2024-05-12 05:58:54] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
 [2024-05-12 05:58:54] INFO root fetch - main [MainThread]: Store serial: [23166865]
+[2024-05-12 06:00:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166865]
+[2024-05-12 06:01:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 06:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: muggsz
+[2024-05-12 06:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-kurogames
+[2024-05-12 06:01:03] WARNING root fetch - processPackages [muggsz]: Skipping, unable to determine old version
+[2024-05-12 06:01:03] INFO root fetch - main [MainThread]: End processing [muggsz] error
+[2024-05-12 06:01:03] INFO root fetch - processPackages [nonebot-plugin-kurogames]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-12 06:01:03] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Downloading https://files.pythonhosted.org/packages/d7/ef/8b2c56e3efeecd1644b4d99fcd688f31919784cca8805bfee21964943f2e/nonebot_plugin_kurogames-0.1.5.tar.gz
+[2024-05-12 06:01:04] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Downloading https://files.pythonhosted.org/packages/2d/08/cd193daceb7934a9b0d8ece90db7bb06bbd3fe4db197a805ab3c23125011/nonebot_plugin_kurogames-0.1.6.tar.gz
+[2024-05-12 06:01:05] INFO root fetch - processPackages [nonebot-plugin-kurogames]: executing diffoscope
+[2024-05-12 06:01:05] INFO root fetch - processPackages [nonebot-plugin-kurogames]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_kurogames-0.1.5.tar.gz tmp/nonebot_plugin_kurogames-0.1.6.tar.gz --markdown 20240512/n/nonebot-plugin-kurogames/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-12 06:01:05] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kurogames-0.1.5.tar.gz]
+[2024-05-12 06:01:05] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kurogames-0.1.6.tar.gz]
+[2024-05-12 06:01:05] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-kurogames]: success
+[2024-05-12 06:01:05] INFO root fetch - main [MainThread]: Store serial: [23166872]
