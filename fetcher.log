@@ -6970,3 +6970,42 @@
 [2024-05-12 10:34:26] INFO root fetch - processPackages [LVPocket]: Remove: archive file [/home/abi/fetcher/tmp/LVPocket-0.1.9.tar.gz]
 [2024-05-12 10:34:26] INFO root fetch - main [MainThread]: End processing [LVPocket]: success
 [2024-05-12 10:34:26] INFO root fetch - main [MainThread]: Store serial: [23168155]
+[2024-05-12 10:36:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168155]
+[2024-05-12 10:36:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 10:36:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-admin-daterange-listfilter
+[2024-05-12 10:36:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: contur
+[2024-05-12 10:36:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: soma-integ
+[2024-05-12 10:36:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: obliquatez
+[2024-05-12 10:36:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: obs-waykey
+[2024-05-12 10:36:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-admin-daterange-listfilter
+[2024-05-12 10:36:35] INFO root fetch - processPackages [django-admin-daterange-listfilter]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 10:36:35] INFO root fetch - processPackages [django-admin-daterange-listfilter]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 10:36:35] INFO root fetch - processPackages [contur]: New version: [2.5.0] Old Version: [2.4.4]
+[2024-05-12 10:36:35] INFO root fetch - processPackages [soma-integ]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 10:36:35] WARNING root fetch - processPackages [obs-waykey]: Skipping, unable to determine old version
+[2024-05-12 10:36:35] INFO root fetch - main [MainThread]: End processing [obs-waykey] error
+[2024-05-12 10:36:35] WARNING root fetch - processPackages [obliquatez]: Skipping, unable to determine old version
+[2024-05-12 10:36:35] INFO root fetch - main [MainThread]: End processing [obliquatez] error
+[2024-05-12 10:36:35] INFO root fetch - processPackages [contur]: Downloading https://files.pythonhosted.org/packages/44/94/4cdb2d8c575e6789c7b1009cda372e36a8873df6fcd1cb770d4650d93a79/contur-2.4.4-py3-none-any.whl
+[2024-05-12 10:36:35] INFO root fetch - processPackages [django-admin-daterange-listfilter]: Downloading https://files.pythonhosted.org/packages/13/48/ea75415ddd40ab60a48e0685b481fcd11277abf4bc012a65a62543a27220/django-admin-daterange-listfilter-0.1.0.tar.gz
+[2024-05-12 10:36:35] INFO root fetch - processPackages [django-admin-daterange-listfilter]: Downloading https://files.pythonhosted.org/packages/13/48/ea75415ddd40ab60a48e0685b481fcd11277abf4bc012a65a62543a27220/django-admin-daterange-listfilter-0.1.0.tar.gz
+[2024-05-12 10:36:35] WARNING root fetch - processPackages [contur]: Skipping package: exceeds size limit 66181241>=10485760
+[2024-05-12 10:36:35] INFO root fetch - main [MainThread]: End processing [contur] error
+[2024-05-12 10:36:35] INFO root fetch - processPackages [soma-integ]: Downloading https://files.pythonhosted.org/packages/d7/5a/38c3fc95238d4ce01137c3beec00d9f03ec2e1eee64a03ef4c98104ae42a/soma_integ-0.1.0.tar.gz
+[2024-05-12 10:36:35] INFO root fetch - processPackages [django-admin-daterange-listfilter]: Downloading https://files.pythonhosted.org/packages/f5/96/bef2afe308b2dcdb3a1c76d8e9a08b278ad81f15e5e61a4ce6c29e634576/django-admin-daterange-listfilter-0.1.1.tar.gz
+[2024-05-12 10:36:35] INFO root fetch - processPackages [django-admin-daterange-listfilter]: Downloading https://files.pythonhosted.org/packages/f5/96/bef2afe308b2dcdb3a1c76d8e9a08b278ad81f15e5e61a4ce6c29e634576/django-admin-daterange-listfilter-0.1.1.tar.gz
+[2024-05-12 10:36:35] INFO root fetch - processPackages [soma-integ]: Downloading https://files.pythonhosted.org/packages/c8/37/f55f2a199b51a1a81260e9912ed61526b85e61b41572966387ceea081eed/soma_integ-0.1.1.tar.gz
+[2024-05-12 10:36:35] INFO root fetch - processPackages [django-admin-daterange-listfilter]: executing diffoscope
+[2024-05-12 10:36:35] INFO root fetch - processPackages [django-admin-daterange-listfilter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-daterange-listfilter-0.1.0.tar.gz tmp/django-admin-daterange-listfilter-0.1.1.tar.gz --markdown 20240512/d/django-admin-daterange-listfilter/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 10:36:35] INFO root fetch - processPackages [django-admin-daterange-listfilter]: executing diffoscope
+[2024-05-12 10:36:35] INFO root fetch - processPackages [django-admin-daterange-listfilter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-daterange-listfilter-0.1.0.tar.gz tmp/django-admin-daterange-listfilter-0.1.1.tar.gz --markdown 20240512/d/django-admin-daterange-listfilter/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 10:36:35] INFO root fetch - processPackages [soma-integ]: executing diffoscope
+[2024-05-12 10:36:35] INFO root fetch - processPackages [soma-integ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soma_integ-0.1.0.tar.gz tmp/soma_integ-0.1.1.tar.gz --markdown 20240512/s/soma-integ/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 10:36:36] INFO root fetch - processPackages [django-admin-daterange-listfilter]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-daterange-listfilter-0.1.0.tar.gz]
+[2024-05-12 10:36:36] INFO root fetch - processPackages [django-admin-daterange-listfilter]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-daterange-listfilter-0.1.1.tar.gz]
+[2024-05-12 10:36:36] INFO root fetch - main [MainThread]: End processing [django-admin-daterange-listfilter]: success
+[2024-05-12 10:36:36] INFO root fetch - processPackages [soma-integ]: Remove: archive file [/home/abi/fetcher/tmp/soma_integ-0.1.0.tar.gz]
+[2024-05-12 10:36:36] INFO root fetch - processPackages [soma-integ]: Remove: archive file [/home/abi/fetcher/tmp/soma_integ-0.1.1.tar.gz]
+[2024-05-12 10:36:36] INFO root fetch - main [MainThread]: End processing [soma-integ]: success
+[2024-05-12 10:36:36] INFO root fetch - main [MainThread]: End processing [django-admin-daterange-listfilter]: success
+[2024-05-12 10:36:36] INFO root fetch - main [MainThread]: Store serial: [23168172]
