@@ -16980,3 +16980,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:04:16] INFO root fetch - processPackages [nanodl]: Remove: archive file [/home/abi/fetcher/tmp/nanodl-1.2.4.dev1.tar.gz]
 [2024-05-12 22:04:16] INFO root fetch - main [MainThread]: End processing [nanodl]: success
 [2024-05-12 22:04:16] INFO root fetch - main [MainThread]: Store serial: [23173358]
+[2024-05-12 22:06:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173358]
+[2024-05-12 22:06:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 22:06:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tinyscript
+[2024-05-12 22:06:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: profitpulse
+[2024-05-12 22:06:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bourrasquez
+[2024-05-12 22:06:26] INFO root fetch - processPackages [profitpulse]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-05-12 22:06:26] INFO root fetch - processPackages [tinyscript]: New version: [1.9.5] Old Version: [1.9.4]
+[2024-05-12 22:06:26] INFO root fetch - processPackages [profitpulse]: Downloading https://files.pythonhosted.org/packages/66/c6/1eb88cbb229175a6866c5c37d691318e98a48d303c3fd83c8e4985d4180c/profitpulse-2.1.0.tar.gz
+[2024-05-12 22:06:26] INFO root fetch - processPackages [tinyscript]: Downloading https://files.pythonhosted.org/packages/45/d0/3393f08eca58519f8e94086418ba3efe9502ad4acb3cc377fe73b08f64ab/tinyscript-1.9.4.tar.gz
+[2024-05-12 22:06:26] WARNING root fetch - processPackages [bourrasquez]: Skipping, unable to determine old version
+[2024-05-12 22:06:26] INFO root fetch - main [MainThread]: End processing [bourrasquez] error
+[2024-05-12 22:06:26] INFO root fetch - processPackages [tinyscript]: Downloading https://files.pythonhosted.org/packages/a4/92/f1a76d3caa9d4c9a8eea462e7b0ebce18a722fc05ccdba197c2ce598db2b/tinyscript-1.9.5.tar.gz
+[2024-05-12 22:06:26] INFO root fetch - processPackages [profitpulse]: Downloading https://files.pythonhosted.org/packages/82/0d/028ab7aa253ad31cba6b3aa8c296f0d2bd0f1a957248741eff2e338ad753/profitpulse-2.2.0.tar.gz
+[2024-05-12 22:06:26] INFO root fetch - processPackages [tinyscript]: executing diffoscope
+[2024-05-12 22:06:26] INFO root fetch - processPackages [tinyscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyscript-1.9.4.tar.gz tmp/tinyscript-1.9.5.tar.gz --markdown 20240512/t/tinyscript/1.9.4-1.9.5/README.md --exclude *.pyd
+[2024-05-12 22:06:26] INFO root fetch - processPackages [profitpulse]: executing diffoscope
+[2024-05-12 22:06:26] INFO root fetch - processPackages [profitpulse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profitpulse-2.1.0.tar.gz tmp/profitpulse-2.2.0.tar.gz --markdown 20240512/p/profitpulse/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-05-12 22:06:27] INFO root fetch - processPackages [tinyscript]: Remove: archive file [/home/abi/fetcher/tmp/tinyscript-1.9.4.tar.gz]
+[2024-05-12 22:06:27] INFO root fetch - processPackages [tinyscript]: Remove: archive file [/home/abi/fetcher/tmp/tinyscript-1.9.5.tar.gz]
+[2024-05-12 22:06:27] INFO root fetch - main [MainThread]: End processing [tinyscript]: success
+[2024-05-12 22:06:27] INFO root fetch - processPackages [profitpulse]: Remove: archive file [/home/abi/fetcher/tmp/profitpulse-2.1.0.tar.gz]
+[2024-05-12 22:06:27] INFO root fetch - processPackages [profitpulse]: Remove: archive file [/home/abi/fetcher/tmp/profitpulse-2.2.0.tar.gz]
+[2024-05-12 22:06:27] INFO root fetch - main [MainThread]: End processing [profitpulse]: success
+[2024-05-12 22:06:27] INFO root fetch - main [MainThread]: Store serial: [23173368]
