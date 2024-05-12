@@ -3419,3 +3419,15 @@
 [2024-05-12 04:57:38] INFO root fetch - processPackages [aiogtrans]: Remove: archive file [/home/abi/fetcher/tmp/aiogtrans-1.1.8.tar.gz]
 [2024-05-12 04:57:38] INFO root fetch - main [MainThread]: End processing [aiogtrans]: success
 [2024-05-12 04:57:38] INFO root fetch - main [MainThread]: Store serial: [23166507]
+[2024-05-12 04:59:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166507]
+[2024-05-12 04:59:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 04:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiapy
+[2024-05-12 04:59:47] INFO root fetch - processPackages [aiapy]: New version: [0.8.0] Old Version: [0.7.4]
+[2024-05-12 04:59:47] INFO root fetch - processPackages [aiapy]: Downloading https://files.pythonhosted.org/packages/0b/80/b66d94b65c3220e6ca3fb0533c56afc0641f04880f24738573253c9cfb2d/aiapy-0.7.4.tar.gz
+[2024-05-12 04:59:47] INFO root fetch - processPackages [aiapy]: Downloading https://files.pythonhosted.org/packages/e8/e4/03296d3b205c07f2fcb5a204314acbf8bb23c8985c2d6b7914439536b85f/aiapy-0.8.0.tar.gz
+[2024-05-12 04:59:48] INFO root fetch - processPackages [aiapy]: executing diffoscope
+[2024-05-12 04:59:48] INFO root fetch - processPackages [aiapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiapy-0.7.4.tar.gz tmp/aiapy-0.8.0.tar.gz --markdown 20240512/a/aiapy/0.7.4-0.8.0/README.md --exclude *.pyd
+[2024-05-12 04:59:49] INFO root fetch - processPackages [aiapy]: Remove: archive file [/home/abi/fetcher/tmp/aiapy-0.7.4.tar.gz]
+[2024-05-12 04:59:49] INFO root fetch - processPackages [aiapy]: Remove: archive file [/home/abi/fetcher/tmp/aiapy-0.8.0.tar.gz]
+[2024-05-12 04:59:49] INFO root fetch - main [MainThread]: End processing [aiapy]: success
+[2024-05-12 04:59:49] INFO root fetch - main [MainThread]: Store serial: [23166507]
