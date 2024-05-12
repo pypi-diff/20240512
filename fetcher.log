@@ -10638,3 +10638,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:09:20] INFO root fetch - processPackages [qstd-core]: Remove: archive file [/home/abi/fetcher/tmp/qstd_core-0.5.2.tar.gz]
 [2024-05-12 15:09:20] INFO root fetch - main [MainThread]: End processing [qstd-core]: success
 [2024-05-12 15:09:20] INFO root fetch - main [MainThread]: Store serial: [23170045]
+[2024-05-12 15:11:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170045]
+[2024-05-12 15:11:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 15:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ReverseBox
+[2024-05-12 15:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotibar
+[2024-05-12 15:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abses
+[2024-05-12 15:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pluvianz
+[2024-05-12 15:11:28] INFO root fetch - processPackages [ReverseBox]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-05-12 15:11:28] INFO root fetch - processPackages [abses]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-05-12 15:11:28] WARNING root fetch - processPackages [pluvianz]: Skipping, unable to determine old version
+[2024-05-12 15:11:28] INFO root fetch - main [MainThread]: End processing [pluvianz] error
+[2024-05-12 15:11:28] INFO root fetch - processPackages [spotibar]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-05-12 15:11:28] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/80/3d/3662db128377bd6c548cfb2737946884e3879d79644ff9e3f7eac0ac31f9/ReverseBox-0.9.7.tar.gz
+[2024-05-12 15:11:28] INFO root fetch - processPackages [abses]: Downloading https://files.pythonhosted.org/packages/2e/ef/d19e734abe7cda21af26c84b8cf7a8d47ebaaf9dce58f4300c1c292de74d/abses-0.6.2.tar.gz
+[2024-05-12 15:11:29] INFO root fetch - processPackages [spotibar]: Downloading https://files.pythonhosted.org/packages/8a/b6/cdbc830069bfaf7582ea42d677a46068bd20a629906cd301f8486d9c0631/spotibar-0.3.9.tar.gz
+[2024-05-12 15:11:29] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/4a/58/7a7b782237cfeaa6f4930edfd83b87995cd40b65c79be087c32798140949/ReverseBox-0.9.8.tar.gz
+[2024-05-12 15:11:29] INFO root fetch - processPackages [abses]: Downloading https://files.pythonhosted.org/packages/e3/74/22951ea5413566d8813a9c1f4094f295022f268700e1da8c5423c4d39e4c/abses-0.6.3.tar.gz
+[2024-05-12 15:11:29] INFO root fetch - processPackages [spotibar]: Downloading https://files.pythonhosted.org/packages/db/74/98723365c0828b91cb603a770888ffa8491b66597473fe31f2f2a264869c/spotibar-0.4.0.tar.gz
+[2024-05-12 15:11:29] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2024-05-12 15:11:29] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.9.7.tar.gz tmp/ReverseBox-0.9.8.tar.gz --markdown 20240512/R/ReverseBox/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-05-12 15:11:29] INFO root fetch - processPackages [spotibar]: executing diffoscope
+[2024-05-12 15:11:29] INFO root fetch - processPackages [spotibar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotibar-0.3.9.tar.gz tmp/spotibar-0.4.0.tar.gz --markdown 20240512/s/spotibar/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-05-12 15:11:29] INFO root fetch - processPackages [abses]: executing diffoscope
+[2024-05-12 15:11:29] INFO root fetch - processPackages [abses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abses-0.6.2.tar.gz tmp/abses-0.6.3.tar.gz --markdown 20240512/a/abses/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-05-12 15:11:30] INFO root fetch - processPackages [spotibar]: Remove: archive file [/home/abi/fetcher/tmp/spotibar-0.3.9.tar.gz]
+[2024-05-12 15:11:30] INFO root fetch - processPackages [spotibar]: Remove: archive file [/home/abi/fetcher/tmp/spotibar-0.4.0.tar.gz]
+[2024-05-12 15:11:30] INFO root fetch - main [MainThread]: End processing [spotibar]: success
+[2024-05-12 15:11:30] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.9.7.tar.gz]
+[2024-05-12 15:11:30] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.9.8.tar.gz]
+[2024-05-12 15:11:30] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2024-05-12 15:11:30] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.6.2.tar.gz]
+[2024-05-12 15:11:30] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.6.3.tar.gz]
+[2024-05-12 15:11:30] INFO root fetch - main [MainThread]: End processing [abses]: success
+[2024-05-12 15:11:30] INFO root fetch - main [MainThread]: Store serial: [23170057]
