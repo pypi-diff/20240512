@@ -12852,3 +12852,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:38:39] WARNING root fetch - processPackages [nonsubstitutionallyz]: Skipping, unable to determine old version
 [2024-05-12 17:38:39] INFO root fetch - main [MainThread]: End processing [nonsubstitutionallyz] error
 [2024-05-12 17:38:39] INFO root fetch - main [MainThread]: Store serial: [23171324]
+[2024-05-12 17:40:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171324]
+[2024-05-12 17:40:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 17:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pixiv-sql
+[2024-05-12 17:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: few-shot-priming
+[2024-05-12 17:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: brainwashesz
+[2024-05-12 17:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opentaskpy
+[2024-05-12 17:40:48] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-05-12 17:40:48] WARNING root fetch - processPackages [brainwashesz]: Skipping, unable to determine old version
+[2024-05-12 17:40:48] INFO root fetch - main [MainThread]: End processing [brainwashesz] error
+[2024-05-12 17:40:48] WARNING root fetch - processPackages [pixiv-sql]: Skipping, unable to determine old version
+[2024-05-12 17:40:48] INFO root fetch - main [MainThread]: End processing [pixiv-sql] error
+[2024-05-12 17:40:48] INFO root fetch - processPackages [opentaskpy]: New version: [24.9.0] Old Version: [24.8.0]
+[2024-05-12 17:40:48] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-05-12 17:40:48] INFO root fetch - processPackages [opentaskpy]: Downloading https://files.pythonhosted.org/packages/c4/d4/78ca509eab1c9022e59d45873bd133bcf7b20614f4adf9a42c811db94ddd/opentaskpy-24.8.0.tar.gz
+[2024-05-12 17:40:49] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-05-12 17:40:49] INFO root fetch - processPackages [opentaskpy]: Downloading https://files.pythonhosted.org/packages/fb/2f/bb66b87b40e8c92483e70742bc0dbb7bd8910dc2bc571c48b6dd94e65b23/opentaskpy-24.9.0.tar.gz
+[2024-05-12 17:40:49] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-05-12 17:40:49] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240512/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-05-12 17:40:49] INFO root fetch - processPackages [opentaskpy]: executing diffoscope
+[2024-05-12 17:40:49] INFO root fetch - processPackages [opentaskpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opentaskpy-24.8.0.tar.gz tmp/opentaskpy-24.9.0.tar.gz --markdown 20240512/o/opentaskpy/24.8.0-24.9.0/README.md --exclude *.pyd
+[2024-05-12 17:40:50] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-05-12 17:40:50] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-05-12 17:40:50] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-05-12 17:40:50] INFO root fetch - processPackages [opentaskpy]: Remove: archive file [/home/abi/fetcher/tmp/opentaskpy-24.8.0.tar.gz]
+[2024-05-12 17:40:50] INFO root fetch - processPackages [opentaskpy]: Remove: archive file [/home/abi/fetcher/tmp/opentaskpy-24.9.0.tar.gz]
+[2024-05-12 17:40:50] INFO root fetch - main [MainThread]: End processing [opentaskpy]: success
+[2024-05-12 17:40:50] INFO root fetch - main [MainThread]: Store serial: [23171338]
