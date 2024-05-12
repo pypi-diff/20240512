@@ -13048,3 +13048,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:51:44] INFO root fetch - processPackages [searchkit]: Remove: archive file [/home/abi/fetcher/tmp/searchkit-0.4.1.post3-py3-none-any.whl.zip]
 [2024-05-12 17:51:44] INFO root fetch - main [MainThread]: End processing [searchkit]: success
 [2024-05-12 17:51:44] INFO root fetch - main [MainThread]: Store serial: [23171412]
+[2024-05-12 17:53:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171412]
+[2024-05-12 17:53:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 17:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: searchkit
+[2024-05-12 17:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: syslogserver-to-cloudwatch
+[2024-05-12 17:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sialemesisz
+[2024-05-12 17:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ctrip-app-ui
+[2024-05-12 17:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llm-structured-output
+[2024-05-12 17:53:52] INFO root fetch - processPackages [searchkit]: New version: [0.4.1.post3] Old Version: [0.4.1.post2]
+[2024-05-12 17:53:52] INFO root fetch - processPackages [syslogserver-to-cloudwatch]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 17:53:52] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-05-12 17:53:52] WARNING root fetch - processPackages [sialemesisz]: Skipping, unable to determine old version
+[2024-05-12 17:53:52] INFO root fetch - main [MainThread]: End processing [sialemesisz] error
+[2024-05-12 17:53:52] INFO root fetch - processPackages [searchkit]: Downloading https://files.pythonhosted.org/packages/9f/78/44850de87062964ec29ec957ff03dea7f33f8f805de1a6d7d1e2b1a61291/searchkit-0.4.1.post2.tar.gz
+[2024-05-12 17:53:52] INFO root fetch - processPackages [syslogserver-to-cloudwatch]: Downloading https://files.pythonhosted.org/packages/5f/f4/84bf84219de1a327e86aa743a99aacdabdc6cf1c40ee3e4db7e261d04989/syslogserver_to_cloudwatch-0.1.0.tar.gz
+[2024-05-12 17:53:52] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/39/fa/02e78ae42456c969e0180ec619563c793ea5f9306347abbe61b594fc4569/ctrip-app-ui-0.3.9.tar.gz
+[2024-05-12 17:53:52] INFO root fetch - processPackages [llm-structured-output]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 17:53:53] INFO root fetch - processPackages [searchkit]: Downloading https://files.pythonhosted.org/packages/f5/15/b9bee8cdeaadcee92676fecd4c0852f886ecac4daeb0d6c57b9eb4ce8ff7/searchkit-0.4.1.post3-py3-none-any.whl
+[2024-05-12 17:53:53] INFO root fetch - processPackages [llm-structured-output]: Downloading https://files.pythonhosted.org/packages/23/58/a6fe6fd07d1ec5c2791f5a5db0ed3b196c60d87bd8e17cc0afa3bc420f68/llm_structured_output-0.0.8.tar.gz
+[2024-05-12 17:53:53] INFO root fetch - processPackages [syslogserver-to-cloudwatch]: Downloading https://files.pythonhosted.org/packages/92/d3/1b840952374cbcbbe350476ef540d5b4e018f3e6b2b438e7a062541682a9/syslogserver_to_cloudwatch-0.1.1.tar.gz
+[2024-05-12 17:53:53] INFO root fetch - processPackages [searchkit]: executing diffoscope
+[2024-05-12 17:53:53] INFO root fetch - processPackages [searchkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchkit-0.4.1.post2.tar.gz tmp/searchkit-0.4.1.post3-py3-none-any.whl.zip --markdown 20240512/s/searchkit/0.4.1.post2-0.4.1.post3/README.md --exclude *.pyd
+[2024-05-12 17:53:53] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/c2/98/85f298e5f8f10bd0cf22e8d8727715ae890b50087d625df4c8e2541cf9eb/ctrip-app-ui-0.4.0.tar.gz
+[2024-05-12 17:53:53] INFO root fetch - processPackages [syslogserver-to-cloudwatch]: executing diffoscope
+[2024-05-12 17:53:53] INFO root fetch - processPackages [syslogserver-to-cloudwatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syslogserver_to_cloudwatch-0.1.0.tar.gz tmp/syslogserver_to_cloudwatch-0.1.1.tar.gz --markdown 20240512/s/syslogserver-to-cloudwatch/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 17:53:53] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-12 17:53:53] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.3.9.tar.gz tmp/ctrip-app-ui-0.4.0.tar.gz --markdown 20240512/c/ctrip-app-ui/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-05-12 17:53:53] INFO root fetch - processPackages [llm-structured-output]: Downloading https://files.pythonhosted.org/packages/77/03/dc0e6c04dafdfdb4b262825150f7096497f03fe68be63f79635f7f47383a/llm_structured_output-0.0.9.tar.gz
+[2024-05-12 17:53:53] INFO root fetch - processPackages [llm-structured-output]: executing diffoscope
+[2024-05-12 17:53:53] INFO root fetch - processPackages [llm-structured-output]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_structured_output-0.0.8.tar.gz tmp/llm_structured_output-0.0.9.tar.gz --markdown 20240512/l/llm-structured-output/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 17:53:53] INFO root fetch - processPackages [searchkit]: Remove: archive file [/home/abi/fetcher/tmp/searchkit-0.4.1.post2.tar.gz]
+[2024-05-12 17:53:53] INFO root fetch - processPackages [searchkit]: Remove: archive file [/home/abi/fetcher/tmp/searchkit-0.4.1.post3-py3-none-any.whl.zip]
+[2024-05-12 17:53:53] INFO root fetch - main [MainThread]: End processing [searchkit]: success
+[2024-05-12 17:53:54] INFO root fetch - processPackages [syslogserver-to-cloudwatch]: Remove: archive file [/home/abi/fetcher/tmp/syslogserver_to_cloudwatch-0.1.0.tar.gz]
+[2024-05-12 17:53:54] INFO root fetch - processPackages [syslogserver-to-cloudwatch]: Remove: archive file [/home/abi/fetcher/tmp/syslogserver_to_cloudwatch-0.1.1.tar.gz]
+[2024-05-12 17:53:54] INFO root fetch - main [MainThread]: End processing [syslogserver-to-cloudwatch]: success
+[2024-05-12 17:53:54] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.9.tar.gz]
+[2024-05-12 17:53:54] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.4.0.tar.gz]
+[2024-05-12 17:53:54] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-12 17:53:54] INFO root fetch - processPackages [llm-structured-output]: Remove: archive file [/home/abi/fetcher/tmp/llm_structured_output-0.0.8.tar.gz]
+[2024-05-12 17:53:54] INFO root fetch - processPackages [llm-structured-output]: Remove: archive file [/home/abi/fetcher/tmp/llm_structured_output-0.0.9.tar.gz]
+[2024-05-12 17:53:54] INFO root fetch - main [MainThread]: End processing [llm-structured-output]: success
+[2024-05-12 17:53:54] INFO root fetch - main [MainThread]: Store serial: [23171445]
