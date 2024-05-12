@@ -6674,3 +6674,45 @@
 [2024-05-12 10:06:19] INFO root fetch - processPackages [zadarapyV2]: Remove: archive file [/home/abi/fetcher/tmp/zadarapyV2-23.9.1.222.tar.gz]
 [2024-05-12 10:06:19] INFO root fetch - main [MainThread]: End processing [zadarapyV2]: success
 [2024-05-12 10:06:19] INFO root fetch - main [MainThread]: Store serial: [23167990]
+[2024-05-12 10:08:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167990]
+[2024-05-12 10:08:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 10:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CGenr
+[2024-05-12 10:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: donetools
+[2024-05-12 10:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PlutoManager
+[2024-05-12 10:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyglove
+[2024-05-12 10:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zibuyu-LLM
+[2024-05-12 10:08:29] INFO root fetch - processPackages [zibuyu-LLM]: New version: [0.1.9] Old Version: [0.1.10]
+[2024-05-12 10:08:29] INFO root fetch - processPackages [CGenr]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 10:08:29] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240511] Old Version: [0.4.5.dev20240510]
+[2024-05-12 10:08:29] WARNING root fetch - processPackages [PlutoManager]: Skipping, unable to determine old version
+[2024-05-12 10:08:29] INFO root fetch - main [MainThread]: End processing [PlutoManager] error
+[2024-05-12 10:08:29] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/33/0e/16b37f00120ff421f78d0cd53f0bd531d2f2f8944620848df9e1f8768b85/pyglove-0.4.5.dev20240510.tar.gz
+[2024-05-12 10:08:29] INFO root fetch - processPackages [donetools]: New version: [0.0.28] Old Version: [0.0.27]
+[2024-05-12 10:08:29] INFO root fetch - processPackages [CGenr]: Downloading https://files.pythonhosted.org/packages/69/72/fb3df70245db7259711a3eb6669850c414f113cc87c87e82cce16fe0cf16/CGenr-0.0.1.tar.gz
+[2024-05-12 10:08:29] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/b0/d8/dee87fa003987262746e7bc346b77d904d22f6f3a6579c6e54e13a5e7f6e/zibuyu_LLM-0.1.10-py3-none-any.whl
+[2024-05-12 10:08:29] INFO root fetch - processPackages [donetools]: Downloading https://files.pythonhosted.org/packages/4c/19/b725b7deb3f38cc1b3624a03f4efb6e6b58d64ce6c9b486bf36358fccaaf/donetools-0.0.27.tar.gz
+[2024-05-12 10:08:29] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/75/00/92375b12245d015a005f7a8eb983cc7d93678479c087fc5f71b1c7ce57a7/pyglove-0.4.5.dev20240511.tar.gz
+[2024-05-12 10:08:29] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/8b/1d/73751ba8bfaf5b2eb71d0251541264c73d9b0da5c2d08f0111dbee0978db/zibuyu_LLM-0.1.9-py3-none-any.whl
+[2024-05-12 10:08:29] INFO root fetch - processPackages [CGenr]: Downloading https://files.pythonhosted.org/packages/de/4f/e1f9706a021129f425b06b9130148918fece5c753481849f0a6d86e8224c/CGenr-0.0.2.tar.gz
+[2024-05-12 10:08:29] INFO root fetch - processPackages [donetools]: Downloading https://files.pythonhosted.org/packages/d7/c7/fde8b502b9f20ce5e8d149ee29338200dd89d6c930220c400af7207c36f3/donetools-0.0.28.tar.gz
+[2024-05-12 10:08:29] INFO root fetch - processPackages [CGenr]: executing diffoscope
+[2024-05-12 10:08:29] INFO root fetch - processPackages [CGenr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CGenr-0.0.1.tar.gz tmp/CGenr-0.0.2.tar.gz --markdown 20240512/C/CGenr/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-12 10:08:29] INFO root fetch - processPackages [zibuyu-LLM]: executing diffoscope
+[2024-05-12 10:08:29] INFO root fetch - processPackages [zibuyu-LLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibuyu_LLM-0.1.10-py3-none-any.whl.zip tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip --markdown 20240512/z/zibuyu-LLM/0.1.10-0.1.9/README.md --exclude *.pyd
+[2024-05-12 10:08:29] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-05-12 10:08:29] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240510.tar.gz tmp/pyglove-0.4.5.dev20240511.tar.gz --markdown 20240512/p/pyglove/0.4.5.dev20240510-0.4.5.dev20240511/README.md --exclude *.pyd
+[2024-05-12 10:08:29] INFO root fetch - processPackages [donetools]: executing diffoscope
+[2024-05-12 10:08:29] INFO root fetch - processPackages [donetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/donetools-0.0.27.tar.gz tmp/donetools-0.0.28.tar.gz --markdown 20240512/d/donetools/0.0.27-0.0.28/README.md --exclude *.pyd
+[2024-05-12 10:08:30] INFO root fetch - processPackages [CGenr]: Remove: archive file [/home/abi/fetcher/tmp/CGenr-0.0.1.tar.gz]
+[2024-05-12 10:08:30] INFO root fetch - processPackages [CGenr]: Remove: archive file [/home/abi/fetcher/tmp/CGenr-0.0.2.tar.gz]
+[2024-05-12 10:08:30] INFO root fetch - main [MainThread]: End processing [CGenr]: success
+[2024-05-12 10:08:30] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.1.10-py3-none-any.whl.zip]
+[2024-05-12 10:08:30] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip]
+[2024-05-12 10:08:30] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
+[2024-05-12 10:08:30] INFO root fetch - processPackages [donetools]: Remove: archive file [/home/abi/fetcher/tmp/donetools-0.0.27.tar.gz]
+[2024-05-12 10:08:30] INFO root fetch - processPackages [donetools]: Remove: archive file [/home/abi/fetcher/tmp/donetools-0.0.28.tar.gz]
+[2024-05-12 10:08:30] INFO root fetch - main [MainThread]: End processing [donetools]: success
+[2024-05-12 10:08:31] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240510.tar.gz]
+[2024-05-12 10:08:31] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240511.tar.gz]
+[2024-05-12 10:08:31] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-05-12 10:08:31] INFO root fetch - main [MainThread]: Store serial: [23168012]
