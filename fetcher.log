@@ -5669,3 +5669,33 @@
 [2024-05-12 08:40:07] INFO root fetch - processPackages [JsMacrosAC]: Remove: archive file [/home/abi/fetcher/tmp/JsMacrosAC-1.9.1.5495966.tar.gz]
 [2024-05-12 08:40:07] INFO root fetch - main [MainThread]: End processing [JsMacrosAC]: success
 [2024-05-12 08:40:07] INFO root fetch - main [MainThread]: Store serial: [23167531]
+[2024-05-12 08:42:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167531]
+[2024-05-12 08:42:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 08:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: layeutils
+[2024-05-12 08:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfakefs
+[2024-05-12 08:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gtfs-parser
+[2024-05-12 08:42:16] INFO root fetch - processPackages [layeutils]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-12 08:42:16] INFO root fetch - processPackages [pyfakefs]: New version: [5.5.0] Old Version: [5.4.1]
+[2024-05-12 08:42:16] INFO root fetch - processPackages [gtfs-parser]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-12 08:42:16] INFO root fetch - processPackages [layeutils]: Downloading https://files.pythonhosted.org/packages/df/8a/5750fd27fb4c3487b4dbdfad44f376e0526542c6ee8cc4234e63d034eff8/layeutils-0.2.8.tar.gz
+[2024-05-12 08:42:16] INFO root fetch - processPackages [pyfakefs]: Downloading https://files.pythonhosted.org/packages/74/8c/5a8d25e21d6b42ea6c454e24d88802d25059c7460f45663ff43215ceea65/pyfakefs-5.4.1.tar.gz
+[2024-05-12 08:42:16] INFO root fetch - processPackages [gtfs-parser]: Downloading https://files.pythonhosted.org/packages/d1/5b/5bc041c93ab09d239bad5381216a1ba503956afb205032ba69340c51fc72/gtfs_parser-0.2.1.tar.gz
+[2024-05-12 08:42:16] INFO root fetch - processPackages [pyfakefs]: Downloading https://files.pythonhosted.org/packages/b4/c1/9aba92f9fecb2b81a83efd516d028c6ddcbd3cebdfb3ecba42b9c858f5e8/pyfakefs-5.5.0.tar.gz
+[2024-05-12 08:42:17] INFO root fetch - processPackages [layeutils]: Downloading https://files.pythonhosted.org/packages/49/3d/c713aa3374b8d3b84cd8820b2906eff00ed129c458180bc7ae7c4568a911/layeutils-0.2.9.tar.gz
+[2024-05-12 08:42:17] INFO root fetch - processPackages [gtfs-parser]: Downloading https://files.pythonhosted.org/packages/33/3b/c4ce3a15b39df0fd36c4ee36680697844c6d4e4b9e8fb562d76db801ced9/gtfs_parser-0.2.2-py3-none-any.whl
+[2024-05-12 08:42:17] INFO root fetch - processPackages [layeutils]: executing diffoscope
+[2024-05-12 08:42:17] INFO root fetch - processPackages [layeutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/layeutils-0.2.8.tar.gz tmp/layeutils-0.2.9.tar.gz --markdown 20240512/l/layeutils/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-12 08:42:17] INFO root fetch - processPackages [pyfakefs]: executing diffoscope
+[2024-05-12 08:42:17] INFO root fetch - processPackages [pyfakefs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfakefs-5.4.1.tar.gz tmp/pyfakefs-5.5.0.tar.gz --markdown 20240512/p/pyfakefs/5.4.1-5.5.0/README.md --exclude *.pyd
+[2024-05-12 08:42:17] INFO root fetch - processPackages [gtfs-parser]: executing diffoscope
+[2024-05-12 08:42:17] INFO root fetch - processPackages [gtfs-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gtfs_parser-0.2.1.tar.gz tmp/gtfs_parser-0.2.2-py3-none-any.whl.zip --markdown 20240512/g/gtfs-parser/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-12 08:42:17] INFO root fetch - processPackages [layeutils]: Remove: archive file [/home/abi/fetcher/tmp/layeutils-0.2.8.tar.gz]
+[2024-05-12 08:42:17] INFO root fetch - processPackages [layeutils]: Remove: archive file [/home/abi/fetcher/tmp/layeutils-0.2.9.tar.gz]
+[2024-05-12 08:42:17] INFO root fetch - main [MainThread]: End processing [layeutils]: success
+[2024-05-12 08:42:18] INFO root fetch - processPackages [gtfs-parser]: Remove: archive file [/home/abi/fetcher/tmp/gtfs_parser-0.2.1.tar.gz]
+[2024-05-12 08:42:18] INFO root fetch - processPackages [gtfs-parser]: Remove: archive file [/home/abi/fetcher/tmp/gtfs_parser-0.2.2-py3-none-any.whl.zip]
+[2024-05-12 08:42:18] INFO root fetch - main [MainThread]: End processing [gtfs-parser]: success
+[2024-05-12 08:42:18] INFO root fetch - processPackages [pyfakefs]: Remove: archive file [/home/abi/fetcher/tmp/pyfakefs-5.4.1.tar.gz]
+[2024-05-12 08:42:18] INFO root fetch - processPackages [pyfakefs]: Remove: archive file [/home/abi/fetcher/tmp/pyfakefs-5.5.0.tar.gz]
+[2024-05-12 08:42:18] INFO root fetch - main [MainThread]: End processing [pyfakefs]: success
+[2024-05-12 08:42:18] INFO root fetch - main [MainThread]: Store serial: [23167537]
