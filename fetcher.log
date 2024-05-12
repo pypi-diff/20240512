@@ -13005,3 +13005,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 17:49:33] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
 [2024-05-12 17:49:33] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
 [2024-05-12 17:49:33] INFO root fetch - main [MainThread]: Store serial: [23171391]
+[2024-05-12 17:51:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171391]
+[2024-05-12 17:51:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 17:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: few-shot-priming
+[2024-05-12 17:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: semihanessz
+[2024-05-12 17:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llmpackagetestidk
+[2024-05-12 17:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: few-shot-priming
+[2024-05-12 17:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyaffalddk
+[2024-05-12 17:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: searchkit
+[2024-05-12 17:51:42] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-05-12 17:51:42] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-05-12 17:51:42] WARNING root fetch - processPackages [semihanessz]: Skipping, unable to determine old version
+[2024-05-12 17:51:42] INFO root fetch - main [MainThread]: End processing [semihanessz] error
+[2024-05-12 17:51:42] WARNING root fetch - processPackages [llmpackagetestidk]: Skipping, unable to determine old version
+[2024-05-12 17:51:42] INFO root fetch - main [MainThread]: End processing [llmpackagetestidk] error
+[2024-05-12 17:51:42] INFO root fetch - processPackages [pyaffalddk]: New version: [2.0.29] Old Version: [2.0.28]
+[2024-05-12 17:51:42] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-05-12 17:51:42] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-05-12 17:51:42] INFO root fetch - processPackages [searchkit]: New version: [0.4.1.post3] Old Version: [0.4.1.post2]
+[2024-05-12 17:51:42] INFO root fetch - processPackages [pyaffalddk]: Downloading https://files.pythonhosted.org/packages/7e/5b/3ab66d672c2a922050b76b35575f8d21ee8b5dc41c09d4579c4a5a48df33/pyaffalddk-2.0.28.tar.gz
+[2024-05-12 17:51:42] INFO root fetch - processPackages [searchkit]: Downloading https://files.pythonhosted.org/packages/9f/78/44850de87062964ec29ec957ff03dea7f33f8f805de1a6d7d1e2b1a61291/searchkit-0.4.1.post2.tar.gz
+[2024-05-12 17:51:42] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-05-12 17:51:42] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-05-12 17:51:42] INFO root fetch - processPackages [pyaffalddk]: Downloading https://files.pythonhosted.org/packages/21/84/48d36bb6e439c9949fb6e5dc872bae00d36257c7fa31233aafd698ef8f35/pyaffalddk-2.0.29.tar.gz
+[2024-05-12 17:51:43] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-05-12 17:51:43] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240512/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-05-12 17:51:43] INFO root fetch - processPackages [searchkit]: Downloading https://files.pythonhosted.org/packages/f5/15/b9bee8cdeaadcee92676fecd4c0852f886ecac4daeb0d6c57b9eb4ce8ff7/searchkit-0.4.1.post3-py3-none-any.whl
+[2024-05-12 17:51:43] INFO root fetch - processPackages [pyaffalddk]: executing diffoscope
+[2024-05-12 17:51:43] INFO root fetch - processPackages [pyaffalddk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaffalddk-2.0.28.tar.gz tmp/pyaffalddk-2.0.29.tar.gz --markdown 20240512/p/pyaffalddk/2.0.28-2.0.29/README.md --exclude *.pyd
+[2024-05-12 17:51:43] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-05-12 17:51:43] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240512/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-05-12 17:51:43] INFO root fetch - processPackages [searchkit]: executing diffoscope
+[2024-05-12 17:51:43] INFO root fetch - processPackages [searchkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchkit-0.4.1.post2.tar.gz tmp/searchkit-0.4.1.post3-py3-none-any.whl.zip --markdown 20240512/s/searchkit/0.4.1.post2-0.4.1.post3/README.md --exclude *.pyd
+[2024-05-12 17:51:43] INFO root fetch - processPackages [pyaffalddk]: Remove: archive file [/home/abi/fetcher/tmp/pyaffalddk-2.0.28.tar.gz]
+[2024-05-12 17:51:43] INFO root fetch - processPackages [pyaffalddk]: Remove: archive file [/home/abi/fetcher/tmp/pyaffalddk-2.0.29.tar.gz]
+[2024-05-12 17:51:43] INFO root fetch - main [MainThread]: End processing [pyaffalddk]: success
+[2024-05-12 17:51:43] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-05-12 17:51:43] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-05-12 17:51:43] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-05-12 17:51:44] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-05-12 17:51:44] INFO root fetch - processPackages [searchkit]: Remove: archive file [/home/abi/fetcher/tmp/searchkit-0.4.1.post2.tar.gz]
+[2024-05-12 17:51:44] INFO root fetch - processPackages [searchkit]: Remove: archive file [/home/abi/fetcher/tmp/searchkit-0.4.1.post3-py3-none-any.whl.zip]
+[2024-05-12 17:51:44] INFO root fetch - main [MainThread]: End processing [searchkit]: success
+[2024-05-12 17:51:44] INFO root fetch - main [MainThread]: Store serial: [23171412]
