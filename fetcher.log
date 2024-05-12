@@ -12013,3 +12013,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:52:30] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip]
 [2024-05-12 16:52:30] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
 [2024-05-12 16:52:30] INFO root fetch - main [MainThread]: Store serial: [23170880]
+[2024-05-12 16:54:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170880]
+[2024-05-12 16:54:38] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-12 16:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mrsegmentator
+[2024-05-12 16:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-mysql-replication
+[2024-05-12 16:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: remotion-lambda
+[2024-05-12 16:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigcode
+[2024-05-12 16:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webflask
+[2024-05-12 16:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rejoicementz
+[2024-05-12 16:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: llm-bench
+[2024-05-12 16:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: obscure_stats
+[2024-05-12 16:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: stathmoiz
+[2024-05-12 16:54:38] WARNING root fetch - processPackages [webflask]: Skipping, unable to determine old version
+[2024-05-12 16:54:38] INFO root fetch - main [MainThread]: End processing [webflask] error
+[2024-05-12 16:54:38] WARNING root fetch - processPackages [django-mysql-replication]: Skipping, unable to determine old version
+[2024-05-12 16:54:38] INFO root fetch - main [MainThread]: End processing [django-mysql-replication] error
+[2024-05-12 16:54:38] INFO root fetch - processPackages [llm-bench]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-05-12 16:54:38] INFO root fetch - processPackages [bigcode]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-12 16:54:38] INFO root fetch - processPackages [remotion-lambda]: New version: [4.1.0a12] Old Version: [4.0.98]
+[2024-05-12 16:54:38] INFO root fetch - processPackages [mrsegmentator]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-12 16:54:38] WARNING root fetch - processPackages [stathmoiz]: Skipping, unable to determine old version
+[2024-05-12 16:54:38] INFO root fetch - main [MainThread]: End processing [stathmoiz] error
+[2024-05-12 16:54:38] WARNING root fetch - processPackages [rejoicementz]: Skipping, unable to determine old version
+[2024-05-12 16:54:38] INFO root fetch - main [MainThread]: End processing [rejoicementz] error
+[2024-05-12 16:54:38] INFO root fetch - processPackages [obscure_stats]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-12 16:54:38] INFO root fetch - processPackages [bigcode]: Downloading https://files.pythonhosted.org/packages/a5/62/5033e363cf6dde6601e474b52b181972b43fae0c4d97287a06bc3c97aab0/bigcode-1.0.2.tar.gz
+[2024-05-12 16:54:38] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/e1/8b/ffe1bb73ea8706ad33c03e5eca0ec8107a41fd69d41702dab09d10f13c79/llm_bench-0.4.6.tar.gz
+[2024-05-12 16:54:38] INFO root fetch - processPackages [remotion-lambda]: Downloading https://files.pythonhosted.org/packages/3f/c5/94eff7677b9dca598bdba065311eeb371512d0bb7b2ded018d2bffb1597a/remotion_lambda-4.0.98.tar.gz
+[2024-05-12 16:54:38] INFO root fetch - processPackages [obscure_stats]: Downloading https://files.pythonhosted.org/packages/e9/b0/0e376d9e3f4d7a5a1162e7aa1e8ef3ce395fcf2f174c02b18bcf97ea34b4/obscure_stats-0.2.3.tar.gz
+[2024-05-12 16:54:38] INFO root fetch - processPackages [mrsegmentator]: Downloading https://files.pythonhosted.org/packages/6d/ca/036f3172c247ad2ae153ebdbe42348db0d705c31ca8470c9c0762d49ee17/mrsegmentator-1.0.1.tar.gz
+[2024-05-12 16:54:39] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/30/ee/4d888659cc0afb687767dc7eaa03ae8d7e211da89cea96287509b5f2d96f/llm_bench-0.4.7.tar.gz
+[2024-05-12 16:54:39] INFO root fetch - processPackages [bigcode]: Downloading https://files.pythonhosted.org/packages/39/37/1ca67b58cb06c29aeb1c1940aee901930deb931f6ccb6c93e56549c0456f/bigcode-1.0.3.tar.gz
+[2024-05-12 16:54:39] INFO root fetch - processPackages [remotion-lambda]: Downloading https://files.pythonhosted.org/packages/e2/46/7d3e726fcba2427f51b340f14b65270f6df2b6123085c439b9855a0ab1cd/remotion_lambda-4.1.0a12.tar.gz
+[2024-05-12 16:54:39] INFO root fetch - processPackages [mrsegmentator]: Downloading https://files.pythonhosted.org/packages/ab/eb/65e6ad08fc577117fcfd3ee243e35bdd0b1f81409ce3cabf1e899f65040e/mrsegmentator-1.0.2.tar.gz
+[2024-05-12 16:54:39] INFO root fetch - processPackages [llm-bench]: executing diffoscope
+[2024-05-12 16:54:39] INFO root fetch - processPackages [llm-bench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_bench-0.4.6.tar.gz tmp/llm_bench-0.4.7.tar.gz --markdown 20240512/l/llm-bench/0.4.6-0.4.7/README.md --exclude *.pyd
+[2024-05-12 16:54:39] INFO root fetch - processPackages [bigcode]: executing diffoscope
+[2024-05-12 16:54:39] INFO root fetch - processPackages [bigcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigcode-1.0.2.tar.gz tmp/bigcode-1.0.3.tar.gz --markdown 20240512/b/bigcode/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-12 16:54:39] INFO root fetch - processPackages [obscure_stats]: Downloading https://files.pythonhosted.org/packages/ac/55/b288baa324903167bc66471ad51bf765a587a133f20f4f16a8870e569c43/obscure_stats-0.2.4.tar.gz
+[2024-05-12 16:54:39] INFO root fetch - processPackages [remotion-lambda]: executing diffoscope
+[2024-05-12 16:54:39] INFO root fetch - processPackages [remotion-lambda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remotion_lambda-4.0.98.tar.gz tmp/remotion_lambda-4.1.0a12.tar.gz --markdown 20240512/r/remotion-lambda/4.0.98-4.1.0a12/README.md --exclude *.pyd
+[2024-05-12 16:54:39] INFO root fetch - processPackages [mrsegmentator]: executing diffoscope
+[2024-05-12 16:54:39] INFO root fetch - processPackages [mrsegmentator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrsegmentator-1.0.1.tar.gz tmp/mrsegmentator-1.0.2.tar.gz --markdown 20240512/m/mrsegmentator/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-12 16:54:39] INFO root fetch - processPackages [obscure_stats]: executing diffoscope
+[2024-05-12 16:54:39] INFO root fetch - processPackages [obscure_stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obscure_stats-0.2.3.tar.gz tmp/obscure_stats-0.2.4.tar.gz --markdown 20240512/o/obscure_stats/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-12 16:54:39] INFO root fetch - processPackages [bigcode]: Remove: archive file [/home/abi/fetcher/tmp/bigcode-1.0.2.tar.gz]
+[2024-05-12 16:54:39] INFO root fetch - processPackages [bigcode]: Remove: archive file [/home/abi/fetcher/tmp/bigcode-1.0.3.tar.gz]
+[2024-05-12 16:54:39] INFO root fetch - main [MainThread]: End processing [bigcode]: success
+[2024-05-12 16:54:40] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.6.tar.gz]
+[2024-05-12 16:54:40] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.7.tar.gz]
+[2024-05-12 16:54:40] INFO root fetch - main [MainThread]: End processing [llm-bench]: success
+[2024-05-12 16:54:40] INFO root fetch - processPackages [mrsegmentator]: Remove: archive file [/home/abi/fetcher/tmp/mrsegmentator-1.0.1.tar.gz]
+[2024-05-12 16:54:40] INFO root fetch - processPackages [mrsegmentator]: Remove: archive file [/home/abi/fetcher/tmp/mrsegmentator-1.0.2.tar.gz]
+[2024-05-12 16:54:40] INFO root fetch - main [MainThread]: End processing [mrsegmentator]: success
+[2024-05-12 16:54:40] INFO root fetch - processPackages [remotion-lambda]: Remove: archive file [/home/abi/fetcher/tmp/remotion_lambda-4.0.98.tar.gz]
+[2024-05-12 16:54:40] INFO root fetch - processPackages [remotion-lambda]: Remove: archive file [/home/abi/fetcher/tmp/remotion_lambda-4.1.0a12.tar.gz]
+[2024-05-12 16:54:40] INFO root fetch - main [MainThread]: End processing [remotion-lambda]: success
+[2024-05-12 16:54:40] INFO root fetch - processPackages [obscure_stats]: Remove: archive file [/home/abi/fetcher/tmp/obscure_stats-0.2.3.tar.gz]
+[2024-05-12 16:54:40] INFO root fetch - processPackages [obscure_stats]: Remove: archive file [/home/abi/fetcher/tmp/obscure_stats-0.2.4.tar.gz]
+[2024-05-12 16:54:40] INFO root fetch - main [MainThread]: End processing [obscure_stats]: success
+[2024-05-12 16:54:40] INFO root fetch - main [MainThread]: Store serial: [23170912]
