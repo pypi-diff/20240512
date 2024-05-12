@@ -9715,3 +9715,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:02:23] INFO root fetch - processPackages [wg-utilities]: Remove: archive file [/home/abi/fetcher/tmp/wg_utilities-5.9.0.tar.gz]
 [2024-05-12 14:02:23] INFO root fetch - main [MainThread]: End processing [wg-utilities]: success
 [2024-05-12 14:02:23] INFO root fetch - main [MainThread]: Store serial: [23169600]
+[2024-05-12 14:04:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169600]
+[2024-05-12 14:04:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 14:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AlgoGrade
+[2024-05-12 14:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vollseg
+[2024-05-12 14:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: extrautilitys
+[2024-05-12 14:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: parse-llm-code
+[2024-05-12 14:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: loggingA
+[2024-05-12 14:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lexwolf
+[2024-05-12 14:04:32] INFO root fetch - processPackages [AlgoGrade]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-12 14:04:32] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2024-05-12 14:04:32] INFO root fetch - processPackages [lexwolf]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-05-12 14:04:32] INFO root fetch - processPackages [parse-llm-code]: New version: [0.1.5] Old Version: [0.0.1]
+[2024-05-12 14:04:32] WARNING root fetch - processPackages [loggingA]: Skipping, unable to determine old version
+[2024-05-12 14:04:32] INFO root fetch - main [MainThread]: End processing [loggingA] error
+[2024-05-12 14:04:32] WARNING root fetch - processPackages [extrautilitys]: Skipping, unable to determine old version
+[2024-05-12 14:04:32] INFO root fetch - main [MainThread]: End processing [extrautilitys] error
+[2024-05-12 14:04:32] INFO root fetch - processPackages [AlgoGrade]: Downloading https://files.pythonhosted.org/packages/33/90/206b7f28a7e746ae76657cb69afe50035d6aff011258781e2ece9766581b/AlgoGrade-1.0.8.tar.gz
+[2024-05-12 14:04:32] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2024-05-12 14:04:32] INFO root fetch - processPackages [lexwolf]: Downloading https://files.pythonhosted.org/packages/cd/f0/79a892cce5d15203c27a577cca1ba2f5aa2ded56b964b4ac3f3a0c8bc260/lexwolf-0.1.4.tar.gz
+[2024-05-12 14:04:32] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2024-05-12 14:04:32] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2024-05-12 14:04:32] INFO root fetch - processPackages [parse-llm-code]: Downloading https://files.pythonhosted.org/packages/08/bd/5930a1f6a721473159c699c52807a0573dd09cd4cf91e961e7984d1464dc/parse_llm_code-0.0.1.tar.gz
+[2024-05-12 14:04:32] INFO root fetch - processPackages [AlgoGrade]: Downloading https://files.pythonhosted.org/packages/f3/8c/50a21ccffcb9d6f18d7b27b3039f1e90a1b91fe9721d89295f083a8bf52c/AlgoGrade-1.0.9.tar.gz
+[2024-05-12 14:04:32] INFO root fetch - processPackages [lexwolf]: Downloading https://files.pythonhosted.org/packages/e9/3b/ec1d5c2d8dc1e2a4142bfd5bb64aac882829f9ec5b5cd66d62d10039dad6/lexwolf-0.2.0.tar.gz
+[2024-05-12 14:04:32] INFO root fetch - processPackages [AlgoGrade]: executing diffoscope
+[2024-05-12 14:04:32] INFO root fetch - processPackages [AlgoGrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AlgoGrade-1.0.8.tar.gz tmp/AlgoGrade-1.0.9.tar.gz --markdown 20240512/A/AlgoGrade/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-12 14:04:32] INFO root fetch - processPackages [lexwolf]: executing diffoscope
+[2024-05-12 14:04:32] INFO root fetch - processPackages [lexwolf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lexwolf-0.1.4.tar.gz tmp/lexwolf-0.2.0.tar.gz --markdown 20240512/l/lexwolf/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-05-12 14:04:32] INFO root fetch - processPackages [parse-llm-code]: Downloading https://files.pythonhosted.org/packages/46/1f/88c3f6ca2ad61f0ec88608aba44764240db7f46e606fa92df7517d1e204b/parse_llm_code-0.1.5.tar.gz
+[2024-05-12 14:04:33] INFO root fetch - processPackages [parse-llm-code]: executing diffoscope
+[2024-05-12 14:04:33] INFO root fetch - processPackages [parse-llm-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parse_llm_code-0.0.1.tar.gz tmp/parse_llm_code-0.1.5.tar.gz --markdown 20240512/p/parse-llm-code/0.0.1-0.1.5/README.md --exclude *.pyd
+[2024-05-12 14:04:33] INFO root fetch - processPackages [lexwolf]: Remove: archive file [/home/abi/fetcher/tmp/lexwolf-0.1.4.tar.gz]
+[2024-05-12 14:04:33] INFO root fetch - processPackages [lexwolf]: Remove: archive file [/home/abi/fetcher/tmp/lexwolf-0.2.0.tar.gz]
+[2024-05-12 14:04:33] INFO root fetch - main [MainThread]: End processing [lexwolf]: success
+[2024-05-12 14:04:33] INFO root fetch - processPackages [AlgoGrade]: Remove: archive file [/home/abi/fetcher/tmp/AlgoGrade-1.0.8.tar.gz]
+[2024-05-12 14:04:33] INFO root fetch - processPackages [AlgoGrade]: Remove: archive file [/home/abi/fetcher/tmp/AlgoGrade-1.0.9.tar.gz]
+[2024-05-12 14:04:33] INFO root fetch - main [MainThread]: End processing [AlgoGrade]: success
+[2024-05-12 14:04:33] INFO root fetch - processPackages [parse-llm-code]: Remove: archive file [/home/abi/fetcher/tmp/parse_llm_code-0.0.1.tar.gz]
+[2024-05-12 14:04:33] INFO root fetch - processPackages [parse-llm-code]: Remove: archive file [/home/abi/fetcher/tmp/parse_llm_code-0.1.5.tar.gz]
+[2024-05-12 14:04:33] INFO root fetch - main [MainThread]: End processing [parse-llm-code]: success
+[2024-05-12 14:04:33] INFO root fetch - main [MainThread]: Store serial: [23169622]
