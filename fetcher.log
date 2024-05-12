@@ -2605,3 +2605,39 @@
 [2024-05-12 03:56:09] INFO root fetch - processPackages [tesla-fleet-api]: Remove: archive file [/home/abi/fetcher/tmp/tesla_fleet_api-0.5.8.tar.gz]
 [2024-05-12 03:56:09] INFO root fetch - main [MainThread]: End processing [tesla-fleet-api]: success
 [2024-05-12 03:56:09] INFO root fetch - main [MainThread]: Store serial: [23166174]
+[2024-05-12 03:58:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166174]
+[2024-05-12 03:58:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 03:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: breastplatez
+[2024-05-12 03:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hj-proj-module
+[2024-05-12 03:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NearBeach
+[2024-05-12 03:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Sherlock-testABCYUEGUGHRIUHGU
+[2024-05-12 03:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Sherlock-testABCYUEGUGHRIUHGU
+[2024-05-12 03:58:18] INFO root fetch - processPackages [hj-proj-module]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-05-12 03:58:18] INFO root fetch - processPackages [hj-proj-module]: Downloading https://files.pythonhosted.org/packages/db/12/7bb0e640457f3bbbbc0b77439e6b03839642728f5b9676f3a6cdbf41672e/hj_proj_module-0.1.7.tar.gz
+[2024-05-12 03:58:18] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: New version: [0.14.5] Old Version: [0.14.4a0]
+[2024-05-12 03:58:18] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: New version: [0.14.5] Old Version: [0.14.4a0]
+[2024-05-12 03:58:18] WARNING root fetch - processPackages [breastplatez]: Skipping, unable to determine old version
+[2024-05-12 03:58:18] INFO root fetch - main [MainThread]: End processing [breastplatez] error
+[2024-05-12 03:58:18] INFO root fetch - processPackages [NearBeach]: New version: [0.31.9] Old Version: [0.31.8]
+[2024-05-12 03:58:18] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Downloading https://files.pythonhosted.org/packages/26/d4/75a33de75396d3970e7de48a2420b6518bb15bf767ffd81ddc14145dc922/sherlock_testabcyuegughriuhgu-0.14.4a0.tar.gz
+[2024-05-12 03:58:18] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Downloading https://files.pythonhosted.org/packages/26/d4/75a33de75396d3970e7de48a2420b6518bb15bf767ffd81ddc14145dc922/sherlock_testabcyuegughriuhgu-0.14.4a0.tar.gz
+[2024-05-12 03:58:18] INFO root fetch - processPackages [hj-proj-module]: Downloading https://files.pythonhosted.org/packages/94/49/69693d7a64f73d84255649b427048581401581af1b2733dd7b132cd4a620/hj_proj_module-0.1.9.tar.gz
+[2024-05-12 03:58:18] INFO root fetch - processPackages [NearBeach]: Downloading https://files.pythonhosted.org/packages/d3/c9/4444a9584fae7ddaa87ff4efa7f16f8833a3827e50758749323b05d77edd/nearbeach-0.31.8.tar.gz
+[2024-05-12 03:58:18] WARNING root fetch - processPackages [NearBeach]: Skipping package: exceeds size limit 32530107>=10485760
+[2024-05-12 03:58:18] INFO root fetch - main [MainThread]: End processing [NearBeach] error
+[2024-05-12 03:58:18] INFO root fetch - processPackages [hj-proj-module]: executing diffoscope
+[2024-05-12 03:58:18] INFO root fetch - processPackages [hj-proj-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hj_proj_module-0.1.7.tar.gz tmp/hj_proj_module-0.1.9.tar.gz --markdown 20240512/h/hj-proj-module/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-05-12 03:58:18] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Downloading https://files.pythonhosted.org/packages/1c/3f/65924cb2e4268fd31e41d7810295091b3ff6646cc433d5aa43d0ec16f6a9/sherlock_testabcyuegughriuhgu-0.14.5.tar.gz
+[2024-05-12 03:58:18] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Downloading https://files.pythonhosted.org/packages/1c/3f/65924cb2e4268fd31e41d7810295091b3ff6646cc433d5aa43d0ec16f6a9/sherlock_testabcyuegughriuhgu-0.14.5.tar.gz
+[2024-05-12 03:58:18] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: executing diffoscope
+[2024-05-12 03:58:18] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sherlock_testabcyuegughriuhgu-0.14.4a0.tar.gz tmp/sherlock_testabcyuegughriuhgu-0.14.5.tar.gz --markdown 20240512/S/Sherlock-testABCYUEGUGHRIUHGU/0.14.4a0-0.14.5/README.md --exclude *.pyd
+[2024-05-12 03:58:18] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: executing diffoscope
+[2024-05-12 03:58:18] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sherlock_testabcyuegughriuhgu-0.14.4a0.tar.gz tmp/sherlock_testabcyuegughriuhgu-0.14.5.tar.gz --markdown 20240512/S/Sherlock-testABCYUEGUGHRIUHGU/0.14.4a0-0.14.5/README.md --exclude *.pyd
+[2024-05-12 03:58:19] INFO root fetch - processPackages [hj-proj-module]: Remove: archive file [/home/abi/fetcher/tmp/hj_proj_module-0.1.7.tar.gz]
+[2024-05-12 03:58:19] INFO root fetch - processPackages [hj-proj-module]: Remove: archive file [/home/abi/fetcher/tmp/hj_proj_module-0.1.9.tar.gz]
+[2024-05-12 03:58:19] INFO root fetch - main [MainThread]: End processing [hj-proj-module]: success
+[2024-05-12 03:58:19] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Remove: archive file [/home/abi/fetcher/tmp/sherlock_testabcyuegughriuhgu-0.14.4a0.tar.gz]
+[2024-05-12 03:58:19] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Remove: archive file [/home/abi/fetcher/tmp/sherlock_testabcyuegughriuhgu-0.14.5.tar.gz]
+[2024-05-12 03:58:19] INFO root fetch - main [MainThread]: End processing [Sherlock-testABCYUEGUGHRIUHGU]: success
+[2024-05-12 03:58:19] INFO root fetch - main [MainThread]: End processing [Sherlock-testABCYUEGUGHRIUHGU]: success
+[2024-05-12 03:58:19] INFO root fetch - main [MainThread]: Store serial: [23166191]
