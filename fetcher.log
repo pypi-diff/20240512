@@ -3613,3 +3613,51 @@
 [2024-05-12 05:12:51] INFO root fetch - processPackages [mdreftidy]: Remove: archive file [/home/abi/fetcher/tmp/mdreftidy-0.3.1.tar.gz]
 [2024-05-12 05:12:51] INFO root fetch - main [MainThread]: End processing [mdreftidy]: success
 [2024-05-12 05:12:51] INFO root fetch - main [MainThread]: Store serial: [23166579]
+[2024-05-12 05:14:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166579]
+[2024-05-12 05:15:00] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 05:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lavagez
+[2024-05-12 05:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seductive
+[2024-05-12 05:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pure-utils
+[2024-05-12 05:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: JayttleProcess
+[2024-05-12 05:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: todoist-auto
+[2024-05-12 05:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ScreenPro2
+[2024-05-12 05:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: greatbrowser
+[2024-05-12 05:15:00] WARNING root fetch - processPackages [lavagez]: Skipping, unable to determine old version
+[2024-05-12 05:15:00] INFO root fetch - main [MainThread]: End processing [lavagez] error
+[2024-05-12 05:15:00] INFO root fetch - processPackages [ScreenPro2]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-05-12 05:15:00] INFO root fetch - processPackages [todoist-auto]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-05-12 05:15:00] INFO root fetch - processPackages [ScreenPro2]: Downloading https://files.pythonhosted.org/packages/7d/8a/61bafdb52eb9fcce0d3c7b4deeef65bdf99aee21d23a408eb4bd3d9b2692/ScreenPro2-0.2.9-py2.py3-none-any.whl
+[2024-05-12 05:15:00] INFO root fetch - processPackages [pure-utils]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-12 05:15:00] WARNING root fetch - processPackages [greatbrowser]: Skipping, unable to determine old version
+[2024-05-12 05:15:00] INFO root fetch - main [MainThread]: End processing [greatbrowser] error
+[2024-05-12 05:15:00] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/b1/78/baea81138dfb8700e7a2b795b192569b97f1b353b15e6374ef7c32ec9bd9/todoist_auto-8.0.0.tar.gz
+[2024-05-12 05:15:00] INFO root fetch - processPackages [JayttleProcess]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-12 05:15:00] WARNING root fetch - processPackages [seductive]: Skipping, unable to determine old version
+[2024-05-12 05:15:00] INFO root fetch - main [MainThread]: End processing [seductive] error
+[2024-05-12 05:15:00] INFO root fetch - processPackages [pure-utils]: Downloading https://files.pythonhosted.org/packages/c4/30/b7b410e4cb563317dc53465cacf9554cdfb1dc5af959da54f05d5407a713/pure_utils-0.8.0.tar.gz
+[2024-05-12 05:15:00] INFO root fetch - processPackages [JayttleProcess]: Downloading https://files.pythonhosted.org/packages/5d/65/43d28dc1db7c11a8a18f2ef2e7cae7a890e07b1533e554607e5400dfedc2/JayttleProcess-0.3.0-py3-none-any.whl
+[2024-05-12 05:15:00] INFO root fetch - processPackages [ScreenPro2]: Downloading https://files.pythonhosted.org/packages/d1/ee/079050d69dcd936bf4614b6375873f1b833b536c801ed16deadb680b8f61/ScreenPro2-0.3.0-py2.py3-none-any.whl
+[2024-05-12 05:15:00] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/ad/42/49bc0ab11074d45b08e24c5a91b302992d6e5855e521f2a779d82a91eed5/todoist_auto-9.0.0.tar.gz
+[2024-05-12 05:15:00] INFO root fetch - processPackages [ScreenPro2]: executing diffoscope
+[2024-05-12 05:15:00] INFO root fetch - processPackages [ScreenPro2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScreenPro2-0.2.9-py2.py3-none-any.whl.zip tmp/ScreenPro2-0.3.0-py2.py3-none-any.whl.zip --markdown 20240512/S/ScreenPro2/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-05-12 05:15:00] INFO root fetch - processPackages [todoist-auto]: executing diffoscope
+[2024-05-12 05:15:00] INFO root fetch - processPackages [todoist-auto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/todoist_auto-8.0.0.tar.gz tmp/todoist_auto-9.0.0.tar.gz --markdown 20240512/t/todoist-auto/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-05-12 05:15:00] INFO root fetch - processPackages [pure-utils]: Downloading https://files.pythonhosted.org/packages/7c/8c/a516d114be79906fd7ca57ff66747755c33f2d449c7333b8b84b5be988a4/pure_utils-0.9.0.tar.gz
+[2024-05-12 05:15:00] INFO root fetch - processPackages [JayttleProcess]: Downloading https://files.pythonhosted.org/packages/c0/28/7450db804464a278a1728c0ee812185fb678ba345f753f706385a6b33c2e/JayttleProcess-0.3.1-py3-none-any.whl
+[2024-05-12 05:15:01] INFO root fetch - processPackages [JayttleProcess]: executing diffoscope
+[2024-05-12 05:15:01] INFO root fetch - processPackages [JayttleProcess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JayttleProcess-0.3.0-py3-none-any.whl.zip tmp/JayttleProcess-0.3.1-py3-none-any.whl.zip --markdown 20240512/J/JayttleProcess/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-12 05:15:01] INFO root fetch - processPackages [pure-utils]: executing diffoscope
+[2024-05-12 05:15:01] INFO root fetch - processPackages [pure-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pure_utils-0.8.0.tar.gz tmp/pure_utils-0.9.0.tar.gz --markdown 20240512/p/pure-utils/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-12 05:15:01] INFO root fetch - processPackages [ScreenPro2]: Remove: archive file [/home/abi/fetcher/tmp/ScreenPro2-0.2.9-py2.py3-none-any.whl.zip]
+[2024-05-12 05:15:01] INFO root fetch - processPackages [ScreenPro2]: Remove: archive file [/home/abi/fetcher/tmp/ScreenPro2-0.3.0-py2.py3-none-any.whl.zip]
+[2024-05-12 05:15:01] INFO root fetch - main [MainThread]: End processing [ScreenPro2]: success
+[2024-05-12 05:15:01] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-8.0.0.tar.gz]
+[2024-05-12 05:15:01] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-9.0.0.tar.gz]
+[2024-05-12 05:15:01] INFO root fetch - main [MainThread]: End processing [todoist-auto]: success
+[2024-05-12 05:15:01] INFO root fetch - processPackages [JayttleProcess]: Remove: archive file [/home/abi/fetcher/tmp/JayttleProcess-0.3.0-py3-none-any.whl.zip]
+[2024-05-12 05:15:01] INFO root fetch - processPackages [JayttleProcess]: Remove: archive file [/home/abi/fetcher/tmp/JayttleProcess-0.3.1-py3-none-any.whl.zip]
+[2024-05-12 05:15:01] INFO root fetch - main [MainThread]: End processing [JayttleProcess]: success
+[2024-05-12 05:15:01] INFO root fetch - processPackages [pure-utils]: Remove: archive file [/home/abi/fetcher/tmp/pure_utils-0.8.0.tar.gz]
+[2024-05-12 05:15:01] INFO root fetch - processPackages [pure-utils]: Remove: archive file [/home/abi/fetcher/tmp/pure_utils-0.9.0.tar.gz]
+[2024-05-12 05:15:01] INFO root fetch - main [MainThread]: End processing [pure-utils]: success
+[2024-05-12 05:15:01] INFO root fetch - main [MainThread]: Store serial: [23166602]
