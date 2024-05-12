@@ -8740,3 +8740,29 @@
 [2024-05-12 12:49:33] INFO root fetch - processPackages [gitlab-emulator]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_emulator-16.2.5-py3-none-any.whl.zip]
 [2024-05-12 12:49:33] INFO root fetch - main [MainThread]: End processing [gitlab-emulator]: success
 [2024-05-12 12:49:33] INFO root fetch - main [MainThread]: Store serial: [23169145]
+[2024-05-12 12:51:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169145]
+[2024-05-12 12:51:41] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-12 12:53:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169181]
+[2024-05-12 12:53:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 12:53:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bibla
+[2024-05-12 12:53:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pySigma-backend-QRadar-AQL
+[2024-05-12 12:53:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bintsz
+[2024-05-12 12:53:48] INFO root fetch - processPackages [bibla]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-05-12 12:53:48] INFO root fetch - processPackages [bibla]: Downloading https://files.pythonhosted.org/packages/a0/0b/556736c712a2fa11325bd81ef87c3ab37c278c1f2dfb0b2d1a295ee71d27/bibla-2.0.1.tar.gz
+[2024-05-12 12:53:48] INFO root fetch - processPackages [pySigma-backend-QRadar-AQL]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-12 12:53:48] WARNING root fetch - processPackages [bintsz]: Skipping, unable to determine old version
+[2024-05-12 12:53:48] INFO root fetch - main [MainThread]: End processing [bintsz] error
+[2024-05-12 12:53:48] INFO root fetch - processPackages [pySigma-backend-QRadar-AQL]: Downloading https://files.pythonhosted.org/packages/68/46/1688a126a76fe88ed79d8c6f5c3bc26ecb58f9408d32c5acf76895d1c39d/pysigma_backend_qradar_aql-0.3.1.tar.gz
+[2024-05-12 12:53:48] INFO root fetch - processPackages [bibla]: Downloading https://files.pythonhosted.org/packages/5b/26/3537434dd646a7d54aa1d5c3b1ce345eef11ba5abbd75f88cdbc541c436e/bibla-2.0.2.tar.gz
+[2024-05-12 12:53:48] INFO root fetch - processPackages [bibla]: executing diffoscope
+[2024-05-12 12:53:48] INFO root fetch - processPackages [bibla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bibla-2.0.1.tar.gz tmp/bibla-2.0.2.tar.gz --markdown 20240512/b/bibla/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-05-12 12:53:48] INFO root fetch - processPackages [pySigma-backend-QRadar-AQL]: Downloading https://files.pythonhosted.org/packages/49/8b/db4c4d3927d2642ca215f10d6e7553c2845dea7b1d9779910fb9c92e3005/pysigma_backend_qradar_aql-0.3.2.tar.gz
+[2024-05-12 12:53:49] INFO root fetch - processPackages [pySigma-backend-QRadar-AQL]: executing diffoscope
+[2024-05-12 12:53:49] INFO root fetch - processPackages [pySigma-backend-QRadar-AQL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysigma_backend_qradar_aql-0.3.1.tar.gz tmp/pysigma_backend_qradar_aql-0.3.2.tar.gz --markdown 20240512/p/pySigma-backend-QRadar-AQL/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-12 12:53:49] INFO root fetch - processPackages [bibla]: Remove: archive file [/home/abi/fetcher/tmp/bibla-2.0.1.tar.gz]
+[2024-05-12 12:53:49] INFO root fetch - processPackages [bibla]: Remove: archive file [/home/abi/fetcher/tmp/bibla-2.0.2.tar.gz]
+[2024-05-12 12:53:49] INFO root fetch - main [MainThread]: End processing [bibla]: success
+[2024-05-12 12:53:49] INFO root fetch - processPackages [pySigma-backend-QRadar-AQL]: Remove: archive file [/home/abi/fetcher/tmp/pysigma_backend_qradar_aql-0.3.1.tar.gz]
+[2024-05-12 12:53:49] INFO root fetch - processPackages [pySigma-backend-QRadar-AQL]: Remove: archive file [/home/abi/fetcher/tmp/pysigma_backend_qradar_aql-0.3.2.tar.gz]
+[2024-05-12 12:53:49] INFO root fetch - main [MainThread]: End processing [pySigma-backend-QRadar-AQL]: success
+[2024-05-12 12:53:49] INFO root fetch - main [MainThread]: Store serial: [23169197]
