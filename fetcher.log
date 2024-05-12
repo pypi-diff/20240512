@@ -15673,3 +15673,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:45:37] INFO root fetch - processPackages [kmport]: Remove: archive file [/home/abi/fetcher/tmp/kmport-2.1.9.tar.gz]
 [2024-05-12 20:45:37] INFO root fetch - main [MainThread]: End processing [kmport]: success
 [2024-05-12 20:45:37] INFO root fetch - main [MainThread]: Store serial: [23172772]
+[2024-05-12 20:47:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172772]
+[2024-05-12 20:47:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 20:47:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abdominalz
+[2024-05-12 20:47:47] WARNING root fetch - processPackages [abdominalz]: Skipping, unable to determine old version
+[2024-05-12 20:47:47] INFO root fetch - main [MainThread]: End processing [abdominalz] error
+[2024-05-12 20:47:47] INFO root fetch - main [MainThread]: Store serial: [23172776]
