@@ -6576,3 +6576,11 @@
 [2024-05-12 09:51:59] INFO root fetch - processPackages [agilecoder]: Remove: archive file [/home/abi/fetcher/tmp/agilecoder-0.1.5.tar.gz]
 [2024-05-12 09:51:59] INFO root fetch - main [MainThread]: End processing [agilecoder]: success
 [2024-05-12 09:51:59] INFO root fetch - main [MainThread]: Store serial: [23167932]
+[2024-05-12 09:54:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167932]
+[2024-05-12 09:54:08] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-12 09:56:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167932]
+[2024-05-12 09:56:14] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 09:56:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oversweetz
+[2024-05-12 09:56:14] WARNING root fetch - processPackages [oversweetz]: Skipping, unable to determine old version
+[2024-05-12 09:56:14] INFO root fetch - main [MainThread]: End processing [oversweetz] error
+[2024-05-12 09:56:14] INFO root fetch - main [MainThread]: Store serial: [23167936]
