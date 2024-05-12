@@ -7959,3 +7959,51 @@
 [2024-05-12 11:52:33] INFO root fetch - processPackages [bw-processing]: Remove: archive file [/home/abi/fetcher/tmp/bw_processing-0.9.3-py3-none-any.whl.zip]
 [2024-05-12 11:52:33] INFO root fetch - main [MainThread]: End processing [bw-processing]: success
 [2024-05-12 11:52:33] INFO root fetch - main [MainThread]: Store serial: [23168675]
+[2024-05-12 11:54:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168675]
+[2024-05-12 11:54:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 11:54:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bw-processing
+[2024-05-12 11:54:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: resvg-py
+[2024-05-12 11:54:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plex-fuse
+[2024-05-12 11:54:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jzchatbot
+[2024-05-12 11:54:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qwitch
+[2024-05-12 11:54:41] INFO root fetch - processPackages [plex-fuse]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-05-12 11:54:41] INFO root fetch - processPackages [bw-processing]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-12 11:54:41] INFO root fetch - processPackages [jzchatbot]: New version: [59.83.94] Old Version: [59.83.93]
+[2024-05-12 11:54:41] INFO root fetch - processPackages [resvg-py]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-12 11:54:41] INFO root fetch - processPackages [qwitch]: New version: [2.5.0] Old Version: [2.4.2]
+[2024-05-12 11:54:41] INFO root fetch - processPackages [bw-processing]: Downloading https://files.pythonhosted.org/packages/f4/77/b52359aed7adb92792a52da609fa97cd124c9eb10b3610aab4c737669e4f/bw_processing-0.9.2.tar.gz
+[2024-05-12 11:54:41] INFO root fetch - processPackages [plex-fuse]: Downloading https://files.pythonhosted.org/packages/46/2a/b00cacd6bd0963d6aedb1d6fb59af273b6da9a5bdef30b222be16beed3b3/plex_fuse-0.8.0.tar.gz
+[2024-05-12 11:54:41] INFO root fetch - processPackages [jzchatbot]: Downloading https://files.pythonhosted.org/packages/99/be/30665b753d6c4c0da2c5a9a60f0122cc8050e7608ea4bab02d6844492ead/jzchatbot-59.83.93.tar.gz
+[2024-05-12 11:54:42] INFO root fetch - processPackages [qwitch]: Downloading https://files.pythonhosted.org/packages/53/8a/cb62efe2856d3d2b9f42c5a3e7f984857eb9ed352a3c09a4bef95380d05f/qwitch-2.4.2.tar.gz
+[2024-05-12 11:54:42] INFO root fetch - processPackages [resvg-py]: Downloading https://files.pythonhosted.org/packages/f7/da/8a2bc76ba8797969383e797e908caf877766fd97c9599b903c8068f4751e/resvg_py-0.1.4.tar.gz
+[2024-05-12 11:54:42] INFO root fetch - processPackages [bw-processing]: Downloading https://files.pythonhosted.org/packages/47/e4/143b7146f8fa03dba2ba0b137b2bc9777ef83ffa366ae959c43a5c6f9a87/bw_processing-0.9.3-py3-none-any.whl
+[2024-05-12 11:54:42] INFO root fetch - processPackages [jzchatbot]: Downloading https://files.pythonhosted.org/packages/e3/8a/965c14cb7c034bc8c2613460455137dcdd90862009c01c3d33e9bfdfbda2/jzchatbot-59.83.94.tar.gz
+[2024-05-12 11:54:42] INFO root fetch - processPackages [plex-fuse]: Downloading https://files.pythonhosted.org/packages/e7/e1/68851265d444fbe589b0562ddc3077fdf9706a477b6be70fbc48255a141e/plex_fuse-0.8.1.tar.gz
+[2024-05-12 11:54:42] INFO root fetch - processPackages [bw-processing]: executing diffoscope
+[2024-05-12 11:54:42] INFO root fetch - processPackages [bw-processing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bw_processing-0.9.2.tar.gz tmp/bw_processing-0.9.3-py3-none-any.whl.zip --markdown 20240512/b/bw-processing/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-12 11:54:42] INFO root fetch - processPackages [plex-fuse]: executing diffoscope
+[2024-05-12 11:54:42] INFO root fetch - processPackages [plex-fuse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plex_fuse-0.8.0.tar.gz tmp/plex_fuse-0.8.1.tar.gz --markdown 20240512/p/plex-fuse/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-05-12 11:54:42] INFO root fetch - processPackages [jzchatbot]: executing diffoscope
+[2024-05-12 11:54:42] INFO root fetch - processPackages [jzchatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jzchatbot-59.83.93.tar.gz tmp/jzchatbot-59.83.94.tar.gz --markdown 20240512/j/jzchatbot/59.83.93-59.83.94/README.md --exclude *.pyd
+[2024-05-12 11:54:42] INFO root fetch - processPackages [qwitch]: Downloading https://files.pythonhosted.org/packages/9c/55/39812b41488e656a3e5f422ac2a4b4f7f6a04608dd7d6d2436e9de60b244/qwitch-2.5.0.tar.gz
+[2024-05-12 11:54:42] INFO root fetch - processPackages [resvg-py]: Downloading https://files.pythonhosted.org/packages/23/be/7b8cfeb3ee2b90a031dbc0f3704da6db7eb47a2d166f93e130454caef163/resvg_py-0.1.5.tar.gz
+[2024-05-12 11:54:42] INFO root fetch - processPackages [qwitch]: executing diffoscope
+[2024-05-12 11:54:42] INFO root fetch - processPackages [qwitch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwitch-2.4.2.tar.gz tmp/qwitch-2.5.0.tar.gz --markdown 20240512/q/qwitch/2.4.2-2.5.0/README.md --exclude *.pyd
+[2024-05-12 11:54:42] INFO root fetch - processPackages [bw-processing]: Remove: archive file [/home/abi/fetcher/tmp/bw_processing-0.9.2.tar.gz]
+[2024-05-12 11:54:42] INFO root fetch - processPackages [bw-processing]: Remove: archive file [/home/abi/fetcher/tmp/bw_processing-0.9.3-py3-none-any.whl.zip]
+[2024-05-12 11:54:42] INFO root fetch - main [MainThread]: End processing [bw-processing]: success
+[2024-05-12 11:54:43] INFO root fetch - processPackages [jzchatbot]: Remove: archive file [/home/abi/fetcher/tmp/jzchatbot-59.83.93.tar.gz]
+[2024-05-12 11:54:43] INFO root fetch - processPackages [jzchatbot]: Remove: archive file [/home/abi/fetcher/tmp/jzchatbot-59.83.94.tar.gz]
+[2024-05-12 11:54:43] INFO root fetch - main [MainThread]: End processing [jzchatbot]: success
+[2024-05-12 11:54:43] INFO root fetch - processPackages [plex-fuse]: Remove: archive file [/home/abi/fetcher/tmp/plex_fuse-0.8.0.tar.gz]
+[2024-05-12 11:54:43] INFO root fetch - processPackages [plex-fuse]: Remove: archive file [/home/abi/fetcher/tmp/plex_fuse-0.8.1.tar.gz]
+[2024-05-12 11:54:43] INFO root fetch - main [MainThread]: End processing [plex-fuse]: success
+[2024-05-12 11:54:43] INFO root fetch - processPackages [resvg-py]: executing diffoscope
+[2024-05-12 11:54:43] INFO root fetch - processPackages [resvg-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resvg_py-0.1.4.tar.gz tmp/resvg_py-0.1.5.tar.gz --markdown 20240512/r/resvg-py/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-12 11:54:43] INFO root fetch - processPackages [qwitch]: Remove: archive file [/home/abi/fetcher/tmp/qwitch-2.4.2.tar.gz]
+[2024-05-12 11:54:43] INFO root fetch - processPackages [qwitch]: Remove: archive file [/home/abi/fetcher/tmp/qwitch-2.5.0.tar.gz]
+[2024-05-12 11:54:43] INFO root fetch - main [MainThread]: End processing [qwitch]: success
+[2024-05-12 11:54:44] INFO root fetch - processPackages [resvg-py]: Remove: archive file [/home/abi/fetcher/tmp/resvg_py-0.1.4.tar.gz]
+[2024-05-12 11:54:44] INFO root fetch - processPackages [resvg-py]: Remove: archive file [/home/abi/fetcher/tmp/resvg_py-0.1.5.tar.gz]
+[2024-05-12 11:54:44] INFO root fetch - main [MainThread]: End processing [resvg-py]: success
+[2024-05-12 11:54:44] INFO root fetch - main [MainThread]: Store serial: [23168753]
