@@ -14523,3 +14523,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:27:28] INFO root fetch - processPackages [pybump]: Remove: archive file [/home/abi/fetcher/tmp/pybump-1.9.3-py3-none-any.whl.zip]
 [2024-05-12 19:27:28] INFO root fetch - main [MainThread]: End processing [pybump]: success
 [2024-05-12 19:27:28] INFO root fetch - main [MainThread]: Store serial: [23172213]
+[2024-05-12 19:29:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172213]
+[2024-05-12 19:29:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 19:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-pricelist-cache
+[2024-05-12 19:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mythiciserz
+[2024-05-12 19:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llmpackagetestidk
+[2024-05-12 19:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Qubx
+[2024-05-12 19:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: medicafe
+[2024-05-12 19:29:37] INFO root fetch - processPackages [llmpackagetestidk]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-12 19:29:37] INFO root fetch - processPackages [medicafe]: New version: [0.240512.4] Old Version: [0.240512.3]
+[2024-05-12 19:29:38] WARNING root fetch - processPackages [odoo-addon-pricelist-cache]: Skipping, unable to determine old version
+[2024-05-12 19:29:38] INFO root fetch - main [MainThread]: End processing [odoo-addon-pricelist-cache] error
+[2024-05-12 19:29:38] WARNING root fetch - processPackages [mythiciserz]: Skipping, unable to determine old version
+[2024-05-12 19:29:38] INFO root fetch - main [MainThread]: End processing [mythiciserz] error
+[2024-05-12 19:29:38] INFO root fetch - processPackages [Qubx]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-12 19:29:38] INFO root fetch - processPackages [llmpackagetestidk]: Downloading https://files.pythonhosted.org/packages/b0/b8/f81c6016394ef8f5138f88624546fc1402cb6d63e619af510144fc62f04d/llmpackagetestidk-0.0.3.tar.gz
+[2024-05-12 19:29:38] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/71/1e/df204f4f48aaa896cd3cbc3f34e7197babfdd8d2c1077706059df78e3327/medicafe-0.240512.3.tar.gz
+[2024-05-12 19:29:38] INFO root fetch - processPackages [Qubx]: Downloading https://files.pythonhosted.org/packages/c4/b8/e0adb2fbcd5c3ce2b8a610354f0019d7335e51b820dc19a5a64535eeb1ff/qubx-0.1.4.tar.gz
+[2024-05-12 19:29:38] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/d1/6b/c213c05cea4da7389c46cbf013863c318799a570cca9646309723257ebbc/medicafe-0.240512.4.tar.gz
+[2024-05-12 19:29:38] INFO root fetch - processPackages [llmpackagetestidk]: Downloading https://files.pythonhosted.org/packages/ae/6a/f404207036460e58527b4006f102a74da0ebb56cded3e4325d8309c6247d/llmpackagetestidk-0.0.4.tar.gz
+[2024-05-12 19:29:38] INFO root fetch - processPackages [medicafe]: executing diffoscope
+[2024-05-12 19:29:38] INFO root fetch - processPackages [medicafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medicafe-0.240512.3.tar.gz tmp/medicafe-0.240512.4.tar.gz --markdown 20240512/m/medicafe/0.240512.3-0.240512.4/README.md --exclude *.pyd
+[2024-05-12 19:29:38] INFO root fetch - processPackages [llmpackagetestidk]: executing diffoscope
+[2024-05-12 19:29:38] INFO root fetch - processPackages [llmpackagetestidk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmpackagetestidk-0.0.3.tar.gz tmp/llmpackagetestidk-0.0.4.tar.gz --markdown 20240512/l/llmpackagetestidk/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-12 19:29:38] INFO root fetch - processPackages [Qubx]: Downloading https://files.pythonhosted.org/packages/bc/82/6f17d1811dc0b040d333016579d472e807bb3a166de1de8d97f7ac5ad7fe/qubx-0.1.5.tar.gz
+[2024-05-12 19:29:38] INFO root fetch - processPackages [Qubx]: executing diffoscope
+[2024-05-12 19:29:38] INFO root fetch - processPackages [Qubx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qubx-0.1.4.tar.gz tmp/qubx-0.1.5.tar.gz --markdown 20240512/Q/Qubx/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-12 19:29:39] INFO root fetch - processPackages [llmpackagetestidk]: Remove: archive file [/home/abi/fetcher/tmp/llmpackagetestidk-0.0.3.tar.gz]
+[2024-05-12 19:29:39] INFO root fetch - processPackages [llmpackagetestidk]: Remove: archive file [/home/abi/fetcher/tmp/llmpackagetestidk-0.0.4.tar.gz]
+[2024-05-12 19:29:39] INFO root fetch - main [MainThread]: End processing [llmpackagetestidk]: success
+[2024-05-12 19:29:39] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240512.3.tar.gz]
+[2024-05-12 19:29:39] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240512.4.tar.gz]
+[2024-05-12 19:29:39] INFO root fetch - main [MainThread]: End processing [medicafe]: success
+[2024-05-12 19:29:39] INFO root fetch - processPackages [Qubx]: Remove: archive file [/home/abi/fetcher/tmp/qubx-0.1.4.tar.gz]
+[2024-05-12 19:29:39] INFO root fetch - processPackages [Qubx]: Remove: archive file [/home/abi/fetcher/tmp/qubx-0.1.5.tar.gz]
+[2024-05-12 19:29:39] INFO root fetch - main [MainThread]: End processing [Qubx]: success
+[2024-05-12 19:29:39] INFO root fetch - main [MainThread]: Store serial: [23172230]
