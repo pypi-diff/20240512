@@ -7744,3 +7744,30 @@
 [2024-05-12 11:35:17] INFO root fetch - processPackages [xuance]: Remove: archive file [/home/abi/fetcher/tmp/xuance-1.1.1.tar.gz]
 [2024-05-12 11:35:17] INFO root fetch - main [MainThread]: End processing [xuance]: success
 [2024-05-12 11:35:17] INFO root fetch - main [MainThread]: Store serial: [23168513]
+[2024-05-12 11:37:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168513]
+[2024-05-12 11:37:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 11:37:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: youcube-server
+[2024-05-12 11:37:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geney
+[2024-05-12 11:37:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: huzzahingz
+[2024-05-12 11:37:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: soccer-poisson
+[2024-05-12 11:37:26] INFO root fetch - processPackages [geney]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-12 11:37:26] INFO root fetch - processPackages [soccer-poisson]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 11:37:26] ERROR root fetch - processPackages [youcube-server]: Unable to get metadata: No such project 'youcube-server'
+[2024-05-12 11:37:26] INFO root fetch - main [MainThread]: End processing [youcube-server] error
+[2024-05-12 11:37:26] WARNING root fetch - processPackages [huzzahingz]: Skipping, unable to determine old version
+[2024-05-12 11:37:26] INFO root fetch - main [MainThread]: End processing [huzzahingz] error
+[2024-05-12 11:37:26] INFO root fetch - processPackages [geney]: Downloading https://files.pythonhosted.org/packages/86/69/f454f5ac5f613df1df91f7d3810b657a32c755e5ebd5101a039113e99531/geney-1.0.8-py2.py3-none-any.whl
+[2024-05-12 11:37:26] INFO root fetch - processPackages [soccer-poisson]: Downloading https://files.pythonhosted.org/packages/57/ca/41a90f17d9a6d8b683312e83a1c8528634de60dde046ed16eaaa5d147c79/soccer_poisson-0.1.8.tar.gz
+[2024-05-12 11:37:26] INFO root fetch - processPackages [soccer-poisson]: Downloading https://files.pythonhosted.org/packages/1a/7c/696694f798bbc554489117a34f6ab5235e8424247805f2644373cdffbcaf/soccer_poisson-0.1.9.tar.gz
+[2024-05-12 11:37:26] INFO root fetch - processPackages [geney]: Downloading https://files.pythonhosted.org/packages/34/86/60fc17a2b2955b83e373a1f8ca2da5d0597a952d8898650ffcf62c408742/geney-1.0.9-py2.py3-none-any.whl
+[2024-05-12 11:37:26] INFO root fetch - processPackages [soccer-poisson]: executing diffoscope
+[2024-05-12 11:37:26] INFO root fetch - processPackages [soccer-poisson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soccer_poisson-0.1.8.tar.gz tmp/soccer_poisson-0.1.9.tar.gz --markdown 20240512/s/soccer-poisson/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 11:37:27] INFO root fetch - processPackages [geney]: executing diffoscope
+[2024-05-12 11:37:27] INFO root fetch - processPackages [geney]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geney-1.0.8-py2.py3-none-any.whl.zip tmp/geney-1.0.9-py2.py3-none-any.whl.zip --markdown 20240512/g/geney/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-12 11:37:27] INFO root fetch - processPackages [geney]: Remove: archive file [/home/abi/fetcher/tmp/geney-1.0.8-py2.py3-none-any.whl.zip]
+[2024-05-12 11:37:27] INFO root fetch - processPackages [geney]: Remove: archive file [/home/abi/fetcher/tmp/geney-1.0.9-py2.py3-none-any.whl.zip]
+[2024-05-12 11:37:27] INFO root fetch - main [MainThread]: End processing [geney]: success
+[2024-05-12 11:37:27] INFO root fetch - processPackages [soccer-poisson]: Remove: archive file [/home/abi/fetcher/tmp/soccer_poisson-0.1.8.tar.gz]
+[2024-05-12 11:37:27] INFO root fetch - processPackages [soccer-poisson]: Remove: archive file [/home/abi/fetcher/tmp/soccer_poisson-0.1.9.tar.gz]
+[2024-05-12 11:37:27] INFO root fetch - main [MainThread]: End processing [soccer-poisson]: success
+[2024-05-12 11:37:27] INFO root fetch - main [MainThread]: Store serial: [23168530]
