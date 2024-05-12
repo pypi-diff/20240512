@@ -16409,3 +16409,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:33:37] INFO root fetch - processPackages [local_tuya_domoticz_tools]: Remove: archive file [/home/abi/fetcher/tmp/local_tuya_domoticz_tools-1.1.2.tar.gz]
 [2024-05-12 21:33:37] INFO root fetch - main [MainThread]: End processing [local_tuya_domoticz_tools]: success
 [2024-05-12 21:33:37] INFO root fetch - main [MainThread]: Store serial: [23173101]
+[2024-05-12 21:35:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173101]
+[2024-05-12 21:35:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 21:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipyslides
+[2024-05-12 21:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sequentialdw
+[2024-05-12 21:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: soma-integ
+[2024-05-12 21:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: episcopantz
+[2024-05-12 21:35:45] INFO root fetch - processPackages [soma-integ]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 21:35:45] INFO root fetch - processPackages [sequentialdw]: New version: [1.1] Old Version: [1]
+[2024-05-12 21:35:45] INFO root fetch - processPackages [ipyslides]: New version: [3.8.6] Old Version: [3.8.5]
+[2024-05-12 21:35:45] WARNING root fetch - processPackages [episcopantz]: Skipping, unable to determine old version
+[2024-05-12 21:35:45] INFO root fetch - main [MainThread]: End processing [episcopantz] error
+[2024-05-12 21:35:45] INFO root fetch - processPackages [soma-integ]: Downloading https://files.pythonhosted.org/packages/c8/37/f55f2a199b51a1a81260e9912ed61526b85e61b41572966387ceea081eed/soma_integ-0.1.1.tar.gz
+[2024-05-12 21:35:45] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/51/59/c8bcf021af5b04bc45e21262c07892446a347486a5b6fc18a129f5554605/sequentialdw-1.tar.gz
+[2024-05-12 21:35:45] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/d0/7b/9ea5888f01315a70afcb794559e45a94b3cdc85be0227e14c86330eb2ded/ipyslides-3.8.5.tar.gz
+[2024-05-12 21:35:46] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/7c/93/bcdc447a39806c1bc7bbfa120ac0582e3247af611775d063a8ab52518c0e/ipyslides-3.8.6.tar.gz
+[2024-05-12 21:35:46] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/07/72/f66132c66274d311386419321c7975f7805e934d7467f790e38efb64dd63/sequentialdw-1.1.tar.gz
+[2024-05-12 21:35:46] INFO root fetch - processPackages [ipyslides]: executing diffoscope
+[2024-05-12 21:35:46] INFO root fetch - processPackages [ipyslides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyslides-3.8.5.tar.gz tmp/ipyslides-3.8.6.tar.gz --markdown 20240512/i/ipyslides/3.8.5-3.8.6/README.md --exclude *.pyd
+[2024-05-12 21:35:46] INFO root fetch - processPackages [soma-integ]: Downloading https://files.pythonhosted.org/packages/0f/86/eef98ee520d3837d1d046880db288a9558585f2f1c7bec9a761844b278ce/soma_integ-0.1.2.tar.gz
+[2024-05-12 21:35:46] INFO root fetch - processPackages [sequentialdw]: executing diffoscope
+[2024-05-12 21:35:46] INFO root fetch - processPackages [sequentialdw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sequentialdw-1.tar.gz tmp/sequentialdw-1.1.tar.gz --markdown 20240512/s/sequentialdw/1-1.1/README.md --exclude *.pyd
+[2024-05-12 21:35:46] INFO root fetch - processPackages [soma-integ]: executing diffoscope
+[2024-05-12 21:35:46] INFO root fetch - processPackages [soma-integ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soma_integ-0.1.1.tar.gz tmp/soma_integ-0.1.2.tar.gz --markdown 20240512/s/soma-integ/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 21:35:46] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-1.tar.gz]
+[2024-05-12 21:35:46] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-1.1.tar.gz]
+[2024-05-12 21:35:46] INFO root fetch - main [MainThread]: End processing [sequentialdw]: success
+[2024-05-12 21:35:47] INFO root fetch - processPackages [soma-integ]: Remove: archive file [/home/abi/fetcher/tmp/soma_integ-0.1.1.tar.gz]
+[2024-05-12 21:35:47] INFO root fetch - processPackages [soma-integ]: Remove: archive file [/home/abi/fetcher/tmp/soma_integ-0.1.2.tar.gz]
+[2024-05-12 21:35:47] INFO root fetch - main [MainThread]: End processing [soma-integ]: success
+[2024-05-12 21:35:47] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.8.5.tar.gz]
+[2024-05-12 21:35:47] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.8.6.tar.gz]
+[2024-05-12 21:35:47] INFO root fetch - main [MainThread]: End processing [ipyslides]: success
+[2024-05-12 21:35:47] INFO root fetch - main [MainThread]: Store serial: [23173114]
