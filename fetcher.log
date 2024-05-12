@@ -17698,3 +17698,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:54:15] WARNING root fetch - processPackages [lengthwaysz]: Skipping, unable to determine old version
 [2024-05-12 22:54:15] INFO root fetch - main [MainThread]: End processing [lengthwaysz] error
 [2024-05-12 22:54:15] INFO root fetch - main [MainThread]: Store serial: [23173768]
+[2024-05-12 22:56:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173768]
+[2024-05-12 22:56:24] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-12 22:58:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173768]
+[2024-05-12 22:58:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 22:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: echordpost
+[2024-05-12 22:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: csa-ai-foundation-model-api-clients
+[2024-05-12 22:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deodorisedz
+[2024-05-12 22:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: backwardsz
+[2024-05-12 22:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-alpaca-api
+[2024-05-12 22:58:29] INFO root fetch - processPackages [py-alpaca-api]: New version: [0.2.5] Old Version: [0.2.2]
+[2024-05-12 22:58:29] WARNING root fetch - processPackages [echordpost]: Skipping, unable to determine old version
+[2024-05-12 22:58:29] INFO root fetch - main [MainThread]: End processing [echordpost] error
+[2024-05-12 22:58:30] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/f8/4f/8dc334ad5120f9d6e3cdd9024245c6cec05912101aadbda81760d11838f3/py_alpaca_api-0.2.2.tar.gz
+[2024-05-12 22:58:30] WARNING root fetch - processPackages [deodorisedz]: Skipping, unable to determine old version
+[2024-05-12 22:58:30] INFO root fetch - main [MainThread]: End processing [deodorisedz] error
+[2024-05-12 22:58:30] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-05-12 22:58:30] WARNING root fetch - processPackages [backwardsz]: Skipping, unable to determine old version
+[2024-05-12 22:58:30] INFO root fetch - main [MainThread]: End processing [backwardsz] error
+[2024-05-12 22:58:30] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: Downloading https://files.pythonhosted.org/packages/5b/5d/d1ed4926fdb4106092fd3d31bde25353607dc091f3d589eeea8b193f9682/csa_ai_foundation_model_api_clients-0.0.9.tar.gz
+[2024-05-12 22:58:30] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/2e/2e/6daba2d04dc1240533aa4585f1f2413a8d50f2833ff6a54d56b1c933115e/py_alpaca_api-0.2.5.tar.gz
+[2024-05-12 22:58:30] INFO root fetch - processPackages [py-alpaca-api]: executing diffoscope
+[2024-05-12 22:58:30] INFO root fetch - processPackages [py-alpaca-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_alpaca_api-0.2.2.tar.gz tmp/py_alpaca_api-0.2.5.tar.gz --markdown 20240512/p/py-alpaca-api/0.2.2-0.2.5/README.md --exclude *.pyd
+[2024-05-12 22:58:30] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: Downloading https://files.pythonhosted.org/packages/cb/d7/1a73dd54cac11298fd6e09c5691889acc83428c0b87ea7e55b728ae65e62/csa_ai_foundation_model_api_clients-0.1.0.tar.gz
+[2024-05-12 22:58:30] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: executing diffoscope
+[2024-05-12 22:58:30] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csa_ai_foundation_model_api_clients-0.0.9.tar.gz tmp/csa_ai_foundation_model_api_clients-0.1.0.tar.gz --markdown 20240512/c/csa-ai-foundation-model-api-clients/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-05-12 22:58:30] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.2.2.tar.gz]
+[2024-05-12 22:58:30] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.2.5.tar.gz]
+[2024-05-12 22:58:30] INFO root fetch - main [MainThread]: End processing [py-alpaca-api]: success
+[2024-05-12 22:58:31] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: Remove: archive file [/home/abi/fetcher/tmp/csa_ai_foundation_model_api_clients-0.0.9.tar.gz]
+[2024-05-12 22:58:31] INFO root fetch - processPackages [csa-ai-foundation-model-api-clients]: Remove: archive file [/home/abi/fetcher/tmp/csa_ai_foundation_model_api_clients-0.1.0.tar.gz]
+[2024-05-12 22:58:31] INFO root fetch - main [MainThread]: End processing [csa-ai-foundation-model-api-clients]: success
+[2024-05-12 22:58:31] INFO root fetch - main [MainThread]: Store serial: [23173785]
