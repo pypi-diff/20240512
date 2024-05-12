@@ -9653,3 +9653,11 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:55:51] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kurogames-0.1.6.tar.gz]
 [2024-05-12 13:55:51] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-kurogames]: success
 [2024-05-12 13:55:51] INFO root fetch - main [MainThread]: Store serial: [23169575]
+[2024-05-12 13:57:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169575]
+[2024-05-12 13:58:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 13:58:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-master
+[2024-05-12 13:58:00] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240512.11.56.204571] Old Version: [20240512.10.5.14869]
+[2024-05-12 13:58:00] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/2a/ba/9fe581018dabe29ed3b2244a630d7622f286a2c158c37eb4bc2bf9bdae18/certora-cli-alpha-master-20240512.10.5.14869.tar.gz
+[2024-05-12 13:58:00] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14511809>=10485760
+[2024-05-12 13:58:00] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-05-12 13:58:00] INFO root fetch - main [MainThread]: Store serial: [23169581]
