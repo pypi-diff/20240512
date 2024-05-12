@@ -17351,3 +17351,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:32:27] WARNING root fetch - processPackages [unforfeitablez]: Skipping, unable to determine old version
 [2024-05-12 22:32:27] INFO root fetch - main [MainThread]: End processing [unforfeitablez] error
 [2024-05-12 22:32:27] INFO root fetch - main [MainThread]: Store serial: [23173605]
+[2024-05-12 22:34:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173605]
+[2024-05-12 22:34:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 22:34:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ediri-scaleway
+[2024-05-12 22:34:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SimpleSchemaGenerator
+[2024-05-12 22:34:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mowaki
+[2024-05-12 22:34:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PYield
+[2024-05-12 22:34:36] INFO root fetch - processPackages [ediri-scaleway]: New version: [2.37.0] Old Version: [2.36.0]
+[2024-05-12 22:34:36] INFO root fetch - processPackages [mowaki]: New version: [2.0a2] Old Version: [0.3]
+[2024-05-12 22:34:36] INFO root fetch - processPackages [PYield]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-12 22:34:36] INFO root fetch - processPackages [ediri-scaleway]: Downloading https://files.pythonhosted.org/packages/bf/df/0a54bc26fa04c7e26f51df61a93a0fd354bab737777b97b3342aa261fd7f/ediri_scaleway-2.36.0.tar.gz
+[2024-05-12 22:34:36] INFO root fetch - processPackages [SimpleSchemaGenerator]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-12 22:34:36] INFO root fetch - processPackages [SimpleSchemaGenerator]: Downloading https://files.pythonhosted.org/packages/1a/bd/3e5a0eaf4494b651cf6054f09bfd5cf93b7662b8266c6d8f558e1a2472f4/SimpleSchemaGenerator-0.5.0-py3-none-any.whl
+[2024-05-12 22:34:36] INFO root fetch - processPackages [mowaki]: Downloading https://files.pythonhosted.org/packages/06/ce/34755b4698ff72b31d18ebb241a6a5c61fc6de248867fe5d628dea607a93/mowaki-0.3.tar.gz
+[2024-05-12 22:34:36] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/1a/60/0d2049b104e622ea2ed79c836b372b39b45cf2619c748d692ac2bf2ed73a/pyield-0.7.8.tar.gz
+[2024-05-12 22:34:36] INFO root fetch - processPackages [ediri-scaleway]: Downloading https://files.pythonhosted.org/packages/de/68/d31a61f00accbeae15f2c29b13163dbd397a112abdf8f87bbfd36fa925aa/ediri_scaleway-2.37.0.tar.gz
+[2024-05-12 22:34:36] INFO root fetch - processPackages [SimpleSchemaGenerator]: Downloading https://files.pythonhosted.org/packages/36/6b/995f5c31e1078d63c2dec8cbb55d4ece9e78afeece58a95af606c07be146/SimpleSchemaGenerator-0.6.0-py3-none-any.whl
+[2024-05-12 22:34:36] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/1a/e8/7b2a379be5f3cd8e3737eec71c69fe195b963e13fc0dcd0275abc00a5c30/pyield-0.7.9.tar.gz
+[2024-05-12 22:34:36] INFO root fetch - processPackages [mowaki]: Downloading https://files.pythonhosted.org/packages/c0/d5/c72ad968bdfa1e99b258790136309225aeb0b5a084c05d3d4aed0b8e6097/mowaki-2.0a2.tar.gz
+[2024-05-12 22:34:36] INFO root fetch - processPackages [PYield]: executing diffoscope
+[2024-05-12 22:34:36] INFO root fetch - processPackages [PYield]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyield-0.7.8.tar.gz tmp/pyield-0.7.9.tar.gz --markdown 20240512/P/PYield/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-05-12 22:34:37] INFO root fetch - processPackages [SimpleSchemaGenerator]: executing diffoscope
+[2024-05-12 22:34:37] INFO root fetch - processPackages [SimpleSchemaGenerator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleSchemaGenerator-0.5.0-py3-none-any.whl.zip tmp/SimpleSchemaGenerator-0.6.0-py3-none-any.whl.zip --markdown 20240512/S/SimpleSchemaGenerator/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-12 22:34:37] INFO root fetch - processPackages [mowaki]: executing diffoscope
+[2024-05-12 22:34:37] INFO root fetch - processPackages [mowaki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mowaki-0.3.tar.gz tmp/mowaki-2.0a2.tar.gz --markdown 20240512/m/mowaki/0.3-2.0a2/README.md --exclude *.pyd
+[2024-05-12 22:34:37] INFO root fetch - processPackages [ediri-scaleway]: executing diffoscope
+[2024-05-12 22:34:37] INFO root fetch - processPackages [ediri-scaleway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ediri_scaleway-2.36.0.tar.gz tmp/ediri_scaleway-2.37.0.tar.gz --markdown 20240512/e/ediri-scaleway/2.36.0-2.37.0/README.md --exclude *.pyd
+[2024-05-12 22:34:37] INFO root fetch - processPackages [mowaki]: Remove: archive file [/home/abi/fetcher/tmp/mowaki-0.3.tar.gz]
+[2024-05-12 22:34:37] INFO root fetch - processPackages [mowaki]: Remove: archive file [/home/abi/fetcher/tmp/mowaki-2.0a2.tar.gz]
+[2024-05-12 22:34:37] INFO root fetch - main [MainThread]: End processing [mowaki]: success
+[2024-05-12 22:34:37] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.7.8.tar.gz]
+[2024-05-12 22:34:37] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.7.9.tar.gz]
+[2024-05-12 22:34:37] INFO root fetch - main [MainThread]: End processing [PYield]: success
+[2024-05-12 22:34:37] INFO root fetch - processPackages [SimpleSchemaGenerator]: Remove: archive file [/home/abi/fetcher/tmp/SimpleSchemaGenerator-0.5.0-py3-none-any.whl.zip]
+[2024-05-12 22:34:37] INFO root fetch - processPackages [SimpleSchemaGenerator]: Remove: archive file [/home/abi/fetcher/tmp/SimpleSchemaGenerator-0.6.0-py3-none-any.whl.zip]
+[2024-05-12 22:34:37] INFO root fetch - main [MainThread]: End processing [SimpleSchemaGenerator]: success
+[2024-05-12 22:34:38] INFO root fetch - processPackages [ediri-scaleway]: Remove: archive file [/home/abi/fetcher/tmp/ediri_scaleway-2.36.0.tar.gz]
+[2024-05-12 22:34:38] INFO root fetch - processPackages [ediri-scaleway]: Remove: archive file [/home/abi/fetcher/tmp/ediri_scaleway-2.37.0.tar.gz]
+[2024-05-12 22:34:38] INFO root fetch - main [MainThread]: End processing [ediri-scaleway]: success
+[2024-05-12 22:34:38] INFO root fetch - main [MainThread]: Store serial: [23173615]
