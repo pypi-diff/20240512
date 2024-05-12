@@ -10043,3 +10043,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:21:58] INFO root fetch - processPackages [marcel]: Remove: archive file [/home/abi/fetcher/tmp/marcel-0.9.9-py3-none-any.whl.zip]
 [2024-05-12 14:21:58] INFO root fetch - main [MainThread]: End processing [marcel]: success
 [2024-05-12 14:21:58] INFO root fetch - main [MainThread]: Store serial: [23169791]
+[2024-05-12 14:24:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169791]
+[2024-05-12 14:24:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 14:24:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: loggingA
+[2024-05-12 14:24:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: musictree
+[2024-05-12 14:24:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MMLToolbox
+[2024-05-12 14:24:07] INFO root fetch - processPackages [musictree]: New version: [0.1b0] Old Version: [0.1.1b0]
+[2024-05-12 14:24:07] WARNING root fetch - processPackages [loggingA]: Skipping, unable to determine old version
+[2024-05-12 14:24:07] INFO root fetch - main [MainThread]: End processing [loggingA] error
+[2024-05-12 14:24:07] INFO root fetch - processPackages [MMLToolbox]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-05-12 14:24:07] INFO root fetch - processPackages [musictree]: Downloading https://files.pythonhosted.org/packages/10/c6/a29438e3868242965a366290afe70783d7de506e25a2b6ad77fb13c0aef4/musictree-0.1.1b0.tar.gz
+[2024-05-12 14:24:07] INFO root fetch - processPackages [MMLToolbox]: Downloading https://files.pythonhosted.org/packages/90/20/06220a76fe4f63c0dff65341154d50ea55c239fe36e69fe0114c1eb125b5/MMLToolbox-1.1.0-py3-none-any.whl
+[2024-05-12 14:24:08] INFO root fetch - processPackages [musictree]: Downloading https://files.pythonhosted.org/packages/54/eb/3515deff82f3c9f2c67c6d4a060904779dbc2810e6b2c6109b20a6d5f4da/musictree-0.1b0.tar.gz
+[2024-05-12 14:24:08] INFO root fetch - processPackages [MMLToolbox]: Downloading https://files.pythonhosted.org/packages/a5/ad/899ddf342628fcd919814fdbd67d1314b77ba18864fbcdb4123fa9e4b166/MMLToolbox-1.2.0-py3-none-any.whl
+[2024-05-12 14:24:08] INFO root fetch - processPackages [musictree]: executing diffoscope
+[2024-05-12 14:24:08] INFO root fetch - processPackages [musictree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musictree-0.1.1b0.tar.gz tmp/musictree-0.1b0.tar.gz --markdown 20240512/m/musictree/0.1.1b0-0.1b0/README.md --exclude *.pyd
+[2024-05-12 14:24:08] INFO root fetch - processPackages [MMLToolbox]: executing diffoscope
+[2024-05-12 14:24:08] INFO root fetch - processPackages [MMLToolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MMLToolbox-1.1.0-py3-none-any.whl.zip tmp/MMLToolbox-1.2.0-py3-none-any.whl.zip --markdown 20240512/M/MMLToolbox/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-05-12 14:24:08] INFO root fetch - processPackages [musictree]: Remove: archive file [/home/abi/fetcher/tmp/musictree-0.1.1b0.tar.gz]
+[2024-05-12 14:24:08] INFO root fetch - processPackages [musictree]: Remove: archive file [/home/abi/fetcher/tmp/musictree-0.1b0.tar.gz]
+[2024-05-12 14:24:08] INFO root fetch - main [MainThread]: End processing [musictree]: success
+[2024-05-12 14:24:08] INFO root fetch - processPackages [MMLToolbox]: Remove: archive file [/home/abi/fetcher/tmp/MMLToolbox-1.1.0-py3-none-any.whl.zip]
+[2024-05-12 14:24:08] INFO root fetch - processPackages [MMLToolbox]: Remove: archive file [/home/abi/fetcher/tmp/MMLToolbox-1.2.0-py3-none-any.whl.zip]
+[2024-05-12 14:24:08] INFO root fetch - main [MainThread]: End processing [MMLToolbox]: success
+[2024-05-12 14:24:08] INFO root fetch - main [MainThread]: Store serial: [23169799]
