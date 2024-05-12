@@ -11817,3 +11817,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:39:27] INFO root fetch - processPackages [fastmrz]: Remove: archive file [/home/abi/fetcher/tmp/fastmrz-1.1.tar.gz]
 [2024-05-12 16:39:27] INFO root fetch - main [MainThread]: End processing [fastmrz]: success
 [2024-05-12 16:39:27] INFO root fetch - main [MainThread]: Store serial: [23170775]
+[2024-05-12 16:41:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170775]
+[2024-05-12 16:41:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 16:41:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: remla2024-team9-lib-ml
+[2024-05-12 16:41:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: voluptuous-openapi
+[2024-05-12 16:41:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jinja2-embedded
+[2024-05-12 16:41:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: checkout-time-computer
+[2024-05-12 16:41:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llm-bench
+[2024-05-12 16:41:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-mysql-replication
+[2024-05-12 16:41:36] WARNING root fetch - processPackages [django-mysql-replication]: Skipping, unable to determine old version
+[2024-05-12 16:41:36] INFO root fetch - main [MainThread]: End processing [django-mysql-replication] error
+[2024-05-12 16:41:36] INFO root fetch - processPackages [llm-bench]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-05-12 16:41:36] INFO root fetch - processPackages [remla2024-team9-lib-ml]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 16:41:36] WARNING root fetch - processPackages [checkout-time-computer]: Skipping, unable to determine old version
+[2024-05-12 16:41:36] INFO root fetch - main [MainThread]: End processing [checkout-time-computer] error
+[2024-05-12 16:41:36] WARNING root fetch - processPackages [jinja2-embedded]: Skipping, unable to determine old version
+[2024-05-12 16:41:36] INFO root fetch - main [MainThread]: End processing [jinja2-embedded] error
+[2024-05-12 16:41:36] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/f7/e5/c647c04d817e87abbf191b2d27de541a2c821b7bbcae632fad20a897501d/llm_bench-0.4.5.tar.gz
+[2024-05-12 16:41:36] INFO root fetch - processPackages [voluptuous-openapi]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-12 16:41:37] INFO root fetch - processPackages [remla2024-team9-lib-ml]: Downloading https://files.pythonhosted.org/packages/7d/88/9e80b81d08f3ac61b43c552bf2db721a58ab1a71baa77940409b4c532d9a/remla2024_team9_lib_ml-0.1.0.tar.gz
+[2024-05-12 16:41:37] INFO root fetch - processPackages [voluptuous-openapi]: Downloading https://files.pythonhosted.org/packages/15/89/a999176fb9defaef6620337501b02696cc0615c720af0df0b69704fba567/voluptuous_openapi-0.0.2.tar.gz
+[2024-05-12 16:41:37] INFO root fetch - processPackages [llm-bench]: Downloading https://files.pythonhosted.org/packages/e1/8b/ffe1bb73ea8706ad33c03e5eca0ec8107a41fd69d41702dab09d10f13c79/llm_bench-0.4.6.tar.gz
+[2024-05-12 16:41:37] INFO root fetch - processPackages [remla2024-team9-lib-ml]: Downloading https://files.pythonhosted.org/packages/33/c8/0d90bedcf06c1d1d8cc380f40b555180162adc7e330f59309cb46aebee78/remla2024_team9_lib_ml-0.1.1.tar.gz
+[2024-05-12 16:41:37] INFO root fetch - processPackages [llm-bench]: executing diffoscope
+[2024-05-12 16:41:37] INFO root fetch - processPackages [llm-bench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_bench-0.4.5.tar.gz tmp/llm_bench-0.4.6.tar.gz --markdown 20240512/l/llm-bench/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-05-12 16:41:37] INFO root fetch - processPackages [voluptuous-openapi]: Downloading https://files.pythonhosted.org/packages/76/8f/a89ddd04ec42534efa145ec5386e669a3a931258d9a773dd5541faef5087/voluptuous_openapi-0.0.3.tar.gz
+[2024-05-12 16:41:37] INFO root fetch - processPackages [remla2024-team9-lib-ml]: executing diffoscope
+[2024-05-12 16:41:37] INFO root fetch - processPackages [remla2024-team9-lib-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remla2024_team9_lib_ml-0.1.0.tar.gz tmp/remla2024_team9_lib_ml-0.1.1.tar.gz --markdown 20240512/r/remla2024-team9-lib-ml/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 16:41:37] INFO root fetch - processPackages [voluptuous-openapi]: executing diffoscope
+[2024-05-12 16:41:37] INFO root fetch - processPackages [voluptuous-openapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voluptuous_openapi-0.0.2.tar.gz tmp/voluptuous_openapi-0.0.3.tar.gz --markdown 20240512/v/voluptuous-openapi/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-12 16:41:38] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.5.tar.gz]
+[2024-05-12 16:41:38] INFO root fetch - processPackages [llm-bench]: Remove: archive file [/home/abi/fetcher/tmp/llm_bench-0.4.6.tar.gz]
+[2024-05-12 16:41:38] INFO root fetch - main [MainThread]: End processing [llm-bench]: success
+[2024-05-12 16:41:38] INFO root fetch - processPackages [remla2024-team9-lib-ml]: Remove: archive file [/home/abi/fetcher/tmp/remla2024_team9_lib_ml-0.1.0.tar.gz]
+[2024-05-12 16:41:38] INFO root fetch - processPackages [remla2024-team9-lib-ml]: Remove: archive file [/home/abi/fetcher/tmp/remla2024_team9_lib_ml-0.1.1.tar.gz]
+[2024-05-12 16:41:38] INFO root fetch - main [MainThread]: End processing [remla2024-team9-lib-ml]: success
+[2024-05-12 16:41:38] INFO root fetch - processPackages [voluptuous-openapi]: Remove: archive file [/home/abi/fetcher/tmp/voluptuous_openapi-0.0.2.tar.gz]
+[2024-05-12 16:41:38] INFO root fetch - processPackages [voluptuous-openapi]: Remove: archive file [/home/abi/fetcher/tmp/voluptuous_openapi-0.0.3.tar.gz]
+[2024-05-12 16:41:38] INFO root fetch - main [MainThread]: End processing [voluptuous-openapi]: success
+[2024-05-12 16:41:38] INFO root fetch - main [MainThread]: Store serial: [23170798]
