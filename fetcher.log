@@ -1854,3 +1854,33 @@
 [2024-05-12 02:38:32] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-custom-sidebar-test-0.0.9.tar.gz]
 [2024-05-12 02:38:32] INFO root fetch - main [MainThread]: End processing [streamlit-custom-sidebar-test]: success
 [2024-05-12 02:38:32] INFO root fetch - main [MainThread]: Store serial: [23165792]
+[2024-05-12 02:40:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165792]
+[2024-05-12 02:40:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 02:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: readyapi-slim
+[2024-05-12 02:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: readyapi
+[2024-05-12 02:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wild-code
+[2024-05-12 02:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: planablez
+[2024-05-12 02:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vnstock3
+[2024-05-12 02:40:41] WARNING root fetch - processPackages [vnstock3]: Skipping, unable to determine old version
+[2024-05-12 02:40:41] INFO root fetch - main [MainThread]: End processing [vnstock3] error
+[2024-05-12 02:40:41] WARNING root fetch - processPackages [readyapi-slim]: Skipping, unable to determine old version
+[2024-05-12 02:40:41] WARNING root fetch - processPackages [planablez]: Skipping, unable to determine old version
+[2024-05-12 02:40:41] INFO root fetch - main [MainThread]: End processing [readyapi-slim] error
+[2024-05-12 02:40:41] INFO root fetch - main [MainThread]: End processing [planablez] error
+[2024-05-12 02:40:41] INFO root fetch - processPackages [wild-code]: New version: [0.4.0] Old Version: [0.3.0.dev0]
+[2024-05-12 02:40:41] INFO root fetch - processPackages [readyapi]: New version: [0.110.3] Old Version: [0.110.2.dev1]
+[2024-05-12 02:40:41] INFO root fetch - processPackages [readyapi]: Downloading https://files.pythonhosted.org/packages/47/38/230c5401e2666bf275640f3a4b95bfd76ad2f1ad0b3cae1a5ec68a0fb7b8/readyapi-0.110.2.dev1.tar.gz
+[2024-05-12 02:40:41] INFO root fetch - processPackages [wild-code]: Downloading https://files.pythonhosted.org/packages/e2/8b/d5f39f234c14ef6402e92d925f7f63b2cbc32796bb7f2e4b551e735205f2/wild_code-0.3.0.dev0.tar.gz
+[2024-05-12 02:40:41] INFO root fetch - processPackages [readyapi]: Downloading https://files.pythonhosted.org/packages/76/7f/5143e1285b934f11fd4b5be8c2edcbbad4d0bcfb47bf4db37f0e8d1efa21/readyapi-0.110.3.tar.gz
+[2024-05-12 02:40:41] INFO root fetch - processPackages [wild-code]: Downloading https://files.pythonhosted.org/packages/2e/dc/8524c1f85ab1294990e1357e4173679924a6510030591b9ee92961e0c350/wild_code-0.4.0.tar.gz
+[2024-05-12 02:40:41] INFO root fetch - processPackages [wild-code]: executing diffoscope
+[2024-05-12 02:40:41] INFO root fetch - processPackages [wild-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wild_code-0.3.0.dev0.tar.gz tmp/wild_code-0.4.0.tar.gz --markdown 20240512/w/wild-code/0.3.0.dev0-0.4.0/README.md --exclude *.pyd
+[2024-05-12 02:40:41] INFO root fetch - processPackages [readyapi]: executing diffoscope
+[2024-05-12 02:40:41] INFO root fetch - processPackages [readyapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/readyapi-0.110.2.dev1.tar.gz tmp/readyapi-0.110.3.tar.gz --markdown 20240512/r/readyapi/0.110.2.dev1-0.110.3/README.md --exclude *.pyd
+[2024-05-12 02:40:42] INFO root fetch - processPackages [wild-code]: Remove: archive file [/home/abi/fetcher/tmp/wild_code-0.3.0.dev0.tar.gz]
+[2024-05-12 02:40:42] INFO root fetch - processPackages [wild-code]: Remove: archive file [/home/abi/fetcher/tmp/wild_code-0.4.0.tar.gz]
+[2024-05-12 02:40:42] INFO root fetch - main [MainThread]: End processing [wild-code]: success
+[2024-05-12 02:40:44] INFO root fetch - processPackages [readyapi]: Remove: archive file [/home/abi/fetcher/tmp/readyapi-0.110.2.dev1.tar.gz]
+[2024-05-12 02:40:44] INFO root fetch - processPackages [readyapi]: Remove: archive file [/home/abi/fetcher/tmp/readyapi-0.110.3.tar.gz]
+[2024-05-12 02:40:44] INFO root fetch - main [MainThread]: End processing [readyapi]: success
+[2024-05-12 02:40:44] INFO root fetch - main [MainThread]: Store serial: [23165810]
