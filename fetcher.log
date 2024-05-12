@@ -15722,3 +15722,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:52:07] INFO root fetch - processPackages [contact-email-address-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_email_address_local-0.0.9.tar.gz]
 [2024-05-12 20:52:07] INFO root fetch - main [MainThread]: End processing [contact-email-address-local]: success
 [2024-05-12 20:52:07] INFO root fetch - main [MainThread]: Store serial: [23172800]
+[2024-05-12 20:54:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172800]
+[2024-05-12 20:54:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 20:54:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hydatidiformz
+[2024-05-12 20:54:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kBmc
+[2024-05-12 20:54:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: exponentation
+[2024-05-12 20:54:15] WARNING root fetch - processPackages [hydatidiformz]: Skipping, unable to determine old version
+[2024-05-12 20:54:15] INFO root fetch - main [MainThread]: End processing [hydatidiformz] error
+[2024-05-12 20:54:15] INFO root fetch - processPackages [kBmc]: New version: [2.3.9] Old Version: [2.3.8]
+[2024-05-12 20:54:15] WARNING root fetch - processPackages [exponentation]: Skipping, unable to determine old version
+[2024-05-12 20:54:15] INFO root fetch - main [MainThread]: End processing [exponentation] error
+[2024-05-12 20:54:16] INFO root fetch - processPackages [kBmc]: Downloading https://files.pythonhosted.org/packages/cd/f5/87d66b35a67a40be6e903787b5ba54ffbc5e97e4c2f17b98206d75628d35/kBmc-2.3.8.tar.gz
+[2024-05-12 20:54:16] INFO root fetch - processPackages [kBmc]: Downloading https://files.pythonhosted.org/packages/b1/30/0a67c9ac9962ec52f20324b37d89b824d3b4caa5963bd919ddb2b19ac530/kBmc-2.3.9.tar.gz
+[2024-05-12 20:54:16] INFO root fetch - processPackages [kBmc]: executing diffoscope
+[2024-05-12 20:54:16] INFO root fetch - processPackages [kBmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kBmc-2.3.8.tar.gz tmp/kBmc-2.3.9.tar.gz --markdown 20240512/k/kBmc/2.3.8-2.3.9/README.md --exclude *.pyd
+[2024-05-12 20:54:17] INFO root fetch - processPackages [kBmc]: Remove: archive file [/home/abi/fetcher/tmp/kBmc-2.3.8.tar.gz]
+[2024-05-12 20:54:17] INFO root fetch - processPackages [kBmc]: Remove: archive file [/home/abi/fetcher/tmp/kBmc-2.3.9.tar.gz]
+[2024-05-12 20:54:17] INFO root fetch - main [MainThread]: End processing [kBmc]: success
+[2024-05-12 20:54:17] INFO root fetch - main [MainThread]: Store serial: [23172811]
