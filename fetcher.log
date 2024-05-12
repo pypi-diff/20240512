@@ -16550,3 +16550,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:42:18] INFO root fetch - processPackages [luma-ml]: Remove: archive file [/home/abi/fetcher/tmp/luma-ml-0.7.5.tar.gz]
 [2024-05-12 21:42:18] INFO root fetch - main [MainThread]: End processing [luma-ml]: success
 [2024-05-12 21:42:18] INFO root fetch - main [MainThread]: Store serial: [23173162]
+[2024-05-12 21:44:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173162]
+[2024-05-12 21:44:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 21:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-localvenv-kernel
+[2024-05-12 21:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torch-model-manager
+[2024-05-12 21:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sequentialdw
+[2024-05-12 21:44:27] INFO root fetch - processPackages [torch-model-manager]: New version: [0.3.0.dev3] Old Version: [0.3.0.dev2]
+[2024-05-12 21:44:27] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/23/b0/86d67352be4b48db81e5d596c4a0675da6184dd7a0322393331fbe75f0ea/torch_model_manager-0.3.0.dev2.tar.gz
+[2024-05-12 21:44:27] INFO root fetch - processPackages [python-localvenv-kernel]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-12 21:44:27] INFO root fetch - processPackages [sequentialdw]: New version: [2.3] Old Version: [2.2]
+[2024-05-12 21:44:28] INFO root fetch - processPackages [python-localvenv-kernel]: Downloading https://files.pythonhosted.org/packages/5c/08/ef957639fd6c6474dc3a9d8d534d506a0230b17eed66acb6aebedf9509df/python-localvenv-kernel-0.1.6.tar.gz
+[2024-05-12 21:44:28] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/c6/12/ae70245dddb8d6529672de3f8f2dfade6c6f3fd939831b40854e92160358/sequentialdw-2.2.tar.gz
+[2024-05-12 21:44:28] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/bc/a5/9f28cf2a90dd034c79e2ceae0990b373ab8ec47b7951cca6281f8b232b3e/torch_model_manager-0.3.0.dev3.tar.gz
+[2024-05-12 21:44:28] INFO root fetch - processPackages [torch-model-manager]: executing diffoscope
+[2024-05-12 21:44:28] INFO root fetch - processPackages [torch-model-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_manager-0.3.0.dev2.tar.gz tmp/torch_model_manager-0.3.0.dev3.tar.gz --markdown 20240512/t/torch-model-manager/0.3.0.dev2-0.3.0.dev3/README.md --exclude *.pyd
+[2024-05-12 21:44:28] INFO root fetch - processPackages [python-localvenv-kernel]: Downloading https://files.pythonhosted.org/packages/0c/b7/b293207a943f6341b5703d1526dd336eaf8cf6d3c6d8ae141db89c919618/python-localvenv-kernel-0.1.7.tar.gz
+[2024-05-12 21:44:28] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/e3/fb/a6b65dc7fc3f555fa4f4646d03eb6aba0e60a4ded225978ab7844ac8ca3f/sequentialdw-2.3.tar.gz
+[2024-05-12 21:44:28] INFO root fetch - processPackages [sequentialdw]: executing diffoscope
+[2024-05-12 21:44:28] INFO root fetch - processPackages [sequentialdw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sequentialdw-2.2.tar.gz tmp/sequentialdw-2.3.tar.gz --markdown 20240512/s/sequentialdw/2.2-2.3/README.md --exclude *.pyd
+[2024-05-12 21:44:28] INFO root fetch - processPackages [python-localvenv-kernel]: executing diffoscope
+[2024-05-12 21:44:28] INFO root fetch - processPackages [python-localvenv-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-localvenv-kernel-0.1.6.tar.gz tmp/python-localvenv-kernel-0.1.7.tar.gz --markdown 20240512/p/python-localvenv-kernel/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-12 21:44:28] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.3.0.dev2.tar.gz]
+[2024-05-12 21:44:28] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.3.0.dev3.tar.gz]
+[2024-05-12 21:44:28] INFO root fetch - main [MainThread]: End processing [torch-model-manager]: success
+[2024-05-12 21:44:28] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-2.2.tar.gz]
+[2024-05-12 21:44:28] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-2.3.tar.gz]
+[2024-05-12 21:44:28] INFO root fetch - main [MainThread]: End processing [sequentialdw]: success
+[2024-05-12 21:44:29] INFO root fetch - processPackages [python-localvenv-kernel]: Remove: archive file [/home/abi/fetcher/tmp/python-localvenv-kernel-0.1.6.tar.gz]
+[2024-05-12 21:44:29] INFO root fetch - processPackages [python-localvenv-kernel]: Remove: archive file [/home/abi/fetcher/tmp/python-localvenv-kernel-0.1.7.tar.gz]
+[2024-05-12 21:44:29] INFO root fetch - main [MainThread]: End processing [python-localvenv-kernel]: success
+[2024-05-12 21:44:29] INFO root fetch - main [MainThread]: Store serial: [23173171]
