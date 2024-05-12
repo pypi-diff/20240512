@@ -2734,3 +2734,38 @@
 [2024-05-12 04:07:11] INFO root fetch - processPackages [streamlit-screen-stats]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-screen-stats-0.0.9.tar.gz]
 [2024-05-12 04:07:11] INFO root fetch - main [MainThread]: End processing [streamlit-screen-stats]: success
 [2024-05-12 04:07:11] INFO root fetch - main [MainThread]: Store serial: [23166220]
+[2024-05-12 04:09:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166220]
+[2024-05-12 04:09:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 04:09:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elevenlabs
+[2024-05-12 04:09:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LdShell
+[2024-05-12 04:09:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: x4c
+[2024-05-12 04:09:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hj-proj-module
+[2024-05-12 04:09:20] INFO root fetch - processPackages [elevenlabs]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-12 04:09:20] INFO root fetch - processPackages [hj-proj-module]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-05-12 04:09:20] INFO root fetch - processPackages [LdShell]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-05-12 04:09:20] INFO root fetch - processPackages [x4c]: New version: [2024.5.5] Old Version: [2024.5.2.17]
+[2024-05-12 04:09:20] INFO root fetch - processPackages [hj-proj-module]: Downloading https://files.pythonhosted.org/packages/db/12/7bb0e640457f3bbbbc0b77439e6b03839642728f5b9676f3a6cdbf41672e/hj_proj_module-0.1.7.tar.gz
+[2024-05-12 04:09:20] INFO root fetch - processPackages [elevenlabs]: Downloading https://files.pythonhosted.org/packages/69/39/c9bb3b1c757f5c6c056b68ceb226828f9f51ec024828e385d2d7668effea/elevenlabs-1.2.1.tar.gz
+[2024-05-12 04:09:21] INFO root fetch - processPackages [LdShell]: Downloading https://files.pythonhosted.org/packages/6d/01/372528bb874ff3cf6dd5f40910a4318238e805f4aa6d912481a0714af5c8/LdShell-2.0.2.tar.gz
+[2024-05-12 04:09:21] INFO root fetch - processPackages [x4c]: Downloading https://files.pythonhosted.org/packages/ab/24/cb25402ea005561f6cdd2f40aa907c280caf2e31063889316a6353bf12ab/x4c-2024.5.2.17.tar.gz
+[2024-05-12 04:09:21] INFO root fetch - processPackages [hj-proj-module]: Downloading https://files.pythonhosted.org/packages/94/49/69693d7a64f73d84255649b427048581401581af1b2733dd7b132cd4a620/hj_proj_module-0.1.9.tar.gz
+[2024-05-12 04:09:21] WARNING root fetch - processPackages [x4c]: Skipping package: exceeds size limit 89964689>=10485760
+[2024-05-12 04:09:21] INFO root fetch - main [MainThread]: End processing [x4c] error
+[2024-05-12 04:09:21] INFO root fetch - processPackages [elevenlabs]: Downloading https://files.pythonhosted.org/packages/ef/dd/eb488a1e14e680e71652d392140d37e50581f2511ae52dbef741ef653861/elevenlabs-1.2.2.tar.gz
+[2024-05-12 04:09:21] INFO root fetch - processPackages [hj-proj-module]: executing diffoscope
+[2024-05-12 04:09:21] INFO root fetch - processPackages [hj-proj-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hj_proj_module-0.1.7.tar.gz tmp/hj_proj_module-0.1.9.tar.gz --markdown 20240512/h/hj-proj-module/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-05-12 04:09:21] INFO root fetch - processPackages [elevenlabs]: executing diffoscope
+[2024-05-12 04:09:21] INFO root fetch - processPackages [elevenlabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elevenlabs-1.2.1.tar.gz tmp/elevenlabs-1.2.2.tar.gz --markdown 20240512/e/elevenlabs/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-12 04:09:21] INFO root fetch - processPackages [LdShell]: Downloading https://files.pythonhosted.org/packages/d9/4e/47a7124cc0924a97508eff1f0e7438359c0916b416faa163b2c2683ec0c1/LdShell-2.0.3.tar.gz
+[2024-05-12 04:09:21] INFO root fetch - processPackages [LdShell]: executing diffoscope
+[2024-05-12 04:09:21] INFO root fetch - processPackages [LdShell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LdShell-2.0.2.tar.gz tmp/LdShell-2.0.3.tar.gz --markdown 20240512/L/LdShell/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-05-12 04:09:21] INFO root fetch - processPackages [hj-proj-module]: Remove: archive file [/home/abi/fetcher/tmp/hj_proj_module-0.1.7.tar.gz]
+[2024-05-12 04:09:21] INFO root fetch - processPackages [hj-proj-module]: Remove: archive file [/home/abi/fetcher/tmp/hj_proj_module-0.1.9.tar.gz]
+[2024-05-12 04:09:21] INFO root fetch - main [MainThread]: End processing [hj-proj-module]: success
+[2024-05-12 04:09:22] INFO root fetch - processPackages [LdShell]: Remove: archive file [/home/abi/fetcher/tmp/LdShell-2.0.2.tar.gz]
+[2024-05-12 04:09:22] INFO root fetch - processPackages [LdShell]: Remove: archive file [/home/abi/fetcher/tmp/LdShell-2.0.3.tar.gz]
+[2024-05-12 04:09:22] INFO root fetch - main [MainThread]: End processing [LdShell]: success
+[2024-05-12 04:09:22] INFO root fetch - processPackages [elevenlabs]: Remove: archive file [/home/abi/fetcher/tmp/elevenlabs-1.2.1.tar.gz]
+[2024-05-12 04:09:22] INFO root fetch - processPackages [elevenlabs]: Remove: archive file [/home/abi/fetcher/tmp/elevenlabs-1.2.2.tar.gz]
+[2024-05-12 04:09:22] INFO root fetch - main [MainThread]: End processing [elevenlabs]: success
+[2024-05-12 04:09:22] INFO root fetch - main [MainThread]: Store serial: [23166230]
