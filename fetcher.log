@@ -10009,3 +10009,13 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:17:39] INFO root fetch - processPackages [pyclesperanto-prototype]: Remove: archive file [/home/abi/fetcher/tmp/pyclesperanto_prototype-0.9.9.tar.gz]
 [2024-05-12 14:17:39] INFO root fetch - main [MainThread]: End processing [pyclesperanto-prototype]: success
 [2024-05-12 14:17:39] INFO root fetch - main [MainThread]: Store serial: [23169772]
+[2024-05-12 14:19:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169772]
+[2024-05-12 14:19:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 14:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: focusgployer
+[2024-05-12 14:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: musictree
+[2024-05-12 14:19:48] INFO root fetch - processPackages [focusgployer]: New version: [1.1.1] Old Version: [1.1]
+[2024-05-12 14:19:48] WARNING root fetch - processPackages [musictree]: Skipping, unable to determine old version
+[2024-05-12 14:19:48] INFO root fetch - main [MainThread]: End processing [musictree] error
+[2024-05-12 14:19:48] ERROR root fetch - processPackages [focusgployer]: Unable to fetch info: No such project/version 'focusgployer' 1.1
+[2024-05-12 14:19:48] INFO root fetch - main [MainThread]: End processing [focusgployer] error
+[2024-05-12 14:19:48] INFO root fetch - main [MainThread]: Store serial: [23169781]
