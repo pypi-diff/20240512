@@ -16191,3 +16191,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:20:30] INFO root fetch - processPackages [pki-tools]: Remove: archive file [/home/abi/fetcher/tmp/pki_tools-1.0.1.tar.gz]
 [2024-05-12 21:20:30] INFO root fetch - main [MainThread]: End processing [pki-tools]: success
 [2024-05-12 21:20:30] INFO root fetch - main [MainThread]: Store serial: [23173007]
+[2024-05-12 21:22:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173007]
+[2024-05-12 21:22:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 21:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ap0dl
+[2024-05-12 21:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: HueBLE
+[2024-05-12 21:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-easy-faq
+[2024-05-12 21:22:38] INFO root fetch - processPackages [HueBLE]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-12 21:22:38] INFO root fetch - processPackages [HueBLE]: Downloading https://files.pythonhosted.org/packages/15/b9/ba2119658d6dcf0069204e394b2e6de38e930f5bef8b2e53dc7fac300f4f/hueble-1.0.1.tar.gz
+[2024-05-12 21:22:38] INFO root fetch - processPackages [ap0dl]: New version: [1.6.0] Old Version: [1.5.2]
+[2024-05-12 21:22:38] INFO root fetch - processPackages [django-easy-faq]: New version: [1.9] Old Version: [1.8]
+[2024-05-12 21:22:39] INFO root fetch - processPackages [django-easy-faq]: Downloading https://files.pythonhosted.org/packages/d2/0e/3ada0c8de5ac08dcfaa8f66e5a717a29d79316e4603f53284dd24e7562f0/django_easy_faq-1.8.tar.gz
+[2024-05-12 21:22:39] INFO root fetch - processPackages [ap0dl]: Downloading https://files.pythonhosted.org/packages/ce/ce/7078335b55d18a825824b4c729b1c7f26da3ac0a80391badc66d8de75c64/ap0dl-1.5.2.tar.gz
+[2024-05-12 21:22:39] INFO root fetch - processPackages [HueBLE]: Downloading https://files.pythonhosted.org/packages/72/97/6bb3beda68b09632a666f566d27695a87ab71cdcc47524ad0d3a5f00b2bb/hueble-1.0.2.tar.gz
+[2024-05-12 21:22:39] INFO root fetch - processPackages [HueBLE]: executing diffoscope
+[2024-05-12 21:22:39] INFO root fetch - processPackages [HueBLE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hueble-1.0.1.tar.gz tmp/hueble-1.0.2.tar.gz --markdown 20240512/H/HueBLE/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-12 21:22:39] INFO root fetch - processPackages [django-easy-faq]: Downloading https://files.pythonhosted.org/packages/2b/6b/152f3e1a1fe3bef372b677ed64fefa59aa1e99e4c932acc00481e371f5ce/django_easy_faq-1.9.tar.gz
+[2024-05-12 21:22:39] INFO root fetch - processPackages [ap0dl]: Downloading https://files.pythonhosted.org/packages/af/00/05e6c6291f6452200ed7eb3dcb2381ff5b3d994f109280e34884d3f53ee2/ap0dl-1.6.0.tar.gz
+[2024-05-12 21:22:39] INFO root fetch - processPackages [django-easy-faq]: executing diffoscope
+[2024-05-12 21:22:39] INFO root fetch - processPackages [django-easy-faq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_easy_faq-1.8.tar.gz tmp/django_easy_faq-1.9.tar.gz --markdown 20240512/d/django-easy-faq/1.8-1.9/README.md --exclude *.pyd
+[2024-05-12 21:22:39] INFO root fetch - processPackages [ap0dl]: executing diffoscope
+[2024-05-12 21:22:39] INFO root fetch - processPackages [ap0dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ap0dl-1.5.2.tar.gz tmp/ap0dl-1.6.0.tar.gz --markdown 20240512/a/ap0dl/1.5.2-1.6.0/README.md --exclude *.pyd
+[2024-05-12 21:22:39] INFO root fetch - processPackages [HueBLE]: Remove: archive file [/home/abi/fetcher/tmp/hueble-1.0.1.tar.gz]
+[2024-05-12 21:22:39] INFO root fetch - processPackages [HueBLE]: Remove: archive file [/home/abi/fetcher/tmp/hueble-1.0.2.tar.gz]
+[2024-05-12 21:22:39] INFO root fetch - main [MainThread]: End processing [HueBLE]: success
+[2024-05-12 21:22:40] INFO root fetch - processPackages [django-easy-faq]: Remove: archive file [/home/abi/fetcher/tmp/django_easy_faq-1.8.tar.gz]
+[2024-05-12 21:22:40] INFO root fetch - processPackages [django-easy-faq]: Remove: archive file [/home/abi/fetcher/tmp/django_easy_faq-1.9.tar.gz]
+[2024-05-12 21:22:40] INFO root fetch - main [MainThread]: End processing [django-easy-faq]: success
+[2024-05-12 21:22:40] INFO root fetch - processPackages [ap0dl]: Remove: archive file [/home/abi/fetcher/tmp/ap0dl-1.5.2.tar.gz]
+[2024-05-12 21:22:40] INFO root fetch - processPackages [ap0dl]: Remove: archive file [/home/abi/fetcher/tmp/ap0dl-1.6.0.tar.gz]
+[2024-05-12 21:22:40] INFO root fetch - main [MainThread]: End processing [ap0dl]: success
+[2024-05-12 21:22:40] INFO root fetch - main [MainThread]: Store serial: [23173016]
