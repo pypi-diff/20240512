@@ -4229,3 +4229,21 @@
 [2024-05-12 06:16:37] WARNING root fetch - processPackages [usherai-005]: Skipping, unable to determine old version
 [2024-05-12 06:16:37] INFO root fetch - main [MainThread]: End processing [usherai-005] error
 [2024-05-12 06:16:37] INFO root fetch - main [MainThread]: Store serial: [23166930]
+[2024-05-12 06:18:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166930]
+[2024-05-12 06:18:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 06:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: recycling
+[2024-05-12 06:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: espy-contact
+[2024-05-12 06:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anki-card-create
+[2024-05-12 06:18:46] WARNING root fetch - processPackages [anki-card-create]: Skipping, unable to determine old version
+[2024-05-12 06:18:46] INFO root fetch - main [MainThread]: End processing [anki-card-create] error
+[2024-05-12 06:18:46] WARNING root fetch - processPackages [recycling]: Skipping, unable to determine old version
+[2024-05-12 06:18:46] INFO root fetch - main [MainThread]: End processing [recycling] error
+[2024-05-12 06:18:46] INFO root fetch - processPackages [espy-contact]: New version: [0.9] Old Version: [0.8]
+[2024-05-12 06:18:46] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/07/4c/6d6ed1c239b72208f165ce670dcdc6ffc30e2eb8f70f1f7e5b6106e832a0/espy_contact-0.8.tar.gz
+[2024-05-12 06:18:47] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/1f/a2/722fe00e34c488a1e91c9eb0ebe6b27115da9bc5c6d0311da983b6ab22d9/espy_contact-0.9.tar.gz
+[2024-05-12 06:18:47] INFO root fetch - processPackages [espy-contact]: executing diffoscope
+[2024-05-12 06:18:47] INFO root fetch - processPackages [espy-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_contact-0.8.tar.gz tmp/espy_contact-0.9.tar.gz --markdown 20240512/e/espy-contact/0.8-0.9/README.md --exclude *.pyd
+[2024-05-12 06:18:47] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-0.8.tar.gz]
+[2024-05-12 06:18:47] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-0.9.tar.gz]
+[2024-05-12 06:18:47] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
+[2024-05-12 06:18:47] INFO root fetch - main [MainThread]: Store serial: [23166943]
