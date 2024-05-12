@@ -15679,3 +15679,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:47:47] WARNING root fetch - processPackages [abdominalz]: Skipping, unable to determine old version
 [2024-05-12 20:47:47] INFO root fetch - main [MainThread]: End processing [abdominalz] error
 [2024-05-12 20:47:47] INFO root fetch - main [MainThread]: Store serial: [23172776]
+[2024-05-12 20:49:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172776]
+[2024-05-12 20:49:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 20:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sequentialdw
+[2024-05-12 20:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: medicafe
+[2024-05-12 20:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tolsesterz
+[2024-05-12 20:49:55] INFO root fetch - processPackages [medicafe]: New version: [0.240512.8] Old Version: [0.240512.7]
+[2024-05-12 20:49:55] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/15/dd/5e0a10dffdcd25b85d629c81f1ec0315717682f34cab6e674b1a5563ceb3/medicafe-0.240512.7.tar.gz
+[2024-05-12 20:49:55] WARNING root fetch - processPackages [sequentialdw]: Skipping, unable to determine old version
+[2024-05-12 20:49:55] INFO root fetch - main [MainThread]: End processing [sequentialdw] error
+[2024-05-12 20:49:55] WARNING root fetch - processPackages [tolsesterz]: Skipping, unable to determine old version
+[2024-05-12 20:49:55] INFO root fetch - main [MainThread]: End processing [tolsesterz] error
+[2024-05-12 20:49:56] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/f0/54/66048cfc72021cbd20bc0e6b6b8aaa121437ee9908f89fbb0eaf737b54ca/medicafe-0.240512.8.tar.gz
+[2024-05-12 20:49:56] INFO root fetch - processPackages [medicafe]: executing diffoscope
+[2024-05-12 20:49:56] INFO root fetch - processPackages [medicafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medicafe-0.240512.7.tar.gz tmp/medicafe-0.240512.8.tar.gz --markdown 20240512/m/medicafe/0.240512.7-0.240512.8/README.md --exclude *.pyd
+[2024-05-12 20:49:56] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240512.7.tar.gz]
+[2024-05-12 20:49:56] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240512.8.tar.gz]
+[2024-05-12 20:49:56] INFO root fetch - main [MainThread]: End processing [medicafe]: success
+[2024-05-12 20:49:56] INFO root fetch - main [MainThread]: Store serial: [23172788]
