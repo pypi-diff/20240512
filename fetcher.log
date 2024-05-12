@@ -15812,3 +15812,93 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:00:46] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.3.0.dev1.tar.gz]
 [2024-05-12 21:00:46] INFO root fetch - main [MainThread]: End processing [torch-model-manager]: success
 [2024-05-12 21:00:46] INFO root fetch - main [MainThread]: Store serial: [23172848]
+[2024-05-12 21:02:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172848]
+[2024-05-12 21:02:55] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-05-12 21:02:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Panis
+[2024-05-12 21:02:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sequentialdw
+[2024-05-12 21:02:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apache-airflow-providers-amazon
+[2024-05-12 21:02:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apache-airflow-providers-apache-iceberg
+[2024-05-12 21:02:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apache-airflow-providers-google
+[2024-05-12 21:02:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: apache-airflow-providers-microsoft-azure
+[2024-05-12 21:02:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: apache-airflow-providers-pinecone
+[2024-05-12 21:02:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: apache-airflow-providers-tabular
+[2024-05-12 21:02:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bakapi-v2
+[2024-05-12 21:02:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: anywidget
+[2024-05-12 21:02:55] INFO root fetch - processPackages [Panis]: New version: [0.2] Old Version: [0.1]
+[2024-05-12 21:02:55] WARNING root fetch - processPackages [sequentialdw]: Skipping, unable to determine old version
+[2024-05-12 21:02:55] INFO root fetch - processPackages [sequentialdw]: Start processing: anemone-daisy-maker
+[2024-05-12 21:02:55] INFO root fetch - main [MainThread]: End processing [sequentialdw] error
+[2024-05-12 21:02:55] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: New version: [9.0.1rc1] Old Version: [9.0.1]
+[2024-05-12 21:02:55] INFO root fetch - processPackages [apache-airflow-providers-google]: New version: [9.0.0rc2] Old Version: [9.0.0rc1]
+[2024-05-12 21:02:55] INFO root fetch - processPackages [bakapi-v2]: New version: [0.4] Old Version: [0.3]
+[2024-05-12 21:02:55] INFO root fetch - processPackages [apache-airflow-providers-pinecone]: New version: [2.0.0rc2] Old Version: [2.0.0rc1]
+[2024-05-12 21:02:55] INFO root fetch - processPackages [anywidget]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-12 21:02:55] WARNING root fetch - processPackages [apache-airflow-providers-apache-iceberg]: Skipping, unable to determine old version
+[2024-05-12 21:02:55] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-apache-iceberg] error
+[2024-05-12 21:02:55] INFO root fetch - processPackages [apache-airflow-providers-tabular]: New version: [1.5.1rc1] Old Version: [1.5.0rc2]
+[2024-05-12 21:02:55] INFO root fetch - processPackages [anemone-daisy-maker]: New version: [1.55.7] Old Version: [1.55.6]
+[2024-05-12 21:02:55] INFO root fetch - processPackages [apache-airflow-providers-amazon]: New version: [8.9.0rc1] Old Version: [8.9.0]
+[2024-05-12 21:02:55] INFO root fetch - processPackages [Panis]: Downloading https://files.pythonhosted.org/packages/0b/58/685f499811780d7a39e5ddc5e275526afedcfd0fe640d2c8b6990e43c68e/panis-0.1.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: Downloading https://files.pythonhosted.org/packages/f4/93/467246f89c6784eb0d95334a841b920cd338a67b3e3aa91caeecbb4457ec/apache_airflow_providers_microsoft_azure-9.0.1.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-amazon]: Downloading https://files.pythonhosted.org/packages/57/fc/a834ff5b059f28ab778f45bb0fde84a3aa9ed99970c573bb1a824024ca2f/apache-airflow-providers-amazon-8.9.0.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [bakapi-v2]: Downloading https://files.pythonhosted.org/packages/bd/68/5a3dbffa5aec449235fa7e727479ecc337f466966d5be3a166e426fd7ca9/bakapi_v2-0.3.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-pinecone]: Downloading https://files.pythonhosted.org/packages/77/2e/24908bafb7b98d0cd60dd15f2486154c9c32b536b3a7d2b9e81ad25ffa8d/apache_airflow_providers_pinecone-2.0.0rc1.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [anemone-daisy-maker]: Downloading https://files.pythonhosted.org/packages/3d/4e/f3844877f86ad7b28bf08cb570e665ac2524031afae03e82f75e455e71aa/anemone_daisy_maker-1.55.6.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-tabular]: Downloading https://files.pythonhosted.org/packages/15/19/d4de41dbabd0240151fb4fb0aa16d0494f38191c4e7df7ffc191286afdf5/apache_airflow_providers_tabular-1.5.0rc2.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [anywidget]: Downloading https://files.pythonhosted.org/packages/a7/69/4bf33bafbd4320798ca4caeff38f0b105370d00458782a48e76eada782b4/anywidget-0.9.8.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-google]: Downloading https://files.pythonhosted.org/packages/d7/dd/8d2856a3ac1d0826f5dd152fe38a7f0562702f229e4a444c7ea5911e3174/apache-airflow-providers-google-9.0.0rc1.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [Panis]: Downloading https://files.pythonhosted.org/packages/f3/c2/04e794c01af37dcc4d487b190a714f69f3cd0e2927290168ec885d8a7fe1/Panis-0.2.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [Panis]: executing diffoscope
+[2024-05-12 21:02:56] INFO root fetch - processPackages [Panis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panis-0.1.tar.gz tmp/Panis-0.2.tar.gz --markdown 20240512/P/Panis/0.1-0.2/README.md --exclude *.pyd
+[2024-05-12 21:02:56] INFO root fetch - processPackages [bakapi-v2]: Downloading https://files.pythonhosted.org/packages/d5/75/c1c87b871f7f001497cbf20b906d2e4d060863d44b1455c4542be6b6c8c5/bakapi_v2-0.4.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-amazon]: Downloading https://files.pythonhosted.org/packages/0c/82/8ffc8ff3c9b89b9e339d414ad1aeadc8662f307143775bbb30b6ab859a1e/apache-airflow-providers-amazon-8.9.0rc1.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-tabular]: Downloading https://files.pythonhosted.org/packages/53/39/8977d3252967c73a9ff1337bbda6965e4ea28eee3ec26b6b47aa19b2e890/apache_airflow_providers_tabular-1.5.1rc1.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: Downloading https://files.pythonhosted.org/packages/e4/5f/e6173fedef7870bb14c4ba3dae465860aeeaa2c64ffad9af1b046e5ba5be/apache_airflow_providers_microsoft_azure-9.0.1rc1.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [anemone-daisy-maker]: Downloading https://files.pythonhosted.org/packages/a6/28/5fc03b3acf7258c5fbd045277e6233d557438185c9fef2e6290be892fe51/anemone_daisy_maker-1.55.7.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-pinecone]: Downloading https://files.pythonhosted.org/packages/41/68/f6fa76750c1a1fc8b4d186ef23cbd111e83f83f490c02cf6c4c3b6e37a39/apache_airflow_providers_pinecone-2.0.0rc2.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [bakapi-v2]: executing diffoscope
+[2024-05-12 21:02:56] INFO root fetch - processPackages [bakapi-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bakapi_v2-0.3.tar.gz tmp/bakapi_v2-0.4.tar.gz --markdown 20240512/b/bakapi-v2/0.3-0.4/README.md --exclude *.pyd
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-amazon]: executing diffoscope
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-tabular]: executing diffoscope
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-tabular]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache_airflow_providers_tabular-1.5.0rc2.tar.gz tmp/apache_airflow_providers_tabular-1.5.1rc1.tar.gz --markdown 20240512/a/apache-airflow-providers-tabular/1.5.0rc2-1.5.1rc1/README.md --exclude *.pyd
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-amazon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-providers-amazon-8.9.0.tar.gz tmp/apache-airflow-providers-amazon-8.9.0rc1.tar.gz --markdown 20240512/a/apache-airflow-providers-amazon/8.9.0-8.9.0rc1/README.md --exclude *.pyd
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-pinecone]: executing diffoscope
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-pinecone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache_airflow_providers_pinecone-2.0.0rc1.tar.gz tmp/apache_airflow_providers_pinecone-2.0.0rc2.tar.gz --markdown 20240512/a/apache-airflow-providers-pinecone/2.0.0rc1-2.0.0rc2/README.md --exclude *.pyd
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: executing diffoscope
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache_airflow_providers_microsoft_azure-9.0.1.tar.gz tmp/apache_airflow_providers_microsoft_azure-9.0.1rc1.tar.gz --markdown 20240512/a/apache-airflow-providers-microsoft-azure/9.0.1-9.0.1rc1/README.md --exclude *.pyd
+[2024-05-12 21:02:56] INFO root fetch - processPackages [apache-airflow-providers-google]: Downloading https://files.pythonhosted.org/packages/c9/a9/4d2d2be9368e88a481079184119d20b7f5a9d7e3f56f7303b1bf2508169b/apache-airflow-providers-google-9.0.0rc2.tar.gz
+[2024-05-12 21:02:56] INFO root fetch - processPackages [anemone-daisy-maker]: executing diffoscope
+[2024-05-12 21:02:56] INFO root fetch - processPackages [anemone-daisy-maker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anemone_daisy_maker-1.55.6.tar.gz tmp/anemone_daisy_maker-1.55.7.tar.gz --markdown 20240512/a/anemone-daisy-maker/1.55.6-1.55.7/README.md --exclude *.pyd
+[2024-05-12 21:02:57] INFO root fetch - processPackages [apache-airflow-providers-google]: executing diffoscope
+[2024-05-12 21:02:57] INFO root fetch - processPackages [apache-airflow-providers-google]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-providers-google-9.0.0rc1.tar.gz tmp/apache-airflow-providers-google-9.0.0rc2.tar.gz --markdown 20240512/a/apache-airflow-providers-google/9.0.0rc1-9.0.0rc2/README.md --exclude *.pyd
+[2024-05-12 21:02:57] INFO root fetch - processPackages [Panis]: Remove: archive file [/home/abi/fetcher/tmp/panis-0.1.tar.gz]
+[2024-05-12 21:02:57] INFO root fetch - processPackages [Panis]: Remove: archive file [/home/abi/fetcher/tmp/Panis-0.2.tar.gz]
+[2024-05-12 21:02:57] INFO root fetch - main [MainThread]: End processing [Panis]: success
+[2024-05-12 21:02:57] INFO root fetch - processPackages [anywidget]: Downloading https://files.pythonhosted.org/packages/13/44/a6b423b35e7cca60ddc329bef251c65b487838433eae81a9ed1a60c7891a/anywidget-0.9.9.tar.gz
+[2024-05-12 21:02:57] INFO root fetch - processPackages [apache-airflow-providers-tabular]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_tabular-1.5.0rc2.tar.gz]
+[2024-05-12 21:02:57] INFO root fetch - processPackages [apache-airflow-providers-tabular]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_tabular-1.5.1rc1.tar.gz]
+[2024-05-12 21:02:57] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-tabular]: success
+[2024-05-12 21:02:57] INFO root fetch - processPackages [bakapi-v2]: Remove: archive file [/home/abi/fetcher/tmp/bakapi_v2-0.3.tar.gz]
+[2024-05-12 21:02:57] INFO root fetch - processPackages [bakapi-v2]: Remove: archive file [/home/abi/fetcher/tmp/bakapi_v2-0.4.tar.gz]
+[2024-05-12 21:02:57] INFO root fetch - main [MainThread]: End processing [bakapi-v2]: success
+[2024-05-12 21:02:57] INFO root fetch - processPackages [apache-airflow-providers-pinecone]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_pinecone-2.0.0rc1.tar.gz]
+[2024-05-12 21:02:57] INFO root fetch - processPackages [apache-airflow-providers-pinecone]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_pinecone-2.0.0rc2.tar.gz]
+[2024-05-12 21:02:57] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-pinecone]: success
+[2024-05-12 21:02:57] INFO root fetch - processPackages [anemone-daisy-maker]: Remove: archive file [/home/abi/fetcher/tmp/anemone_daisy_maker-1.55.6.tar.gz]
+[2024-05-12 21:02:57] INFO root fetch - processPackages [anemone-daisy-maker]: Remove: archive file [/home/abi/fetcher/tmp/anemone_daisy_maker-1.55.7.tar.gz]
+[2024-05-12 21:02:57] INFO root fetch - main [MainThread]: End processing [anemone-daisy-maker]: success
+[2024-05-12 21:02:57] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_microsoft_azure-9.0.1.tar.gz]
+[2024-05-12 21:02:57] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_microsoft_azure-9.0.1rc1.tar.gz]
+[2024-05-12 21:02:57] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-microsoft-azure]: success
+[2024-05-12 21:02:58] INFO root fetch - processPackages [apache-airflow-providers-amazon]: Remove: archive file [/home/abi/fetcher/tmp/apache-airflow-providers-amazon-8.9.0.tar.gz]
+[2024-05-12 21:02:58] INFO root fetch - processPackages [apache-airflow-providers-amazon]: Remove: archive file [/home/abi/fetcher/tmp/apache-airflow-providers-amazon-8.9.0rc1.tar.gz]
+[2024-05-12 21:02:58] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-amazon]: success
+[2024-05-12 21:03:01] INFO root fetch - processPackages [anywidget]: executing diffoscope
+[2024-05-12 21:03:01] INFO root fetch - processPackages [anywidget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anywidget-0.9.8.tar.gz tmp/anywidget-0.9.9.tar.gz --markdown 20240512/a/anywidget/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-12 21:03:04] INFO root fetch - processPackages [apache-airflow-providers-google]: Remove: archive file [/home/abi/fetcher/tmp/apache-airflow-providers-google-9.0.0rc1.tar.gz]
+[2024-05-12 21:03:04] INFO root fetch - processPackages [apache-airflow-providers-google]: Remove: archive file [/home/abi/fetcher/tmp/apache-airflow-providers-google-9.0.0rc2.tar.gz]
+[2024-05-12 21:03:04] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-google]: success
+[2024-05-12 21:03:04] INFO root fetch - processPackages [anywidget]: Remove: archive file [/home/abi/fetcher/tmp/anywidget-0.9.8.tar.gz]
+[2024-05-12 21:03:04] INFO root fetch - processPackages [anywidget]: Remove: archive file [/home/abi/fetcher/tmp/anywidget-0.9.9.tar.gz]
+[2024-05-12 21:03:04] INFO root fetch - main [MainThread]: End processing [anywidget]: success
+[2024-05-12 21:03:04] INFO root fetch - main [MainThread]: Store serial: [23172878]
