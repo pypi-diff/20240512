@@ -12124,3 +12124,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:58:59] INFO root fetch - processPackages [lib-version-remla24-team02]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_remla24_team02-0.0.1.tar.gz]
 [2024-05-12 16:58:59] INFO root fetch - main [MainThread]: End processing [lib-version-remla24-team02]: success
 [2024-05-12 16:58:59] INFO root fetch - main [MainThread]: Store serial: [23170949]
+[2024-05-12 17:01:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170949]
+[2024-05-12 17:01:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 17:01:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: basinervedz
+[2024-05-12 17:01:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geocif
+[2024-05-12 17:01:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: json-repair
+[2024-05-12 17:01:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlpr
+[2024-05-12 17:01:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: b7w-cli
+[2024-05-12 17:01:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jinja2-embedded
+[2024-05-12 17:01:08] INFO root fetch - processPackages [mlpr]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 17:01:08] INFO root fetch - processPackages [jinja2-embedded]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 17:01:08] INFO root fetch - processPackages [b7w-cli]: New version: [0.3.0] Old Version: [0.1.9]
+[2024-05-12 17:01:08] INFO root fetch - processPackages [json-repair]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-05-12 17:01:08] WARNING root fetch - processPackages [basinervedz]: Skipping, unable to determine old version
+[2024-05-12 17:01:08] INFO root fetch - main [MainThread]: End processing [basinervedz] error
+[2024-05-12 17:01:08] INFO root fetch - processPackages [geocif]: New version: [0.1.25] Old Version: [0.1.24]
+[2024-05-12 17:01:08] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/73/3a/39153727c1ce2f4aa9d8d804e48fc7942f19f53dac796571b94f0121a129/mlpr-0.1.8.tar.gz
+[2024-05-12 17:01:08] INFO root fetch - processPackages [b7w-cli]: Downloading https://files.pythonhosted.org/packages/06/56/ad0845c687c45049e92923b175557f6c8c2428f30f3e65d18df9943bc050/b7w-cli-0.1.9.tar.gz
+[2024-05-12 17:01:08] INFO root fetch - processPackages [jinja2-embedded]: Downloading https://files.pythonhosted.org/packages/57/c4/0b6df9d08f2f145950ec19c6522101a2ca58571a5f35c12355d519a5845f/jinja2_embedded-0.1.0.tar.gz
+[2024-05-12 17:01:08] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/30/98/8e5e70109f1541aeeeccf67fa2876d53b95f4dbf67deb476eaa6931ff9b5/json_repair-0.8.1.tar.gz
+[2024-05-12 17:01:08] INFO root fetch - processPackages [geocif]: Downloading https://files.pythonhosted.org/packages/2b/90/f09b02235aeccfb8e955a28eb8e783a4dedad3a6c52c9eed99ff1d5f42d6/geocif-0.1.24.tar.gz
+[2024-05-12 17:01:08] INFO root fetch - processPackages [b7w-cli]: Downloading https://files.pythonhosted.org/packages/fb/3f/6e1a8d914eb5b366cf926bd08be0e4dc34b081bf424c64b0bc0ebb75e9a7/b7w_cli-0.3.0.tar.gz
+[2024-05-12 17:01:08] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/fc/c0/71f4eab477564c23412fe136584c09b6f94ce4a147fcdc8ac880eef388a2/mlpr-0.1.9.tar.gz
+[2024-05-12 17:01:08] INFO root fetch - processPackages [b7w-cli]: executing diffoscope
+[2024-05-12 17:01:08] INFO root fetch - processPackages [b7w-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/b7w-cli-0.1.9.tar.gz tmp/b7w_cli-0.3.0.tar.gz --markdown 20240512/b/b7w-cli/0.1.9-0.3.0/README.md --exclude *.pyd
+[2024-05-12 17:01:08] INFO root fetch - processPackages [mlpr]: executing diffoscope
+[2024-05-12 17:01:08] INFO root fetch - processPackages [mlpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpr-0.1.8.tar.gz tmp/mlpr-0.1.9.tar.gz --markdown 20240512/m/mlpr/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 17:01:08] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/a3/6d/f3cff9a4b72bae984511e3b5e198dc886ea044b979e7d59ebd53d0583a10/json_repair-0.9.0.tar.gz
+[2024-05-12 17:01:08] INFO root fetch - processPackages [jinja2-embedded]: Downloading https://files.pythonhosted.org/packages/ee/74/0090fb9a85eb6380e0a08ced515aa44d36a160166f4d7c4ed941c4e6fe9b/jinja2_embedded-0.1.1.tar.gz
+[2024-05-12 17:01:08] INFO root fetch - processPackages [geocif]: Downloading https://files.pythonhosted.org/packages/80/1e/5856eb83c3a96ae69b9b84b75def62fbc2d3ccabf0c60f91e73c8fbac3af/geocif-0.1.25.tar.gz
+[2024-05-12 17:01:08] INFO root fetch - processPackages [json-repair]: executing diffoscope
+[2024-05-12 17:01:08] INFO root fetch - processPackages [json-repair]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_repair-0.8.1.tar.gz tmp/json_repair-0.9.0.tar.gz --markdown 20240512/j/json-repair/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-05-12 17:01:09] INFO root fetch - processPackages [jinja2-embedded]: executing diffoscope
+[2024-05-12 17:01:09] INFO root fetch - processPackages [jinja2-embedded]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jinja2_embedded-0.1.0.tar.gz tmp/jinja2_embedded-0.1.1.tar.gz --markdown 20240512/j/jinja2-embedded/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 17:01:09] INFO root fetch - processPackages [geocif]: executing diffoscope
+[2024-05-12 17:01:09] INFO root fetch - processPackages [geocif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geocif-0.1.24.tar.gz tmp/geocif-0.1.25.tar.gz --markdown 20240512/g/geocif/0.1.24-0.1.25/README.md --exclude *.pyd
+[2024-05-12 17:01:09] INFO root fetch - processPackages [b7w-cli]: Remove: archive file [/home/abi/fetcher/tmp/b7w-cli-0.1.9.tar.gz]
+[2024-05-12 17:01:09] INFO root fetch - processPackages [b7w-cli]: Remove: archive file [/home/abi/fetcher/tmp/b7w_cli-0.3.0.tar.gz]
+[2024-05-12 17:01:09] INFO root fetch - main [MainThread]: End processing [b7w-cli]: success
+[2024-05-12 17:01:09] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.8.tar.gz]
+[2024-05-12 17:01:09] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.9.tar.gz]
+[2024-05-12 17:01:09] INFO root fetch - main [MainThread]: End processing [mlpr]: success
+[2024-05-12 17:01:09] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.8.1.tar.gz]
+[2024-05-12 17:01:09] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.9.0.tar.gz]
+[2024-05-12 17:01:09] INFO root fetch - main [MainThread]: End processing [json-repair]: success
+[2024-05-12 17:01:09] INFO root fetch - processPackages [jinja2-embedded]: Remove: archive file [/home/abi/fetcher/tmp/jinja2_embedded-0.1.0.tar.gz]
+[2024-05-12 17:01:09] INFO root fetch - processPackages [jinja2-embedded]: Remove: archive file [/home/abi/fetcher/tmp/jinja2_embedded-0.1.1.tar.gz]
+[2024-05-12 17:01:09] INFO root fetch - main [MainThread]: End processing [jinja2-embedded]: success
+[2024-05-12 17:01:09] INFO root fetch - processPackages [geocif]: Remove: archive file [/home/abi/fetcher/tmp/geocif-0.1.24.tar.gz]
+[2024-05-12 17:01:09] INFO root fetch - processPackages [geocif]: Remove: archive file [/home/abi/fetcher/tmp/geocif-0.1.25.tar.gz]
+[2024-05-12 17:01:09] INFO root fetch - main [MainThread]: End processing [geocif]: success
+[2024-05-12 17:01:09] INFO root fetch - main [MainThread]: Store serial: [23170969]
