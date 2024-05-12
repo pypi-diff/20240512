@@ -6345,3 +6345,18 @@
 [2024-05-12 09:28:18] INFO root fetch - processPackages [gpt-researcher]: Remove: archive file [/home/abi/fetcher/tmp/gpt-researcher-0.4.2.tar.gz]
 [2024-05-12 09:28:18] INFO root fetch - main [MainThread]: End processing [gpt-researcher]: success
 [2024-05-12 09:28:18] INFO root fetch - main [MainThread]: Store serial: [23167821]
+[2024-05-12 09:30:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167821]
+[2024-05-12 09:30:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 09:30:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gpt-researcher
+[2024-05-12 09:30:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: corachz
+[2024-05-12 09:30:27] INFO root fetch - processPackages [gpt-researcher]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-12 09:30:27] INFO root fetch - processPackages [gpt-researcher]: Downloading https://files.pythonhosted.org/packages/38/20/21b60e541cd6963650974d47d2eb3c52357258a229acfe5c28ef030ced2e/gpt-researcher-0.4.2.tar.gz
+[2024-05-12 09:30:27] WARNING root fetch - processPackages [corachz]: Skipping, unable to determine old version
+[2024-05-12 09:30:27] INFO root fetch - main [MainThread]: End processing [corachz] error
+[2024-05-12 09:30:27] INFO root fetch - processPackages [gpt-researcher]: Downloading https://files.pythonhosted.org/packages/52/0f/07e7ece0ed3214797edc441e22778f7192ecc20d954b9e407d3ea3b4c5eb/gpt-researcher-0.4.3.tar.gz
+[2024-05-12 09:30:27] INFO root fetch - processPackages [gpt-researcher]: executing diffoscope
+[2024-05-12 09:30:27] INFO root fetch - processPackages [gpt-researcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-researcher-0.4.2.tar.gz tmp/gpt-researcher-0.4.3.tar.gz --markdown 20240512/g/gpt-researcher/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-12 09:30:28] INFO root fetch - processPackages [gpt-researcher]: Remove: archive file [/home/abi/fetcher/tmp/gpt-researcher-0.4.2.tar.gz]
+[2024-05-12 09:30:28] INFO root fetch - processPackages [gpt-researcher]: Remove: archive file [/home/abi/fetcher/tmp/gpt-researcher-0.4.3.tar.gz]
+[2024-05-12 09:30:28] INFO root fetch - main [MainThread]: End processing [gpt-researcher]: success
+[2024-05-12 09:30:28] INFO root fetch - main [MainThread]: Store serial: [23167828]
