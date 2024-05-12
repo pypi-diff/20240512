@@ -15280,3 +15280,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:17:26] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.1.9.tar.gz]
 [2024-05-12 20:17:26] INFO root fetch - main [MainThread]: End processing [funky-modifiers]: success
 [2024-05-12 20:17:26] INFO root fetch - main [MainThread]: Store serial: [23172574]
+[2024-05-12 20:19:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172574]
+[2024-05-12 20:19:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 20:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyterlab-transformers-completer
+[2024-05-12 20:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exasperatesz
+[2024-05-12 20:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alembicz
+[2024-05-12 20:19:35] WARNING root fetch - processPackages [alembicz]: Skipping, unable to determine old version
+[2024-05-12 20:19:35] INFO root fetch - main [MainThread]: End processing [alembicz] error
+[2024-05-12 20:19:35] INFO root fetch - processPackages [jupyterlab-transformers-completer]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-12 20:19:35] WARNING root fetch - processPackages [exasperatesz]: Skipping, unable to determine old version
+[2024-05-12 20:19:35] INFO root fetch - main [MainThread]: End processing [exasperatesz] error
+[2024-05-12 20:19:35] INFO root fetch - processPackages [jupyterlab-transformers-completer]: Downloading https://files.pythonhosted.org/packages/88/05/91bd4398db1a3c6daa23aa0a3b96507384edfa2fbb86afe7ea28073b398b/jupyterlab_transformers_completer-0.2.0.tar.gz
+[2024-05-12 20:19:35] INFO root fetch - processPackages [jupyterlab-transformers-completer]: Downloading https://files.pythonhosted.org/packages/8a/0b/48844fd53bc5132e73d04f47e0fd55943ae83975a16a3015cc2909b113ae/jupyterlab_transformers_completer-0.3.0.tar.gz
+[2024-05-12 20:19:35] INFO root fetch - processPackages [jupyterlab-transformers-completer]: executing diffoscope
+[2024-05-12 20:19:35] INFO root fetch - processPackages [jupyterlab-transformers-completer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_transformers_completer-0.2.0.tar.gz tmp/jupyterlab_transformers_completer-0.3.0.tar.gz --markdown 20240512/j/jupyterlab-transformers-completer/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-12 20:19:37] INFO root fetch - processPackages [jupyterlab-transformers-completer]: Remove: archive file [/home/abi/fetcher/tmp/jupyterlab_transformers_completer-0.2.0.tar.gz]
+[2024-05-12 20:19:37] INFO root fetch - processPackages [jupyterlab-transformers-completer]: Remove: archive file [/home/abi/fetcher/tmp/jupyterlab_transformers_completer-0.3.0.tar.gz]
+[2024-05-12 20:19:37] INFO root fetch - main [MainThread]: End processing [jupyterlab-transformers-completer]: success
+[2024-05-12 20:19:37] INFO root fetch - main [MainThread]: Store serial: [23172585]
