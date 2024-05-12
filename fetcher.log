@@ -9962,3 +9962,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:15:26] INFO root fetch - processPackages [omymodels]: Remove: archive file [/home/abi/fetcher/tmp/omymodels-0.9.0.tar.gz]
 [2024-05-12 14:15:26] INFO root fetch - main [MainThread]: End processing [omymodels]: success
 [2024-05-12 14:15:26] INFO root fetch - main [MainThread]: Store serial: [23169752]
+[2024-05-12 14:17:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169752]
+[2024-05-12 14:17:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 14:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anomeda
+[2024-05-12 14:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: focusgployer
+[2024-05-12 14:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fluidprop
+[2024-05-12 14:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyclesperanto-prototype
+[2024-05-12 14:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: focusgployer
+[2024-05-12 14:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pi-log
+[2024-05-12 14:17:35] INFO root fetch - processPackages [focusgployer]: New version: [1.0.1] Old Version: [1.0]
+[2024-05-12 14:17:35] INFO root fetch - processPackages [focusgployer]: New version: [1.0.1] Old Version: [1.0]
+[2024-05-12 14:17:35] INFO root fetch - processPackages [pi-log]: New version: [0.5.8] Old Version: [0.5.7.3]
+[2024-05-12 14:17:35] INFO root fetch - processPackages [fluidprop]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-12 14:17:35] INFO root fetch - processPackages [anomeda]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-12 14:17:35] INFO root fetch - processPackages [pi-log]: Downloading https://files.pythonhosted.org/packages/d1/f4/f6b09eec564e89bfe241be3ff50783bd8d190ce3d5be4c7f3158dd0c1531/pi_log-0.5.7.3.tar.gz
+[2024-05-12 14:17:35] INFO root fetch - processPackages [pyclesperanto-prototype]: New version: [0.9.9] Old Version: [0.9.7]
+[2024-05-12 14:17:35] ERROR root fetch - processPackages [focusgployer]: Unable to fetch info: No such project/version 'focusgployer' 1.0
+[2024-05-12 14:17:35] ERROR root fetch - processPackages [focusgployer]: Unable to fetch info: No such project/version 'focusgployer' 1.0
+[2024-05-12 14:17:35] INFO root fetch - main [MainThread]: End processing [focusgployer] error
+[2024-05-12 14:17:35] INFO root fetch - main [MainThread]: End processing [focusgployer] error
+[2024-05-12 14:17:35] INFO root fetch - processPackages [fluidprop]: Downloading https://files.pythonhosted.org/packages/37/11/31f2c708ed214d4e2efdc6e191bdd3241f97a98d854be1d50aed3e3cf678/fluidprop-1.0.0.tar.gz
+[2024-05-12 14:17:35] INFO root fetch - processPackages [anomeda]: Downloading https://files.pythonhosted.org/packages/50/75/76f2fb23c579c6722de56d790ee1bf784599fb6269aee64b04bb4d869847/anomeda-0.1.3.tar.gz
+[2024-05-12 14:17:35] INFO root fetch - processPackages [pyclesperanto-prototype]: Downloading https://files.pythonhosted.org/packages/ac/0b/15e5b923187daf9762fc4254cd20834b0906472c5ea8eb9379030fb0d58a/pyclesperanto_prototype-0.9.7.tar.gz
+[2024-05-12 14:17:35] INFO root fetch - processPackages [pi-log]: Downloading https://files.pythonhosted.org/packages/7f/28/4c830e7af29222580db60338f4f0056125bdd01e6632a1f4956e729591c5/pi_log-0.5.8.tar.gz
+[2024-05-12 14:17:36] INFO root fetch - processPackages [pi-log]: executing diffoscope
+[2024-05-12 14:17:36] INFO root fetch - processPackages [pi-log]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_log-0.5.7.3.tar.gz tmp/pi_log-0.5.8.tar.gz --markdown 20240512/p/pi-log/0.5.7.3-0.5.8/README.md --exclude *.pyd
+[2024-05-12 14:17:36] INFO root fetch - processPackages [fluidprop]: Downloading https://files.pythonhosted.org/packages/24/96/51c11ea5cf64da473e7fc76cdcc6632b695e63e730f8b054f78ca5add14a/fluidprop-1.1.0.tar.gz
+[2024-05-12 14:17:36] INFO root fetch - processPackages [anomeda]: Downloading https://files.pythonhosted.org/packages/4f/f4/fa449e31164b29dd8c9c5a3b697af1a2857fbfec11e6db027871146ac15d/anomeda-0.1.4.tar.gz
+[2024-05-12 14:17:36] INFO root fetch - processPackages [fluidprop]: executing diffoscope
+[2024-05-12 14:17:36] INFO root fetch - processPackages [fluidprop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluidprop-1.0.0.tar.gz tmp/fluidprop-1.1.0.tar.gz --markdown 20240512/f/fluidprop/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-12 14:17:36] INFO root fetch - processPackages [anomeda]: executing diffoscope
+[2024-05-12 14:17:36] INFO root fetch - processPackages [anomeda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anomeda-0.1.3.tar.gz tmp/anomeda-0.1.4.tar.gz --markdown 20240512/a/anomeda/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-12 14:17:36] INFO root fetch - processPackages [pyclesperanto-prototype]: Downloading https://files.pythonhosted.org/packages/4b/f5/eed7c04b08961a90e632893a930b353d8613cbb3072c91f72157c8c92f4d/pyclesperanto_prototype-0.9.9.tar.gz
+[2024-05-12 14:17:36] INFO root fetch - processPackages [pyclesperanto-prototype]: executing diffoscope
+[2024-05-12 14:17:36] INFO root fetch - processPackages [pyclesperanto-prototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyclesperanto_prototype-0.9.7.tar.gz tmp/pyclesperanto_prototype-0.9.9.tar.gz --markdown 20240512/p/pyclesperanto-prototype/0.9.7-0.9.9/README.md --exclude *.pyd
+[2024-05-12 14:17:36] INFO root fetch - processPackages [pi-log]: Remove: archive file [/home/abi/fetcher/tmp/pi_log-0.5.7.3.tar.gz]
+[2024-05-12 14:17:36] INFO root fetch - processPackages [pi-log]: Remove: archive file [/home/abi/fetcher/tmp/pi_log-0.5.8.tar.gz]
+[2024-05-12 14:17:36] INFO root fetch - main [MainThread]: End processing [pi-log]: success
+[2024-05-12 14:17:36] INFO root fetch - processPackages [fluidprop]: Remove: archive file [/home/abi/fetcher/tmp/fluidprop-1.0.0.tar.gz]
+[2024-05-12 14:17:36] INFO root fetch - processPackages [fluidprop]: Remove: archive file [/home/abi/fetcher/tmp/fluidprop-1.1.0.tar.gz]
+[2024-05-12 14:17:36] INFO root fetch - main [MainThread]: End processing [fluidprop]: success
+[2024-05-12 14:17:37] INFO root fetch - processPackages [anomeda]: Remove: archive file [/home/abi/fetcher/tmp/anomeda-0.1.3.tar.gz]
+[2024-05-12 14:17:37] INFO root fetch - processPackages [anomeda]: Remove: archive file [/home/abi/fetcher/tmp/anomeda-0.1.4.tar.gz]
+[2024-05-12 14:17:37] INFO root fetch - main [MainThread]: End processing [anomeda]: success
+[2024-05-12 14:17:39] INFO root fetch - processPackages [pyclesperanto-prototype]: Remove: archive file [/home/abi/fetcher/tmp/pyclesperanto_prototype-0.9.7.tar.gz]
+[2024-05-12 14:17:39] INFO root fetch - processPackages [pyclesperanto-prototype]: Remove: archive file [/home/abi/fetcher/tmp/pyclesperanto_prototype-0.9.9.tar.gz]
+[2024-05-12 14:17:39] INFO root fetch - main [MainThread]: End processing [pyclesperanto-prototype]: success
+[2024-05-12 14:17:39] INFO root fetch - main [MainThread]: Store serial: [23169772]
