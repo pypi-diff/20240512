@@ -7277,3 +7277,24 @@
 [2024-05-12 10:51:55] INFO root fetch - processPackages [poetry-stale-dependencies]: Remove: archive file [/home/abi/fetcher/tmp/poetry_stale_dependencies-0.2.0.tar.gz]
 [2024-05-12 10:51:55] INFO root fetch - main [MainThread]: End processing [poetry-stale-dependencies]: success
 [2024-05-12 10:51:55] INFO root fetch - main [MainThread]: Store serial: [23168342]
+[2024-05-12 10:53:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168342]
+[2024-05-12 10:54:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 10:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: LVPocket
+[2024-05-12 10:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfixest
+[2024-05-12 10:54:03] INFO root fetch - processPackages [LVPocket]: New version: [0.2.3] Old Version: [0.2.1]
+[2024-05-12 10:54:03] INFO root fetch - processPackages [LVPocket]: Downloading https://files.pythonhosted.org/packages/3d/fc/00c7e257dff30976c538a00d1ae1d8d4be41b661c39f4dd36d9cfd9226f0/LVPocket-0.2.1.tar.gz
+[2024-05-12 10:54:03] INFO root fetch - processPackages [pyfixest]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-12 10:54:04] INFO root fetch - processPackages [pyfixest]: Downloading https://files.pythonhosted.org/packages/32/52/0d49bf2462623bc11b154e19eddba10eebcfd0d4eb8a0984ed071ff5bd2c/pyfixest-0.9.8.tar.gz
+[2024-05-12 10:54:04] INFO root fetch - processPackages [LVPocket]: Downloading https://files.pythonhosted.org/packages/8f/2b/7906281c0005ef375035a42ba40064843dfb61fe55666308fa4c27a1216e/LVPocket-0.2.3.tar.gz
+[2024-05-12 10:54:04] INFO root fetch - processPackages [LVPocket]: executing diffoscope
+[2024-05-12 10:54:04] INFO root fetch - processPackages [LVPocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LVPocket-0.2.1.tar.gz tmp/LVPocket-0.2.3.tar.gz --markdown 20240512/L/LVPocket/0.2.1-0.2.3/README.md --exclude *.pyd
+[2024-05-12 10:54:04] INFO root fetch - processPackages [pyfixest]: Downloading https://files.pythonhosted.org/packages/d7/7d/ce27f99faddb25209f56c4b4d2cd3e3e5a623a48d85eacdab30d212cfedb/pyfixest-0.9.9.tar.gz
+[2024-05-12 10:54:04] INFO root fetch - processPackages [LVPocket]: Remove: archive file [/home/abi/fetcher/tmp/LVPocket-0.2.1.tar.gz]
+[2024-05-12 10:54:04] INFO root fetch - processPackages [LVPocket]: Remove: archive file [/home/abi/fetcher/tmp/LVPocket-0.2.3.tar.gz]
+[2024-05-12 10:54:04] INFO root fetch - main [MainThread]: End processing [LVPocket]: success
+[2024-05-12 10:54:04] INFO root fetch - processPackages [pyfixest]: executing diffoscope
+[2024-05-12 10:54:04] INFO root fetch - processPackages [pyfixest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfixest-0.9.8.tar.gz tmp/pyfixest-0.9.9.tar.gz --markdown 20240512/p/pyfixest/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-12 10:54:05] INFO root fetch - processPackages [pyfixest]: Remove: archive file [/home/abi/fetcher/tmp/pyfixest-0.9.8.tar.gz]
+[2024-05-12 10:54:05] INFO root fetch - processPackages [pyfixest]: Remove: archive file [/home/abi/fetcher/tmp/pyfixest-0.9.9.tar.gz]
+[2024-05-12 10:54:05] INFO root fetch - main [MainThread]: End processing [pyfixest]: success
+[2024-05-12 10:54:05] INFO root fetch - main [MainThread]: Store serial: [23168348]
