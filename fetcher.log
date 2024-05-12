@@ -17081,3 +17081,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:10:51] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_confluencebuilder-2.5.2.tar.gz]
 [2024-05-12 22:10:51] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-confluencebuilder]: success
 [2024-05-12 22:10:51] INFO root fetch - main [MainThread]: Store serial: [23173397]
+[2024-05-12 22:12:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173397]
+[2024-05-12 22:13:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 22:13:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prizefightz
+[2024-05-12 22:13:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pazok
+[2024-05-12 22:13:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sequentialdw
+[2024-05-12 22:13:00] INFO root fetch - processPackages [sequentialdw]: New version: [3.0] Old Version: [2.7]
+[2024-05-12 22:13:00] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/3c/82/d3fa7fbc351218a5b793876183ef202976883d081e805c7f02168eb82e48/sequentialdw-2.7.tar.gz
+[2024-05-12 22:13:00] WARNING root fetch - processPackages [prizefightz]: Skipping, unable to determine old version
+[2024-05-12 22:13:00] INFO root fetch - main [MainThread]: End processing [prizefightz] error
+[2024-05-12 22:13:00] WARNING root fetch - processPackages [pazok]: Skipping, unable to determine old version
+[2024-05-12 22:13:00] INFO root fetch - main [MainThread]: End processing [pazok] error
+[2024-05-12 22:13:00] INFO root fetch - processPackages [sequentialdw]: Downloading https://files.pythonhosted.org/packages/b5/7b/e678ba6e92c9ae8bb4e079d4f45480974eced86c8682ad86084668d5d561/sequentialdw-3.0.tar.gz
+[2024-05-12 22:13:00] INFO root fetch - processPackages [sequentialdw]: executing diffoscope
+[2024-05-12 22:13:00] INFO root fetch - processPackages [sequentialdw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sequentialdw-2.7.tar.gz tmp/sequentialdw-3.0.tar.gz --markdown 20240512/s/sequentialdw/2.7-3.0/README.md --exclude *.pyd
+[2024-05-12 22:13:01] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-2.7.tar.gz]
+[2024-05-12 22:13:01] INFO root fetch - processPackages [sequentialdw]: Remove: archive file [/home/abi/fetcher/tmp/sequentialdw-3.0.tar.gz]
+[2024-05-12 22:13:01] INFO root fetch - main [MainThread]: End processing [sequentialdw]: success
+[2024-05-12 22:13:01] INFO root fetch - main [MainThread]: Store serial: [23173411]
