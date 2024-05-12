@@ -13249,3 +13249,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:02:38] INFO root fetch - processPackages [powerplantmatching]: Remove: archive file [/home/abi/fetcher/tmp/powerplantmatching-0.5.9.tar.gz]
 [2024-05-12 18:02:38] INFO root fetch - main [MainThread]: End processing [powerplantmatching]: success
 [2024-05-12 18:02:38] INFO root fetch - main [MainThread]: Store serial: [23171518]
+[2024-05-12 18:04:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171518]
+[2024-05-12 18:04:46] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 18:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-alpaca-api
+[2024-05-12 18:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chiapanecanz
+[2024-05-12 18:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: photobooth-app
+[2024-05-12 18:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: few-shot-priming
+[2024-05-12 18:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anycrc
+[2024-05-12 18:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nimble
+[2024-05-12 18:04:47] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-05-12 18:04:47] INFO root fetch - processPackages [py-alpaca-api]: New version: [0.2.5] Old Version: [0.2.2]
+[2024-05-12 18:04:47] WARNING root fetch - processPackages [chiapanecanz]: Skipping, unable to determine old version
+[2024-05-12 18:04:47] INFO root fetch - main [MainThread]: End processing [chiapanecanz] error
+[2024-05-12 18:04:47] INFO root fetch - processPackages [photobooth-app]: New version: [3.0a1] Old Version: [2.0a5]
+[2024-05-12 18:04:47] INFO root fetch - processPackages [nimble]: New version: [0.5.0] Old Version: [0.0.1]
+[2024-05-12 18:04:47] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-05-12 18:04:47] INFO root fetch - processPackages [anycrc]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-12 18:04:47] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/f8/4f/8dc334ad5120f9d6e3cdd9024245c6cec05912101aadbda81760d11838f3/py_alpaca_api-0.2.2.tar.gz
+[2024-05-12 18:04:47] WARNING root fetch - processPackages [nimble]: fallback to get urls: [0.0.1]
+[2024-05-12 18:04:47] INFO root fetch - processPackages [photobooth-app]: Downloading https://files.pythonhosted.org/packages/d4/85/e251e195cb675d60e37372da083e195cca1df109a8820c1ff77b1b479c8d/photobooth_app-2.0a5.tar.gz
+[2024-05-12 18:04:47] WARNING root fetch - processPackages [nimble]: None
+[2024-05-12 18:04:47] WARNING root fetch - processPackages [nimble]: None
+[2024-05-12 18:04:47] WARNING root fetch - processPackages [nimble]: unable to get url for both version [0.0.1]
+[2024-05-12 18:04:47] WARNING root fetch - processPackages [nimble]: None
+[2024-05-12 18:04:47] INFO root fetch - main [MainThread]: End processing [nimble] error
+[2024-05-12 18:04:47] WARNING root fetch - processPackages [photobooth-app]: Skipping package: exceeds size limit 18974005>=10485760
+[2024-05-12 18:04:47] INFO root fetch - main [MainThread]: End processing [photobooth-app] error
+[2024-05-12 18:04:47] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-05-12 18:04:47] INFO root fetch - processPackages [anycrc]: Downloading https://files.pythonhosted.org/packages/ce/79/a82c199a27fa8b7bf40d3950d48f21dcfe065ed74eeb5061693917bcd987/anycrc-0.6.1.tar.gz
+[2024-05-12 18:04:47] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/2e/2e/6daba2d04dc1240533aa4585f1f2413a8d50f2833ff6a54d56b1c933115e/py_alpaca_api-0.2.5.tar.gz
+[2024-05-12 18:04:47] INFO root fetch - processPackages [py-alpaca-api]: executing diffoscope
+[2024-05-12 18:04:47] INFO root fetch - processPackages [py-alpaca-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_alpaca_api-0.2.2.tar.gz tmp/py_alpaca_api-0.2.5.tar.gz --markdown 20240512/p/py-alpaca-api/0.2.2-0.2.5/README.md --exclude *.pyd
+[2024-05-12 18:04:47] INFO root fetch - processPackages [anycrc]: Downloading https://files.pythonhosted.org/packages/51/da/3dc15b5d9d9e3b15d8eb5cc5f1aeea32b7a8350e918fcd93d945ae13ac84/anycrc-0.6.2-cp310-cp310-musllinux_1_1_x86_64.whl
+[2024-05-12 18:04:47] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-05-12 18:04:47] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240512/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-05-12 18:04:48] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.2.2.tar.gz]
+[2024-05-12 18:04:48] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.2.5.tar.gz]
+[2024-05-12 18:04:48] INFO root fetch - main [MainThread]: End processing [py-alpaca-api]: success
+[2024-05-12 18:04:48] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-05-12 18:04:48] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-05-12 18:04:48] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-05-12 18:04:48] INFO root fetch - processPackages [anycrc]: executing diffoscope
+[2024-05-12 18:04:48] INFO root fetch - processPackages [anycrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anycrc-0.6.1.tar.gz tmp/anycrc-0.6.2-cp310-cp310-musllinux_1_1_x86_64.whl.zip --markdown 20240512/a/anycrc/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-12 18:04:49] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.6.1.tar.gz]
+[2024-05-12 18:04:49] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.6.2-cp310-cp310-musllinux_1_1_x86_64.whl.zip]
+[2024-05-12 18:04:49] INFO root fetch - main [MainThread]: End processing [anycrc]: success
+[2024-05-12 18:04:49] INFO root fetch - main [MainThread]: Store serial: [23171539]
