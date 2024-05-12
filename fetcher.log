@@ -14101,3 +14101,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:05:34] INFO root fetch - processPackages [rootdir]: Remove: archive file [/home/abi/fetcher/tmp/rootdir-0.1.2.post3.tar.gz]
 [2024-05-12 19:05:34] INFO root fetch - main [MainThread]: End processing [rootdir]: success
 [2024-05-12 19:05:34] INFO root fetch - main [MainThread]: Store serial: [23171992]
+[2024-05-12 19:07:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171992]
+[2024-05-12 19:07:42] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-12 19:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webflask
+[2024-05-12 19:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zrcl
+[2024-05-12 19:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notolog
+[2024-05-12 19:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: media-parser
+[2024-05-12 19:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Glances
+[2024-05-12 19:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: syncotyledonousz
+[2024-05-12 19:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: profitpulse
+[2024-05-12 19:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: llmpackagetestidk
+[2024-05-12 19:07:43] INFO root fetch - processPackages [webflask]: New version: [0.2.5] Old Version: [0.2.1]
+[2024-05-12 19:07:43] WARNING root fetch - processPackages [llmpackagetestidk]: Skipping, unable to determine old version
+[2024-05-12 19:07:43] INFO root fetch - main [MainThread]: End processing [llmpackagetestidk] error
+[2024-05-12 19:07:43] WARNING root fetch - processPackages [syncotyledonousz]: Skipping, unable to determine old version
+[2024-05-12 19:07:43] INFO root fetch - main [MainThread]: End processing [syncotyledonousz] error
+[2024-05-12 19:07:43] INFO root fetch - processPackages [webflask]: Downloading https://files.pythonhosted.org/packages/9e/5f/c41bcff610423bc24a1b5f60a8c0fadb228d8e493f7940635ab6cfb80271/webflask-0.2.1.tar.gz
+[2024-05-12 19:07:43] INFO root fetch - processPackages [notolog]: New version: [0.9.1b4] Old Version: [0.9.1b3]
+[2024-05-12 19:07:43] INFO root fetch - processPackages [zrcl]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-05-12 19:07:43] INFO root fetch - processPackages [media-parser]: New version: [2.1.0] Old Version: [2.0.4]
+[2024-05-12 19:07:43] INFO root fetch - processPackages [profitpulse]: New version: [2.1.0] Old Version: [2.0.1]
+[2024-05-12 19:07:43] INFO root fetch - processPackages [Glances]: New version: [4.0.1] Old Version: [3.4.0.5]
+[2024-05-12 19:07:43] INFO root fetch - processPackages [media-parser]: Downloading https://files.pythonhosted.org/packages/cd/92/f13d30a0a1053e300e2b0f89900e4bba7160bb9596078dc1da2a0fa30ece/media_parser-2.0.4.tar.gz
+[2024-05-12 19:07:43] INFO root fetch - processPackages [zrcl]: Downloading https://files.pythonhosted.org/packages/d0/7f/8f418045b1491812fa5332ed3d53277155a32acab8c84c5536bd14c93990/zrcl-0.2.1.tar.gz
+[2024-05-12 19:07:43] INFO root fetch - processPackages [profitpulse]: Downloading https://files.pythonhosted.org/packages/24/48/36be22a9c0569bdaf6078e26a19d8b43b262a472e55360cbdf5cdad0417b/profitpulse-2.0.1.tar.gz
+[2024-05-12 19:07:43] INFO root fetch - processPackages [notolog]: Downloading https://files.pythonhosted.org/packages/41/74/7ba3f65449c67433421f82cb4338c9ea4ffd2384336167dc33631e77e58f/notolog-0.9.1b3.tar.gz
+[2024-05-12 19:07:43] INFO root fetch - processPackages [Glances]: Downloading https://files.pythonhosted.org/packages/2d/5c/628323ef58132b4a093e7182bbb5c5c3063fbd598873f31024b58448be73/Glances-3.4.0.5.tar.gz
+[2024-05-12 19:07:43] INFO root fetch - processPackages [webflask]: Downloading https://files.pythonhosted.org/packages/c4/d3/e31852bece90b6d644ce62e18ca0cd58d44f42d6b61b875d3bf1f1eeb3b7/webflask-0.2.5.tar.gz
+[2024-05-12 19:07:43] INFO root fetch - processPackages [webflask]: executing diffoscope
+[2024-05-12 19:07:43] INFO root fetch - processPackages [webflask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webflask-0.2.1.tar.gz tmp/webflask-0.2.5.tar.gz --markdown 20240512/w/webflask/0.2.1-0.2.5/README.md --exclude *.pyd
+[2024-05-12 19:07:43] INFO root fetch - processPackages [media-parser]: Downloading https://files.pythonhosted.org/packages/2c/0b/e99f2dd4b701940bfece5d66b8fb9f8b2872b7f3bb8ef294fc408996af6b/media_parser-2.1.0.tar.gz
+[2024-05-12 19:07:43] INFO root fetch - processPackages [profitpulse]: Downloading https://files.pythonhosted.org/packages/66/c6/1eb88cbb229175a6866c5c37d691318e98a48d303c3fd83c8e4985d4180c/profitpulse-2.1.0.tar.gz
+[2024-05-12 19:07:43] INFO root fetch - processPackages [zrcl]: Downloading https://files.pythonhosted.org/packages/6a/0f/702cd7f925165ed3853636c023388633f29a7bee86abf844f32b625284c5/zrcl-0.3.0.tar.gz
+[2024-05-12 19:07:43] INFO root fetch - processPackages [notolog]: Downloading https://files.pythonhosted.org/packages/e2/13/781c89d52619545e074d663abdaa92242ad39b8217d7b64cda30504908bf/notolog-0.9.1b4.tar.gz
+[2024-05-12 19:07:43] INFO root fetch - processPackages [media-parser]: executing diffoscope
+[2024-05-12 19:07:43] INFO root fetch - processPackages [media-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_parser-2.0.4.tar.gz tmp/media_parser-2.1.0.tar.gz --markdown 20240512/m/media-parser/2.0.4-2.1.0/README.md --exclude *.pyd
+[2024-05-12 19:07:44] INFO root fetch - processPackages [zrcl]: executing diffoscope
+[2024-05-12 19:07:44] INFO root fetch - processPackages [zrcl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zrcl-0.2.1.tar.gz tmp/zrcl-0.3.0.tar.gz --markdown 20240512/z/zrcl/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-05-12 19:07:44] INFO root fetch - processPackages [profitpulse]: executing diffoscope
+[2024-05-12 19:07:44] INFO root fetch - processPackages [profitpulse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profitpulse-2.0.1.tar.gz tmp/profitpulse-2.1.0.tar.gz --markdown 20240512/p/profitpulse/2.0.1-2.1.0/README.md --exclude *.pyd
+[2024-05-12 19:07:44] INFO root fetch - processPackages [notolog]: executing diffoscope
+[2024-05-12 19:07:44] INFO root fetch - processPackages [notolog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notolog-0.9.1b3.tar.gz tmp/notolog-0.9.1b4.tar.gz --markdown 20240512/n/notolog/0.9.1b3-0.9.1b4/README.md --exclude *.pyd
+[2024-05-12 19:07:44] INFO root fetch - processPackages [Glances]: Downloading https://files.pythonhosted.org/packages/02/0c/7fb4ae18c063d3555496964e645350e7f6daf2b24d0414527ae1dff2834e/glances-4.0.1.tar.gz
+[2024-05-12 19:07:44] INFO root fetch - processPackages [webflask]: Remove: archive file [/home/abi/fetcher/tmp/webflask-0.2.1.tar.gz]
+[2024-05-12 19:07:44] INFO root fetch - processPackages [webflask]: Remove: archive file [/home/abi/fetcher/tmp/webflask-0.2.5.tar.gz]
+[2024-05-12 19:07:44] INFO root fetch - main [MainThread]: End processing [webflask]: success
+[2024-05-12 19:07:44] INFO root fetch - processPackages [media-parser]: Remove: archive file [/home/abi/fetcher/tmp/media_parser-2.0.4.tar.gz]
+[2024-05-12 19:07:44] INFO root fetch - processPackages [media-parser]: Remove: archive file [/home/abi/fetcher/tmp/media_parser-2.1.0.tar.gz]
+[2024-05-12 19:07:44] INFO root fetch - main [MainThread]: End processing [media-parser]: success
+[2024-05-12 19:07:44] INFO root fetch - processPackages [Glances]: executing diffoscope
+[2024-05-12 19:07:44] INFO root fetch - processPackages [Glances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Glances-3.4.0.5.tar.gz tmp/glances-4.0.1.tar.gz --markdown 20240512/G/Glances/3.4.0.5-4.0.1/README.md --exclude *.pyd
+[2024-05-12 19:07:44] INFO root fetch - processPackages [profitpulse]: Remove: archive file [/home/abi/fetcher/tmp/profitpulse-2.0.1.tar.gz]
+[2024-05-12 19:07:44] INFO root fetch - processPackages [profitpulse]: Remove: archive file [/home/abi/fetcher/tmp/profitpulse-2.1.0.tar.gz]
+[2024-05-12 19:07:44] INFO root fetch - main [MainThread]: End processing [profitpulse]: success
+[2024-05-12 19:07:44] INFO root fetch - processPackages [zrcl]: Remove: archive file [/home/abi/fetcher/tmp/zrcl-0.2.1.tar.gz]
+[2024-05-12 19:07:44] INFO root fetch - processPackages [zrcl]: Remove: archive file [/home/abi/fetcher/tmp/zrcl-0.3.0.tar.gz]
+[2024-05-12 19:07:44] INFO root fetch - main [MainThread]: End processing [zrcl]: success
+[2024-05-12 19:07:45] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.1b3.tar.gz]
+[2024-05-12 19:07:45] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.1b4.tar.gz]
+[2024-05-12 19:07:45] INFO root fetch - main [MainThread]: End processing [notolog]: success
+[2024-05-12 19:07:51] INFO root fetch - processPackages [Glances]: Remove: archive file [/home/abi/fetcher/tmp/Glances-3.4.0.5.tar.gz]
+[2024-05-12 19:07:51] INFO root fetch - processPackages [Glances]: Remove: archive file [/home/abi/fetcher/tmp/glances-4.0.1.tar.gz]
+[2024-05-12 19:07:51] INFO root fetch - main [MainThread]: End processing [Glances]: success
+[2024-05-12 19:07:51] INFO root fetch - main [MainThread]: Store serial: [23172017]
