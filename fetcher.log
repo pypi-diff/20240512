@@ -2500,3 +2500,24 @@
 [2024-05-12 03:47:18] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.9.0.tar.gz]
 [2024-05-12 03:47:18] INFO root fetch - main [MainThread]: End processing [openadapt]: success
 [2024-05-12 03:47:18] INFO root fetch - main [MainThread]: Store serial: [23166130]
+[2024-05-12 03:49:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166130]
+[2024-05-12 03:49:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 03:49:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ikvpy
+[2024-05-12 03:49:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-screen-stats
+[2024-05-12 03:49:27] INFO root fetch - processPackages [streamlit-screen-stats]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 03:49:27] INFO root fetch - processPackages [streamlit-screen-stats]: Downloading https://files.pythonhosted.org/packages/b5/f3/ffa1db6a0713ba6b2fc4ac5b1e057f98d7180131b56db9b54f5e09b8ea3d/streamlit-screen-stats-0.0.8.tar.gz
+[2024-05-12 03:49:27] INFO root fetch - processPackages [ikvpy]: New version: [0.0.28] Old Version: [0.0.27]
+[2024-05-12 03:49:27] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/0e/3f/8f827fdc52b976f639411e9f7bd10346b44a94998fbdc9ab1ef29fe7be7c/ikvpy-0.0.27.tar.gz
+[2024-05-12 03:49:27] INFO root fetch - processPackages [streamlit-screen-stats]: Downloading https://files.pythonhosted.org/packages/47/c1/551994788e8d7fbca93c51782419b6f14c5db12208b833677955f6412aab/streamlit-screen-stats-0.0.9.tar.gz
+[2024-05-12 03:49:27] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/52/c1/e2828fa20fd18cb8aea7c14fc0ce84e318c9b0f05d12a840596af148d9b1/ikvpy-0.0.28.tar.gz
+[2024-05-12 03:49:27] INFO root fetch - processPackages [streamlit-screen-stats]: executing diffoscope
+[2024-05-12 03:49:27] INFO root fetch - processPackages [streamlit-screen-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-screen-stats-0.0.8.tar.gz tmp/streamlit-screen-stats-0.0.9.tar.gz --markdown 20240512/s/streamlit-screen-stats/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 03:49:27] INFO root fetch - processPackages [ikvpy]: executing diffoscope
+[2024-05-12 03:49:27] INFO root fetch - processPackages [ikvpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ikvpy-0.0.27.tar.gz tmp/ikvpy-0.0.28.tar.gz --markdown 20240512/i/ikvpy/0.0.27-0.0.28/README.md --exclude *.pyd
+[2024-05-12 03:49:28] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.27.tar.gz]
+[2024-05-12 03:49:28] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.28.tar.gz]
+[2024-05-12 03:49:28] INFO root fetch - main [MainThread]: End processing [ikvpy]: success
+[2024-05-12 03:49:40] INFO root fetch - processPackages [streamlit-screen-stats]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-screen-stats-0.0.8.tar.gz]
+[2024-05-12 03:49:40] INFO root fetch - processPackages [streamlit-screen-stats]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-screen-stats-0.0.9.tar.gz]
+[2024-05-12 03:49:40] INFO root fetch - main [MainThread]: End processing [streamlit-screen-stats]: success
+[2024-05-12 03:49:40] INFO root fetch - main [MainThread]: Store serial: [23166137]
