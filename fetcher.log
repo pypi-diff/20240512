@@ -5336,3 +5336,42 @@
 [2024-05-12 08:14:09] INFO root fetch - processPackages [odoo14-addon-sale-by-packaging]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_by_packaging-14.0.2.1.0-py3-none-any.whl.zip]
 [2024-05-12 08:14:09] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-by-packaging]: success
 [2024-05-12 08:14:09] INFO root fetch - main [MainThread]: Store serial: [23167418]
+[2024-05-12 08:16:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167418]
+[2024-05-12 08:16:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 08:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiavatar
+[2024-05-12 08:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-easy-schedule
+[2024-05-12 08:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hilcat
+[2024-05-12 08:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: greatbrowser
+[2024-05-12 08:16:17] INFO root fetch - processPackages [greatbrowser]: New version: [0.0.12] Old Version: [0.0.11]
+[2024-05-12 08:16:17] INFO root fetch - processPackages [greatbrowser]: Downloading https://files.pythonhosted.org/packages/4f/fe/9b47bbf2f47e8fd497d83bbf121739c54a389b3c424519cf8edf75cf396f/greatbrowser-0.0.11.tar.gz
+[2024-05-12 08:16:17] INFO root fetch - processPackages [hilcat]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-12 08:16:17] INFO root fetch - processPackages [django-easy-schedule]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-12 08:16:17] INFO root fetch - processPackages [aiavatar]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-05-12 08:16:17] INFO root fetch - processPackages [hilcat]: Downloading https://files.pythonhosted.org/packages/6d/31/04f54c885b01e8d4c403d256b04f4ddcbe1e14fa4a65d0065eaeba3aa603/hilcat-1.2.1.tar.gz
+[2024-05-12 08:16:18] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/55/5e/cf153c90cfa854d0f7aba961263abac17db436d71dec0943e793048779a6/aiavatar-0.5.2-py3-none-any.whl
+[2024-05-12 08:16:18] INFO root fetch - processPackages [greatbrowser]: Downloading https://files.pythonhosted.org/packages/2e/4e/421d617274d4e32b0086b9c4ea8ebd4bb1c58850d4771a27dbafba33a60d/greatbrowser-0.0.12.tar.gz
+[2024-05-12 08:16:18] INFO root fetch - processPackages [django-easy-schedule]: Downloading https://files.pythonhosted.org/packages/bb/01/728e9a4b346e4b938fc4ac22f3fa88f8f6142995264fdfb8872779b6cc85/django-easy-schedule-0.1.4.tar.gz
+[2024-05-12 08:16:18] INFO root fetch - processPackages [greatbrowser]: executing diffoscope
+[2024-05-12 08:16:18] INFO root fetch - processPackages [greatbrowser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/greatbrowser-0.0.11.tar.gz tmp/greatbrowser-0.0.12.tar.gz --markdown 20240512/g/greatbrowser/0.0.11-0.0.12/README.md --exclude *.pyd
+[2024-05-12 08:16:18] INFO root fetch - processPackages [hilcat]: Downloading https://files.pythonhosted.org/packages/27/ab/2680ebeda36ecf68b1df5cb7a997cc005f5c54f54c4272b55c9183ee1882/hilcat-1.2.2.tar.gz
+[2024-05-12 08:16:18] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/4c/10/f8ecdfd77d15ca9a88dc000bcb4da3031beb18d7a1ad3638ed89470007f4/aiavatar-0.5.3-py3-none-any.whl
+[2024-05-12 08:16:18] INFO root fetch - processPackages [hilcat]: executing diffoscope
+[2024-05-12 08:16:18] INFO root fetch - processPackages [hilcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hilcat-1.2.1.tar.gz tmp/hilcat-1.2.2.tar.gz --markdown 20240512/h/hilcat/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-12 08:16:18] INFO root fetch - processPackages [aiavatar]: executing diffoscope
+[2024-05-12 08:16:18] INFO root fetch - processPackages [aiavatar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiavatar-0.5.2-py3-none-any.whl.zip tmp/aiavatar-0.5.3-py3-none-any.whl.zip --markdown 20240512/a/aiavatar/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-05-12 08:16:18] INFO root fetch - processPackages [django-easy-schedule]: Downloading https://files.pythonhosted.org/packages/b0/8e/e31d574a6f281f3e0262a023f635fc7f010cacc7bfd048f33c3eeb22b9a0/django-easy-schedule-0.1.5.tar.gz
+[2024-05-12 08:16:18] INFO root fetch - processPackages [greatbrowser]: Remove: archive file [/home/abi/fetcher/tmp/greatbrowser-0.0.11.tar.gz]
+[2024-05-12 08:16:18] INFO root fetch - processPackages [greatbrowser]: Remove: archive file [/home/abi/fetcher/tmp/greatbrowser-0.0.12.tar.gz]
+[2024-05-12 08:16:18] INFO root fetch - main [MainThread]: End processing [greatbrowser]: success
+[2024-05-12 08:16:18] INFO root fetch - processPackages [django-easy-schedule]: executing diffoscope
+[2024-05-12 08:16:18] INFO root fetch - processPackages [django-easy-schedule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-easy-schedule-0.1.4.tar.gz tmp/django-easy-schedule-0.1.5.tar.gz --markdown 20240512/d/django-easy-schedule/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-12 08:16:18] INFO root fetch - processPackages [hilcat]: Remove: archive file [/home/abi/fetcher/tmp/hilcat-1.2.1.tar.gz]
+[2024-05-12 08:16:18] INFO root fetch - processPackages [hilcat]: Remove: archive file [/home/abi/fetcher/tmp/hilcat-1.2.2.tar.gz]
+[2024-05-12 08:16:18] INFO root fetch - main [MainThread]: End processing [hilcat]: success
+[2024-05-12 08:16:19] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.5.2-py3-none-any.whl.zip]
+[2024-05-12 08:16:19] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.5.3-py3-none-any.whl.zip]
+[2024-05-12 08:16:19] INFO root fetch - main [MainThread]: End processing [aiavatar]: success
+[2024-05-12 08:16:19] INFO root fetch - processPackages [django-easy-schedule]: Remove: archive file [/home/abi/fetcher/tmp/django-easy-schedule-0.1.4.tar.gz]
+[2024-05-12 08:16:19] INFO root fetch - processPackages [django-easy-schedule]: Remove: archive file [/home/abi/fetcher/tmp/django-easy-schedule-0.1.5.tar.gz]
+[2024-05-12 08:16:19] INFO root fetch - main [MainThread]: End processing [django-easy-schedule]: success
+[2024-05-12 08:16:19] INFO root fetch - main [MainThread]: Store serial: [23167431]
