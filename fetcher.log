@@ -15956,3 +15956,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:05:15] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.5rc8.tar.gz]
 [2024-05-12 21:05:15] INFO root fetch - main [MainThread]: End processing [wagtail-fedit]: success
 [2024-05-12 21:05:15] INFO root fetch - main [MainThread]: Store serial: [23172901]
+[2024-05-12 21:07:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172901]
+[2024-05-12 21:07:24] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-12 21:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cybrid-api-id-python
+[2024-05-12 21:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: evo-django-kits
+[2024-05-12 21:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cybrid-api-organization-python
+[2024-05-12 21:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anabih-python-test
+[2024-05-12 21:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cybrid-api-bank-python
+[2024-05-12 21:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: picodi
+[2024-05-12 21:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ediri-scaleway
+[2024-05-12 21:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: greatbrowser
+[2024-05-12 21:07:24] WARNING root fetch - processPackages [greatbrowser]: Skipping, unable to determine old version
+[2024-05-12 21:07:24] INFO root fetch - main [MainThread]: End processing [greatbrowser] error
+[2024-05-12 21:07:24] INFO root fetch - processPackages [anabih-python-test]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-05-12 21:07:25] INFO root fetch - processPackages [evo-django-kits]: New version: [0.0.2] Old Version: [0.0.12]
+[2024-05-12 21:07:25] INFO root fetch - processPackages [ediri-scaleway]: New version: [2.36.0] Old Version: [2.35.0]
+[2024-05-12 21:07:25] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/8f/0d/cb4164f3f11269487379fdf0c45ca126f81d3ab4355ce23e4cdf8dd2b4cd/anabih_python_test-8.0.0.tar.gz
+[2024-05-12 21:07:25] INFO root fetch - processPackages [picodi]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-12 21:07:25] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.99.0] Old Version: [0.98.2]
+[2024-05-12 21:07:25] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.99.0] Old Version: [0.98.2]
+[2024-05-12 21:07:25] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.99.0] Old Version: [0.98.2]
+[2024-05-12 21:07:25] INFO root fetch - processPackages [evo-django-kits]: Downloading https://files.pythonhosted.org/packages/b1/77/f9375aabc093dcb317095893dc06d9b2e94f91cd0ddf1a7898a2309f4249/evo_django_kits-0.0.12.tar.gz
+[2024-05-12 21:07:25] INFO root fetch - processPackages [ediri-scaleway]: Downloading https://files.pythonhosted.org/packages/3e/a7/c41280adc9855264443da6a1751f330d9066baa2d9afe709e2e1d7783bda/ediri_scaleway-2.35.0.tar.gz
+[2024-05-12 21:07:25] INFO root fetch - processPackages [picodi]: Downloading https://files.pythonhosted.org/packages/a0/f4/5173e30a66392f8f4a309dbf7ab8bb7e4580e3cca5beec8778174e8f156c/picodi-0.6.0.tar.gz
+[2024-05-12 21:07:25] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/83/16/9305f1d0ffc310349acc9a6c48a942e3c816874b788e87e5252e12b1a42a/anabih_python_test-9.0.0.tar.gz
+[2024-05-12 21:07:25] INFO root fetch - processPackages [cybrid-api-organization-python]: Downloading https://files.pythonhosted.org/packages/75/d9/17a583a2d5fccaef7210a11d9f7dc963aab51cd4a5ae5f7983c03291f4bc/cybrid-api-organization-python-0.98.2.tar.gz
+[2024-05-12 21:07:25] INFO root fetch - processPackages [cybrid-api-id-python]: Downloading https://files.pythonhosted.org/packages/2d/66/0d5dc17801b737dd53e021a1548eb784ef8520799bdffbae60e088bf723c/cybrid-api-id-python-0.98.2.tar.gz
+[2024-05-12 21:07:25] INFO root fetch - processPackages [cybrid-api-bank-python]: Downloading https://files.pythonhosted.org/packages/da/dd/e8ea2fc7e8f671e18adae35333d00fdc692f7637860f9e361fba5fe3b85a/cybrid-api-bank-python-0.98.2.tar.gz
+[2024-05-12 21:07:25] INFO root fetch - processPackages [anabih-python-test]: executing diffoscope
+[2024-05-12 21:07:25] INFO root fetch - processPackages [anabih-python-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anabih_python_test-8.0.0.tar.gz tmp/anabih_python_test-9.0.0.tar.gz --markdown 20240512/a/anabih-python-test/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-05-12 21:07:25] INFO root fetch - processPackages [picodi]: Downloading https://files.pythonhosted.org/packages/10/33/1269caffe39fc7833ea1d74cd10e18ad56bcf21076cc4d113d5d415edf6a/picodi-0.7.0.tar.gz
+[2024-05-12 21:07:25] INFO root fetch - processPackages [evo-django-kits]: Downloading https://files.pythonhosted.org/packages/d4/0a/30d3602f416cb80a9ece840905ab1f4217b1a4e947c468975f7e39a7a7e0/evo_django_kits-0.0.2.tar.gz
+[2024-05-12 21:07:25] INFO root fetch - processPackages [cybrid-api-organization-python]: Downloading https://files.pythonhosted.org/packages/93/ab/a857018ac26aeaa884608066dbe6bd482e17a4edf88533d3335a3ed2a25c/cybrid-api-organization-python-0.99.0.tar.gz
+[2024-05-12 21:07:25] INFO root fetch - processPackages [picodi]: executing diffoscope
+[2024-05-12 21:07:25] INFO root fetch - processPackages [picodi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picodi-0.6.0.tar.gz tmp/picodi-0.7.0.tar.gz --markdown 20240512/p/picodi/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-12 21:07:25] INFO root fetch - processPackages [cybrid-api-id-python]: Downloading https://files.pythonhosted.org/packages/de/07/de389a95ca98f482f653401dbe8342cf8d4930d1efee86d1f28f3c1afcd1/cybrid-api-id-python-0.99.0.tar.gz
+[2024-05-12 21:07:25] INFO root fetch - processPackages [evo-django-kits]: executing diffoscope
+[2024-05-12 21:07:25] INFO root fetch - processPackages [evo-django-kits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evo_django_kits-0.0.12.tar.gz tmp/evo_django_kits-0.0.2.tar.gz --markdown 20240512/e/evo-django-kits/0.0.12-0.0.2/README.md --exclude *.pyd
+[2024-05-12 21:07:25] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2024-05-12 21:07:25] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.98.2.tar.gz tmp/cybrid-api-organization-python-0.99.0.tar.gz --markdown 20240512/c/cybrid-api-organization-python/0.98.2-0.99.0/README.md --exclude *.pyd
+[2024-05-12 21:07:25] INFO root fetch - processPackages [cybrid-api-bank-python]: Downloading https://files.pythonhosted.org/packages/a1/e6/1c6a95191a8826ea0636949d5bfdb7d34a65b1f81b3cb27e1863a88a1552/cybrid-api-bank-python-0.99.0.tar.gz
+[2024-05-12 21:07:25] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2024-05-12 21:07:25] INFO root fetch - processPackages [ediri-scaleway]: Downloading https://files.pythonhosted.org/packages/bf/df/0a54bc26fa04c7e26f51df61a93a0fd354bab737777b97b3342aa261fd7f/ediri_scaleway-2.36.0.tar.gz
+[2024-05-12 21:07:25] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.98.2.tar.gz tmp/cybrid-api-id-python-0.99.0.tar.gz --markdown 20240512/c/cybrid-api-id-python/0.98.2-0.99.0/README.md --exclude *.pyd
+[2024-05-12 21:07:26] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2024-05-12 21:07:26] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.98.2.tar.gz tmp/cybrid-api-bank-python-0.99.0.tar.gz --markdown 20240512/c/cybrid-api-bank-python/0.98.2-0.99.0/README.md --exclude *.pyd
+[2024-05-12 21:07:26] INFO root fetch - processPackages [ediri-scaleway]: executing diffoscope
+[2024-05-12 21:07:26] INFO root fetch - processPackages [ediri-scaleway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ediri_scaleway-2.35.0.tar.gz tmp/ediri_scaleway-2.36.0.tar.gz --markdown 20240512/e/ediri-scaleway/2.35.0-2.36.0/README.md --exclude *.pyd
+[2024-05-12 21:07:26] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-8.0.0.tar.gz]
+[2024-05-12 21:07:26] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-9.0.0.tar.gz]
+[2024-05-12 21:07:26] INFO root fetch - main [MainThread]: End processing [anabih-python-test]: success
+[2024-05-12 21:07:26] INFO root fetch - processPackages [evo-django-kits]: Remove: archive file [/home/abi/fetcher/tmp/evo_django_kits-0.0.12.tar.gz]
+[2024-05-12 21:07:26] INFO root fetch - processPackages [evo-django-kits]: Remove: archive file [/home/abi/fetcher/tmp/evo_django_kits-0.0.2.tar.gz]
+[2024-05-12 21:07:26] INFO root fetch - main [MainThread]: End processing [evo-django-kits]: success
+[2024-05-12 21:07:26] INFO root fetch - processPackages [picodi]: Remove: archive file [/home/abi/fetcher/tmp/picodi-0.6.0.tar.gz]
+[2024-05-12 21:07:26] INFO root fetch - processPackages [picodi]: Remove: archive file [/home/abi/fetcher/tmp/picodi-0.7.0.tar.gz]
+[2024-05-12 21:07:26] INFO root fetch - main [MainThread]: End processing [picodi]: success
+[2024-05-12 21:07:26] INFO root fetch - processPackages [cybrid-api-organization-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-organization-python-0.98.2.tar.gz]
+[2024-05-12 21:07:26] INFO root fetch - processPackages [cybrid-api-organization-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-organization-python-0.99.0.tar.gz]
+[2024-05-12 21:07:26] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2024-05-12 21:07:27] INFO root fetch - processPackages [cybrid-api-id-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-id-python-0.98.2.tar.gz]
+[2024-05-12 21:07:27] INFO root fetch - processPackages [cybrid-api-id-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-id-python-0.99.0.tar.gz]
+[2024-05-12 21:07:27] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2024-05-12 21:07:28] INFO root fetch - processPackages [cybrid-api-bank-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-bank-python-0.98.2.tar.gz]
+[2024-05-12 21:07:28] INFO root fetch - processPackages [cybrid-api-bank-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-bank-python-0.99.0.tar.gz]
+[2024-05-12 21:07:28] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2024-05-12 21:07:29] INFO root fetch - processPackages [ediri-scaleway]: Remove: archive file [/home/abi/fetcher/tmp/ediri_scaleway-2.35.0.tar.gz]
+[2024-05-12 21:07:29] INFO root fetch - processPackages [ediri-scaleway]: Remove: archive file [/home/abi/fetcher/tmp/ediri_scaleway-2.36.0.tar.gz]
+[2024-05-12 21:07:29] INFO root fetch - main [MainThread]: End processing [ediri-scaleway]: success
+[2024-05-12 21:07:29] INFO root fetch - main [MainThread]: Store serial: [23172925]
