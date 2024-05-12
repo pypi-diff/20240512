@@ -10347,3 +10347,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:41:04] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.8.9.tar.gz]
 [2024-05-12 14:41:04] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-05-12 14:41:04] INFO root fetch - main [MainThread]: Store serial: [23169905]
+[2024-05-12 14:43:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169905]
+[2024-05-12 14:43:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 14:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-llm
+[2024-05-12 14:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gucken
+[2024-05-12 14:43:13] INFO root fetch - processPackages [gucken]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-05-12 14:43:13] INFO root fetch - processPackages [bigdl-llm]: New version: [2.5.0b20240511] Old Version: [2.5.0b20240510]
+[2024-05-12 14:43:13] INFO root fetch - processPackages [gucken]: Downloading https://files.pythonhosted.org/packages/ef/16/1964514bf0292d68319fa820bd155153df445238226a3d54ca901414ffcf/gucken-0.0.0.tar.gz
+[2024-05-12 14:43:13] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/39/30/3b0f554b5d04e770461dd9ad72be8b99477275a808edfaa50a7e14fe066d/bigdl_llm-2.5.0b20240510-py3-none-win_amd64.whl
+[2024-05-12 14:43:13] INFO root fetch - processPackages [gucken]: Downloading https://files.pythonhosted.org/packages/2d/92/3e34dad79c1f25aa93c293b846de15cf7805e14ea7f91fce7ffdd726935c/gucken-0.0.1.tar.gz
+[2024-05-12 14:43:13] INFO root fetch - processPackages [gucken]: executing diffoscope
+[2024-05-12 14:43:13] INFO root fetch - processPackages [gucken]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gucken-0.0.0.tar.gz tmp/gucken-0.0.1.tar.gz --markdown 20240512/g/gucken/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-05-12 14:43:13] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/84/9d/10dd451d01a2be5c47c3386402ef446fef152baeccc59ef40a75c30fd411/bigdl_llm-2.5.0b20240511-py3-none-win_amd64.whl
+[2024-05-12 14:43:13] INFO root fetch - processPackages [bigdl-llm]: executing diffoscope
+[2024-05-12 14:43:13] INFO root fetch - processPackages [bigdl-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_llm-2.5.0b20240510-py3-none-win_amd64.whl.zip tmp/bigdl_llm-2.5.0b20240511-py3-none-win_amd64.whl.zip --markdown 20240512/b/bigdl-llm/2.5.0b20240510-2.5.0b20240511/README.md --exclude *.pyd
+[2024-05-12 14:43:14] INFO root fetch - processPackages [gucken]: Remove: archive file [/home/abi/fetcher/tmp/gucken-0.0.0.tar.gz]
+[2024-05-12 14:43:14] INFO root fetch - processPackages [gucken]: Remove: archive file [/home/abi/fetcher/tmp/gucken-0.0.1.tar.gz]
+[2024-05-12 14:43:14] INFO root fetch - main [MainThread]: End processing [gucken]: success
+[2024-05-12 14:43:15] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240510-py3-none-win_amd64.whl.zip]
+[2024-05-12 14:43:15] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240511-py3-none-win_amd64.whl.zip]
+[2024-05-12 14:43:15] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
+[2024-05-12 14:43:15] INFO root fetch - main [MainThread]: Store serial: [23169918]
