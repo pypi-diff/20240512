@@ -6546,3 +6546,21 @@
 [2024-05-12 09:47:40] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev4.tar.gz]
 [2024-05-12 09:47:40] INFO root fetch - main [MainThread]: End processing [data-prep-toolkit-kfp]: success
 [2024-05-12 09:47:40] INFO root fetch - main [MainThread]: Store serial: [23167918]
+[2024-05-12 09:49:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167918]
+[2024-05-12 09:49:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 09:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-listfilter-media-extension
+[2024-05-12 09:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: benthamismz
+[2024-05-12 09:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: censoredsummarystats
+[2024-05-12 09:49:48] INFO root fetch - processPackages [censoredsummarystats]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-12 09:49:48] WARNING root fetch - processPackages [benthamismz]: Skipping, unable to determine old version
+[2024-05-12 09:49:48] INFO root fetch - main [MainThread]: End processing [benthamismz] error
+[2024-05-12 09:49:48] WARNING root fetch - processPackages [django-listfilter-media-extension]: Skipping, unable to determine old version
+[2024-05-12 09:49:48] INFO root fetch - main [MainThread]: End processing [django-listfilter-media-extension] error
+[2024-05-12 09:49:48] INFO root fetch - processPackages [censoredsummarystats]: Downloading https://files.pythonhosted.org/packages/0c/38/005da997e6e135b24db5e3254ab92153e42b230251340cdac8d0b35540a7/censoredsummarystats-0.2.8.tar.gz
+[2024-05-12 09:49:49] INFO root fetch - processPackages [censoredsummarystats]: Downloading https://files.pythonhosted.org/packages/1d/8f/5c02ab3a2dc478902b0cd5f23145ddda44763f89a6b22f94598a7825680a/censoredsummarystats-0.2.9.tar.gz
+[2024-05-12 09:49:49] INFO root fetch - processPackages [censoredsummarystats]: executing diffoscope
+[2024-05-12 09:49:49] INFO root fetch - processPackages [censoredsummarystats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/censoredsummarystats-0.2.8.tar.gz tmp/censoredsummarystats-0.2.9.tar.gz --markdown 20240512/c/censoredsummarystats/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-12 09:49:49] INFO root fetch - processPackages [censoredsummarystats]: Remove: archive file [/home/abi/fetcher/tmp/censoredsummarystats-0.2.8.tar.gz]
+[2024-05-12 09:49:49] INFO root fetch - processPackages [censoredsummarystats]: Remove: archive file [/home/abi/fetcher/tmp/censoredsummarystats-0.2.9.tar.gz]
+[2024-05-12 09:49:49] INFO root fetch - main [MainThread]: End processing [censoredsummarystats]: success
+[2024-05-12 09:49:49] INFO root fetch - main [MainThread]: Store serial: [23167930]
