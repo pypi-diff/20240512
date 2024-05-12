@@ -4577,3 +4577,9 @@
 [2024-05-12 06:51:38] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
 [2024-05-12 06:51:38] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
 [2024-05-12 06:51:38] INFO root fetch - main [MainThread]: Store serial: [23167082]
+[2024-05-12 06:53:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167082]
+[2024-05-12 06:53:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 06:53:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ntphy
+[2024-05-12 06:53:46] WARNING root fetch - processPackages [ntphy]: Skipping, unable to determine old version
+[2024-05-12 06:53:46] INFO root fetch - main [MainThread]: End processing [ntphy] error
+[2024-05-12 06:53:46] INFO root fetch - main [MainThread]: Store serial: [23167088]
