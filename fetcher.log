@@ -17966,3 +17966,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:14:31] INFO root fetch - processPackages [echordpost]: Remove: archive file [/home/abi/fetcher/tmp/echordpost-0.1.1.tar.gz]
 [2024-05-12 23:14:31] INFO root fetch - main [MainThread]: End processing [echordpost]: success
 [2024-05-12 23:14:31] INFO root fetch - main [MainThread]: Store serial: [23173890]
+[2024-05-12 23:16:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173890]
+[2024-05-12 23:16:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 23:16:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pibloktoz
+[2024-05-12 23:16:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rtsp-to-webrtc
+[2024-05-12 23:16:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: juntagrico
+[2024-05-12 23:16:39] INFO root fetch - processPackages [rtsp-to-webrtc]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-05-12 23:16:39] INFO root fetch - processPackages [juntagrico]: New version: [1.6.0rc5] Old Version: [1.6.0rc4]
+[2024-05-12 23:16:40] INFO root fetch - processPackages [rtsp-to-webrtc]: Downloading https://files.pythonhosted.org/packages/78/d0/b2d32386955c3d5fa357d4a3af40b069cdbebf75af3f86cef954f27c9081/rtsp_to_webrtc-0.5.1.tar.gz
+[2024-05-12 23:16:40] WARNING root fetch - processPackages [pibloktoz]: Skipping, unable to determine old version
+[2024-05-12 23:16:40] INFO root fetch - main [MainThread]: End processing [pibloktoz] error
+[2024-05-12 23:16:40] INFO root fetch - processPackages [juntagrico]: Downloading https://files.pythonhosted.org/packages/9f/62/ee414434d5852dd7cddd40703a47a86efc55ee3f139c36cabb377b69b3e7/juntagrico-1.6.0rc4.tar.gz
+[2024-05-12 23:16:40] INFO root fetch - processPackages [rtsp-to-webrtc]: Downloading https://files.pythonhosted.org/packages/8c/66/ad0d8bca1bfef21289a64f568536704546ce092188941744707239990c8c/rtsp_to_webrtc-0.6.0.tar.gz
+[2024-05-12 23:16:40] INFO root fetch - processPackages [rtsp-to-webrtc]: executing diffoscope
+[2024-05-12 23:16:40] INFO root fetch - processPackages [rtsp-to-webrtc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtsp_to_webrtc-0.5.1.tar.gz tmp/rtsp_to_webrtc-0.6.0.tar.gz --markdown 20240512/r/rtsp-to-webrtc/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-05-12 23:16:40] INFO root fetch - processPackages [juntagrico]: Downloading https://files.pythonhosted.org/packages/a5/20/8f41c00f5e11480dbaba0e00b5478f32b7cad6f225d56de2fd12539d9c23/juntagrico-1.6.0rc5.tar.gz
+[2024-05-12 23:16:40] INFO root fetch - processPackages [juntagrico]: executing diffoscope
+[2024-05-12 23:16:40] INFO root fetch - processPackages [juntagrico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/juntagrico-1.6.0rc4.tar.gz tmp/juntagrico-1.6.0rc5.tar.gz --markdown 20240512/j/juntagrico/1.6.0rc4-1.6.0rc5/README.md --exclude *.pyd
+[2024-05-12 23:16:40] INFO root fetch - processPackages [rtsp-to-webrtc]: Remove: archive file [/home/abi/fetcher/tmp/rtsp_to_webrtc-0.5.1.tar.gz]
+[2024-05-12 23:16:40] INFO root fetch - processPackages [rtsp-to-webrtc]: Remove: archive file [/home/abi/fetcher/tmp/rtsp_to_webrtc-0.6.0.tar.gz]
+[2024-05-12 23:16:40] INFO root fetch - main [MainThread]: End processing [rtsp-to-webrtc]: success
+[2024-05-12 23:16:44] INFO root fetch - processPackages [juntagrico]: Remove: archive file [/home/abi/fetcher/tmp/juntagrico-1.6.0rc4.tar.gz]
+[2024-05-12 23:16:44] INFO root fetch - processPackages [juntagrico]: Remove: archive file [/home/abi/fetcher/tmp/juntagrico-1.6.0rc5.tar.gz]
+[2024-05-12 23:16:44] INFO root fetch - main [MainThread]: End processing [juntagrico]: success
+[2024-05-12 23:16:44] INFO root fetch - main [MainThread]: Store serial: [23173900]
