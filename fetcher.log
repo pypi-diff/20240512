@@ -13645,3 +13645,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:28:41] WARNING root fetch - processPackages [powerpathfinder-models]: Skipping, unable to determine old version
 [2024-05-12 18:28:41] INFO root fetch - main [MainThread]: End processing [powerpathfinder-models] error
 [2024-05-12 18:28:41] INFO root fetch - main [MainThread]: Store serial: [23171758]
+[2024-05-12 18:30:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171758]
+[2024-05-12 18:30:50] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 18:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: powerpathfinder-models
+[2024-05-12 18:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: satalign
+[2024-05-12 18:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: medicafe
+[2024-05-12 18:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyhdl-if
+[2024-05-12 18:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: swirl-code
+[2024-05-12 18:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: speedmeter
+[2024-05-12 18:30:50] WARNING root fetch - processPackages [powerpathfinder-models]: Skipping, unable to determine old version
+[2024-05-12 18:30:50] INFO root fetch - main [MainThread]: End processing [powerpathfinder-models] error
+[2024-05-12 18:30:50] WARNING root fetch - processPackages [speedmeter]: Skipping, unable to determine old version
+[2024-05-12 18:30:50] INFO root fetch - main [MainThread]: End processing [speedmeter] error
+[2024-05-12 18:30:50] WARNING root fetch - processPackages [swirl-code]: Skipping, unable to determine old version
+[2024-05-12 18:30:50] INFO root fetch - main [MainThread]: End processing [swirl-code] error
+[2024-05-12 18:30:50] INFO root fetch - processPackages [medicafe]: New version: [0.240512.0] Old Version: [0.240511.0]
+[2024-05-12 18:30:50] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/56/6c/c34bb2215108b143642b6d022d3c097df0347b3e42a52741f640307ff4c4/medicafe-0.240511.0.tar.gz
+[2024-05-12 18:30:50] INFO root fetch - processPackages [satalign]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 18:30:50] INFO root fetch - processPackages [pyhdl-if]: New version: [0.0.1.9052753601] Old Version: [0.0.1.9052343530]
+[2024-05-12 18:30:50] INFO root fetch - processPackages [satalign]: Downloading https://files.pythonhosted.org/packages/01/e0/464e5539ed441873551066702b48eebb95b8f63d825085d1e705d3387ca5/satalign-0.1.0.tar.gz
+[2024-05-12 18:30:50] INFO root fetch - processPackages [pyhdl-if]: Downloading https://files.pythonhosted.org/packages/07/f7/f325de4d2d05949b03c4c4d2252ab7f03c0b4742c807d201725e5a56294b/pyhdl_if-0.0.1.9052343530-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-12 18:30:50] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/ff/d1/1255d5d49ceb32b578cf40096bcf8e8e160c9602e526dc6a341cc97d5872/medicafe-0.240512.0.tar.gz
+[2024-05-12 18:30:50] INFO root fetch - processPackages [medicafe]: executing diffoscope
+[2024-05-12 18:30:50] INFO root fetch - processPackages [medicafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medicafe-0.240511.0.tar.gz tmp/medicafe-0.240512.0.tar.gz --markdown 20240512/m/medicafe/0.240511.0-0.240512.0/README.md --exclude *.pyd
+[2024-05-12 18:30:51] INFO root fetch - processPackages [satalign]: Downloading https://files.pythonhosted.org/packages/c9/fd/f70841da7a475e5fafa50459b6d155d92d7d034596e8f84b3741e762c6f5/satalign-0.1.1.tar.gz
+[2024-05-12 18:30:51] INFO root fetch - processPackages [pyhdl-if]: Downloading https://files.pythonhosted.org/packages/15/ec/3db52430dd149df7a206b23c24de42083e3bdaab36ae50a6b269f6f86cdf/pyhdl_if-0.0.1.9052753601-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-12 18:30:51] INFO root fetch - processPackages [satalign]: executing diffoscope
+[2024-05-12 18:30:51] INFO root fetch - processPackages [satalign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satalign-0.1.0.tar.gz tmp/satalign-0.1.1.tar.gz --markdown 20240512/s/satalign/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 18:30:51] INFO root fetch - processPackages [pyhdl-if]: executing diffoscope
+[2024-05-12 18:30:51] INFO root fetch - processPackages [pyhdl-if]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhdl_if-0.0.1.9052343530-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pyhdl_if-0.0.1.9052753601-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240512/p/pyhdl-if/0.0.1.9052343530-0.0.1.9052753601/README.md --exclude *.pyd
+[2024-05-12 18:30:51] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240511.0.tar.gz]
+[2024-05-12 18:30:51] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240512.0.tar.gz]
+[2024-05-12 18:30:51] INFO root fetch - main [MainThread]: End processing [medicafe]: success
+[2024-05-12 18:30:51] INFO root fetch - processPackages [satalign]: Remove: archive file [/home/abi/fetcher/tmp/satalign-0.1.0.tar.gz]
+[2024-05-12 18:30:51] INFO root fetch - processPackages [satalign]: Remove: archive file [/home/abi/fetcher/tmp/satalign-0.1.1.tar.gz]
+[2024-05-12 18:30:51] INFO root fetch - main [MainThread]: End processing [satalign]: success
+[2024-05-12 18:30:51] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.9052343530-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-12 18:30:51] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.9052753601-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-12 18:30:51] INFO root fetch - main [MainThread]: End processing [pyhdl-if]: success
+[2024-05-12 18:30:51] INFO root fetch - main [MainThread]: Store serial: [23171782]
