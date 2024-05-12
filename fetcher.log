@@ -9825,3 +9825,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:08:53] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.9.tar.gz]
 [2024-05-12 14:08:53] INFO root fetch - main [MainThread]: End processing [pyprland]: success
 [2024-05-12 14:08:53] INFO root fetch - main [MainThread]: Store serial: [23169685]
+[2024-05-12 14:10:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169685]
+[2024-05-12 14:11:01] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 14:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: focusgployer
+[2024-05-12 14:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aka-mlearning
+[2024-05-12 14:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: data-prep-toolkit-kfp
+[2024-05-12 14:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: agrahz
+[2024-05-12 14:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jwt-tui
+[2024-05-12 14:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lexwolf
+[2024-05-12 14:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pygama
+[2024-05-12 14:11:01] WARNING root fetch - processPackages [jwt-tui]: Skipping, unable to determine old version
+[2024-05-12 14:11:01] INFO root fetch - main [MainThread]: End processing [jwt-tui] error
+[2024-05-12 14:11:01] INFO root fetch - processPackages [lexwolf]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-12 14:11:01] WARNING root fetch - processPackages [focusgployer]: Skipping, unable to determine old version
+[2024-05-12 14:11:01] INFO root fetch - processPackages [data-prep-toolkit-kfp]: New version: [0.0.1.dev7] Old Version: [0.0.1.dev6]
+[2024-05-12 14:11:01] INFO root fetch - main [MainThread]: End processing [focusgployer] error
+[2024-05-12 14:11:02] INFO root fetch - processPackages [lexwolf]: Downloading https://files.pythonhosted.org/packages/e9/3b/ec1d5c2d8dc1e2a4142bfd5bb64aac882829f9ec5b5cd66d62d10039dad6/lexwolf-0.2.0.tar.gz
+[2024-05-12 14:11:02] WARNING root fetch - processPackages [agrahz]: Skipping, unable to determine old version
+[2024-05-12 14:11:02] INFO root fetch - main [MainThread]: End processing [agrahz] error
+[2024-05-12 14:11:02] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/ac/ba/826f25a06bcf95d2263dcc272e309b853a4f97b5b99c65675fe980f18799/data_prep_toolkit_kfp-0.0.1.dev6.tar.gz
+[2024-05-12 14:11:02] WARNING root fetch - processPackages [aka-mlearning]: Skipping, unable to determine old version
+[2024-05-12 14:11:02] INFO root fetch - main [MainThread]: End processing [aka-mlearning] error
+[2024-05-12 14:11:02] INFO root fetch - processPackages [pygama]: New version: [2.0.0a1] Old Version: [2.0.0]
+[2024-05-12 14:11:02] INFO root fetch - processPackages [pygama]: Downloading https://files.pythonhosted.org/packages/f7/16/120793ea3ecb9a194df7ebf71af09475569f2d9c128bb7a5617ede1869f5/pygama-2.0.0.tar.gz
+[2024-05-12 14:11:02] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/63/32/d4a61d2d7860dda0a7f74f94101da114a1a78b29b65a7f0bf537e13a6ae1/data_prep_toolkit_kfp-0.0.1.dev7.tar.gz
+[2024-05-12 14:11:02] INFO root fetch - processPackages [lexwolf]: Downloading https://files.pythonhosted.org/packages/fd/80/be192918b8de776f9ab3305adfedbf0d6326881e95bd2b31d792e4f431fa/lexwolf-0.2.1.tar.gz
+[2024-05-12 14:11:02] INFO root fetch - processPackages [data-prep-toolkit-kfp]: executing diffoscope
+[2024-05-12 14:11:02] INFO root fetch - processPackages [data-prep-toolkit-kfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_toolkit_kfp-0.0.1.dev6.tar.gz tmp/data_prep_toolkit_kfp-0.0.1.dev7.tar.gz --markdown 20240512/d/data-prep-toolkit-kfp/0.0.1.dev6-0.0.1.dev7/README.md --exclude *.pyd
+[2024-05-12 14:11:02] INFO root fetch - processPackages [lexwolf]: executing diffoscope
+[2024-05-12 14:11:02] INFO root fetch - processPackages [lexwolf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lexwolf-0.2.0.tar.gz tmp/lexwolf-0.2.1.tar.gz --markdown 20240512/l/lexwolf/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-12 14:11:02] INFO root fetch - processPackages [pygama]: Downloading https://files.pythonhosted.org/packages/d1/e4/f1b7749af9451a6443d739b5a2757b1e10dc23690310c71ea8fd1c6417d0/pygama-2.0.0a1.tar.gz
+[2024-05-12 14:11:02] INFO root fetch - processPackages [pygama]: executing diffoscope
+[2024-05-12 14:11:02] INFO root fetch - processPackages [pygama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygama-2.0.0.tar.gz tmp/pygama-2.0.0a1.tar.gz --markdown 20240512/p/pygama/2.0.0-2.0.0a1/README.md --exclude *.pyd
+[2024-05-12 14:11:03] INFO root fetch - processPackages [lexwolf]: Remove: archive file [/home/abi/fetcher/tmp/lexwolf-0.2.0.tar.gz]
+[2024-05-12 14:11:03] INFO root fetch - processPackages [lexwolf]: Remove: archive file [/home/abi/fetcher/tmp/lexwolf-0.2.1.tar.gz]
+[2024-05-12 14:11:03] INFO root fetch - main [MainThread]: End processing [lexwolf]: success
+[2024-05-12 14:11:03] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev6.tar.gz]
+[2024-05-12 14:11:03] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev7.tar.gz]
+[2024-05-12 14:11:03] INFO root fetch - main [MainThread]: End processing [data-prep-toolkit-kfp]: success
+[2024-05-12 14:11:03] INFO root fetch - processPackages [pygama]: Remove: archive file [/home/abi/fetcher/tmp/pygama-2.0.0.tar.gz]
+[2024-05-12 14:11:03] INFO root fetch - processPackages [pygama]: Remove: archive file [/home/abi/fetcher/tmp/pygama-2.0.0a1.tar.gz]
+[2024-05-12 14:11:03] INFO root fetch - main [MainThread]: End processing [pygama]: success
+[2024-05-12 14:11:03] INFO root fetch - main [MainThread]: Store serial: [23169709]
