@@ -3577,3 +3577,39 @@
 [2024-05-12 05:10:41] INFO root fetch - processPackages [g2opy]: Remove: archive file [/home/abi/fetcher/tmp/g2opy-0.0.6.tar.gz]
 [2024-05-12 05:10:41] INFO root fetch - main [MainThread]: End processing [g2opy]: success
 [2024-05-12 05:10:41] INFO root fetch - main [MainThread]: Store serial: [23166564]
+[2024-05-12 05:12:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166564]
+[2024-05-12 05:12:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 05:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cowboy-client
+[2024-05-12 05:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mdreftidy
+[2024-05-12 05:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llmail
+[2024-05-12 05:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: usherai-001
+[2024-05-12 05:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lavagez
+[2024-05-12 05:12:49] INFO root fetch - processPackages [cowboy-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 05:12:50] INFO root fetch - processPackages [cowboy-client]: Downloading https://files.pythonhosted.org/packages/c2/5f/9816d3fa31f30a821a6fb33dce132be8e19344b171e2bc6974137e84315b/cowboy_client-0.0.8.tar.gz
+[2024-05-12 05:12:50] WARNING root fetch - processPackages [usherai-001]: Skipping, unable to determine old version
+[2024-05-12 05:12:50] INFO root fetch - main [MainThread]: End processing [usherai-001] error
+[2024-05-12 05:12:50] INFO root fetch - processPackages [mdreftidy]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-12 05:12:50] INFO root fetch - processPackages [llmail]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-12 05:12:50] WARNING root fetch - processPackages [lavagez]: Skipping, unable to determine old version
+[2024-05-12 05:12:50] INFO root fetch - main [MainThread]: End processing [lavagez] error
+[2024-05-12 05:12:50] INFO root fetch - processPackages [llmail]: Downloading https://files.pythonhosted.org/packages/98/f0/b9f864d2f17dba32c66b1154c14ae4bf87ca7204b8905e50e99b8e33f601/llmail-0.1.0.tar.gz
+[2024-05-12 05:12:50] INFO root fetch - processPackages [cowboy-client]: Downloading https://files.pythonhosted.org/packages/f8/1c/a6c123d6265ad8f3ce3accddd485ac97be52129124066f56f44e5133e07f/cowboy_client-0.0.9.tar.gz
+[2024-05-12 05:12:50] INFO root fetch - processPackages [mdreftidy]: Downloading https://files.pythonhosted.org/packages/d6/dc/3ce83b4beef38cabde0abccfea21677cb98572a17ed9f354996f49f5a17e/mdreftidy-0.3.0.tar.gz
+[2024-05-12 05:12:50] INFO root fetch - processPackages [cowboy-client]: executing diffoscope
+[2024-05-12 05:12:50] INFO root fetch - processPackages [cowboy-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cowboy_client-0.0.8.tar.gz tmp/cowboy_client-0.0.9.tar.gz --markdown 20240512/c/cowboy-client/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 05:12:50] INFO root fetch - processPackages [llmail]: Downloading https://files.pythonhosted.org/packages/e0/56/6b44d7ca815e4beaa10d99f0af3ba736ebd2dd4942ec7cc84044a78a4ce1/llmail-0.1.1.tar.gz
+[2024-05-12 05:12:50] INFO root fetch - processPackages [mdreftidy]: Downloading https://files.pythonhosted.org/packages/06/33/7f5a7e8bec7ed4b8597189c76b2cd91f1d32c69cfcb704d4225e71326496/mdreftidy-0.3.1.tar.gz
+[2024-05-12 05:12:50] INFO root fetch - processPackages [llmail]: executing diffoscope
+[2024-05-12 05:12:50] INFO root fetch - processPackages [llmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmail-0.1.0.tar.gz tmp/llmail-0.1.1.tar.gz --markdown 20240512/l/llmail/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-12 05:12:50] INFO root fetch - processPackages [mdreftidy]: executing diffoscope
+[2024-05-12 05:12:50] INFO root fetch - processPackages [mdreftidy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdreftidy-0.3.0.tar.gz tmp/mdreftidy-0.3.1.tar.gz --markdown 20240512/m/mdreftidy/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-12 05:12:51] INFO root fetch - processPackages [cowboy-client]: Remove: archive file [/home/abi/fetcher/tmp/cowboy_client-0.0.8.tar.gz]
+[2024-05-12 05:12:51] INFO root fetch - processPackages [cowboy-client]: Remove: archive file [/home/abi/fetcher/tmp/cowboy_client-0.0.9.tar.gz]
+[2024-05-12 05:12:51] INFO root fetch - main [MainThread]: End processing [cowboy-client]: success
+[2024-05-12 05:12:51] INFO root fetch - processPackages [llmail]: Remove: archive file [/home/abi/fetcher/tmp/llmail-0.1.0.tar.gz]
+[2024-05-12 05:12:51] INFO root fetch - processPackages [llmail]: Remove: archive file [/home/abi/fetcher/tmp/llmail-0.1.1.tar.gz]
+[2024-05-12 05:12:51] INFO root fetch - main [MainThread]: End processing [llmail]: success
+[2024-05-12 05:12:51] INFO root fetch - processPackages [mdreftidy]: Remove: archive file [/home/abi/fetcher/tmp/mdreftidy-0.3.0.tar.gz]
+[2024-05-12 05:12:51] INFO root fetch - processPackages [mdreftidy]: Remove: archive file [/home/abi/fetcher/tmp/mdreftidy-0.3.1.tar.gz]
+[2024-05-12 05:12:51] INFO root fetch - main [MainThread]: End processing [mdreftidy]: success
+[2024-05-12 05:12:51] INFO root fetch - main [MainThread]: Store serial: [23166579]
