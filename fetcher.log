@@ -10940,3 +10940,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:38:26] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.9.1.tar.gz]
 [2024-05-12 15:38:26] INFO root fetch - main [MainThread]: End processing [mns-common]: success
 [2024-05-12 15:38:26] INFO root fetch - main [MainThread]: Store serial: [23170187]
+[2024-05-12 15:40:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170187]
+[2024-05-12 15:40:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 15:40:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyboiler-anonoei
+[2024-05-12 15:40:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchani-step
+[2024-05-12 15:40:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: popoll-backend
+[2024-05-12 15:40:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: indralib
+[2024-05-12 15:40:35] INFO root fetch - processPackages [pyboiler-anonoei]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 15:40:35] INFO root fetch - processPackages [popoll-backend]: New version: [0.0.45] Old Version: [0.0.44]
+[2024-05-12 15:40:35] INFO root fetch - processPackages [torchani-step]: New version: [2024.5.12] Old Version: [2023.2.28]
+[2024-05-12 15:40:35] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/ac/5b/c70cb1d1e6fc7c25e39a5a1d23194863b7b5166a08468912b067b38adf7e/popoll_backend-0.0.44.tar.gz
+[2024-05-12 15:40:35] INFO root fetch - processPackages [indralib]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 15:40:35] INFO root fetch - processPackages [pyboiler-anonoei]: Downloading https://files.pythonhosted.org/packages/8c/70/86ac90e4c3ca8b9ae8a17a1aec0a54da104c56909b0678e8af405ca5bd02/pyboiler_anonoei-0.0.1.tar.gz
+[2024-05-12 15:40:35] INFO root fetch - processPackages [indralib]: Downloading https://files.pythonhosted.org/packages/8e/84/7525c20b51e02cdc318a90b91a7c0abcd476103128935263cc3df99f24f0/indralib-0.1.1.tar.gz
+[2024-05-12 15:40:35] INFO root fetch - processPackages [torchani-step]: Downloading https://files.pythonhosted.org/packages/dd/40/ad3d15742cd702e647684a7bf31ae56bd387fcfd3c9d0a017596703fbb38/torchani_step-2023.2.28.tar.gz
+[2024-05-12 15:40:35] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/77/09/ad1950980f976cdd16b0501afa4ea52cb57e31f939a06288185c9ceb7c4d/popoll_backend-0.0.45.tar.gz
+[2024-05-12 15:40:35] INFO root fetch - processPackages [pyboiler-anonoei]: Downloading https://files.pythonhosted.org/packages/2d/28/363e502d0d058f9e39c81cfe57fc6848e68c0b8e8cb5df0aaa31bb8b2b4f/pyboiler_anonoei-0.0.2.tar.gz
+[2024-05-12 15:40:36] INFO root fetch - processPackages [popoll-backend]: executing diffoscope
+[2024-05-12 15:40:36] INFO root fetch - processPackages [popoll-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popoll_backend-0.0.44.tar.gz tmp/popoll_backend-0.0.45.tar.gz --markdown 20240512/p/popoll-backend/0.0.44-0.0.45/README.md --exclude *.pyd
+[2024-05-12 15:40:36] INFO root fetch - processPackages [pyboiler-anonoei]: executing diffoscope
+[2024-05-12 15:40:36] INFO root fetch - processPackages [pyboiler-anonoei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboiler_anonoei-0.0.1.tar.gz tmp/pyboiler_anonoei-0.0.2.tar.gz --markdown 20240512/p/pyboiler-anonoei/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-12 15:40:36] INFO root fetch - processPackages [indralib]: Downloading https://files.pythonhosted.org/packages/ec/53/3d63f6851376c5f6ab630a18caecbca71d6903402e389418e3518289c207/indralib-0.1.2.tar.gz
+[2024-05-12 15:40:36] INFO root fetch - processPackages [torchani-step]: Downloading https://files.pythonhosted.org/packages/d8/1e/ad7246a32f08594edb293e87a13e5c6c66dd323e30d5ca4222e0ed5352de/torchani_step-2024.5.12.tar.gz
+[2024-05-12 15:40:36] INFO root fetch - processPackages [indralib]: executing diffoscope
+[2024-05-12 15:40:36] INFO root fetch - processPackages [indralib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indralib-0.1.1.tar.gz tmp/indralib-0.1.2.tar.gz --markdown 20240512/i/indralib/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 15:40:36] INFO root fetch - processPackages [torchani-step]: executing diffoscope
+[2024-05-12 15:40:36] INFO root fetch - processPackages [torchani-step]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchani_step-2023.2.28.tar.gz tmp/torchani_step-2024.5.12.tar.gz --markdown 20240512/t/torchani-step/2023.2.28-2024.5.12/README.md --exclude *.pyd
+[2024-05-12 15:40:36] INFO root fetch - processPackages [pyboiler-anonoei]: Remove: archive file [/home/abi/fetcher/tmp/pyboiler_anonoei-0.0.1.tar.gz]
+[2024-05-12 15:40:36] INFO root fetch - processPackages [pyboiler-anonoei]: Remove: archive file [/home/abi/fetcher/tmp/pyboiler_anonoei-0.0.2.tar.gz]
+[2024-05-12 15:40:36] INFO root fetch - main [MainThread]: End processing [pyboiler-anonoei]: success
+[2024-05-12 15:40:36] INFO root fetch - processPackages [indralib]: Remove: archive file [/home/abi/fetcher/tmp/indralib-0.1.1.tar.gz]
+[2024-05-12 15:40:36] INFO root fetch - processPackages [indralib]: Remove: archive file [/home/abi/fetcher/tmp/indralib-0.1.2.tar.gz]
+[2024-05-12 15:40:36] INFO root fetch - main [MainThread]: End processing [indralib]: success
+[2024-05-12 15:40:36] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.44.tar.gz]
+[2024-05-12 15:40:36] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.45.tar.gz]
+[2024-05-12 15:40:36] INFO root fetch - main [MainThread]: End processing [popoll-backend]: success
+[2024-05-12 15:40:36] INFO root fetch - processPackages [torchani-step]: Remove: archive file [/home/abi/fetcher/tmp/torchani_step-2023.2.28.tar.gz]
+[2024-05-12 15:40:36] INFO root fetch - processPackages [torchani-step]: Remove: archive file [/home/abi/fetcher/tmp/torchani_step-2024.5.12.tar.gz]
+[2024-05-12 15:40:36] INFO root fetch - main [MainThread]: End processing [torchani-step]: success
+[2024-05-12 15:40:36] INFO root fetch - main [MainThread]: Store serial: [23170199]
