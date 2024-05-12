@@ -2880,3 +2880,75 @@
 [2024-05-12 04:15:53] INFO root fetch - processPackages [algobase]: Remove: archive file [/home/abi/fetcher/tmp/algobase-0.9.3.tar.gz]
 [2024-05-12 04:15:53] INFO root fetch - main [MainThread]: End processing [algobase]: success
 [2024-05-12 04:15:53] INFO root fetch - main [MainThread]: Store serial: [23166272]
+[2024-05-12 04:17:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166272]
+[2024-05-12 04:18:01] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-12 04:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ikvpy
+[2024-05-12 04:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crsq-heap
+[2024-05-12 04:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: socket.d
+[2024-05-12 04:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: remarquesz
+[2024-05-12 04:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: monai-weekly
+[2024-05-12 04:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: python-sat
+[2024-05-12 04:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sweetrpg-catalog-objects
+[2024-05-12 04:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Sherlock-testABCYUEGUGHRIUHGU
+[2024-05-12 04:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sweetrpg-web-core
+[2024-05-12 04:18:02] INFO root fetch - processPackages [ikvpy]: New version: [0.0.34] Old Version: [0.0.33]
+[2024-05-12 04:18:02] WARNING root fetch - processPackages [crsq-heap]: Skipping, unable to determine old version
+[2024-05-12 04:18:02] INFO root fetch - main [MainThread]: End processing [crsq-heap] error
+[2024-05-12 04:18:02] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: New version: [0.14.6] Old Version: [0.14.5]
+[2024-05-12 04:18:02] INFO root fetch - processPackages [sweetrpg-catalog-objects]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-12 04:18:02] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-12 04:18:02] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/66/03/ffbebe3dd063b64e2eb65071f5c65c58bc9a2310810f9365c4234e98214a/ikvpy-0.0.33.tar.gz
+[2024-05-12 04:18:02] WARNING root fetch - processPackages [remarquesz]: Skipping, unable to determine old version
+[2024-05-12 04:18:02] INFO root fetch - main [MainThread]: End processing [remarquesz] error
+[2024-05-12 04:18:02] INFO root fetch - processPackages [socket.d]: New version: [2.4.15] Old Version: [2.4.14.5]
+[2024-05-12 04:18:02] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/c7/08/22353b21dedaf21fa4ba31badec3ae264096dcca99184d3065611459ba0b/sweetrpg-catalog-objects-0.0.98.tar.gz
+[2024-05-12 04:18:02] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-05-12 04:18:02] INFO root fetch - processPackages [monai-weekly]: New version: [1.4.dev2419] Old Version: [1.4.dev2418]
+[2024-05-12 04:18:02] INFO root fetch - processPackages [python-sat]: New version: [1.8.dev9] Old Version: [1.8.dev8]
+[2024-05-12 04:18:02] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Downloading https://files.pythonhosted.org/packages/1c/3f/65924cb2e4268fd31e41d7810295091b3ff6646cc433d5aa43d0ec16f6a9/sherlock_testabcyuegughriuhgu-0.14.5.tar.gz
+[2024-05-12 04:18:02] INFO root fetch - processPackages [socket.d]: Downloading https://files.pythonhosted.org/packages/d3/ec/2fb7de9d8f4d951140201a67d524d83ff3961c12b9c23254a8dbc270e985/socket.d-2.4.14.5.tar.gz
+[2024-05-12 04:18:02] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/5b/02/0f5a8851235d4c7dc21b809889ce391c0c4ff873689aa324ede8d6d29d7a/sweetrpg-catalog-objects-0.0.99.tar.gz
+[2024-05-12 04:18:02] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-05-12 04:18:02] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/ff/c9/b00f36a3a25f3de9b6089f5e54cdccbc091dca386d5bcfff72d20aa0c332/monai_weekly-1.4.dev2418.tar.gz
+[2024-05-12 04:18:02] INFO root fetch - processPackages [ikvpy]: Downloading https://files.pythonhosted.org/packages/01/6c/badb8cfd5e0b868ead99fe648b3ca90e3ab2534070412a6b81d478d2cb06/ikvpy-0.0.34.tar.gz
+[2024-05-12 04:18:02] INFO root fetch - processPackages [python-sat]: Downloading https://files.pythonhosted.org/packages/63/b4/ae527b84f3619dbc9cd55ecb25f8610e81022286b3f26915527c0275951b/python-sat-1.8.dev8.tar.gz
+[2024-05-12 04:18:02] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-05-12 04:18:02] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240512/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-12 04:18:02] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Downloading https://files.pythonhosted.org/packages/2a/83/10e0408b5078d16ca3422f4569b5e37f170b9c28f3e0949d1068de309e52/sherlock_testabcyuegughriuhgu-0.14.6.tar.gz
+[2024-05-12 04:18:02] INFO root fetch - processPackages [sweetrpg-catalog-objects]: executing diffoscope
+[2024-05-12 04:18:02] INFO root fetch - processPackages [sweetrpg-catalog-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-catalog-objects-0.0.98.tar.gz tmp/sweetrpg-catalog-objects-0.0.99.tar.gz --markdown 20240512/s/sweetrpg-catalog-objects/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-12 04:18:02] INFO root fetch - processPackages [ikvpy]: executing diffoscope
+[2024-05-12 04:18:02] INFO root fetch - processPackages [ikvpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ikvpy-0.0.33.tar.gz tmp/ikvpy-0.0.34.tar.gz --markdown 20240512/i/ikvpy/0.0.33-0.0.34/README.md --exclude *.pyd
+[2024-05-12 04:18:02] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: executing diffoscope
+[2024-05-12 04:18:02] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sherlock_testabcyuegughriuhgu-0.14.5.tar.gz tmp/sherlock_testabcyuegughriuhgu-0.14.6.tar.gz --markdown 20240512/S/Sherlock-testABCYUEGUGHRIUHGU/0.14.5-0.14.6/README.md --exclude *.pyd
+[2024-05-12 04:18:02] INFO root fetch - processPackages [socket.d]: Downloading https://files.pythonhosted.org/packages/64/24/6a621c1453fa6edee056daf411fc734c2b81a4ee01f7d6c6bb90653d7077/socket.d-2.4.15.tar.gz
+[2024-05-12 04:18:02] INFO root fetch - processPackages [socket.d]: executing diffoscope
+[2024-05-12 04:18:02] INFO root fetch - processPackages [socket.d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socket.d-2.4.14.5.tar.gz tmp/socket.d-2.4.15.tar.gz --markdown 20240512/s/socket.d/2.4.14.5-2.4.15/README.md --exclude *.pyd
+[2024-05-12 04:18:03] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/08/e3/25a8dd989b3c92495cd137873f89fba1930f0500ed9944099425efcc7ca6/monai_weekly-1.4.dev2419.tar.gz
+[2024-05-12 04:18:03] INFO root fetch - processPackages [monai-weekly]: executing diffoscope
+[2024-05-12 04:18:03] INFO root fetch - processPackages [monai-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monai_weekly-1.4.dev2418.tar.gz tmp/monai_weekly-1.4.dev2419.tar.gz --markdown 20240512/m/monai-weekly/1.4.dev2418-1.4.dev2419/README.md --exclude *.pyd
+[2024-05-12 04:18:03] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-05-12 04:18:03] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-05-12 04:18:03] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-05-12 04:18:03] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.98.tar.gz]
+[2024-05-12 04:18:03] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.99.tar.gz]
+[2024-05-12 04:18:03] INFO root fetch - main [MainThread]: End processing [sweetrpg-catalog-objects]: success
+[2024-05-12 04:18:03] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Remove: archive file [/home/abi/fetcher/tmp/sherlock_testabcyuegughriuhgu-0.14.5.tar.gz]
+[2024-05-12 04:18:03] INFO root fetch - processPackages [Sherlock-testABCYUEGUGHRIUHGU]: Remove: archive file [/home/abi/fetcher/tmp/sherlock_testabcyuegughriuhgu-0.14.6.tar.gz]
+[2024-05-12 04:18:03] INFO root fetch - main [MainThread]: End processing [Sherlock-testABCYUEGUGHRIUHGU]: success
+[2024-05-12 04:18:03] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.33.tar.gz]
+[2024-05-12 04:18:03] INFO root fetch - processPackages [ikvpy]: Remove: archive file [/home/abi/fetcher/tmp/ikvpy-0.0.34.tar.gz]
+[2024-05-12 04:18:03] INFO root fetch - main [MainThread]: End processing [ikvpy]: success
+[2024-05-12 04:18:03] INFO root fetch - processPackages [socket.d]: Remove: archive file [/home/abi/fetcher/tmp/socket.d-2.4.14.5.tar.gz]
+[2024-05-12 04:18:03] INFO root fetch - processPackages [socket.d]: Remove: archive file [/home/abi/fetcher/tmp/socket.d-2.4.15.tar.gz]
+[2024-05-12 04:18:03] INFO root fetch - main [MainThread]: End processing [socket.d]: success
+[2024-05-12 04:18:05] INFO root fetch - processPackages [python-sat]: Downloading https://files.pythonhosted.org/packages/73/f6/4ac4fc5a70a70cda807cdf434544823996baa36a3f67549676d3a0390166/python-sat-1.8.dev9.tar.gz
+[2024-05-12 04:18:07] INFO root fetch - processPackages [python-sat]: executing diffoscope
+[2024-05-12 04:18:07] INFO root fetch - processPackages [python-sat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-sat-1.8.dev8.tar.gz tmp/python-sat-1.8.dev9.tar.gz --markdown 20240512/p/python-sat/1.8.dev8-1.8.dev9/README.md --exclude *.pyd
+[2024-05-12 04:18:08] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2418.tar.gz]
+[2024-05-12 04:18:08] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2419.tar.gz]
+[2024-05-12 04:18:08] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
+[2024-05-12 04:18:08] INFO root fetch - processPackages [python-sat]: Remove: archive file [/home/abi/fetcher/tmp/python-sat-1.8.dev8.tar.gz]
+[2024-05-12 04:18:08] INFO root fetch - processPackages [python-sat]: Remove: archive file [/home/abi/fetcher/tmp/python-sat-1.8.dev9.tar.gz]
+[2024-05-12 04:18:08] INFO root fetch - main [MainThread]: End processing [python-sat]: success
+[2024-05-12 04:18:08] INFO root fetch - main [MainThread]: Store serial: [23166312]
