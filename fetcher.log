@@ -5255,3 +5255,33 @@
 [2024-05-12 08:07:37] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.4.6.tar.gz]
 [2024-05-12 08:07:37] INFO root fetch - main [MainThread]: End processing [mass-composition]: success
 [2024-05-12 08:07:37] INFO root fetch - main [MainThread]: Store serial: [23167391]
+[2024-05-12 08:09:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167391]
+[2024-05-12 08:09:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 08:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ALLM
+[2024-05-12 08:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyg-nightly
+[2024-05-12 08:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: greatbrowser
+[2024-05-12 08:09:46] INFO root fetch - processPackages [ALLM]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-12 08:09:46] INFO root fetch - processPackages [pyg-nightly]: New version: [2.6.0.dev20240511] Old Version: [2.6.0.dev20240510]
+[2024-05-12 08:09:46] INFO root fetch - processPackages [ALLM]: Downloading https://files.pythonhosted.org/packages/e6/75/a51a0015a0d486d2650588a5ec0822b42eebad362de6c6410efe8ef80f84/ALLM-1.0.4-py3-none-any.whl
+[2024-05-12 08:09:46] INFO root fetch - processPackages [greatbrowser]: New version: [0.0.12] Old Version: [0.0.11]
+[2024-05-12 08:09:46] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/15/b6/4cbf51c35e42da4800b34364e0d2ac969a881b00abc817fc99407e82899b/pyg_nightly-2.6.0.dev20240510.tar.gz
+[2024-05-12 08:09:46] INFO root fetch - processPackages [greatbrowser]: Downloading https://files.pythonhosted.org/packages/4f/fe/9b47bbf2f47e8fd497d83bbf121739c54a389b3c424519cf8edf75cf396f/greatbrowser-0.0.11.tar.gz
+[2024-05-12 08:09:46] INFO root fetch - processPackages [ALLM]: Downloading https://files.pythonhosted.org/packages/bd/4b/27f2ebb68611e80fec3bd568d7faf69229b79cdecf4c521919976e7434d1/ALLM-1.0.5-py3-none-any.whl
+[2024-05-12 08:09:46] INFO root fetch - processPackages [ALLM]: executing diffoscope
+[2024-05-12 08:09:46] INFO root fetch - processPackages [ALLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ALLM-1.0.4-py3-none-any.whl.zip tmp/ALLM-1.0.5-py3-none-any.whl.zip --markdown 20240512/A/ALLM/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-12 08:09:46] INFO root fetch - processPackages [greatbrowser]: Downloading https://files.pythonhosted.org/packages/2e/4e/421d617274d4e32b0086b9c4ea8ebd4bb1c58850d4771a27dbafba33a60d/greatbrowser-0.0.12.tar.gz
+[2024-05-12 08:09:46] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/f5/05/26a82cc6ac9bd15a77bd50de68730c3174689ef0cb6cca316db3307ad851/pyg_nightly-2.6.0.dev20240511.tar.gz
+[2024-05-12 08:09:47] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2024-05-12 08:09:47] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.6.0.dev20240510.tar.gz tmp/pyg_nightly-2.6.0.dev20240511.tar.gz --markdown 20240512/p/pyg-nightly/2.6.0.dev20240510-2.6.0.dev20240511/README.md --exclude *.pyd
+[2024-05-12 08:09:47] INFO root fetch - processPackages [greatbrowser]: executing diffoscope
+[2024-05-12 08:09:47] INFO root fetch - processPackages [greatbrowser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/greatbrowser-0.0.11.tar.gz tmp/greatbrowser-0.0.12.tar.gz --markdown 20240512/g/greatbrowser/0.0.11-0.0.12/README.md --exclude *.pyd
+[2024-05-12 08:09:47] INFO root fetch - processPackages [ALLM]: Remove: archive file [/home/abi/fetcher/tmp/ALLM-1.0.4-py3-none-any.whl.zip]
+[2024-05-12 08:09:47] INFO root fetch - processPackages [ALLM]: Remove: archive file [/home/abi/fetcher/tmp/ALLM-1.0.5-py3-none-any.whl.zip]
+[2024-05-12 08:09:47] INFO root fetch - main [MainThread]: End processing [ALLM]: success
+[2024-05-12 08:09:47] INFO root fetch - processPackages [greatbrowser]: Remove: archive file [/home/abi/fetcher/tmp/greatbrowser-0.0.11.tar.gz]
+[2024-05-12 08:09:47] INFO root fetch - processPackages [greatbrowser]: Remove: archive file [/home/abi/fetcher/tmp/greatbrowser-0.0.12.tar.gz]
+[2024-05-12 08:09:47] INFO root fetch - main [MainThread]: End processing [greatbrowser]: success
+[2024-05-12 08:09:49] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240510.tar.gz]
+[2024-05-12 08:09:49] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240511.tar.gz]
+[2024-05-12 08:09:49] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2024-05-12 08:09:49] INFO root fetch - main [MainThread]: Store serial: [23167399]
