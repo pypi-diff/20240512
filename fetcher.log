@@ -3308,3 +3308,9 @@
 [2024-05-12 04:44:27] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kurogames-0.1.4.tar.gz]
 [2024-05-12 04:44:27] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-kurogames]: success
 [2024-05-12 04:44:27] INFO root fetch - main [MainThread]: Store serial: [23166466]
+[2024-05-12 04:46:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166466]
+[2024-05-12 04:46:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 04:46:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wlkata-mirobot-Virtual
+[2024-05-12 04:46:36] WARNING root fetch - processPackages [wlkata-mirobot-Virtual]: Skipping, unable to determine old version
+[2024-05-12 04:46:36] INFO root fetch - main [MainThread]: End processing [wlkata-mirobot-Virtual] error
+[2024-05-12 04:46:36] INFO root fetch - main [MainThread]: Store serial: [23166472]
