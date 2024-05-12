@@ -3497,3 +3497,9 @@
 [2024-05-12 05:04:11] INFO root fetch - processPackages [AyiinXd]: Remove: archive file [/home/abi/fetcher/tmp/AyiinXd-0.1.2-cp39-cp39-manylinux2014_x86_64.whl.zip]
 [2024-05-12 05:04:11] INFO root fetch - main [MainThread]: End processing [AyiinXd]: success
 [2024-05-12 05:04:11] INFO root fetch - main [MainThread]: Store serial: [23166534]
+[2024-05-12 05:06:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166534]
+[2024-05-12 05:06:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 05:06:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: readyapi-cli
+[2024-05-12 05:06:21] WARNING root fetch - processPackages [readyapi-cli]: Skipping, unable to determine old version
+[2024-05-12 05:06:21] INFO root fetch - main [MainThread]: End processing [readyapi-cli] error
+[2024-05-12 05:06:21] INFO root fetch - main [MainThread]: Store serial: [23166537]
