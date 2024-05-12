@@ -4746,3 +4746,20 @@
 [2024-05-12 07:11:28] INFO root fetch - processPackages [tsugu-api-python]: Remove: archive file [/home/abi/fetcher/tmp/tsugu-api-python-0.2.2.tar.gz]
 [2024-05-12 07:11:28] INFO root fetch - main [MainThread]: End processing [tsugu-api-python]: success
 [2024-05-12 07:11:28] INFO root fetch - main [MainThread]: Store serial: [23167180]
+[2024-05-12 07:13:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167180]
+[2024-05-12 07:13:37] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-12 07:15:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167181]
+[2024-05-12 07:15:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 07:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RocketSim
+[2024-05-12 07:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hadendoaz
+[2024-05-12 07:15:42] INFO root fetch - processPackages [RocketSim]: New version: [2.1.0a6] Old Version: [2.1.0a5]
+[2024-05-12 07:15:42] WARNING root fetch - processPackages [hadendoaz]: Skipping, unable to determine old version
+[2024-05-12 07:15:42] INFO root fetch - main [MainThread]: End processing [hadendoaz] error
+[2024-05-12 07:15:42] INFO root fetch - processPackages [RocketSim]: Downloading https://files.pythonhosted.org/packages/9d/b4/091a7debdd58c767a6c89fd7035ffca3e541c5c2f9bbeb757a55a15fb844/RocketSim-2.1.0a5.tar.gz
+[2024-05-12 07:15:43] INFO root fetch - processPackages [RocketSim]: Downloading https://files.pythonhosted.org/packages/f7/5d/59ee5358928e8873373f1f3c0234c6ecf08e0fc59496b495aa12096b00aa/RocketSim-2.1.0a6.tar.gz
+[2024-05-12 07:15:43] INFO root fetch - processPackages [RocketSim]: executing diffoscope
+[2024-05-12 07:15:43] INFO root fetch - processPackages [RocketSim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RocketSim-2.1.0a5.tar.gz tmp/RocketSim-2.1.0a6.tar.gz --markdown 20240512/R/RocketSim/2.1.0a5-2.1.0a6/README.md --exclude *.pyd
+[2024-05-12 07:15:44] INFO root fetch - processPackages [RocketSim]: Remove: archive file [/home/abi/fetcher/tmp/RocketSim-2.1.0a5.tar.gz]
+[2024-05-12 07:15:44] INFO root fetch - processPackages [RocketSim]: Remove: archive file [/home/abi/fetcher/tmp/RocketSim-2.1.0a6.tar.gz]
+[2024-05-12 07:15:44] INFO root fetch - main [MainThread]: End processing [RocketSim]: success
+[2024-05-12 07:15:44] INFO root fetch - main [MainThread]: Store serial: [23167190]
