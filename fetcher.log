@@ -9143,3 +9143,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 13:20:09] INFO root fetch - processPackages [streamlink]: Remove: archive file [/home/abi/fetcher/tmp/streamlink-6.7.4.tar.gz]
 [2024-05-12 13:20:09] INFO root fetch - main [MainThread]: End processing [streamlink]: success
 [2024-05-12 13:20:09] INFO root fetch - main [MainThread]: Store serial: [23169337]
+[2024-05-12 13:22:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169337]
+[2024-05-12 13:22:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 13:22:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bundle-cpp
+[2024-05-12 13:22:18] INFO root fetch - processPackages [bundle-cpp]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 13:22:18] INFO root fetch - processPackages [bundle-cpp]: Downloading https://files.pythonhosted.org/packages/de/98/6b2d8f519b8ba986d83d7cb396d0b80e059c4f1e964e63706ba37f787bc8/bundle_cpp-0.1.1.tar.gz
+[2024-05-12 13:22:19] INFO root fetch - processPackages [bundle-cpp]: Downloading https://files.pythonhosted.org/packages/c7/2f/44c2ca893137bd5eecf484561cc18ee4c3ee97be26d3607e2a471c94ecda/bundle_cpp-0.1.2.tar.gz
+[2024-05-12 13:22:19] INFO root fetch - processPackages [bundle-cpp]: executing diffoscope
+[2024-05-12 13:22:19] INFO root fetch - processPackages [bundle-cpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bundle_cpp-0.1.1.tar.gz tmp/bundle_cpp-0.1.2.tar.gz --markdown 20240512/b/bundle-cpp/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 13:22:19] INFO root fetch - processPackages [bundle-cpp]: Remove: archive file [/home/abi/fetcher/tmp/bundle_cpp-0.1.1.tar.gz]
+[2024-05-12 13:22:19] INFO root fetch - processPackages [bundle-cpp]: Remove: archive file [/home/abi/fetcher/tmp/bundle_cpp-0.1.2.tar.gz]
+[2024-05-12 13:22:19] INFO root fetch - main [MainThread]: End processing [bundle-cpp]: success
+[2024-05-12 13:22:19] INFO root fetch - main [MainThread]: Store serial: [23169340]
