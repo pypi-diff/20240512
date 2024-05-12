@@ -4917,3 +4917,21 @@
 [2024-05-12 07:39:23] INFO root fetch - processPackages [multipie]: Remove: archive file [/home/abi/fetcher/tmp/multipie-1.2.9.tar.gz]
 [2024-05-12 07:39:23] INFO root fetch - main [MainThread]: End processing [multipie]: success
 [2024-05-12 07:39:23] INFO root fetch - main [MainThread]: Store serial: [23167270]
+[2024-05-12 07:41:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167270]
+[2024-05-12 07:41:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 07:41:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: multipie
+[2024-05-12 07:41:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: usherai-alpha
+[2024-05-12 07:41:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: necessitatez
+[2024-05-12 07:41:32] INFO root fetch - processPackages [multipie]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-12 07:41:32] INFO root fetch - processPackages [multipie]: Downloading https://files.pythonhosted.org/packages/00/6f/45a558125dcb3c4e92f82f878fc126b60f177da6388705ac66dd80431f91/multipie-1.2.8.tar.gz
+[2024-05-12 07:41:32] WARNING root fetch - processPackages [necessitatez]: Skipping, unable to determine old version
+[2024-05-12 07:41:32] INFO root fetch - main [MainThread]: End processing [necessitatez] error
+[2024-05-12 07:41:32] WARNING root fetch - processPackages [usherai-alpha]: Skipping, unable to determine old version
+[2024-05-12 07:41:32] INFO root fetch - main [MainThread]: End processing [usherai-alpha] error
+[2024-05-12 07:41:32] INFO root fetch - processPackages [multipie]: Downloading https://files.pythonhosted.org/packages/74/64/6c6f6228098f8ee00ea7ec5c5578e0d3e6d476beab852beee7f374215ab9/multipie-1.2.9.tar.gz
+[2024-05-12 07:41:33] INFO root fetch - processPackages [multipie]: executing diffoscope
+[2024-05-12 07:41:33] INFO root fetch - processPackages [multipie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multipie-1.2.8.tar.gz tmp/multipie-1.2.9.tar.gz --markdown 20240512/m/multipie/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-12 07:41:35] INFO root fetch - processPackages [multipie]: Remove: archive file [/home/abi/fetcher/tmp/multipie-1.2.8.tar.gz]
+[2024-05-12 07:41:35] INFO root fetch - processPackages [multipie]: Remove: archive file [/home/abi/fetcher/tmp/multipie-1.2.9.tar.gz]
+[2024-05-12 07:41:35] INFO root fetch - main [MainThread]: End processing [multipie]: success
+[2024-05-12 07:41:35] INFO root fetch - main [MainThread]: Store serial: [23167283]
