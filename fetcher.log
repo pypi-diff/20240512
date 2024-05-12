@@ -18468,3 +18468,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:53:46] INFO root fetch - processPackages [ediri-scaleway]: Remove: archive file [/home/abi/fetcher/tmp/ediri_scaleway-2.39.0.tar.gz]
 [2024-05-12 23:53:46] INFO root fetch - main [MainThread]: End processing [ediri-scaleway]: success
 [2024-05-12 23:53:46] INFO root fetch - main [MainThread]: Store serial: [23174235]
+[2024-05-12 23:55:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23174235]
+[2024-05-12 23:55:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 23:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aspreadz
+[2024-05-12 23:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tghtml
+[2024-05-12 23:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrepka
+[2024-05-12 23:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: marcel
+[2024-05-12 23:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: JsMacrosAC
+[2024-05-12 23:55:55] INFO root fetch - processPackages [JsMacrosAC]: New version: [1.9.1.5495966] Old Version: [1.9.0.873835]
+[2024-05-12 23:55:55] INFO root fetch - processPackages [marcel]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-12 23:55:55] INFO root fetch - processPackages [JsMacrosAC]: Downloading https://files.pythonhosted.org/packages/96/53/06b506599acb24833e20cf6a1b764657259c1150a2114ff6c6d2a3a32a9a/JsMacrosAC-1.9.0.873835.tar.gz
+[2024-05-12 23:55:55] INFO root fetch - processPackages [marcel]: Downloading https://files.pythonhosted.org/packages/3a/07/c626f18aa14df89e1f194e115cbffaa2d99bcfc736f7251795e2f889c0d6/marcel-0.9.8-py3-none-any.whl
+[2024-05-12 23:55:55] WARNING root fetch - processPackages [aspreadz]: Skipping, unable to determine old version
+[2024-05-12 23:55:55] INFO root fetch - main [MainThread]: End processing [aspreadz] error
+[2024-05-12 23:55:55] INFO root fetch - processPackages [tghtml]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-12 23:55:55] WARNING root fetch - processPackages [pyrepka]: Skipping, unable to determine old version
+[2024-05-12 23:55:55] INFO root fetch - main [MainThread]: End processing [pyrepka] error
+[2024-05-12 23:55:56] INFO root fetch - processPackages [tghtml]: Downloading https://files.pythonhosted.org/packages/6b/aa/bf8640618de515c5aaced63888c6174c73e3e0a0ec49eba26f2f369b2828/tghtml-1.1.4.tar.gz
+[2024-05-12 23:55:56] INFO root fetch - processPackages [JsMacrosAC]: Downloading https://files.pythonhosted.org/packages/6d/53/09847bd056cd1e84da8d6af935709859ceb922708eb3bf1a50f82f93c16c/JsMacrosAC-1.9.1.5495966.tar.gz
+[2024-05-12 23:55:56] INFO root fetch - processPackages [marcel]: Downloading https://files.pythonhosted.org/packages/4b/3d/fd4bc1e7906ea7d19b4ad1010b8dce76e96202ac6886bcab6162db5f992f/marcel-0.9.9-py3-none-any.whl
+[2024-05-12 23:55:56] INFO root fetch - processPackages [JsMacrosAC]: executing diffoscope
+[2024-05-12 23:55:56] INFO root fetch - processPackages [JsMacrosAC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JsMacrosAC-1.9.0.873835.tar.gz tmp/JsMacrosAC-1.9.1.5495966.tar.gz --markdown 20240512/J/JsMacrosAC/1.9.0.873835-1.9.1.5495966/README.md --exclude *.pyd
+[2024-05-12 23:55:56] INFO root fetch - processPackages [marcel]: executing diffoscope
+[2024-05-12 23:55:56] INFO root fetch - processPackages [marcel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marcel-0.9.8-py3-none-any.whl.zip tmp/marcel-0.9.9-py3-none-any.whl.zip --markdown 20240512/m/marcel/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-12 23:55:56] INFO root fetch - processPackages [tghtml]: Downloading https://files.pythonhosted.org/packages/9a/cc/b570a5991ed3d819fcb95a982e65fc4773070291a1f7e90fbc0002c09c09/tghtml-1.1.5.tar.gz
+[2024-05-12 23:55:56] INFO root fetch - processPackages [tghtml]: executing diffoscope
+[2024-05-12 23:55:56] INFO root fetch - processPackages [tghtml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tghtml-1.1.4.tar.gz tmp/tghtml-1.1.5.tar.gz --markdown 20240512/t/tghtml/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-12 23:55:56] INFO root fetch - processPackages [tghtml]: Remove: archive file [/home/abi/fetcher/tmp/tghtml-1.1.4.tar.gz]
+[2024-05-12 23:55:56] INFO root fetch - processPackages [tghtml]: Remove: archive file [/home/abi/fetcher/tmp/tghtml-1.1.5.tar.gz]
+[2024-05-12 23:55:56] INFO root fetch - main [MainThread]: End processing [tghtml]: success
+[2024-05-12 23:55:57] INFO root fetch - processPackages [marcel]: Remove: archive file [/home/abi/fetcher/tmp/marcel-0.9.8-py3-none-any.whl.zip]
+[2024-05-12 23:55:57] INFO root fetch - processPackages [marcel]: Remove: archive file [/home/abi/fetcher/tmp/marcel-0.9.9-py3-none-any.whl.zip]
+[2024-05-12 23:55:57] INFO root fetch - main [MainThread]: End processing [marcel]: success
+[2024-05-12 23:55:58] INFO root fetch - processPackages [JsMacrosAC]: Remove: archive file [/home/abi/fetcher/tmp/JsMacrosAC-1.9.0.873835.tar.gz]
+[2024-05-12 23:55:58] INFO root fetch - processPackages [JsMacrosAC]: Remove: archive file [/home/abi/fetcher/tmp/JsMacrosAC-1.9.1.5495966.tar.gz]
+[2024-05-12 23:55:58] INFO root fetch - main [MainThread]: End processing [JsMacrosAC]: success
+[2024-05-12 23:55:58] INFO root fetch - main [MainThread]: Store serial: [23174287]
