@@ -11292,3 +11292,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 16:02:32] INFO root fetch - processPackages [jj-district42]: Remove: archive file [/home/abi/fetcher/tmp/jj_district42-1.2.1.tar.gz]
 [2024-05-12 16:02:32] INFO root fetch - main [MainThread]: End processing [jj-district42]: success
 [2024-05-12 16:02:32] INFO root fetch - main [MainThread]: Store serial: [23170439]
+[2024-05-12 16:04:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170439]
+[2024-05-12 16:04:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 16:04:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: garewaitez
+[2024-05-12 16:04:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytilpack
+[2024-05-12 16:04:40] WARNING root fetch - processPackages [garewaitez]: Skipping, unable to determine old version
+[2024-05-12 16:04:40] INFO root fetch - main [MainThread]: End processing [garewaitez] error
+[2024-05-12 16:04:40] INFO root fetch - processPackages [pytilpack]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-12 16:04:40] INFO root fetch - processPackages [pytilpack]: Downloading https://files.pythonhosted.org/packages/b6/34/652de762559a3358067373ade3e5d22a64f14443952b00c651d57ab9bda8/pytilpack-0.3.0.tar.gz
+[2024-05-12 16:04:41] INFO root fetch - processPackages [pytilpack]: Downloading https://files.pythonhosted.org/packages/9b/33/a44911512c87cc07e92e0dffb1b0471954cbcd301eaf80ae1c2dee855ad3/pytilpack-0.4.0.tar.gz
+[2024-05-12 16:04:41] INFO root fetch - processPackages [pytilpack]: executing diffoscope
+[2024-05-12 16:04:41] INFO root fetch - processPackages [pytilpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytilpack-0.3.0.tar.gz tmp/pytilpack-0.4.0.tar.gz --markdown 20240512/p/pytilpack/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-12 16:04:41] INFO root fetch - processPackages [pytilpack]: Remove: archive file [/home/abi/fetcher/tmp/pytilpack-0.3.0.tar.gz]
+[2024-05-12 16:04:41] INFO root fetch - processPackages [pytilpack]: Remove: archive file [/home/abi/fetcher/tmp/pytilpack-0.4.0.tar.gz]
+[2024-05-12 16:04:41] INFO root fetch - main [MainThread]: End processing [pytilpack]: success
+[2024-05-12 16:04:41] INFO root fetch - main [MainThread]: Store serial: [23170475]
