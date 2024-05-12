@@ -16651,3 +16651,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:48:53] INFO root fetch - processPackages [juntagrico]: Remove: archive file [/home/abi/fetcher/tmp/juntagrico-1.6.0rc5.tar.gz]
 [2024-05-12 21:48:53] INFO root fetch - main [MainThread]: End processing [juntagrico]: success
 [2024-05-12 21:48:53] INFO root fetch - main [MainThread]: Store serial: [23173202]
+[2024-05-12 21:50:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173202]
+[2024-05-12 21:51:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 21:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hikari-arc
+[2024-05-12 21:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opower
+[2024-05-12 21:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: adafruit-circuitpython-requests
+[2024-05-12 21:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pincherz
+[2024-05-12 21:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tdrpa.tdworker
+[2024-05-12 21:51:02] INFO root fetch - processPackages [tdrpa.tdworker]: New version: [1.1.4.5] Old Version: [1.1.4.4]
+[2024-05-12 21:51:02] WARNING root fetch - processPackages [pincherz]: Skipping, unable to determine old version
+[2024-05-12 21:51:02] INFO root fetch - main [MainThread]: End processing [pincherz] error
+[2024-05-12 21:51:02] INFO root fetch - processPackages [hikari-arc]: New version: [1.3.0] Old Version: [1.2.1]
+[2024-05-12 21:51:02] INFO root fetch - processPackages [adafruit-circuitpython-requests]: New version: [3.2.9] Old Version: [3.2.8]
+[2024-05-12 21:51:02] INFO root fetch - processPackages [opower]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-05-12 21:51:02] INFO root fetch - processPackages [hikari-arc]: Downloading https://files.pythonhosted.org/packages/1f/b9/e03dcec1749cea9b1bc66c0d79da221340b25d7a854371aee29d25f52b19/hikari-arc-1.2.1.tar.gz
+[2024-05-12 21:51:02] INFO root fetch - processPackages [tdrpa.tdworker]: Downloading https://files.pythonhosted.org/packages/cb/59/297490b132ad33986e10c9cf60b1680b54fc9ea6606038ee071c78e3797b/tdrpa.tdworker-1.1.4.4-py3-none-any.whl
+[2024-05-12 21:51:02] INFO root fetch - processPackages [adafruit-circuitpython-requests]: Downloading https://files.pythonhosted.org/packages/51/d7/9320cce193e136ddfed367615b83356262e35e1979b409811c182bad87e1/adafruit_circuitpython_requests-3.2.8.tar.gz
+[2024-05-12 21:51:02] INFO root fetch - processPackages [opower]: Downloading https://files.pythonhosted.org/packages/ab/95/9c5b41c7c538471fed32c4017e81968ef7ddcd95dfde9ece0852d9dff27f/opower-0.4.4.tar.gz
+[2024-05-12 21:51:03] INFO root fetch - processPackages [hikari-arc]: Downloading https://files.pythonhosted.org/packages/87/f1/b57dd4aa66aefa05c8050a3a8cc788b67afb7b30493ecf4454fae8bfba91/hikari_arc-1.3.0.tar.gz
+[2024-05-12 21:51:03] INFO root fetch - processPackages [opower]: Downloading https://files.pythonhosted.org/packages/2c/cb/9948d2db3e46155e4fde113519c313667811e4b81ac82c7e8ae247c8f4b2/opower-0.4.5.tar.gz
+[2024-05-12 21:51:03] INFO root fetch - processPackages [adafruit-circuitpython-requests]: Downloading https://files.pythonhosted.org/packages/99/ae/ffed28b063d36c2b0424d882c832e6793624db8c4ab6ea978f0d8985be4a/adafruit_circuitpython_requests-3.2.9.tar.gz
+[2024-05-12 21:51:03] INFO root fetch - processPackages [tdrpa.tdworker]: Downloading https://files.pythonhosted.org/packages/58/12/c5b0414d2233e54bc43a251142e4b0ca4762a53322fd227caef7df0266d5/tdrpa.tdworker-1.1.4.5-py3-none-any.whl
+[2024-05-12 21:51:03] INFO root fetch - processPackages [hikari-arc]: executing diffoscope
+[2024-05-12 21:51:03] INFO root fetch - processPackages [hikari-arc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hikari-arc-1.2.1.tar.gz tmp/hikari_arc-1.3.0.tar.gz --markdown 20240512/h/hikari-arc/1.2.1-1.3.0/README.md --exclude *.pyd
+[2024-05-12 21:51:03] INFO root fetch - processPackages [opower]: executing diffoscope
+[2024-05-12 21:51:03] INFO root fetch - processPackages [opower]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opower-0.4.4.tar.gz tmp/opower-0.4.5.tar.gz --markdown 20240512/o/opower/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-05-12 21:51:03] INFO root fetch - processPackages [adafruit-circuitpython-requests]: executing diffoscope
+[2024-05-12 21:51:03] INFO root fetch - processPackages [adafruit-circuitpython-requests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit_circuitpython_requests-3.2.8.tar.gz tmp/adafruit_circuitpython_requests-3.2.9.tar.gz --markdown 20240512/a/adafruit-circuitpython-requests/3.2.8-3.2.9/README.md --exclude *.pyd
+[2024-05-12 21:51:03] INFO root fetch - processPackages [tdrpa.tdworker]: executing diffoscope
+[2024-05-12 21:51:03] INFO root fetch - processPackages [tdrpa.tdworker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdrpa.tdworker-1.1.4.4-py3-none-any.whl.zip tmp/tdrpa.tdworker-1.1.4.5-py3-none-any.whl.zip --markdown 20240512/t/tdrpa.tdworker/1.1.4.4-1.1.4.5/README.md --exclude *.pyd
+[2024-05-12 21:51:04] INFO root fetch - processPackages [opower]: Remove: archive file [/home/abi/fetcher/tmp/opower-0.4.4.tar.gz]
+[2024-05-12 21:51:04] INFO root fetch - processPackages [opower]: Remove: archive file [/home/abi/fetcher/tmp/opower-0.4.5.tar.gz]
+[2024-05-12 21:51:04] INFO root fetch - main [MainThread]: End processing [opower]: success
+[2024-05-12 21:51:04] INFO root fetch - processPackages [tdrpa.tdworker]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdworker-1.1.4.4-py3-none-any.whl.zip]
+[2024-05-12 21:51:04] INFO root fetch - processPackages [tdrpa.tdworker]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdworker-1.1.4.5-py3-none-any.whl.zip]
+[2024-05-12 21:51:04] INFO root fetch - main [MainThread]: End processing [tdrpa.tdworker]: success
+[2024-05-12 21:51:04] INFO root fetch - processPackages [adafruit-circuitpython-requests]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_requests-3.2.8.tar.gz]
+[2024-05-12 21:51:04] INFO root fetch - processPackages [adafruit-circuitpython-requests]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_requests-3.2.9.tar.gz]
+[2024-05-12 21:51:04] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-requests]: success
+[2024-05-12 21:51:04] INFO root fetch - processPackages [hikari-arc]: Remove: archive file [/home/abi/fetcher/tmp/hikari-arc-1.2.1.tar.gz]
+[2024-05-12 21:51:04] INFO root fetch - processPackages [hikari-arc]: Remove: archive file [/home/abi/fetcher/tmp/hikari_arc-1.3.0.tar.gz]
+[2024-05-12 21:51:04] INFO root fetch - main [MainThread]: End processing [hikari-arc]: success
+[2024-05-12 21:51:04] INFO root fetch - main [MainThread]: Store serial: [23173218]
