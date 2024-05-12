@@ -14921,3 +14921,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:53:30] WARNING root fetch - processPackages [unloosingz]: Skipping, unable to determine old version
 [2024-05-12 19:53:30] INFO root fetch - main [MainThread]: End processing [unloosingz] error
 [2024-05-12 19:53:30] INFO root fetch - main [MainThread]: Store serial: [23172432]
+[2024-05-12 19:55:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172432]
+[2024-05-12 19:55:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 19:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mandown
+[2024-05-12 19:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: missing-mga
+[2024-05-12 19:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SelfCalibratedConformal
+[2024-05-12 19:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vnerrant
+[2024-05-12 19:55:39] INFO root fetch - processPackages [missing-mga]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-12 19:55:39] INFO root fetch - processPackages [SelfCalibratedConformal]: New version: [0.355] Old Version: [0.35]
+[2024-05-12 19:55:39] INFO root fetch - processPackages [missing-mga]: Downloading https://files.pythonhosted.org/packages/66/ec/5e1ed18df493efdaa70f31fe166dc2245259d86a7465a38414d853970798/missing_mga-0.4.2-py3-none-any.whl
+[2024-05-12 19:55:39] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/0e/51/444fdb3e7e6509df12ce5f061414db586c3bc84e9ab9d3e26b25db579dc5/SelfCalibratedConformal-0.35.tar.gz
+[2024-05-12 19:55:39] INFO root fetch - processPackages [mandown]: New version: [1.8.0] Old Version: [1.7.0]
+[2024-05-12 19:55:39] INFO root fetch - processPackages [vnerrant]: New version: [1.0.1rc2] Old Version: [1.0.1rc1]
+[2024-05-12 19:55:39] INFO root fetch - processPackages [mandown]: Downloading https://files.pythonhosted.org/packages/d1/a2/4a6e2600c754e004c5d27ff6de7f4cf36d6cc33ae3ca1d20944e6fb5c3e0/mandown-1.7.0.tar.gz
+[2024-05-12 19:55:39] INFO root fetch - processPackages [vnerrant]: Downloading https://files.pythonhosted.org/packages/54/5b/ee3478607c8373db5852a8fcf0e1b5972d750c7b5e70203f39026621510b/vnerrant-1.0.1rc1.tar.gz
+[2024-05-12 19:55:39] INFO root fetch - processPackages [SelfCalibratedConformal]: Downloading https://files.pythonhosted.org/packages/b0/e3/20e96e76b5c9fcf8ab39b16f3c28cf05052ee3374e45d1d825b2902e1630/SelfCalibratedConformal-0.355.tar.gz
+[2024-05-12 19:55:39] INFO root fetch - processPackages [missing-mga]: Downloading https://files.pythonhosted.org/packages/05/d1/175b772fdabf086ad0f9e2c95d12810cc5b710783bc723b0c10b58336a07/missing_mga-0.4.3-py3-none-any.whl
+[2024-05-12 19:55:39] INFO root fetch - processPackages [SelfCalibratedConformal]: executing diffoscope
+[2024-05-12 19:55:39] INFO root fetch - processPackages [SelfCalibratedConformal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SelfCalibratedConformal-0.35.tar.gz tmp/SelfCalibratedConformal-0.355.tar.gz --markdown 20240512/S/SelfCalibratedConformal/0.35-0.355/README.md --exclude *.pyd
+[2024-05-12 19:55:39] INFO root fetch - processPackages [missing-mga]: executing diffoscope
+[2024-05-12 19:55:39] INFO root fetch - processPackages [missing-mga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/missing_mga-0.4.2-py3-none-any.whl.zip tmp/missing_mga-0.4.3-py3-none-any.whl.zip --markdown 20240512/m/missing-mga/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-12 19:55:39] INFO root fetch - processPackages [vnerrant]: Downloading https://files.pythonhosted.org/packages/e7/ab/390a1d43220a016a4e1ad2c03a11fe6376754c98aa6b7778004cedd17322/vnerrant-1.0.1rc2.tar.gz
+[2024-05-12 19:55:39] INFO root fetch - processPackages [mandown]: Downloading https://files.pythonhosted.org/packages/04/a4/bd37dc0ecdafd70cf249c8043843feba3cb725f5a0bf5eeec8160bf758a0/mandown-1.8.0.tar.gz
+[2024-05-12 19:55:40] INFO root fetch - processPackages [mandown]: executing diffoscope
+[2024-05-12 19:55:40] INFO root fetch - processPackages [mandown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mandown-1.7.0.tar.gz tmp/mandown-1.8.0.tar.gz --markdown 20240512/m/mandown/1.7.0-1.8.0/README.md --exclude *.pyd
+[2024-05-12 19:55:40] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.35.tar.gz]
+[2024-05-12 19:55:40] INFO root fetch - processPackages [SelfCalibratedConformal]: Remove: archive file [/home/abi/fetcher/tmp/SelfCalibratedConformal-0.355.tar.gz]
+[2024-05-12 19:55:40] INFO root fetch - main [MainThread]: End processing [SelfCalibratedConformal]: success
+[2024-05-12 19:55:40] INFO root fetch - processPackages [missing-mga]: Remove: archive file [/home/abi/fetcher/tmp/missing_mga-0.4.2-py3-none-any.whl.zip]
+[2024-05-12 19:55:40] INFO root fetch - processPackages [missing-mga]: Remove: archive file [/home/abi/fetcher/tmp/missing_mga-0.4.3-py3-none-any.whl.zip]
+[2024-05-12 19:55:40] INFO root fetch - main [MainThread]: End processing [missing-mga]: success
+[2024-05-12 19:55:40] INFO root fetch - processPackages [vnerrant]: executing diffoscope
+[2024-05-12 19:55:40] INFO root fetch - processPackages [vnerrant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnerrant-1.0.1rc1.tar.gz tmp/vnerrant-1.0.1rc2.tar.gz --markdown 20240512/v/vnerrant/1.0.1rc1-1.0.1rc2/README.md --exclude *.pyd
+[2024-05-12 19:55:40] INFO root fetch - processPackages [mandown]: Remove: archive file [/home/abi/fetcher/tmp/mandown-1.7.0.tar.gz]
+[2024-05-12 19:55:40] INFO root fetch - processPackages [mandown]: Remove: archive file [/home/abi/fetcher/tmp/mandown-1.8.0.tar.gz]
+[2024-05-12 19:55:40] INFO root fetch - main [MainThread]: End processing [mandown]: success
+[2024-05-12 19:55:40] INFO root fetch - processPackages [vnerrant]: Remove: archive file [/home/abi/fetcher/tmp/vnerrant-1.0.1rc1.tar.gz]
+[2024-05-12 19:55:40] INFO root fetch - processPackages [vnerrant]: Remove: archive file [/home/abi/fetcher/tmp/vnerrant-1.0.1rc2.tar.gz]
+[2024-05-12 19:55:40] INFO root fetch - main [MainThread]: End processing [vnerrant]: success
+[2024-05-12 19:55:40] INFO root fetch - main [MainThread]: Store serial: [23172442]
