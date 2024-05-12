@@ -5117,3 +5117,39 @@
 [2024-05-12 07:54:37] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.6.3.tar.gz]
 [2024-05-12 07:54:37] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
 [2024-05-12 07:54:37] INFO root fetch - main [MainThread]: Store serial: [23167344]
+[2024-05-12 07:56:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167344]
+[2024-05-12 07:56:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 07:56:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-purchase-workflow
+[2024-05-12 07:56:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smartboiler
+[2024-05-12 07:56:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: whatshow-phy-mod-otfs
+[2024-05-12 07:56:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wxhelper
+[2024-05-12 07:56:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mycetozoonz
+[2024-05-12 07:56:46] WARNING root fetch - processPackages [wxhelper]: Skipping, unable to determine old version
+[2024-05-12 07:56:46] INFO root fetch - main [MainThread]: End processing [wxhelper] error
+[2024-05-12 07:56:46] INFO root fetch - processPackages [smartboiler]: New version: [0.0.3.0.0.7.4] Old Version: [0.0.3.0.0.7.3]
+[2024-05-12 07:56:46] WARNING root fetch - processPackages [mycetozoonz]: Skipping, unable to determine old version
+[2024-05-12 07:56:46] INFO root fetch - main [MainThread]: End processing [mycetozoonz] error
+[2024-05-12 07:56:46] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: New version: [16.0.20240511.0] Old Version: [16.0.20240506.0]
+[2024-05-12 07:56:46] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/d8/fd/7f6cccbae87634144766b0c12eff09cddf94ab2e8a80f2c3a2b51bac01e1/smartboiler-0.0.3.0.0.7.3.tar.gz
+[2024-05-12 07:56:46] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: New version: [2.1.5] Old Version: [2.1.4]
+[2024-05-12 07:56:46] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: Downloading https://files.pythonhosted.org/packages/c3/b0/b9ceed2dcaefd0ab7fdf2115b9a07fdb84feb80ddd47cd8823c3de1eccd4/odoo_addons_oca_purchase_workflow-16.0.20240506.0-py3-none-any.whl
+[2024-05-12 07:56:46] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Downloading https://files.pythonhosted.org/packages/b4/52/de342c16576b9e7d430718a0ac370b2c2bd2446ceb9b8246532e07cc3616/whatshow_phy_mod_otfs-2.1.4.tar.gz
+[2024-05-12 07:56:46] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/1d/49/8151f609795c3229575ae120f6665c1088719cebbc906e434c7f52dcedbf/smartboiler-0.0.3.0.0.7.4.tar.gz
+[2024-05-12 07:56:46] INFO root fetch - processPackages [smartboiler]: executing diffoscope
+[2024-05-12 07:56:46] INFO root fetch - processPackages [smartboiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartboiler-0.0.3.0.0.7.3.tar.gz tmp/smartboiler-0.0.3.0.0.7.4.tar.gz --markdown 20240512/s/smartboiler/0.0.3.0.0.7.3-0.0.3.0.0.7.4/README.md --exclude *.pyd
+[2024-05-12 07:56:46] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: Downloading https://files.pythonhosted.org/packages/cf/5a/19a65122b84cbcaa8d61c9e4d2d183f1ad31fbea938f0fc794f6a6b52818/odoo_addons_oca_purchase_workflow-16.0.20240511.0-py3-none-any.whl
+[2024-05-12 07:56:46] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Downloading https://files.pythonhosted.org/packages/77/e0/cb5759a5ad3067c7713b17eec6c9b05e4de6933e53506e1122fd0fa64852/whatshow_phy_mod_otfs-2.1.5.tar.gz
+[2024-05-12 07:56:46] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: executing diffoscope
+[2024-05-12 07:56:46] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_purchase_workflow-16.0.20240506.0-py3-none-any.whl.zip tmp/odoo_addons_oca_purchase_workflow-16.0.20240511.0-py3-none-any.whl.zip --markdown 20240512/o/odoo-addons-oca-purchase-workflow/16.0.20240506.0-16.0.20240511.0/README.md --exclude *.pyd
+[2024-05-12 07:56:47] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: executing diffoscope
+[2024-05-12 07:56:47] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatshow_phy_mod_otfs-2.1.4.tar.gz tmp/whatshow_phy_mod_otfs-2.1.5.tar.gz --markdown 20240512/w/whatshow-phy-mod-otfs/2.1.4-2.1.5/README.md --exclude *.pyd
+[2024-05-12 07:56:47] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.7.3.tar.gz]
+[2024-05-12 07:56:47] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.7.4.tar.gz]
+[2024-05-12 07:56:47] INFO root fetch - main [MainThread]: End processing [smartboiler]: success
+[2024-05-12 07:56:47] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_purchase_workflow-16.0.20240506.0-py3-none-any.whl.zip]
+[2024-05-12 07:56:47] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_purchase_workflow-16.0.20240511.0-py3-none-any.whl.zip]
+[2024-05-12 07:56:47] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-purchase-workflow]: success
+[2024-05-12 07:56:47] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_phy_mod_otfs-2.1.4.tar.gz]
+[2024-05-12 07:56:47] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_phy_mod_otfs-2.1.5.tar.gz]
+[2024-05-12 07:56:47] INFO root fetch - main [MainThread]: End processing [whatshow-phy-mod-otfs]: success
+[2024-05-12 07:56:47] INFO root fetch - main [MainThread]: Store serial: [23167360]
