@@ -7771,3 +7771,42 @@
 [2024-05-12 11:37:27] INFO root fetch - processPackages [soccer-poisson]: Remove: archive file [/home/abi/fetcher/tmp/soccer_poisson-0.1.9.tar.gz]
 [2024-05-12 11:37:27] INFO root fetch - main [MainThread]: End processing [soccer-poisson]: success
 [2024-05-12 11:37:27] INFO root fetch - main [MainThread]: Store serial: [23168530]
+[2024-05-12 11:39:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168530]
+[2024-05-12 11:39:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 11:39:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: youcube
+[2024-05-12 11:39:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: metainfoyaml2py
+[2024-05-12 11:39:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-amazon-sp-api
+[2024-05-12 11:39:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: moveread-dfy
+[2024-05-12 11:39:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyboiler-anonoei
+[2024-05-12 11:39:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wkutils
+[2024-05-12 11:39:36] WARNING root fetch - processPackages [pyboiler-anonoei]: Skipping, unable to determine old version
+[2024-05-12 11:39:36] INFO root fetch - main [MainThread]: End processing [pyboiler-anonoei] error
+[2024-05-12 11:39:36] INFO root fetch - processPackages [python-amazon-sp-api]: New version: [1.5.2] Old Version: [1.5.1]
+[2024-05-12 11:39:36] INFO root fetch - processPackages [wkutils]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 11:39:36] WARNING root fetch - processPackages [moveread-dfy]: Skipping, unable to determine old version
+[2024-05-12 11:39:36] INFO root fetch - main [MainThread]: End processing [moveread-dfy] error
+[2024-05-12 11:39:36] WARNING root fetch - processPackages [youcube]: Skipping, unable to determine old version
+[2024-05-12 11:39:36] INFO root fetch - main [MainThread]: End processing [youcube] error
+[2024-05-12 11:39:36] INFO root fetch - processPackages [metainfoyaml2py]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-12 11:39:36] INFO root fetch - processPackages [python-amazon-sp-api]: Downloading https://files.pythonhosted.org/packages/5c/38/d50bfdaaf1c3d17b3d5f6275cace0ffcb7508cd0b3924583cd6b1e05f23f/python-amazon-sp-api-1.5.1.tar.gz
+[2024-05-12 11:39:36] INFO root fetch - processPackages [metainfoyaml2py]: Downloading https://files.pythonhosted.org/packages/34/c4/eb2ccd73d5d0b58f50fb6f32ba956e9441ce991ac9eee3809cff7402fdbf/metainfoyaml2py-0.0.8.tar.gz
+[2024-05-12 11:39:36] INFO root fetch - processPackages [wkutils]: Downloading https://files.pythonhosted.org/packages/7b/72/db10056992017993eada6bd8f35c0451b9e4bb6bb76a9d4a6959875d7a4f/wkutils-0.0.8.tar.gz
+[2024-05-12 11:39:36] INFO root fetch - processPackages [python-amazon-sp-api]: Downloading https://files.pythonhosted.org/packages/14/7d/09f6d813084b987ff815443df58751e5edc3880c8a14d70a0e84ff32c790/python-amazon-sp-api-1.5.2.tar.gz
+[2024-05-12 11:39:36] INFO root fetch - processPackages [python-amazon-sp-api]: executing diffoscope
+[2024-05-12 11:39:36] INFO root fetch - processPackages [python-amazon-sp-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-amazon-sp-api-1.5.1.tar.gz tmp/python-amazon-sp-api-1.5.2.tar.gz --markdown 20240512/p/python-amazon-sp-api/1.5.1-1.5.2/README.md --exclude *.pyd
+[2024-05-12 11:39:36] INFO root fetch - processPackages [wkutils]: Downloading https://files.pythonhosted.org/packages/37/d3/a1b5bdb0ba288c74efb1ad38369e8dffaf2f16f89a0e007375d53ae8a481/wkutils-0.0.9.tar.gz
+[2024-05-12 11:39:37] INFO root fetch - processPackages [metainfoyaml2py]: Downloading https://files.pythonhosted.org/packages/7d/76/9cb61a7644e23843774c5855db0af9f4dabe49955c59635eff50a5913f82/metainfoyaml2py-0.0.9.tar.gz
+[2024-05-12 11:39:37] INFO root fetch - processPackages [wkutils]: executing diffoscope
+[2024-05-12 11:39:37] INFO root fetch - processPackages [wkutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wkutils-0.0.8.tar.gz tmp/wkutils-0.0.9.tar.gz --markdown 20240512/w/wkutils/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 11:39:37] INFO root fetch - processPackages [metainfoyaml2py]: executing diffoscope
+[2024-05-12 11:39:37] INFO root fetch - processPackages [metainfoyaml2py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metainfoyaml2py-0.0.8.tar.gz tmp/metainfoyaml2py-0.0.9.tar.gz --markdown 20240512/m/metainfoyaml2py/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-12 11:39:37] INFO root fetch - processPackages [python-amazon-sp-api]: Remove: archive file [/home/abi/fetcher/tmp/python-amazon-sp-api-1.5.1.tar.gz]
+[2024-05-12 11:39:37] INFO root fetch - processPackages [python-amazon-sp-api]: Remove: archive file [/home/abi/fetcher/tmp/python-amazon-sp-api-1.5.2.tar.gz]
+[2024-05-12 11:39:37] INFO root fetch - main [MainThread]: End processing [python-amazon-sp-api]: success
+[2024-05-12 11:39:37] INFO root fetch - processPackages [wkutils]: Remove: archive file [/home/abi/fetcher/tmp/wkutils-0.0.8.tar.gz]
+[2024-05-12 11:39:37] INFO root fetch - processPackages [wkutils]: Remove: archive file [/home/abi/fetcher/tmp/wkutils-0.0.9.tar.gz]
+[2024-05-12 11:39:37] INFO root fetch - main [MainThread]: End processing [wkutils]: success
+[2024-05-12 11:39:37] INFO root fetch - processPackages [metainfoyaml2py]: Remove: archive file [/home/abi/fetcher/tmp/metainfoyaml2py-0.0.8.tar.gz]
+[2024-05-12 11:39:37] INFO root fetch - processPackages [metainfoyaml2py]: Remove: archive file [/home/abi/fetcher/tmp/metainfoyaml2py-0.0.9.tar.gz]
+[2024-05-12 11:39:37] INFO root fetch - main [MainThread]: End processing [metainfoyaml2py]: success
+[2024-05-12 11:39:37] INFO root fetch - main [MainThread]: Store serial: [23168552]
