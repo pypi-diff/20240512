@@ -16242,3 +16242,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:24:50] INFO root fetch - processPackages [local_tuya]: Remove: archive file [/home/abi/fetcher/tmp/local_tuya-2.4.0.tar.gz]
 [2024-05-12 21:24:50] INFO root fetch - main [MainThread]: End processing [local_tuya]: success
 [2024-05-12 21:24:50] INFO root fetch - main [MainThread]: Store serial: [23173023]
+[2024-05-12 21:26:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173023]
+[2024-05-12 21:26:59] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 21:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: decarnatez
+[2024-05-12 21:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kypo-aws-lib
+[2024-05-12 21:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fim-utils
+[2024-05-12 21:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pavannez
+[2024-05-12 21:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: windmill-api
+[2024-05-12 21:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wmill
+[2024-05-12 21:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wmill-pg
+[2024-05-12 21:26:59] INFO root fetch - processPackages [windmill-api]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-05-12 21:26:59] INFO root fetch - processPackages [wmill-pg]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-05-12 21:26:59] INFO root fetch - processPackages [wmill]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-05-12 21:26:59] WARNING root fetch - processPackages [decarnatez]: Skipping, unable to determine old version
+[2024-05-12 21:26:59] INFO root fetch - main [MainThread]: End processing [decarnatez] error
+[2024-05-12 21:26:59] INFO root fetch - processPackages [kypo-aws-lib]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-12 21:26:59] WARNING root fetch - processPackages [pavannez]: Skipping, unable to determine old version
+[2024-05-12 21:26:59] INFO root fetch - main [MainThread]: End processing [pavannez] error
+[2024-05-12 21:26:59] INFO root fetch - processPackages [fim-utils]: New version: [1.7.0b2] Old Version: [1.7.0b1]
+[2024-05-12 21:26:59] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/bd/de/5d29ca258adee967295dbf926ab306c480527c234336f0725d4c2bc1d718/windmill_api-1.98.0.tar.gz
+[2024-05-12 21:26:59] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/a1/22/f7655b5ea090afc59651b874c61bf7bea4694e3fa9720a46058fa34c71ef/wmill_pg-1.98.0.tar.gz
+[2024-05-12 21:26:59] INFO root fetch - processPackages [wmill]: Downloading https://files.pythonhosted.org/packages/6d/91/6b6052c80b8d367e051cc2905d1d921bf9a11f63e27a0f802b5c1277aa20/wmill-1.98.0.tar.gz
+[2024-05-12 21:26:59] INFO root fetch - processPackages [kypo-aws-lib]: Downloading https://files.pythonhosted.org/packages/b2/b1/e9c3ed7d1fb522807622cdb26cf66c69560c7ba4186fb7d1df20380e419f/kypo_aws_lib-0.3.0.tar.gz
+[2024-05-12 21:26:59] INFO root fetch - processPackages [fim-utils]: Downloading https://files.pythonhosted.org/packages/5a/cf/ac0dc98a717b1f0335de4bec34b23da985eb8b9dd67d69b42c239c59fbea/fim-utils-1.7.0b1.tar.gz
+[2024-05-12 21:26:59] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/26/ac/296bc5f7193d111c826ef99b60bf75fe1605158a73d728a5fad8aa771331/wmill_pg-1.99.0.tar.gz
+[2024-05-12 21:26:59] INFO root fetch - processPackages [wmill]: Downloading https://files.pythonhosted.org/packages/f1/d1/eb5b4c7d25f969fc3603441c8e90a5a8e00688be43ce0631166287977a65/wmill-1.99.0.tar.gz
+[2024-05-12 21:26:59] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/32/94/9431b41ce6b9c2670fbc125624f7ebc3d186482c80c271e3d7acde511319/windmill_api-1.99.0.tar.gz
+[2024-05-12 21:26:59] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2024-05-12 21:26:59] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.98.0.tar.gz tmp/wmill_pg-1.99.0.tar.gz --markdown 20240512/w/wmill-pg/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-05-12 21:26:59] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2024-05-12 21:26:59] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.98.0.tar.gz tmp/wmill-1.99.0.tar.gz --markdown 20240512/w/wmill/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-05-12 21:27:00] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2024-05-12 21:27:00] INFO root fetch - processPackages [kypo-aws-lib]: Downloading https://files.pythonhosted.org/packages/0c/c9/8a083d0b81f52fe4fb55db39888c4348fddb62acffe252f47b4b220da2b9/kypo_aws_lib-0.3.1.tar.gz
+[2024-05-12 21:27:00] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.98.0.tar.gz tmp/windmill_api-1.99.0.tar.gz --markdown 20240512/w/windmill-api/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-05-12 21:27:00] INFO root fetch - processPackages [fim-utils]: Downloading https://files.pythonhosted.org/packages/d7/36/f8845fa67d383478191056b0782d7890b89227b9157e0523fa3a6a7f2b6c/fim-utils-1.7.0b2.tar.gz
+[2024-05-12 21:27:00] INFO root fetch - processPackages [kypo-aws-lib]: executing diffoscope
+[2024-05-12 21:27:00] INFO root fetch - processPackages [kypo-aws-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kypo_aws_lib-0.3.0.tar.gz tmp/kypo_aws_lib-0.3.1.tar.gz --markdown 20240512/k/kypo-aws-lib/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-12 21:27:00] INFO root fetch - processPackages [fim-utils]: executing diffoscope
+[2024-05-12 21:27:00] INFO root fetch - processPackages [fim-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fim-utils-1.7.0b1.tar.gz tmp/fim-utils-1.7.0b2.tar.gz --markdown 20240512/f/fim-utils/1.7.0b1-1.7.0b2/README.md --exclude *.pyd
+[2024-05-12 21:27:00] INFO root fetch - processPackages [wmill-pg]: Remove: archive file [/home/abi/fetcher/tmp/wmill_pg-1.98.0.tar.gz]
+[2024-05-12 21:27:00] INFO root fetch - processPackages [wmill-pg]: Remove: archive file [/home/abi/fetcher/tmp/wmill_pg-1.99.0.tar.gz]
+[2024-05-12 21:27:00] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2024-05-12 21:27:00] INFO root fetch - processPackages [wmill]: Remove: archive file [/home/abi/fetcher/tmp/wmill-1.98.0.tar.gz]
+[2024-05-12 21:27:00] INFO root fetch - processPackages [wmill]: Remove: archive file [/home/abi/fetcher/tmp/wmill-1.99.0.tar.gz]
+[2024-05-12 21:27:00] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2024-05-12 21:27:00] INFO root fetch - processPackages [kypo-aws-lib]: Remove: archive file [/home/abi/fetcher/tmp/kypo_aws_lib-0.3.0.tar.gz]
+[2024-05-12 21:27:00] INFO root fetch - processPackages [kypo-aws-lib]: Remove: archive file [/home/abi/fetcher/tmp/kypo_aws_lib-0.3.1.tar.gz]
+[2024-05-12 21:27:00] INFO root fetch - main [MainThread]: End processing [kypo-aws-lib]: success
+[2024-05-12 21:27:01] INFO root fetch - processPackages [fim-utils]: Remove: archive file [/home/abi/fetcher/tmp/fim-utils-1.7.0b1.tar.gz]
+[2024-05-12 21:27:01] INFO root fetch - processPackages [fim-utils]: Remove: archive file [/home/abi/fetcher/tmp/fim-utils-1.7.0b2.tar.gz]
+[2024-05-12 21:27:01] INFO root fetch - main [MainThread]: End processing [fim-utils]: success
+[2024-05-12 21:27:03] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.98.0.tar.gz]
+[2024-05-12 21:27:03] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.99.0.tar.gz]
+[2024-05-12 21:27:03] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2024-05-12 21:27:03] INFO root fetch - main [MainThread]: Store serial: [23173047]
