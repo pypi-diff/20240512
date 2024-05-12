@@ -8093,3 +8093,20 @@
 [2024-05-12 12:03:24] WARNING root fetch - processPackages [auriculatelyz]: Skipping, unable to determine old version
 [2024-05-12 12:03:24] INFO root fetch - main [MainThread]: End processing [auriculatelyz] error
 [2024-05-12 12:03:24] INFO root fetch - main [MainThread]: Store serial: [23168795]
+[2024-05-12 12:05:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168795]
+[2024-05-12 12:05:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 12:05:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fotolab
+[2024-05-12 12:05:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-master
+[2024-05-12 12:05:33] INFO root fetch - processPackages [fotolab]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-12 12:05:33] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240512.10.5.14869] Old Version: [20240510.18.32.911042]
+[2024-05-12 12:05:33] INFO root fetch - processPackages [fotolab]: Downloading https://files.pythonhosted.org/packages/a2/ab/c10acca0ef62a7fc9ee21e1a91f04225aa100f106ea8efe4bafd9b0ec125/fotolab-0.9.0.tar.gz
+[2024-05-12 12:05:33] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/2a/00/3cb7e94bc78b1d6c87b5aa2c8ced8170e6edc6e430c7a894c982d27d7fd9/certora-cli-alpha-master-20240510.18.32.911042.tar.gz
+[2024-05-12 12:05:33] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14511880>=10485760
+[2024-05-12 12:05:33] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-05-12 12:05:34] INFO root fetch - processPackages [fotolab]: Downloading https://files.pythonhosted.org/packages/f8/7b/ec556508973366d646773454865fe94705524c44efe6ab092e8b0b223dba/fotolab-0.9.1.tar.gz
+[2024-05-12 12:05:34] INFO root fetch - processPackages [fotolab]: executing diffoscope
+[2024-05-12 12:05:34] INFO root fetch - processPackages [fotolab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fotolab-0.9.0.tar.gz tmp/fotolab-0.9.1.tar.gz --markdown 20240512/f/fotolab/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-12 12:05:34] INFO root fetch - processPackages [fotolab]: Remove: archive file [/home/abi/fetcher/tmp/fotolab-0.9.0.tar.gz]
+[2024-05-12 12:05:34] INFO root fetch - processPackages [fotolab]: Remove: archive file [/home/abi/fetcher/tmp/fotolab-0.9.1.tar.gz]
+[2024-05-12 12:05:34] INFO root fetch - main [MainThread]: End processing [fotolab]: success
+[2024-05-12 12:05:34] INFO root fetch - main [MainThread]: Store serial: [23168801]
