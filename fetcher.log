@@ -16085,3 +16085,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:11:50] INFO root fetch - processPackages [tdrpa.tdworker]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdworker-1.1.4.3-py3-none-any.whl.zip]
 [2024-05-12 21:11:50] INFO root fetch - main [MainThread]: End processing [tdrpa.tdworker]: success
 [2024-05-12 21:11:50] INFO root fetch - main [MainThread]: Store serial: [23172951]
+[2024-05-12 21:13:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172951]
+[2024-05-12 21:13:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 21:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: evo-django-kits
+[2024-05-12 21:13:59] INFO root fetch - processPackages [evo-django-kits]: New version: [0.0.2] Old Version: [0.0.12]
+[2024-05-12 21:13:59] INFO root fetch - processPackages [evo-django-kits]: Downloading https://files.pythonhosted.org/packages/b1/77/f9375aabc093dcb317095893dc06d9b2e94f91cd0ddf1a7898a2309f4249/evo_django_kits-0.0.12.tar.gz
+[2024-05-12 21:13:59] INFO root fetch - processPackages [evo-django-kits]: Downloading https://files.pythonhosted.org/packages/d4/0a/30d3602f416cb80a9ece840905ab1f4217b1a4e947c468975f7e39a7a7e0/evo_django_kits-0.0.2.tar.gz
+[2024-05-12 21:13:59] INFO root fetch - processPackages [evo-django-kits]: executing diffoscope
+[2024-05-12 21:13:59] INFO root fetch - processPackages [evo-django-kits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evo_django_kits-0.0.12.tar.gz tmp/evo_django_kits-0.0.2.tar.gz --markdown 20240512/e/evo-django-kits/0.0.12-0.0.2/README.md --exclude *.pyd
+[2024-05-12 21:14:00] INFO root fetch - processPackages [evo-django-kits]: Remove: archive file [/home/abi/fetcher/tmp/evo_django_kits-0.0.12.tar.gz]
+[2024-05-12 21:14:00] INFO root fetch - processPackages [evo-django-kits]: Remove: archive file [/home/abi/fetcher/tmp/evo_django_kits-0.0.2.tar.gz]
+[2024-05-12 21:14:00] INFO root fetch - main [MainThread]: End processing [evo-django-kits]: success
+[2024-05-12 21:14:00] INFO root fetch - main [MainThread]: Store serial: [23172956]
