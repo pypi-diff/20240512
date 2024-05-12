@@ -5699,3 +5699,27 @@
 [2024-05-12 08:42:18] INFO root fetch - processPackages [pyfakefs]: Remove: archive file [/home/abi/fetcher/tmp/pyfakefs-5.5.0.tar.gz]
 [2024-05-12 08:42:18] INFO root fetch - main [MainThread]: End processing [pyfakefs]: success
 [2024-05-12 08:42:18] INFO root fetch - main [MainThread]: Store serial: [23167537]
+[2024-05-12 08:44:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167537]
+[2024-05-12 08:44:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 08:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gtfs-parser
+[2024-05-12 08:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wheywormedz
+[2024-05-12 08:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: toui
+[2024-05-12 08:44:27] INFO root fetch - processPackages [gtfs-parser]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-12 08:44:27] INFO root fetch - processPackages [gtfs-parser]: Downloading https://files.pythonhosted.org/packages/d1/5b/5bc041c93ab09d239bad5381216a1ba503956afb205032ba69340c51fc72/gtfs_parser-0.2.1.tar.gz
+[2024-05-12 08:44:27] WARNING root fetch - processPackages [wheywormedz]: Skipping, unable to determine old version
+[2024-05-12 08:44:27] INFO root fetch - main [MainThread]: End processing [wheywormedz] error
+[2024-05-12 08:44:27] INFO root fetch - processPackages [toui]: New version: [3.5.0a7] Old Version: [3.5.0a6]
+[2024-05-12 08:44:27] INFO root fetch - processPackages [toui]: Downloading https://files.pythonhosted.org/packages/53/d1/7d1227998b0bc73a870a74aace58e9a3e2ed78dca05defd017e2ba9e6d20/toui-3.5.0a6.tar.gz
+[2024-05-12 08:44:27] INFO root fetch - processPackages [gtfs-parser]: Downloading https://files.pythonhosted.org/packages/33/3b/c4ce3a15b39df0fd36c4ee36680697844c6d4e4b9e8fb562d76db801ced9/gtfs_parser-0.2.2-py3-none-any.whl
+[2024-05-12 08:44:27] INFO root fetch - processPackages [gtfs-parser]: executing diffoscope
+[2024-05-12 08:44:27] INFO root fetch - processPackages [gtfs-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gtfs_parser-0.2.1.tar.gz tmp/gtfs_parser-0.2.2-py3-none-any.whl.zip --markdown 20240512/g/gtfs-parser/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-12 08:44:27] INFO root fetch - processPackages [toui]: Downloading https://files.pythonhosted.org/packages/c9/04/58dfd1c5a4e69fe4ba13b045e5a779f0797c4ad34cb4887adbdb8647eba3/toui-3.5.0a7.tar.gz
+[2024-05-12 08:44:28] INFO root fetch - processPackages [gtfs-parser]: Remove: archive file [/home/abi/fetcher/tmp/gtfs_parser-0.2.1.tar.gz]
+[2024-05-12 08:44:28] INFO root fetch - processPackages [gtfs-parser]: Remove: archive file [/home/abi/fetcher/tmp/gtfs_parser-0.2.2-py3-none-any.whl.zip]
+[2024-05-12 08:44:28] INFO root fetch - main [MainThread]: End processing [gtfs-parser]: success
+[2024-05-12 08:44:28] INFO root fetch - processPackages [toui]: executing diffoscope
+[2024-05-12 08:44:28] INFO root fetch - processPackages [toui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toui-3.5.0a6.tar.gz tmp/toui-3.5.0a7.tar.gz --markdown 20240512/t/toui/3.5.0a6-3.5.0a7/README.md --exclude *.pyd
+[2024-05-12 08:44:29] INFO root fetch - processPackages [toui]: Remove: archive file [/home/abi/fetcher/tmp/toui-3.5.0a6.tar.gz]
+[2024-05-12 08:44:29] INFO root fetch - processPackages [toui]: Remove: archive file [/home/abi/fetcher/tmp/toui-3.5.0a7.tar.gz]
+[2024-05-12 08:44:29] INFO root fetch - main [MainThread]: End processing [toui]: success
+[2024-05-12 08:44:29] INFO root fetch - main [MainThread]: Store serial: [23167547]
