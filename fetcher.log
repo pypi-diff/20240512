@@ -15298,3 +15298,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:19:37] INFO root fetch - processPackages [jupyterlab-transformers-completer]: Remove: archive file [/home/abi/fetcher/tmp/jupyterlab_transformers_completer-0.3.0.tar.gz]
 [2024-05-12 20:19:37] INFO root fetch - main [MainThread]: End processing [jupyterlab-transformers-completer]: success
 [2024-05-12 20:19:37] INFO root fetch - main [MainThread]: Store serial: [23172585]
+[2024-05-12 20:21:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172585]
+[2024-05-12 20:21:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 20:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: database-mysql-local
+[2024-05-12 20:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlops-ods
+[2024-05-12 20:21:46] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.297] Old Version: [0.0.296]
+[2024-05-12 20:21:46] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/c9/95/55dd4ff9b47375c048d9fc8cc8a04a10d7fff9b781745bdb2562dc1cb98b/database_mysql_local-0.0.296.tar.gz
+[2024-05-12 20:21:46] INFO root fetch - processPackages [mlops-ods]: New version: [0.1.202405121821] Old Version: [0.1.202405101405]
+[2024-05-12 20:21:46] INFO root fetch - processPackages [mlops-ods]: Downloading https://files.pythonhosted.org/packages/a6/6f/e948da0a1b1326d6821f510e171d940579e1a6a0725a8a29a2d4593530c0/mlops_ods-0.1.202405101405.tar.gz
+[2024-05-12 20:21:46] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/ff/6b/b0a2a52bc3f6c06d87c3bcf239357bb167208bb7f31aa325012240d01a9e/database_mysql_local-0.0.297.tar.gz
+[2024-05-12 20:21:46] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-12 20:21:46] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.296.tar.gz tmp/database_mysql_local-0.0.297.tar.gz --markdown 20240512/d/database-mysql-local/0.0.296-0.0.297/README.md --exclude *.pyd
+[2024-05-12 20:21:47] INFO root fetch - processPackages [mlops-ods]: Downloading https://files.pythonhosted.org/packages/5c/f8/133100b1b2ca6a80066386c86a804fb24b2fde0e9ad37770b59cee77c722/mlops_ods-0.1.202405121821.tar.gz
+[2024-05-12 20:21:47] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.296.tar.gz]
+[2024-05-12 20:21:47] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.297.tar.gz]
+[2024-05-12 20:21:47] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-12 20:21:47] INFO root fetch - processPackages [mlops-ods]: executing diffoscope
+[2024-05-12 20:21:47] INFO root fetch - processPackages [mlops-ods]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlops_ods-0.1.202405101405.tar.gz tmp/mlops_ods-0.1.202405121821.tar.gz --markdown 20240512/m/mlops-ods/0.1.202405101405-0.1.202405121821/README.md --exclude *.pyd
+[2024-05-12 20:21:48] INFO root fetch - processPackages [mlops-ods]: Remove: archive file [/home/abi/fetcher/tmp/mlops_ods-0.1.202405101405.tar.gz]
+[2024-05-12 20:21:48] INFO root fetch - processPackages [mlops-ods]: Remove: archive file [/home/abi/fetcher/tmp/mlops_ods-0.1.202405121821.tar.gz]
+[2024-05-12 20:21:48] INFO root fetch - main [MainThread]: End processing [mlops-ods]: success
+[2024-05-12 20:21:48] INFO root fetch - main [MainThread]: Store serial: [23172591]
