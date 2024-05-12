@@ -5231,3 +5231,27 @@
 [2024-05-12 08:05:27] INFO root fetch - processPackages [i2cylib]: Remove: archive file [/home/abi/fetcher/tmp/i2cylib-1.9.5.tar.gz]
 [2024-05-12 08:05:27] INFO root fetch - main [MainThread]: End processing [i2cylib]: success
 [2024-05-12 08:05:27] INFO root fetch - main [MainThread]: Store serial: [23167382]
+[2024-05-12 08:07:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167382]
+[2024-05-12 08:07:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 08:07:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bruhanimate
+[2024-05-12 08:07:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vermeologistz
+[2024-05-12 08:07:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mass-composition
+[2024-05-12 08:07:36] INFO root fetch - processPackages [bruhanimate]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-12 08:07:36] INFO root fetch - processPackages [bruhanimate]: Downloading https://files.pythonhosted.org/packages/c6/57/095c701edc2b245ce61b81a58bbcffca96482e88b8959cf0f29bfff462f4/bruhanimate-0.2.8.tar.gz
+[2024-05-12 08:07:36] WARNING root fetch - processPackages [vermeologistz]: Skipping, unable to determine old version
+[2024-05-12 08:07:36] INFO root fetch - main [MainThread]: End processing [vermeologistz] error
+[2024-05-12 08:07:36] INFO root fetch - processPackages [mass-composition]: New version: [0.4.6] Old Version: [0.4.3]
+[2024-05-12 08:07:36] INFO root fetch - processPackages [mass-composition]: Downloading https://files.pythonhosted.org/packages/0a/37/f58ad2fb7a2fd3fbc60d77ada0efecbdf82c7dee8eafce3e82887baf366f/mass_composition-0.4.3.tar.gz
+[2024-05-12 08:07:36] INFO root fetch - processPackages [bruhanimate]: Downloading https://files.pythonhosted.org/packages/2b/4a/71ab6f8b8a90ae4cbb391898ac5550ba56895062c0a9520b306d10c23329/bruhanimate-0.2.9.tar.gz
+[2024-05-12 08:07:36] INFO root fetch - processPackages [bruhanimate]: executing diffoscope
+[2024-05-12 08:07:36] INFO root fetch - processPackages [bruhanimate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bruhanimate-0.2.8.tar.gz tmp/bruhanimate-0.2.9.tar.gz --markdown 20240512/b/bruhanimate/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-12 08:07:36] INFO root fetch - processPackages [mass-composition]: Downloading https://files.pythonhosted.org/packages/82/a9/2770057bea8ea129d95170465b097ac9effdcd9f58c63f725cea603a7e65/mass_composition-0.4.6.tar.gz
+[2024-05-12 08:07:37] INFO root fetch - processPackages [mass-composition]: executing diffoscope
+[2024-05-12 08:07:37] INFO root fetch - processPackages [mass-composition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mass_composition-0.4.3.tar.gz tmp/mass_composition-0.4.6.tar.gz --markdown 20240512/m/mass-composition/0.4.3-0.4.6/README.md --exclude *.pyd
+[2024-05-12 08:07:37] INFO root fetch - processPackages [bruhanimate]: Remove: archive file [/home/abi/fetcher/tmp/bruhanimate-0.2.8.tar.gz]
+[2024-05-12 08:07:37] INFO root fetch - processPackages [bruhanimate]: Remove: archive file [/home/abi/fetcher/tmp/bruhanimate-0.2.9.tar.gz]
+[2024-05-12 08:07:37] INFO root fetch - main [MainThread]: End processing [bruhanimate]: success
+[2024-05-12 08:07:37] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.4.3.tar.gz]
+[2024-05-12 08:07:37] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.4.6.tar.gz]
+[2024-05-12 08:07:37] INFO root fetch - main [MainThread]: End processing [mass-composition]: success
+[2024-05-12 08:07:37] INFO root fetch - main [MainThread]: Store serial: [23167391]
