@@ -17489,3 +17489,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:41:10] INFO root fetch - processPackages [stack-graphs-python-bindings]: Remove: archive file [/home/abi/fetcher/tmp/stack_graphs_python_bindings-0.0.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-12 22:41:10] INFO root fetch - main [MainThread]: End processing [stack-graphs-python-bindings]: success
 [2024-05-12 22:41:10] INFO root fetch - main [MainThread]: Store serial: [23173672]
+[2024-05-12 22:43:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173672]
+[2024-05-12 22:43:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 22:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tenebrityz
+[2024-05-12 22:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drumblerz
+[2024-05-12 22:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-12 22:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jeedomdaemon
+[2024-05-12 22:43:18] INFO root fetch - processPackages [jeedomdaemon]: New version: [0.8.6] Old Version: [0.8.5]
+[2024-05-12 22:43:18] INFO root fetch - processPackages [mimllearning]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-12 22:43:18] INFO root fetch - processPackages [jeedomdaemon]: Downloading https://files.pythonhosted.org/packages/4e/df/f5fb78d62f054b15444ec9500369da8484c93ec310071f76dc8734515757/jeedomdaemon-0.8.5.tar.gz
+[2024-05-12 22:43:19] WARNING root fetch - processPackages [tenebrityz]: Skipping, unable to determine old version
+[2024-05-12 22:43:19] INFO root fetch - main [MainThread]: End processing [tenebrityz] error
+[2024-05-12 22:43:19] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/87/06/2a158412d402db9ac5d7e5e4423dab671a89aa193285fac2a78faf3629db/mimllearning-0.4.2.tar.gz
+[2024-05-12 22:43:19] WARNING root fetch - processPackages [drumblerz]: Skipping, unable to determine old version
+[2024-05-12 22:43:19] INFO root fetch - main [MainThread]: End processing [drumblerz] error
+[2024-05-12 22:43:19] INFO root fetch - processPackages [jeedomdaemon]: Downloading https://files.pythonhosted.org/packages/7e/f4/dd6fee3df96cfba2612d62f706af9171d45cf45f43101bc5345dae59c4dd/jeedomdaemon-0.8.6.tar.gz
+[2024-05-12 22:43:19] INFO root fetch - processPackages [jeedomdaemon]: executing diffoscope
+[2024-05-12 22:43:19] INFO root fetch - processPackages [jeedomdaemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jeedomdaemon-0.8.5.tar.gz tmp/jeedomdaemon-0.8.6.tar.gz --markdown 20240512/j/jeedomdaemon/0.8.5-0.8.6/README.md --exclude *.pyd
+[2024-05-12 22:43:19] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/d1/e5/6d083653ab34a0e699ea5b33cb01acc7aca0071b1eee59b8baf163921dec/mimllearning-0.4.3.tar.gz
+[2024-05-12 22:43:19] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-12 22:43:19] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.4.2.tar.gz tmp/mimllearning-0.4.3.tar.gz --markdown 20240512/m/mimllearning/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-12 22:43:19] INFO root fetch - processPackages [jeedomdaemon]: Remove: archive file [/home/abi/fetcher/tmp/jeedomdaemon-0.8.5.tar.gz]
+[2024-05-12 22:43:19] INFO root fetch - processPackages [jeedomdaemon]: Remove: archive file [/home/abi/fetcher/tmp/jeedomdaemon-0.8.6.tar.gz]
+[2024-05-12 22:43:19] INFO root fetch - main [MainThread]: End processing [jeedomdaemon]: success
+[2024-05-12 22:43:20] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.2.tar.gz]
+[2024-05-12 22:43:20] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.3.tar.gz]
+[2024-05-12 22:43:20] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-12 22:43:20] INFO root fetch - main [MainThread]: Store serial: [23173695]
