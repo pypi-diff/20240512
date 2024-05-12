@@ -5618,3 +5618,54 @@
 [2024-05-12 08:37:56] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
 [2024-05-12 08:37:56] INFO root fetch - main [MainThread]: End processing [litellm]: success
 [2024-05-12 08:37:56] INFO root fetch - main [MainThread]: Store serial: [23167512]
+[2024-05-12 08:39:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167512]
+[2024-05-12 08:40:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 08:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bruhanimate
+[2024-05-12 08:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: packaged
+[2024-05-12 08:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-easy-schedule
+[2024-05-12 08:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: medicafe
+[2024-05-12 08:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: JsMacrosAC
+[2024-05-12 08:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mrNyct
+[2024-05-12 08:40:04] INFO root fetch - processPackages [packaged]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-12 08:40:04] INFO root fetch - processPackages [bruhanimate]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-12 08:40:04] INFO root fetch - processPackages [packaged]: Downloading https://files.pythonhosted.org/packages/a1/74/28a99294d3b0ea1c39e9dba1421530fc2a756ba5fb8f374f259a903a2552/packaged-0.1.1.tar.gz
+[2024-05-12 08:40:04] INFO root fetch - processPackages [django-easy-schedule]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-12 08:40:04] INFO root fetch - processPackages [JsMacrosAC]: New version: [1.9.1.5495966] Old Version: [1.9.0.873835]
+[2024-05-12 08:40:04] INFO root fetch - processPackages [bruhanimate]: Downloading https://files.pythonhosted.org/packages/c6/57/095c701edc2b245ce61b81a58bbcffca96482e88b8959cf0f29bfff462f4/bruhanimate-0.2.8.tar.gz
+[2024-05-12 08:40:04] WARNING root fetch - processPackages [mrNyct]: Skipping, unable to determine old version
+[2024-05-12 08:40:04] INFO root fetch - main [MainThread]: End processing [mrNyct] error
+[2024-05-12 08:40:05] INFO root fetch - processPackages [medicafe]: New version: [0.240511.0] Old Version: [0.240510.3]
+[2024-05-12 08:40:05] INFO root fetch - processPackages [django-easy-schedule]: Downloading https://files.pythonhosted.org/packages/b0/8e/e31d574a6f281f3e0262a023f635fc7f010cacc7bfd048f33c3eeb22b9a0/django-easy-schedule-0.1.5.tar.gz
+[2024-05-12 08:40:05] INFO root fetch - processPackages [JsMacrosAC]: Downloading https://files.pythonhosted.org/packages/96/53/06b506599acb24833e20cf6a1b764657259c1150a2114ff6c6d2a3a32a9a/JsMacrosAC-1.9.0.873835.tar.gz
+[2024-05-12 08:40:05] INFO root fetch - processPackages [bruhanimate]: Downloading https://files.pythonhosted.org/packages/2b/4a/71ab6f8b8a90ae4cbb391898ac5550ba56895062c0a9520b306d10c23329/bruhanimate-0.2.9.tar.gz
+[2024-05-12 08:40:05] INFO root fetch - processPackages [packaged]: Downloading https://files.pythonhosted.org/packages/b6/75/b41db4f921b8e4a57931395218646d40c91c2db60074a41d103daeac6b7f/packaged-0.2.0.tar.gz
+[2024-05-12 08:40:05] INFO root fetch - processPackages [bruhanimate]: executing diffoscope
+[2024-05-12 08:40:05] INFO root fetch - processPackages [bruhanimate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bruhanimate-0.2.8.tar.gz tmp/bruhanimate-0.2.9.tar.gz --markdown 20240512/b/bruhanimate/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-12 08:40:05] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/c1/d0/e40ad01b722f61e13c6a171afa612ca029d5d153909fbcc4ec9ff2f7c331/medicafe-0.240510.3.tar.gz
+[2024-05-12 08:40:05] INFO root fetch - processPackages [packaged]: executing diffoscope
+[2024-05-12 08:40:05] INFO root fetch - processPackages [packaged]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packaged-0.1.1.tar.gz tmp/packaged-0.2.0.tar.gz --markdown 20240512/p/packaged/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-12 08:40:05] INFO root fetch - processPackages [django-easy-schedule]: Downloading https://files.pythonhosted.org/packages/0f/c5/66eec63431c75d7108a48452da46fabafadf65a230c6fe5fd093e68faa8e/django-easy-schedule-0.1.6.tar.gz
+[2024-05-12 08:40:05] INFO root fetch - processPackages [JsMacrosAC]: Downloading https://files.pythonhosted.org/packages/6d/53/09847bd056cd1e84da8d6af935709859ceb922708eb3bf1a50f82f93c16c/JsMacrosAC-1.9.1.5495966.tar.gz
+[2024-05-12 08:40:05] INFO root fetch - processPackages [django-easy-schedule]: executing diffoscope
+[2024-05-12 08:40:05] INFO root fetch - processPackages [django-easy-schedule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-easy-schedule-0.1.5.tar.gz tmp/django-easy-schedule-0.1.6.tar.gz --markdown 20240512/d/django-easy-schedule/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-12 08:40:05] INFO root fetch - processPackages [medicafe]: Downloading https://files.pythonhosted.org/packages/56/6c/c34bb2215108b143642b6d022d3c097df0347b3e42a52741f640307ff4c4/medicafe-0.240511.0.tar.gz
+[2024-05-12 08:40:05] INFO root fetch - processPackages [JsMacrosAC]: executing diffoscope
+[2024-05-12 08:40:05] INFO root fetch - processPackages [JsMacrosAC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JsMacrosAC-1.9.0.873835.tar.gz tmp/JsMacrosAC-1.9.1.5495966.tar.gz --markdown 20240512/J/JsMacrosAC/1.9.0.873835-1.9.1.5495966/README.md --exclude *.pyd
+[2024-05-12 08:40:05] INFO root fetch - processPackages [medicafe]: executing diffoscope
+[2024-05-12 08:40:05] INFO root fetch - processPackages [medicafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medicafe-0.240510.3.tar.gz tmp/medicafe-0.240511.0.tar.gz --markdown 20240512/m/medicafe/0.240510.3-0.240511.0/README.md --exclude *.pyd
+[2024-05-12 08:40:05] INFO root fetch - processPackages [packaged]: Remove: archive file [/home/abi/fetcher/tmp/packaged-0.1.1.tar.gz]
+[2024-05-12 08:40:05] INFO root fetch - processPackages [packaged]: Remove: archive file [/home/abi/fetcher/tmp/packaged-0.2.0.tar.gz]
+[2024-05-12 08:40:05] INFO root fetch - main [MainThread]: End processing [packaged]: success
+[2024-05-12 08:40:05] INFO root fetch - processPackages [bruhanimate]: Remove: archive file [/home/abi/fetcher/tmp/bruhanimate-0.2.8.tar.gz]
+[2024-05-12 08:40:05] INFO root fetch - processPackages [bruhanimate]: Remove: archive file [/home/abi/fetcher/tmp/bruhanimate-0.2.9.tar.gz]
+[2024-05-12 08:40:05] INFO root fetch - main [MainThread]: End processing [bruhanimate]: success
+[2024-05-12 08:40:06] INFO root fetch - processPackages [django-easy-schedule]: Remove: archive file [/home/abi/fetcher/tmp/django-easy-schedule-0.1.5.tar.gz]
+[2024-05-12 08:40:06] INFO root fetch - processPackages [django-easy-schedule]: Remove: archive file [/home/abi/fetcher/tmp/django-easy-schedule-0.1.6.tar.gz]
+[2024-05-12 08:40:06] INFO root fetch - main [MainThread]: End processing [django-easy-schedule]: success
+[2024-05-12 08:40:06] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240510.3.tar.gz]
+[2024-05-12 08:40:06] INFO root fetch - processPackages [medicafe]: Remove: archive file [/home/abi/fetcher/tmp/medicafe-0.240511.0.tar.gz]
+[2024-05-12 08:40:06] INFO root fetch - main [MainThread]: End processing [medicafe]: success
+[2024-05-12 08:40:07] INFO root fetch - processPackages [JsMacrosAC]: Remove: archive file [/home/abi/fetcher/tmp/JsMacrosAC-1.9.0.873835.tar.gz]
+[2024-05-12 08:40:07] INFO root fetch - processPackages [JsMacrosAC]: Remove: archive file [/home/abi/fetcher/tmp/JsMacrosAC-1.9.1.5495966.tar.gz]
+[2024-05-12 08:40:07] INFO root fetch - main [MainThread]: End processing [JsMacrosAC]: success
+[2024-05-12 08:40:07] INFO root fetch - main [MainThread]: Store serial: [23167531]
