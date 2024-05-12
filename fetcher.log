@@ -4385,3 +4385,33 @@
 [2024-05-12 06:32:10] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-9.0.0.tar.gz]
 [2024-05-12 06:32:10] INFO root fetch - main [MainThread]: End processing [anabih-python-test]: success
 [2024-05-12 06:32:10] INFO root fetch - main [MainThread]: Store serial: [23166999]
+[2024-05-12 06:34:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166999]
+[2024-05-12 06:34:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 06:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reyapi
+[2024-05-12 06:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tulona
+[2024-05-12 06:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nostpy-cli
+[2024-05-12 06:34:18] INFO root fetch - processPackages [nostpy-cli]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-12 06:34:18] INFO root fetch - processPackages [tulona]: New version: [0.7.8] Old Version: [0.7.6]
+[2024-05-12 06:34:18] INFO root fetch - processPackages [reyapi]: New version: [0.9] Old Version: [0.8]
+[2024-05-12 06:34:18] INFO root fetch - processPackages [nostpy-cli]: Downloading https://files.pythonhosted.org/packages/04/28/43358c408293330e4ecf277bb4bd4c8c01098fbd0a8c1f77800dc67d2847/nostpy_cli-0.1.1.tar.gz
+[2024-05-12 06:34:18] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/90/55/cc085253f0fd9ac36b91a470ef0c6ae1199ab2b7a53ccdf5f7d1bc593a50/tulona-0.7.6.tar.gz
+[2024-05-12 06:34:18] INFO root fetch - processPackages [reyapi]: Downloading https://files.pythonhosted.org/packages/04/6a/4ad3394ca76b069c53404c00fc64952134a7d3c39b4d6c34067993e7be6e/reyapi-0.8-py3-none-any.whl
+[2024-05-12 06:34:18] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/fd/4e/04af3138caf4b6d7b2b12a9adbff2710ee2b4240c341fe2b3dcfe8ce3fd5/tulona-0.7.8.tar.gz
+[2024-05-12 06:34:18] INFO root fetch - processPackages [nostpy-cli]: Downloading https://files.pythonhosted.org/packages/c9/45/5329fd9148daa3b2866b756df3f95f3ceb1d7e39258e96f0f403fe3a44a9/nostpy_cli-0.1.2.tar.gz
+[2024-05-12 06:34:18] INFO root fetch - processPackages [tulona]: executing diffoscope
+[2024-05-12 06:34:18] INFO root fetch - processPackages [tulona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulona-0.7.6.tar.gz tmp/tulona-0.7.8.tar.gz --markdown 20240512/t/tulona/0.7.6-0.7.8/README.md --exclude *.pyd
+[2024-05-12 06:34:19] INFO root fetch - processPackages [nostpy-cli]: executing diffoscope
+[2024-05-12 06:34:19] INFO root fetch - processPackages [nostpy-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nostpy_cli-0.1.1.tar.gz tmp/nostpy_cli-0.1.2.tar.gz --markdown 20240512/n/nostpy-cli/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-12 06:34:19] INFO root fetch - processPackages [reyapi]: Downloading https://files.pythonhosted.org/packages/48/37/88110ef45465202179ac19c3c206dfce394a8c0439930c3e886076d3a468/reyapi-0.9-py3-none-any.whl
+[2024-05-12 06:34:19] INFO root fetch - processPackages [reyapi]: executing diffoscope
+[2024-05-12 06:34:19] INFO root fetch - processPackages [reyapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reyapi-0.8-py3-none-any.whl.zip tmp/reyapi-0.9-py3-none-any.whl.zip --markdown 20240512/r/reyapi/0.8-0.9/README.md --exclude *.pyd
+[2024-05-12 06:34:19] INFO root fetch - processPackages [nostpy-cli]: Remove: archive file [/home/abi/fetcher/tmp/nostpy_cli-0.1.1.tar.gz]
+[2024-05-12 06:34:19] INFO root fetch - processPackages [nostpy-cli]: Remove: archive file [/home/abi/fetcher/tmp/nostpy_cli-0.1.2.tar.gz]
+[2024-05-12 06:34:19] INFO root fetch - main [MainThread]: End processing [nostpy-cli]: success
+[2024-05-12 06:34:19] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.7.6.tar.gz]
+[2024-05-12 06:34:19] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.7.8.tar.gz]
+[2024-05-12 06:34:19] INFO root fetch - main [MainThread]: End processing [tulona]: success
+[2024-05-12 06:34:19] INFO root fetch - processPackages [reyapi]: Remove: archive file [/home/abi/fetcher/tmp/reyapi-0.8-py3-none-any.whl.zip]
+[2024-05-12 06:34:19] INFO root fetch - processPackages [reyapi]: Remove: archive file [/home/abi/fetcher/tmp/reyapi-0.9-py3-none-any.whl.zip]
+[2024-05-12 06:34:19] INFO root fetch - main [MainThread]: End processing [reyapi]: success
+[2024-05-12 06:34:19] INFO root fetch - main [MainThread]: Store serial: [23167008]
