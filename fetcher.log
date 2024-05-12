@@ -8406,3 +8406,42 @@
 [2024-05-12 12:23:19] INFO root fetch - processPackages [mailslurp-client]: Remove: archive file [/home/abi/fetcher/tmp/mailslurp-client-9.0.0.tar.gz]
 [2024-05-12 12:23:19] INFO root fetch - main [MainThread]: End processing [mailslurp-client]: success
 [2024-05-12 12:23:19] INFO root fetch - main [MainThread]: Store serial: [23168981]
+[2024-05-12 12:25:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168981]
+[2024-05-12 12:25:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 12:25:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycfutils
+[2024-05-12 12:25:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: echoloader
+[2024-05-12 12:25:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hagrid
+[2024-05-12 12:25:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pybacting
+[2024-05-12 12:25:28] INFO root fetch - processPackages [hagrid]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-05-12 12:25:28] INFO root fetch - processPackages [pybacting]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-12 12:25:28] INFO root fetch - processPackages [pycfutils]: New version: [2024.5.8.post1] Old Version: [2024.5.8]
+[2024-05-12 12:25:28] INFO root fetch - processPackages [echoloader]: New version: [2.0.0.0] Old Version: [0.1.96]
+[2024-05-12 12:25:28] INFO root fetch - processPackages [hagrid]: Downloading https://files.pythonhosted.org/packages/71/5c/7118f88cf946d0a75ccbfe7faf329364c6aa329c75e795f5321774437057/hagrid-0.3.98.tar.gz
+[2024-05-12 12:25:28] INFO root fetch - processPackages [pycfutils]: Downloading https://files.pythonhosted.org/packages/fe/db/6fc1bf62d6b3a364cb89f3d16d8b1a9ef9171599fc7d48e100b7a4f13774/pycfutils-2024.5.8.tar.gz
+[2024-05-12 12:25:28] INFO root fetch - processPackages [echoloader]: Downloading https://files.pythonhosted.org/packages/d5/77/c6e381cba405819db9aca86a149bc9bc877964790a7050f89364737da110/echoloader-0.1.96.tar.gz
+[2024-05-12 12:25:28] INFO root fetch - processPackages [pybacting]: Downloading https://files.pythonhosted.org/packages/be/cd/b08800f709c914e2a39150a94844059c07d1c84d66d66b19edd809669d50/pybacting-0.2.8.tar.gz
+[2024-05-12 12:25:28] INFO root fetch - processPackages [hagrid]: Downloading https://files.pythonhosted.org/packages/cd/59/f6d437913eeba7d4d9bb51ed14ede91b80dcb983f21bbafb63e54e220055/hagrid-0.3.99.tar.gz
+[2024-05-12 12:25:28] INFO root fetch - processPackages [hagrid]: executing diffoscope
+[2024-05-12 12:25:28] INFO root fetch - processPackages [hagrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagrid-0.3.98.tar.gz tmp/hagrid-0.3.99.tar.gz --markdown 20240512/h/hagrid/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-05-12 12:25:28] INFO root fetch - processPackages [pycfutils]: Downloading https://files.pythonhosted.org/packages/ac/7e/62c33bc463ec3e7a737d82c7e012e5498d4439bdbff6bd460b85989a9c51/pycfutils-2024.5.8.post1.tar.gz
+[2024-05-12 12:25:28] INFO root fetch - processPackages [echoloader]: Downloading https://files.pythonhosted.org/packages/85/7b/af7d6e6fd932b750507d0abe97ffd93f9341308558bbc30653084f083e2b/echoloader-2.0.0.0.tar.gz
+[2024-05-12 12:25:28] INFO root fetch - processPackages [pycfutils]: executing diffoscope
+[2024-05-12 12:25:28] INFO root fetch - processPackages [pycfutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycfutils-2024.5.8.tar.gz tmp/pycfutils-2024.5.8.post1.tar.gz --markdown 20240512/p/pycfutils/2024.5.8-2024.5.8.post1/README.md --exclude *.pyd
+[2024-05-12 12:25:28] INFO root fetch - processPackages [echoloader]: executing diffoscope
+[2024-05-12 12:25:28] INFO root fetch - processPackages [echoloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/echoloader-0.1.96.tar.gz tmp/echoloader-2.0.0.0.tar.gz --markdown 20240512/e/echoloader/0.1.96-2.0.0.0/README.md --exclude *.pyd
+[2024-05-12 12:25:28] INFO root fetch - processPackages [pybacting]: Downloading https://files.pythonhosted.org/packages/4d/1e/9b3f45289eb1e44b6a18187c949dba2c8f71cb4f7802a0494890051b848f/pybacting-0.2.9.tar.gz
+[2024-05-12 12:25:29] INFO root fetch - processPackages [pybacting]: executing diffoscope
+[2024-05-12 12:25:29] INFO root fetch - processPackages [pybacting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybacting-0.2.8.tar.gz tmp/pybacting-0.2.9.tar.gz --markdown 20240512/p/pybacting/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-12 12:25:29] INFO root fetch - processPackages [hagrid]: Remove: archive file [/home/abi/fetcher/tmp/hagrid-0.3.98.tar.gz]
+[2024-05-12 12:25:29] INFO root fetch - processPackages [hagrid]: Remove: archive file [/home/abi/fetcher/tmp/hagrid-0.3.99.tar.gz]
+[2024-05-12 12:25:29] INFO root fetch - main [MainThread]: End processing [hagrid]: success
+[2024-05-12 12:25:29] INFO root fetch - processPackages [pycfutils]: Remove: archive file [/home/abi/fetcher/tmp/pycfutils-2024.5.8.tar.gz]
+[2024-05-12 12:25:29] INFO root fetch - processPackages [pycfutils]: Remove: archive file [/home/abi/fetcher/tmp/pycfutils-2024.5.8.post1.tar.gz]
+[2024-05-12 12:25:29] INFO root fetch - main [MainThread]: End processing [pycfutils]: success
+[2024-05-12 12:25:29] INFO root fetch - processPackages [echoloader]: Remove: archive file [/home/abi/fetcher/tmp/echoloader-0.1.96.tar.gz]
+[2024-05-12 12:25:29] INFO root fetch - processPackages [echoloader]: Remove: archive file [/home/abi/fetcher/tmp/echoloader-2.0.0.0.tar.gz]
+[2024-05-12 12:25:29] INFO root fetch - main [MainThread]: End processing [echoloader]: success
+[2024-05-12 12:25:29] INFO root fetch - processPackages [pybacting]: Remove: archive file [/home/abi/fetcher/tmp/pybacting-0.2.8.tar.gz]
+[2024-05-12 12:25:29] INFO root fetch - processPackages [pybacting]: Remove: archive file [/home/abi/fetcher/tmp/pybacting-0.2.9.tar.gz]
+[2024-05-12 12:25:29] INFO root fetch - main [MainThread]: End processing [pybacting]: success
+[2024-05-12 12:25:29] INFO root fetch - main [MainThread]: Store serial: [23168995]
