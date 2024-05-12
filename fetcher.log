@@ -6042,3 +6042,33 @@
 [2024-05-12 09:04:30] INFO root fetch - processPackages [pyfmtools]: Remove: archive file [/home/abi/fetcher/tmp/pyfmtools-5.2-cp312-cp312-macosx_14_0_arm64.whl.zip]
 [2024-05-12 09:04:30] INFO root fetch - main [MainThread]: End processing [pyfmtools]: success
 [2024-05-12 09:04:30] INFO root fetch - main [MainThread]: Store serial: [23167697]
+[2024-05-12 09:06:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167697]
+[2024-05-12 09:06:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 09:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfmtools
+[2024-05-12 09:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezside
+[2024-05-12 09:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: multicloud-diagrams
+[2024-05-12 09:06:39] INFO root fetch - processPackages [ezside]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 09:06:39] INFO root fetch - processPackages [multicloud-diagrams]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-12 09:06:39] INFO root fetch - processPackages [multicloud-diagrams]: Downloading https://files.pythonhosted.org/packages/23/bc/bd2d8d9768ef5002081e14784a5bf8fe6327a7960ea4f62c9a3c46862ba3/multicloud_diagrams-0.3.8.tar.gz
+[2024-05-12 09:06:39] INFO root fetch - processPackages [pyfmtools]: New version: [5.2] Old Version: [5.1]
+[2024-05-12 09:06:39] INFO root fetch - processPackages [ezside]: Downloading https://files.pythonhosted.org/packages/5a/d4/1810386c07f848c78c2e8b15144f22482295b4040d1283a67e6675563952/ezside-0.1.8.tar.gz
+[2024-05-12 09:06:39] INFO root fetch - processPackages [pyfmtools]: Downloading https://files.pythonhosted.org/packages/dc/62/8ca6ec842e72db504bd218327d834e7d48cfdd06470eaab46b27f274b713/pyfmtools-5.1.tar.gz
+[2024-05-12 09:06:39] INFO root fetch - processPackages [multicloud-diagrams]: Downloading https://files.pythonhosted.org/packages/93/bd/2df888c482aa053bc871a7c784ffb1bb0e5e29cd0be64f95d889af5db7b4/multicloud_diagrams-0.3.9.tar.gz
+[2024-05-12 09:06:39] INFO root fetch - processPackages [ezside]: Downloading https://files.pythonhosted.org/packages/f1/e0/2cae952d702515bb0e82f0bacbe379367f4a416b2a3928f33850e21ae823/ezside-0.1.9.tar.gz
+[2024-05-12 09:06:39] INFO root fetch - processPackages [multicloud-diagrams]: executing diffoscope
+[2024-05-12 09:06:39] INFO root fetch - processPackages [multicloud-diagrams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multicloud_diagrams-0.3.8.tar.gz tmp/multicloud_diagrams-0.3.9.tar.gz --markdown 20240512/m/multicloud-diagrams/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-12 09:06:39] INFO root fetch - processPackages [pyfmtools]: Downloading https://files.pythonhosted.org/packages/bf/9d/7fbbeddfcb3c131cd40dc67891e87dfcc5e17858f0c6c7769f16f825183d/pyfmtools-5.2-cp312-cp312-macosx_14_0_arm64.whl
+[2024-05-12 09:06:39] INFO root fetch - processPackages [ezside]: executing diffoscope
+[2024-05-12 09:06:39] INFO root fetch - processPackages [ezside]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezside-0.1.8.tar.gz tmp/ezside-0.1.9.tar.gz --markdown 20240512/e/ezside/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 09:06:39] INFO root fetch - processPackages [pyfmtools]: executing diffoscope
+[2024-05-12 09:06:39] INFO root fetch - processPackages [pyfmtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfmtools-5.1.tar.gz tmp/pyfmtools-5.2-cp312-cp312-macosx_14_0_arm64.whl.zip --markdown 20240512/p/pyfmtools/5.1-5.2/README.md --exclude *.pyd
+[2024-05-12 09:06:40] INFO root fetch - processPackages [multicloud-diagrams]: Remove: archive file [/home/abi/fetcher/tmp/multicloud_diagrams-0.3.8.tar.gz]
+[2024-05-12 09:06:40] INFO root fetch - processPackages [multicloud-diagrams]: Remove: archive file [/home/abi/fetcher/tmp/multicloud_diagrams-0.3.9.tar.gz]
+[2024-05-12 09:06:40] INFO root fetch - main [MainThread]: End processing [multicloud-diagrams]: success
+[2024-05-12 09:06:40] INFO root fetch - processPackages [ezside]: Remove: archive file [/home/abi/fetcher/tmp/ezside-0.1.8.tar.gz]
+[2024-05-12 09:06:40] INFO root fetch - processPackages [ezside]: Remove: archive file [/home/abi/fetcher/tmp/ezside-0.1.9.tar.gz]
+[2024-05-12 09:06:40] INFO root fetch - main [MainThread]: End processing [ezside]: success
+[2024-05-12 09:06:40] INFO root fetch - processPackages [pyfmtools]: Remove: archive file [/home/abi/fetcher/tmp/pyfmtools-5.1.tar.gz]
+[2024-05-12 09:06:40] INFO root fetch - processPackages [pyfmtools]: Remove: archive file [/home/abi/fetcher/tmp/pyfmtools-5.2-cp312-cp312-macosx_14_0_arm64.whl.zip]
+[2024-05-12 09:06:40] INFO root fetch - main [MainThread]: End processing [pyfmtools]: success
+[2024-05-12 09:06:40] INFO root fetch - main [MainThread]: Store serial: [23167707]
