@@ -3096,3 +3096,18 @@
 [2024-05-12 04:31:10] INFO root fetch - processPackages [text-block-local]: Remove: archive file [/home/abi/fetcher/tmp/text-block-local-0.0.9.tar.gz]
 [2024-05-12 04:31:10] INFO root fetch - main [MainThread]: End processing [text-block-local]: success
 [2024-05-12 04:31:10] INFO root fetch - main [MainThread]: Store serial: [23166376]
+[2024-05-12 04:33:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166376]
+[2024-05-12 04:33:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 04:33:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: voicefulz
+[2024-05-12 04:33:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: g2opy
+[2024-05-12 04:33:19] INFO root fetch - processPackages [g2opy]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 04:33:19] WARNING root fetch - processPackages [voicefulz]: Skipping, unable to determine old version
+[2024-05-12 04:33:19] INFO root fetch - main [MainThread]: End processing [voicefulz] error
+[2024-05-12 04:33:19] INFO root fetch - processPackages [g2opy]: Downloading https://files.pythonhosted.org/packages/a9/e0/5ac95d71615c4eded22887575312edb4fabe8bfd82d5a6d01afce3932d04/g2opy-0.0.1.tar.gz
+[2024-05-12 04:33:19] INFO root fetch - processPackages [g2opy]: Downloading https://files.pythonhosted.org/packages/34/34/4e36c0d851f74d3693a4dd40d63b7fca73f852fd0c2173a906d286538840/g2opy-0.0.2.tar.gz
+[2024-05-12 04:33:19] INFO root fetch - processPackages [g2opy]: executing diffoscope
+[2024-05-12 04:33:19] INFO root fetch - processPackages [g2opy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g2opy-0.0.1.tar.gz tmp/g2opy-0.0.2.tar.gz --markdown 20240512/g/g2opy/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-12 04:33:20] INFO root fetch - processPackages [g2opy]: Remove: archive file [/home/abi/fetcher/tmp/g2opy-0.0.1.tar.gz]
+[2024-05-12 04:33:20] INFO root fetch - processPackages [g2opy]: Remove: archive file [/home/abi/fetcher/tmp/g2opy-0.0.2.tar.gz]
+[2024-05-12 04:33:20] INFO root fetch - main [MainThread]: End processing [g2opy]: success
+[2024-05-12 04:33:20] INFO root fetch - main [MainThread]: Store serial: [23166382]
