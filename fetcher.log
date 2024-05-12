@@ -15902,3 +15902,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:03:04] INFO root fetch - processPackages [anywidget]: Remove: archive file [/home/abi/fetcher/tmp/anywidget-0.9.9.tar.gz]
 [2024-05-12 21:03:04] INFO root fetch - main [MainThread]: End processing [anywidget]: success
 [2024-05-12 21:03:04] INFO root fetch - main [MainThread]: Store serial: [23172878]
+[2024-05-12 21:05:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172878]
+[2024-05-12 21:05:13] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-12 21:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: exponentation
+[2024-05-12 21:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: juliapkg
+[2024-05-12 21:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: automorphicz
+[2024-05-12 21:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wagtail-fedit
+[2024-05-12 21:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lemuroideaz
+[2024-05-12 21:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: networkx-viewer
+[2024-05-12 21:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torch-model-manager
+[2024-05-12 21:05:13] INFO root fetch - processPackages [juliapkg]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 21:05:13] INFO root fetch - processPackages [torch-model-manager]: New version: [0.3.0.dev1] Old Version: [0.2.0.dev9]
+[2024-05-12 21:05:13] INFO root fetch - processPackages [juliapkg]: Downloading https://files.pythonhosted.org/packages/f1/32/04e824608d53769b87e64b6f40e09bfe7eb405d7f884f1fbacb56d4b7a1e/juliapkg-0.1.8.tar.gz
+[2024-05-12 21:05:13] INFO root fetch - processPackages [exponentation]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-12 21:05:13] INFO root fetch - processPackages [networkx-viewer]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-12 21:05:13] INFO root fetch - processPackages [wagtail-fedit]: New version: [1.5.5rc8] Old Version: [1.5.5rc7]
+[2024-05-12 21:05:13] WARNING root fetch - processPackages [automorphicz]: Skipping, unable to determine old version
+[2024-05-12 21:05:13] WARNING root fetch - processPackages [lemuroideaz]: Skipping, unable to determine old version
+[2024-05-12 21:05:13] INFO root fetch - main [MainThread]: End processing [automorphicz] error
+[2024-05-12 21:05:13] INFO root fetch - main [MainThread]: End processing [lemuroideaz] error
+[2024-05-12 21:05:13] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/74/72/d37fb1c20b9919d276f0f36cc47753d4cd5f9a15720240bbdb098639efdc/torch_model_manager-0.2.0.dev9.tar.gz
+[2024-05-12 21:05:14] INFO root fetch - processPackages [exponentation]: Downloading https://files.pythonhosted.org/packages/8e/fa/0060b3db73f1040d96251cb000b38cbee42eed086a1064ac8f663358d2a7/exponentation-0.0.1.tar.gz
+[2024-05-12 21:05:14] INFO root fetch - processPackages [juliapkg]: Downloading https://files.pythonhosted.org/packages/c1/4d/e68d9a4efce3f69f7be472fb29c86fe9d12d0cbdfcb21a72beb11ae94395/juliapkg-0.1.9.tar.gz
+[2024-05-12 21:05:14] INFO root fetch - processPackages [wagtail-fedit]: Downloading https://files.pythonhosted.org/packages/2a/60/b93663b7e7835fab0be702af2fdb18af1d86f43b6857f006ae175fc25a88/wagtail_fedit-1.5.5rc7.tar.gz
+[2024-05-12 21:05:14] INFO root fetch - processPackages [networkx-viewer]: Downloading https://files.pythonhosted.org/packages/a0/ea/18abfd9e2c1e5b82c2a72833ef1d9ba42cf435857075e2b56a997d869d0c/networkx_viewer-0.3.0.tar.gz
+[2024-05-12 21:05:14] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/91/ef/df38fb3af367d7cf6d12227d9b8b7698273b59d7e6c141ddd55beaae6234/torch_model_manager-0.3.0.dev1.tar.gz
+[2024-05-12 21:05:14] INFO root fetch - processPackages [juliapkg]: executing diffoscope
+[2024-05-12 21:05:14] INFO root fetch - processPackages [juliapkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/juliapkg-0.1.8.tar.gz tmp/juliapkg-0.1.9.tar.gz --markdown 20240512/j/juliapkg/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 21:05:14] INFO root fetch - processPackages [torch-model-manager]: executing diffoscope
+[2024-05-12 21:05:14] INFO root fetch - processPackages [torch-model-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_manager-0.2.0.dev9.tar.gz tmp/torch_model_manager-0.3.0.dev1.tar.gz --markdown 20240512/t/torch-model-manager/0.2.0.dev9-0.3.0.dev1/README.md --exclude *.pyd
+[2024-05-12 21:05:14] INFO root fetch - processPackages [exponentation]: Downloading https://files.pythonhosted.org/packages/e8/a4/0a6e9f16d23eba3a81aa2a55be35cee8a3b51db93ca8dfcc60412a5ffe90/exponentation-0.0.2.tar.gz
+[2024-05-12 21:05:14] INFO root fetch - processPackages [wagtail-fedit]: Downloading https://files.pythonhosted.org/packages/94/f2/ba935e5c2bad427fe6794ac24198b68220f9693b07282e3572a813c1357c/wagtail_fedit-1.5.5rc8.tar.gz
+[2024-05-12 21:05:14] INFO root fetch - processPackages [exponentation]: executing diffoscope
+[2024-05-12 21:05:14] INFO root fetch - processPackages [exponentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exponentation-0.0.1.tar.gz tmp/exponentation-0.0.2.tar.gz --markdown 20240512/e/exponentation/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-12 21:05:14] INFO root fetch - processPackages [networkx-viewer]: Downloading https://files.pythonhosted.org/packages/39/7d/fdb7db828aa6a19985f5003c63f15cf358f5809c75bcb3214048080a0a5a/networkx_viewer-0.3.1.tar.gz
+[2024-05-12 21:05:14] INFO root fetch - processPackages [wagtail-fedit]: executing diffoscope
+[2024-05-12 21:05:14] INFO root fetch - processPackages [wagtail-fedit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_fedit-1.5.5rc7.tar.gz tmp/wagtail_fedit-1.5.5rc8.tar.gz --markdown 20240512/w/wagtail-fedit/1.5.5rc7-1.5.5rc8/README.md --exclude *.pyd
+[2024-05-12 21:05:14] INFO root fetch - processPackages [networkx-viewer]: executing diffoscope
+[2024-05-12 21:05:14] INFO root fetch - processPackages [networkx-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networkx_viewer-0.3.0.tar.gz tmp/networkx_viewer-0.3.1.tar.gz --markdown 20240512/n/networkx-viewer/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-12 21:05:14] INFO root fetch - processPackages [juliapkg]: Remove: archive file [/home/abi/fetcher/tmp/juliapkg-0.1.8.tar.gz]
+[2024-05-12 21:05:14] INFO root fetch - processPackages [juliapkg]: Remove: archive file [/home/abi/fetcher/tmp/juliapkg-0.1.9.tar.gz]
+[2024-05-12 21:05:14] INFO root fetch - main [MainThread]: End processing [juliapkg]: success
+[2024-05-12 21:05:15] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.2.0.dev9.tar.gz]
+[2024-05-12 21:05:15] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.3.0.dev1.tar.gz]
+[2024-05-12 21:05:15] INFO root fetch - main [MainThread]: End processing [torch-model-manager]: success
+[2024-05-12 21:05:15] INFO root fetch - processPackages [exponentation]: Remove: archive file [/home/abi/fetcher/tmp/exponentation-0.0.1.tar.gz]
+[2024-05-12 21:05:15] INFO root fetch - processPackages [exponentation]: Remove: archive file [/home/abi/fetcher/tmp/exponentation-0.0.2.tar.gz]
+[2024-05-12 21:05:15] INFO root fetch - main [MainThread]: End processing [exponentation]: success
+[2024-05-12 21:05:15] INFO root fetch - processPackages [networkx-viewer]: Remove: archive file [/home/abi/fetcher/tmp/networkx_viewer-0.3.0.tar.gz]
+[2024-05-12 21:05:15] INFO root fetch - processPackages [networkx-viewer]: Remove: archive file [/home/abi/fetcher/tmp/networkx_viewer-0.3.1.tar.gz]
+[2024-05-12 21:05:15] INFO root fetch - main [MainThread]: End processing [networkx-viewer]: success
+[2024-05-12 21:05:15] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.5rc7.tar.gz]
+[2024-05-12 21:05:15] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.5rc8.tar.gz]
+[2024-05-12 21:05:15] INFO root fetch - main [MainThread]: End processing [wagtail-fedit]: success
+[2024-05-12 21:05:15] INFO root fetch - main [MainThread]: Store serial: [23172901]
