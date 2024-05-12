@@ -11239,3 +11239,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:58:12] INFO root fetch - processPackages [am2r-yams]: Remove: archive file [/home/abi/fetcher/tmp/am2r_yams-2.1.0.tar.gz]
 [2024-05-12 15:58:12] INFO root fetch - main [MainThread]: End processing [am2r-yams]: success
 [2024-05-12 15:58:12] INFO root fetch - main [MainThread]: Store serial: [23170387]
+[2024-05-12 16:00:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170387]
+[2024-05-12 16:00:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 16:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jj
+[2024-05-12 16:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fbgemm-gpu-nightly
+[2024-05-12 16:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: true-noorm
+[2024-05-12 16:00:20] INFO root fetch - processPackages [jj]: New version: [2.9.1] Old Version: [2.9.0]
+[2024-05-12 16:00:20] WARNING root fetch - processPackages [true-noorm]: Skipping, unable to determine old version
+[2024-05-12 16:00:20] INFO root fetch - main [MainThread]: End processing [true-noorm] error
+[2024-05-12 16:00:20] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2024.5.9] Old Version: [2024.5.12]
+[2024-05-12 16:00:21] INFO root fetch - processPackages [jj]: Downloading https://files.pythonhosted.org/packages/64/ab/c12677ed88fa4f734df16bc05af5f3ba68192967b321977b32ebf651d964/jj-2.9.0.tar.gz
+[2024-05-12 16:00:21] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/b7/a7/c06c4c846400f775d374054acdee0aba663f4ea8f8ee2de62b164dbdeb94/fbgemm_gpu_nightly-2024.5.12-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-12 16:00:21] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 223060988>=10485760
+[2024-05-12 16:00:21] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2024-05-12 16:00:21] INFO root fetch - processPackages [jj]: Downloading https://files.pythonhosted.org/packages/52/1a/92b2df431b0a59f8337d0de3648065c4b445213d9f6dc733655df4aa9e65/jj-2.9.1.tar.gz
+[2024-05-12 16:00:21] INFO root fetch - processPackages [jj]: executing diffoscope
+[2024-05-12 16:00:21] INFO root fetch - processPackages [jj]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jj-2.9.0.tar.gz tmp/jj-2.9.1.tar.gz --markdown 20240512/j/jj/2.9.0-2.9.1/README.md --exclude *.pyd
+[2024-05-12 16:00:22] INFO root fetch - processPackages [jj]: Remove: archive file [/home/abi/fetcher/tmp/jj-2.9.0.tar.gz]
+[2024-05-12 16:00:22] INFO root fetch - processPackages [jj]: Remove: archive file [/home/abi/fetcher/tmp/jj-2.9.1.tar.gz]
+[2024-05-12 16:00:22] INFO root fetch - main [MainThread]: End processing [jj]: success
+[2024-05-12 16:00:22] INFO root fetch - main [MainThread]: Store serial: [23170410]
