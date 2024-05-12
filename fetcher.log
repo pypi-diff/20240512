@@ -10554,3 +10554,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 15:02:48] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.31.tar.gz]
 [2024-05-12 15:02:48] INFO root fetch - main [MainThread]: End processing [pyrotgfork]: success
 [2024-05-12 15:02:48] INFO root fetch - main [MainThread]: Store serial: [23170005]
+[2024-05-12 15:04:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23170005]
+[2024-05-12 15:04:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 15:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ytpb
+[2024-05-12 15:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyIpernity
+[2024-05-12 15:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pdeep-mhc
+[2024-05-12 15:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: loggingA
+[2024-05-12 15:04:57] INFO root fetch - processPackages [loggingA]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-12 15:04:57] INFO root fetch - processPackages [loggingA]: Downloading https://files.pythonhosted.org/packages/e6/cc/d1ca919026aeeb117b9073a7f1a8b0fcef831f67744542e49c9afba225f2/logginga-0.0.2.tar.gz
+[2024-05-12 15:04:57] INFO root fetch - processPackages [ytpb]: New version: [2024.5.3] Old Version: [2024.5.12]
+[2024-05-12 15:04:57] WARNING root fetch - processPackages [pdeep-mhc]: Skipping, unable to determine old version
+[2024-05-12 15:04:57] INFO root fetch - main [MainThread]: End processing [pdeep-mhc] error
+[2024-05-12 15:04:57] INFO root fetch - processPackages [PyIpernity]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-12 15:04:57] INFO root fetch - processPackages [ytpb]: Downloading https://files.pythonhosted.org/packages/02/e2/15ae51b9ed935758870c2d8085d1fcca3d8f4b2692d8201834651f2d2d16/ytpb-2024.5.12.tar.gz
+[2024-05-12 15:04:57] INFO root fetch - processPackages [PyIpernity]: Downloading https://files.pythonhosted.org/packages/77/57/027cca362efcc6427c902435196d8d892888c5b52c17c35c1858bcf05665/PyIpernity-0.3.0.tar.gz
+[2024-05-12 15:04:57] INFO root fetch - processPackages [loggingA]: Downloading https://files.pythonhosted.org/packages/40/d0/15b3b3a0fadbe9cca81dd493665dc55b564ec60db6e72482b319b440cb1d/logginga-0.0.3.tar.gz
+[2024-05-12 15:04:57] INFO root fetch - processPackages [loggingA]: executing diffoscope
+[2024-05-12 15:04:57] INFO root fetch - processPackages [loggingA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logginga-0.0.2.tar.gz tmp/logginga-0.0.3.tar.gz --markdown 20240512/l/loggingA/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-12 15:04:57] INFO root fetch - processPackages [PyIpernity]: Downloading https://files.pythonhosted.org/packages/f7/82/78c788e947a42abc63efa0e64822552c85781d31c58325ed0afaabfebcf1/pyipernity-0.3.1.tar.gz
+[2024-05-12 15:04:57] INFO root fetch - processPackages [ytpb]: Downloading https://files.pythonhosted.org/packages/52/b0/34d6d3f471087f3219c86e6534c2848acba7896e8d7251d71477ce84209a/ytpb-2024.5.3.tar.gz
+[2024-05-12 15:04:57] INFO root fetch - processPackages [PyIpernity]: executing diffoscope
+[2024-05-12 15:04:57] INFO root fetch - processPackages [PyIpernity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyIpernity-0.3.0.tar.gz tmp/pyipernity-0.3.1.tar.gz --markdown 20240512/P/PyIpernity/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-12 15:04:58] INFO root fetch - processPackages [ytpb]: executing diffoscope
+[2024-05-12 15:04:58] INFO root fetch - processPackages [ytpb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytpb-2024.5.12.tar.gz tmp/ytpb-2024.5.3.tar.gz --markdown 20240512/y/ytpb/2024.5.12-2024.5.3/README.md --exclude *.pyd
+[2024-05-12 15:04:58] INFO root fetch - processPackages [loggingA]: Remove: archive file [/home/abi/fetcher/tmp/logginga-0.0.2.tar.gz]
+[2024-05-12 15:04:58] INFO root fetch - processPackages [loggingA]: Remove: archive file [/home/abi/fetcher/tmp/logginga-0.0.3.tar.gz]
+[2024-05-12 15:04:58] INFO root fetch - main [MainThread]: End processing [loggingA]: success
+[2024-05-12 15:04:58] INFO root fetch - processPackages [PyIpernity]: Remove: archive file [/home/abi/fetcher/tmp/PyIpernity-0.3.0.tar.gz]
+[2024-05-12 15:04:58] INFO root fetch - processPackages [PyIpernity]: Remove: archive file [/home/abi/fetcher/tmp/pyipernity-0.3.1.tar.gz]
+[2024-05-12 15:04:58] INFO root fetch - main [MainThread]: End processing [PyIpernity]: success
+[2024-05-12 15:05:00] INFO root fetch - processPackages [ytpb]: Remove: archive file [/home/abi/fetcher/tmp/ytpb-2024.5.12.tar.gz]
+[2024-05-12 15:05:00] INFO root fetch - processPackages [ytpb]: Remove: archive file [/home/abi/fetcher/tmp/ytpb-2024.5.3.tar.gz]
+[2024-05-12 15:05:00] INFO root fetch - main [MainThread]: End processing [ytpb]: success
+[2024-05-12 15:05:00] INFO root fetch - main [MainThread]: Store serial: [23170022]
