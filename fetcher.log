@@ -7046,3 +7046,54 @@
 [2024-05-12 10:38:46] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
 [2024-05-12 10:38:46] INFO root fetch - main [MainThread]: End processing [django-admin-daterange-listfilter]: success
 [2024-05-12 10:38:46] INFO root fetch - main [MainThread]: Store serial: [23168184]
+[2024-05-12 10:40:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168184]
+[2024-05-12 10:40:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 10:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hypothesis
+[2024-05-12 10:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stigg-api-client
+[2024-05-12 10:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kuzu
+[2024-05-12 10:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ast-grep-py
+[2024-05-12 10:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stigg-api-client-v2
+[2024-05-12 10:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aglaiaz
+[2024-05-12 10:40:54] INFO root fetch - processPackages [ast-grep-py]: New version: [0.22.1] Old Version: [0.22.0]
+[2024-05-12 10:40:55] WARNING root fetch - processPackages [aglaiaz]: Skipping, unable to determine old version
+[2024-05-12 10:40:55] INFO root fetch - main [MainThread]: End processing [aglaiaz] error
+[2024-05-12 10:40:55] INFO root fetch - processPackages [ast-grep-py]: Downloading https://files.pythonhosted.org/packages/26/b1/6a3bf20b12bc4604952a97a3e95eb96519a4dcb20b231df4e1b0672e65d4/ast_grep_py-0.22.0.tar.gz
+[2024-05-12 10:40:55] INFO root fetch - processPackages [kuzu]: New version: [0.4.2.dev5] Old Version: [0.4.2.dev4]
+[2024-05-12 10:40:55] INFO root fetch - processPackages [stigg-api-client]: New version: [1.98.1] Old Version: [1.98.0]
+[2024-05-12 10:40:55] INFO root fetch - processPackages [stigg-api-client-v2]: New version: [1.98.1] Old Version: [1.98.0]
+[2024-05-12 10:40:55] INFO root fetch - processPackages [hypothesis]: New version: [6.99.9] Old Version: [6.99.8]
+[2024-05-12 10:40:55] INFO root fetch - processPackages [ast-grep-py]: Downloading https://files.pythonhosted.org/packages/5b/c1/ab3bc6603a169eb6275ac0ab440f0b89b45b42b047089108177967f16963/ast_grep_py-0.22.1.tar.gz
+[2024-05-12 10:40:55] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/06/81/b0945aeebbcd96567a0a49a17f1986eb3635bf9866ce31d2371faf2694d1/kuzu-0.4.2.dev4.tar.gz
+[2024-05-12 10:40:55] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/98/38/1422eb2135687adff8e0844dc4afcdcdd3c44140b3b89335819f7a678037/stigg_api_client-1.98.0.tar.gz
+[2024-05-12 10:40:55] INFO root fetch - processPackages [stigg-api-client-v2]: Downloading https://files.pythonhosted.org/packages/9e/ad/1fefc56e33c405d4aa0b5a382414f77d27efc7861a1cedce255c72c8f7d7/stigg_api_client_v2-1.98.0.tar.gz
+[2024-05-12 10:40:55] INFO root fetch - processPackages [hypothesis]: Downloading https://files.pythonhosted.org/packages/d0/49/c41dfc6bca0eb0af93b2ecef16e99aa41f9a25e4bed45bfc37cb97018f93/hypothesis-6.99.8.tar.gz
+[2024-05-12 10:40:55] INFO root fetch - processPackages [ast-grep-py]: executing diffoscope
+[2024-05-12 10:40:55] INFO root fetch - processPackages [ast-grep-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ast_grep_py-0.22.0.tar.gz tmp/ast_grep_py-0.22.1.tar.gz --markdown 20240512/a/ast-grep-py/0.22.0-0.22.1/README.md --exclude *.pyd
+[2024-05-12 10:40:55] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/da/d2/6b7a0c4e4205896d09042773fe56913ad646e6493900cc11613eabb26e05/stigg_api_client-1.98.1.tar.gz
+[2024-05-12 10:40:55] INFO root fetch - processPackages [hypothesis]: Downloading https://files.pythonhosted.org/packages/ac/92/326716e57f625acc4f38608fd73f88985561fd58ee6df19d44230d70bba0/hypothesis-6.99.9.tar.gz
+[2024-05-12 10:40:55] INFO root fetch - processPackages [stigg-api-client-v2]: Downloading https://files.pythonhosted.org/packages/e4/6e/6806296621be882a70042a1d47ba321aad0c99c69b0e1a5f16346a41b4b5/stigg_api_client_v2-1.98.1.tar.gz
+[2024-05-12 10:40:55] INFO root fetch - processPackages [stigg-api-client]: executing diffoscope
+[2024-05-12 10:40:55] INFO root fetch - processPackages [stigg-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client-1.98.0.tar.gz tmp/stigg_api_client-1.98.1.tar.gz --markdown 20240512/s/stigg-api-client/1.98.0-1.98.1/README.md --exclude *.pyd
+[2024-05-12 10:40:55] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/c9/55/bda91765d4922235264d34d3d894578338bf371df9a758723c5866d372c8/kuzu-0.4.2.dev5-cp38-cp38-win_amd64.whl
+[2024-05-12 10:40:56] INFO root fetch - processPackages [hypothesis]: executing diffoscope
+[2024-05-12 10:40:56] INFO root fetch - processPackages [hypothesis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypothesis-6.99.8.tar.gz tmp/hypothesis-6.99.9.tar.gz --markdown 20240512/h/hypothesis/6.99.8-6.99.9/README.md --exclude *.pyd
+[2024-05-12 10:40:56] INFO root fetch - processPackages [stigg-api-client-v2]: executing diffoscope
+[2024-05-12 10:40:56] INFO root fetch - processPackages [stigg-api-client-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client_v2-1.98.0.tar.gz tmp/stigg_api_client_v2-1.98.1.tar.gz --markdown 20240512/s/stigg-api-client-v2/1.98.0-1.98.1/README.md --exclude *.pyd
+[2024-05-12 10:40:56] INFO root fetch - processPackages [ast-grep-py]: Remove: archive file [/home/abi/fetcher/tmp/ast_grep_py-0.22.0.tar.gz]
+[2024-05-12 10:40:56] INFO root fetch - processPackages [ast-grep-py]: Remove: archive file [/home/abi/fetcher/tmp/ast_grep_py-0.22.1.tar.gz]
+[2024-05-12 10:40:56] INFO root fetch - main [MainThread]: End processing [ast-grep-py]: success
+[2024-05-12 10:40:56] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.0.tar.gz]
+[2024-05-12 10:40:56] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.1.tar.gz]
+[2024-05-12 10:40:56] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
+[2024-05-12 10:40:56] INFO root fetch - processPackages [kuzu]: executing diffoscope
+[2024-05-12 10:40:56] INFO root fetch - processPackages [kuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuzu-0.4.2.dev4.tar.gz tmp/kuzu-0.4.2.dev5-cp38-cp38-win_amd64.whl.zip --markdown 20240512/k/kuzu/0.4.2.dev4-0.4.2.dev5/README.md --exclude *.pyd
+[2024-05-12 10:40:57] INFO root fetch - processPackages [hypothesis]: Remove: archive file [/home/abi/fetcher/tmp/hypothesis-6.99.8.tar.gz]
+[2024-05-12 10:40:57] INFO root fetch - processPackages [hypothesis]: Remove: archive file [/home/abi/fetcher/tmp/hypothesis-6.99.9.tar.gz]
+[2024-05-12 10:40:57] INFO root fetch - main [MainThread]: End processing [hypothesis]: success
+[2024-05-12 10:40:57] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.0.tar.gz]
+[2024-05-12 10:40:57] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.1.tar.gz]
+[2024-05-12 10:40:57] INFO root fetch - main [MainThread]: End processing [stigg-api-client-v2]: success
+[2024-05-12 10:40:57] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.2.dev4.tar.gz]
+[2024-05-12 10:40:57] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.2.dev5-cp38-cp38-win_amd64.whl.zip]
+[2024-05-12 10:40:57] INFO root fetch - main [MainThread]: End processing [kuzu]: success
+[2024-05-12 10:40:57] INFO root fetch - main [MainThread]: Store serial: [23168241]
