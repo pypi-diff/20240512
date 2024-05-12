@@ -13333,3 +13333,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:07:00] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post9.tar.gz]
 [2024-05-12 18:07:00] INFO root fetch - main [MainThread]: End processing [hotsos]: success
 [2024-05-12 18:07:00] INFO root fetch - main [MainThread]: Store serial: [23171610]
+[2024-05-12 18:09:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171610]
+[2024-05-12 18:09:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-12 18:09:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xklb
+[2024-05-12 18:09:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fabric_fim
+[2024-05-12 18:09:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bowtie-json-schema
+[2024-05-12 18:09:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: i2cpy
+[2024-05-12 18:09:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: obscure_stats
+[2024-05-12 18:09:09] WARNING root fetch - processPackages [i2cpy]: Skipping, unable to determine old version
+[2024-05-12 18:09:09] INFO root fetch - main [MainThread]: End processing [i2cpy] error
+[2024-05-12 18:09:09] INFO root fetch - processPackages [obscure_stats]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-12 18:09:09] INFO root fetch - processPackages [obscure_stats]: Downloading https://files.pythonhosted.org/packages/e9/b0/0e376d9e3f4d7a5a1162e7aa1e8ef3ce395fcf2f174c02b18bcf97ea34b4/obscure_stats-0.2.3.tar.gz
+[2024-05-12 18:09:09] INFO root fetch - processPackages [fabric_fim]: New version: [1.7.0b2] Old Version: [1.7.0b1]
+[2024-05-12 18:09:09] INFO root fetch - processPackages [bowtie-json-schema]: New version: [2024.5.9] Old Version: [2024.5.7]
+[2024-05-12 18:09:09] INFO root fetch - processPackages [xklb]: New version: [2.8.9] Old Version: [2.8.7]
+[2024-05-12 18:09:09] INFO root fetch - processPackages [fabric_fim]: Downloading https://files.pythonhosted.org/packages/0e/14/5733c349d2893799a39d6ad7a939756305887644b84f5c94705d5eee3a69/fabric_fim-1.7.0b1.tar.gz
+[2024-05-12 18:09:09] INFO root fetch - processPackages [bowtie-json-schema]: Downloading https://files.pythonhosted.org/packages/58/ba/f44a7fc6211fb929c6a40fad8291d1ff6db5187c14a86964e20180fb2063/bowtie_json_schema-2024.5.7.tar.gz
+[2024-05-12 18:09:09] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/d0/4c/dd8350e7201f303ad86c28ba6e4c3856a9aebf36175bf2091b4f223b9c8c/xklb-2.8.7.tar.gz
+[2024-05-12 18:09:09] INFO root fetch - processPackages [obscure_stats]: Downloading https://files.pythonhosted.org/packages/ac/55/b288baa324903167bc66471ad51bf765a587a133f20f4f16a8870e569c43/obscure_stats-0.2.4.tar.gz
+[2024-05-12 18:09:09] INFO root fetch - processPackages [obscure_stats]: executing diffoscope
+[2024-05-12 18:09:09] INFO root fetch - processPackages [obscure_stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obscure_stats-0.2.3.tar.gz tmp/obscure_stats-0.2.4.tar.gz --markdown 20240512/o/obscure_stats/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-12 18:09:09] INFO root fetch - processPackages [fabric_fim]: Downloading https://files.pythonhosted.org/packages/9e/cd/5c0b12b29f5516881078030119e081aa8c6b9a2438fb736571b542e03353/fabric_fim-1.7.0b2.tar.gz
+[2024-05-12 18:09:09] INFO root fetch - processPackages [bowtie-json-schema]: Downloading https://files.pythonhosted.org/packages/19/be/db415e0b8e6d9540002be64795c98eafec0ae54d673702b93bbcccff35b8/bowtie_json_schema-2024.5.9.tar.gz
+[2024-05-12 18:09:09] INFO root fetch - processPackages [fabric_fim]: executing diffoscope
+[2024-05-12 18:09:09] INFO root fetch - processPackages [fabric_fim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabric_fim-1.7.0b1.tar.gz tmp/fabric_fim-1.7.0b2.tar.gz --markdown 20240512/f/fabric_fim/1.7.0b1-1.7.0b2/README.md --exclude *.pyd
+[2024-05-12 18:09:09] INFO root fetch - processPackages [bowtie-json-schema]: executing diffoscope
+[2024-05-12 18:09:09] INFO root fetch - processPackages [bowtie-json-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bowtie_json_schema-2024.5.7.tar.gz tmp/bowtie_json_schema-2024.5.9.tar.gz --markdown 20240512/b/bowtie-json-schema/2024.5.7-2024.5.9/README.md --exclude *.pyd
+[2024-05-12 18:09:09] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/79/9c/400b6a77dca189a0e6b267e0a874e85e6bc388a14703931b845294411c06/xklb-2.8.9.tar.gz
+[2024-05-12 18:09:10] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2024-05-12 18:09:10] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-2.8.7.tar.gz tmp/xklb-2.8.9.tar.gz --markdown 20240512/x/xklb/2.8.7-2.8.9/README.md --exclude *.pyd
+[2024-05-12 18:09:10] INFO root fetch - processPackages [obscure_stats]: Remove: archive file [/home/abi/fetcher/tmp/obscure_stats-0.2.3.tar.gz]
+[2024-05-12 18:09:10] INFO root fetch - processPackages [obscure_stats]: Remove: archive file [/home/abi/fetcher/tmp/obscure_stats-0.2.4.tar.gz]
+[2024-05-12 18:09:10] INFO root fetch - main [MainThread]: End processing [obscure_stats]: success
+[2024-05-12 18:09:11] INFO root fetch - processPackages [fabric_fim]: Remove: archive file [/home/abi/fetcher/tmp/fabric_fim-1.7.0b1.tar.gz]
+[2024-05-12 18:09:11] INFO root fetch - processPackages [fabric_fim]: Remove: archive file [/home/abi/fetcher/tmp/fabric_fim-1.7.0b2.tar.gz]
+[2024-05-12 18:09:11] INFO root fetch - main [MainThread]: End processing [fabric_fim]: success
+[2024-05-12 18:09:11] INFO root fetch - processPackages [bowtie-json-schema]: Remove: archive file [/home/abi/fetcher/tmp/bowtie_json_schema-2024.5.7.tar.gz]
+[2024-05-12 18:09:11] INFO root fetch - processPackages [bowtie-json-schema]: Remove: archive file [/home/abi/fetcher/tmp/bowtie_json_schema-2024.5.9.tar.gz]
+[2024-05-12 18:09:11] INFO root fetch - main [MainThread]: End processing [bowtie-json-schema]: success
+[2024-05-12 18:09:11] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.8.7.tar.gz]
+[2024-05-12 18:09:11] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.8.9.tar.gz]
+[2024-05-12 18:09:11] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2024-05-12 18:09:11] INFO root fetch - main [MainThread]: Store serial: [23171625]
