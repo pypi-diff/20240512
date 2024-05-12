@@ -4205,3 +4205,9 @@
 [2024-05-12 06:10:11] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.5.5.tar.gz]
 [2024-05-12 06:10:11] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
 [2024-05-12 06:10:11] INFO root fetch - main [MainThread]: Store serial: [23166911]
+[2024-05-12 06:12:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166911]
+[2024-05-12 06:12:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 06:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GRCwjt
+[2024-05-12 06:12:20] WARNING root fetch - processPackages [GRCwjt]: Skipping, unable to determine old version
+[2024-05-12 06:12:20] INFO root fetch - main [MainThread]: End processing [GRCwjt] error
+[2024-05-12 06:12:20] INFO root fetch - main [MainThread]: Store serial: [23166915]
