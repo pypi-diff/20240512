@@ -3769,3 +3769,17 @@
 [2024-05-12 05:23:48] INFO root fetch - processPackages [sunpy]: Remove: archive file [/home/abi/fetcher/tmp/sunpy-5.1.2.tar.gz]
 [2024-05-12 05:23:48] INFO root fetch - main [MainThread]: End processing [sunpy]: success
 [2024-05-12 05:23:48] INFO root fetch - main [MainThread]: Store serial: [23166653]
+[2024-05-12 05:25:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166653]
+[2024-05-12 05:25:56] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-12 05:27:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23166653]
+[2024-05-12 05:28:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-12 05:28:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sunpy
+[2024-05-12 05:28:01] INFO root fetch - processPackages [sunpy]: New version: [5.1.2] Old Version: [5.1.1]
+[2024-05-12 05:28:01] INFO root fetch - processPackages [sunpy]: Downloading https://files.pythonhosted.org/packages/d9/92/7123c9d3e721f069c493cdebb453aea7db393990e8f735d3aad901ea10b6/sunpy-5.1.1.tar.gz
+[2024-05-12 05:28:02] INFO root fetch - processPackages [sunpy]: Downloading https://files.pythonhosted.org/packages/62/82/bb7b0ca025857231c6d7687ca3cea99d07e01df5b19c34b659d98095c1a9/sunpy-5.1.2.tar.gz
+[2024-05-12 05:28:02] INFO root fetch - processPackages [sunpy]: executing diffoscope
+[2024-05-12 05:28:02] INFO root fetch - processPackages [sunpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunpy-5.1.1.tar.gz tmp/sunpy-5.1.2.tar.gz --markdown 20240512/s/sunpy/5.1.1-5.1.2/README.md --exclude *.pyd
+[2024-05-12 05:28:05] INFO root fetch - processPackages [sunpy]: Remove: archive file [/home/abi/fetcher/tmp/sunpy-5.1.1.tar.gz]
+[2024-05-12 05:28:05] INFO root fetch - processPackages [sunpy]: Remove: archive file [/home/abi/fetcher/tmp/sunpy-5.1.2.tar.gz]
+[2024-05-12 05:28:05] INFO root fetch - main [MainThread]: End processing [sunpy]: success
+[2024-05-12 05:28:05] INFO root fetch - main [MainThread]: Store serial: [23166655]
