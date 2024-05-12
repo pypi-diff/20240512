@@ -17867,3 +17867,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 23:05:51] INFO root fetch - processPackages [CRR]: Remove: archive file [/home/abi/fetcher/tmp/crr-0.0.2.tar.gz]
 [2024-05-12 23:05:51] INFO root fetch - main [MainThread]: End processing [CRR]: success
 [2024-05-12 23:05:51] INFO root fetch - main [MainThread]: Store serial: [23173844]
+[2024-05-12 23:07:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173844]
+[2024-05-12 23:07:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 23:07:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jeedomdaemon
+[2024-05-12 23:07:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: billowyz
+[2024-05-12 23:07:59] INFO root fetch - processPackages [jeedomdaemon]: New version: [0.8.8] Old Version: [0.8.6]
+[2024-05-12 23:07:59] INFO root fetch - processPackages [jeedomdaemon]: Downloading https://files.pythonhosted.org/packages/7e/f4/dd6fee3df96cfba2612d62f706af9171d45cf45f43101bc5345dae59c4dd/jeedomdaemon-0.8.6.tar.gz
+[2024-05-12 23:07:59] WARNING root fetch - processPackages [billowyz]: Skipping, unable to determine old version
+[2024-05-12 23:07:59] INFO root fetch - main [MainThread]: End processing [billowyz] error
+[2024-05-12 23:08:00] INFO root fetch - processPackages [jeedomdaemon]: Downloading https://files.pythonhosted.org/packages/9c/2e/48000fb7dde833f3997985c1069c809eb573f07c6197bbc68dfe5b725679/jeedomdaemon-0.8.8.tar.gz
+[2024-05-12 23:08:00] INFO root fetch - processPackages [jeedomdaemon]: executing diffoscope
+[2024-05-12 23:08:00] INFO root fetch - processPackages [jeedomdaemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jeedomdaemon-0.8.6.tar.gz tmp/jeedomdaemon-0.8.8.tar.gz --markdown 20240512/j/jeedomdaemon/0.8.6-0.8.8/README.md --exclude *.pyd
+[2024-05-12 23:08:00] INFO root fetch - processPackages [jeedomdaemon]: Remove: archive file [/home/abi/fetcher/tmp/jeedomdaemon-0.8.6.tar.gz]
+[2024-05-12 23:08:00] INFO root fetch - processPackages [jeedomdaemon]: Remove: archive file [/home/abi/fetcher/tmp/jeedomdaemon-0.8.8.tar.gz]
+[2024-05-12 23:08:00] INFO root fetch - main [MainThread]: End processing [jeedomdaemon]: success
+[2024-05-12 23:08:00] INFO root fetch - main [MainThread]: Store serial: [23173854]
