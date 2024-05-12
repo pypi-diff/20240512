@@ -13684,3 +13684,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 18:30:51] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.9052753601-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-12 18:30:51] INFO root fetch - main [MainThread]: End processing [pyhdl-if]: success
 [2024-05-12 18:30:51] INFO root fetch - main [MainThread]: Store serial: [23171782]
+[2024-05-12 18:32:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171782]
+[2024-05-12 18:33:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 18:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: interjectorz
+[2024-05-12 18:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: peopleprinter
+[2024-05-12 18:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unapplaudedz
+[2024-05-12 18:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Subsearch
+[2024-05-12 18:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anemone-daisy-maker
+[2024-05-12 18:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chess-utils
+[2024-05-12 18:33:00] INFO root fetch - processPackages [anemone-daisy-maker]: New version: [1.55.4] Old Version: [1.55.3]
+[2024-05-12 18:33:00] INFO root fetch - processPackages [chess-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-12 18:33:00] INFO root fetch - processPackages [peopleprinter]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-12 18:33:00] INFO root fetch - processPackages [Subsearch]: New version: [2.45.0] Old Version: [2.44.1]
+[2024-05-12 18:33:00] WARNING root fetch - processPackages [interjectorz]: Skipping, unable to determine old version
+[2024-05-12 18:33:00] INFO root fetch - main [MainThread]: End processing [interjectorz] error
+[2024-05-12 18:33:00] WARNING root fetch - processPackages [unapplaudedz]: Skipping, unable to determine old version
+[2024-05-12 18:33:00] INFO root fetch - main [MainThread]: End processing [unapplaudedz] error
+[2024-05-12 18:33:00] INFO root fetch - processPackages [chess-utils]: Downloading https://files.pythonhosted.org/packages/a3/dc/1afe218e54667934bab5660e347ffb7cefed78c6dfddc717fb5f962ae659/chess_utils-0.1.8.tar.gz
+[2024-05-12 18:33:00] INFO root fetch - processPackages [anemone-daisy-maker]: Downloading https://files.pythonhosted.org/packages/98/ec/1ef72f5e4e635cf41dc6e14f1310b35dff830ea32f6dec3d993d4202689e/anemone_daisy_maker-1.55.3.tar.gz
+[2024-05-12 18:33:00] INFO root fetch - processPackages [peopleprinter]: Downloading https://files.pythonhosted.org/packages/24/52/316bf06f67817f03ee32d809cb07a348d6b5a2afb4512859ee148a74e066/peopleprinter-0.0.6.tar.gz
+[2024-05-12 18:33:00] INFO root fetch - processPackages [Subsearch]: Downloading https://files.pythonhosted.org/packages/b6/44/8f95de660042e6c3b2ad1feb5442d9922283f4a34775d28db324e1ab6b68/subsearch-2.44.1.tar.gz
+[2024-05-12 18:33:00] INFO root fetch - processPackages [chess-utils]: Downloading https://files.pythonhosted.org/packages/91/10/67dd0bbf7400db91ed6e38e5428df297885a142cb6307e0a05c302654e5e/chess_utils-0.1.9.tar.gz
+[2024-05-12 18:33:00] INFO root fetch - processPackages [Subsearch]: Downloading https://files.pythonhosted.org/packages/0d/6c/49aebee56e1ae956809ce6171942f5fafd3a26c5f45ba1bb04c7d299c11c/subsearch-2.45.0.tar.gz
+[2024-05-12 18:33:00] INFO root fetch - processPackages [anemone-daisy-maker]: Downloading https://files.pythonhosted.org/packages/95/c1/b71c21c84807e31efcb62960871771c4617cb31b52e4b3c59a4ed45c4a21/anemone_daisy_maker-1.55.4.tar.gz
+[2024-05-12 18:33:00] INFO root fetch - processPackages [chess-utils]: executing diffoscope
+[2024-05-12 18:33:00] INFO root fetch - processPackages [chess-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chess_utils-0.1.8.tar.gz tmp/chess_utils-0.1.9.tar.gz --markdown 20240512/c/chess-utils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-12 18:33:00] INFO root fetch - processPackages [peopleprinter]: Downloading https://files.pythonhosted.org/packages/2d/ac/cf0cbe6118d204824ce08d0b5161b48be3dde5a51a345def8b98982dad86/peopleprinter-0.0.7.tar.gz
+[2024-05-12 18:33:00] INFO root fetch - processPackages [Subsearch]: executing diffoscope
+[2024-05-12 18:33:00] INFO root fetch - processPackages [Subsearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subsearch-2.44.1.tar.gz tmp/subsearch-2.45.0.tar.gz --markdown 20240512/S/Subsearch/2.44.1-2.45.0/README.md --exclude *.pyd
+[2024-05-12 18:33:00] INFO root fetch - processPackages [anemone-daisy-maker]: executing diffoscope
+[2024-05-12 18:33:00] INFO root fetch - processPackages [anemone-daisy-maker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anemone_daisy_maker-1.55.3.tar.gz tmp/anemone_daisy_maker-1.55.4.tar.gz --markdown 20240512/a/anemone-daisy-maker/1.55.3-1.55.4/README.md --exclude *.pyd
+[2024-05-12 18:33:00] INFO root fetch - processPackages [peopleprinter]: executing diffoscope
+[2024-05-12 18:33:00] INFO root fetch - processPackages [peopleprinter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peopleprinter-0.0.6.tar.gz tmp/peopleprinter-0.0.7.tar.gz --markdown 20240512/p/peopleprinter/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-12 18:33:01] INFO root fetch - processPackages [chess-utils]: Remove: archive file [/home/abi/fetcher/tmp/chess_utils-0.1.8.tar.gz]
+[2024-05-12 18:33:01] INFO root fetch - processPackages [chess-utils]: Remove: archive file [/home/abi/fetcher/tmp/chess_utils-0.1.9.tar.gz]
+[2024-05-12 18:33:01] INFO root fetch - main [MainThread]: End processing [chess-utils]: success
+[2024-05-12 18:33:01] INFO root fetch - processPackages [Subsearch]: Remove: archive file [/home/abi/fetcher/tmp/subsearch-2.44.1.tar.gz]
+[2024-05-12 18:33:01] INFO root fetch - processPackages [Subsearch]: Remove: archive file [/home/abi/fetcher/tmp/subsearch-2.45.0.tar.gz]
+[2024-05-12 18:33:01] INFO root fetch - main [MainThread]: End processing [Subsearch]: success
+[2024-05-12 18:33:01] INFO root fetch - processPackages [anemone-daisy-maker]: Remove: archive file [/home/abi/fetcher/tmp/anemone_daisy_maker-1.55.3.tar.gz]
+[2024-05-12 18:33:01] INFO root fetch - processPackages [anemone-daisy-maker]: Remove: archive file [/home/abi/fetcher/tmp/anemone_daisy_maker-1.55.4.tar.gz]
+[2024-05-12 18:33:01] INFO root fetch - main [MainThread]: End processing [anemone-daisy-maker]: success
+[2024-05-12 18:33:01] INFO root fetch - processPackages [peopleprinter]: Remove: archive file [/home/abi/fetcher/tmp/peopleprinter-0.0.6.tar.gz]
+[2024-05-12 18:33:01] INFO root fetch - processPackages [peopleprinter]: Remove: archive file [/home/abi/fetcher/tmp/peopleprinter-0.0.7.tar.gz]
+[2024-05-12 18:33:01] INFO root fetch - main [MainThread]: End processing [peopleprinter]: success
+[2024-05-12 18:33:01] INFO root fetch - main [MainThread]: Store serial: [23171804]
