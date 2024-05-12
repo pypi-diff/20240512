@@ -2084,3 +2084,12 @@
 [2024-05-12 03:05:00] INFO root fetch - processPackages [bantam]: Remove: archive file [/home/abi/fetcher/tmp/bantam-2.4.9.tar.gz]
 [2024-05-12 03:05:00] INFO root fetch - main [MainThread]: End processing [bantam]: success
 [2024-05-12 03:05:00] INFO root fetch - main [MainThread]: Store serial: [23165901]
+[2024-05-12 03:07:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23165901]
+[2024-05-12 03:07:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 03:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sinisternessz
+[2024-05-12 03:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: poetry-aws-lambda-plugin
+[2024-05-12 03:07:08] WARNING root fetch - processPackages [poetry-aws-lambda-plugin]: Skipping, unable to determine old version
+[2024-05-12 03:07:08] INFO root fetch - main [MainThread]: End processing [poetry-aws-lambda-plugin] error
+[2024-05-12 03:07:08] WARNING root fetch - processPackages [sinisternessz]: Skipping, unable to determine old version
+[2024-05-12 03:07:08] INFO root fetch - main [MainThread]: End processing [sinisternessz] error
+[2024-05-12 03:07:08] INFO root fetch - main [MainThread]: Store serial: [23165910]
