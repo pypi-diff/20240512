@@ -14068,3 +14068,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 19:01:14] INFO root fetch - processPackages [compoundwidgets]: Remove: archive file [/home/abi/fetcher/tmp/compoundwidgets-0.4.2.tar.gz]
 [2024-05-12 19:01:14] INFO root fetch - main [MainThread]: End processing [compoundwidgets]: success
 [2024-05-12 19:01:14] INFO root fetch - main [MainThread]: Store serial: [23171975]
+[2024-05-12 19:03:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23171975]
+[2024-05-12 19:03:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 19:03:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rootdir
+[2024-05-12 19:03:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swishinglyz
+[2024-05-12 19:03:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pygame-gamma
+[2024-05-12 19:03:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eurodollarz
+[2024-05-12 19:03:23] WARNING root fetch - processPackages [pygame-gamma]: Skipping, unable to determine old version
+[2024-05-12 19:03:23] INFO root fetch - main [MainThread]: End processing [pygame-gamma] error
+[2024-05-12 19:03:23] INFO root fetch - processPackages [rootdir]: New version: [0.1.2.post2] Old Version: [0.1.2.post1]
+[2024-05-12 19:03:23] INFO root fetch - processPackages [rootdir]: Downloading https://files.pythonhosted.org/packages/33/63/f6114290ac25cb5a9172d6c64f28dce9537434294ef5986d31a7fdd41c9a/rootdir-0.1.2.post1.tar.gz
+[2024-05-12 19:03:23] WARNING root fetch - processPackages [eurodollarz]: Skipping, unable to determine old version
+[2024-05-12 19:03:23] WARNING root fetch - processPackages [swishinglyz]: Skipping, unable to determine old version
+[2024-05-12 19:03:23] INFO root fetch - main [MainThread]: End processing [eurodollarz] error
+[2024-05-12 19:03:23] INFO root fetch - main [MainThread]: End processing [swishinglyz] error
+[2024-05-12 19:03:23] INFO root fetch - processPackages [rootdir]: Downloading https://files.pythonhosted.org/packages/75/1d/9654b15376487ede6f6e96d529f505c6494faaaab90c6cf79b435a2c8a07/rootdir-0.1.2.post2.tar.gz
+[2024-05-12 19:03:23] INFO root fetch - processPackages [rootdir]: executing diffoscope
+[2024-05-12 19:03:23] INFO root fetch - processPackages [rootdir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rootdir-0.1.2.post1.tar.gz tmp/rootdir-0.1.2.post2.tar.gz --markdown 20240512/r/rootdir/0.1.2.post1-0.1.2.post2/README.md --exclude *.pyd
+[2024-05-12 19:03:24] INFO root fetch - processPackages [rootdir]: Remove: archive file [/home/abi/fetcher/tmp/rootdir-0.1.2.post1.tar.gz]
+[2024-05-12 19:03:24] INFO root fetch - processPackages [rootdir]: Remove: archive file [/home/abi/fetcher/tmp/rootdir-0.1.2.post2.tar.gz]
+[2024-05-12 19:03:24] INFO root fetch - main [MainThread]: End processing [rootdir]: success
+[2024-05-12 19:03:24] INFO root fetch - main [MainThread]: Store serial: [23171989]
