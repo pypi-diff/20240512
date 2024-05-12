@@ -16097,3 +16097,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 21:14:00] INFO root fetch - processPackages [evo-django-kits]: Remove: archive file [/home/abi/fetcher/tmp/evo_django_kits-0.0.2.tar.gz]
 [2024-05-12 21:14:00] INFO root fetch - main [MainThread]: End processing [evo-django-kits]: success
 [2024-05-12 21:14:00] INFO root fetch - main [MainThread]: Store serial: [23172956]
+[2024-05-12 21:16:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172956]
+[2024-05-12 21:16:09] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 21:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: greatbrowser
+[2024-05-12 21:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: helioscopez
+[2024-05-12 21:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sorosilz
+[2024-05-12 21:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mountwizzard4
+[2024-05-12 21:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: VYTHON
+[2024-05-12 21:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: missing-mga
+[2024-05-12 21:16:09] INFO root fetch - processPackages [missing-mga]: New version: [1.0.0] Old Version: [0.4.3]
+[2024-05-12 21:16:09] INFO root fetch - processPackages [mountwizzard4]: New version: [4.0.0a3] Old Version: [4.0.0a2]
+[2024-05-12 21:16:09] WARNING root fetch - processPackages [greatbrowser]: Skipping, unable to determine old version
+[2024-05-12 21:16:09] INFO root fetch - main [MainThread]: End processing [greatbrowser] error
+[2024-05-12 21:16:09] INFO root fetch - processPackages [missing-mga]: Downloading https://files.pythonhosted.org/packages/05/d1/175b772fdabf086ad0f9e2c95d12810cc5b710783bc723b0c10b58336a07/missing_mga-0.4.3-py3-none-any.whl
+[2024-05-12 21:16:09] INFO root fetch - processPackages [mountwizzard4]: Downloading https://files.pythonhosted.org/packages/ca/ea/8cebe59cf548c8fb5ecabc02aa0ee4698fcb41c6804f79008388931e8295/mountwizzard4-4.0.0a2.tar.gz
+[2024-05-12 21:16:09] WARNING root fetch - processPackages [helioscopez]: Skipping, unable to determine old version
+[2024-05-12 21:16:09] INFO root fetch - main [MainThread]: End processing [helioscopez] error
+[2024-05-12 21:16:09] WARNING root fetch - processPackages [sorosilz]: Skipping, unable to determine old version
+[2024-05-12 21:16:09] INFO root fetch - main [MainThread]: End processing [sorosilz] error
+[2024-05-12 21:16:09] WARNING root fetch - processPackages [VYTHON]: Skipping, unable to determine old version
+[2024-05-12 21:16:09] INFO root fetch - main [MainThread]: End processing [VYTHON] error
+[2024-05-12 21:16:09] WARNING root fetch - processPackages [mountwizzard4]: Skipping package: exceeds size limit 19345974>=10485760
+[2024-05-12 21:16:09] INFO root fetch - main [MainThread]: End processing [mountwizzard4] error
+[2024-05-12 21:16:09] INFO root fetch - processPackages [missing-mga]: Downloading https://files.pythonhosted.org/packages/54/1f/19ec10f8ef283b807661864dec633e6417afe23a2196f803806c9a712eaa/missing_mga-1.0.0-py3-none-any.whl
+[2024-05-12 21:16:09] INFO root fetch - processPackages [missing-mga]: executing diffoscope
+[2024-05-12 21:16:09] INFO root fetch - processPackages [missing-mga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/missing_mga-0.4.3-py3-none-any.whl.zip tmp/missing_mga-1.0.0-py3-none-any.whl.zip --markdown 20240512/m/missing-mga/0.4.3-1.0.0/README.md --exclude *.pyd
+[2024-05-12 21:16:10] INFO root fetch - processPackages [missing-mga]: Remove: archive file [/home/abi/fetcher/tmp/missing_mga-0.4.3-py3-none-any.whl.zip]
+[2024-05-12 21:16:10] INFO root fetch - processPackages [missing-mga]: Remove: archive file [/home/abi/fetcher/tmp/missing_mga-1.0.0-py3-none-any.whl.zip]
+[2024-05-12 21:16:10] INFO root fetch - main [MainThread]: End processing [missing-mga]: success
+[2024-05-12 21:16:10] INFO root fetch - main [MainThread]: Store serial: [23172976]
