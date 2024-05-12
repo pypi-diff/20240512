@@ -7822,3 +7822,24 @@
 [2024-05-12 11:41:46] WARNING root fetch - processPackages [Directory-Structure-Generator]: Skipping, unable to determine old version
 [2024-05-12 11:41:46] INFO root fetch - main [MainThread]: End processing [Directory-Structure-Generator] error
 [2024-05-12 11:41:46] INFO root fetch - main [MainThread]: Store serial: [23168563]
+[2024-05-12 11:43:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23168563]
+[2024-05-12 11:43:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-12 11:43:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sparrow-python
+[2024-05-12 11:43:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zensvi
+[2024-05-12 11:43:54] INFO root fetch - processPackages [sparrow-python]: New version: [0.2.3.1] Old Version: [0.2.3]
+[2024-05-12 11:43:54] INFO root fetch - processPackages [zensvi]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-05-12 11:43:55] INFO root fetch - processPackages [sparrow-python]: Downloading https://files.pythonhosted.org/packages/3a/00/67935d31a14b846474d9e17f44dbe37012aefd365bda65cd72e8c8e3f619/sparrow_python-0.2.3.tar.gz
+[2024-05-12 11:43:55] INFO root fetch - processPackages [zensvi]: Downloading https://files.pythonhosted.org/packages/c4/b3/5f6efb302a54041edfdb7cee7e64caaad9afec14cd8770bb2ceb8f6b6fc8/zensvi-0.9.7.tar.gz
+[2024-05-12 11:43:55] INFO root fetch - processPackages [sparrow-python]: Downloading https://files.pythonhosted.org/packages/62/8e/f6a5c5edb666b6ff706706083e87f6f93b70bf4df0e811051462a6da3ace/sparrow_python-0.2.3.1.tar.gz
+[2024-05-12 11:43:55] INFO root fetch - processPackages [sparrow-python]: executing diffoscope
+[2024-05-12 11:43:55] INFO root fetch - processPackages [sparrow-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrow_python-0.2.3.tar.gz tmp/sparrow_python-0.2.3.1.tar.gz --markdown 20240512/s/sparrow-python/0.2.3-0.2.3.1/README.md --exclude *.pyd
+[2024-05-12 11:43:55] INFO root fetch - processPackages [zensvi]: Downloading https://files.pythonhosted.org/packages/58/a0/fa16c5167950fd72ac2b9de84f31f095275d7e96dede1c5f126683fca082/zensvi-0.9.8.tar.gz
+[2024-05-12 11:43:55] INFO root fetch - processPackages [zensvi]: executing diffoscope
+[2024-05-12 11:43:55] INFO root fetch - processPackages [zensvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensvi-0.9.7.tar.gz tmp/zensvi-0.9.8.tar.gz --markdown 20240512/z/zensvi/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-05-12 11:43:56] INFO root fetch - processPackages [zensvi]: Remove: archive file [/home/abi/fetcher/tmp/zensvi-0.9.7.tar.gz]
+[2024-05-12 11:43:56] INFO root fetch - processPackages [zensvi]: Remove: archive file [/home/abi/fetcher/tmp/zensvi-0.9.8.tar.gz]
+[2024-05-12 11:43:56] INFO root fetch - main [MainThread]: End processing [zensvi]: success
+[2024-05-12 11:43:56] INFO root fetch - processPackages [sparrow-python]: Remove: archive file [/home/abi/fetcher/tmp/sparrow_python-0.2.3.tar.gz]
+[2024-05-12 11:43:56] INFO root fetch - processPackages [sparrow-python]: Remove: archive file [/home/abi/fetcher/tmp/sparrow_python-0.2.3.1.tar.gz]
+[2024-05-12 11:43:56] INFO root fetch - main [MainThread]: End processing [sparrow-python]: success
+[2024-05-12 11:43:56] INFO root fetch - main [MainThread]: Store serial: [23168569]
