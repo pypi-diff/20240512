@@ -15379,3 +15379,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:23:58] INFO root fetch - processPackages [approvaltests]: Remove: archive file [/home/abi/fetcher/tmp/approvaltests-9.0.0.tar.gz]
 [2024-05-12 20:23:58] INFO root fetch - main [MainThread]: End processing [approvaltests]: success
 [2024-05-12 20:23:58] INFO root fetch - main [MainThread]: Store serial: [23172613]
+[2024-05-12 20:26:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172613]
+[2024-05-12 20:26:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 20:26:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: carunculaz
+[2024-05-12 20:26:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gammarers.aws-secure-frontend-web-app-cloudfront-distribution
+[2024-05-12 20:26:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: greatbrowser
+[2024-05-12 20:26:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gammarers.aws-secure-log-bucket
+[2024-05-12 20:26:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: universal-image-input-handler
+[2024-05-12 20:26:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cift
+[2024-05-12 20:26:07] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: New version: [1.6.4] Old Version: [1.6.3]
+[2024-05-12 20:26:07] INFO root fetch - processPackages [cift]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-12 20:26:07] WARNING root fetch - processPackages [greatbrowser]: Skipping, unable to determine old version
+[2024-05-12 20:26:07] WARNING root fetch - processPackages [universal-image-input-handler]: Skipping, unable to determine old version
+[2024-05-12 20:26:07] WARNING root fetch - processPackages [carunculaz]: Skipping, unable to determine old version
+[2024-05-12 20:26:07] INFO root fetch - main [MainThread]: End processing [greatbrowser] error
+[2024-05-12 20:26:07] INFO root fetch - main [MainThread]: End processing [universal-image-input-handler] error
+[2024-05-12 20:26:07] INFO root fetch - main [MainThread]: End processing [carunculaz] error
+[2024-05-12 20:26:07] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-05-12 20:26:08] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Downloading https://files.pythonhosted.org/packages/0a/0e/b4ebfbdbe4cb1d1833633909e60d65ded9be00d7fe2e08347c84f05b9c6b/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.2.tar.gz
+[2024-05-12 20:26:08] INFO root fetch - processPackages [cift]: Downloading https://files.pythonhosted.org/packages/1a/2d/78545353999431c161322b7cbe6b8e7abf3cb5eefebb439722899265d96e/cift-0.0.2.tar.gz
+[2024-05-12 20:26:08] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Downloading https://files.pythonhosted.org/packages/72/62/9e9df48b8b4e75958610a7ea49ce8e64da690ea4c6d20faa5e336bac13cf/gammarers.aws-secure-log-bucket-1.6.3.tar.gz
+[2024-05-12 20:26:08] INFO root fetch - processPackages [cift]: Downloading https://files.pythonhosted.org/packages/b0/12/4b9385638a27e27120806d6b52a1a18d9c41eb63b6cee9bf626fa1d00705/cift-0.0.3.tar.gz
+[2024-05-12 20:26:08] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Downloading https://files.pythonhosted.org/packages/0a/63/ce9c7809a8155dd6ca088cae9b5e0f6e621d8c6a60b4d6d3ab88ab3e3b0e/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.3.tar.gz
+[2024-05-12 20:26:08] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Downloading https://files.pythonhosted.org/packages/c9/c2/9c7532be8a2771ed8d90b6e25a8350c824dad83a9b2c87500f09da0344f9/gammarers.aws-secure-log-bucket-1.6.4.tar.gz
+[2024-05-12 20:26:08] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: executing diffoscope
+[2024-05-12 20:26:08] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.2.tar.gz tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.3.tar.gz --markdown 20240512/g/gammarers.aws-secure-frontend-web-app-cloudfront-distribution/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-05-12 20:26:08] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: executing diffoscope
+[2024-05-12 20:26:08] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-log-bucket-1.6.3.tar.gz tmp/gammarers.aws-secure-log-bucket-1.6.4.tar.gz --markdown 20240512/g/gammarers.aws-secure-log-bucket/1.6.3-1.6.4/README.md --exclude *.pyd
+[2024-05-12 20:26:08] INFO root fetch - processPackages [cift]: executing diffoscope
+[2024-05-12 20:26:08] INFO root fetch - processPackages [cift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cift-0.0.2.tar.gz tmp/cift-0.0.3.tar.gz --markdown 20240512/c/cift/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-12 20:26:09] INFO root fetch - processPackages [cift]: Remove: archive file [/home/abi/fetcher/tmp/cift-0.0.2.tar.gz]
+[2024-05-12 20:26:09] INFO root fetch - processPackages [cift]: Remove: archive file [/home/abi/fetcher/tmp/cift-0.0.3.tar.gz]
+[2024-05-12 20:26:09] INFO root fetch - main [MainThread]: End processing [cift]: success
+[2024-05-12 20:26:09] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-log-bucket-1.6.3.tar.gz]
+[2024-05-12 20:26:09] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-log-bucket-1.6.4.tar.gz]
+[2024-05-12 20:26:09] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-log-bucket]: success
+[2024-05-12 20:26:09] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.2.tar.gz]
+[2024-05-12 20:26:09] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.3.tar.gz]
+[2024-05-12 20:26:09] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: success
+[2024-05-12 20:26:09] INFO root fetch - main [MainThread]: Store serial: [23172636]
