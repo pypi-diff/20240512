@@ -10127,3 +10127,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 14:26:19] INFO root fetch - processPackages [bioat]: Remove: archive file [/home/abi/fetcher/tmp/bioat-0.9.1.tar.gz]
 [2024-05-12 14:26:19] INFO root fetch - main [MainThread]: End processing [bioat]: success
 [2024-05-12 14:26:19] INFO root fetch - main [MainThread]: Store serial: [23169818]
+[2024-05-12 14:28:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169818]
+[2024-05-12 14:28:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-12 14:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QtHarmony
+[2024-05-12 14:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lili-activation
+[2024-05-12 14:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: temod-flask
+[2024-05-12 14:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pkrcomponents
+[2024-05-12 14:28:27] INFO root fetch - processPackages [QtHarmony]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-12 14:28:28] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/9c/86/ce87267d9507252462d3c03428199094d902872e36c97c1a368ea37a8d77/qtharmony-0.2.2.tar.gz
+[2024-05-12 14:28:28] INFO root fetch - processPackages [temod-flask]: New version: [2.0.7] Old Version: [2.0.6]
+[2024-05-12 14:28:28] WARNING root fetch - processPackages [lili-activation]: Skipping, unable to determine old version
+[2024-05-12 14:28:28] INFO root fetch - main [MainThread]: End processing [lili-activation] error
+[2024-05-12 14:28:28] INFO root fetch - processPackages [pkrcomponents]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-05-12 14:28:28] INFO root fetch - processPackages [pkrcomponents]: Downloading https://files.pythonhosted.org/packages/cd/d5/2837fc216670a6adc76567be3afcd078d017d4c9d3b0fc34f9c1978f87fb/pkrcomponents-1.1.0.tar.gz
+[2024-05-12 14:28:28] INFO root fetch - processPackages [temod-flask]: Downloading https://files.pythonhosted.org/packages/04/31/5d76cf9aa3a5d5d7a868a163f04cc60affc420f958df4c63df63214c569e/temod-flask-2.0.6.tar.gz
+[2024-05-12 14:28:28] WARNING root fetch - processPackages [pkrcomponents]: Skipping package: exceeds size limit 29787082>=10485760
+[2024-05-12 14:28:28] INFO root fetch - main [MainThread]: End processing [pkrcomponents] error
+[2024-05-12 14:28:28] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/a9/f4/31aba2f458bd975c8f156b4c45eadd75961cacf26248e3f5f6e08d68d30d/qtharmony-0.2.3.tar.gz
+[2024-05-12 14:28:28] INFO root fetch - processPackages [QtHarmony]: executing diffoscope
+[2024-05-12 14:28:28] INFO root fetch - processPackages [QtHarmony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtharmony-0.2.2.tar.gz tmp/qtharmony-0.2.3.tar.gz --markdown 20240512/Q/QtHarmony/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-12 14:28:28] INFO root fetch - processPackages [temod-flask]: Downloading https://files.pythonhosted.org/packages/d6/9a/f2917643d136b2326876f403bd04d93ced551afd06b55e69ca74d8392822/temod_flask-2.0.7.tar.gz
+[2024-05-12 14:28:28] INFO root fetch - processPackages [temod-flask]: executing diffoscope
+[2024-05-12 14:28:28] INFO root fetch - processPackages [temod-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/temod-flask-2.0.6.tar.gz tmp/temod_flask-2.0.7.tar.gz --markdown 20240512/t/temod-flask/2.0.6-2.0.7/README.md --exclude *.pyd
+[2024-05-12 14:28:29] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.2.2.tar.gz]
+[2024-05-12 14:28:29] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.2.3.tar.gz]
+[2024-05-12 14:28:29] INFO root fetch - main [MainThread]: End processing [QtHarmony]: success
+[2024-05-12 14:28:29] INFO root fetch - processPackages [temod-flask]: Remove: archive file [/home/abi/fetcher/tmp/temod-flask-2.0.6.tar.gz]
+[2024-05-12 14:28:29] INFO root fetch - processPackages [temod-flask]: Remove: archive file [/home/abi/fetcher/tmp/temod_flask-2.0.7.tar.gz]
+[2024-05-12 14:28:29] INFO root fetch - main [MainThread]: End processing [temod-flask]: success
+[2024-05-12 14:28:29] INFO root fetch - main [MainThread]: Store serial: [23169832]
