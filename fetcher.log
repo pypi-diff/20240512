@@ -17157,3 +17157,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 22:15:12] INFO root fetch - processPackages [tdewolff-minify]: Remove: archive file [/home/abi/fetcher/tmp/tdewolff-minify-2.20.9.tar.gz]
 [2024-05-12 22:15:12] INFO root fetch - main [MainThread]: End processing [tdewolff-minify]: success
 [2024-05-12 22:15:12] INFO root fetch - main [MainThread]: Store serial: [23173434]
+[2024-05-12 22:17:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23173434]
+[2024-05-12 22:17:20] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 22:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llmail
+[2024-05-12 22:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asphericalz
+[2024-05-12 22:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mdit-py-plugins
+[2024-05-12 22:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypharm
+[2024-05-12 22:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: image-input-handler
+[2024-05-12 22:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: TDSR-UWB
+[2024-05-12 22:17:21] INFO root fetch - processPackages [pypharm]: New version: [1.3.5] Old Version: [1.3.3]
+[2024-05-12 22:17:21] INFO root fetch - processPackages [llmail]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-12 22:17:21] INFO root fetch - processPackages [pypharm]: Downloading https://files.pythonhosted.org/packages/9d/cb/7613e382c6d86597a93c61fcedf637a0e6c88236e48aa9a9c12ae8108dee/pypharm-1.3.3.tar.gz
+[2024-05-12 22:17:21] WARNING root fetch - processPackages [asphericalz]: Skipping, unable to determine old version
+[2024-05-12 22:17:21] INFO root fetch - main [MainThread]: End processing [asphericalz] error
+[2024-05-12 22:17:21] INFO root fetch - processPackages [llmail]: Downloading https://files.pythonhosted.org/packages/f0/77/b13a6abc4d46e967c6c991785a3b55b7788df154a3b652f99dcf7bdc8645/llmail-0.2.0.tar.gz
+[2024-05-12 22:17:21] INFO root fetch - processPackages [TDSR-UWB]: New version: [1.536] Old Version: [1.535]
+[2024-05-12 22:17:21] WARNING root fetch - processPackages [image-input-handler]: Skipping, unable to determine old version
+[2024-05-12 22:17:21] INFO root fetch - main [MainThread]: End processing [image-input-handler] error
+[2024-05-12 22:17:21] INFO root fetch - processPackages [mdit-py-plugins]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-12 22:17:21] INFO root fetch - processPackages [mdit-py-plugins]: Downloading https://files.pythonhosted.org/packages/b4/db/61960d68d5c39ff0dd48cb799a39ae4e297f6e9b96bf2f8da29d897fba0c/mdit_py_plugins-0.4.0.tar.gz
+[2024-05-12 22:17:21] INFO root fetch - processPackages [pypharm]: Downloading https://files.pythonhosted.org/packages/c8/ce/e59c3e1db1949b0fba9514682ca7e438cae52ae45c310c13a4d88eaaa0c0/pypharm-1.3.5.tar.gz
+[2024-05-12 22:17:21] INFO root fetch - processPackages [llmail]: Downloading https://files.pythonhosted.org/packages/d6/d1/cad653b0279decaa84cd68d41c52761bd62aba429f0f7bdcda833f4080bb/llmail-0.2.1.tar.gz
+[2024-05-12 22:17:21] INFO root fetch - processPackages [TDSR-UWB]: Downloading https://files.pythonhosted.org/packages/69/5f/d7b0a90ebb3f9530d315b5cc5bcf66dc620c6f01b7ad9e3d059541f63e51/TDSR-UWB-1.535.tar.gz
+[2024-05-12 22:17:21] INFO root fetch - processPackages [pypharm]: executing diffoscope
+[2024-05-12 22:17:21] INFO root fetch - processPackages [pypharm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypharm-1.3.3.tar.gz tmp/pypharm-1.3.5.tar.gz --markdown 20240512/p/pypharm/1.3.3-1.3.5/README.md --exclude *.pyd
+[2024-05-12 22:17:21] INFO root fetch - processPackages [llmail]: executing diffoscope
+[2024-05-12 22:17:21] INFO root fetch - processPackages [llmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmail-0.2.0.tar.gz tmp/llmail-0.2.1.tar.gz --markdown 20240512/l/llmail/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-12 22:17:21] INFO root fetch - processPackages [mdit-py-plugins]: Downloading https://files.pythonhosted.org/packages/00/6c/79c52651b22b64dba5c7bbabd7a294cc410bfb2353250dc8ade44d7d8ad8/mdit_py_plugins-0.4.1.tar.gz
+[2024-05-12 22:17:21] INFO root fetch - processPackages [TDSR-UWB]: Downloading https://files.pythonhosted.org/packages/7e/78/abe73f2845acd0677399abf680ef56e11194871199f944be51c9d22aafce/TDSR-UWB-1.536.tar.gz
+[2024-05-12 22:17:21] INFO root fetch - processPackages [mdit-py-plugins]: executing diffoscope
+[2024-05-12 22:17:21] INFO root fetch - processPackages [mdit-py-plugins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdit_py_plugins-0.4.0.tar.gz tmp/mdit_py_plugins-0.4.1.tar.gz --markdown 20240512/m/mdit-py-plugins/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-12 22:17:21] INFO root fetch - processPackages [TDSR-UWB]: executing diffoscope
+[2024-05-12 22:17:21] INFO root fetch - processPackages [TDSR-UWB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TDSR-UWB-1.535.tar.gz tmp/TDSR-UWB-1.536.tar.gz --markdown 20240512/T/TDSR-UWB/1.535-1.536/README.md --exclude *.pyd
+[2024-05-12 22:17:22] INFO root fetch - processPackages [pypharm]: Remove: archive file [/home/abi/fetcher/tmp/pypharm-1.3.3.tar.gz]
+[2024-05-12 22:17:22] INFO root fetch - processPackages [pypharm]: Remove: archive file [/home/abi/fetcher/tmp/pypharm-1.3.5.tar.gz]
+[2024-05-12 22:17:22] INFO root fetch - main [MainThread]: End processing [pypharm]: success
+[2024-05-12 22:17:22] INFO root fetch - processPackages [llmail]: Remove: archive file [/home/abi/fetcher/tmp/llmail-0.2.0.tar.gz]
+[2024-05-12 22:17:22] INFO root fetch - processPackages [llmail]: Remove: archive file [/home/abi/fetcher/tmp/llmail-0.2.1.tar.gz]
+[2024-05-12 22:17:22] INFO root fetch - main [MainThread]: End processing [llmail]: success
+[2024-05-12 22:17:22] INFO root fetch - processPackages [mdit-py-plugins]: Remove: archive file [/home/abi/fetcher/tmp/mdit_py_plugins-0.4.0.tar.gz]
+[2024-05-12 22:17:22] INFO root fetch - processPackages [mdit-py-plugins]: Remove: archive file [/home/abi/fetcher/tmp/mdit_py_plugins-0.4.1.tar.gz]
+[2024-05-12 22:17:22] INFO root fetch - main [MainThread]: End processing [mdit-py-plugins]: success
+[2024-05-12 22:17:22] INFO root fetch - processPackages [TDSR-UWB]: Remove: archive file [/home/abi/fetcher/tmp/TDSR-UWB-1.535.tar.gz]
+[2024-05-12 22:17:22] INFO root fetch - processPackages [TDSR-UWB]: Remove: archive file [/home/abi/fetcher/tmp/TDSR-UWB-1.536.tar.gz]
+[2024-05-12 22:17:22] INFO root fetch - main [MainThread]: End processing [TDSR-UWB]: success
+[2024-05-12 22:17:22] INFO root fetch - main [MainThread]: Store serial: [23173516]
