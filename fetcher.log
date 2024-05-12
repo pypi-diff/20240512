@@ -8632,3 +8632,21 @@
 [2024-05-12 12:40:52] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
 [2024-05-12 12:40:52] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
 [2024-05-12 12:40:52] INFO root fetch - main [MainThread]: Store serial: [23169070]
+[2024-05-12 12:42:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23169070]
+[2024-05-12 12:43:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-12 12:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bridgecrew
+[2024-05-12 12:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: WaveFormer
+[2024-05-12 12:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: californianz
+[2024-05-12 12:43:00] WARNING root fetch - processPackages [californianz]: Skipping, unable to determine old version
+[2024-05-12 12:43:00] INFO root fetch - main [MainThread]: End processing [californianz] error
+[2024-05-12 12:43:00] WARNING root fetch - processPackages [WaveFormer]: Skipping, unable to determine old version
+[2024-05-12 12:43:00] INFO root fetch - main [MainThread]: End processing [WaveFormer] error
+[2024-05-12 12:43:00] INFO root fetch - processPackages [bridgecrew]: New version: [3.2.91] Old Version: [3.2.90]
+[2024-05-12 12:43:01] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/ac/7c/66530027758d539161fcc932e200aa97206488c0684c2fc7ba8e70f9fea4/bridgecrew-3.2.90.tar.gz
+[2024-05-12 12:43:01] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/fb/82/e2316fe7b409c30cb99f4554985b9b1c712d13155ab088a22ce2002f2545/bridgecrew-3.2.91.tar.gz
+[2024-05-12 12:43:01] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2024-05-12 12:43:01] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-3.2.90.tar.gz tmp/bridgecrew-3.2.91.tar.gz --markdown 20240512/b/bridgecrew/3.2.90-3.2.91/README.md --exclude *.pyd
+[2024-05-12 12:43:02] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.90.tar.gz]
+[2024-05-12 12:43:02] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.91.tar.gz]
+[2024-05-12 12:43:02] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2024-05-12 12:43:02] INFO root fetch - main [MainThread]: Store serial: [23169082]
