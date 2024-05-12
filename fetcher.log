@@ -5567,3 +5567,54 @@
 [2024-05-12 08:35:44] INFO root fetch - processPackages [odoo-addon-spreadsheet-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_spreadsheet_oca-16.0.1.2.3.3-py3-none-any.whl.zip]
 [2024-05-12 08:35:44] INFO root fetch - main [MainThread]: End processing [odoo-addon-spreadsheet-oca]: success
 [2024-05-12 08:35:44] INFO root fetch - main [MainThread]: Store serial: [23167495]
+[2024-05-12 08:37:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23167495]
+[2024-05-12 08:37:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 08:37:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bruhanimate
+[2024-05-12 08:37:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypomes-db
+[2024-05-12 08:37:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: recompose
+[2024-05-12 08:37:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: todoist-auto
+[2024-05-12 08:37:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: litellm
+[2024-05-12 08:37:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rerackerz
+[2024-05-12 08:37:53] INFO root fetch - processPackages [bruhanimate]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-12 08:37:53] INFO root fetch - processPackages [todoist-auto]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-05-12 08:37:53] INFO root fetch - processPackages [pypomes-db]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-05-12 08:37:53] INFO root fetch - processPackages [bruhanimate]: Downloading https://files.pythonhosted.org/packages/c6/57/095c701edc2b245ce61b81a58bbcffca96482e88b8959cf0f29bfff462f4/bruhanimate-0.2.8.tar.gz
+[2024-05-12 08:37:53] WARNING root fetch - processPackages [rerackerz]: Skipping, unable to determine old version
+[2024-05-12 08:37:53] INFO root fetch - main [MainThread]: End processing [rerackerz] error
+[2024-05-12 08:37:53] INFO root fetch - processPackages [recompose]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-05-12 08:37:53] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/e7/40/59651deb7ed0403e241d47590732e24b06bc1d60cce62c8a4ee53cfe8475/pypomes_db-0.7.1.tar.gz
+[2024-05-12 08:37:53] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/b1/78/baea81138dfb8700e7a2b795b192569b97f1b353b15e6374ef7c32ec9bd9/todoist_auto-8.0.0.tar.gz
+[2024-05-12 08:37:53] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-05-12 08:37:53] INFO root fetch - processPackages [recompose]: Downloading https://files.pythonhosted.org/packages/21/f5/96faf18f39f2cb43ae9be51f3a897d22505cc7a39660841a5197132d2abf/recompose-1.0.1-py3-none-any.whl
+[2024-05-12 08:37:54] INFO root fetch - processPackages [bruhanimate]: Downloading https://files.pythonhosted.org/packages/2b/4a/71ab6f8b8a90ae4cbb391898ac5550ba56895062c0a9520b306d10c23329/bruhanimate-0.2.9.tar.gz
+[2024-05-12 08:37:54] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/ad/42/49bc0ab11074d45b08e24c5a91b302992d6e5855e521f2a779d82a91eed5/todoist_auto-9.0.0.tar.gz
+[2024-05-12 08:37:54] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-05-12 08:37:54] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/21/f2/34c0802ffb998bb90245952effff5b8338a1577b419b773a957d4355a389/pypomes_db-0.7.2.tar.gz
+[2024-05-12 08:37:54] INFO root fetch - processPackages [todoist-auto]: executing diffoscope
+[2024-05-12 08:37:54] INFO root fetch - processPackages [todoist-auto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/todoist_auto-8.0.0.tar.gz tmp/todoist_auto-9.0.0.tar.gz --markdown 20240512/t/todoist-auto/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-05-12 08:37:54] INFO root fetch - processPackages [bruhanimate]: executing diffoscope
+[2024-05-12 08:37:54] INFO root fetch - processPackages [bruhanimate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bruhanimate-0.2.8.tar.gz tmp/bruhanimate-0.2.9.tar.gz --markdown 20240512/b/bruhanimate/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-12 08:37:54] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-12 08:37:54] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.7.1.tar.gz tmp/pypomes_db-0.7.2.tar.gz --markdown 20240512/p/pypomes-db/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-05-12 08:37:54] INFO root fetch - processPackages [recompose]: Downloading https://files.pythonhosted.org/packages/24/1f/56c15353e0834c2ec57eff68e85ca9ef0843349df063081630e287a2ac9c/recompose-1.1.0-py3-none-any.whl
+[2024-05-12 08:37:54] INFO root fetch - processPackages [recompose]: executing diffoscope
+[2024-05-12 08:37:54] INFO root fetch - processPackages [recompose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recompose-1.0.1-py3-none-any.whl.zip tmp/recompose-1.1.0-py3-none-any.whl.zip --markdown 20240512/r/recompose/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-05-12 08:37:54] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-05-12 08:37:54] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-8.0.0.tar.gz]
+[2024-05-12 08:37:54] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-9.0.0.tar.gz]
+[2024-05-12 08:37:54] INFO root fetch - main [MainThread]: End processing [todoist-auto]: success
+[2024-05-12 08:37:54] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-05-12 08:37:54] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240512/l/litellm/1.9.5-1.9.dev0/README.md --exclude *.pyd
+[2024-05-12 08:37:54] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.7.1.tar.gz]
+[2024-05-12 08:37:54] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.7.2.tar.gz]
+[2024-05-12 08:37:54] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-12 08:37:54] INFO root fetch - processPackages [bruhanimate]: Remove: archive file [/home/abi/fetcher/tmp/bruhanimate-0.2.8.tar.gz]
+[2024-05-12 08:37:54] INFO root fetch - processPackages [bruhanimate]: Remove: archive file [/home/abi/fetcher/tmp/bruhanimate-0.2.9.tar.gz]
+[2024-05-12 08:37:54] INFO root fetch - main [MainThread]: End processing [bruhanimate]: success
+[2024-05-12 08:37:55] INFO root fetch - processPackages [recompose]: Remove: archive file [/home/abi/fetcher/tmp/recompose-1.0.1-py3-none-any.whl.zip]
+[2024-05-12 08:37:55] INFO root fetch - processPackages [recompose]: Remove: archive file [/home/abi/fetcher/tmp/recompose-1.1.0-py3-none-any.whl.zip]
+[2024-05-12 08:37:55] INFO root fetch - main [MainThread]: End processing [recompose]: success
+[2024-05-12 08:37:56] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-05-12 08:37:56] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-05-12 08:37:56] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-05-12 08:37:56] INFO root fetch - main [MainThread]: Store serial: [23167512]
