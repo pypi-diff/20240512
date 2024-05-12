@@ -15418,3 +15418,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-12 20:26:09] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.3.tar.gz]
 [2024-05-12 20:26:09] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: success
 [2024-05-12 20:26:09] INFO root fetch - main [MainThread]: Store serial: [23172636]
+[2024-05-12 20:28:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172636]
+[2024-05-12 20:28:18] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-12 20:30:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23172636]
+[2024-05-12 20:30:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-12 20:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gammarers.aws-secure-cloudfront-origin-bucket
+[2024-05-12 20:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: waveredz
+[2024-05-12 20:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: p-template-generator
+[2024-05-12 20:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: multocularz
+[2024-05-12 20:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: todoist-auto
+[2024-05-12 20:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pldag
+[2024-05-12 20:30:23] INFO root fetch - processPackages [todoist-auto]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-05-12 20:30:23] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/b1/78/baea81138dfb8700e7a2b795b192569b97f1b353b15e6374ef7c32ec9bd9/todoist_auto-8.0.0.tar.gz
+[2024-05-12 20:30:23] WARNING root fetch - processPackages [waveredz]: Skipping, unable to determine old version
+[2024-05-12 20:30:23] INFO root fetch - main [MainThread]: End processing [waveredz] error
+[2024-05-12 20:30:23] WARNING root fetch - processPackages [multocularz]: Skipping, unable to determine old version
+[2024-05-12 20:30:23] INFO root fetch - main [MainThread]: End processing [multocularz] error
+[2024-05-12 20:30:23] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: New version: [1.5.3] Old Version: [1.5.2]
+[2024-05-12 20:30:23] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-12 20:30:23] INFO root fetch - processPackages [pldag]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-05-12 20:30:23] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/ad/42/49bc0ab11074d45b08e24c5a91b302992d6e5855e521f2a779d82a91eed5/todoist_auto-9.0.0.tar.gz
+[2024-05-12 20:30:23] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/5c/a2/02f0b3cf41b76949deb937b95c8970f032447d82aa090fc0b68084fc59df/p-template-generator-0.1.98.tar.gz
+[2024-05-12 20:30:23] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: Downloading https://files.pythonhosted.org/packages/78/92/a08f3594ebe61201204516201e3d8cda2c81a1c40408163f4a5aca5464ca/gammarers.aws-secure-cloudfront-origin-bucket-1.5.2.tar.gz
+[2024-05-12 20:30:23] INFO root fetch - processPackages [pldag]: Downloading https://files.pythonhosted.org/packages/06/02/13bc3a1504ff3d993022cd64f27af6487cece41ea36d43d40a42a67d6064/pldag-0.8.0.tar.gz
+[2024-05-12 20:30:24] INFO root fetch - processPackages [todoist-auto]: executing diffoscope
+[2024-05-12 20:30:24] INFO root fetch - processPackages [todoist-auto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/todoist_auto-8.0.0.tar.gz tmp/todoist_auto-9.0.0.tar.gz --markdown 20240512/t/todoist-auto/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-05-12 20:30:24] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: Downloading https://files.pythonhosted.org/packages/4b/0e/3b8752b83fc9b51e316c4b9e139a7e1b6f132f0a08d7eea1aa72e5f69cf2/gammarers.aws-secure-cloudfront-origin-bucket-1.5.3.tar.gz
+[2024-05-12 20:30:24] INFO root fetch - processPackages [pldag]: Downloading https://files.pythonhosted.org/packages/36/db/e933e8016238573552c6809833a7f2a95e5831722cd0871d2569b5228e0d/pldag-0.8.1.tar.gz
+[2024-05-12 20:30:24] INFO root fetch - processPackages [pldag]: executing diffoscope
+[2024-05-12 20:30:24] INFO root fetch - processPackages [pldag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pldag-0.8.0.tar.gz tmp/pldag-0.8.1.tar.gz --markdown 20240512/p/pldag/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-05-12 20:30:24] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: executing diffoscope
+[2024-05-12 20:30:24] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-cloudfront-origin-bucket-1.5.2.tar.gz tmp/gammarers.aws-secure-cloudfront-origin-bucket-1.5.3.tar.gz --markdown 20240512/g/gammarers.aws-secure-cloudfront-origin-bucket/1.5.2-1.5.3/README.md --exclude *.pyd
+[2024-05-12 20:30:24] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-8.0.0.tar.gz]
+[2024-05-12 20:30:24] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-9.0.0.tar.gz]
+[2024-05-12 20:30:24] INFO root fetch - main [MainThread]: End processing [todoist-auto]: success
+[2024-05-12 20:30:25] INFO root fetch - processPackages [pldag]: Remove: archive file [/home/abi/fetcher/tmp/pldag-0.8.0.tar.gz]
+[2024-05-12 20:30:25] INFO root fetch - processPackages [pldag]: Remove: archive file [/home/abi/fetcher/tmp/pldag-0.8.1.tar.gz]
+[2024-05-12 20:30:25] INFO root fetch - main [MainThread]: End processing [pldag]: success
+[2024-05-12 20:30:25] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-cloudfront-origin-bucket-1.5.2.tar.gz]
+[2024-05-12 20:30:25] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-cloudfront-origin-bucket-1.5.3.tar.gz]
+[2024-05-12 20:30:25] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-cloudfront-origin-bucket]: success
+[2024-05-12 20:30:25] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/f6/11/746908384a91b5aacce7afb9782527293e24c5740c72a201daffb937e988/p-template-generator-0.1.99.tar.gz
+[2024-05-12 20:30:26] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2024-05-12 20:30:26] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240512:/home/abi/fetcher/20240512:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.98.tar.gz tmp/p-template-generator-0.1.99.tar.gz --markdown 20240512/p/p-template-generator/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-12 20:30:27] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.98.tar.gz]
+[2024-05-12 20:30:27] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.99.tar.gz]
+[2024-05-12 20:30:27] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
+[2024-05-12 20:30:27] INFO root fetch - main [MainThread]: Store serial: [23172656]
